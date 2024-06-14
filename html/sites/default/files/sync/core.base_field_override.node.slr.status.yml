@@ -1,0 +1,22 @@
+uuid: de93ba8e-6cf4-4692-adf8-5c460df6afbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.status
+field_name: status
+entity_type: node
+bundle: slr
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: bd1d17dd-8183-4e8b-bb77-1839198af0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_coach
+  module:
+    - user
+id: user_add_role_action.job_coach
+label: 'Add the Job Coach role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_coach

@@ -1,0 +1,18 @@
+uuid: 993de9ae-6393-4af9-a1fe-05ed4c363e0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.metatag
+field_name: metatag
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

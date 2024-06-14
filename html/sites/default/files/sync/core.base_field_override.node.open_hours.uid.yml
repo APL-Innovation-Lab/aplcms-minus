@@ -1,0 +1,20 @@
+uuid: c8904bc8-feae-44e2-b586-339a02e4342b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.uid
+field_name: uid
+entity_type: node
+bundle: open_hours
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

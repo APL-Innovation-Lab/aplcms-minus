@@ -1,0 +1,18 @@
+uuid: 318aa25a-577a-4ab2-b9dd-df6f0b61d7aa
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.publish_on
+field_name: publish_on
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,14 @@
+uuid: 2b9ef839-6252-43d2-aa29-b828e1b7f4b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.staff_recommend
+  module:
+    - user
+id: user_remove_role_action.staff_recommend
+label: 'Remove the Staff Recommend role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: staff_recommend

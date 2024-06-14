@@ -1,0 +1,23 @@
+uuid: f2154d9c-37a2-4920-ba71-17fe715d1347
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_i_understand
+    - node.type.passport_reservation
+id: node.passport_reservation.field_pp_i_understand
+field_name: field_pp_i_understand
+entity_type: node
+bundle: passport_reservation
+label: 'Documents Agreement'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I understand that I may need to reschedule my appointment if I do not bring all necessary documents.'
+  off_label: 'Off'
+field_type: boolean

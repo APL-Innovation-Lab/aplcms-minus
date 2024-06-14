@@ -1,0 +1,21 @@
+uuid: 9ecc8cfc-3aac-4631-b635-4c437de183e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_were_you_satisfied
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field_jp_were_you_satisfied
+field_name: field_jp_were_you_satisfied
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Were you satisfied with the quality of services?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,105 @@
+uuid: 35ae4882-88cb-41d2-ae7c-a0d062ddda9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apltv_recommendation_slide.feeds_item
+    - field.field.node.apltv_recommendation_slide.field_display_timespan_04_07p
+    - field.field.node.apltv_recommendation_slide.field_exclude_from_we_recommend
+    - field.field.node.apltv_recommendation_slide.field_intended_audience_2016i
+    - field.field.node.apltv_recommendation_slide.field_rec_introduction
+    - field.field.node.apltv_recommendation_slide.field_rec_items
+    - field.field.node.apltv_recommendation_slide.field_rec_subtitle
+    - field.field.node.apltv_recommendation_slide.field_rec_theme
+    - field.field.node.apltv_recommendation_slide.field_screenshot
+    - field.field.node.apltv_recommendation_slide.field_template_type
+    - field.field.node.apltv_recommendation_slide.field_web_category_2
+    - field.field.node.apltv_recommendation_slide.layout_builder__layout
+    - node.type.apltv_recommendation_slide
+    - views.view.recommendation_slide
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: apltv
+          context_mapping: {  }
+        components:
+          58a8211e-0fd3-44bf-9dee-3ca00a56fa3b:
+            uuid: 58a8211e-0fd3-44bf-9dee-3ca00a56fa3b
+            region: content
+            configuration:
+              id: 'views_block:recommendation_slide-nid2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          dc8eb41a-117e-4209-b351-137f3aaec966:
+            uuid: dc8eb41a-117e-4209-b351-137f3aaec966
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:apltv_recommendation_slide:field_screenshot'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.apltv_recommendation_slide.default
+targetEntityType: node
+bundle: apltv_recommendation_slide
+mode: default
+content:
+  field_screenshot:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_display_timespan_04_07p: true
+  field_exclude_from_we_recommend: true
+  field_intended_audience_2016i: true
+  field_rec_introduction: true
+  field_rec_items: true
+  field_rec_subtitle: true
+  field_rec_theme: true
+  field_template_type: true
+  field_web_category_2: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

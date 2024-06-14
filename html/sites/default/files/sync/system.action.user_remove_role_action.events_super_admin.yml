@@ -1,0 +1,14 @@
+uuid: c886e6a7-033f-4960-a474-415914928fc9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.events_super_admin
+  module:
+    - user
+id: user_remove_role_action.events_super_admin
+label: 'Remove the Events Super Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: events_super_admin

@@ -1,0 +1,18 @@
+uuid: cc55440f-6e65-46ec-a1da-ca9a3cb55892
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.title
+field_name: title
+entity_type: node
+bundle: accordion
+label: 'Accordion Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

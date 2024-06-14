@@ -1,0 +1,17 @@
+uuid: 6914d1e6-0f0d-4fe1-b107-c1d06f0ebbe5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'APLTV Fullscreen Image'
+type: fullscreen_image
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

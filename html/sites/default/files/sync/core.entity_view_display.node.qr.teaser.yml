@@ -1,0 +1,30 @@
+uuid: 1de54b12-4414-4022-aadd-03d63efb288f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.qr.field_generated_qr
+    - field.field.node.qr.field_short_url
+    - field.field.node.qr.field_url_for_qr
+    - field.field.node.qr.field_url_for_qr_code
+    - node.type.qr
+  module:
+    - user
+id: node.qr.teaser
+targetEntityType: node
+bundle: qr
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_generated_qr: true
+  field_short_url: true
+  field_url_for_qr: true
+  field_url_for_qr_code: true
+  langcode: true
+  search_api_excerpt: true

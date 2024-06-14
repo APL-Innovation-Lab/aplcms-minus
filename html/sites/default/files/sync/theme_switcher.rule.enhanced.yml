@@ -1,0 +1,16 @@
+uuid: 53ec7a79-6a8b-4a29-bfd5-4ac380a8dca9
+langcode: eng
+status: false
+dependencies:
+  module:
+    - system
+id: enhanced
+label: Enhanced
+weight: -3
+theme: uswds_base
+admin_theme: claro
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /enhanced

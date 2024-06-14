@@ -1,0 +1,18 @@
+uuid: fa6301f4-fe69-4471-8de1-b3511e5de883
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.tour
+id: node.tour.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: tour
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

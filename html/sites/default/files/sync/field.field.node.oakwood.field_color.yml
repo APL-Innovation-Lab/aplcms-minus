@@ -1,0 +1,19 @@
+uuid: 076bffa5-a689-42a5-9df5-36a9f61f66b8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.oakwood
+id: node.oakwood.field_color
+field_name: field_color
+entity_type: node
+bundle: oakwood
+label: Race/Ethnicity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

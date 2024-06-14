@@ -1,0 +1,22 @@
+uuid: bc02e216-d504-4419-ab8d-e434d4563c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.promote
+field_name: promote
+entity_type: node
+bundle: slr
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

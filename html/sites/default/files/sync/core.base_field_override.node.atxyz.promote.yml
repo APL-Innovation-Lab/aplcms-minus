@@ -1,0 +1,22 @@
+uuid: 0fa654b8-41f1-4d54-95ad-e874b2b1f551
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.promote
+field_name: promote
+entity_type: node
+bundle: atxyz
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

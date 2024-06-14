@@ -1,0 +1,29 @@
+uuid: dbc74462-9361-45df-883c-93bba4618b3f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.apltv_channel.layout_builder__layout
+    - taxonomy.vocabulary.apltv_channel
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.apltv_channel.full
+targetEntityType: taxonomy_term
+bundle: apltv_channel
+mode: full
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

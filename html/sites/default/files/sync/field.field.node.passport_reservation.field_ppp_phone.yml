@@ -1,0 +1,19 @@
+uuid: 7834022f-720d-4728-9006-29f70f9166c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ppp_phone
+    - node.type.passport_reservation
+id: node.passport_reservation.field_ppp_phone
+field_name: field_ppp_phone
+entity_type: node
+bundle: passport_reservation
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

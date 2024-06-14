@@ -1,0 +1,18 @@
+uuid: 2b2c40f5-e987-45b5-9de7-c470ce15d5a3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.metatag
+field_name: metatag
+entity_type: node
+bundle: staff_recommend
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

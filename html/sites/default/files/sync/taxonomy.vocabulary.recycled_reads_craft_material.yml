@@ -1,0 +1,8 @@
+uuid: 787ee361-3b09-4e7b-a199-d22b215c8e8d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recycled Reads Craft Material'
+vid: recycled_reads_craft_material
+description: ''
+weight: 11

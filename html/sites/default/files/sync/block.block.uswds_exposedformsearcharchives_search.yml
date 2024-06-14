@@ -1,0 +1,28 @@
+uuid: 37867b8b-2a0e-47f9-860d-c75127f44681
+langcode: eng
+status: false
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: uswds_exposedformsearcharchives_search
+theme: uswds
+region: content
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:search-archives_search'
+settings:
+  id: 'views_exposed_filter_block:search-archives_search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/ahc/archives/*'

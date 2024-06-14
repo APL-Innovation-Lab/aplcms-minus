@@ -1,0 +1,28 @@
+uuid: 479da0ea-80dd-44ad-ad35-3593d5a6a8dd
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.disease__
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: disease_2
+theme: claro2
+region: header
+weight: -22
+provider: null
+plugin: 'facet_block:disease__'
+settings:
+  id: 'facet_block:disease__'
+  label: 'Cause of Death'
+  label_display: visible
+  provider: facets
+  block_id: disease_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood/facets

@@ -1,0 +1,28 @@
+uuid: 146eeca2-ac98-4290-bd1c-d3654d80e018
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.sex
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_sex
+theme: claro2noGA
+region: header
+weight: -33
+provider: null
+plugin: 'facet_block:sex'
+settings:
+  id: 'facet_block:sex'
+  label: Sex
+  label_display: visible
+  provider: facets
+  block_id: sex
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood/facets

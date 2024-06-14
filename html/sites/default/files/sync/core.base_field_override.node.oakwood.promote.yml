@@ -1,0 +1,22 @@
+uuid: 93a8a917-8e00-4e66-a5fd-755e44215394
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood.promote
+field_name: promote
+entity_type: node
+bundle: oakwood
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

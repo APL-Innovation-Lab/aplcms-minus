@@ -1,0 +1,43 @@
+uuid: 157c596a-cf5a-4a8c-bb0e-b6db79ac4a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.special_dates.feeds_item
+    - field.field.node.special_dates.field_early_closing
+    - field.field.node.special_dates.field_special_date
+    - node.type.special_dates
+  module:
+    - datetime
+    - options
+    - user
+id: node.special_dates.default
+targetEntityType: node
+bundle: special_dates
+mode: default
+content:
+  field_early_closing:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_special_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

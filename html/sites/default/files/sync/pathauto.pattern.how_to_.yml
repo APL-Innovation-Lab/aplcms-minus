@@ -1,0 +1,22 @@
+uuid: b7f4ccef-368b-408a-bccb-ddfb7661a54d
+langcode: eng
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: how_to_
+label: 'How To'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/how-to/[term:name]'
+selection_criteria:
+  fedb58e0-8ff2-408f-abd3-0141d45345ef:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: fedb58e0-8ff2-408f-abd3-0141d45345ef
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      how_to: how_to
+selection_logic: and
+weight: -5
+relationships: {  }

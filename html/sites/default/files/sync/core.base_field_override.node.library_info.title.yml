@@ -1,0 +1,18 @@
+uuid: c2c017a1-6994-4944-82ab-4e937168525b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.library_info
+id: node.library_info.title
+field_name: title
+entity_type: node
+bundle: library_info
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

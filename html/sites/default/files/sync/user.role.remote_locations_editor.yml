@@ -1,0 +1,17 @@
+uuid: 71572e45-f042-4b43-a777-779205bfbd5e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.remote_locations
+  module:
+    - taxonomy
+id: remote_locations_editor
+label: 'Remote Locations Editor'
+weight: 26
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'create terms in remote_locations'
+  - 'delete terms in remote_locations'
+  - 'edit terms in remote_locations'

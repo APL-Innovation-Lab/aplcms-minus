@@ -1,0 +1,29 @@
+uuid: b2b2d523-f509-4357-94bc-ab46d566a844
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.exhibit
+    - taxonomy.vocabulary.library_location
+id: node.exhibit.field_location
+field_name: field_location
+entity_type: node
+bundle: exhibit
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: f7e99b3f-4c24-49b5-8666-be04c540496b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__i_need_help_
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field__i_need_help_
+field_name: field__i_need_help_
+entity_type: node
+bundle: job_portal_assistance_request
+label: '  I need help...'
+description: 'While we understand you may have questions about more than one of the items listed below, please select the ONE option that best describes your most pressing need. You can request up to three coaching sessions per month.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

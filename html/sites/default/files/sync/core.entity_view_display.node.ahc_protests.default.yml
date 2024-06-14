@@ -1,0 +1,65 @@
+uuid: b2c52d38-83f7-465f-8ce5-522cc8d6d7df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ahc_protests.field_ahc_protest_agreement
+    - field.field.node.ahc_protests.field_ahc_protest_credit
+    - field.field.node.ahc_protests.field_ahc_protest_email_address
+    - field.field.node.ahc_protests.field_ahc_protest_image
+    - node.type.ahc_protests
+  module:
+    - image
+    - user
+id: node.ahc_protests.default
+targetEntityType: node
+bundle: ahc_protests
+mode: default
+content:
+  field_ahc_protest_agreement:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ahc_protest_credit:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_ahc_protest_email_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_ahc_protest_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

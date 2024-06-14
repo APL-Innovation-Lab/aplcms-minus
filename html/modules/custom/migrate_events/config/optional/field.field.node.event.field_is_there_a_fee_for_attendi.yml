@@ -1,0 +1,23 @@
+uuid: aa97f61f-d2b0-412c-b2a5-29da286cad8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_there_a_fee_for_attendi
+    - node.type.event
+id: node.event.field_is_there_a_fee_for_attendi
+field_name: field_is_there_a_fee_for_attendi
+entity_type: node
+bundle: event
+label: 'Is there a fee for attending this event?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

@@ -1,0 +1,26 @@
+uuid: e74f27d5-fc83-4975-885b-9fafc58557f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan_04_07p
+    - node.type.highighted_images
+  module:
+    - datetime_range
+id: node.highighted_images.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+bundle: highighted_images
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+1 month'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

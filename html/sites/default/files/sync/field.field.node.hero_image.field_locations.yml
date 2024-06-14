@@ -1,0 +1,31 @@
+uuid: a3519da7-0f0f-4aeb-992f-b69ba018b4c7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.hero_image
+    - taxonomy.vocabulary.alert_zone
+    - taxonomy.vocabulary.library_location
+id: node.hero_image.field_locations
+field_name: field_locations
+entity_type: node
+bundle: hero_image
+label: Locations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alert_zone: alert_zone
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: alert_zone
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: b121edf1-a278-4676-9e24-f8c24c124312
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.open_hours
+  module:
+    - datetime
+id: node.open_hours.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: open_hours
+label: 'Time End'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

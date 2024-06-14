@@ -1,0 +1,18 @@
+uuid: 8e4fd433-8e3e-4a24-953d-a8a18b8691a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hero_image
+id: node.hero_image.created
+field_name: created
+entity_type: node
+bundle: hero_image
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

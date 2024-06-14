@@ -1,0 +1,19 @@
+uuid: b687b4a2-e64b-4e04-8999-67f2686e3107
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_former_product_names
+    - node.type.database
+id: node.database.field_former_product_names
+field_name: field_former_product_names
+entity_type: node
+bundle: database
+label: 'Former Product Names'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

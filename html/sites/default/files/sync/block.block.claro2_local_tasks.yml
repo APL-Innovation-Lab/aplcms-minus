@@ -1,0 +1,28 @@
+uuid: 917e5fc7-b800-42e3-bd3a-4c5ffc3d1032
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: claro2_local_tasks
+theme: claro2
+region: header
+weight: -37
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/apltv/*\r\n/slr/request\r\n/webform/*"

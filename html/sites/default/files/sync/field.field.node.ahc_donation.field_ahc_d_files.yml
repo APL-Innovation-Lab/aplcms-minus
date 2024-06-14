@@ -1,0 +1,27 @@
+uuid: f59d4216-15ad-4e63-884c-4137a6ea707c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_files
+    - node.type.ahc_donation
+  module:
+    - file
+id: node.ahc_donation.field_ahc_d_files
+field_name: field_ahc_d_files
+entity_type: node
+bundle: ahc_donation
+label: '  Files / Archivos'
+description: 'Select a file, click the "Upload" button, and add a Description. Then you will be given the option to upload additional files. / Escoge un archivo, haz clic en el botón "Upload" y añadir una “Descripción”. Luego, se le dará la opción de cargar archivos adicionales.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ahc
+  file_extensions: 'pdf png gif jpg jpeg doc docx txt mp3 mp4'
+  max_filesize: ''
+  description_field: true
+field_type: file

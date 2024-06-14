@@ -1,0 +1,22 @@
+uuid: 60a09e07-b133-47dc-bdf3-dea4480ab7db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+id: node.ahc_donation.promote
+field_name: promote
+entity_type: node
+bundle: ahc_donation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

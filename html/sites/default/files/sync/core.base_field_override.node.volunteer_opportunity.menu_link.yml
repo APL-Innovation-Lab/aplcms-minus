@@ -1,0 +1,20 @@
+uuid: 0c08efa6-afaf-45ee-9427-7e8d1ccf1368
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+id: node.volunteer_opportunity.menu_link
+field_name: menu_link
+entity_type: node
+bundle: volunteer_opportunity
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 03036c49-804e-47c1-92ef-251c54d974a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+id: node.job_portal_page.promote
+field_name: promote
+entity_type: node
+bundle: job_portal_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

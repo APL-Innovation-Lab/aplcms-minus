@@ -1,0 +1,463 @@
+uuid: 40995e2c-52d3-402b-a9a0-acb1cfae5cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.archives_index.feeds_item
+    - field.field.node.archives_index.field_abstract
+    - field.field.node.archives_index.field_accessno
+    - field.field.node.archives_index.field_archive_creator
+    - field.field.node.archives_index.field_archive_id
+    - field.field.node.archives_index.field_archive_language
+    - field.field.node.archives_index.field_archive_location
+    - field.field.node.archives_index.field_archive_status
+    - field.field.node.archives_index.field_archives_access
+    - field.field.node.archives_index.field_bioghist
+    - field.field.node.archives_index.field_box_count
+    - field.field.node.archives_index.field_bulk_dates
+    - field.field.node.archives_index.field_collection
+    - field.field.node.archives_index.field_condition
+    - field.field.node.archives_index.field_digital_size_in_gb
+    - field.field.node.archives_index.field_display_title
+    - field.field.node.archives_index.field_donorno
+    - field.field.node.archives_index.field_dsc
+    - field.field.node.archives_index.field_final_process_date
+    - field.field.node.archives_index.field_finding_aid
+    - field.field.node.archives_index.field_flat_file_drawer
+    - field.field.node.archives_index.field_format_a_v_
+    - field.field.node.archives_index.field_format_electronic
+    - field.field.node.archives_index.field_format_general
+    - field.field.node.archives_index.field_format_general_ahc
+    - field.field.node.archives_index.field_format_note
+    - field.field.node.archives_index.field_format_photo
+    - field.field.node.archives_index.field_format_text
+    - field.field.node.archives_index.field_general_notes
+    - field.field.node.archives_index.field_item_count
+    - field.field.node.archives_index.field_item_count_notes
+    - field.field.node.archives_index.field_linear_feet
+    - field.field.node.archives_index.field_odd
+    - field.field.node.archives_index.field_organizations
+    - field.field.node.archives_index.field_persons
+    - field.field.node.archives_index.field_places
+    - field.field.node.archives_index.field_posted_taro
+    - field.field.node.archives_index.field_process_note
+    - field.field.node.archives_index.field_record_creation_date
+    - field.field.node.archives_index.field_related
+    - field.field.node.archives_index.field_restriction_notes
+    - field.field.node.archives_index.field_restrictions
+    - field.field.node.archives_index.field_scopecontent
+    - field.field.node.archives_index.field_searchable
+    - field.field.node.archives_index.field_start_date
+    - field.field.node.archives_index.field_subjects
+    - field.field.node.archives_index.field_taro_filename
+    - node.type.archives_index
+  module:
+    - datetime
+    - datetime_range
+    - path
+    - text
+id: node.archives_index.default
+targetEntityType: node
+bundle: archives_index
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_abstract:
+    type: text_textarea
+    weight: 50
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_accessno:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archive_creator:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archive_id:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_archive_language:
+    type: text_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archive_location:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archive_status:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archives_access:
+    type: options_select
+    weight: 38
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bioghist:
+    type: text_textarea
+    weight: 51
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_box_count:
+    type: number
+    weight: 22
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_bulk_dates:
+    type: text_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_collection:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_condition:
+    type: text_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_size_in_gb:
+    type: number
+    weight: 21
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_title:
+    type: text_textarea
+    weight: 48
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_donorno:
+    type: text_textfield
+    weight: 34
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_dsc:
+    type: text_textarea
+    weight: 53
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_final_process_date:
+    type: datetime_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_finding_aid:
+    type: text_textarea
+    weight: 49
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_flat_file_drawer:
+    type: text_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_format_a_v_:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_format_electronic:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_format_general:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_format_general_ahc:
+    type: string_textfield
+    weight: 46
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_format_note:
+    type: text_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_format_photo:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_format_text:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_general_notes:
+    type: text_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_count:
+    type: number
+    weight: 24
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_count_notes:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_linear_feet:
+    type: number
+    weight: 20
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_odd:
+    type: text_textarea
+    weight: 54
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_organizations:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_persons:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_places:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_posted_taro:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_process_note:
+    type: text_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_record_creation_date:
+    type: datetime_default
+    weight: 37
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_related:
+    type: text_textfield
+    weight: 36
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_restriction_notes:
+    type: text_textfield
+    weight: 33
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_restrictions:
+    type: options_select
+    weight: 32
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_scopecontent:
+    type: text_textarea
+    weight: 52
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_searchable:
+    type: string_textarea
+    weight: 47
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_start_date:
+    type: daterange_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_subjects:
+    type: string_textfield
+    weight: 31
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_taro_filename:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 11
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 43
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 41
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 45
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 42
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 39
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 44
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

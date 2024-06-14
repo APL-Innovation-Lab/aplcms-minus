@@ -1,0 +1,18 @@
+uuid: 4e7f1532-9602-46ea-82dc-d1949bc045c1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+id: node.exhibit.created
+field_name: created
+entity_type: node
+bundle: exhibit
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

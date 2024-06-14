@@ -1,0 +1,28 @@
+uuid: 5d2369f2-3916-4d4a-be7b-879e740f2c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.title_
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_title
+theme: uswds
+region: content
+weight: -10
+provider: null
+plugin: 'facet_block:title_'
+settings:
+  id: 'facet_block:title_'
+  label: 'What''s Hot'
+  label_display: visible
+  provider: facets
+  block_id: title
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/recommended/*'

@@ -1,0 +1,20 @@
+uuid: e213d07f-4106-4be2-8ac6-61dbea0ad8b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reflection
+  module:
+    - path
+id: node.reflection.path
+field_name: path
+entity_type: node
+bundle: reflection
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

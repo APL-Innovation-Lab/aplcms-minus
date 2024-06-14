@@ -1,0 +1,23 @@
+uuid: 59800d01-0aa9-4f53-94c5-0c294b2ea331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_agreement
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_agreement
+field_name: field_ahc_d_agreement
+entity_type: node
+bundle: ahc_donation
+label: Agreement
+description: 'By donating my materials, I agree to the <a target="_blank" href="/ahc/rights-permissions-745268">Terms for Rights & Permissions</a> for the Austin History Center''s permanent collection. / Al donar mis materiales, estoy de acuerdo con los <a target="_blank" href="/ahc/rights-permissions-745268">Términos por Derechos y Permisos</a> para el Centro Historia del Austin colección permanente.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms for Rights & Permissions. / Estoy de acuerdo con los Términos por Derechos y Permisos.'
+  off_label: 'Off'
+field_type: boolean

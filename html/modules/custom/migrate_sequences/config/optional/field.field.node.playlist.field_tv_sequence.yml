@@ -1,0 +1,25 @@
+uuid: 09a97be6-9637-4ffd-9072-89400654ff73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tv_sequence
+    - node.type.playlist
+id: node.playlist.field_tv_sequence
+field_name: field_tv_sequence
+entity_type: node
+bundle: playlist
+label: 'TV Sequence'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: sequence_picker
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,111 @@
+uuid: 99c651e7-9107-4bc3-9252-f4a1423b2531
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: staff_recommend
+label: 'Staff Recommend'
+code: |-
+  .last-visible-item:after {
+      content: '...';
+      display: inline-block;
+      padding-left: 5px;
+  }
+  .grid-offset-1.grid-col-10 h1, 
+  h1.grid-offset-1.grid-col-10 {
+  	padding: 24px 0 !important;
+  	font-size: 2em;
+  	margin: 0;
+  }
+  .facet-item.reset {
+  	border: none;
+  }
+  .usa-pagination__link {
+  	color: black !important;
+  }
+  .usa-pagination__arrow {
+  	display: inline-flex !important;
+  }
+  .usa-pagination__list {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers flex items (children) on the main axis */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    align-items: center; /* Aligns items vertically in the center */
+  }
+
+  .usa-pagination__item {
+    margin: 0 5px; /* Adjusts spacing around pagination items */
+  }
+
+  /* Specifically target the previous and next link containers */
+  .usa-pagination__item.usa-pagination__arrow {
+    flex: 1; /* Allows these elements to grow and occupy equal space */
+    text-align: center; /* Centers the text (and icons) inside the links */
+  }
+
+  /* Optionally, ensure the page number button is not stretched */
+  .usa-pagination__item.usa-pagination__page-no {
+    flex: 0 0 auto; /* Prevents the page number from growing or shrinking */
+  }
+
+
+  .facet-item__value,
+  .facets-soft-limit-link {
+  	appearance: none;
+  	-webkit-appearance: none;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-weight: normal;
+  	line-height: 1;
+  	margin-bottom: 0.5em;
+  	margin-right: 0.5em;
+  	margin-top: 0.5em;
+  	outline: none;
+  	text-align: center;
+  	text-decoration: none;
+  	width: auto;
+  	-webkit-font-smoothing: antialiased;
+  	background-color: #fff;
+  	color: #0071bc !important;
+  }
+  .facet-item__value:hover,
+  .facets-soft-limit-link:hover {
+  	text-decoration: underline;
+  }
+  .facet-item {
+  	border: 1px solid #0071bc;
+  	border-radius: 3px;
+  	list-style: none;
+  	padding: 5px 2px 5px 10px;
+  }
+  ul.item-list__links {
+  	display: flex;
+  	flex-wrap: wrap;
+  	gap: 1em;
+  	padding: 0 8.3333333333% !important;
+  }
+  .facet-item a {
+  	text-decoration: none;
+  }
+  .facets-widget-links > a  {
+  	margin: 0 8.3333333333% !important;
+  }
+  .views-field.views-field-field-biblio-list-urls iframe {
+  	padding: 0 7%;
+  	width: 100%;
+  }
+
+  .views-element-container.contextual-region.block.block-views.block-views-blockevents-facets--block-1 {
+  	padding: 30px 8.3333333333%;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/staff-recommend/*\r\n/staff-recommend\r\n/events/facets"
+contexts: {  }
+conditions_require_all: true

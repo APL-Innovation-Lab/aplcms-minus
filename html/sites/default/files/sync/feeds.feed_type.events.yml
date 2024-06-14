@@ -1,0 +1,513 @@
+uuid: 0853afe0-d1dd-416a-ac81-150d3e621c32
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.event.created
+    - core.base_field_override.node.event.title
+    - core.base_field_override.node.event.uid
+    - field.field.node.event.body
+    - field.field.node.event.field_cat_ia
+    - field.field.node.event.field_central_event_location
+    - field.field.node.event.field_ev_reflection_category
+    - field.field.node.event.field_event_category_tags_
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_grouping_or_series2
+    - field.field.node.event.field_event_loc
+    - field.field.node.event.field_event_recommended_ages
+    - field.field.node.event.field_event_summary
+    - field.field.node.event.field_event_tag
+    - field.field.node.event.field_invisible
+    - field.field.node.event.field_is_there_a_fee_for_attendi
+    - field.field.node.event.field_item_list
+    - field.field.node.event.field_link_for_registration
+    - field.field.node.event.field_movie_rating
+    - field.field.node.event.field_movie_summary
+    - field.field.node.event.field_movie_title
+    - field.field.node.event.field_movie_year
+    - field.field.node.event.field_omit_category_description
+    - field.field.node.event.field_reflected
+    - field.field.node.event.field_remote_location
+    - field.field.node.event.field_show_full_description
+    - field.field.node.event.field_skip_apl_tv
+    - field.field.node.event.field_sponsor
+    - field.field.node.event.field_subtitle
+    - node.type.event
+  module:
+    - feeds_tamper
+    - node
+    - smart_date
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      5b48038a-8a34-48bb-b408-48db71458fa0:
+        separator: ','
+        limit: null
+        uuid: 5b48038a-8a34-48bb-b408-48db71458fa0
+        plugin: explode
+        source: field_event_tag
+        weight: 0
+        label: Explode
+      a064f57f-f6aa-41ff-b800-c53e16ab709a:
+        separator: ','
+        limit: null
+        uuid: a064f57f-f6aa-41ff-b800-c53e16ab709a
+        plugin: explode
+        source: field_event_grouping_or_series2
+        weight: 0
+        label: Explode
+      d5b902d8-2810-476a-989d-6f70dd7b81f7:
+        separator: ','
+        limit: null
+        uuid: d5b902d8-2810-476a-989d-6f70dd7b81f7
+        plugin: explode
+        source: item_list
+        weight: 0
+        label: Explode
+      2e7751a2-29d8-4c16-b9f3-f88411b6201f:
+        text: eng
+        uuid: 2e7751a2-29d8-4c16-b9f3-f88411b6201f
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+label: Events
+id: events
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: event
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  field_central_event_location:
+    value: field_central_event_location
+    label: field_central_event_location
+    machine_name: field_central_event_location
+    type: csv
+  field_event_date_start_date:
+    value: field_event_date|start_date
+    label: field_event_date|start_date
+    machine_name: field_event_date_start_date
+    type: csv
+  field_event_date_end_date:
+    value: field_event_date|end_date
+    label: field_event_date|end_date
+    machine_name: field_event_date_end_date
+    type: csv
+  field_event_category_tags_:
+    value: field_event_category_tags_
+    label: field_event_category_tags_
+    machine_name: field_event_category_tags_
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  field_event_grouping_or_series2:
+    value: field_event_grouping_or_series2
+    label: field_event_grouping_or_series2
+    machine_name: field_event_grouping_or_series2
+    type: csv
+  field_event_tag:
+    value: field_event_tag
+    label: field_event_tag
+    machine_name: field_event_tag
+    type: csv
+  field_event_loc:
+    value: field_event_loc
+    label: field_event_loc
+    machine_name: field_event_loc
+    type: csv
+  field_event_summary:
+    value: field_event_summary
+    label: field_event_summary
+    machine_name: field_event_summary
+    type: csv
+  field_cat_ia:
+    value: field_cat_ia
+    label: field_cat_ia
+    machine_name: field_cat_ia
+    type: csv
+  field_is_there_a_fee_for_attendi:
+    value: field_is_there_a_fee_for_attendi
+    label: field_is_there_a_fee_for_attendi
+    machine_name: field_is_there_a_fee_for_attendi
+    type: csv
+  field_movie_rating:
+    value: field_movie_rating
+    label: field_movie_rating
+    machine_name: field_movie_rating
+    type: csv
+  field_movie_summary:
+    value: field_movie_summary
+    label: field_movie_summary
+    machine_name: field_movie_summary
+    type: csv
+  field_movie_title:
+    value: field_movie_title
+    label: field_movie_title
+    machine_name: field_movie_title
+    type: csv
+  field_movie_year:
+    value: field_movie_year
+    label: field_movie_year
+    machine_name: field_movie_year
+    type: csv
+  field_omit_category_description:
+    value: field_omit_category_description
+    label: field_omit_category_description
+    machine_name: field_omit_category_description
+    type: csv
+  field_partner:
+    value: field_partner
+    label: field_partner
+    machine_name: field_partner
+    type: csv
+  field_event_recommended_ages:
+    value: field_event_recommended_ages
+    label: field_event_recommended_ages
+    machine_name: field_event_recommended_ages
+    type: csv
+  field_reflected:
+    value: field_reflected
+    label: field_reflected
+    machine_name: field_reflected
+    type: csv
+  field_ev_reflection_category:
+    value: field_ev_reflection_category
+    label: field_ev_reflection_category
+    machine_name: field_ev_reflection_category
+    type: csv
+  field_remote_location:
+    value: field_remote_location
+    label: field_remote_location
+    machine_name: field_remote_location
+    type: csv
+  field_show_full_description:
+    value: field_show_full_description
+    label: field_show_full_description
+    machine_name: field_show_full_description
+    type: csv
+  field_skip_apl_tv:
+    value: field_skip_apl_tv
+    label: field_skip_apl_tv
+    machine_name: field_skip_apl_tv
+    type: csv
+  field_invisible:
+    value: field_invisible
+    label: field_invisible
+    machine_name: field_invisible
+    type: csv
+  field_sponsor:
+    value: field_sponsor
+    label: field_sponsor
+    machine_name: field_sponsor
+    type: csv
+  field_subtitle:
+    value: field_subtitle
+    label: field_subtitle
+    machine_name: field_subtitle
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  item_list:
+    value: item_list
+    label: item_list
+    machine_name: item_list
+    type: csv
+  registration:
+    value: registration
+    label: registration
+    machine_name: registration
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_central_event_location
+    map:
+      target_id: field_central_event_location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_date
+    map:
+      value: field_event_date_start_date
+      end_value: field_event_date_end_date
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_event_category_tags_
+    map:
+      target_id: field_event_category_tags_
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_event_grouping_or_series2
+    map:
+      target_id: field_event_grouping_or_series2
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_tag
+    map:
+      target_id: field_event_tag
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_loc
+    map:
+      target_id: field_event_loc
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_summary
+    map:
+      value: field_event_summary
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_cat_ia
+    map:
+      target_id: field_cat_ia
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_is_there_a_fee_for_attendi
+    map:
+      value: field_is_there_a_fee_for_attendi
+    settings:
+      language: null
+  -
+    target: field_movie_rating
+    map:
+      value: field_movie_rating
+    settings:
+      language: null
+  -
+    target: field_movie_summary
+    map:
+      value: field_movie_summary
+    settings:
+      language: null
+  -
+    target: field_movie_title
+    map:
+      value: field_movie_title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_movie_year
+    map:
+      value: field_movie_year
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_omit_category_description
+    map:
+      value: field_omit_category_description
+    settings:
+      language: null
+  -
+    target: field_event_recommended_ages
+    map:
+      value: field_event_recommended_ages
+    settings:
+      language: ''
+  -
+    target: field_reflected
+    map:
+      value: field_reflected
+    settings:
+      language: null
+  -
+    target: field_ev_reflection_category
+    map:
+      target_id: field_ev_reflection_category
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_remote_location
+    map:
+      target_id: field_remote_location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_show_full_description
+    map:
+      value: field_show_full_description
+    settings:
+      language: null
+  -
+    target: field_skip_apl_tv
+    map:
+      value: field_skip_apl_tv
+    settings:
+      language: null
+  -
+    target: field_invisible
+    map:
+      value: field_invisible
+    settings:
+      language: null
+  -
+    target: field_sponsor
+    map:
+      value: field_sponsor
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_subtitle
+    map:
+      value: field_subtitle
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_item_list
+    map:
+      target_id: item_list
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_link_for_registration
+    map:
+      value: registration
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_event_date_
+    map:
+      value: field_event_date_start_date
+    settings:
+      language: ''
+      timezone: America/Chicago
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: eng
+  -
+    target: field_event_date_and_time
+    map:
+      value: field_event_date_start_date
+      end_value: field_event_date_end_date
+    settings:
+      language: eng

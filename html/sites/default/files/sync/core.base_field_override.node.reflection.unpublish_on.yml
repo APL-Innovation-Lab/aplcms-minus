@@ -1,0 +1,18 @@
+uuid: cc91032c-8c2e-41dd-9930-0a6cb88c587d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.reflection
+id: node.reflection.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: reflection
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

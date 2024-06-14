@@ -1,0 +1,18 @@
+uuid: ac6124c7-023f-4246-b8bb-24e99e717521
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.changed
+field_name: changed
+entity_type: node
+bundle: zine
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

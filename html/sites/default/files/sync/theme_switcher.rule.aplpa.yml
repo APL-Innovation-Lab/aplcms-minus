@@ -1,0 +1,16 @@
+uuid: f3074679-b44d-429e-9c63-45848bd52672
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: aplpa
+label: aplpa
+weight: -5
+theme: aplpa
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/layouts/*'

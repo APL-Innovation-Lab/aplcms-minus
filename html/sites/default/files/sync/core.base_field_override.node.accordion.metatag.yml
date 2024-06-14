@@ -1,0 +1,18 @@
+uuid: fce6264b-aa71-4ed2-b5aa-57b7eb6b3dd0
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.metatag
+field_name: metatag
+entity_type: node
+bundle: accordion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

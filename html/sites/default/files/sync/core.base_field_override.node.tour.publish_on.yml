@@ -1,0 +1,18 @@
+uuid: 3da09d2f-e1d2-4a01-907f-890ed663e55c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.tour
+id: node.tour.publish_on
+field_name: publish_on
+entity_type: node
+bundle: tour
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

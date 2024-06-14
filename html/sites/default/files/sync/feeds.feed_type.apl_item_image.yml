@@ -1,0 +1,88 @@
+uuid: 6911654c-6ebf-441a-8b12-282f2539d20b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apl_item.field_apl_item_image
+    - node.type.apl_item
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      dfdbf19e-ae16-4a65-b6e3-a7a009f3e765:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: dfdbf19e-ae16-4a65-b6e3-a7a009f3e765
+        plugin: find_replace_regex
+        source: field_apl_item_image
+        weight: 0
+        label: 'Find replace REGEX'
+      ad25e0a4-81e2-4668-93d0-66bd4ac199f9:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: ad25e0a4-81e2-4668-93d0-66bd4ac199f9
+        plugin: find_replace_regex
+        source: field_apl_item_image
+        weight: 1
+        label: 'Find replace REGEX'
+id: apl_item_image
+label: 'APL Item Image'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: apl_item
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  field_apl_item_image:
+    value: field_apl_item_image
+    label: field_apl_item_image
+    machine_name: field_apl_item_image
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_apl_item_image
+    map:
+      target_id: field_apl_item_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'

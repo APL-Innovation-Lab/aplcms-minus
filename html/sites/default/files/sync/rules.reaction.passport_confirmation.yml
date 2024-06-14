@@ -1,0 +1,167 @@
+uuid: f47c85ee-4449-439b-b11d-ddf7ef24a16e
+langcode: en
+status: false
+dependencies: {  }
+id: passport_confirmation
+label: 'passport confirmation'
+events:
+  -
+    event_name: 'rules_entity_insert:node--passport_reservation'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f6cd4651-07f0-405f-8f83-d5f198921580
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 325c8bcf-b487-4a38-953c-0971d2f2a76a
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 86431301-4432-40d9-9145-65d49e708b9c
+        weight: 0
+        condition_id: rules_entity_has_field
+        negate: false
+        context_values:
+          field: field_pp_date
+        context_mapping:
+          entity: node
+        context_processors:
+          field:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 47729c07-ae9f-43f4-8676-617a93754db6
+        weight: 0
+        condition_id: rules_entity_has_field
+        negate: false
+        context_values:
+          field: field_ppp_email
+        context_mapping:
+          entity: node
+        context_processors:
+          field:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: eb3cb49d-4890-49f3-b885-60c5ba223348
+        weight: 0
+        condition_id: rules_entity_has_field
+        negate: false
+        context_values:
+          field: field_pp_expected_attendance
+        context_mapping:
+          entity: node
+        context_processors:
+          field:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 45cb40c3-902e-4dab-b6ca-13ebceb54858
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 99b585ba-7331-401e-8ff5-673d5b65dded
+        weight: -50
+        action_id: rules_entity_fetch_by_id
+        context_values:
+          type: node
+          entity_id: '{{node.nid}]'
+        context_mapping: {  }
+        context_processors:
+          type:
+            rules_tokens: {  }
+          entity_id:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 9bed820c-f6be-45fd-8e8d-cfc9ed5d0619
+        weight: -49
+        action_id: rules_variable_add
+        context_values:
+          type: string
+          value: 'Your reservation is set for {{node.field_pp_date.value|format_date(''long'')}}.'
+        context_mapping: {  }
+        context_processors:
+          type:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 74da2744-8114-4d64-8330-5fe08cb41ede
+        weight: -48
+        action_id: rules_variable_add
+        context_values:
+          type: string
+          value: '{{node.created.value|format_date(''long'')}}'
+        context_mapping: {  }
+        context_processors:
+          type:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping:
+          variable_added: current_date
+      -
+        id: rules_action
+        uuid: 7d11a6fd-3ffe-4de0-9444-b7cf835ff652
+        weight: -47
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.field_ppp_email}}'
+          subject: 'Thank you for making an appointment with the Austin Public Library Passport Office. '
+          message: "Thank you for making an appointment with the Austin Public Library Passport Office. <br>\r\n<br>\r\nYour appointment details:<br>\r\n<br>\r\nName: {{node.title}}<br>\r\n<br>\r\nDate: {{node.field_pp_date.value|format_date('long')}}<br>\r\n<br>\r\nLocation: Central Library, 710 W. César Chávez St, Austin, TX 78701, Room 206<br>\r\n<br>\r\nFor what to bring to your appointment: visit the U.S. Department of State Passport Agency at travel.state.gov/passports.<br>\r\n<br>\r\n<br>\r\nPassport applications require two separate payments:<br>\r\n<br>\r\n    Passport application fee payable to the U.S. Department of State by personal check, cashier’s check, or money order only.<br>\r\n<br>\r\n    Application execution fee payable to Austin Public Library by card, cash, or check.<br>\r\n<br>\r\nParking: The Central Library features two levels of underground parking with 140 public parking spaces. The entrance is on West Avenue. Two parking spaces are reserved for Passport Services on the first level. Enter the garage and turn left, pass the ramp to the lower level, and the Passport Services spots will be on your right, just before the stairs. Parking in these spaces is not guaranteed. If they are full, please park in any open, non-reserved spot. For more information and a list of hourly rates, please visit http://library.austintexas.gov/central/parking.<br>\r\n<br>\r\nQuestions? Contact us at APLpassport@austintexas.gov or by phone at 512-974-9639.<br>\r\n<br>\r\nFor more information, please visit library.austintexas.gov/passports.<br>\r\n<br>"
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: a0f066bc-8a6a-49a8-8079-773ac91035e7
+        weight: -46
+        action_id: rules_system_message
+        context_values:
+          type: status
+          repeat: false
+        context_mapping:
+          message: variable_added
+        context_processors:
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 6a9242e1-41f3-48f1-83a9-2e68433cb5d9
+        weight: -45
+        action_id: rules_page_redirect
+        context_values:
+          url: /passports
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

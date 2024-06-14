@@ -1,0 +1,29 @@
+uuid: 748959cf-32c6-4c99-a823-3f5326f49d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+    - field.storage.block_content.field_node
+    - node.type.passport_reservation
+id: block_content.node_form.field_node
+field_name: field_node
+entity_type: block_content
+bundle: node_form
+label: Node
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      passport_reservation: passport_reservation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

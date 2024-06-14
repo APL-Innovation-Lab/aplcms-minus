@@ -1,0 +1,23 @@
+uuid: f9f662ee-f7b7-4b2d-b66c-8ad7e0d8026c
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_image_attribution_ahc
+field_name: field_image_attribution_ahc
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

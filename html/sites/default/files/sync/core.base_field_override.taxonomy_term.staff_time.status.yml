@@ -1,0 +1,22 @@
+uuid: 854fcaab-5d07-4fd9-96c4-07882a5f0fd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_time
+id: taxonomy_term.staff_time.status
+field_name: status
+entity_type: taxonomy_term
+bundle: staff_time
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

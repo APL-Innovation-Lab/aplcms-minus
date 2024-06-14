@@ -1,0 +1,21 @@
+uuid: 8c0a64b0-2016-4d3a-aa9f-267fbaa38e50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_tell_us_more
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_jp_tell_us_more
+field_name: field_jp_tell_us_more
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Tell us more about your experience!'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

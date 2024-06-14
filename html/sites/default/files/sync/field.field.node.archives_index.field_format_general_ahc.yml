@@ -1,0 +1,19 @@
+uuid: ffac8624-8d74-4936-a655-678f05a43581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_general_ahc
+    - node.type.archives_index
+id: node.archives_index.field_format_general_ahc
+field_name: field_format_general_ahc
+entity_type: node
+bundle: archives_index
+label: 'Format General AHC'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

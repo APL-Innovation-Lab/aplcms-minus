@@ -1,0 +1,18 @@
+uuid: 868bfe29-3880-4ea5-bef2-09294e9f62ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.title
+field_name: title
+entity_type: node
+bundle: room_reservation
+label: Topic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

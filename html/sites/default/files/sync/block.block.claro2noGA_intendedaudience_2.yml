@@ -1,0 +1,28 @@
+uuid: 8c9c04c4-9747-4242-8bc6-d04851d60380
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience___
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_intendedaudience_2
+theme: claro2noGA
+region: content
+weight: -19
+provider: null
+plugin: 'facet_block:intended_audience___'
+settings:
+  id: 'facet_block:intended_audience___'
+  label: 'APL Events'
+  label_display: visible
+  provider: facets
+  block_id: intendedaudience_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events

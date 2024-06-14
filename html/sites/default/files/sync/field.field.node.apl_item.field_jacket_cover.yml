@@ -1,0 +1,19 @@
+uuid: 3a61521d-c3bf-4036-b73c-1416ea9958b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jacket_cover
+    - node.type.apl_item
+id: node.apl_item.field_jacket_cover
+field_name: field_jacket_cover
+entity_type: node
+bundle: apl_item
+label: 'Jacket Cover'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

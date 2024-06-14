@@ -1,0 +1,27 @@
+uuid: d4a49b3a-c85d-4ef5-a4db-bf1a2262e1bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zines_files
+    - node.type.zine
+  module:
+    - file
+id: node.zine.field_zines_files
+field_name: field_zines_files
+entity_type: node
+bundle: zine
+label: 'Files / Archivos'
+description: 'Select a file, click the "Upload" button, and add a Description. Then you will be given the option to upload additional files. / Escoja un archivo, haga clic en el botón "Upload" y añada una “Descripción”. Luego, se le dará la opción de subir archivos adicionales.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: zine
+  file_extensions: 'png gif jpg jpeg pdf doc docx txt mp3 mp4'
+  max_filesize: ''
+  description_field: true
+field_type: file

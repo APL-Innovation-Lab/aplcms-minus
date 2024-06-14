@@ -1,0 +1,56 @@
+uuid: 7b92c27a-0289-4f57-a3b0-171bbdcd5096
+langcode: eng
+status: true
+dependencies: {  }
+id: after_new_book_a_librarian
+label: 'after new Book a Librarian'
+events:
+  -
+    event_name: 'rules_entity_insert:webform_submission--book_a_librarian'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: e0c04009-2234-4d90-83c3-92bb07ce1f3a
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 0140cd93-d9ae-439e-af2d-0e1dd2472293
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: e61d08d3-dc84-4b1c-8504-b094b2b55678
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 6b8be385-65d4-4cb5-8ec1-69430f739b8f
+        weight: -50
+        action_id: rules_system_message
+        context_values:
+          message: 'Thank you for Booking a Librarian.'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 7143e7c7-7196-4035-a0e5-e5391d1037b3
+        weight: -49
+        action_id: rules_page_redirect
+        context_values:
+          url: /book-a-librarian
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

@@ -1,0 +1,17 @@
+uuid: b9871612-0bed-4af1-a4ca-ba96f00446d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Keyword Match'
+type: keyword_match
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

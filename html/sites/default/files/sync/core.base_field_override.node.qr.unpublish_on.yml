@@ -1,0 +1,18 @@
+uuid: 22bf029e-4069-4d9b-9e3e-fd92f8640f00
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: qr
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

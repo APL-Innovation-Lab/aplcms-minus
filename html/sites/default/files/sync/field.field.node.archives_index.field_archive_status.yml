@@ -1,0 +1,21 @@
+uuid: 6e1e10f5-bde8-4b8b-8f8b-fd4cd6865c0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive_status
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_archive_status
+field_name: field_archive_status
+entity_type: node
+bundle: archives_index
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,132 @@
+uuid: cce7decf-87ee-4eeb-a288-9409100ffb1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.keyword_match.title
+    - field.field.node.keyword_match.field_link_type
+    - field.field.node.keyword_match.field_search_terms
+    - field.field.node.keyword_match.field_url_for_match
+    - node.type.keyword_match
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      f2098c5f-6bab-46a4-bb23-ed78329139da:
+        text: eng
+        uuid: f2098c5f-6bab-46a4-bb23-ed78329139da
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: keyword_match
+label: 'Keyword Match'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: keyword_match
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_link_type:
+    value: field_link_type
+    label: field_link_type
+    machine_name: field_link_type
+    type: csv
+  field_search_terms:
+    value: field_search_terms
+    label: field_search_terms
+    machine_name: field_search_terms
+    type: csv
+  field_url_for_match:
+    value: field_url_for_match
+    label: field_url_for_match
+    machine_name: field_url_for_match
+    type: csv
+  search_terms:
+    value: search_terms
+    label: search_terms
+    machine_name: search_terms
+    type: csv
+  url_for_match:
+    value: url_for_match
+    label: url_for_match
+    machine_name: url_for_match
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_link_type
+    map:
+      value: field_link_type
+    settings:
+      language: null
+  -
+    target: field_search_terms
+    map:
+      value: search_terms
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_url_for_match
+    map:
+      value: url_for_match
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

@@ -1,0 +1,25 @@
+uuid: 93b6ee28-fb0d-4d2c-83bc-2f78b03add05
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - uswds
+id: uswds_languageswitcher
+theme: uswds
+region: header
+weight: -18
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/add/*\r\n/feed/*\r\n/apltv/*\r\n/admin/*\r\n/passport/calendar\r\n/special/*\r\n/sequence/*"

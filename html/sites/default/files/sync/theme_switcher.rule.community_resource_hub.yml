@@ -1,0 +1,16 @@
+uuid: be0148e5-0379-46c4-b134-1a7f2a27af1f
+langcode: eng
+status: false
+dependencies:
+  module:
+    - system
+id: community_resource_hub
+label: community-resource-hub
+weight: 4
+theme: uswds
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /community-resource-hub

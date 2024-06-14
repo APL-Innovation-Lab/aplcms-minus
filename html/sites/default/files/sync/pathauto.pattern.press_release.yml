@@ -1,0 +1,22 @@
+uuid: 246a5b5f-e50a-42b8-b928-459106b9c71f
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: press_release
+label: News
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  c038a4ac-d95e-47ff-913e-55121852e271:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c038a4ac-d95e-47ff-913e-55121852e271
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 6a994f8f-12ba-4609-9f69-85c6f0a0aafa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.menu_link
+field_name: menu_link
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

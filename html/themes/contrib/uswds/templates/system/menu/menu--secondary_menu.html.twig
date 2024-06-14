@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Override of system/menu.html.twig for the secondary menu.
+ */
+#}
+
+{% if items %}
+<ul class="usa-nav__secondary-links">
+{% for item in items %}
+  <li class="usa-nav__secondary-item">
+    <a href="{{ item.url }}"{% if item.in_active_trail %} class="usa-current"{% endif %}>
+      {{ item.title }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+{% endif %}

@@ -1,0 +1,58 @@
+uuid: 16df50dd-2a0e-4d71-8d99-4d2c271e5135
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_rec_theme
+field_name: field_rec_theme
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Black
+      label: '<span class="Black">Black</span>'
+    -
+      value: Blue
+      label: '<span class="Blue">Blue</span>'
+    -
+      value: 'Dark Green'
+      label: '<span class="Dark Green">Dark Green</span>'
+    -
+      value: Gray
+      label: '<span class="Gray">Gray</span>'
+    -
+      value: Green
+      label: '<span class="Green">Green</span>'
+    -
+      value: Lavender
+      label: '<span class="Lavender">Lavender</span>'
+    -
+      value: 'Light Blue'
+      label: '<span class="Light Blue">Light Blue</span>'
+    -
+      value: Orange
+      label: '<span class="Orange">Orange</span>'
+    -
+      value: Pink
+      label: '<span class="Pink">Pink</span>'
+    -
+      value: Purple
+      label: '<span class="Purple">Purple</span>'
+    -
+      value: Yellow
+      label: '<span class="Yellow">Yellow</span>'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

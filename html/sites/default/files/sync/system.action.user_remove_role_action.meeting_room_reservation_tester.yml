@@ -1,0 +1,14 @@
+uuid: e9f570be-3cea-4139-9632-064c5272e89c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.meeting_room_reservation_tester
+  module:
+    - user
+id: user_remove_role_action.meeting_room_reservation_tester
+label: 'Remove the Meeting Room Reservation tester role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: meeting_room_reservation_tester

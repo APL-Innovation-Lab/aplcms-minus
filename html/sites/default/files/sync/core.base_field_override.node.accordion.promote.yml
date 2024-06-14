@@ -1,0 +1,22 @@
+uuid: e891e2d2-4c08-43da-bd39-5e703f87ab4a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.promote
+field_name: promote
+entity_type: node
+bundle: accordion
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

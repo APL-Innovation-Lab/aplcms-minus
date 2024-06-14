@@ -1,0 +1,23 @@
+uuid: 8a9597e6-f4ee-436f-b528-a2a58fc85a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.apltv_recommendation_slide
+  module:
+    - feeds
+id: node.apltv_recommendation_slide.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

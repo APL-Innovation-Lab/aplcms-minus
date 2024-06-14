@@ -1,0 +1,30 @@
+uuid: ed522839-c75c-4af6-a441-848420342c43
+langcode: eng
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_uniquechat
+theme: claro2noGA
+region: content_footer
+weight: -27
+provider: null
+plugin: 'block_content:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+settings:
+  id: 'block_content:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+  label: UniqueChat
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/*\r\n/community-resource-hub\r\n/user/*\r\n/ahc/*\r\n/sequence/*\r\n/apltv/*\r\n/images-inventory"

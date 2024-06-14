@@ -1,0 +1,7 @@
+
+name: 'Migrate Accordion IDs'
+type: module
+description: 'A module to migrate accordion IDs.'
+package: Custom
+version: '1.0'
+core_version_requirement: ^8 || ^9

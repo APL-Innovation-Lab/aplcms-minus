@@ -1,0 +1,41 @@
+body fieldset legend .fieldset-legend {
+	padding: 0 !important;
+}
+.description {
+	margin-top: 10px;
+}
+.field--type-string {
+	margin-bottom: 25px !important;
+}
+
+.usa-form-group.js-form-item.form-item.js-form-type-vertical-tabs.form-item-.js-form-item-.form-no-label {
+	display: none;
+}
+#edit-actions {
+	margin-top: 20px;
+}
+
+.usa-alert__body .item-list li a {
+	border: none;
+	padding: 0;
+	display: inline;
+}
+
+.usa-alert--info::before {
+	background: none;
+	-webkit-mask: none;
+	mask: none;
+}
+
+.usa-alert--info {
+	background-color: white;
+	border: none;
+}
+
+.usa-alert--info .usa-alert__body {
+	padding-left: 0;
+}
+
+h1 {
+	margin: 0 !important;
+}

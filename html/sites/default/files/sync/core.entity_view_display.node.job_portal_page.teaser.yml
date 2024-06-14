@@ -1,0 +1,70 @@
+uuid: 98c750f5-a593-4dbb-ba5a-a3310a64e203
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_portal_page.body
+    - field.field.node.job_portal_page.feeds_item
+    - field.field.node.job_portal_page.field_do_not_index
+    - field.field.node.job_portal_page.field_main_image_jp
+    - field.field.node.job_portal_page.layout_builder__layout
+    - node.type.job_portal_page
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          0e3836a8-6480-483b-bd94-16ba4527cf85:
+            uuid: 0e3836a8-6480-483b-bd94-16ba4527cf85
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.job_portal_page.teaser
+targetEntityType: node
+bundle: job_portal_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_do_not_index: true
+  field_main_image_jp: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

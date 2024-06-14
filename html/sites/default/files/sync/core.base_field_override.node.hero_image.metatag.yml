@@ -1,0 +1,18 @@
+uuid: f66267bd-05b2-4a9c-a7ff-dee1d922a039
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hero_image
+id: node.hero_image.metatag
+field_name: metatag
+entity_type: node
+bundle: hero_image
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

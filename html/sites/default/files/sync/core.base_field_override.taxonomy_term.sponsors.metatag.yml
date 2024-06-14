@@ -1,0 +1,18 @@
+uuid: 1a00e418-7073-4697-9857-ba7f6c286b3a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsors
+id: taxonomy_term.sponsors.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: sponsors
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

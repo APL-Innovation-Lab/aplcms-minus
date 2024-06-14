@@ -1,0 +1,18 @@
+uuid: 334b9a0c-90b6-40a9-9a40-61b66d62a521
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.metatag
+field_name: metatag
+entity_type: node
+bundle: bookstore_page
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

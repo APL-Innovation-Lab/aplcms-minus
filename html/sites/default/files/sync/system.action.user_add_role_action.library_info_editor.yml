@@ -1,0 +1,14 @@
+uuid: 8aa8b860-6e1e-410e-8901-2e5bc3f5b58a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.library_info_editor
+  module:
+    - user
+id: user_add_role_action.library_info_editor
+label: 'Add the Library Info Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: library_info_editor

@@ -1,0 +1,18 @@
+uuid: d97bc1ae-3eed-4a7d-9d05-0fed667cdcf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_craft_material
+id: taxonomy_term.recycled_reads_craft_material.name
+field_name: name
+entity_type: taxonomy_term
+bundle: recycled_reads_craft_material
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

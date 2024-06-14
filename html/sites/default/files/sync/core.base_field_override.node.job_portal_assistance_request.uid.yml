@@ -1,0 +1,20 @@
+uuid: 303485aa-9545-4571-b23e-6cddac2db408
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.uid
+field_name: uid
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

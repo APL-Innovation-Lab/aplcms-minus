@@ -1,0 +1,136 @@
+uuid: fc0c9f94-3e14-41af-b277-27abf4e2ba64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_image.feeds_item
+    - field.field.node.hero_image.field_button_link
+    - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_image_small
+    - field.field.node.hero_image.field_hero_summary
+    - field.field.node.hero_image.field_hero_template
+    - field.field.node.hero_image.field_locations
+    - field.field.node.hero_image.field_slr_time_end
+    - field.field.node.hero_image.field_slr_time_start
+    - image.style.thumbnail
+    - node.type.hero_image
+  module:
+    - datetime
+    - datetimehideseconds
+    - image
+    - link
+    - scheduler
+id: node.hero_image.default
+targetEntityType: node
+bundle: hero_image
+mode: default
+content:
+  field_button_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hero_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_hero_image_small:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_hero_summary:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hero_template:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_locations:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_slr_time_end:
+    type: datetime_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings:
+      datetimehideseconds:
+        hide: true
+  field_slr_time_start:
+    type: datetime_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings:
+      datetimehideseconds:
+        hide: true
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

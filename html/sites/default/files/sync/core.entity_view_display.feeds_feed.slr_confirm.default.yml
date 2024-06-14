@@ -1,0 +1,39 @@
+uuid: 2df63e78-1161-45c7-8996-77b7fec28d5b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.slr_confirm
+  module:
+    - feeds
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components: {  }
+        third_party_settings: {  }
+id: feeds_feed.slr_confirm.default
+targetEntityType: feeds_feed
+bundle: slr_confirm
+mode: default
+content:
+  source:
+    type: feeds_uri_link
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  imported: true
+  next: true
+  search_api_excerpt: true

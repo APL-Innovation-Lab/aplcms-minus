@@ -1,0 +1,18 @@
+uuid: 1c14ac62-d61c-4d71-9584-b6eeb1802d9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.public_computer_page
+id: node.public_computer_page.changed
+field_name: changed
+entity_type: node
+bundle: public_computer_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

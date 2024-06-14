@@ -1,0 +1,18 @@
+uuid: 61c1a0eb-268c-4cdb-a777-610846d78235
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.ahc_page
+id: node.ahc_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: ahc_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

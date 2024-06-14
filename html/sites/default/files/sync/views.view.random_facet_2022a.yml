@@ -1,0 +1,1944 @@
+uuid: 4d0d3dfd-24be-4b9d-bc74-8f76bebad16d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_list_category
+    - node.type.apl_item
+    - taxonomy.vocabulary.book_list_categories
+    - taxonomy.vocabulary.intended_audience_2016
+  content:
+    - 'taxonomy_term:book_list_categories:0df00774-e509-4ba3-b7e8-4b9c2bbaf9b9'
+    - 'taxonomy_term:book_list_categories:0e4b61c4-7e8a-46a7-9b52-24b82b6f9589'
+    - 'taxonomy_term:book_list_categories:11269eb1-3f08-4e5d-878d-76834fb234cd'
+    - 'taxonomy_term:book_list_categories:139caf6e-04e2-4b60-b7e2-de4751fba5eb'
+    - 'taxonomy_term:book_list_categories:169520fe-1f4c-464a-a050-bd4db39f43da'
+    - 'taxonomy_term:book_list_categories:16c1b4c9-e61e-4454-97ac-b7b89aaa2f3e'
+    - 'taxonomy_term:book_list_categories:1a0d9681-e576-4390-8967-eb985f78788b'
+    - 'taxonomy_term:book_list_categories:2625fd78-98b2-4914-ab98-77a1747485f6'
+    - 'taxonomy_term:book_list_categories:2746824d-2333-4465-a985-b81a98675353'
+    - 'taxonomy_term:book_list_categories:2778f3f4-596f-43cd-bc01-d7c2a8eff65a'
+    - 'taxonomy_term:book_list_categories:2a3c869d-17bb-44cc-b011-21022ad42b28'
+    - 'taxonomy_term:book_list_categories:2dc4f210-66fc-49d9-828c-081cfdbb7aba'
+    - 'taxonomy_term:book_list_categories:35157cb3-3c39-4214-853e-1886cc342abb'
+    - 'taxonomy_term:book_list_categories:3b7c8f7c-ee59-41a8-a135-eddec5935e63'
+    - 'taxonomy_term:book_list_categories:3fb50c43-30af-4aaa-818e-4efe61b36533'
+    - 'taxonomy_term:book_list_categories:47131d3a-39cc-43ed-a53e-f3ac60120363'
+    - 'taxonomy_term:book_list_categories:4718d82f-602d-424d-b378-e7bc8343c54d'
+    - 'taxonomy_term:book_list_categories:4b8108d2-04c6-4604-a16b-88f46bbb0e07'
+    - 'taxonomy_term:book_list_categories:52a0d77a-1d27-4c9c-a707-d669600c578c'
+    - 'taxonomy_term:book_list_categories:53eaf39a-6c73-4693-8d57-cf33a8b54e83'
+    - 'taxonomy_term:book_list_categories:548c671e-128c-41ae-8694-b209f5522576'
+    - 'taxonomy_term:book_list_categories:57f16f0b-67d0-437c-891c-4b223d2d207a'
+    - 'taxonomy_term:book_list_categories:61a42c0d-eb45-4497-adbb-1f743549d0fe'
+    - 'taxonomy_term:book_list_categories:63a048e0-27b6-4dac-aaf8-a03730756fee'
+    - 'taxonomy_term:book_list_categories:674ab227-6d3f-4a59-834c-ce56ad444bbf'
+    - 'taxonomy_term:book_list_categories:749da4d1-c6da-4cdd-af32-23a040136a68'
+    - 'taxonomy_term:book_list_categories:75fb5c31-98d7-4fb2-87bc-2cfa96a34dd9'
+    - 'taxonomy_term:book_list_categories:7ce24198-8e7f-4e8f-98e1-610fbce3e331'
+    - 'taxonomy_term:book_list_categories:7d5adb48-7765-4a2f-949f-daa4749bb846'
+    - 'taxonomy_term:book_list_categories:8467f3f5-0503-42f2-9d38-5dc1ca2bf2f8'
+    - 'taxonomy_term:book_list_categories:8481ada8-6309-4927-9feb-c53f288755bf'
+    - 'taxonomy_term:book_list_categories:852b8a9f-97d8-4a3d-962a-0f4972feb956'
+    - 'taxonomy_term:book_list_categories:8907e765-fc12-4c60-abec-5fe4be69823d'
+    - 'taxonomy_term:book_list_categories:8caf47cc-c318-4c08-a0ea-f528318f8ac4'
+    - 'taxonomy_term:book_list_categories:918ed2fc-a72e-4a56-a602-34332bb93fcc'
+    - 'taxonomy_term:book_list_categories:9a6983c8-e1cc-4edd-9474-61b6fa22f161'
+    - 'taxonomy_term:book_list_categories:9d411bcb-9415-4366-a162-b13eb281a0be'
+    - 'taxonomy_term:book_list_categories:a0febdeb-89a7-48f1-b3ff-3f3601ac11ca'
+    - 'taxonomy_term:book_list_categories:ae375891-feb5-48a6-a418-48ef5261f4c8'
+    - 'taxonomy_term:book_list_categories:b0d82b54-6357-47be-91d5-ca5f025c910b'
+    - 'taxonomy_term:book_list_categories:b18846ef-251e-42bd-b1a2-c0d283765c51'
+    - 'taxonomy_term:book_list_categories:b3b42e37-8c9e-4bc3-85c5-63b2c65cd405'
+    - 'taxonomy_term:book_list_categories:b4e7fd11-12ee-441c-95c7-f463df3cfba0'
+    - 'taxonomy_term:book_list_categories:bfe144ee-f3a4-4d65-b200-fe0036453438'
+    - 'taxonomy_term:book_list_categories:c2cb4889-a8c3-4ac8-bed2-5d777199a49a'
+    - 'taxonomy_term:book_list_categories:c379d64b-3096-41eb-b3a5-99da18a41d5c'
+    - 'taxonomy_term:book_list_categories:c3c0542a-8062-4d7d-9b2d-aa95d3acfc7e'
+    - 'taxonomy_term:book_list_categories:c54a4b54-7ab6-46b3-ae78-a51b8d8083a2'
+    - 'taxonomy_term:book_list_categories:cc448457-e067-44f5-9d5c-d3b989038931'
+    - 'taxonomy_term:book_list_categories:cc86e2e1-5013-4a13-b40c-21968f45582a'
+    - 'taxonomy_term:book_list_categories:cd101ec2-f775-4931-9977-a8e95d7dc2a1'
+    - 'taxonomy_term:book_list_categories:ced80690-d9fd-40a9-a80c-9194ddc15448'
+    - 'taxonomy_term:book_list_categories:dd022343-fcce-40fb-9eaf-2d96f8dd632e'
+    - 'taxonomy_term:book_list_categories:de239c09-24e0-4e6b-8306-07803a29b97c'
+    - 'taxonomy_term:book_list_categories:dee69e4a-800a-42e8-9722-e8a5d58534d9'
+    - 'taxonomy_term:book_list_categories:e0caedf7-7f36-4ec8-b6ac-458ad2a977a0'
+    - 'taxonomy_term:book_list_categories:e2304a89-2014-4411-80a7-064743f44ffc'
+    - 'taxonomy_term:book_list_categories:ea4195d9-8c5a-4e0d-9df9-1d4a61c2238b'
+    - 'taxonomy_term:book_list_categories:ed308d0b-9438-469b-9aee-524534d97e54'
+    - 'taxonomy_term:book_list_categories:eed7c794-6ed0-4924-9695-d0bfbf3ca8e7'
+    - 'taxonomy_term:book_list_categories:f035b27b-6d1a-4358-8195-f33b6c375f41'
+    - 'taxonomy_term:book_list_categories:f11b0297-0983-4164-8949-b44d55a08ce1'
+    - 'taxonomy_term:book_list_categories:f1fb14bd-896b-4b33-9267-500c809f2417'
+    - 'taxonomy_term:book_list_categories:f9b05471-c78e-46b3-9eca-75d6c3750811'
+    - 'taxonomy_term:book_list_categories:f9b62bf1-4fed-482a-a3ab-283de3454cd1'
+    - 'taxonomy_term:book_list_categories:fc63b504-5f9a-4825-807c-24a3e36e7cb1'
+    - 'taxonomy_term:intended_audience_2016:63facc60-7dc3-4f5b-804b-d53c9280786d'
+    - 'taxonomy_term:intended_audience_2016:9f499d49-324e-4258-9250-541adceb090b'
+    - 'taxonomy_term:intended_audience_2016:e54083de-d0b5-4adb-a3a8-094c0cf25dde'
+    - 'taxonomy_term:intended_audience_2016:e7d2f0b1-a9a4-42f5-bd49-13fea11e56b3'
+  module:
+    - node
+    - taxonomy
+    - user
+id: random_facet_2022a
+label: 'Random Facet 2022'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: ''
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_item_list_category:
+          id: field_item_list_category
+          table: node__field_item_list_category
+          field: field_item_list_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_id
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: true
+          delta_first_last: false
+          multi_type: separator
+          separator: ''
+          field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% set myid = field_item_list_category|render|striptags|spaceless %}\r\n{{ drupal_view('apl_item_carousels_2022', 'block_2', myid) }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: time
+        options:
+          results_lifespan: 300
+          results_lifespan_custom: 0
+          output_lifespan: 300
+          output_lifespan_custom: 0
+      empty: {  }
+      sorts:
+        random:
+          id: random
+          table: views
+          field: random
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: random
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: random
+          exposed: false
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            apl_item: apl_item
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_item_list_category_target_id:
+          id: field_item_list_category_target_id
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 3512
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_intended_audience_2016i_target_id:
+          id: field_intended_audience_2016i_target_id
+          table: node__field_intended_audience_2016i
+          field: field_intended_audience_2016i_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3308: 3308
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience_2016
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_1:
+          id: field_item_list_category_target_id_1
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3332: 3332
+            3493: 3493
+            4405: 4405
+            5034: 5034
+            3407: 3407
+            5020: 5020
+            3317: 3317
+            4735: 4735
+            5019: 5019
+            3337: 3337
+            3328: 3328
+            3443: 3443
+            3329: 3329
+            4996: 4996
+            3424: 3424
+            129: 129
+            3311: 3311
+            5039: 5039
+            3339: 3339
+            3340: 3340
+            3343: 3343
+            3312: 3312
+            3315: 3315
+            3425: 3425
+            130: 130
+            3445: 3445
+            3444: 3444
+            3608: 3608
+            3341: 3341
+            3431: 3431
+            3962: 3962
+            3965: 3965
+            3314: 3314
+            3446: 3446
+            4406: 4406
+            3320: 3320
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_2:
+          id: field_item_list_category_target_id_2
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            3682: 3682
+            4731: 4731
+            3369: 3369
+            3387: 3387
+            4113: 4113
+            4504: 4504
+            4893: 4893
+            3517: 3517
+            4735: 4735
+            3418: 3418
+            3512: 3512
+            3467: 3467
+            3367: 3367
+            3357: 3357
+            3358: 3358
+            3468: 3468
+            3469: 3469
+            3505: 3505
+            3470: 3470
+            3471: 3471
+            3630: 3630
+            3472: 3472
+            3473: 3473
+            3625: 3625
+            3623: 3623
+            3624: 3624
+            3488: 3488
+            5029: 5029
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: default
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_item_list_category'
+  adult:
+    id: adult
+    display_title: 'Random Adult Facet'
+    display_plugin: block
+    position: 1
+    display_options:
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            apl_item: apl_item
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_item_list_category_target_id:
+          id: field_item_list_category_target_id
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 3512
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_intended_audience_2016i_target_id:
+          id: field_intended_audience_2016i_target_id
+          table: node__field_intended_audience_2016i
+          field: field_intended_audience_2016i_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3308: 3308
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience_2016
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_1:
+          id: field_item_list_category_target_id_1
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3332: 3332
+            3493: 3493
+            4405: 4405
+            5034: 5034
+            3407: 3407
+            5020: 5020
+            3317: 3317
+            4735: 4735
+            5019: 5019
+            3337: 3337
+            3328: 3328
+            3443: 3443
+            3329: 3329
+            4996: 4996
+            3424: 3424
+            129: 129
+            3311: 3311
+            5039: 5039
+            3339: 3339
+            3340: 3340
+            3343: 3343
+            3312: 3312
+            3315: 3315
+            3425: 3425
+            130: 130
+            3445: 3445
+            3444: 3444
+            3608: 3608
+            3341: 3341
+            3431: 3431
+            3962: 3962
+            3965: 3965
+            3314: 3314
+            3446: 3446
+            4406: 4406
+            3320: 3320
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_2:
+          id: field_item_list_category_target_id_2
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            3682: 3682
+            4731: 4731
+            3369: 3369
+            3387: 3387
+            4113: 4113
+            4504: 4504
+            4893: 4893
+            3517: 3517
+            4735: 4735
+            3418: 3418
+            3512: 3512
+            3467: 3467
+            3367: 3367
+            3357: 3357
+            3343: 3343
+            3358: 3358
+            3468: 3468
+            3469: 3469
+            3505: 3505
+            3470: 3470
+            3471: 3471
+            3630: 3630
+            3472: 3472
+            3473: 3473
+            3625: 3625
+            3623: 3623
+            3624: 3624
+            3488: 3488
+            5029: 5029
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_exclude_from_we_recommend_value:
+          id: field_exclude_from_we_recommend_value
+          table: node__field_exclude_from_we_recommend
+          field: field_exclude_from_we_recommend_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '!='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_item_list_category'
+  block_1:
+    id: block_1
+    display_title: 'Random Youth Facet'
+    display_plugin: block
+    position: 1
+    display_options:
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            apl_item: apl_item
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_item_list_category_target_id:
+          id: field_item_list_category_target_id
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 3512
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_intended_audience_2016i_target_id:
+          id: field_intended_audience_2016i_target_id
+          table: node__field_intended_audience_2016i
+          field: field_intended_audience_2016i_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3306: 3306
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience_2016
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_1:
+          id: field_item_list_category_target_id_1
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3332: 3332
+            3493: 3493
+            4405: 4405
+            5034: 5034
+            3407: 3407
+            4731: 4731
+            3317: 3317
+            3517: 3517
+            3443: 3443
+            3418: 3418
+            3424: 3424
+            129: 129
+            3311: 3311
+            3339: 3339
+            3340: 3340
+            3343: 3343
+            3312: 3312
+            3315: 3315
+            3425: 3425
+            130: 130
+            3445: 3445
+            1604: 1604
+            3444: 3444
+            3341: 3341
+            3431: 3431
+            3962: 3962
+            3965: 3965
+            3314: 3314
+            3446: 3446
+            5029: 5029
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_2:
+          id: field_item_list_category_target_id_2
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            3682: 3682
+            3369: 3369
+            3387: 3387
+            4113: 4113
+            4504: 4504
+            4893: 4893
+            5020: 5020
+            4735: 4735
+            5019: 5019
+            3329: 3329
+            4996: 4996
+            3512: 3512
+            3465: 3465
+            3467: 3467
+            3401: 3401
+            3357: 3357
+            3358: 3358
+            3468: 3468
+            3469: 3469
+            3470: 3470
+            3471: 3471
+            3630: 3630
+            3472: 3472
+            3473: 3473
+            3625: 3625
+            3623: 3623
+            3624: 3624
+            3488: 3488
+            3320: 3320
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_exclude_from_we_recommend_value:
+          id: field_exclude_from_we_recommend_value
+          table: node__field_exclude_from_we_recommend
+          field: field_exclude_from_we_recommend_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '!='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_item_list_category'
+  block_2:
+    id: block_2
+    display_title: 'Random Spanish Facet'
+    display_plugin: block
+    position: 1
+    display_options:
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_item_list_category:
+          id: field_item_list_category
+          table: node__field_item_list_category
+          field: field_item_list_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '3682'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_id
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: false
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: true
+          delta_first_last: false
+          multi_type: separator
+          separator: ''
+          field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% set myid = field_item_list_category|render|striptags|spaceless %}\r\n{{ drupal_view('apl_item_carousels_2022', 'block_2_spanish', myid) }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            apl_item: apl_item
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_item_list_category_target_id:
+          id: field_item_list_category_target_id
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 3512
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_intended_audience_2016i_target_id:
+          id: field_intended_audience_2016i_target_id
+          table: node__field_intended_audience_2016i
+          field: field_intended_audience_2016i_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3309: 3309
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience_2016
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_exclude_from_we_recommend_value:
+          id: field_exclude_from_we_recommend_value
+          table: node__field_exclude_from_we_recommend
+          field: field_exclude_from_we_recommend_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '!='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_item_list_category'
+  block_3:
+    id: block_3
+    display_title: 'Random Teen Facet'
+    display_plugin: block
+    position: 1
+    display_options:
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            apl_item: apl_item
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_item_list_category_target_id:
+          id: field_item_list_category_target_id
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 3512
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_intended_audience_2016i_target_id:
+          id: field_intended_audience_2016i_target_id
+          table: node__field_intended_audience_2016i
+          field: field_intended_audience_2016i_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3307: 3307
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience_2016
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_1:
+          id: field_item_list_category_target_id_1
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3332: 3332
+            3493: 3493
+            4405: 4405
+            5034: 5034
+            3407: 3407
+            5020: 5020
+            3317: 3317
+            4735: 4735
+            5019: 5019
+            3337: 3337
+            3328: 3328
+            3443: 3443
+            3329: 3329
+            4996: 4996
+            3424: 3424
+            129: 129
+            3311: 3311
+            5039: 5039
+            3339: 3339
+            3340: 3340
+            3343: 3343
+            3312: 3312
+            3315: 3315
+            3425: 3425
+            130: 130
+            3445: 3445
+            3444: 3444
+            3608: 3608
+            3341: 3341
+            3431: 3431
+            3962: 3962
+            3965: 3965
+            3314: 3314
+            3446: 3446
+            4406: 4406
+            3320: 3320
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_item_list_category_target_id_2:
+          id: field_item_list_category_target_id_2
+          table: node__field_item_list_category
+          field: field_item_list_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            3682: 3682
+            3407: 3407
+            4731: 4731
+            3369: 3369
+            3387: 3387
+            4113: 4113
+            4504: 4504
+            4893: 4893
+            3517: 3517
+            4735: 4735
+            3418: 3418
+            3512: 3512
+            3467: 3467
+            3367: 3367
+            3357: 3357
+            3343: 3343
+            3358: 3358
+            3468: 3468
+            3469: 3469
+            3505: 3505
+            3470: 3470
+            3471: 3471
+            3630: 3630
+            3472: 3472
+            3473: 3473
+            3625: 3625
+            3623: 3623
+            3624: 3624
+            3488: 3488
+            5029: 5029
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: book_list_categories
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_item_list_category'

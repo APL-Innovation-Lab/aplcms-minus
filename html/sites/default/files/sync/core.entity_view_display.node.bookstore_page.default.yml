@@ -1,0 +1,165 @@
+uuid: 35628e9e-32c7-4b26-a29a-099deff28079
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.bookstore_page.title
+    - field.field.node.bookstore_page.body
+    - field.field.node.bookstore_page.feeds_item
+    - field.field.node.bookstore_page.field_main_image
+    - node.type.bookstore_page
+    - views.view.navigation
+    - views.view.open_hours
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 25-75
+          context_mapping: {  }
+        components:
+          f14ba94c-c280-4dcd-a45c-1f5d59f71e58:
+            uuid: f14ba94c-c280-4dcd-a45c-1f5d59f71e58
+            region: second
+            configuration:
+              id: 'field_block:node:bookstore_page:field_main_image'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1ef04f90-c1e9-47b3-83b2-dd993c6ff1aa:
+            uuid: 1ef04f90-c1e9-47b3-83b2-dd993c6ff1aa
+            region: first
+            configuration:
+              id: 'views_block:navigation-block_10'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          99e8ebba-d113-4793-a312-283adc45158d:
+            uuid: 99e8ebba-d113-4793-a312-283adc45158d
+            region: first
+            configuration:
+              id: 'views_block:open_hours-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          db7b7c55-4048-4afc-a6d6-6dcb07b05528:
+            uuid: db7b7c55-4048-4afc-a6d6-6dcb07b05528
+            region: second
+            configuration:
+              id: 'field_block:node:bookstore_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2e922219-4bc0-491a-80d6-c66e16a13fba:
+            uuid: 2e922219-4bc0-491a-80d6-c66e16a13fba
+            region: second
+            configuration:
+              id: 'field_block:node:bookstore_page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          99b1dad5-5a91-4bd2-9610-7583cec6c740:
+            uuid: 99b1dad5-5a91-4bd2-9610-7583cec6c740
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:bookstore_page:field_main_image'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.bookstore_page.default
+targetEntityType: node
+bundle: bookstore_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

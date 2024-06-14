@@ -1,0 +1,20 @@
+uuid: bb1984da-dc65-4bc3-a32b-6b89a1e39354
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+  module:
+    - path
+id: node.volunteer.path
+field_name: path
+entity_type: node
+bundle: volunteer
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

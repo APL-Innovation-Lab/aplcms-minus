@@ -1,0 +1,18 @@
+uuid: 43e77580-9ebb-4766-a4a3-ba214bdad6b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+id: node.volunteer.title
+field_name: title
+entity_type: node
+bundle: volunteer
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

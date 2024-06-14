@@ -1,0 +1,18 @@
+uuid: 36012c6e-feda-488b-bc16-81aa23d30dee
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.publish_on
+field_name: publish_on
+entity_type: node
+bundle: archives_index
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

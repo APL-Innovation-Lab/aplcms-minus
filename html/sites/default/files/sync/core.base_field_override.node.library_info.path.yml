@@ -1,0 +1,20 @@
+uuid: cefff39f-5d61-4890-a95a-edca9c893383
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.library_info
+  module:
+    - path
+id: node.library_info.path
+field_name: path
+entity_type: node
+bundle: library_info
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

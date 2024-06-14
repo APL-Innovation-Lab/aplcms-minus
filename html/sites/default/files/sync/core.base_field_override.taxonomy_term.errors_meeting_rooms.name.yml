@@ -1,0 +1,18 @@
+uuid: 62b81924-c883-472f-9e75-4ee1f3317bf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.errors_meeting_rooms
+id: taxonomy_term.errors_meeting_rooms.name
+field_name: name
+entity_type: taxonomy_term
+bundle: errors_meeting_rooms
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

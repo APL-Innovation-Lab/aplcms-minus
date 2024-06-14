@@ -1,0 +1,60 @@
+uuid: 09b3d164-b092-45a0-93d1-0d265352455d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_cat_hierarchy
+    - field.field.taxonomy_term.event_tags.field_is_an_event_category
+    - field.field.taxonomy_term.event_tags.field_library_priority
+    - field.field.taxonomy_term.event_tags.field_main_image_event
+    - field.field.taxonomy_term.event_tags.field_recommended_ages
+    - field.field.taxonomy_term.event_tags.field_ref_event_category
+    - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_summary
+    - field.field.taxonomy_term.event_tags.field_term_subtitle
+    - field.field.taxonomy_term.event_tags.layout_builder__layout
+    - taxonomy.vocabulary.event_tags
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: taxonomy_term.event_tags.teaser
+targetEntityType: taxonomy_term
+bundle: event_tags
+mode: teaser
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_cat_hierarchy: true
+  field_is_an_event_category: true
+  field_library_priority: true
+  field_main_image_event: true
+  field_recommended_ages: true
+  field_ref_event_category: true
+  field_reflection_category: true
+  field_summary: true
+  field_term_subtitle: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

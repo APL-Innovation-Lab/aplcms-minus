@@ -1,0 +1,21 @@
+uuid: 5558bdb4-6da6-4927-9c0b-ea8188159998
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hours_more_info
+    - node.type.open_hours
+  module:
+    - text
+id: node.open_hours.field_hours_more_info
+field_name: field_hours_more_info
+entity_type: node
+bundle: open_hours
+label: 'More Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

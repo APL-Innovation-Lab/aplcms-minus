@@ -1,0 +1,5 @@
+name: Langcode Updater
+type: module
+description: Updates language codes of nodes from "eng" to "en".
+core_version_requirement: ^8 || ^9
+package: Custom

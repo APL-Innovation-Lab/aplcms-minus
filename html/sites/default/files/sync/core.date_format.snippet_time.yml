@@ -1,0 +1,8 @@
+uuid: 0f1211b2-553f-48b8-b5dc-773e176c4d47
+langcode: en
+status: true
+dependencies: {  }
+id: snippet_time
+label: 'Snippet Time'
+locked: false
+pattern: 'g:i A'

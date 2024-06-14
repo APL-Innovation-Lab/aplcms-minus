@@ -1,0 +1,18 @@
+uuid: 5052b06f-5068-4e9e-a40e-a6890db9eb3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_section
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.workbench_section
+target_entity_type_id: taxonomy_term
+target_bundle: workbench_section
+default_langcode: site_default
+language_alterable: false

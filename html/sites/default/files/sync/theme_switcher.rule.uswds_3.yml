@@ -1,0 +1,16 @@
+uuid: 9a1b2629-1e4f-4578-992f-b49e4dd41102
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: uswds_3
+label: 'USWDS 3'
+weight: 1
+theme: uswds_base
+admin_theme: uswds_base
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/theme/*\r\n/app/*"

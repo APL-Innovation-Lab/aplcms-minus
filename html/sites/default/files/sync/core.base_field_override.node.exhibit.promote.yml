@@ -1,0 +1,22 @@
+uuid: cea3d857-40bb-444a-8254-5ce4641849c6
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+id: node.exhibit.promote
+field_name: promote
+entity_type: node
+bundle: exhibit
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 99d8535f-c959-4309-bca4-6f9daec97bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.changed
+field_name: changed
+entity_type: node
+bundle: ahc_protests
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

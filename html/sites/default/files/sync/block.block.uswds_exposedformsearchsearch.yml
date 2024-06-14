@@ -1,0 +1,28 @@
+uuid: 913a0ab0-058b-4726-b468-7fc6f9df520d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: uswds_exposedformsearchsearch
+theme: uswds
+region: content
+weight: 1
+provider: null
+plugin: 'views_exposed_filter_block:search-search'
+settings:
+  id: 'views_exposed_filter_block:search-search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

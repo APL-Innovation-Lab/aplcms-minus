@@ -1,0 +1,21 @@
+uuid: 067f7a7d-4bb6-4c83-9dee-6f401093df93
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.exhibit
+  module:
+    - datetime
+id: node.exhibit.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: exhibit
+label: 'Time Start'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

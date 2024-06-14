@@ -1,0 +1,14 @@
+uuid: cb31f264-40d9-40d8-b949-30dd27fbc03a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gift_shop_page_editor
+  module:
+    - user
+id: user_remove_role_action.gift_shop_page_editor
+label: 'Remove the Gift Shop Page Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gift_shop_page_editor

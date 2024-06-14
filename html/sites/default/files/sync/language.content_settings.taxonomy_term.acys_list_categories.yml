@@ -1,0 +1,18 @@
+uuid: 4873427d-056c-42aa-a844-32a67e644d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acys_list_categories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.acys_list_categories
+target_entity_type_id: taxonomy_term
+target_bundle: acys_list_categories
+default_langcode: site_default
+language_alterable: false

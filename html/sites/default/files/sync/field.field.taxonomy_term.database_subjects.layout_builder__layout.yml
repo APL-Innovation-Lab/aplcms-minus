@@ -1,0 +1,21 @@
+uuid: a6d53279-3de9-492d-bff7-939d854092d4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - layout_builder
+id: taxonomy_term.database_subjects.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: database_subjects
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

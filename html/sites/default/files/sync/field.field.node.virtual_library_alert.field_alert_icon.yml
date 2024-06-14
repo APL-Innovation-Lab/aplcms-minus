@@ -1,0 +1,23 @@
+uuid: e4083807-63c0-435a-be7b-07be50aafd98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alert_icon
+    - node.type.virtual_library_alert
+  module:
+    - options
+id: node.virtual_library_alert.field_alert_icon
+field_name: field_alert_icon
+entity_type: node
+bundle: virtual_library_alert
+label: Icon
+description: 'Select any icon from this list, or use the following text field to add an icon keyword, such as "lens_blur", from <a href="https://fonts.google.com/icons" target="_blank">this set of icons</a>.'
+required: false
+translatable: false
+default_value:
+  -
+    value: warning
+default_value_callback: ''
+settings: {  }
+field_type: list_string

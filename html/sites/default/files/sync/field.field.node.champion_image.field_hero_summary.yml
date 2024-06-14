@@ -1,0 +1,19 @@
+uuid: 5090343b-167b-45bb-aed2-9788a9eae96c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_summary
+    - node.type.champion_image
+id: node.champion_image.field_hero_summary
+field_name: field_hero_summary
+entity_type: node
+bundle: champion_image
+label: 'Champion Summary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

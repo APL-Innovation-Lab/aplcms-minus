@@ -1,0 +1,23 @@
+uuid: 789fcab2-6200-443e-90d2-e0528b9fc78d
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_about_exhibit
+field_name: field_about_exhibit
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

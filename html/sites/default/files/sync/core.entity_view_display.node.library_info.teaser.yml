@@ -1,0 +1,70 @@
+uuid: 1598a22e-e843-4a63-871e-013e64336aac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.library_info.body
+    - field.field.node.library_info.feeds_item
+    - field.field.node.library_info.field_main_image
+    - field.field.node.library_info.field_pdf
+    - field.field.node.library_info.layout_builder__layout
+    - node.type.library_info
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          a345e73f-d59c-4f7d-bf9f-68ee3a35dc84:
+            uuid: a345e73f-d59c-4f7d-bf9f-68ee3a35dc84
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_9'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.library_info.teaser
+targetEntityType: node
+bundle: library_info
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image: true
+  field_pdf: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

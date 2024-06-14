@@ -1,0 +1,28 @@
+uuid: c8f794ad-34b9-433a-9148-09d01767ca5f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_intendedaudience2
+theme: uswds
+region: content
+weight: -26
+provider: null
+plugin: 'facet_block:intended_audience'
+settings:
+  id: 'facet_block:intended_audience'
+  label: 'Intended Audience 2'
+  label_display: '0'
+  provider: facets
+  block_id: intendedaudience2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /recommended/titles/covers

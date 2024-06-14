@@ -1,0 +1,30 @@
+uuid: 016e3579-9ef9-4b4f-89ea-23c2952a0415
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds
+id: uswds_askalibrarianchatwidget
+theme: uswds
+region: header_top
+weight: -22
+provider: null
+plugin: 'block_content:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+settings:
+  id: 'block_content:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+  label: 'Ask a Librarian Chat Widget'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/2user/*\r\n/2admin/*"

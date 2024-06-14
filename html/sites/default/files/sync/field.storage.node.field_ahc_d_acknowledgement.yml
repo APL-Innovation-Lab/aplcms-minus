@@ -1,0 +1,22 @@
+uuid: 194f7e01-35f3-48ef-b0c4-c30a766502c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_ahc_d_acknowledgement
+field_name: field_ahc_d_acknowledgement
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: a59362dc-7b5c-480b-be80-4823a1db2e00
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes_about_research_condu
+    - node.type.oakwood
+id: node.oakwood.field_notes_about_research_condu
+field_name: field_notes_about_research_condu
+entity_type: node
+bundle: oakwood
+label: 'notes about research conducted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

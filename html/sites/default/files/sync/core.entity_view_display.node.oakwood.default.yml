@@ -1,0 +1,203 @@
+uuid: bb03a48a-b88f-4633-b4a6-21fcd6a96e9f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.oakwood.feeds_item
+    - field.field.node.oakwood.field_attendingphysician
+    - field.field.node.oakwood.field_bywhomburied
+    - field.field.node.oakwood.field_cause_of_death_archival_an
+    - field.field.node.oakwood.field_color
+    - field.field.node.oakwood.field_disease
+    - field.field.node.oakwood.field_firstname
+    - field.field.node.oakwood.field_lastname
+    - field.field.node.oakwood.field_lastname_soundex
+    - field.field.node.oakwood.field_name_archival_and_communit
+    - field.field.node.oakwood.field_nativity
+    - field.field.node.oakwood.field_notes_about_research_condu
+    - field.field.node.oakwood.field_oakwood_date
+    - field.field.node.oakwood.field_pkoakwood
+    - field.field.node.oakwood.field_profession
+    - field.field.node.oakwood.field_remarks
+    - field.field.node.oakwood.field_seclotspace
+    - field.field.node.oakwood.field_sex
+    - field.field.node.oakwood.field_showrow
+    - field.field.node.oakwood.field_whereburied
+    - field.field.node.oakwood.field_yearsmonthsdays
+    - node.type.oakwood
+  module:
+    - user
+id: node.oakwood.default
+targetEntityType: node
+bundle: oakwood
+mode: default
+content:
+  field_attendingphysician:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_bywhomburied:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_cause_of_death_archival_an:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_disease:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_firstname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_lastname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_lastname_soundex:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_name_archival_and_communit:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_nativity:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_notes_about_research_condu:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_oakwood_date:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_pkoakwood:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_profession:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_remarks:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_seclotspace:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_sex:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_showrow:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_whereburied:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_yearsmonthsdays:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

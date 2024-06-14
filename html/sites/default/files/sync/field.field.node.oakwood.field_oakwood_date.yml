@@ -1,0 +1,19 @@
+uuid: bb8ac668-7abd-48fd-b43f-e22b54b494d9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oakwood_date
+    - node.type.oakwood
+id: node.oakwood.field_oakwood_date
+field_name: field_oakwood_date
+entity_type: node
+bundle: oakwood
+label: date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

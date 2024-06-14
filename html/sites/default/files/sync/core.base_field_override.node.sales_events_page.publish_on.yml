@@ -1,0 +1,18 @@
+uuid: 728f75b6-a02d-44c1-8c89-4f9f7fed2a6f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: sales_events_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

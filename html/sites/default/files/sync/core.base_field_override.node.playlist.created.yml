@@ -1,0 +1,18 @@
+uuid: a2e09b1a-48c9-4425-a3da-fe71b5d060be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.created
+field_name: created
+entity_type: node
+bundle: playlist
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

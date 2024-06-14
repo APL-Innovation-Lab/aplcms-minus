@@ -1,0 +1,19 @@
+uuid: 79ac9d19-c8bf-4f79-804e-07b34aeba3f3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_archival_and_communit
+    - node.type.oakwood
+id: node.oakwood.field_name_archival_and_communit
+field_name: field_name_archival_and_communit
+entity_type: node
+bundle: oakwood
+label: 'Name: Archival and Community contribution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

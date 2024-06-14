@@ -1,0 +1,118 @@
+uuid: 124c33b2-54ce-4629-a239-1c2149adeb4a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.rooms.feeds_item
+    - field.field.taxonomy_term.rooms.field_accordions
+    - field.field.taxonomy_term.rooms.field_airplay
+    - field.field.taxonomy_term.rooms.field_capacity2
+    - field.field.taxonomy_term.rooms.field_hdmi
+    - field.field.taxonomy_term.rooms.field_image_gallery
+    - field.field.taxonomy_term.rooms.field_is_slr
+    - field.field.taxonomy_term.rooms.field_location
+    - field.field.taxonomy_term.rooms.field_map
+    - field.field.taxonomy_term.rooms.field_notes
+    - field.field.taxonomy_term.rooms.field_room_number
+    - field.field.taxonomy_term.rooms.field_short_name
+    - field.field.taxonomy_term.rooms.field_slr_floor
+    - field.field.taxonomy_term.rooms.field_slr_image
+    - field.field.taxonomy_term.rooms.field_whiteboard
+    - field.field.taxonomy_term.rooms.layout_builder__layout
+    - taxonomy.vocabulary.rooms
+    - views.view.rooms_
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          dff9b0b4-d822-4353-8380-67a0587abc2a:
+            uuid: dff9b0b4-d822-4353-8380-67a0587abc2a
+            region: content
+            configuration:
+              id: 'views_block:rooms_-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.rooms.default
+targetEntityType: taxonomy_term
+bundle: rooms
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_airplay:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hdmi:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_notes:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_whiteboard:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  feeds_item: true
+  field_accordions: true
+  field_capacity2: true
+  field_image_gallery: true
+  field_is_slr: true
+  field_location: true
+  field_map: true
+  field_room_number: true
+  field_short_name: true
+  field_slr_floor: true
+  field_slr_image: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,45 @@
+uuid: cc2475ad-065e-4ead-ab0a-3c6b0ddf3fcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: cors_test
+label: 'CORS test'
+code: |2
+          // Function to make the CORS request
+          function makeCorsRequest() {
+              var url = 'https://dev-apl-cms.pantheonsite.io/jsonapi/asset_injector_css/asset_injector_css'; // Replace with your actual URL
+              var xhr = new XMLHttpRequest();
+
+              xhr.onload = function() {
+                  if (xhr.status >= 200 && xhr.status < 300) {
+                      console.log('Success:', xhr.responseText);
+                  } else {
+                      console.error('Request failed. Returned status of ' + xhr.status);
+                  }
+              };
+
+              xhr.onerror = function() {
+                  console.error('There was an error making the request.');
+              };
+
+              try {
+                  xhr.open('GET', url, true);
+                  xhr.send();
+              } catch (error) {
+                  console.error('Error during the request:', error);
+              }
+          }
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cors
+contexts: {  }
+conditions_require_all: true

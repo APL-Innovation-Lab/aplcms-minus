@@ -1,0 +1,8 @@
+uuid: 9a2fd1f5-353f-415e-99ae-33416aaa17ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Library Priorities'
+vid: library_priorities
+description: ''
+weight: -7

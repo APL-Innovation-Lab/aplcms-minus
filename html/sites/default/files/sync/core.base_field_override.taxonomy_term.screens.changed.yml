@@ -1,0 +1,18 @@
+uuid: c3215244-d1dd-4c6b-9e41-c7cb3b149033
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screens
+id: taxonomy_term.screens.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: screens
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

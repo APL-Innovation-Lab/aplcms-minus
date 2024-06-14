@@ -1,0 +1,81 @@
+/* Oakwood Grid Layout for Content */
+.oakwood .view-content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+    grid-gap: 15px;
+}
+#views-exposed-form-oakwood-4-page-1 {
+	display: grid;
+}
+.oakwood-row {
+    background: #e3e3e3;
+    padding: 10px;
+}
+
+.views-field.views-field-operations {
+    margin-top: 20px;
+}
+
+/* Table Row Padding */
+.oakwood-row td {
+    padding: 5px 20px 10px 10px;
+    vertical-align: top;
+}
+
+/* Block Content Width */
+#block-claro2-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+/* Form Container Styling */
+.views-exposed-form {
+    display: flex;
+    align-items: flex-end; /* Align items at the bottom */
+    gap: 1em; /* Adds space between elements */
+}
+
+/* Form Group Styling */
+.usa-form-group {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.usa-label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* Input Styling */
+.usa-input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.usa-button {
+    background-color: #0071bc;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* Align button to the bottom */
+}
+
+.usa-button:hover {
+    background-color: #005a9c;
+}
+
+/* Adjust the form actions */
+.form-actions {
+    margin: 0;
+}

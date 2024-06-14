@@ -1,0 +1,27 @@
+uuid: 241f48ca-0570-4851-aebc-bb7b0c487ebd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_arrheader
+theme: uswds
+region: header
+weight: -21
+provider: null
+plugin: 'block_content:00a4b363-7296-4095-ae87-49633cfee12b'
+settings:
+  id: 'block_content:00a4b363-7296-4095-ae87-49633cfee12b'
+  label: 'ARR Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/recycled-reads\r\n/recycled-reads/*"

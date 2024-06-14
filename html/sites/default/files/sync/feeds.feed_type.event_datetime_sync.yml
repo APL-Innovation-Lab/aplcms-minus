@@ -1,0 +1,75 @@
+uuid: 13463092-c4ea-4fd4-b2d7-43632ddc0402
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_slr_time_end
+    - field.field.node.event.field_slr_time_start
+    - node.type.event
+  module:
+    - node
+label: 'event datetime sync'
+id: event_datetime_sync
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: event
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  id:
+    value: id
+    label: id
+    machine_name: id
+    type: csv
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: csv
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: id
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_slr_time_start
+    map:
+      value: start
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: end
+    settings:
+      language: null
+      timezone: UTC

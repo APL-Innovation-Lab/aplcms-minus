@@ -1,0 +1,18 @@
+uuid: b6ec5618-8c3f-40b4-8123-942c3d938380
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity.changed
+field_name: changed
+entity_type: node
+bundle: activity
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

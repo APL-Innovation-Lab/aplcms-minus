@@ -1,0 +1,18 @@
+uuid: 9f703f6b-6d28-42cc-99e4-0c774c61c6cf
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: bookstore_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,21 @@
+uuid: c4f95577-4da4-4821-afaf-43435801b90f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.page_
+  module:
+    - datetime
+id: node.page_.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: page_
+label: 'Time Start'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

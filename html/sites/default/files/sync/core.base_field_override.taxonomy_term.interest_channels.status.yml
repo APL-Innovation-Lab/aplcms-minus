@@ -1,0 +1,22 @@
+uuid: fbe90abe-52f7-4b27-938e-b97063a43c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interest_channels
+id: taxonomy_term.interest_channels.status
+field_name: status
+entity_type: taxonomy_term
+bundle: interest_channels
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

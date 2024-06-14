@@ -1,0 +1,25 @@
+uuid: 1ec28e6d-0d02-4a49-be32-f2dae79d41ef
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_webform
+    - node.type.ahc_page
+  module:
+    - webform
+id: node.ahc_page.field_webform
+field_name: field_webform
+entity_type: node
+bundle: ahc_page
+label: Webform
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

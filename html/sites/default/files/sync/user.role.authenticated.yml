@@ -1,0 +1,57 @@
+uuid: 5ce8cd21-62a8-49eb-aad5-f9f556513257
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.reference_stats
+    - rest.resource.webform_rest_complete_submission
+    - rest.resource.webform_rest_submission
+  module:
+    - comment
+    - contact
+    - field_permissions
+    - jsonapi_permission
+    - media
+    - media_entity_download
+    - node
+    - rest
+    - search
+    - shortcut
+    - system
+    - tour
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: -11
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access jsonapi'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access tour'
+  - 'create reference_stats content'
+  - 'delete own reference_stats content'
+  - 'download media'
+  - 'edit own reference_stats content'
+  - 'post comments'
+  - 'restful get webform_rest_complete_submission'
+  - 'restful get webform_rest_submission'
+  - 'search content'
+  - 'skip comment approval'
+  - 'view field_apl_item_image'
+  - 'view field_iframe'
+  - 'view field_internal_'
+  - 'view field_item_list'
+  - 'view field_jacket_cover'
+  - 'view field_webform'
+  - 'view media'
+  - 'view own field_apl_item_image'
+  - 'view own field_iframe'
+  - 'view own field_internal_'
+  - 'view own field_item_list'
+  - 'view own field_jacket_cover'
+  - 'view own field_webform'
+  - 'view the administration theme'

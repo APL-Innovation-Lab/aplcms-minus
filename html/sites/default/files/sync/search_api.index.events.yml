@@ -1,0 +1,154 @@
+uuid: ae7dcca9-e6f6-499f-91df-4b0bd1cd8eb7
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_event_date
+    - field.storage.node.field_cat_ia
+    - field.storage.node.field_event_category_tags_
+    - field.storage.node.field_event_grouping_or_series2
+    - field.storage.node.field_event_loc
+    - field.storage.node.field_event_summary
+    - field.storage.node.field_event_tag
+    - field.storage.node.field_is_there_a_fee_for_attendi
+    - field.storage.node.field_sponsor
+    - search_api.server.drupal
+  module:
+    - node
+    - search_api
+id: events
+name: Events
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: 'Event Description'
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  end_value:
+    label: 'Date and Time » End date value'
+    datasource_id: 'entity:node'
+    property_path: 'field_event_date:end_value'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_cat_ia:
+    label: 'Intended Audience'
+    datasource_id: 'entity:node'
+    property_path: field_cat_ia
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_cat_ia
+  field_event_category_tags_:
+    label: 'Event Category'
+    datasource_id: 'entity:node'
+    property_path: field_event_category_tags_
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_category_tags_
+  field_event_date:
+    label: 'Date and Time'
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_grouping_or_series2:
+    label: 'Event Grouping or Series'
+    datasource_id: 'entity:node'
+    property_path: field_event_grouping_or_series2
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_grouping_or_series2
+  field_event_loc:
+    label: 'Event Location'
+    datasource_id: 'entity:node'
+    property_path: field_event_loc
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_loc
+  field_event_summary:
+    label: 'Event Summary'
+    datasource_id: 'entity:node'
+    property_path: field_event_summary
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_event_summary
+  field_event_tag:
+    label: 'Event Grouping or Series'
+    datasource_id: 'entity:node'
+    property_path: field_event_tag
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_tag
+  field_is_there_a_fee_for_attendi:
+    label: 'Is there a fee for attending this event?'
+    datasource_id: 'entity:node'
+    property_path: field_is_there_a_fee_for_attendi
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_is_there_a_fee_for_attendi
+  field_sponsor:
+    label: Sponsors
+    datasource_id: 'entity:node'
+    property_path: field_sponsor
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.field_sponsor
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - event
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: true
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: drupal

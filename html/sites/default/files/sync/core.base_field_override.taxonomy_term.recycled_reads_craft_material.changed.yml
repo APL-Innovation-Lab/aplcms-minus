@@ -1,0 +1,18 @@
+uuid: 7e6d3e5f-5190-4f97-b7d3-584d8662c91b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_craft_material
+id: taxonomy_term.recycled_reads_craft_material.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: recycled_reads_craft_material
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

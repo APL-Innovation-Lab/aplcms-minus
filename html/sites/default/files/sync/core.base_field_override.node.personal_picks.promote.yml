@@ -1,0 +1,22 @@
+uuid: 5c2b4408-32ee-480f-b440-dea19882d4d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_picks
+id: node.personal_picks.promote
+field_name: promote
+entity_type: node
+bundle: personal_picks
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

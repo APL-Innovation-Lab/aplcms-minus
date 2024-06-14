@@ -1,0 +1,17 @@
+uuid: e1ac52c3-21d6-4b15-975d-0de83704617e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Meeting Room Group'
+type: group
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

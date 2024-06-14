@@ -1,0 +1,80 @@
+uuid: 2fb0fed1-815d-4c39-a1e5-73cc5ca636ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.special_dates.title
+    - field.field.node.special_dates.field_special_date
+    - node.type.special_dates
+  module:
+    - node
+id: special_dates
+label: 'Special Dates'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: special_dates
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  early_closing:
+    value: early_closing
+    label: early_closing
+    machine_name: early_closing
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_special_date
+    map:
+      value: date
+    settings:
+      language: null
+      timezone: UTC

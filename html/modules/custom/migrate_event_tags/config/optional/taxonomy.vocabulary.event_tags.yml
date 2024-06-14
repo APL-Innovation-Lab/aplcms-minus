@@ -1,0 +1,8 @@
+uuid: cbb5fa75-7c81-4bda-add6-c515fd5fa635
+langcode: eng
+status: true
+dependencies: {  }
+name: 'Event Tags'
+vid: event_tags
+description: ''
+weight: 9

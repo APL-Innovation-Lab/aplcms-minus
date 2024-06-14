@@ -1,0 +1,10 @@
+uuid: 49390d0c-7ecc-4360-9109-23038462d4f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.homework_help_spanish
+label: 'homework help - spanish'
+targetEntityType: node
+cache: true

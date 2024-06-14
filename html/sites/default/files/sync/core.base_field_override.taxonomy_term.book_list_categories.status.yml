@@ -1,0 +1,22 @@
+uuid: 45207a0a-334a-40d2-808a-0860c3ff3509
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_list_categories
+id: taxonomy_term.book_list_categories.status
+field_name: status
+entity_type: taxonomy_term
+bundle: book_list_categories
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

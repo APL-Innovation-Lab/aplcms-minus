@@ -1,0 +1,19 @@
+uuid: 3984d8f7-217a-4699-aa08-848d9542ed5d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_rl_street_address
+    - taxonomy.vocabulary.remote_locations
+id: taxonomy_term.remote_locations.field_rl_street_address
+field_name: field_rl_street_address
+entity_type: taxonomy_term
+bundle: remote_locations
+label: 'Street Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

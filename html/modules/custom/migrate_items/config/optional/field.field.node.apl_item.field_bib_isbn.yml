@@ -1,0 +1,19 @@
+uuid: 0137ce51-ab27-4c9d-a5b7-70b6e47b496c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bib_isbn
+    - node.type.apl_item
+id: node.apl_item.field_bib_isbn
+field_name: field_bib_isbn
+entity_type: node
+bundle: apl_item
+label: 'Bib ISBN'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,145 @@
+uuid: 4e07b9e8-40da-45bc-aaa7-45a30f105f8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.job_portal_page.title
+    - field.field.node.job_portal_page.body
+    - field.field.node.job_portal_page.feeds_item
+    - field.field.node.job_portal_page.field_do_not_index
+    - field.field.node.job_portal_page.field_main_image_jp
+    - field.field.node.job_portal_page.layout_builder__layout
+    - node.type.job_portal_page
+    - views.view.navigation
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          d1e0a2ce-2a5d-41cf-a2b9-a7eb5f184c12:
+            uuid: d1e0a2ce-2a5d-41cf-a2b9-a7eb5f184c12
+            region: first
+            configuration:
+              id: 'views_block:navigation-block_8'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          34a92abd-5417-47ac-acdd-340a1856315c:
+            uuid: 34a92abd-5417-47ac-acdd-340a1856315c
+            region: second
+            configuration:
+              id: 'field_block:node:job_portal_page:field_main_image_jp'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          6c8a2a1d-7f0e-44ab-804f-5a23a9662271:
+            uuid: 6c8a2a1d-7f0e-44ab-804f-5a23a9662271
+            region: second
+            configuration:
+              id: 'field_block:node:job_portal_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3f173d13-1158-4e34-ba5c-dfd49c4155f9:
+            uuid: 3f173d13-1158-4e34-ba5c-dfd49c4155f9
+            region: second
+            configuration:
+              id: 'field_block:node:job_portal_page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.job_portal_page.default
+targetEntityType: node
+bundle: job_portal_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_do_not_index:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: first
+  field_main_image_jp:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: first
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

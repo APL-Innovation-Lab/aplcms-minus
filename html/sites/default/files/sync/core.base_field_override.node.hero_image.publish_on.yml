@@ -1,0 +1,18 @@
+uuid: 4a8423b7-8310-407f-9126-6945187f22ca
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_image
+id: node.hero_image.publish_on
+field_name: publish_on
+entity_type: node
+bundle: hero_image
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

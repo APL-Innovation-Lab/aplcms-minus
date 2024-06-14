@@ -1,0 +1,23 @@
+uuid: 8e22df88-2db2-4d4f-8f00-8c3b4c9c1a86
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_url
+    - node.type.hero_banner_image
+  module:
+    - link
+id: node.hero_banner_image.field_button_url
+field_name: field_button_url
+entity_type: node
+bundle: hero_banner_image
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

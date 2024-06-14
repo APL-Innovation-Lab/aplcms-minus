@@ -1,0 +1,23 @@
+uuid: 55dce195-73fd-4146-8b58-e709a0e2b407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ppp_agreement
+    - node.type.passport_reservation
+id: node.passport_reservation.field_ppp_agreement
+field_name: field_ppp_agreement
+entity_type: node
+bundle: passport_reservation
+label: 'Time Agreement'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I understand that arriving more than 15 minutes late will result in cancellation of my appointment.'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,32 @@
+uuid: 72f6c6a3-a95b-47ec-951b-c314f88cd137
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: glossary
+label: 'app js'
+code: |
+  window.onload = function() {
+    var selectElement = document.getElementById('edit-subject');
+    var options = selectElement.options;
+
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].value == 'All') {
+        selectElement.remove(i);
+        break;
+      }
+    }
+  }
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/app/virtual/all-databases2/226\r\n/app/virtual/all-databases/226"
+contexts: {  }
+conditions_require_all: true

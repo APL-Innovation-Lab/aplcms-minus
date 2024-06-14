@@ -1,0 +1,22 @@
+uuid: 17afd24c-386a-4627-8086-6ad81526de74
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.promote
+field_name: promote
+entity_type: node
+bundle: highighted_images
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

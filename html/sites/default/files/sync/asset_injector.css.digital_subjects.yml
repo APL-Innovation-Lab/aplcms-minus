@@ -1,0 +1,21 @@
+uuid: ca7ac640-d2f3-4ebf-a387-fc8841fac348
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: digital_subjects
+label: 'digital subjects'
+code: |-
+  .usa-button {
+  	display: none;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /digital/subjects
+contexts: {  }
+conditions_require_all: true

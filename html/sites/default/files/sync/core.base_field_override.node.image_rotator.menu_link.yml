@@ -1,0 +1,20 @@
+uuid: eb94fe92-35f9-4f5c-8d87-bb00b75b5bd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.menu_link
+field_name: menu_link
+entity_type: node
+bundle: image_rotator
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

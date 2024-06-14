@@ -1,0 +1,18 @@
+uuid: f86d0af0-141f-4b4f-a14e-3df11c6db1a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.changed
+field_name: changed
+entity_type: node
+bundle: atxyz
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

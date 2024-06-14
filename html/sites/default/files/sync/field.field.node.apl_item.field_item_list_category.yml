@@ -1,0 +1,29 @@
+uuid: 6e03b07f-2e97-4bb4-a2b6-1e24728c3c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_list_category
+    - node.type.apl_item
+    - taxonomy.vocabulary.book_list_categories
+id: node.apl_item.field_item_list_category
+field_name: field_item_list_category
+entity_type: node
+bundle: apl_item
+label: Facets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_list_categories: book_list_categories
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

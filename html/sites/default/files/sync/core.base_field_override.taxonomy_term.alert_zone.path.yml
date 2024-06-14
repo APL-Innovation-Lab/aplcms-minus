@@ -1,0 +1,20 @@
+uuid: 60258e88-e9d4-4eea-b6c2-5f06db8c3ea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alert_zone
+  module:
+    - path
+id: taxonomy_term.alert_zone.path
+field_name: path
+entity_type: taxonomy_term
+bundle: alert_zone
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

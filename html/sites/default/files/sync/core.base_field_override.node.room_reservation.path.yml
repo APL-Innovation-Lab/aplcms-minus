@@ -1,0 +1,20 @@
+uuid: af67539c-b4b2-4fd7-93c4-5de4e1f83b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+  module:
+    - path
+id: node.room_reservation.path
+field_name: path
+entity_type: node
+bundle: room_reservation
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

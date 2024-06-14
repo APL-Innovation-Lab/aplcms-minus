@@ -1,0 +1,22 @@
+uuid: 23373eb1-d020-4876-997c-32dbd14bcbf5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.promote
+field_name: promote
+entity_type: node
+bundle: slr_alert
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

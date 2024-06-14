@@ -1,0 +1,8 @@
+uuid: 8b159da1-0f28-4c65-a13b-0e0fbcfdf121
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_term__rooms
+label: 'Taxonomy term: Rooms'
+tags:
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'

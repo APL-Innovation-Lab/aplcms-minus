@@ -1,0 +1,25 @@
+uuid: f2fccf21-9a85-47e8-88e9-2e242068757e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boost
+    - node.type.database
+id: node.database.field_boost
+field_name: field_boost
+entity_type: node
+bundle: database
+label: Boost
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 10
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

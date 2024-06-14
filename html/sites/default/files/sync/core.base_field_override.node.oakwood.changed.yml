@@ -1,0 +1,18 @@
+uuid: ff31a724-b66e-494b-a7e9-d3a350aafaea
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood.changed
+field_name: changed
+entity_type: node
+bundle: oakwood
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

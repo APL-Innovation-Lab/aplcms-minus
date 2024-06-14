@@ -1,0 +1,21 @@
+uuid: a318a4d8-fed1-41e8-a087-cd79b99e58e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bioghist
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_bioghist
+field_name: field_bioghist
+entity_type: node
+bundle: archives_index
+label: Bioghist
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

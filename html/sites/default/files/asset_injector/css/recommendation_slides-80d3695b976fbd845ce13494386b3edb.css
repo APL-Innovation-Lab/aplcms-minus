@@ -1,0 +1,18 @@
+.apl-random {
+	margin-bottom: 10px;
+	padding: 15px 15px 10px;
+}
+
+.apl-web-recommendation-title {
+	font-weight: bold;
+}
+
+.apl-recommended-web .view-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.apl-recommended-item {
+	width: 100px;
+}

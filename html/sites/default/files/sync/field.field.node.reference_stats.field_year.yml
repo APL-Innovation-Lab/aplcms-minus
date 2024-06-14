@@ -1,0 +1,23 @@
+uuid: 049dc246-59a8-45b9-a21e-38852b17aeca
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.reference_stats
+  module:
+    - options
+id: node.reference_stats.field_year
+field_name: field_year
+entity_type: node
+bundle: reference_stats
+label: Year
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

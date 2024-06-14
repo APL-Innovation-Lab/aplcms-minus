@@ -1,0 +1,19 @@
+uuid: 238f485c-0241-44e0-880c-8697724cc54e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_firstname
+    - node.type.oakwood
+id: node.oakwood.field_firstname
+field_name: field_firstname
+entity_type: node
+bundle: oakwood
+label: firstname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,32 @@
+html .layout-container {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.page-wrapper .layout-container {
+	margin: 0 !important;
+}
+article div.node__content .layout.layout--onecol {
+	width: 1920px !important;
+	height: 1080px;
+	max-width: 1920px !important;
+}
+.apltv-iffy {
+	background: black;
+	height: 1080px;
+	position: absolute;
+	border: none;
+	z-index: 9;
+	top: 0;
+	left: 0;
+}
+.apltv-iffy img {
+	width: 1920px !important;
+	height: 1080px !important;
+}
+@media screen {
+html .layout-container {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+}

@@ -1,0 +1,48 @@
+uuid: 91e862c0-ad07-4422-bb2a-fd152a2d0b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.highighted_images.body
+    - field.field.node.highighted_images.field_display_locations
+    - field.field.node.highighted_images.field_exhibit_summary
+    - field.field.node.highighted_images.field_highlighted_image
+    - field.field.node.highighted_images.field_image_audience
+    - field.field.node.highighted_images.field_image_size
+    - field.field.node.highighted_images.field_link_path
+    - field.field.node.highighted_images.field_slr_time_end
+    - field.field.node.highighted_images.field_slr_time_start
+    - node.type.highighted_images
+  module:
+    - image
+    - user
+id: node.highighted_images.default
+targetEntityType: node
+bundle: highighted_images
+mode: default
+content:
+  field_highlighted_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_display_locations: true
+  field_exhibit_summary: true
+  field_image_audience: true
+  field_image_size: true
+  field_link_path: true
+  field_slr_time_end: true
+  field_slr_time_start: true

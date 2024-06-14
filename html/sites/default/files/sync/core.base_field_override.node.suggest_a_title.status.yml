@@ -1,0 +1,22 @@
+uuid: 12275c5a-96ef-4e00-a1fa-8f650c957992
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.suggest_a_title
+id: node.suggest_a_title.status
+field_name: status
+entity_type: node
+bundle: suggest_a_title
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

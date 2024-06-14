@@ -1,0 +1,28 @@
+uuid: afaf1e22-def7-483e-aa75-a9f659133bb3
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.what_s_hot
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_whatshot
+theme: claro2noGA
+region: content
+weight: -3
+provider: null
+plugin: 'facet_block:what_s_hot'
+settings:
+  id: 'facet_block:what_s_hot'
+  label: 'What''s Hot'
+  label_display: visible
+  provider: facets
+  block_id: whatshot
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /recommended/whats-hot

@@ -1,0 +1,26 @@
+uuid: 825e7bc9-6b9d-4d4b-9666-3c38700611c4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__champions_block_1
+theme: claro2noGA
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:champions-block_1'
+settings:
+  id: 'views_block:champions-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/*"

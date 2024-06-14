@@ -1,0 +1,379 @@
+uuid: 1899311b-f094-4d30-8043-0bcdc8b59c38
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.unfiltered_html
+    - media.type.document
+    - media.type.image
+    - node.type.activity
+    - node.type.activity_page
+    - node.type.ahc_donation
+    - node.type.ahc_page
+    - node.type.ahc_protests
+    - node.type.alert
+    - node.type.apl_item
+    - node.type.apl_item_import
+    - node.type.apl_site_content
+    - node.type.apltv_recommendation_slide
+    - node.type.archives_index
+    - node.type.article
+    - node.type.atxyz
+    - node.type.bookstore_page
+    - node.type.champion_image
+    - node.type.database
+    - node.type.event
+    - node.type.exhibit
+    - node.type.fullscreen_image
+    - node.type.gift_shop_page
+    - node.type.group
+    - node.type.hero_image
+    - node.type.highighted_images
+    - node.type.how_to
+    - node.type.image_rotator
+    - node.type.job_portal_assistance_request
+    - node.type.job_portal_page
+    - node.type.keyword_match
+    - node.type.library_info
+    - node.type.open_hours
+    - node.type.page
+    - node.type.panel
+    - node.type.passport_reservation
+    - node.type.passports_page
+    - node.type.personal_picks
+    - node.type.playlist
+    - node.type.public_computer_page
+    - node.type.reference_stats
+    - node.type.reflection
+    - node.type.room_reservation
+    - node.type.sales_events_page
+    - node.type.screen
+    - node.type.slide
+    - node.type.slr
+    - node.type.special_dates
+    - node.type.suggest_a_title
+    - node.type.tour
+    - node.type.url_for_display
+    - node.type.virtual_library_page
+    - node.type.volunteer
+    - node.type.volunteer_opportunity
+    - node.type.zine
+    - taxonomy.vocabulary.event_tags
+    - taxonomy.vocabulary.library_location
+    - taxonomy.vocabulary.remote_locations
+    - taxonomy.vocabulary.sponsors
+    - taxonomy.vocabulary.taglets
+  module:
+    - content_translation
+    - editoria11y
+    - field_permissions
+    - file
+    - filter
+    - media
+    - node
+    - path
+    - publishcontent
+    - quickedit
+    - redirect
+    - simple_styleguide
+    - system
+    - taxonomy
+    - toolbar
+id: pio
+label: PIO
+weight: 13
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access style guide'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer media'
+  - 'administer nodes'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer style guide'
+  - 'administer url aliases'
+  - 'bypass node access'
+  - 'create ahc_page content'
+  - 'create alert content'
+  - 'create article content'
+  - 'create bookstore_page content'
+  - 'create champion_image content'
+  - 'create content translations'
+  - 'create database content'
+  - 'create document media'
+  - 'create event content'
+  - 'create exhibit content'
+  - 'create field_signature_event'
+  - 'create field_skip_apl_tv'
+  - 'create fullscreen_image content'
+  - 'create gift_shop_page content'
+  - 'create hero_image content'
+  - 'create highighted_images content'
+  - 'create image media'
+  - 'create job_portal_page content'
+  - 'create library_info content'
+  - 'create media'
+  - 'create open_hours content'
+  - 'create page content'
+  - 'create playlist content'
+  - 'create public_computer_page content'
+  - 'create sales_events_page content'
+  - 'create special_dates content'
+  - 'create terms in event_tags'
+  - 'create terms in remote_locations'
+  - 'create terms in sponsors'
+  - 'create terms in taglets'
+  - 'create url aliases'
+  - 'create virtual_library_page content'
+  - 'delete alert revisions'
+  - 'delete any alert content'
+  - 'delete any article content'
+  - 'delete any champion_image content'
+  - 'delete any document media'
+  - 'delete any event content'
+  - 'delete any exhibit content'
+  - 'delete any fullscreen_image content'
+  - 'delete any hero_image content'
+  - 'delete any highighted_images content'
+  - 'delete any image media'
+  - 'delete any library_info content'
+  - 'delete any media'
+  - 'delete any open_hours content'
+  - 'delete any playlist content'
+  - 'delete content translations'
+  - 'delete media'
+  - 'delete own alert content'
+  - 'delete own article content'
+  - 'delete own document media'
+  - 'delete own library_info content'
+  - 'delete terms in event_tags'
+  - 'delete terms in remote_locations'
+  - 'delete terms in sponsors'
+  - 'delete terms in taglets'
+  - 'edit any activity content'
+  - 'edit any activity_page content'
+  - 'edit any ahc_donation content'
+  - 'edit any ahc_page content'
+  - 'edit any ahc_protests content'
+  - 'edit any alert content'
+  - 'edit any apl_item content'
+  - 'edit any apl_item_import content'
+  - 'edit any apltv_recommendation_slide content'
+  - 'edit any archives_index content'
+  - 'edit any article content'
+  - 'edit any bookstore_page content'
+  - 'edit any champion_image content'
+  - 'edit any database content'
+  - 'edit any document media'
+  - 'edit any event content'
+  - 'edit any exhibit content'
+  - 'edit any fullscreen_image content'
+  - 'edit any gift_shop_page content'
+  - 'edit any hero_image content'
+  - 'edit any highighted_images content'
+  - 'edit any how_to content'
+  - 'edit any image media'
+  - 'edit any job_portal_page content'
+  - 'edit any keyword_match content'
+  - 'edit any library_info content'
+  - 'edit any open_hours content'
+  - 'edit any page content'
+  - 'edit any passports_page content'
+  - 'edit any playlist content'
+  - 'edit any public_computer_page content'
+  - 'edit any reflection content'
+  - 'edit any sales_events_page content'
+  - 'edit any screen content'
+  - 'edit any slide content'
+  - 'edit any special_dates content'
+  - 'edit any tour content'
+  - 'edit any url_for_display content'
+  - 'edit any virtual_library_page content'
+  - 'edit field_signature_event'
+  - 'edit field_skip_apl_tv'
+  - 'edit own activity content'
+  - 'edit own activity_page content'
+  - 'edit own ahc_page content'
+  - 'edit own ahc_protests content'
+  - 'edit own alert content'
+  - 'edit own apl_item content'
+  - 'edit own apl_item_import content'
+  - 'edit own apl_site_content content'
+  - 'edit own apltv_recommendation_slide content'
+  - 'edit own archives_index content'
+  - 'edit own article content'
+  - 'edit own atxyz content'
+  - 'edit own bookstore_page content'
+  - 'edit own champion_image content'
+  - 'edit own database content'
+  - 'edit own document media'
+  - 'edit own event content'
+  - 'edit own exhibit content'
+  - 'edit own field_signature_event'
+  - 'edit own field_skip_apl_tv'
+  - 'edit own fullscreen_image content'
+  - 'edit own gift_shop_page content'
+  - 'edit own group content'
+  - 'edit own hero_image content'
+  - 'edit own highighted_images content'
+  - 'edit own how_to content'
+  - 'edit own image media'
+  - 'edit own image_rotator content'
+  - 'edit own job_portal_assistance_request content'
+  - 'edit own job_portal_page content'
+  - 'edit own keyword_match content'
+  - 'edit own library_info content'
+  - 'edit own open_hours content'
+  - 'edit own page content'
+  - 'edit own panel content'
+  - 'edit own passport_reservation content'
+  - 'edit own passports_page content'
+  - 'edit own personal_picks content'
+  - 'edit own playlist content'
+  - 'edit own public_computer_page content'
+  - 'edit own reference_stats content'
+  - 'edit own reflection content'
+  - 'edit own room_reservation content'
+  - 'edit own sales_events_page content'
+  - 'edit own screen content'
+  - 'edit own slide content'
+  - 'edit own slr content'
+  - 'edit own special_dates content'
+  - 'edit own suggest_a_title content'
+  - 'edit own tour content'
+  - 'edit own url_for_display content'
+  - 'edit own virtual_library_page content'
+  - 'edit own volunteer content'
+  - 'edit own volunteer_opportunity content'
+  - 'edit own zine content'
+  - 'edit terms in event_tags'
+  - 'edit terms in library_location'
+  - 'edit terms in remote_locations'
+  - 'edit terms in sponsors'
+  - 'edit terms in taglets'
+  - 'publish any content'
+  - 'publish any node type ahc_page'
+  - 'publish any node type alert'
+  - 'publish any node type apl_item'
+  - 'publish any node type apl_item_import'
+  - 'publish any node type apltv_recommendation_slide'
+  - 'publish any node type apltv_scheduled_sequence'
+  - 'publish any node type archives_index'
+  - 'publish any node type article'
+  - 'publish any node type bookstore_page'
+  - 'publish any node type database'
+  - 'publish any node type event'
+  - 'publish any node type exhibit'
+  - 'publish any node type fullscreen_image'
+  - 'publish any node type gift_shop_page'
+  - 'publish any node type image_rotator'
+  - 'publish any node type job_portal_page'
+  - 'publish any node type open_hours'
+  - 'publish any node type page'
+  - 'publish any node type passports_page'
+  - 'publish any node type public_computer_page'
+  - 'publish any node type sales_events_page'
+  - 'publish any node type virtual_library_page'
+  - 'publish editable content'
+  - 'publish editable node type alert'
+  - 'publish own node type alert'
+  - 'revert alert revisions'
+  - 'translate alert node'
+  - 'translate any entity'
+  - 'translate apl_site_content node'
+  - 'translate article node'
+  - 'translate editable entities'
+  - 'translate event node'
+  - 'translate highighted_images node'
+  - 'translate job_portal_assistance_request node'
+  - 'translate job_portal_page node'
+  - 'translate library_info node'
+  - 'translate library_location taxonomy_term'
+  - 'translate page node'
+  - 'translate passports_page node'
+  - 'translate virtual_library_page node'
+  - 'unpublish any content'
+  - 'unpublish any node type activity'
+  - 'unpublish any node type activity_page'
+  - 'unpublish any node type ahc_donation'
+  - 'unpublish any node type ahc_page'
+  - 'unpublish any node type ahc_protests'
+  - 'unpublish any node type alert'
+  - 'unpublish any node type apl_item'
+  - 'unpublish any node type apl_item_import'
+  - 'unpublish any node type apl_site_content'
+  - 'unpublish any node type apltv_recommendation_slide'
+  - 'unpublish any node type apltv_scheduled_sequence'
+  - 'unpublish any node type archives_index'
+  - 'unpublish any node type article'
+  - 'unpublish any node type atxyz'
+  - 'unpublish any node type blog'
+  - 'unpublish any node type book_a_librarian'
+  - 'unpublish any node type bookstore_page'
+  - 'unpublish any node type champion_image'
+  - 'unpublish any node type database'
+  - 'unpublish any node type event'
+  - 'unpublish any node type exhibit'
+  - 'unpublish any node type fullscreen_image'
+  - 'unpublish any node type gift_shop_page'
+  - 'unpublish any node type group'
+  - 'unpublish any node type hero_image'
+  - 'unpublish any node type highighted_images'
+  - 'unpublish any node type how_to'
+  - 'unpublish any node type image_rotator'
+  - 'unpublish any node type job_portal_assistance_request'
+  - 'unpublish any node type job_portal_page'
+  - 'unpublish any node type keyword_match'
+  - 'unpublish any node type library_info'
+  - 'unpublish any node type open_hours'
+  - 'unpublish any node type page'
+  - 'unpublish any node type panel'
+  - 'unpublish any node type passport_reservation'
+  - 'unpublish any node type passports_page'
+  - 'unpublish any node type personal_picks'
+  - 'unpublish any node type playlist'
+  - 'unpublish any node type public_computer_page'
+  - 'unpublish any node type reference_stats'
+  - 'unpublish any node type reflection'
+  - 'unpublish any node type room_reservation'
+  - 'unpublish any node type sales_events_page'
+  - 'unpublish any node type screen'
+  - 'unpublish any node type slide'
+  - 'unpublish any node type slr'
+  - 'unpublish any node type special_dates'
+  - 'unpublish any node type suggest_a_title'
+  - 'unpublish any node type teen_page'
+  - 'unpublish any node type top500'
+  - 'unpublish any node type tour'
+  - 'unpublish any node type url_for_display'
+  - 'unpublish any node type virtual_library_alert'
+  - 'unpublish any node type virtual_library_page'
+  - 'unpublish any node type volunteer'
+  - 'unpublish any node type volunteer_opportunity'
+  - 'unpublish any node type zine'
+  - 'unpublish editable content'
+  - 'unpublish editable node type alert'
+  - 'unpublish own node type alert'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format unfiltered_html'
+  - 'view alert revisions'
+  - 'view all media revisions'
+  - 'view editoria11y checker'
+  - 'view field_signature_event'
+  - 'view field_skip_apl_tv'
+  - 'view own field_signature_event'
+  - 'view own field_skip_apl_tv'
+  - 'view own unpublished content'
+  - 'view own unpublished media'

@@ -1,0 +1,21 @@
+uuid: dd939b1f-f240-4fe0-adf5-f210334981f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grade_level
+    - node.type.database
+  module:
+    - options
+id: node.database.field_grade_level
+field_name: field_grade_level
+entity_type: node
+bundle: database
+label: 'Grade Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

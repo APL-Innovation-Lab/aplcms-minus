@@ -1,0 +1,6 @@
+body fieldset legend .fieldset-legend {
+	padding: 0 !important;
+}
+.webform-confirmation__message {
+	padding: 20px;
+}

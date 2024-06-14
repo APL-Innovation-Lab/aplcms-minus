@@ -1,0 +1,19 @@
+uuid: e5e28902-dff1-4f35-8dce-ca42ff24a5f5
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_associated_tags
+field_name: field_associated_tags
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

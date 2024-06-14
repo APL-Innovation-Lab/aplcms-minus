@@ -1,0 +1,23 @@
+uuid: 38c04135-2bcd-49f1-80de-2280c1e4ff27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_agreement
+    - node.type.slr
+id: node.slr.field_slr_agreement
+field_name: field_slr_agreement
+entity_type: node
+bundle: slr
+label: Agree
+description: '<a href="//austinlibrary.com/downloads/shared_learning_rooms_policy.pdf">Shared Learning Rooms Policy (.pdf)</a>'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ' I agree to abide by the Shared Learning Room Policy.'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,263 @@
+uuid: 70b3a89b-faa7-4ad0-b857-686df3b25fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apl_item.feeds_item
+    - field.field.node.apl_item.field_api_format
+    - field.field.node.apl_item.field_api_subtitle
+    - field.field.node.apl_item.field_apl_authors
+    - field.field.node.apl_item.field_apl_item_image
+    - field.field.node.apl_item.field_bib_isbn
+    - field.field.node.apl_item.field_bibliocommons_id
+    - field.field.node.apl_item.field_call_number
+    - field.field.node.apl_item.field_custom_link
+    - field.field.node.apl_item.field_description
+    - field.field.node.apl_item.field_display_timespan_04_07p
+    - field.field.node.apl_item.field_display_title
+    - field.field.node.apl_item.field_exclude_from_we_recommend
+    - field.field.node.apl_item.field_intended_audience_2016i
+    - field.field.node.apl_item.field_isbn
+    - field.field.node.apl_item.field_item_list_category
+    - field.field.node.apl_item.field_jacket_cover
+    - field.field.node.apl_item.field_other_formats
+    - field.field.node.apl_item.field_publication_date
+    - field.field.node.apl_item.field_skip_adding_this_to_a_list
+    - field.field.node.apl_item.field_sort_order
+    - field.field.node.apl_item.field_upc
+    - image.style.thumbnail
+    - node.type.apl_item
+  module:
+    - field_group
+    - image
+    - path
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_we_recommend:
+      children:
+        - field_custom_link
+        - field_api_format
+        - field_other_formats
+        - field_intended_audience_2016i
+        - field_item_list_category
+      label: 'We Recommend'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+id: node.apl_item.default
+targetEntityType: node
+bundle: apl_item
+mode: default
+content:
+  field_api_format:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_api_subtitle:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_apl_authors:
+    type: text_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_apl_item_image:
+    type: image_image
+    weight: 10
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_bibliocommons_id:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_call_number:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_custom_link:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_exclude_from_we_recommend:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_intended_audience_2016i:
+    type: options_buttons
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_isbn:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_list_category:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_jacket_cover:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_other_formats:
+    type: options_buttons
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_publication_date:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_upc:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 11
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  field_bib_isbn: true
+  field_display_timespan_04_07p: true
+  field_display_title: true
+  field_skip_adding_this_to_a_list: true
+  field_sort_order: true

@@ -1,0 +1,8 @@
+.d-col-9.t-col-9.m-col-10.layout__region.layout__region--second,
+.page-wrapper .flex-grid {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.region.region-content-footer {
+	display: none;
+}

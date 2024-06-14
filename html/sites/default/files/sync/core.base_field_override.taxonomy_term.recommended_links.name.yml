@@ -1,0 +1,18 @@
+uuid: 16574987-e1db-4499-8e16-14aff18c5cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommended_links
+id: taxonomy_term.recommended_links.name
+field_name: name
+entity_type: taxonomy_term
+bundle: recommended_links
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

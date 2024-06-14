@@ -1,0 +1,27 @@
+uuid: c89a8bd7-9f47-472c-b849-7c04f1f89aed
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+id: arrheader
+theme: claro2
+region: header
+weight: -16
+provider: null
+plugin: 'block_content:00a4b363-7296-4095-ae87-49633cfee12b'
+settings:
+  id: 'block_content:00a4b363-7296-4095-ae87-49633cfee12b'
+  label: 'ARR Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/recycled-reads\r\n/recycled-reads/*"

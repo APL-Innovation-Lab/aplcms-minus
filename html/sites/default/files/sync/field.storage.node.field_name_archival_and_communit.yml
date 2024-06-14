@@ -1,0 +1,25 @@
+uuid: bc750434-d3bc-4807-bee4-e2f0ae66544b
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_name_archival_and_communit
+field_name: field_name_archival_and_communit
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

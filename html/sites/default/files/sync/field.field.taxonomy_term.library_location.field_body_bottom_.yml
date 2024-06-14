@@ -1,0 +1,19 @@
+uuid: be74084f-bde1-4105-a5a8-89cfa5bd7bcc
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_body_bottom_
+    - taxonomy.vocabulary.library_location
+id: taxonomy_term.library_location.field_body_bottom_
+field_name: field_body_bottom_
+entity_type: taxonomy_term
+bundle: library_location
+label: 'Body (Bottom)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

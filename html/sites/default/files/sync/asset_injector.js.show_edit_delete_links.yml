@@ -1,0 +1,35 @@
+uuid: 98909195-1469-4e70-a05b-9f97bbe13672
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: show_edit_delete_links
+label: 'Show edit & delete links'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+  		$.getJSON("/roles.json?t="+ Date.now(), function(json9) {
+  		  var is_admin = 0;
+            for (var k = 0; k < json9.length; k++) {
+              j_roles = json9[k].roles;
+  			if (j_roles.includes('item_editor')) {
+  				is_admin = 1;
+  				$('.apl-links').css('display','block');
+  			}
+            }
+  		});
+      });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/recommended/*'
+contexts: {  }
+conditions_require_all: true

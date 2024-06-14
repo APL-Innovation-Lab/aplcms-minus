@@ -1,0 +1,39 @@
+uuid: 68c5de20-3f01-4c8a-9cf0-5e5c229d415f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format_electronic
+field_name: field_format_electronic
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Floppy disks'
+    -
+      value: '2'
+      label: 'Hard drives'
+    -
+      value: '3'
+      label: 'Optical disks'
+    -
+      value: '4'
+      label: 'USB flash drives'
+    -
+      value: '5'
+      label: SIP
+    -
+      value: '6'
+      label: 'Server transfer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

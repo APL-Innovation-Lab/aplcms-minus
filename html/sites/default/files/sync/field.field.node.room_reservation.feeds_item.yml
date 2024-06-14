@@ -1,0 +1,23 @@
+uuid: f3146e3b-9282-4732-b416-50f8bbcf6172
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.room_reservation
+  module:
+    - feeds
+id: node.room_reservation.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: room_reservation
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

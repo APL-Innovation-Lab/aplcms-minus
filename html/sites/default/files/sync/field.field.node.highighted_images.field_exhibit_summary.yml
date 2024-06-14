@@ -1,0 +1,19 @@
+uuid: 95721fc8-270d-4881-966d-33c77c85f34f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibit_summary
+    - node.type.highighted_images
+id: node.highighted_images.field_exhibit_summary
+field_name: field_exhibit_summary
+entity_type: node
+bundle: highighted_images
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

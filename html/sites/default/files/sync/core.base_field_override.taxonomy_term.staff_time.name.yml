@@ -1,0 +1,18 @@
+uuid: 85680303-25f5-43dd-9bfa-4018d517ae9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_time
+id: taxonomy_term.staff_time.name
+field_name: name
+entity_type: taxonomy_term
+bundle: staff_time
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

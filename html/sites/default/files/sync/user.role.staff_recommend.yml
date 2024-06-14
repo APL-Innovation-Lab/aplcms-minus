@@ -1,0 +1,35 @@
+uuid: a805a9a3-1ba1-46d0-a4da-fe7b1523cf3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+  module:
+    - node
+    - publishcontent
+    - system
+    - taxonomy
+id: staff_recommend
+label: 'Staff Recommend'
+weight: 28
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'create staff_recommend content'
+  - 'delete any staff_recommend content'
+  - 'delete own staff_recommend content'
+  - 'delete staff_recommend revisions'
+  - 'edit any staff_recommend content'
+  - 'edit own staff_recommend content'
+  - 'publish any node type staff_recommend'
+  - 'publish editable node type staff_recommend'
+  - 'publish own node type staff_recommend'
+  - 'revert staff_recommend revisions'
+  - 'unpublish any node type staff_recommend'
+  - 'unpublish editable node type staff_recommend'
+  - 'unpublish own node type staff_recommend'
+  - 'view own unpublished content'
+  - 'view staff_recommend revisions'
+  - 'view the administration theme'

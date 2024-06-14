@@ -1,0 +1,30 @@
+uuid: 4fbc91ba-2da4-4c68-babb-4698eac066d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.zine.feeds_item
+    - field.field.node.zine.field_zine_agreement
+    - field.field.node.zine.field_zine_email_address
+    - field.field.node.zine.field_zines_files
+    - node.type.zine
+  module:
+    - user
+id: node.zine.teaser
+targetEntityType: node
+bundle: zine
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_zine_agreement: true
+  field_zine_email_address: true
+  field_zines_files: true
+  langcode: true
+  search_api_excerpt: true

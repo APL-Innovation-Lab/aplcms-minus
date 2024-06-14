@@ -1,0 +1,21 @@
+uuid: 1ae8bf2a-373f-4285-8e96-22f7ecee28e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_text
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_format_text
+field_name: field_format_text
+entity_type: node
+bundle: archives_index
+label: 'Format Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

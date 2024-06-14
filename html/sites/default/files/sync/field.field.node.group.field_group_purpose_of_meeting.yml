@@ -1,0 +1,21 @@
+uuid: 74165cf5-888a-4427-b6fd-96e1ddac9949
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_purpose_of_meeting
+    - node.type.group
+  module:
+    - text
+id: node.group.field_group_purpose_of_meeting
+field_name: field_group_purpose_of_meeting
+entity_type: node
+bundle: group
+label: 'Purpose of Meeting'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

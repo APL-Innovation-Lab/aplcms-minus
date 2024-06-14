@@ -1,0 +1,91 @@
+uuid: c07a4366-7214-4564-8174-47578b22d197
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.apl_item
+    - feeds.feed_type.apl_item_feed_feed
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.apl_item
+    - node.type.apl_item_import
+    - node.type.apltv_recommendation_slide
+    - node.type.apltv_scheduled_sequence
+    - node.type.playlist
+    - node.type.reflection
+    - taxonomy.vocabulary.book_list_categories
+    - taxonomy.vocabulary.recommendation_slide_categories
+  module:
+    - editoria11y
+    - feeds
+    - field_permissions
+    - filter
+    - node
+    - quickedit
+    - system
+    - taxonomy
+    - toolbar
+id: item_editor
+label: 'Item Editor'
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access feed overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'clear apl_item feeds'
+  - 'clear apl_item_feed_feed feeds'
+  - 'create apl_item content'
+  - 'create apl_item feeds'
+  - 'create apl_item_feed_feed feeds'
+  - 'create apltv_recommendation_slide content'
+  - 'create apltv_scheduled_sequence content'
+  - 'create field_item_list'
+  - 'create playlist content'
+  - 'create reflection content'
+  - 'create terms in book_list_categories'
+  - 'create terms in recommendation_slide_categories'
+  - 'delete any apl_item content'
+  - 'delete any apl_item_import content'
+  - 'delete any apltv_recommendation_slide content'
+  - 'delete any apltv_scheduled_sequence content'
+  - 'delete any playlist content'
+  - 'delete apl_item feeds'
+  - 'delete apl_item_feed_feed feeds'
+  - 'delete own apl_item content'
+  - 'delete own apl_item_import content'
+  - 'delete own apltv_recommendation_slide content'
+  - 'delete own apltv_scheduled_sequence content'
+  - 'delete own playlist content'
+  - 'delete own reflection content'
+  - 'delete terms in book_list_categories'
+  - 'delete terms in recommendation_slide_categories'
+  - 'edit any apl_item content'
+  - 'edit any apltv_recommendation_slide content'
+  - 'edit any apltv_scheduled_sequence content'
+  - 'edit any playlist content'
+  - 'edit field_item_list'
+  - 'edit own apl_item content'
+  - 'edit own apltv_recommendation_slide content'
+  - 'edit own apltv_scheduled_sequence content'
+  - 'edit own field_item_list'
+  - 'edit own playlist content'
+  - 'edit own reflection content'
+  - 'edit terms in book_list_categories'
+  - 'edit terms in recommendation_slide_categories'
+  - 'import apl_item feeds'
+  - 'import apl_item_feed_feed feeds'
+  - 'unlock apl_item feeds'
+  - 'unlock apl_item_feed_feed feeds'
+  - 'update apl_item feeds'
+  - 'update apl_item_feed_feed feeds'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view apl_item feeds'
+  - 'view apl_item revisions'
+  - 'view apl_item_feed_feed feeds'
+  - 'view editoria11y checker'
+  - 'view field_item_list'
+  - 'view own field_item_list'
+  - 'view the administration theme'

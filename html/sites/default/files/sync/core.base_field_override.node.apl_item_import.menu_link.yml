@@ -1,0 +1,20 @@
+uuid: 5f1d96e5-7e6d-41b5-b487-ee5999a6c9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.menu_link
+field_name: menu_link
+entity_type: node
+bundle: apl_item_import
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

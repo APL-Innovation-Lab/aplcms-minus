@@ -1,0 +1,44 @@
+uuid: 5a9fcdf3-b96a-4ba2-ba66-0eaea123536b
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.champion_image
+    - node.type.hero_banner_image
+    - node.type.hero_image
+  module:
+    - filter
+    - node
+    - publishcontent
+id: hero_editor
+label: 'Hero Editor'
+weight: -2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'create champion_image content'
+  - 'create hero_banner_image content'
+  - 'create hero_image content'
+  - 'delete any champion_image content'
+  - 'delete any hero_banner_image content'
+  - 'delete any hero_image content'
+  - 'delete champion_image revisions'
+  - 'delete hero_image revisions'
+  - 'delete own champion_image content'
+  - 'delete own hero_banner_image content'
+  - 'delete own hero_image content'
+  - 'edit any champion_image content'
+  - 'edit any hero_banner_image content'
+  - 'edit any hero_image content'
+  - 'edit own champion_image content'
+  - 'edit own hero_banner_image content'
+  - 'edit own hero_image content'
+  - 'publish any node type hero_banner_image'
+  - 'publish any node type hero_image'
+  - 'publish any node type highighted_images'
+  - 'revert champion_image revisions'
+  - 'revert hero_image revisions'
+  - 'use text format full_html'
+  - 'view champion_image revisions'
+  - 'view hero_image revisions'

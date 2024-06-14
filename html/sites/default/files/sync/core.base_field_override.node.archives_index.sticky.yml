@@ -1,0 +1,22 @@
+uuid: 000c0a45-43b7-4190-b4d5-1dfa1d6a75ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.sticky
+field_name: sticky
+entity_type: node
+bundle: archives_index
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

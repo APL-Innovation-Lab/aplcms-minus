@@ -1,0 +1,73 @@
+uuid: 2efa7464-9ca1-4e01-a2b9-d0b4d1414926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reference_stats.field_month
+    - field.field.node.reference_stats.field_month_year
+    - field.field.node.reference_stats.field_number_of_questions
+    - field.field.node.reference_stats.field_ref_location
+    - field.field.node.reference_stats.field_reference_type
+    - field.field.node.reference_stats.field_year
+    - node.type.reference_stats
+  module:
+    - options
+    - user
+id: node.reference_stats.default
+targetEntityType: node
+bundle: reference_stats
+mode: default
+content:
+  field_month:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_month_year:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_number_of_questions:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ref_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_reference_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_year:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

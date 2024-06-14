@@ -1,0 +1,20 @@
+uuid: 2be8beb8-b7b0-4086-ba3f-fb90a9dd16d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.menu_link
+field_name: menu_link
+entity_type: node
+bundle: bookstore_page
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

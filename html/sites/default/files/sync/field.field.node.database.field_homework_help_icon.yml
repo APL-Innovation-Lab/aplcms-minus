@@ -1,0 +1,29 @@
+uuid: fe423b41-1f84-4e7e-b8cf-f71b703e193b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homework_help_icon
+    - node.type.database
+    - taxonomy.vocabulary.homework_help_icons
+id: node.database.field_homework_help_icon
+field_name: field_homework_help_icon
+entity_type: node
+bundle: database
+label: 'Homework Help Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      homework_help_icons: homework_help_icons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

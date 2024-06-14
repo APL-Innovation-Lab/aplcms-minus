@@ -1,0 +1,52 @@
+uuid: cb63a5a2-515f-4156-b042-cbb7112eab14
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field__i_need_help_
+field_name: field__i_need_help_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Setting up an email address'
+    -
+      value: '2'
+      label: 'Creating/formatting a resume or cover letter'
+    -
+      value: '3'
+      label: 'Proofreading a resume or cover letter'
+    -
+      value: '4'
+      label: 'Searching for jobs'
+    -
+      value: '5'
+      label: 'Using a Library resource in my job search (databases, ebooks, etc.)'
+    -
+      value: '6'
+      label: 'Troubleshooting an online job application or job search website'
+    -
+      value: '7'
+      label: 'Interviewing skills'
+    -
+      value: '8'
+      label: 'Other job-related need (Explain below)'
+    -
+      value: '9'
+      label: 'I just have a quick question related to my job search. I don''t need a one-on-one appointment. (If you select this option, we will respond to you via email or phone.)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

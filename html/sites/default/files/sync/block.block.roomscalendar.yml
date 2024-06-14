@@ -1,0 +1,30 @@
+uuid: 7a082150-4fbc-4c98-8064-279b5f9ce3c5
+langcode: eng
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: roomscalendar
+theme: claro2
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+settings:
+  id: 'block_content:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+  label: rooms-calendar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/rooms-calendar/ace/*'

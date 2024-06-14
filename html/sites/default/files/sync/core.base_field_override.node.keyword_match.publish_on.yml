@@ -1,0 +1,18 @@
+uuid: ac41ed30-9301-43a3-8306-995198681e14
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.keyword_match
+id: node.keyword_match.publish_on
+field_name: publish_on
+entity_type: node
+bundle: keyword_match
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

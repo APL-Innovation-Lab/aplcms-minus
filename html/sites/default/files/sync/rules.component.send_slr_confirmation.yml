@@ -1,0 +1,24 @@
+uuid: fdbab593-7237-4cb5-acf5-2dcab5267f56
+langcode: eng
+status: true
+dependencies: {  }
+id: send_slr_confirmation
+label: 'Send SLR Confirmation'
+description: ''
+tags: {  }
+config_version: '3'
+component:
+  expression:
+    id: rules_rule
+    uuid: ab7936c6-da00-4de1-9108-4103553e5a1e
+    weight: 0
+    conditions:
+      id: rules_and
+      uuid: 3d49505e-6bf8-41d5-81a5-f104a13edb87
+      weight: 0
+      conditions: {  }
+    actions:
+      id: rules_action_set
+      uuid: 43b16b9c-a42d-4507-b2b2-347967261b5c
+      weight: 0
+      actions: {  }

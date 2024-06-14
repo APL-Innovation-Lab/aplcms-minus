@@ -1,0 +1,18 @@
+uuid: f87a9ed8-b82d-4b52-a236-cc3d45cd0603
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.apl_item_import
+target_entity_type_id: node
+target_bundle: apl_item_import
+default_langcode: site_default
+language_alterable: false

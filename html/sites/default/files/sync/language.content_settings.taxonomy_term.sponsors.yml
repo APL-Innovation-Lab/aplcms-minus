@@ -1,0 +1,18 @@
+uuid: 4e06457c-a397-4a3a-82fb-280104198299
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsors
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.sponsors
+target_entity_type_id: taxonomy_term
+target_bundle: sponsors
+default_langcode: site_default
+language_alterable: false

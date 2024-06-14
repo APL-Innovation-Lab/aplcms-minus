@@ -1,0 +1,23 @@
+uuid: 8b6b2848-ecd1-4782-8e69-5cd012e48569
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_5_digit_zip
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_jp_5_digit_zip
+field_name: field_jp_5_digit_zip
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'What is your 5-digit ZIP Code?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

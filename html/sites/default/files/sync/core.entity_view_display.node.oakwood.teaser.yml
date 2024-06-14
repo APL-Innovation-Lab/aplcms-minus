@@ -1,0 +1,64 @@
+uuid: 697d0f06-cd45-4771-984c-66214d0cfbfd
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oakwood.feeds_item
+    - field.field.node.oakwood.field_attendingphysician
+    - field.field.node.oakwood.field_bywhomburied
+    - field.field.node.oakwood.field_cause_of_death_archival_an
+    - field.field.node.oakwood.field_color
+    - field.field.node.oakwood.field_disease
+    - field.field.node.oakwood.field_firstname
+    - field.field.node.oakwood.field_lastname
+    - field.field.node.oakwood.field_lastname_soundex
+    - field.field.node.oakwood.field_name_archival_and_communit
+    - field.field.node.oakwood.field_nativity
+    - field.field.node.oakwood.field_notes_about_research_condu
+    - field.field.node.oakwood.field_oakwood_date
+    - field.field.node.oakwood.field_pkoakwood
+    - field.field.node.oakwood.field_profession
+    - field.field.node.oakwood.field_remarks
+    - field.field.node.oakwood.field_seclotspace
+    - field.field.node.oakwood.field_sex
+    - field.field.node.oakwood.field_showrow
+    - field.field.node.oakwood.field_whereburied
+    - field.field.node.oakwood.field_yearsmonthsdays
+    - node.type.oakwood
+  module:
+    - user
+id: node.oakwood.teaser
+targetEntityType: node
+bundle: oakwood
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_attendingphysician: true
+  field_bywhomburied: true
+  field_cause_of_death_archival_an: true
+  field_color: true
+  field_disease: true
+  field_firstname: true
+  field_lastname: true
+  field_lastname_soundex: true
+  field_name_archival_and_communit: true
+  field_nativity: true
+  field_notes_about_research_condu: true
+  field_oakwood_date: true
+  field_pkoakwood: true
+  field_profession: true
+  field_remarks: true
+  field_seclotspace: true
+  field_sex: true
+  field_showrow: true
+  field_whereburied: true
+  field_yearsmonthsdays: true
+  langcode: true
+  search_api_excerpt: true

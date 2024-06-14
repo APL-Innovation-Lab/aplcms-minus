@@ -1,0 +1,23 @@
+uuid: 3f3436f8-7c6f-4eb3-8ced-a0e5679308ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seconds
+    - node.type.screen
+id: node.screen.field_seconds
+field_name: field_seconds
+entity_type: node
+bundle: screen
+label: Seconds
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

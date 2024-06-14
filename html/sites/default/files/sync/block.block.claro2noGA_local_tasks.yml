@@ -1,0 +1,28 @@
+uuid: 8242b254-846a-4b74-8097-791bbf218c3d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: claro2noGA_local_tasks
+theme: claro2noGA
+region: header
+weight: -32
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/apltv/*"

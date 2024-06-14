@@ -1,0 +1,19 @@
+uuid: 47589215-bdee-41e4-a000-1340b1f12845
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_phone
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_jp_phone
+field_name: field_jp_phone
+entity_type: node
+bundle: job_portal_assistance_request
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

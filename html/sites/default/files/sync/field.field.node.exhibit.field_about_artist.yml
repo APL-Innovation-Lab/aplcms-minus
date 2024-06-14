@@ -1,0 +1,21 @@
+uuid: 825a7a3a-0084-4ea2-83e3-eb9694e5344b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_artist
+    - node.type.exhibit
+  module:
+    - text
+id: node.exhibit.field_about_artist
+field_name: field_about_artist
+entity_type: node
+bundle: exhibit
+label: 'About Artist'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

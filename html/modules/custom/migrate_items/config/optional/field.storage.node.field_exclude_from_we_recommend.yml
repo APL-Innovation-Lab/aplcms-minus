@@ -1,0 +1,22 @@
+uuid: 0adf54b8-c0af-43d7-86dc-436a4d5185f4
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_exclude_from_we_recommend
+field_name: field_exclude_from_we_recommend
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

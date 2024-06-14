@@ -1,0 +1,116 @@
+uuid: 990d6c4d-23e6-47de-9dca-3acbd453a4ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.virtual_library_page.title
+    - core.base_field_override.node.virtual_library_page.uid
+    - field.field.node.virtual_library_page.body
+    - node.type.virtual_library_page
+  module:
+    - feeds_ex
+    - node
+id: vl_pages_xml
+label: 'Virtual Library Pages XML'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'csv xml'
+  directory: 'public://feeds'
+parser: xml
+parser_configuration:
+  context:
+    value: //item
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+  use_tidy: false
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: virtual_library_page
+  langcode: en
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _nid:
+    value: //nid
+    label: //nid
+    machine_name: _nid
+    type: xml
+  _uid:
+    value: //uid
+    label: //uid
+    machine_name: _uid
+    type: xml
+  _title:
+    value: //title
+    label: //title
+    machine_name: _title
+    type: xml
+  _body:
+    value: //body
+    label: //body
+    machine_name: _body
+    type: xml
+  _nid_:
+    value: .//nid
+    label: .//nid
+    machine_name: _nid_
+    type: xml
+  _uid_:
+    value: .//uid
+    label: .//uid
+    machine_name: _uid_
+    type: xml
+  _title_:
+    value: .//title
+    label: .//title
+    machine_name: _title_
+    type: xml
+  _body_:
+    value: .//body
+    label: .//body
+    machine_name: _body_
+    type: xml
+mappings:
+  -
+    target: nid
+    map:
+      value: _nid_
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: _uid_
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: _title_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: _body_
+      summary: ''
+    settings:
+      language: ''
+      format: basic_html

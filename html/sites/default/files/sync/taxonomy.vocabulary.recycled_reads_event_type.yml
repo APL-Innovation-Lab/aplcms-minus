@@ -1,0 +1,8 @@
+uuid: eacd4ca9-e8ef-4092-976d-889edbf21d93
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recycled Reads Event Type'
+vid: recycled_reads_event_type
+description: ''
+weight: 12

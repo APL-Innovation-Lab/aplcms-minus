@@ -1,0 +1,35 @@
+uuid: 4d554748-a3ba-4ca2-bc72-748b8f29ed0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.apltv
+    - field.field.node.playlist.field_tv_sequence
+    - node.type.playlist
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.playlist.apltv
+targetEntityType: node
+bundle: playlist
+mode: apltv
+content:
+  field_tv_sequence:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

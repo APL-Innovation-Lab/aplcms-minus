@@ -1,0 +1,26 @@
+uuid: 0a84e086-77d1-4da3-9269-ce268f9146e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.highighted_images
+  module:
+    - filter
+    - node
+    - toolbar
+id: highlighted_images_editor
+label: 'Highlighted Images Editor'
+weight: -1
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create highighted_images content'
+  - 'delete any highighted_images content'
+  - 'delete highighted_images revisions'
+  - 'delete own highighted_images content'
+  - 'edit any highighted_images content'
+  - 'edit own highighted_images content'
+  - 'revert highighted_images revisions'
+  - 'use text format full_html'
+  - 'view highighted_images revisions'

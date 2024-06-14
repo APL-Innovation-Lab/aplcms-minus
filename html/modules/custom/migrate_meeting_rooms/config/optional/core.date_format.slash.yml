@@ -1,0 +1,8 @@
+uuid: 11dbabb5-4265-4f05-a7e7-d975159c0726
+langcode: eng
+status: true
+dependencies: {  }
+id: slash
+label: slash
+locked: false
+pattern: m/d/Y

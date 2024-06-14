@@ -1,0 +1,23 @@
+uuid: 5d130d14-a98e-4c99-8ec7-536e7d80ab05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rec_theme
+    - node.type.virtual_library_alert
+  module:
+    - options
+id: node.virtual_library_alert.field_rec_theme
+field_name: field_rec_theme
+entity_type: node
+bundle: virtual_library_alert
+label: Theme
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Yellow
+default_value_callback: ''
+settings: {  }
+field_type: list_string

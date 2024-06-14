@@ -1,0 +1,18 @@
+uuid: 1c89a558-4318-43ab-89e4-3c07f4a9fb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.virtual_library_page
+target_entity_type_id: node
+target_bundle: virtual_library_page
+default_langcode: site_default
+language_alterable: false

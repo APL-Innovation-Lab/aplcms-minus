@@ -1,0 +1,22 @@
+uuid: 00c52d19-b639-4642-94da-932582364639
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: staff_recommend_default
+label: 'Staff Recommend - Default'
+type: 'canonical_entities:node'
+pattern: '/staff-recommend/[node:title]'
+selection_criteria:
+  249f9d60-45ac-4ac3-b06f-9a40ee63624b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 249f9d60-45ac-4ac3-b06f-9a40ee63624b
+    context_mapping:
+      node: node
+    bundles:
+      staff_recommend: staff_recommend
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,30 @@
+uuid: 82db88dc-ef5e-4ce4-aa74-4308ec49ae1d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slr_alert.field_slr_alert
+    - field.field.node.slr_alert.field_slr_room
+    - field.field.node.slr_alert.field_slr_time_end
+    - field.field.node.slr_alert.field_slr_time_start
+    - node.type.slr_alert
+  module:
+    - user
+id: node.slr_alert.teaser
+targetEntityType: node
+bundle: slr_alert
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_slr_alert: true
+  field_slr_room: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: e550195a-fac0-4471-9bbf-f6d16a61181d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibit_location
+    - node.type.exhibit
+id: node.exhibit.field_exhibit_location
+field_name: field_exhibit_location
+entity_type: node
+bundle: exhibit
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: bb828d59-0a24-4dd3-a47c-b65e87aa08ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.basic_page_editor
+  module:
+    - user
+id: user_remove_role_action.basic_page_editor
+label: 'Remove the Basic Page Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: basic_page_editor

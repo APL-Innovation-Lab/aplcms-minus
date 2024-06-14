@@ -1,0 +1,16 @@
+default_patterns:
+  headings: 0
+  text: 0
+  lists: 0
+  blockquote: 0
+  rule: 0
+  table: 0
+  alerts: 0
+  breadcrumbs: 0
+  forms: 0
+  buttons: 0
+  pagination: 0
+default_colors:
+  - '#009abf |turquoise|Logo and navigation bar'
+  - '#f7a700|yellow|Alerts'
+  - ''

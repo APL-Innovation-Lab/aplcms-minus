@@ -1,0 +1,39 @@
+uuid: e77e7733-c409-48d9-956e-6c53e1f9aea3
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1268623d-cbb9-404b-813c-d966009ae209'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - aplpa
+id: biblioaccountlogin
+theme: aplpa
+region: header_top
+weight: -11
+provider: null
+plugin: 'block_content:1268623d-cbb9-404b-813c-d966009ae209'
+settings:
+  id: 'block_content:1268623d-cbb9-404b-813c-d966009ae209'
+  label: 'APL Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      eng: eng
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/ahc\r\n/ahc/*\r\n/term/staging/183\r\n/austin-history-center"

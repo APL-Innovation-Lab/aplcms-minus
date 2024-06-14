@@ -1,0 +1,8 @@
+uuid: ce79cd5e-74cb-4d8b-98c2-234940b6daca
+langcode: eng
+status: true
+dependencies: {  }
+name: 'Database Subjects'
+vid: database_subjects
+description: 'Database Subjects'
+weight: -12

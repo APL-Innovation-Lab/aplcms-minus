@@ -1,0 +1,25 @@
+uuid: 773f8188-21ad-44ee-9029-b6eb384eee12
+langcode: eng
+status: true
+dependencies: {  }
+id: 2bdceb94b5
+name: v7
+invalidationtype: tag
+hostname: 10.66.56.43
+port: 80
+path: /
+request_method: BAN
+scheme: http
+verify: '1'
+headers:
+  -
+    field: Cache-Tags
+    value: '[invalidation:expression]'
+body: null
+body_content_type: null
+runtime_measurement: true
+timeout: !!float 1
+connect_timeout: !!float 1
+cooldown_time: !!float 0
+max_requests: 100
+http_errors: true

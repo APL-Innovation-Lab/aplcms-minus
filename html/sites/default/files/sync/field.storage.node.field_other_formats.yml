@@ -1,0 +1,33 @@
+uuid: 3c3de579-cfd1-4c02-a434-e630b36cc0d3
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_other_formats
+field_name: field_other_formats
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Book
+      label: Book
+    -
+      value: eBook
+      label: eBook
+    -
+      value: 'Audiobook CD'
+      label: 'Audiobook CD'
+    -
+      value: 'Downloadable Audiobook'
+      label: 'Downloadable Audiobook'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

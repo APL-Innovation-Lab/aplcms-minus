@@ -1,0 +1,11 @@
+.field--name-field-se-gallery .field__item {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+tr {
+	border-color: black;
+}
+th {
+	position: inherit !important;
+}

@@ -1,0 +1,30 @@
+uuid: 7b686713-e4e0-402e-8130-d17385d0afeb
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:86622fe9-a705-4517-9ede-a3663295c78b'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds
+id: googletagoctober12022_2
+theme: uswds
+region: header_top
+weight: -28
+provider: null
+plugin: 'block_content:86622fe9-a705-4517-9ede-a3663295c78b'
+settings:
+  id: 'block_content:86622fe9-a705-4517-9ede-a3663295c78b'
+  label: 'Google Tag (October 1, 2022)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/apltv/*\r\n/user/*\r\n/node/7718097\r\n/node/7718098\r\n/node/7718099\r\n/meeting-rooms/list\r\n/sequence/*\r\n/user\r\n/accs-contact\r\n/admin/*"

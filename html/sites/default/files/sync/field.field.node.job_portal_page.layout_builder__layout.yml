@@ -1,0 +1,21 @@
+uuid: 0095f46b-8195-4579-8879-e5094cc5290f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.job_portal_page
+  module:
+    - layout_builder
+id: node.job_portal_page.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: job_portal_page
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

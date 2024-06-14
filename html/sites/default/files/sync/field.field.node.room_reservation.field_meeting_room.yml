@@ -1,0 +1,25 @@
+uuid: 06cff812-3375-4f65-b3e7-839e394ce186
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_room
+    - node.type.room_reservation
+id: node.room_reservation.field_meeting_room
+field_name: field_meeting_room
+entity_type: node
+bundle: room_reservation
+label: 'Meeting Room'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: meeting_rooms
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

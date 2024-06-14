@@ -1,0 +1,27 @@
+uuid: 88a82405-117e-41a9-bffa-0e00988ca234
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+id: giftshopheader
+theme: claro2
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:b31dd7dd-e282-45c3-a735-372dd728ed8f'
+settings:
+  id: 'block_content:b31dd7dd-e282-45c3-a735-372dd728ed8f'
+  label: 'Giftshop header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/giftshop\r\n/giftshop/*"

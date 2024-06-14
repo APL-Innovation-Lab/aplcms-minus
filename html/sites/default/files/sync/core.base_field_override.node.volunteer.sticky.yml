@@ -1,0 +1,22 @@
+uuid: 60c61aa7-96f7-49d0-a5bb-303907c17b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+id: node.volunteer.sticky
+field_name: sticky
+entity_type: node
+bundle: volunteer
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

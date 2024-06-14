@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_event_tags.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the event_tags files to the sites/default/files folder.
+ */
+function migrate_event_tags_install(): void {
+  // Create the event_tags file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_event_tags';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Get the path to the migrate_event_tags module.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_event_tags')->getPath();
+
+  // List of JSON files to copy.
+  $json_files = ['event_tags_1.json', 'event_tags_2.json', 'event_tags_3.json', 'event_tags_4.json'];
+
+  // Loop through each JSON file and copy it to the target directory.
+  foreach ($json_files as $json_file) {
+    $file_source = $module_path . '/artifacts/' . $json_file;
+    \Drupal::service('file_system')->copy($file_source, $directory . '/' . $json_file, FileSystemInterface::EXISTS_REPLACE);
+  }
+}

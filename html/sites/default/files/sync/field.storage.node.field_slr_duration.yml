@@ -1,0 +1,88 @@
+uuid: 68a9df2d-5cef-49b1-b697-9ff09a47b084
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_slr_duration
+field_name: field_slr_duration
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '15'
+      label: '15 minutes'
+    -
+      value: '30'
+      label: '30 minutes'
+    -
+      value: '45'
+      label: '45 minutes'
+    -
+      value: '60'
+      label: '1 hour'
+    -
+      value: '75'
+      label: '1 hour 15 minutes'
+    -
+      value: '90'
+      label: '1 hour 30 minutes'
+    -
+      value: '105'
+      label: '1 hour 45 minutes'
+    -
+      value: '120'
+      label: '2 hours'
+    -
+      value: '180'
+      label: '3 hours'
+    -
+      value: '240'
+      label: '4 hours'
+    -
+      value: '300'
+      label: '5 hours'
+    -
+      value: '360'
+      label: '6 hours'
+    -
+      value: '420'
+      label: '7 hours'
+    -
+      value: '480'
+      label: '8 hours'
+    -
+      value: '540'
+      label: '9 hours'
+    -
+      value: '600'
+      label: '10 hours'
+    -
+      value: '660'
+      label: '11 hours'
+    -
+      value: '720'
+      label: '12 hours'
+    -
+      value: '780'
+      label: '13 hours'
+    -
+      value: '840'
+      label: '14 hours'
+    -
+      value: '900'
+      label: '15 hours'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

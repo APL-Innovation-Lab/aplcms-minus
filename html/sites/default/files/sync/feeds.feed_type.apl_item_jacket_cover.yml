@@ -1,0 +1,80 @@
+uuid: 5b496d9b-30e2-4647-8fc8-ebaa4cb16d60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apl_item.field_jacket_cover
+    - node.type.apl_item
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c5573466-9bd8-4875-8d90-867fba139c96:
+        text: '756190'
+        uuid: c5573466-9bd8-4875-8d90-867fba139c96
+        plugin: rewrite
+        source: _title
+        weight: 0
+        label: Rewrite
+id: apl_item_jacket_cover
+label: 'APL Item jacket cover'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: apl_item
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  _title:
+    value: $.title
+    label: $.title
+    machine_name: _title
+    type: json
+  _jacket_cover_url:
+    value: $.jacket_cover.url
+    label: $.jacket_cover.url
+    machine_name: _jacket_cover_url
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: _title
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_jacket_cover
+    map:
+      value: _jacket_cover_url
+    settings:
+      language: null
+    unique: {  }

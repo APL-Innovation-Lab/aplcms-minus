@@ -1,0 +1,23 @@
+uuid: 16075423-2fb4-4e2c-889f-d414fa94f80a
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+id: internal_group_representative
+label: 'Meeting Room Internal'
+weight: 20
+is_admin: null
+permissions:
+  - 'create field_internal_'
+  - 'create field_room_group'
+  - 'edit field_internal_'
+  - 'edit field_room_group'
+  - 'edit own field_internal_'
+  - 'edit own field_room_group'
+  - 'edit own reflection content'
+  - 'view field_internal_'
+  - 'view field_room_group'
+  - 'view own field_internal_'
+  - 'view own field_room_group'

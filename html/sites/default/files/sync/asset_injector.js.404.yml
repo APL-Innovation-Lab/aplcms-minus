@@ -1,0 +1,35 @@
+uuid: 57811f58-e9c2-4be9-b464-00f2fedfd725
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: '404'
+label: '404'
+code: |-
+  var mess = document.getElementById("error_messages")
+  mess.style.margin = "0"; 
+
+  var count = mess.getElementsByTagName("li")
+
+  var rando = Math.floor(Math.random() * count.length);
+  console.log('rando: ' + rando)
+  for(i=0;i < count.length;i++) {
+  	if(rando == i) {
+  	  count[i].style.display = 'block'
+  	} else {
+  	  count[i].style.display = 'none'
+  	}
+  }
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /x/node/7724406
+contexts: {  }
+conditions_require_all: true

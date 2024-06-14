@@ -1,0 +1,26 @@
+uuid: 353a474e-ef77-4197-9fae-e65a709d3390
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: claro2noGA_messages
+theme: claro2noGA
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/apltv/*'

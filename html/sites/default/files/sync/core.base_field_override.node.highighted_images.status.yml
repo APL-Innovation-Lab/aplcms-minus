@@ -1,0 +1,22 @@
+uuid: b4c46f20-22c4-4bb4-8f39-d6180ddc1909
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.status
+field_name: status
+entity_type: node
+bundle: highighted_images
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

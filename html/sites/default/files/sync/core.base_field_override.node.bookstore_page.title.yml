@@ -1,0 +1,18 @@
+uuid: 2f16adaf-bfa2-4344-98f2-62725cca471c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.title
+field_name: title
+entity_type: node
+bundle: bookstore_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

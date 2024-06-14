@@ -1,0 +1,20 @@
+uuid: 74ef3f0a-6596-436c-b5b9-d5e71c2499c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.uid
+field_name: uid
+entity_type: node
+bundle: room_reservation
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

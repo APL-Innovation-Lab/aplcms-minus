@@ -1,0 +1,869 @@
+uuid: 228eb9f4-3aff-4ff1-b835-7916112d4456
+langcode: eng
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 20
+template: false
+archive: false
+id: contact_acquisitions_cataloging_
+title: 'Contact Acquisitions, Cataloging, and Collections'
+description: 'Internal form. Tracy Boehm will act as coordinator'
+category: ''
+elements: |-
+  intro:
+    '#type': webform_markup
+    '#markup': |-
+      <h2>Cataloging and Collections Services Contact Form</h2>
+      Thank you for contacting Cataloging and Collections Services. Please complete the following questionnaire fully and to the best of your abilities. Your manager may be looped in on a request.<br />
+      <br />
+      Hold onto any paperwork associated to your question until you receive a response and do not send in any physical items to us until informed to do so.
+  name:
+    '#type': textfield
+    '#title': 'First Name'
+    '#required': true
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#required': true
+  library:
+    '#type': webform_entity_radios
+    '#title': Library
+    '#options_display': three_columns
+    '#required': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        library_location: library_location
+  email:
+    '#type': email
+    '#title': Email
+    '#description': 'Please enter email to send a copy of this request.'
+  what_is_the_reason_you_are_contacting_us_today_:
+    '#type': radios
+    '#title': 'What is the reason you are contacting us today?'
+    '#options':
+      dropship: 'New items issue'
+      label: 'New label request -- (Not dropship related)'
+      correction: 'Call number correction -- (Not dropship related)'
+      cat_error: 'Cataloging error -- (Not dropship related)'
+      collection: 'Leveling or collection question'
+      purchase: 'Replacement or added copies purchase request --  (requests for new titles should go through BiblioCommons Suggest a Title here: https://austin.bibliocommons.com/user/login?destination=%2Fsuggested_purchases)'
+      subject: 'Report a subject gap at your library'
+      relocation: 'Relocation or overflow question'
+      virtual: 'Virtual Library issue or question'
+      other: 'None of the above/other question'
+    '#options_display': two_columns
+    '#other__option_label': 'None of the above/other question'
+    '#required': true
+  type_of_dropship_issue:
+    '#type': radios
+    '#title': 'Type of new item issue'
+    '#options':
+      item_issue: 'Missing, damaged, extra, or wrong item in shipment'
+      barcode: 'Barcodes missing or misplaced'
+      tag: 'RFID tag missing or programmed incorrectly'
+      library: 'Name of library spelled incorrectly'
+      mylar: 'Mylar cover missing or not applied properly'
+      two_barcodes: 'Two different barcode numbers'
+      label: 'Spine label damaged or incorrect orientation'
+      hub: 'Hub labels have mismatching barcode numbers'
+      hub_missing: 'Hub labels missing'
+      not_found: 'Item not found in catalog'
+      call_number: 'Call number on item does not match call number in WorkFlows'
+      title: 'Title on item does not match title in WorkFlows'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: dropship
+  vendor_name:
+    '#type': radios
+    '#title': 'Vendor name'
+    '#options':
+      bt: 'Baker & Taylor'
+      ingram: Ingram
+      midwest: Midwest
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: dropship
+        ':input[name="type_of_dropship_issue"]':
+          checked: true
+  vendor_order_number:
+    '#type': textfield
+    '#title': 'Vendor order number'
+    '#description': '(Baker &amp; Taylor: ATS COM ; Ingram: CTLS number ; Midwest Tape: Reference number)'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: dropship
+        ':input[name="type_of_dropship_issue"]':
+          checked: true
+  explanation_of_call_number_error:
+    '#type': textarea
+    '#title': 'Explanation of call number error'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: correction
+  describe_the_cataloging_error:
+    '#type': textarea
+    '#title': 'Describe the cataloging error'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: cat_error
+  include_a_link_to_the_record_in_bibliocommons_if_available:
+    '#type': webform_link
+    '#title': 'Include a link to the record in BiblioCommons if available'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: cat_error
+    '#title__access': false
+    '#url__title': 'Include a link to the record in BiblioCommons if available'
+  is_this_question_about_:
+    '#type': radios
+    '#title': 'Is this question about:'
+    '#options':
+      leveling: Leveling
+      collection: Collection
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: collection
+  current_material_level:
+    '#type': radios
+    '#title': 'Current material level'
+    '#options':
+      E: E
+      E1: E1
+      J: J
+      'Y': 'Y'
+      AD: AD
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: leveling
+  proposed_new_level:
+    '#type': radios
+    '#title': 'Proposed new level'
+    '#options':
+      E: E
+      E1: E1
+      J: J
+      'Y': 'Y'
+      AD: AD
+    '#states':
+      visible:
+        ':input[name="is_this_question_about_"]':
+          value: leveling
+  current_collection:
+    '#type': radios
+    '#title': 'Current collection'
+    '#options':
+      'Adult 4K': 'Adult 4K'
+      'Adult Blu-Ray': 'Adult Blu-Ray'
+      'Adult DVD': 'Adult DVD'
+      'Adult Fiction': 'Adult Fiction'
+      'Adult Nonfiction': 'Adult Nonfiction'
+      'Adult Graphic Novel': 'Adult Graphic Novel'
+      'Adult Braille': 'Adult Braille'
+      'Adult Large Print': 'Adult Large Print'
+      'Adult Music CD': 'Adult Music CD'
+      'Adult Audiobook': 'Adult Audiobook'
+      'E 4K': 'E 4K'
+      'E Blu-Ray': 'E Blu-Ray'
+      'E DVD': 'E DVD'
+      'E Fiction': 'E Fiction'
+      'E Nonfiction': 'E Nonfiction'
+      'E Braille': 'E Braille'
+      'E Audiobook': 'E Audiobook'
+      'E1 DVD': 'E1 DVD'
+      'E Read-Along': 'E Read-Along'
+      'E1 Fiction': 'E1 Fiction'
+      'E1 Nonfiction': 'E1 Nonfiction'
+      'E1 Braille': 'E1 Braille'
+      'E1 Audiobook': 'E1 Audiobook'
+      'J 4K': 'J 4K'
+      'J Blu-Ray': 'J Blu-Ray'
+      'J DVD': 'J DVD'
+      'E1 Read-Along': 'E1 Read-Along'
+      'J Fiction': 'J Fiction'
+      'J Nonfiction': 'J Nonfiction'
+      'J Graphic Novel': 'J Graphic Novel'
+      'J Braille': 'J Braille'
+      'J Audiobook': 'J Audiobook'
+      'Children''s Music': 'Children''s Music'
+      'Y 4K': 'Y 4K'
+      'Y Blu-Ray': 'Y Blu-Ray'
+      'Y DVD': 'Y DVD'
+      'J Read-Along': 'J Read-Along'
+      'Y Fiction': 'Y Fiction'
+      'Y Nonfiction': 'Y Nonfiction'
+      'Y Graphic Novel': 'Y Graphic Novel'
+      'Y Audiobook': 'Y Audiobook'
+      'Y Braille': 'Y Braille'
+      'Device - Meters': 'Device - Meters'
+    '#options_display': two_columns
+    '#states':
+      visible:
+        ':input[name="is_this_question_about_"]':
+          value: collection
+  proposed_new_collection:
+    '#type': radios
+    '#title': 'Proposed new collection'
+    '#options':
+      'Adult 4K': 'Adult 4K'
+      'Adult Blu-Ray': 'Adult Blu-Ray'
+      'Adult DVD': 'Adult DVD'
+      'Adult Fiction': 'Adult Fiction'
+      'Adult Nonfiction': 'Adult Nonfiction'
+      'Adult Graphic Novel': 'Adult Graphic Novel'
+      'Adult Braille': 'Adult Braille'
+      'Adult Large Print': 'Adult Large Print'
+      'Adult Music CD': 'Adult Music CD'
+      'Adult Audiobook': 'Adult Audiobook'
+      'E 4K': 'E 4K'
+      'E Blu-Ray': 'E Blu-Ray'
+      'E DVD': 'E DVD'
+      'E Fiction': 'E Fiction'
+      'E Nonfiction': 'E Nonfiction'
+      'E Braille': 'E Braille'
+      'E Audiobook': 'E Audiobook'
+      'E1 DVD': 'E1 DVD'
+      'E Read-Along': 'E Read-Along'
+      'E1 Fiction': 'E1 Fiction'
+      'E1 Nonfiction': 'E1 Nonfiction'
+      'E1 Braille': 'E1 Braille'
+      'E1 Audiobook': 'E1 Audiobook'
+      'J 4K': 'J 4K'
+      'J Blu-Ray': 'J Blu-Ray'
+      'J DVD': 'J DVD'
+      'E1 Read-Along': 'E1 Read-Along'
+      'J Fiction': 'J Fiction'
+      'J Nonfiction': 'J Nonfiction'
+      'J Graphic Novel': 'J Graphic Novel'
+      'J Braille': 'J Braille'
+      'J Audiobook': 'J Audiobook'
+      'Children''s Music': 'Children''s Music'
+      'Y 4K': 'Y 4K'
+      'Y Blu-Ray': 'Y Blu-Ray'
+      'Y DVD': 'Y DVD'
+      'J Read-Along': 'J Read-Along'
+      'Y Fiction': 'Y Fiction'
+      'Y Nonfiction': 'Y Nonfiction'
+      'Y Graphic Novel': 'Y Graphic Novel'
+      'Y Audiobook': 'Y Audiobook'
+      'Y Braille': 'Y Braille'
+      'Device - Meters': 'Device - Meters'
+    '#options_display': two_columns
+    '#states':
+      visible:
+        ':input[name="is_this_question_about_"]':
+          value: collection
+  reason_for_moving_this_item:
+    '#type': textarea
+    '#title': 'Reason for moving this item'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: collection
+  type_of_material:
+    '#type': radios
+    '#title': 'Type of material'
+    '#options':
+      'Adult 4K': 'Adult 4K'
+      'Adult Blu-Ray': 'Adult Blu-Ray'
+      'Adult DVD': 'Adult DVD'
+      'Adult Fiction': 'Adult Fiction'
+      'Adult Nonfiction': 'Adult Nonfiction'
+      'Adult Graphic Novel': 'Adult Graphic Novel'
+      'Adult Braille': 'Adult Braille'
+      'Adult Large Print': 'Adult Large Print'
+      'Adult Music CD': 'Adult Music CD'
+      'Adult Audiobook': 'Adult Audiobook'
+      'E 4K': 'E 4K'
+      'E Blu-Ray': 'E Blu-Ray'
+      'E DVD': 'E DVD'
+      'E Fiction': 'E Fiction'
+      'E Nonfiction': 'E Nonfiction'
+      'E Braille': 'E Braille'
+      'E Audiobook': 'E Audiobook'
+      'E1 DVD': 'E1 DVD'
+      'E Read-Along': 'E Read-Along'
+      'E1 Fiction': 'E1 Fiction'
+      'E1 Nonfiction': 'E1 Nonfiction'
+      'E1 Braille': 'E1 Braille'
+      'E1 Audiobook': 'E1 Audiobook'
+      'J 4K': 'J 4K'
+      'J Blu-Ray': 'J Blu-Ray'
+      'J DVD': 'J DVD'
+      'E1 Read-Along': 'E1 Read-Along'
+      'J Fiction': 'J Fiction'
+      'J Nonfiction': 'J Nonfiction'
+      'J Graphic Novel': 'J Graphic Novel'
+      'J Braille': 'J Braille'
+      'J Audiobook': 'J Audiobook'
+      'Children''s Music': 'Children''s Music'
+      'Y 4K': 'Y 4K'
+      'Y Blu-Ray': 'Y Blu-Ray'
+      'Y DVD': 'Y DVD'
+      'J Read-Along': 'J Read-Along'
+      'Y Fiction': 'Y Fiction'
+      'Y Nonfiction': 'Y Nonfiction'
+      'Y Graphic Novel': 'Y Graphic Novel'
+      'Y Audiobook': 'Y Audiobook'
+      'Y Braille': 'Y Braille'
+      'Device - Meters': 'Device - Meters'
+    '#options_display': two_columns
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: purchase
+  provide_a_detailed_description_of_the_needs_of_your_collection:
+    '#type': textarea
+    '#title': 'Provide a detailed description of the needs of your collection'
+    '#states':
+      visible:
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: subject
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: relocation
+  provide_a_detailed_description_of_your_question_not_covered_by_o:
+    '#type': textarea
+    '#title': 'Provide a detailed description of your question not covered by one of the above choices'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: 'provide a detailed'
+  language_of_material:
+    '#type': radios
+    '#title': 'Language of material'
+    '#options':
+      English: English
+      Spanish: Spanish
+      Other: 'Language other than English or Spanish'
+    '#states':
+      visible:
+        - ':input[name="is_this_question_about_"]':
+            value: leveling
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: purchase
+  item_id_s_:
+    '#type': textarea
+    '#title': 'Item ID(s)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: label
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: correction
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: cat_error
+        - or
+        - ':input[name="is_this_question_about_"]':
+            value: leveling
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: dropship
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: purchase
+  item_standard_number_s_isbn_upc_etc_:
+    '#type': textarea
+    '#title': 'Item Standard Number(s) (ISBN, UPC, etc.)'
+    '#states':
+      visible:
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: label
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: correction
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: cat_error
+        - or
+        - ':input[name="is_this_question_about_"]':
+            value: leveling
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: dropship
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: purchase
+  item_title:
+    '#type': textarea
+    '#title': 'Item Title(s)'
+    '#states':
+      visible:
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: label
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: correction
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: cat_error
+        - or
+        - ':input[name="is_this_question_about_"]':
+            value: leveling
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: dropship
+        - or
+        - ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: purchase
+  virtual_library_resource:
+    '#type': webform_radios_other
+    '#title': 'Please select a specific resource'
+    '#options':
+      overdrive: Overdrive/Libby
+      hoopla: Hoopla
+      CloudLibrary: CloudLibrary
+      Database: Database
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: virtual
+  describe_your_virtual_library_problem_or_request:
+    '#type': textarea
+    '#title': 'Describe your Virtual Library problem or request'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: virtual
+  for_technical_issues_what_troubleshooting_steps_have_you_tried_p:
+    '#type': textarea
+    '#title': 'For technical issues, what troubleshooting steps have you tried? Provide a LibAnswer link if available.'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: virtual
+  include_a_link_to_the_record_in_the_resource_if_available:
+    '#type': textfield
+    '#title': 'Include a link to the record in the resource if available'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: virtual
+  is_there_any_other_information_we_need_to_know_:
+    '#type': textarea
+    '#title': 'Is there any other information we need to know?'
+    '#states':
+      visible:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          checked: true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: /accs-contact
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: false
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thanks for your submission.'
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: true
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  cat_support_email:
+    id: email
+    handler_id: cat_support_email
+    label: 'Cat Support Email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: label
+        - or
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: correction
+        - or
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: cat_error
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: library.catalogsupport@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:what_is_the_reason_you_are_contacting_us_today_:raw]'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  acquisitions_email:
+    id: email
+    handler_id: acquisitions_email
+    label: 'Acquisitions Email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: dropship
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: acquisitions.library@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  collections_email:
+    id: email
+    handler_id: collections_email
+    label: 'Collections Email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: collection
+        - or
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: purchase
+        - or
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: subject
+        - or
+        -
+          ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+            value: relocation
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: Library.CollectionDevelopment@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  customer_access_email:
+    id: email
+    handler_id: customer_access_email
+    label: 'Customer Access Email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: other
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: Library.CollectionDevelopment@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  virtual_library_email:
+    id: email
+    handler_id: virtual_library_email
+    label: 'Virtual Library Email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="what_is_the_reason_you_are_contacting_us_today_"]':
+          value: virtual
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: Library.CollectionDevelopment@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

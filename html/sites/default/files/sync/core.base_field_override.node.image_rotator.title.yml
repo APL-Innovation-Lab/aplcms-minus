@@ -1,0 +1,18 @@
+uuid: 81dc56bc-3427-4fa3-a6c2-2f96a4ecfa49
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.title
+field_name: title
+entity_type: node
+bundle: image_rotator
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,6 @@
+#block-aplpa-content, #block-uswds-base-content {
+	margin-top: 0 !important;
+}
+.usa-layout-docs__main.desktop\:grid-col-fill {
+	background-image: none !important;
+}

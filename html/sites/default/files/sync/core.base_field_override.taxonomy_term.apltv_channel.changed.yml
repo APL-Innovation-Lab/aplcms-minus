@@ -1,0 +1,18 @@
+uuid: c46d3af2-5ab7-4054-9c83-b0c4c554544e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apltv_channel
+id: taxonomy_term.apltv_channel.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: apltv_channel
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

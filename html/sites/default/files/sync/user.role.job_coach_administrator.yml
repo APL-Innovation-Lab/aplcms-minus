@@ -1,0 +1,68 @@
+uuid: 22222a08-08ce-4d8b-be06-b8d6a5cbecc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.job_portal_page
+  module:
+    - config_perms
+    - content_translation
+    - field_permissions
+    - filter
+    - node
+id: job_coach_administrator
+label: 'Job Coach Administrator'
+weight: 4
+is_admin: null
+permissions:
+  - 'admin webform results'
+  - 'create field_assigned_to'
+  - 'create field_cr_history'
+  - 'create field_email_message'
+  - 'create field_jb_status'
+  - 'create field_jp_anecdata'
+  - 'create field_jp_area'
+  - 'create field_jp_date'
+  - 'create field_jp_notes_comments'
+  - 'create field_jp_ready_to_reply'
+  - 'edit any job_portal_page content'
+  - 'edit field_assigned_to'
+  - 'edit field_cr_history'
+  - 'edit field_email_message'
+  - 'edit field_jb_status'
+  - 'edit field_jp_anecdata'
+  - 'edit field_jp_area'
+  - 'edit field_jp_date'
+  - 'edit field_jp_notes_comments'
+  - 'edit field_jp_ready_to_reply'
+  - 'edit own field_assigned_to'
+  - 'edit own field_cr_history'
+  - 'edit own field_email_message'
+  - 'edit own field_jb_status'
+  - 'edit own field_jp_anecdata'
+  - 'edit own field_jp_area'
+  - 'edit own field_jp_date'
+  - 'edit own field_jp_notes_comments'
+  - 'edit own field_jp_ready_to_reply'
+  - 'edit own job_portal_page content'
+  - 'translate job_portal_page node'
+  - 'use text format full_html'
+  - 'view field_assigned_to'
+  - 'view field_cr_history'
+  - 'view field_email_message'
+  - 'view field_jb_status'
+  - 'view field_jp_anecdata'
+  - 'view field_jp_area'
+  - 'view field_jp_date'
+  - 'view field_jp_notes_comments'
+  - 'view field_jp_ready_to_reply'
+  - 'view own field_assigned_to'
+  - 'view own field_cr_history'
+  - 'view own field_email_message'
+  - 'view own field_jb_status'
+  - 'view own field_jp_anecdata'
+  - 'view own field_jp_area'
+  - 'view own field_jp_date'
+  - 'view own field_jp_notes_comments'
+  - 'view own field_jp_ready_to_reply'

@@ -1,0 +1,122 @@
+uuid: 9dd6e8da-532c-4ed4-965a-60d82cf6bb9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.ahc_page.title
+    - field.field.node.ahc_page.field_slideshow_ahc
+    - node.type.ahc_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      5b1f988a-8e15-4574-9be6-c36451d707f5:
+        separator: '@'
+        limit: null
+        uuid: 5b1f988a-8e15-4574-9be6-c36451d707f5
+        plugin: explode
+        source: field_slideshow_ahc
+        weight: 0
+        label: Explode
+      fb6eb3a5-436d-4804-9d66-b25965d08810:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: fb6eb3a5-436d-4804-9d66-b25965d08810
+        plugin: find_replace_regex
+        source: field_slideshow_ahc
+        weight: 1
+        label: 'Find replace REGEX'
+      1d5c176f-0618-475a-84ae-dbaec9154a97:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 1d5c176f-0618-475a-84ae-dbaec9154a97
+        plugin: find_replace_regex
+        source: field_slideshow_ahc
+        weight: 2
+        label: 'Find replace REGEX'
+      55e1354e-e09c-4155-be33-7d58b0a293f3:
+        separator: '@'
+        limit: null
+        uuid: 55e1354e-e09c-4155-be33-7d58b0a293f3
+        plugin: explode
+        source: field_slideshow_ahc_title
+        weight: 0
+        label: Explode
+id: ahc_page_galleries
+label: 'AHC Page Galleries'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: ahc_page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  field_slideshow_ahc:
+    value: field_slideshow_ahc
+    label: field_slideshow_ahc
+    machine_name: field_slideshow_ahc
+    type: csv
+  field_slideshow_ahc_title:
+    value: field_slideshow_ahc-title
+    label: field_slideshow_ahc-title
+    machine_name: field_slideshow_ahc_title
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_slideshow_ahc
+    map:
+      target_id: field_slideshow_ahc
+      alt: ''
+      title: field_slideshow_ahc_title
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '2'
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }

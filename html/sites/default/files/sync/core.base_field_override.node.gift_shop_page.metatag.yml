@@ -1,0 +1,18 @@
+uuid: de689823-2719-4b14-bd03-fcf8aa32b08e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.metatag
+field_name: metatag
+entity_type: node
+bundle: gift_shop_page
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

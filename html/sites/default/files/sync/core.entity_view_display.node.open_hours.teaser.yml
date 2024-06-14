@@ -1,0 +1,36 @@
+uuid: a63bbfe5-d0a0-406b-82e4-ed230ffedf88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.open_hours.feeds_item
+    - field.field.node.open_hours.field_effective_date
+    - field.field.node.open_hours.field_hours_more_info
+    - field.field.node.open_hours.field_location
+    - field.field.node.open_hours.field_open_hours__
+    - field.field.node.open_hours.field_slr_time_end
+    - field.field.node.open_hours.field_slr_time_start
+    - node.type.open_hours
+  module:
+    - user
+id: node.open_hours.teaser
+targetEntityType: node
+bundle: open_hours
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_effective_date: true
+  field_hours_more_info: true
+  field_location: true
+  field_open_hours__: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

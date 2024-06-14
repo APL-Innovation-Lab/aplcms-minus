@@ -1,0 +1,21 @@
+uuid: 0d673486-4e22-4ab8-b00e-4bdf53ac0a1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_date
+    - node.type.special_dates
+  module:
+    - datetime
+id: node.special_dates.field_special_date
+field_name: field_special_date
+entity_type: node
+bundle: special_dates
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

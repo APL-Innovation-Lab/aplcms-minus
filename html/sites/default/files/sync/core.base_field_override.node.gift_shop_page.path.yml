@@ -1,0 +1,20 @@
+uuid: 9fb5c68f-e385-4658-ad8c-245a697ed2db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+  module:
+    - path
+id: node.gift_shop_page.path
+field_name: path
+entity_type: node
+bundle: gift_shop_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

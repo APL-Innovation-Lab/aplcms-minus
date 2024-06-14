@@ -1,0 +1,25 @@
+uuid: b50461da-555b-4453-ac8f-f4d1126a4bd1
+langcode: eng
+status: true
+dependencies: {  }
+id: scroller
+label: scroller
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+
+
+  $('.views-field-field-biblio-booklist-id- iframe').attr('scrolling','no');
+
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

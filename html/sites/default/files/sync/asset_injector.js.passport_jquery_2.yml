@@ -1,0 +1,395 @@
+uuid: 74b8988e-58f4-47c9-b7b4-3994263e4344
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: passport_jquery_2
+label: 'passport jquery 2'
+code: |-
+  		(function($, jQuery) {
+  		  $(document).ready(function() {
+  			var opening_hour = 14;
+  			var closing_hour = 20;
+  			var max_sim = 1;
+  			var f_time = 'h:mm A';
+  			var f_date = 'dddd, YYYY-MM-DD';
+  			var pp_format = 'YYYY-MM-DD H:mm';		
+  			
+  			var max_date = dayjs().add(6, 'weeks');
+  			var min_date = dayjs().add(2, 'hours');
+  			
+  			var which_date = $('#edit-field-pp-date-0-value-date');
+  			which_date.attr('min', min_date.format('YYYY-MM-DD'));
+  			which_date.attr('max', max_date.format('YYYY-MM-DD'));
+  			
+  			console.log('at first: ' + this_date);
+  			var this_date = get_this_date();
+  			console.log('next: ' + this_date.format(pp_format));
+  			
+  			function get_this_date () {
+  				
+  				this_date = dayjs($('#edit-field-pp-date-0-value-date').val());
+  				
+  				
+  				if(this_date.isValid()) {
+  					
+  				} else {
+  					this_date = dayjs();
+  					console.log('invalid, but updated');
+  					console.log(this_date.format(pp_format));
+  					
+  				}
+  				this_date.hour(opening_hour);
+  				console.log(this_date.format(pp_format));
+  				console.log('-------');
+  				this_date2 = this_date.minute(0);
+
+  				console.log(this_date2.format(pp_format));
+  				return this_date2;
+  			}
+  			this_date.minute(0);
+  			console.log('this date is now: ' + this_date.format(pp_format));
+
+  			var p_v = 1;
+  			function people_count (){
+  				var adults_c = $('#edit-field-pp-expected-attendance').val();
+  				var minors_c = $('#edit-field-pp-minor-applicants').val();
+  						
+  				if(minors_c == '_none') { minors_c = 0; }
+  				p_v = parseInt(minors_c) + parseInt(adults_c);
+  				return p_v;
+  			}
+  			p_v = people_count();
+
+  			var adults = $('#edit-field-pp-expected-attendance');
+  			var minors = $('#edit-field-pp-minor-applicants');
+  			var minors_count = $('#edit-field-pp-minor-applicants option');
+  			
+  			function reset_minors() {
+  			  minors.val('_none');
+  			  minors_count.css('display', 'block');
+  			  minors_count.each(function() {
+  				if (parseInt($(this).val()) + parseInt(adults.val()) > 6) {
+  				  $(this).css('display', 'none');
+  				}
+  			  });
+  			}
+  			adults.change(function() {
+  			  reset_minors();
+  			});
+  			reset_minors();
+
+  			
+
+  			console.log('this_date: ' + this_date.format(pp_format));
+  			
+  			
+  			var existingStarts = [];
+  			var busy = [];
+  			$.getJSON("/pp_dates.json", function(json) {
+  			  var k;
+  			  for (k = 0; k < json.length; k++) {
+  				j_date = json[k].date.trim();
+  				j_people = json[k].people;
+  				existingStarts.push(j_date);
+  			  }
+  			});
+  			var max_busy = 1;
+  			var disabledDays = [];
+  			$.getJSON("/special_dates.json", function(json9) {
+  			  console.log('special_dates.json loaded');
+  			  var k;
+  			  for (k = 0; k < json9.length; k++) {
+  				j_date = json9[k].field_special_date.trim();
+  				if (json9[k].field_early_closing) {
+  				  console.log('early closing day, so adding blocking start times beginning at 18:00');
+  				  var early_date = dayjs(j_date + ' ' + j_early);
+  				  existingStarts.push(early_date.format(pp_format));
+  				  var add_1 = dayjs(early_date).add(30, 'minutes').format(pp_format);
+  				  existingStarts.push(add_1);
+  				  var add_2 = dayjs(early_date).add(60, 'minutes').format(pp_format);
+  				  existingStarts.push(add_2);
+  				  var add_3 = dayjs(early_date).add(90, 'minutes').format(pp_format);
+  				  existingStarts.push(add_3);
+  				  var add_4 = dayjs(early_date).add(120, 'minutes').format(pp_format);
+  				  existingStarts.push(add_4);
+  				  var add_5 = dayjs(early_date).add(150, 'minutes').format(pp_format);
+  				  existingStarts.push(add_5);
+  				} else {
+  				  console.log('not an early closing day');
+  				  disabledDays.push(j_date);
+  				}
+  			  }
+  			});
+
+  			var date_wrapper = $('#edit-field-pp-date-wrapper');
+  			var button_wrapper = $('#edit-actions');
+  			var people_field = $('#edit-field-pp-expected-attendance');
+  			var minors_field = $('#edit-field-pp-minor-applicants');
+
+
+  			var date1 = $('#edit-field-pp-date-0-value-date');
+  			var time1 = $('#edit-field-pp-date-0-value-time');
+  			
+  			date_wrapper.append('<div id="pp_avail_wrapper"><a href="#" class="pp_less">Check for available times...</a></div>');
+  			
+  			var avail_wrapper = $('#pp_avail_wrapper');
+  			
+  			var avail_label = '<label for="pp_avail_wrapper" class="form-item__label js-form-required form-required">Available Times</label>';
+  			avail_wrapper.prepend(avail_label);
+  			
+  			var availStarts = [];
+  			var e_date = $('#edit-field-pp-date-0-value-date');
+  			var e_time = $('#edit-field-pp-date-0-value-time');
+  			var submit_button = $('#edit-submit');
+
+  		submit_button.prop('disabled',true);
+  		//submit_button.val('Select an available time and then Save);	
+
+  		if (e_date.val() && e_time.val()) {
+  			  var ee_date = dayjs(e_date.val() + ' ' + e_time.val());
+  			  avail_wrapper.prepend('<a class="e_date pp_avail active" data-time="' + e_time.val() + '" data-date="' + e_date.val() + '">' + ee_date.format('dddd, MMMM D') + ' <br> ' + ee_date.format(f_time) + '</a><br>');
+  			submit_button.prop('disabled',false);
+
+  			}
+  			
+  			function check_dates(input_date, people) {
+  			  var ch_date = input_date;
+  			  
+  			//var ch_date = dayjs($('#edit-field-pp-date-0-value-date').val());
+  			
+  			  if(!people) {
+  				  people = 1;
+  			  }
+  		console.log('number of people: ' + people);
+  			  if (ch_date.format('d') == 0) {
+  				console.log(ch_date.format(f_date) + ': not available on Sunday');
+  				
+  				
+  			  } else { // not a Sunday
+  			  
+  				if ((disabledDays.indexOf(ch_date.format('YYYY-MM-DD'))) >= 0) { // appears in disabledDays array
+  				  console.log(ch_date.format(f_date) + ': not available on holiday');
+
+
+  				} else { //not a holiday date
+  				
+  				  if (ch_date.isAfter(max_date, 'day')) {
+  					console.log(ch_date.format('dddd, YYYY-MM-DD ' + f_time) + ': after maximum date');
+  					
+  				  } else {
+  					if (ch_date.isBefore(min_date)) {
+  					  console.log(ch_date.format('dddd, YYYY-MM-DD ' + f_time) + ': before minimum date');
+  					  console.log('min_date = ' + min_date.format(pp_format));
+  					  var ch_date2 = min_date;
+  					  ch_date3 = ch_date2.add(1, 'hour').minute(0);
+  					  console.log(ch_date3.format('dddd, YYYY-MM-DD ' + f_time));
+  					  check_dates(ch_date3, p_v);
+  					  
+  					} else {
+  					  if (ch_date.format('H') < opening_hour) { // before opening hour
+  						console.log(ch_date.format('dddd, YYYY-MM-DD ' + f_time) + ': before opening hour');
+  						var ch_date2 = ch_date.hour(opening_hour);
+  						check_dates(ch_date2);
+  					  } else { //after opening hour
+  						
+  						
+  					  if(ch_date.format('d') == '1' || ch_date.format('d') == '2') {
+  						closing_hour = 20;
+  					  } else {
+  						closing_hour = 18;
+  					  }
+  						
+  						console.log('people count: ' + p_v);
+  						var closing_padding = parseInt(p_v) * 30;
+  						
+  						var ch_date3 = ch_date.add(closing_padding, 'minutes');
+  						console.log('ch3: ' + ch_date3.format(pp_format));
+
+  						var ch_date4 = ch_date.hour(closing_hour).minute(1);
+  						console.log('ch4: ' + ch_date4.format(pp_format));
+
+  						if (ch_date3.isAfter(ch_date4)) {
+  						  console.log(ch_date.format('dddd, YYYY-MM-DD ' + f_time) + ': after closing hour');
+
+
+  						}
+  						else {
+  		if (existingStarts.indexOf(ch_date.format(pp_format)) >= 0 || availStarts.indexOf(ch_date.format(pp_format)) >= 0) { // appears in existingStarts array
+  							console.log(ch_date.format('dddd, ' + pp_format) + ': existing start');
+  							var ch_date2 = ch_date.add(1, 'hour');
+  							check_dates(ch_date2);
+  						  } else {
+  								console.log(ch_date.format('dddd, ' + pp_format) + ': not too busy');
+  								  
+  								  
+  								  availStarts.push(ch_date.format(pp_format));
+  								  console.log(availStarts);
+  								  
+  								  if (availStarts.length < 6) {
+  									var ch_date2 = ch_date.add(1, 'hour');
+  									check_dates(ch_date2);
+  								  }
+  								  
+  								  
+  						  }
+  						}
+  					  }
+  					}
+  				  }
+  				}
+  			  }
+  			  suggest_available(availStarts);
+  			}
+  			people_field.change(function() {
+  			  availStarts = [];
+  			  $('.pp_avail').remove();
+  				p_v = people_count();
+  				this_date2 = get_this_date();
+
+  			console.log('people_field changed');
+  			console.log('p_v5:' + p_v);
+  				check_dates(this_date2,p_v);
+
+
+  			});		
+  			minors_field.change(function() {
+  			  availStarts = [];
+  			  $('.pp_avail').remove();
+  				p_v = people_count();
+  				this_date2 = get_this_date();
+
+  			console.log('minors_field changed');
+  			console.log('p_va5:' + p_v);
+  				check_dates(this_date2,p_v);
+
+
+  			});
+
+  			function suggest_available(pp_date) {
+  			  $('.pp_avail').remove();
+  			  $('.no_slots').remove();
+  			  $('.pp_less').css('display','none');
+
+  			  for (var p = 0; p < pp_date.length; p++) {
+  				var s_date = dayjs(pp_date[p]);
+  				avail_wrapper.append('<a class="pp_avail" data-time="' + s_date.format('HH:mm:ss') + '" data-date="' + s_date.format('YYYY-MM-DD') + '">' + s_date.format('dddd, MMMM D') + ' <br> ' + s_date.format(f_time) + '</a>');
+  			  }
+  			  
+  			  if(!pp_date.length) {
+  				  avail_wrapper.append('<p class="no_slots">No reservations available. Please select another date.</p>');
+  			  }
+  			  $('.pp_avail').click(function() {
+  				$('.pp_avail').removeClass('active');
+  				$('.pp_avail').addClass('inactive');
+  				$(this).removeClass('inactive');
+  				$(this).addClass('active');
+  					submit_button.prop('disabled',false);
+
+  				date1.val($(this).attr('data-date'));
+  				time1.val($(this).attr('data-time'));
+  			  });
+  			  $('.pp_less2').click(function(e) {
+  				e.preventDefault();
+  				availStarts = [];
+  				submit_button.prop('disabled',true);
+
+  				console.log('Check link clicked');
+  				
+  			p_v = people_count();
+  						this_date2 = get_this_date();
+
+  			console.log('p_v3:' + p_v);
+  				
+  				
+  				
+  				console.log('this_date currently:' + this_date2.format(pp_format));
+  				
+  				check_dates(this_date2, p_v);
+  				//date1.val($(this).attr('data-date'));
+  				//time1.val($(this).attr('data-time'));
+  			  });
+  			  $('.pp_more').click(function(e) {
+  				e.preventDefault();
+  				var last_av = availStarts.length - 1;
+  				ch_date5 = dayjs(availStarts[last_av]).add(2, 'hours').minute(0);
+  				availStarts = [];
+  				console.log('more button');
+  				console.log('people_field:' + p_v);
+  				check_dates(ch_date5, p_v);
+  				date1.val($(this).attr('data-date'));
+  				time1.val($(this).attr('data-time'));
+  			  });
+  			}
+  			$('.pp_less').click(function(e) {
+  			  e.preventDefault();
+  			  availStarts = [];
+  			  submit_button.prop('disabled',true);
+  				p_v = people_count();
+  				this_date2 = get_this_date();
+  				console.log('p_v4:' + p_v);
+  			  console.log('this_date is nowwww: ' + this_date2.format('dddd, YYYY-MM-DD ' + f_time));
+  			  
+  			  check_dates(this_date2, p_v);
+  			 // date1.val($(this).attr('data-date'));
+  			//  time1.val($(this).attr('data-time'));
+  			});
+  			which_date.focus(function () {
+  				
+  			//	$('.pp_avail').remove();
+  			});
+  			which_date.change(function(e) {
+  			  e.preventDefault();
+  						$('.pp_avail').remove();
+
+  			  availStarts = [];
+  			  submit_button.prop('disabled',true);
+  			  p_v = people_count();
+  			  console.log('p_v7:' + p_v);
+  			  console.log('Date changed');
+  			  this_date2 = get_this_date();
+  			$('.pp_less').click();
+  			  //check_dates(this_date2, p_v);
+  			 // date1.val($(this).attr('data-date'));
+  			 // time1.val($(this).attr('data-time'));
+  			});
+  			$('.pp_less').css('display','block');
+  			$('.pp_avail').css('display','none');
+  			
+  			
+  			$('#node-passport-reservation-form').change(function () {
+  				var agr1 = $('#edit-field-ppp-agreement-value').prop('checked');
+  				var agr2 = $('#edit-field-pp-i-understand-value').prop('checked');
+  				var agr3 = $('#edit-field-pp-photo-value').prop('checked');
+  				if(
+  				agr1 && agr2 && agr3
+  				
+  				){
+  						submit_button.prop('disabled',false);
+
+  				} else {
+  						submit_button.prop('disabled',true);
+
+  				}
+  				
+  			});
+  			
+  			
+  		  });
+  		})(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      passport_reservation: passport_reservation
+contexts: {  }
+conditions_require_all: true

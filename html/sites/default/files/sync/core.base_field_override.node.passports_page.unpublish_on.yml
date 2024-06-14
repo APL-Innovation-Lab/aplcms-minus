@@ -1,0 +1,18 @@
+uuid: 089a4a1a-a2b9-4200-b419-46ffaa9a26e2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: passports_page
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,206 @@
+title: 'Request a Medical Appointment'
+description: 'A medical appointment request webform template.'
+elements: |
+  introduction:
+    '#markup': 'After you submit the form, a care specialist will call you back within XX hours to schedule an appointment.'
+  hr:
+    '#type': webform_horizontal_rule
+  call:
+    '#markup': 'You may also speak with a care specialist directly by calling <a href="tel:XXX-XXX-XXXX">XXX-XXX-XXXX</a> on Monday–Friday between 8:30 am to 5:00 pm EST.'
+  general:
+    '#type': fieldset
+    '#title': 'General Information'
+    '#title_display': invisible
+    '#attributes':
+      style: 'background-color: #efefef'
+    type:
+      '#type': radios
+      '#title': 'Who are you?'
+      '#options':
+        Patient: Patient
+        Caregiver: Caregiver
+      '#options_display': buttons
+      '#required': true
+    relationship:
+      '#type': webform_select_other
+      '#title': 'What is your relationship to the patient?'
+      '#options': relationship
+      '#states':
+        visible:
+          ':input[name="type"]':
+            value: Caregiver
+        required:
+          ':input[name="type"]':
+            value: Caregiver
+  caregiver:
+    '#type': fieldset
+    '#title': 'Your Information'
+    '#states':
+      visible:
+        ':input[name="type"]':
+          value: Caregiver
+    caregiver_name:
+      '#type': webform_flexbox
+      caregiver_first_name:
+        '#title': 'Your First Name'
+        '#type': textfield
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      caregiver_last_name:
+        '#title': 'Your Last Name'
+        '#type': textfield
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      '#title': 'Your Name'
+    caregiver_contact:
+      '#type': webform_flexbox
+      caregiver_email:
+        '#title': 'Your Email'
+        '#type': email
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      caregiver_phone:
+        '#title': 'Your Phone'
+        '#type': tel
+        '#placeholder': 000-000-0000
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+    caregiver_phone_preferences:
+      '#type': webform_custom_composite
+      '#title': 'Your Phone Preferences'
+      '#description': |
+        Please select the best days and times for us to call you.<br/>
+        <em>Leave blank if you have no preferences.</em>
+        
+      '#description_display': before
+      '#multiple__min_items': '3'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add_more': false
+      '#element':
+        day:
+          '#type': select
+          '#options':
+            Monday: Monday
+            Tuesday: Tuesday
+            Wednesday: Wednesday
+            Thursday: Thursday
+            Friday: Fridate
+          '#title': 'Day of the Week'
+          '#empty_option': 'Any day of the week'
+        time:
+          '#type': select
+          '#options':
+            '8am-10am EST': '8am-10am EST'
+            '10am-12pm EST': '10am-12pm EST'
+            '12pm-2pm EST': '12pm-2pm EST'
+            '2pm-4pm EST': '2pm-4pm EST'
+          '#title': 'Time of Day'
+          '#empty_option': 'Any time of the day'
+  patient:
+    '#type': fieldset
+    '#title': 'Patient Information'
+    patient_name:
+      '#type': webform_flexbox
+      patient_first_name:
+        '#title': 'Patient First Name'
+        '#type': textfield
+        '#required': true
+      patient_last_name:
+        '#title': 'Patient Last Name'
+        '#type': textfield
+        '#required': true
+    patient_contact:
+      '#type': webform_flexbox
+      patient_email:
+        '#title': 'Patient Email'
+        '#type': email
+        '#states':
+          required:
+            ':input[name="type"]':
+              '!value': Caregiver
+      patient_phone:
+        '#title': 'Patient Phone'
+        '#type': tel
+        '#required': true
+        '#placeholder': 000-000-0000
+        '#states':
+          required:
+            ':input[name="type"]':
+              '!value': Caregiver
+    patient_phone_preferences:
+      '#type': webform_custom_composite
+      '#title': 'Patient Phone Preferences'
+      '#description': |
+        Please select the best days and times for us to call the patient.<br/>
+        <em>Leave blank if the patient has no preferences.</em>'
+        
+      '#description_display': before
+      '#multiple__min_items': '3'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add_more': false
+      '#element':
+        day:
+          '#type': select
+          '#options':
+            Monday: Monday
+            Tuesday: Tuesday
+            Wednesday: Wednesday
+            Thursday: Thursday
+            Friday: Fridate
+          '#title': 'Day of the Week'
+          '#empty_option': 'Any day of the week'
+        time:
+          '#type': select
+          '#options':
+            '8am-10am EST': '8am-10am EST'
+            '10am-12pm EST': '10am-12pm EST'
+            '12pm-2pm EST': '12pm-2pm EST'
+            '2pm-4pm EST': '2pm-4pm EST'
+          '#title': 'Time of Day'
+          '#empty_option': 'Any time of the day'
+  appointment:
+    '#type': fieldset
+    '#title': 'Appointment Information (optional)'
+    medical:
+      '#type': textarea
+      '#title': 'Please provide information about your medical needs'
+      '#rows': 3
+    insurance:
+      '#type': textfield
+      '#title': 'Please provide insurance plan name information'''
+    referral:
+      '#type': checkbox
+      '#title': 'Have you been referred by a physician?'
+    physician:
+      '#type': textarea
+      '#title': 'Please provide information about the referring physician'
+      '#rows': 3
+      '#states':
+        visible:
+          ':input[name="referral"]':
+            checked: true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send Request'
+settings:
+  confirmation_title: 'Thank You'
+  confirmation_message: 'Your request has been sent. A care specialist will call you back within XX hours to schedule an appointment.'
+  confirmation_url: '<front>'
+handlers:
+  email_notification:
+    label: 'Email notification'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject:raw]'
+      body: '[webform_submission:values:message:value]'

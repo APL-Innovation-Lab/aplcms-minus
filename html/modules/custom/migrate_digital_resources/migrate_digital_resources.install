@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_digital_resources.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the file to the sites/default/files folder.
+ */
+function migrate_digital_resources_install(): void {
+  // Create the databases file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_digital_resources';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the rooms file to migrate_digital_resources directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_digital_resources')->getPath();
+  $file_source = $module_path . '/artifacts/digital_resources.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/digital_resources.json', FileSystemInterface::EXISTS_REPLACE);
+}

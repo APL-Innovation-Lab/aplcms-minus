@@ -1,0 +1,20 @@
+uuid: 013a5438-c92d-4406-a4ac-6a2f67f679ea
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_movie_year
+field_name: field_movie_year
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

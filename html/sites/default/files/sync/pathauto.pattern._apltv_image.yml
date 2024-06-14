@@ -1,0 +1,22 @@
+uuid: 49c50b02-6c82-4f4f-9ef5-c6a50a3a08d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: _apltv_image
+label: /apltv/image
+type: 'canonical_entities:node'
+pattern: '/apltv/image/[node:title]-[node:nid]'
+selection_criteria:
+  3f2ce178-3f97-4142-85a8-1200dcafb547:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3f2ce178-3f97-4142-85a8-1200dcafb547
+    context_mapping:
+      node: node
+    bundles:
+      fullscreen_image: fullscreen_image
+selection_logic: and
+weight: -5
+relationships: {  }

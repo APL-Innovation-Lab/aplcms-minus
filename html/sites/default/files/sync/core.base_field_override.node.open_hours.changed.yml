@@ -1,0 +1,18 @@
+uuid: aff220ba-edd4-4097-9ce3-9da146f192ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.changed
+field_name: changed
+entity_type: node
+bundle: open_hours
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+langcode: eng
+theme: current
+defaults:
+  sender: mime_mail
+  formatter: mime_mail
+modules:
+  rules:
+    none:
+      sender: mime_mail
+      formatter: mime_mail
+  system:
+    none:
+      sender: mime_mail
+      formatter: mime_mail
+  webform:
+    none:
+      sender: mime_mail
+      formatter: mime_mail

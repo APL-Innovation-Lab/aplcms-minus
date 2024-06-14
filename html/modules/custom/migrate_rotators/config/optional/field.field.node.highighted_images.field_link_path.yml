@@ -1,0 +1,19 @@
+uuid: e991093f-2d0f-4149-81b9-2c93b965913c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_path
+    - node.type.highighted_images
+id: node.highighted_images.field_link_path
+field_name: field_link_path
+entity_type: node
+bundle: highighted_images
+label: 'Link Path'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

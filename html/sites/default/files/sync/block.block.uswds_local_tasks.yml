@@ -1,0 +1,36 @@
+uuid: 44cd3e9a-2ea8-475f-9056-24e769cd3ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - uswds
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: uswds_local_tasks
+theme: uswds
+region: header_top
+weight: -26
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/apltv/*\r\n/meeting-rooms/request\r\n/slr/calendar/room/*"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

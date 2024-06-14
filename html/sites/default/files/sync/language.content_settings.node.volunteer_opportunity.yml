@@ -1,0 +1,18 @@
+uuid: 072ee7d1-85eb-4334-98ba-463dd601726f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.volunteer_opportunity
+target_entity_type_id: node
+target_bundle: volunteer_opportunity
+default_langcode: site_default
+language_alterable: false

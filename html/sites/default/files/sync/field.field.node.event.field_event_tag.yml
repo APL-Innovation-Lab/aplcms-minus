@@ -1,0 +1,25 @@
+uuid: 7afeb712-1d8e-413e-9a4f-db3b63164137
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_tag
+    - node.type.event
+id: node.event.field_event_tag
+field_name: field_event_tag
+entity_type: node
+bundle: event
+label: 'Event Grouping or Series'
+description: 'Use this field for additional categories and/or grouping/series terms (separated by commas) for which you want this Event to appear in search results.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: taglet_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

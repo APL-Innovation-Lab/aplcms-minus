@@ -1,0 +1,21 @@
+uuid: 63faf9f3-e9e3-4c84-9899-9d6b740992e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_audience
+    - node.type.reflection
+  module:
+    - options
+id: node.reflection.field_target_audience
+field_name: field_target_audience
+entity_type: node
+bundle: reflection
+label: 'Target Audience'
+description: 'Pick the target audience for the event. ie Storytime put both children and parents under Children.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

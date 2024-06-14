@@ -1,0 +1,21 @@
+uuid: 43d8f008-b028-48e7-9348-f7ff8cdddcf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_type
+    - node.type.screen
+  module:
+    - options
+id: node.screen.field_video_type
+field_name: field_video_type
+entity_type: node
+bundle: screen
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

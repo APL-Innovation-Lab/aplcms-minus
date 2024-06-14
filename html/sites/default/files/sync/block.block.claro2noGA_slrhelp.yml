@@ -1,0 +1,30 @@
+uuid: e8ffc438-a331-4533-b877-d897ed423cb8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8f121741-7674-4db5-8396-2a590a20458f'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_slrhelp
+theme: claro2noGA
+region: content
+weight: -26
+provider: null
+plugin: 'block_content:8f121741-7674-4db5-8396-2a590a20458f'
+settings:
+  id: 'block_content:8f121741-7674-4db5-8396-2a590a20458f'
+  label: 'SLR help'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/add/slr

@@ -1,0 +1,20 @@
+uuid: 411f31dc-ac9f-466e-9da7-99b4fc872411
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+  module:
+    - path
+id: node.accordion.path
+field_name: path
+entity_type: node
+bundle: accordion
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

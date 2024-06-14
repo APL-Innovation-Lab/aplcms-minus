@@ -1,0 +1,8 @@
+uuid: 99ac4d71-4b8a-423b-a6bd-d703c92b7806
+langcode: eng
+status: true
+dependencies: {  }
+id: military_time
+label: 'Military time'
+locked: false
+pattern: 'G:i'

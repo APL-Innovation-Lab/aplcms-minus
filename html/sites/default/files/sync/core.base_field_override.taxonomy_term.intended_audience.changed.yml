@@ -1,0 +1,18 @@
+uuid: 8846e691-04bd-4a36-b602-2b489f87a7a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.intended_audience
+id: taxonomy_term.intended_audience.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: intended_audience
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

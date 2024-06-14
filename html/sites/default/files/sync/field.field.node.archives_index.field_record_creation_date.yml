@@ -1,0 +1,21 @@
+uuid: ad8daeec-1f01-4216-8cdf-ba84ed2367de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_creation_date
+    - node.type.archives_index
+  module:
+    - datetime
+id: node.archives_index.field_record_creation_date
+field_name: field_record_creation_date
+entity_type: node
+bundle: archives_index
+label: 'Record Creation Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

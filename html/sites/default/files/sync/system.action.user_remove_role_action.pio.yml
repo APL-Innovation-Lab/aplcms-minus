@@ -1,0 +1,14 @@
+uuid: 371c099c-30ef-49a0-911a-3b0d1c06f14d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.pio
+  module:
+    - user
+id: user_remove_role_action.pio
+label: 'Remove the PIO role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pio

@@ -1,0 +1,60 @@
+uuid: 5f61daad-3081-4a94-98dc-e191ef0da9b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - field_permissions
+    - filter
+id: job_coach
+label: 'Job Coach'
+weight: 3
+is_admin: null
+permissions:
+  - 'create field_assigned_to'
+  - 'create field_cr_history'
+  - 'create field_email_message'
+  - 'create field_jb_status'
+  - 'create field_jp_anecdata'
+  - 'create field_jp_area'
+  - 'create field_jp_date'
+  - 'create field_jp_notes_comments'
+  - 'create field_jp_ready_to_reply'
+  - 'edit field_assigned_to'
+  - 'edit field_cr_history'
+  - 'edit field_email_message'
+  - 'edit field_jb_status'
+  - 'edit field_jp_anecdata'
+  - 'edit field_jp_area'
+  - 'edit field_jp_date'
+  - 'edit field_jp_notes_comments'
+  - 'edit field_jp_ready_to_reply'
+  - 'edit own field_assigned_to'
+  - 'edit own field_cr_history'
+  - 'edit own field_email_message'
+  - 'edit own field_jb_status'
+  - 'edit own field_jp_anecdata'
+  - 'edit own field_jp_area'
+  - 'edit own field_jp_date'
+  - 'edit own field_jp_notes_comments'
+  - 'edit own field_jp_ready_to_reply'
+  - 'use text format full_html'
+  - 'view field_assigned_to'
+  - 'view field_cr_history'
+  - 'view field_email_message'
+  - 'view field_jb_status'
+  - 'view field_jp_anecdata'
+  - 'view field_jp_area'
+  - 'view field_jp_date'
+  - 'view field_jp_notes_comments'
+  - 'view field_jp_ready_to_reply'
+  - 'view own field_assigned_to'
+  - 'view own field_cr_history'
+  - 'view own field_email_message'
+  - 'view own field_jb_status'
+  - 'view own field_jp_anecdata'
+  - 'view own field_jp_area'
+  - 'view own field_jp_date'
+  - 'view own field_jp_notes_comments'
+  - 'view own field_jp_ready_to_reply'

@@ -1,0 +1,16 @@
+uuid: 7115d466-dcdb-4fec-903f-14c7dd5c1ed7
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: void
+label: void
+weight: -6
+theme: claro2noGA
+admin_theme: claro
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/sequence/588700\r\n/slr/calendar/room/*\r\n/admin/*"

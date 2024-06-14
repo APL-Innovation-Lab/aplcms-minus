@@ -1,0 +1,20 @@
+uuid: 3161d5d8-cbda-4f4d-acb3-5cefa34a200b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.uid
+field_name: uid
+entity_type: node
+bundle: gift_shop_page
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: de97ff80-811f-4437-99d0-4e767dd69d1f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_ev_reflection_category
+field_name: field_ev_reflection_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

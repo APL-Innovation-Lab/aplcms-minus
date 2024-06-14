@@ -1,0 +1,159 @@
+uuid: 7401ef2e-e1a6-40d6-ac48-aa7cc412195d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.feeds_item
+    - field.field.node.event.field__this_event_main_image
+    - field.field.node.event.field_attendance
+    - field.field.node.event.field_audience_text
+    - field.field.node.event.field_cat_ia
+    - field.field.node.event.field_central_event_location
+    - field.field.node.event.field_community_services_outreac
+    - field.field.node.event.field_ev_reflection_category
+    - field.field.node.event.field_event_category_tags_
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_display_title
+    - field.field.node.event.field_event_grouping_or_series2
+    - field.field.node.event.field_event_loc
+    - field.field.node.event.field_event_recommended_ages
+    - field.field.node.event.field_event_summary
+    - field.field.node.event.field_event_tag
+    - field.field.node.event.field_first_item
+    - field.field.node.event.field_import_an_item_after_savin
+    - field.field.node.event.field_invisible
+    - field.field.node.event.field_is_there_a_fee_for_attendi
+    - field.field.node.event.field_isbn_for_image3
+    - field.field.node.event.field_item_list
+    - field.field.node.event.field_kids_block_party_category
+    - field.field.node.event.field_link_for_registration
+    - field.field.node.event.field_metadata_description
+    - field.field.node.event.field_metadata_image
+    - field.field.node.event.field_movie_image
+    - field.field.node.event.field_movie_rating
+    - field.field.node.event.field_movie_summary
+    - field.field.node.event.field_movie_title
+    - field.field.node.event.field_movie_year
+    - field.field.node.event.field_omit_category_description
+    - field.field.node.event.field_print_view_height_tweak
+    - field.field.node.event.field_promote_in_remote
+    - field.field.node.event.field_promoted_event
+    - field.field.node.event.field_ref_searchable_audience
+    - field.field.node.event.field_reflected
+    - field.field.node.event.field_remote_location
+    - field.field.node.event.field_show_full_description
+    - field.field.node.event.field_signature_event
+    - field.field.node.event.field_skip_apl_tv
+    - field.field.node.event.field_slr_time_end
+    - field.field.node.event.field_slr_time_start
+    - field.field.node.event.field_sponsor
+    - field.field.node.event.field_sponsors
+    - field.field.node.event.field_subtitle
+    - field.field.node.event.field_title40
+    - node.type.event
+    - views.view.events
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          07b59167-bb73-4be5-9a85-53e62ffc6af9:
+            uuid: 07b59167-bb73-4be5-9a85-53e62ffc6af9
+            region: content
+            configuration:
+              id: 'views_block:events-block_5'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_kids_block_party_category:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field__this_event_main_image: true
+  field_attendance: true
+  field_audience_text: true
+  field_cat_ia: true
+  field_central_event_location: true
+  field_community_services_outreac: true
+  field_ev_reflection_category: true
+  field_event_category_tags_: true
+  field_event_date: true
+  field_event_date_: true
+  field_event_date_and_time: true
+  field_event_display_title: true
+  field_event_grouping_or_series2: true
+  field_event_loc: true
+  field_event_recommended_ages: true
+  field_event_summary: true
+  field_event_tag: true
+  field_first_item: true
+  field_import_an_item_after_savin: true
+  field_invisible: true
+  field_is_there_a_fee_for_attendi: true
+  field_isbn_for_image3: true
+  field_item_list: true
+  field_link_for_registration: true
+  field_metadata_description: true
+  field_metadata_image: true
+  field_movie_image: true
+  field_movie_rating: true
+  field_movie_summary: true
+  field_movie_title: true
+  field_movie_year: true
+  field_omit_category_description: true
+  field_print_view_height_tweak: true
+  field_promote_in_remote: true
+  field_promoted_event: true
+  field_ref_searchable_audience: true
+  field_reflected: true
+  field_remote_location: true
+  field_show_full_description: true
+  field_signature_event: true
+  field_skip_apl_tv: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  field_sponsor: true
+  field_sponsors: true
+  field_subtitle: true
+  field_title40: true
+  langcode: true
+  search_api_excerpt: true

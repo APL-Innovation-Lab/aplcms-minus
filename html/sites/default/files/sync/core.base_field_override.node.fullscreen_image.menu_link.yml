@@ -1,0 +1,20 @@
+uuid: fc836143-c10a-4ada-a4ab-83565ffa7234
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.menu_link
+field_name: menu_link
+entity_type: node
+bundle: fullscreen_image
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

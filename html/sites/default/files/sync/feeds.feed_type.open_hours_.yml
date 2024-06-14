@@ -1,0 +1,121 @@
+uuid: 01aae6d3-3c6b-438a-99cb-ced3b7b90348
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.open_hours.title
+    - field.field.node.open_hours.field_effective_date
+    - field.field.node.open_hours.field_hours_more_info
+    - field.field.node.open_hours.field_location
+    - node.type.open_hours
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c63e5de7-7157-4e4f-b233-41c0c91410db:
+        separator: ','
+        limit: null
+        uuid: c63e5de7-7157-4e4f-b233-41c0c91410db
+        plugin: explode
+        source: location
+        weight: 0
+        label: Explode
+id: open_hours_
+label: 'Open Hours'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: open_hours
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  more_info:
+    value: more_info
+    label: more_info
+    machine_name: more_info
+    type: csv
+  location:
+    value: location
+    label: location
+    machine_name: location
+    type: csv
+  start_date:
+    value: start_date
+    label: start_date
+    machine_name: start_date
+    type: csv
+  end_date:
+    value: end_date
+    label: end_date
+    machine_name: end_date
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_hours_more_info
+    map:
+      value: more_info
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_location
+    map:
+      target_id: location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_effective_date
+    map:
+      value: start_date
+      end_value: end_date
+    settings:
+      language: null
+      timezone: UTC

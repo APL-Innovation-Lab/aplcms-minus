@@ -1,0 +1,71 @@
+uuid: 89906139-de52-46e5-a568-eea26afecaca
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.website
+    - views.view.events_facets
+  module:
+    - search_api
+id: ev_tags
+name: Tags
+weight: 0
+min_count: 1
+missing: false
+missing_label: others
+url_alias: ev_tags
+facet_source_id: 'search_api:views_block__events_facets__block_1'
+field_identifier: null
+query_operator: null
+hard_limit: null
+exclude: false
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+widget:
+  type: links
+  config:
+    show_numbers: false
+    soft_limit: 0
+    show_reset_link: false
+    reset_text: 'Show all'
+    hide_reset_when_no_selection: false
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+empty_behavior:
+  behavior: none
+only_visible_when_facet_source_is_visible: false
+show_only_one_result: false
+show_title: null
+processor_configs:
+  active_widget_order:
+    processor_id: active_widget_order
+    weights:
+      sort: 20
+    settings: {  }
+  count_widget_order:
+    processor_id: count_widget_order
+    weights:
+      sort: 30
+    settings: {  }
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings: {  }
+  hierarchy_processor:
+    processor_id: hierarchy_processor
+    weights:
+      build: 100
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }

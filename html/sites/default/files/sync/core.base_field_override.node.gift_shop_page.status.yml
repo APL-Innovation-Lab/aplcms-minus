@@ -1,0 +1,22 @@
+uuid: 203594c0-6dba-428e-a0ef-28200b4f940a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.status
+field_name: status
+entity_type: node
+bundle: gift_shop_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

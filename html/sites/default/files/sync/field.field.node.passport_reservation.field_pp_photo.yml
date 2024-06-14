@@ -1,0 +1,23 @@
+uuid: aff67d9a-06a7-49ce-9f42-c23d6c7fbe58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_photo
+    - node.type.passport_reservation
+id: node.passport_reservation.field_pp_photo
+field_name: field_pp_photo
+entity_type: node
+bundle: passport_reservation
+label: 'Check or Money Order'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I understand that the U.S. Department of State requires a check or money order for payment.'
+  off_label: 'Off'
+field_type: boolean

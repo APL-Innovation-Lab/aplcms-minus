@@ -1,0 +1,18 @@
+uuid: 3ba9cc4d-789c-45a7-bb59-6b9900db31dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+id: node.ahc_donation.title
+field_name: title
+entity_type: node
+bundle: ahc_donation
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

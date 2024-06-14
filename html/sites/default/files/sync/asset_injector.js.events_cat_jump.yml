@@ -1,0 +1,33 @@
+uuid: 1c4c93b1-27bd-4e0b-a400-58027ded48ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: events_cat_jump
+label: 'events cat jump'
+code: |
+  document.addEventListener('DOMContentLoaded', function() {
+    var selectField = document.querySelector('#edit-cat');
+
+    if (selectField) {
+      selectField.addEventListener('change', function() {
+        var path = this.value;
+        if (path) {
+          window.location.href = '/taxonomy/term/' + path;
+        }
+      });
+    }
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,23 @@
+uuid: 7f6e6fc4-1410-46ab-8ff3-c93b39973729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_print_view_height_tweak
+    - node.type.event
+id: node.event.field_print_view_height_tweak
+field_name: field_print_view_height_tweak
+entity_type: node
+bundle: event
+label: 'Print view height tweak'
+description: 'If part of the description text is truncated along the bottom, you can alter the height from the default of 320. Any text below the altered height will be hidden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 330
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,181 @@
+uuid: 926c4fd0-fc3d-450f-a387-d030329d957e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.activity.created
+    - core.base_field_override.node.activity.title
+    - core.base_field_override.node.activity.uid
+    - field.field.node.activity.body
+    - field.field.node.activity.field_kids_block_party_tags
+    - field.field.node.activity.field_summer_tags
+    - field.field.node.activity.field_video_2
+    - node.type.activity
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      d1c43836-89ff-48fa-b278-f8dad24cee95:
+        separator: ','
+        limit: null
+        uuid: d1c43836-89ff-48fa-b278-f8dad24cee95
+        plugin: explode
+        source: field_act_video
+        weight: 0
+        label: Explode
+      6374f652-9006-4248-b4f5-70ef31bdb07d:
+        text: eng
+        uuid: 6374f652-9006-4248-b4f5-70ef31bdb07d
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: activities
+label: Activities
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: activity
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 69420
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_kb_tags:
+    value: field_kb_tags
+    label: field_kb_tags
+    machine_name: field_kb_tags
+    type: csv
+  field_act_video:
+    value: field_act_video
+    label: field_act_video
+    machine_name: field_act_video
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  field_summer_tags:
+    value: field_summer_tags
+    label: field_summer_tags
+    machine_name: field_summer_tags
+    type: csv
+  field_kb_tags_:
+    value: field_kb_tags__
+    label: field_kb_tags__
+    machine_name: field_kb_tags_
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_video_2
+    map:
+      value: field_act_video
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_summer_tags
+    map:
+      value: field_summer_tags
+    settings:
+      language: null
+  -
+    target: field_kids_block_party_tags
+    map:
+      value: field_kb_tags
+    settings:
+      language: ''
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

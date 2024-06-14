@@ -1,0 +1,28 @@
+uuid: 3f8e4593-7785-403d-8247-a9d7c29efcb8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+  module:
+    - node
+    - publishcontent
+id: exhibit_editor
+label: 'Exhibit Editor'
+weight: 27
+is_admin: null
+permissions:
+  - 'create exhibit content'
+  - 'delete any exhibit content'
+  - 'delete exhibit revisions'
+  - 'delete own exhibit content'
+  - 'edit any exhibit content'
+  - 'edit own exhibit content'
+  - 'publish any node type exhibit'
+  - 'publish editable node type exhibit'
+  - 'publish own node type exhibit'
+  - 'revert exhibit revisions'
+  - 'unpublish any node type exhibit'
+  - 'unpublish editable node type exhibit'
+  - 'unpublish own node type exhibit'
+  - 'view exhibit revisions'

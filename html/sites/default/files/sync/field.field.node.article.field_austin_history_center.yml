@@ -1,0 +1,23 @@
+uuid: af2d23df-3002-45f1-b00c-f07899693267
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_austin_history_center
+    - node.type.article
+id: node.article.field_austin_history_center
+field_name: field_austin_history_center
+entity_type: node
+bundle: article
+label: 'Austin History Center'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

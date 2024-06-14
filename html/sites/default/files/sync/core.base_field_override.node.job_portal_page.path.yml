@@ -1,0 +1,20 @@
+uuid: 9e1a9c75-455e-48e0-85aa-0c52ae015c18
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+  module:
+    - path
+id: node.job_portal_page.path
+field_name: path
+entity_type: node
+bundle: job_portal_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

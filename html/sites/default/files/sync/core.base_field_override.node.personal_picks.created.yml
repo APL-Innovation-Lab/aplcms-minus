@@ -1,0 +1,18 @@
+uuid: 30a77164-6f88-42fa-a3a1-4d03648b1180
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_picks
+id: node.personal_picks.created
+field_name: created
+entity_type: node
+bundle: personal_picks
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

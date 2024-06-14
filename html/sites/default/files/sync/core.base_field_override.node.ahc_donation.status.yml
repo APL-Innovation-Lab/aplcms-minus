@@ -1,0 +1,22 @@
+uuid: 5d2b08ad-da4c-4bd1-9c95-cca993a840ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+id: node.ahc_donation.status
+field_name: status
+entity_type: node
+bundle: ahc_donation
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

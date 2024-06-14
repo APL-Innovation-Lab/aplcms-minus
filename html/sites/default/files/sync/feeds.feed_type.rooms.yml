@@ -1,0 +1,251 @@
+uuid: 2fafd881-ab62-49d6-b8eb-105ee3786684
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.rooms.description
+    - core.base_field_override.taxonomy_term.rooms.name
+    - field.field.taxonomy_term.rooms.field_capacity2
+    - field.field.taxonomy_term.rooms.field_is_slr
+    - field.field.taxonomy_term.rooms.field_location
+    - field.field.taxonomy_term.rooms.field_map
+    - field.field.taxonomy_term.rooms.field_room_number
+    - field.field.taxonomy_term.rooms.field_short_name
+    - field.field.taxonomy_term.rooms.field_slr_floor
+    - field.field.taxonomy_term.rooms.field_slr_image
+    - taxonomy.vocabulary.rooms
+  module:
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      ec7fbf9a-9662-4d3c-a343-f8c866ad1235:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: ec7fbf9a-9662-4d3c-a343-f8c866ad1235
+        plugin: find_replace_regex
+        source: field_slr_image
+        weight: 0
+        label: 'Find replace REGEX'
+      5487c65a-143f-47d3-8bbe-22f88b855ecd:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 5487c65a-143f-47d3-8bbe-22f88b855ecd
+        plugin: find_replace_regex
+        source: field_slr_image
+        weight: 1
+        label: 'Find replace REGEX'
+      c41bcfa8-e3a3-4e75-b8d6-7e9bedd6db90:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: c41bcfa8-e3a3-4e75-b8d6-7e9bedd6db90
+        plugin: find_replace_regex
+        source: field_map
+        weight: 0
+        label: 'Find replace REGEX'
+      cd2c746d-6524-4171-a470-e658525c15d0:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: cd2c746d-6524-4171-a470-e658525c15d0
+        plugin: find_replace_regex
+        source: field_map
+        weight: 1
+        label: 'Find replace REGEX'
+      05082575-4239-4a45-bb4a-deb5a6ec6826:
+        text: eng
+        uuid: 05082575-4239-4a45-bb4a-deb5a6ec6826
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: rooms
+label: Rooms
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: rooms
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  field_capacity2:
+    value: field_capacity2
+    label: field_capacity2
+    machine_name: field_capacity2
+    type: csv
+  field_slr_image:
+    value: field_slr_image
+    label: field_slr_image
+    machine_name: field_slr_image
+    type: csv
+  field_is_slr:
+    value: field_is_slr
+    label: field_is_slr
+    machine_name: field_is_slr
+    type: csv
+  field_location:
+    value: field_location
+    label: field_location
+    machine_name: field_location
+    type: csv
+  field_map:
+    value: field_map
+    label: field_map
+    machine_name: field_map
+    type: csv
+  field_short_name:
+    value: field_short_name
+    label: field_short_name
+    machine_name: field_short_name
+    type: csv
+  field_room_number:
+    value: field_room_number
+    label: field_room_number
+    machine_name: field_room_number
+    type: csv
+  term_description:
+    value: term_description
+    label: term_description
+    machine_name: term_description
+    type: csv
+  floor:
+    value: floor
+    label: floor
+    machine_name: floor
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: description
+    map:
+      value: term_description
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_capacity2
+    map:
+      value: field_capacity2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_slr_image
+    map:
+      target_id: field_slr_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_is_slr
+    map:
+      value: field_is_slr
+    settings:
+      language: null
+  -
+    target: field_location
+    map:
+      target_id: field_location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_map
+    map:
+      target_id: field_map
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_short_name
+    map:
+      value: field_short_name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_room_number
+    map:
+      value: field_room_number
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_slr_floor
+    map:
+      value: floor
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

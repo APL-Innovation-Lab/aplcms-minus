@@ -1,0 +1,18 @@
+uuid: 87402a0d-63c4-4b01-8af4-91f9e3830350
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.screen
+id: node.screen.metatag
+field_name: metatag
+entity_type: node
+bundle: screen
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

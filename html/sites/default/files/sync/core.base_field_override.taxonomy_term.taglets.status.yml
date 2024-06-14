@@ -1,0 +1,22 @@
+uuid: 521c5944-9018-4601-b4c1-26d049ee5716
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.status
+field_name: status
+entity_type: taxonomy_term
+bundle: taglets
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

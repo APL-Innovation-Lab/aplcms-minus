@@ -1,0 +1,22 @@
+uuid: f19caa76-1094-475f-9956-bfe736170ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_subjects
+id: taxonomy_term.database_subjects.status
+field_name: status
+entity_type: taxonomy_term
+bundle: database_subjects
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

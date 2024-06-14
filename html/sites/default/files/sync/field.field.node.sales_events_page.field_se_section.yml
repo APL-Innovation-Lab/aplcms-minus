@@ -1,0 +1,21 @@
+uuid: b023e046-24f4-42a7-a55f-ad51c426d38c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_se_section
+    - node.type.sales_events_page
+  module:
+    - options
+id: node.sales_events_page.field_se_section
+field_name: field_se_section
+entity_type: node
+bundle: sales_events_page
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

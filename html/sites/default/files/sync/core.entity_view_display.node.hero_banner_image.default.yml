@@ -1,0 +1,69 @@
+uuid: 5502a43f-37ab-4f0f-b1d1-8c868918de67
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_banner_image.field_button_url
+    - field.field.node.hero_banner_image.field_hero_banner_image
+    - field.field.node.hero_banner_image.field_slr_time_end
+    - field.field.node.hero_banner_image.field_slr_time_start
+    - node.type.hero_banner_image
+  module:
+    - datetime
+    - image
+    - link
+    - user
+id: node.hero_banner_image.default
+targetEntityType: node
+bundle: hero_banner_image
+mode: default
+content:
+  field_button_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_hero_banner_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: 319559e4-9025-4e16-892d-0593c59330a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.job_portal_page
+  module:
+    - feeds
+id: node.job_portal_page.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: job_portal_page
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

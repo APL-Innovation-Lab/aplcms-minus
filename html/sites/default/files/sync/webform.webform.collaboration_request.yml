@@ -1,0 +1,444 @@
+uuid: b44bb74d-7b2a-4bba-954f-3254e7d4e8f0
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 20
+template: false
+archive: false
+id: collaboration_request
+title: 'Collaboration Request'
+description: '<p>Used by Programs and Partnerships</p>'
+category: ''
+elements: |-
+  intro:
+    '#type': webform_markup
+    '#markup': |-
+      <p><a href="/policies#collaboration">Collaboration Request Policy</a><br />
+      <br />
+      Thank you for your interest in collaborating with Austin Public Library (APL). Please review the information below and submit the form to our Programs &amp; Partnerships team for consideration.</p>
+
+      <ul type="disc">
+      	<li>APL plans its own programming approximately 6 months in advance and we receive more collaboration requests than our capacity allows. We will do our best to accommodate your request, but may not be able to due to time and resource constraints.</li>
+      	<li>Nonprofits, community groups, organizations and individuals are welcome to submit a Collaboration Request to the Library.</li>
+      	<li>For-profit programs are not eligible for this type of collaboration.</li>
+      	<li>Suggested programs must be relevant to the <a href="/about-library/vision"> mission and vision </a> of Austin Public Library.</li>
+      	<li>Programs may not be used for political advertising.</li>
+      	<li>Programs must be free and open to the public. If a fee is charged for participation, please visit the <a href="/rental">Library&rsquo;s Event Space Rental</a>.</li>
+      	<li>Requests are reviewed on a first-come, first-served basis.</li>
+      	<li>Author events are primarily handled through local bookstores.</li>
+      	<li>Collaboration requests are generally reviewed every 3 weeks by the Programs &amp; Partnerships team.</li>
+      	<li>Liability insurance and background checks may be required.</li>
+      </ul>
+  contact_information:
+    '#type': webform_section
+    '#title': 'Contact Information'
+    name:
+      '#type': textfield
+      '#title': Name
+    organization:
+      '#type': textfield
+      '#title': 'Organization (if applicable) '
+    email:
+      '#type': email
+      '#title': Email
+    phone:
+      '#type': tel
+      '#title': Phone
+    website:
+      '#type': url
+      '#title': Website
+  proposal_information:
+    '#type': webform_section
+    '#title': 'Proposal Information'
+    title:
+      '#type': textfield
+      '#title': Title
+    time_sensitive:
+      '#type': radios
+      '#title': 'Is this request time-sensitive? (If yes, please reference in Program Description.)'
+      '#options': yes_no
+      '#options_display': two_columns
+    program_notes:
+      '#type': webform_markup
+      '#markup': |-
+        <p>Program Description/Notes<br />
+        (Please include a description of the proposed program as well as information on the type, anticipated audience, preferred day/time, library resources needed such as custodial, A/V equipment, tables or chairs, and any other relevant information.)</p>
+    program_description_notes:
+      '#type': textarea
+      '#title': 'Program Description/Notes'
+      '#title_display': none
+    location_for_event:
+      '#type': webform_entity_checkboxes
+      '#title': 'Preferred Location(s) for Event. Note: we may not be able to accommodate requests at our busiest locations, such as Central.'
+      '#options_display': two_columns
+      '#options_all': true
+      '#options_all_text': 'Any Branch'
+      '#target_type': taxonomy_term
+      '#selection_handler': views
+      '#selection_settings':
+        view:
+          view_name: apl_locations
+          display_name: entity_reference_1
+          arguments: {  }
+    intended_language:
+      '#type': textfield
+      '#title': 'Intended Language'
+    intended_audience_select_all_that_apply_:
+      '#type': webform_checkboxes_other
+      '#title': 'Intended Audience (select all that apply)'
+      '#options':
+        0-5: 'Early Childhood (Birth-age 5)'
+        6-11: 'Children (6-11)'
+        12-18: 'Tween/Teen (12-18)'
+        19: 'Adult (19+)'
+        Seniors: Seniors
+        Family: Family
+        'All Ages': 'All Ages/General Interest'
+      '#options_display': two_columns
+    how_would_this_collaboration_benefit_austin_public_library_custo:
+      '#type': textarea
+      '#title': 'How would this collaboration benefit Austin Public Library customers and the general public?'
+    align_with_our_mission_and_values:
+      '#type': textarea
+      '#title': 'How would this collaboration align with our mission and values?'
+    would_this_collaboration_be_free_and_open_to_the_public_:
+      '#type': radios
+      '#title': 'Will this collaboration be free and open to the public?'
+      '#options': yes_no
+      '#options_display': two_columns
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: /collaboration-request
+  page_confirm_path: ''
+  page_theme_name: claro2
+  form_title: webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: message
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: 'Thank you for submitting a collaboration form to Austin Public Library. A confirmation of receipt has been sent to the email address provided. Submissions are generally reviewed every three weeks. You will be contacted via this address if the library is able to accommodate your request.'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  confirmation_email:
+    id: email
+    handler_id: confirmation_email
+    label: 'Confirmation Email'
+    notes: ''
+    status: false
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Austin Public Library Collaboration Request'
+      body: "Thank you for submitting a collaboration form to Austin Public Library. A confirmation of receipt has been sent to the email address provided. Submissions are generally reviewed every three weeks. You will be contacted via this address if the library is able to accommodate your request.&nbsp;<br />\r\n<br />\r\nSubmitted on: [webform_submission:created]<br />\r\nSubmitted by user:&nbsp;[webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: true
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  staff_email:
+    id: email
+    handler_id: staff_email
+    label: 'Staff Email'
+    notes: ''
+    status: false
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: lib.programsandpartnerships@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  confirmation_email_:
+    id: email
+    handler_id: confirmation_email_
+    label: 'Confirmation Email.'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Austin Public Library Collaboration Request'
+      body: "Thank you for submitting a collaboration form to Austin Public Library. A confirmation of receipt has been sent to the email address provided. Submissions are generally reviewed every three weeks. You will be contacted via this address if the library is able to accommodate your request.&nbsp;<br />\r\n<br />\r\nSubmitted on: [webform_submission:created]<br />\r\nSubmitted by user:&nbsp;[webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  staff_email_:
+    id: email
+    handler_id: staff_email_
+    label: 'Staff Email.'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: lib.programsandpartnerships@austintexas.gov
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

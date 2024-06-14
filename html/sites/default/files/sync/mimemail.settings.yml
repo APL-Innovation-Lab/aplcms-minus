@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: rLKGzzC9TqjbEZiBoiyMpOSyZgldADa5SzvbA2gQDxE
+langcode: eng
+name: 'Austin Public Library'
+mail: ''
+simple_address: true
+sitestyle: false
+textonly: false
+linkonly: false
+user_plaintext_field: ''
+format: full_html
+preserve_class: false
+advanced:
+  incoming: false
+  key: JBBy-E211J3wiRUm9BfdzZUXHFkMTzy3RG-axejNoAc

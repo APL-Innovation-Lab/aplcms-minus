@@ -1,0 +1,261 @@
+uuid: 9dbee155-61c2-413d-99a2-b21a6a6a84ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.ahc_donation.created
+    - core.base_field_override.node.ahc_donation.title
+    - core.base_field_override.node.ahc_donation.uid
+    - field.field.node.ahc_donation.field_ahc_d_acknowledgement
+    - field.field.node.ahc_donation.field_ahc_d_address1
+    - field.field.node.ahc_donation.field_ahc_d_address2
+    - field.field.node.ahc_donation.field_ahc_d_agreement
+    - field.field.node.ahc_donation.field_ahc_d_city
+    - field.field.node.ahc_donation.field_ahc_d_email_address
+    - field.field.node.ahc_donation.field_ahc_d_files
+    - field.field.node.ahc_donation.field_ahc_d_larger_files
+    - field.field.node.ahc_donation.field_ahc_d_state
+    - field.field.node.ahc_donation.field_ahc_d_zip
+    - node.type.ahc_donation
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      387098a0-e57a-49d4-bf40-929a6f821fb5:
+        separator: ','
+        limit: null
+        uuid: 387098a0-e57a-49d4-bf40-929a6f821fb5
+        plugin: explode
+        source: field_ahc_d_files
+        weight: 0
+        label: Explode
+      a5fdfa4d-8c51-4833-89ee-f1bc17493bb0:
+        separator: ','
+        limit: null
+        uuid: a5fdfa4d-8c51-4833-89ee-f1bc17493bb0
+        plugin: explode
+        source: field_ahc_d_files_description
+        weight: 0
+        label: Explode
+      810a3e50-1b46-4981-854c-c245ba9b02d8:
+        character: ''
+        side: trim
+        uuid: 810a3e50-1b46-4981-854c-c245ba9b02d8
+        plugin: trim
+        source: field_ahc_d_files_description
+        weight: 1
+        label: 'Characters to trim'
+      a95069b7-0a8a-4adc-a0f1-7fc8e335b369:
+        character: ''
+        side: trim
+        uuid: a95069b7-0a8a-4adc-a0f1-7fc8e335b369
+        plugin: trim
+        source: field_ahc_d_files
+        weight: 1
+        label: 'Characters to trim'
+id: ahc_donation
+label: 'AHC Donation'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: ahc_donation
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  field_ahc_d_email_address:
+    value: field_ahc_d_email_address
+    label: field_ahc_d_email_address
+    machine_name: field_ahc_d_email_address
+    type: csv
+  field_ahc_d_files:
+    value: field_ahc_d_files
+    label: field_ahc_d_files
+    machine_name: field_ahc_d_files
+    type: csv
+  field_ahc_d_files_description:
+    value: field_ahc_d_files-description
+    label: field_ahc_d_files-description
+    machine_name: field_ahc_d_files_description
+    type: csv
+  field_ahc_d_acknowledgement:
+    value: field_ahc_d_acknowledgement
+    label: field_ahc_d_acknowledgement
+    machine_name: field_ahc_d_acknowledgement
+    type: csv
+  field_ahc_d_address1:
+    value: field_ahc_d_address1
+    label: field_ahc_d_address1
+    machine_name: field_ahc_d_address1
+    type: csv
+  field_ahc_d_address2:
+    value: field_ahc_d_address2
+    label: field_ahc_d_address2
+    machine_name: field_ahc_d_address2
+    type: csv
+  field_ahc_d_agreement:
+    value: field_ahc_d_agreement
+    label: field_ahc_d_agreement
+    machine_name: field_ahc_d_agreement
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  field_ahc_d_city:
+    value: field_ahc_d_city
+    label: field_ahc_d_city
+    machine_name: field_ahc_d_city
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  field_ahc_d_larger_files:
+    value: field_ahc_d_larger_files
+    label: field_ahc_d_larger_files
+    machine_name: field_ahc_d_larger_files
+    type: csv
+  field_ahc_d_state:
+    value: field_ahc_d_state
+    label: field_ahc_d_state
+    machine_name: field_ahc_d_state
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_ahc_d_zip:
+    value: field_ahc_d_zip
+    label: field_ahc_d_zip
+    machine_name: field_ahc_d_zip
+    type: csv
+mappings:
+  -
+    target: field_ahc_d_email_address
+    map:
+      value: field_ahc_d_email_address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ahc_d_files
+    map:
+      target_id: field_ahc_d_files
+      description: field_ahc_d_files_description
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_ahc_d_acknowledgement
+    map:
+      value: field_ahc_d_acknowledgement
+    settings:
+      language: null
+  -
+    target: field_ahc_d_address1
+    map:
+      value: field_ahc_d_address1
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ahc_d_address2
+    map:
+      value: field_ahc_d_address2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ahc_d_agreement
+    map:
+      value: field_ahc_d_agreement
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_ahc_d_city
+    map:
+      value: field_ahc_d_city
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_ahc_d_larger_files
+    map:
+      value: field_ahc_d_larger_files
+    settings:
+      language: null
+  -
+    target: field_ahc_d_state
+    map:
+      value: field_ahc_d_state
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ahc_d_zip
+    map:
+      value: field_ahc_d_zip
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0

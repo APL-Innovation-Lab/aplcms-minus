@@ -1,0 +1,18 @@
+uuid: 288e0270-3604-4bd0-bd77-0c42f1f58125
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_subjects
+id: taxonomy_term.database_subjects.name
+field_name: name
+entity_type: taxonomy_term
+bundle: database_subjects
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

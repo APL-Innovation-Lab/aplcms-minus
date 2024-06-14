@@ -1,0 +1,16 @@
+uuid: cbf26f36-2a46-417c-90a1-577c79dbeb98
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: apltv
+label: apltv
+weight: -9
+theme: claro2noGA
+admin_theme: claro
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/apltv/*\r\n"

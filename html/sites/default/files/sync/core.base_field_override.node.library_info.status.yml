@@ -1,0 +1,22 @@
+uuid: 4da96167-8a06-4508-b7d9-e245db28367d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.library_info
+id: node.library_info.status
+field_name: status
+entity_type: node
+bundle: library_info
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

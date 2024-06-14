@@ -1,0 +1,22 @@
+uuid: 4fd0eef2-9358-43e5-8470-4f5d715a2cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.status
+field_name: status
+entity_type: node
+bundle: archives_index
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

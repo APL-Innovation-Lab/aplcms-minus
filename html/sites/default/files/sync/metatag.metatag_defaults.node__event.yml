@@ -1,0 +1,21 @@
+uuid: 5c8adc75-83e2-400b-9be7-5e1815b05f11
+langcode: eng
+status: true
+dependencies: {  }
+id: node__event
+label: 'Content: Event'
+tags:
+  schema_event_end_date: '[node:field_slr_time_end:date:html_datetime]'
+  schema_event_event_attendance_mode: 'https://schema.org/OfflineEventAttendanceMode'
+  schema_event_event_status: 'https://schema.org/EventScheduled'
+  schema_event_id: '[current-page:url]'
+  schema_event_is_accessible_for_free: 'True'
+  schema_event_name: '[current-page:title]'
+  schema_event_organizer: 'a:4:{s:5:"@type";s:13:"LibrarySystem";s:3:"@id";s:31:"https://library.austintexas.gov";s:4:"name";s:21:"Austin Public Library";s:3:"url";s:31:"https://library.austintexas.gov";}'
+  schema_event_start_date: '[node:field_slr_time_start:date:html_datetime]'
+  schema_event_type: Event
+  schema_event_url: '[current-page:url]'
+  schema_place_name: 'Austin Public Library'
+  schema_place_type: Library
+  schema_place_url: 'https://library.austintexas.gov'
+  schema_web_page_type: WebPage

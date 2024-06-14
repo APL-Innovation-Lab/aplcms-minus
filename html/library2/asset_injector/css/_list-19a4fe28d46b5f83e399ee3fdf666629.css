@@ -1,0 +1,17 @@
+.fieldset-wrapper {
+	display: flex;
+}
+.usa-form-group {
+	width: 32%;
+	float: left !important;
+	margin-right: 10px;
+}
+.usa-form-group.js-form-item.form-no-label {
+	margin-right: 10px;
+}
+fieldset .form-item {
+	margin-right: 10px;
+}
+.usa-form-group {
+	margin-top: 15px;
+}

@@ -1,0 +1,28 @@
+uuid: ef902891-35a4-4e91-ab1f-d89a6761c593
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.title_
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_title
+theme: claro2noGA
+region: content
+weight: -12
+provider: null
+plugin: 'facet_block:title_'
+settings:
+  id: 'facet_block:title_'
+  label: 'What''s Hot'
+  label_display: visible
+  provider: facets
+  block_id: title
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/recommended/*'

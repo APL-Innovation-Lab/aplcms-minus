@@ -1,0 +1,172 @@
+uuid: 3dfa0bea-b680-4f76-a28f-3d2d4ccbdcf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.zine.created
+    - core.base_field_override.node.zine.title
+    - core.base_field_override.node.zine.uid
+    - field.field.node.zine.field_zine_agreement
+    - field.field.node.zine.field_zine_email_address
+    - field.field.node.zine.field_zines_files
+    - node.type.zine
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4b8e8474-44dd-4485-ae35-830d1690dd33:
+        separator: ','
+        limit: null
+        uuid: 4b8e8474-44dd-4485-ae35-830d1690dd33
+        plugin: explode
+        source: field_zine_files
+        weight: 0
+        label: Explode
+      2f4a0329-0bc1-424f-bfdb-7c92667fe0a4:
+        character: ''
+        side: trim
+        uuid: 2f4a0329-0bc1-424f-bfdb-7c92667fe0a4
+        plugin: trim
+        source: field_zine_files
+        weight: 1
+        label: 'Characters to trim'
+      6b997e64-be86-4ac9-97a1-442c6520a114:
+        separator: ','
+        limit: null
+        uuid: 6b997e64-be86-4ac9-97a1-442c6520a114
+        plugin: explode
+        source: field_zine_files_description
+        weight: 0
+        label: Explode
+      32af33cf-23f8-4f9d-aabc-51d9a98c8a92:
+        character: ''
+        side: trim
+        uuid: 32af33cf-23f8-4f9d-aabc-51d9a98c8a92
+        plugin: trim
+        source: field_zine_files_description
+        weight: 1
+        label: 'Characters to trim'
+id: zine
+label: Zine
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: zine
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  field_zine_agreement:
+    value: field_zine_agreement
+    label: field_zine_agreement
+    machine_name: field_zine_agreement
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  field_zine_email_address:
+    value: field_zine_email_address
+    label: field_zine_email_address
+    machine_name: field_zine_email_address
+    type: csv
+  field_zine_files:
+    value: field_zine_files
+    label: field_zine_files
+    machine_name: field_zine_files
+    type: csv
+  field_zine_files_description:
+    value: field_zine_files-description
+    label: field_zine_files-description
+    machine_name: field_zine_files_description
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+mappings:
+  -
+    target: field_zine_agreement
+    map:
+      value: field_zine_agreement
+    settings:
+      language: null
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_zine_email_address
+    map:
+      value: field_zine_email_address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_zines_files
+    map:
+      target_id: field_zine_files
+      description: field_zine_files_description
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }

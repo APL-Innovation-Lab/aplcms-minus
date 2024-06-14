@@ -1,0 +1,20 @@
+uuid: 099ee498-5755-457f-9214-b70633998320
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+  module:
+    - path
+id: node.archives_index.path
+field_name: path
+entity_type: node
+bundle: archives_index
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

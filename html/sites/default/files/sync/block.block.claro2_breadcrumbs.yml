@@ -1,0 +1,36 @@
+uuid: 3dd6d17d-ba06-4c47-af3f-0e31a5d561c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: claro2_breadcrumbs
+theme: claro2
+region: breadcrumb
+weight: -21
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/apltv/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      apl_site_content: apl_site_content
+      article: article
+      page: page

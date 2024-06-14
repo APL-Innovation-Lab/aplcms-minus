@@ -1,0 +1,20 @@
+uuid: ea6fa5d6-59ab-495f-8536-1b6d1ead5fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.uid
+field_name: uid
+entity_type: node
+bundle: fullscreen_image
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: c1a415e7-e8db-480e-b3ae-c6dc0e9451a1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.skillmill_admin
+  module:
+    - user
+id: user_remove_role_action.skillmill_admin
+label: 'Remove the Skillmill Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: skillmill_admin

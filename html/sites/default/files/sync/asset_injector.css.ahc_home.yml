@@ -1,0 +1,22 @@
+uuid: 94918e6a-232a-4b97-9ff4-0fa8d2a225cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: ahc_home
+label: 'AHC Home'
+code: |-
+  .ahc-breadcrumbs,
+  .ahc-title {
+  	display: none;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc
+contexts: {  }
+conditions_require_all: true

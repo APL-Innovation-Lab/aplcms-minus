@@ -1,0 +1,14 @@
+uuid: b2a02ec9-22c7-4f80-acc1-32ffd821250d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.meeting_rooms_administrator
+  module:
+    - user
+id: user_remove_role_action.meeting_rooms_administrator
+label: 'Remove the Meeting Rooms Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: meeting_rooms_administrator

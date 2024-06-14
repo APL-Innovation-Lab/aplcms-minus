@@ -1,0 +1,6 @@
+.node--type-alert {
+	display: flex;
+	max-width: 960px !important;
+	margin: 0 auto;
+	padding: 20px 0;
+}

@@ -1,0 +1,18 @@
+uuid: c761e278-9dba-468a-a317-661df488cd8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.slr_errors
+id: taxonomy_term.slr_errors.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: slr_errors
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

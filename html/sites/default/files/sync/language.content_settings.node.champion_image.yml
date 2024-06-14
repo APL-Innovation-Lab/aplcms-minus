@@ -1,0 +1,18 @@
+uuid: 6903aabf-c97c-48bd-bd67-1082ac347b04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.champion_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.champion_image
+target_entity_type_id: node
+target_bundle: champion_image
+default_langcode: site_default
+language_alterable: false

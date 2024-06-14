@@ -1,0 +1,23 @@
+uuid: ea642c72-d034-4978-b5e5-11256e9ec21d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_import_an_item_after_savin
+    - node.type.event
+id: node.event.field_import_an_item_after_savin
+field_name: field_import_an_item_after_savin
+entity_type: node
+bundle: event
+label: 'Import an item after saving?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes, after saving this Event, take me to the Import by Biblio ID page'
+  off_label: ''
+field_type: boolean

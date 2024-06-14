@@ -1,0 +1,23 @@
+uuid: 54d9d81e-0f37-4746-a64f-63d4f895762b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.zine
+  module:
+    - feeds
+id: node.zine.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: zine
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

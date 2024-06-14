@@ -1,0 +1,25 @@
+uuid: f2ac0212-a98a-450c-9334-713d10e7b12c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: event_tags
+label: '/events/[term:name]'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/events/[term:name]'
+selection_criteria:
+  0cb12b44-cae9-4118-999c-d15200436a2c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 0cb12b44-cae9-4118-999c-d15200436a2c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      event_tags: event_tags
+      taglets: taglets
+selection_logic: and
+weight: -5
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

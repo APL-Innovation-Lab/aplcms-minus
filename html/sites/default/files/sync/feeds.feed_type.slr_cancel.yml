@@ -1,0 +1,125 @@
+uuid: e7ac7d9a-9fb6-4c3b-9665-c46c09cada55
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.slr.unpublish_on
+    - field.field.node.slr.field_ac
+    - field.field.node.slr.field_request_status
+    - node.type.slr
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      74a41b40-4bad-4e0e-81b9-576622477998:
+        text: '4'
+        uuid: 74a41b40-4bad-4e0e-81b9-576622477998
+        plugin: rewrite
+        source: _status
+        weight: 0
+        label: Rewrite
+      2ae73a5a-132a-477f-9a33-f4e302a2a0c9:
+        date_format: U
+        uuid: 2ae73a5a-132a-477f-9a33-f4e302a2a0c9
+        plugin: timetodate
+        source: _ac
+        weight: 0
+        label: 'Unix timestamp to Date'
+      366e4810-b872-498a-8deb-aafc98223238:
+        text: '2030-01-30'
+        uuid: 366e4810-b872-498a-8deb-aafc98223238
+        plugin: rewrite
+        source: _publish
+        weight: 0
+        label: Rewrite
+      0b92cf70-f2ba-4cf5-b315-07a5bc86df22:
+        uuid: 0b92cf70-f2ba-4cf5-b315-07a5bc86df22
+        plugin: strtotime
+        source: _publish
+        weight: 1
+        label: 'String to Unix Timestamp'
+id: slr_cancel
+label: 'SLR Cancel'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: slr
+  langcode: eng
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _nid:
+    value: $.nid
+    label: $.nid
+    machine_name: _nid
+    type: json
+  _status:
+    value: $.status
+    label: $.status
+    machine_name: _status
+    type: json
+  _ac:
+    value: $.ac
+    label: $.ac
+    machine_name: _ac
+    type: json
+  _publish:
+    value: $.publish
+    label: $.publish
+    machine_name: _publish
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: _nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_request_status
+    map:
+      value: _status
+    settings:
+      language: eng
+  -
+    target: field_ac
+    map:
+      value: _ac
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: unpublish_on
+    map:
+      value: _publish
+    settings:
+      language: eng
+      timezone: UTC

@@ -1,0 +1,20 @@
+uuid: f69baeec-9fe2-4ff0-bf99-6aadef1b2a21
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+  module:
+    - path
+id: node.qr.path
+field_name: path
+entity_type: node
+bundle: qr
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,60 @@
+uuid: 1392fdf3-06ff-40e1-8468-57f48a645801
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.apltv_scheduled_sequence.field_sch_seq_channel
+    - field.field.node.apltv_scheduled_sequence.field_sch_sequence
+    - field.field.node.apltv_scheduled_sequence.field_slr_time_end
+    - field.field.node.apltv_scheduled_sequence.field_slr_time_start
+    - node.type.apltv_scheduled_sequence
+  module:
+    - datetime
+    - user
+id: node.apltv_scheduled_sequence.default
+targetEntityType: node
+bundle: apltv_scheduled_sequence
+mode: default
+content:
+  field_sch_seq_channel:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_sch_sequence:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

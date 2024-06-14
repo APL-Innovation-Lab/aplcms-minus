@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+@import "color-palette";
+@import "variables";
+
+.services-icons { display: inline-block; width: 24px; height: 24px;
+  background: url(../img/services-icons.svg) no-repeat; opacity: .87;
+} // TDV
+
+.services-icons.icon-secondary { opacity: .54; } // TDV
+.services-icons.icon-disabled { opacity: .26; } // TDV
+
+$si-map:
+  android -24px -192px,
+  apple -48px -192px,
+  behance -144px -48px,
+  bitbucket -24px -120px,
+  blogger -168px -48px,
+  digg -120px -72px,
+  discord -192px -192px,
+  disqus -24px -96px,
+  disqus_outline 0 -96px,
+  disqus-outline 0 -96px,
+  dribbble -192px -48px,
+  dribbble_box -216px -48px,
+  dribbble-box -216px -48px,
+  drupal -96px -120px,
+  evernote -216px -72px,
+  facebook 0 0,
+  facebook-box 0 0,
+  facebook-messenger -144px -120px,
+  facetime -216px -168px,
+  fiverr -48px -216px,
+  flickr -96px -96px,
+  foursquare -48px -96px,
+  github 0 -120px,
+  github-box 0 -120px,
+  gitlab 0 -216px,
+  google -96px 0,
+  google-plus -96px 0,
+  google-chat -120px -168px,
+  google-meet -144px -168px,
+  google-photos -120px -96px,
+  google-play 0 -192px,
+  google_circle -120px 0,
+  google-plus-box -120px 0,
+  imessage -192px -168px,
+  imo 0 -168px,
+  instagram 0 -24px,
+  instagram_circle -24px -24px,
+  instagram-box -24px -24px,
+  kakaotalk -48px -168px,
+  kuaishou -144px -192px,
+  lastfm -144px -96px,
+  lastfm_box -144px -72px,
+  likee -96px -216px,
+  line -72px -168px,
+  line_box -72px -144px,
+  linkedin -144px 0,
+  linkedin_box -168px 0,
+  linkedin-box -168px 0,
+  livejournal -192px -72px,
+  medium 0 -72px,
+  microsoft-teams -168px -168px,
+  odnoklassniki -96px -24px,
+  odnoklassniki_box -120px -24px,
+  odnoklassniki-box -120px -24px,
+  periscope -120px -48px,
+  picsart -72px -216px,
+  pinterest -192px 0,
+  pinterest-box -192px 0,
+  pocket -24px -72px,
+  qqchat -96px -144px,
+  quora -216px -192px,
+  qzone -216px -24px,
+  reddit -48px -72px,
+  renren -24px -48px,
+  signal -24px -168px,
+  sina-weibo -192px -24px,
+  skype 0 -144px,
+  skype-outline 0 -144px,
+  slack -144px -144px,
+  snapchat -120px -144px,
+  snapchat_outlined -168px -72px,
+  soundcloud -168px -96px,
+  spotify -192px -96px,
+  stackexchange -48px -120px,
+  stackoverflow -72px -120px,
+  swarm -72px -96px,
+  telegram -216px -120px,
+  tieba -120px -192px,
+  tiktok -168px -192px,
+  trello -216px -96px,
+  tumblr -72px -72px,
+  tumblr_box 0 -48px,
+  twitch -96px -72px,
+  twitter -48px 0,
+  twitter_circle -72px 0,
+  twitter-box -72px 0,
+  upwork -24px -216px,
+  viber -192px -120px,
+  vimeo -72px -48px,
+  vimeo_box -96px -48px,
+  vk -48px -24px,
+  vk-box -48px -24px,
+  wechat -48px -144px,
+  whatsapp -168px -120px,
+  wordpress -120px -120px,
+  xing -144px -24px,
+  xing_box -168px -24px,
+  xing-box -168px -24px,
+  yandex -72px -192px,
+  yandex_ru -96px -192px,
+  youtube -48px -48px,
+  zoom -96px -168px;
+
+.services-icons {
+  @each $icon in $si-map {
+    $icon-name: nth($icon, 1);
+    $icon-x: nth($icon, 2);
+    $icon-y: nth($icon, 3);
+
+    &.si-#{$icon-name}, &[data-icon="#{$icon-name}"] { background-position: $icon-x $icon-y; }
+  }
+}
+
+.services-icons.icon-dark { background: $color-text !important; }
+.services-icons.icon-light { background: $color-text-light !important; }
+.services-icons.icon-light.icon-disabled { background: $color-text-light-disabled !important; }
+.services-icons.icon-primary { background: $color-primary; } // TDV, TO DO: CTV
+.services-icons.icon-accent { background: $color-accent; } // TDV, TO DO: CTV
+
+.btn .services-icons {
+  &, &:hover, &:focus { background: $color-text; }
+} // TDV
+
+.btn-colored, .btn.btn-colored {
+  &, &:hover, &:focus {
+    .services-icons { background: $color-primary-hover; }
+  }
+} // TDV, TO DO: CTV
+
+.btn-accent, .btn.btn-accent {
+  &, &:hover, &:focus {
+    .services-icons { background: $color-accent; }
+  }
+} // TDV, TO DO: CTV
+
+.btn-raised, .btn.btn-raised {
+  &.btn-colored {
+    &, &:hover, &:focus {
+      .services-icons { background: contrast-color($color-primary); }
+    }
+  }
+  &.btn-accent {
+    &, &:hover, &:focus {
+      .services-icons { background: contrast-color($color-accent); }
+    }
+  }
+} // TDV, TO DO: CTV
+
+.btn.btn-disabled {
+  &, &:hover, &:focus, &:active {
+    .services-icons { background: $color-text-disabled; }
+  }
+} // TDV
+
+.fab {
+  &, &:hover, &:focus {
+    .services-icons { background: $color-text; }
+  }
+  &.fab-colored {
+    &, &:hover, &:focus {
+      .services-icons { background: contrast-color($color-primary); }
+    }
+  }
+  &.fab-accent {
+    &, &:hover, &:focus {
+      .services-icons { background: contrast-color($color-accent); }
+    }
+  }
+} // TDV, TO DO: CTV
+
+.services-icons.icon-dark,
+.services-icons.icon-light,
+.services-icons.icon-primary,
+.services-icons.icon-accent,
+.btn .services-icons, .fab .services-icons,
+.theme-dark .services-icons { opacity: 1; mask: url(../img/services-icons.svg) no-repeat;
+  @each $icon in $si-map {
+    $icon-name: nth($icon, 1);
+    $icon-x: nth($icon, 2);
+    $icon-y: nth($icon, 3);
+
+    &.si-#{$icon-name}, &[data-icon="#{$icon-name}"] { mask-position: $icon-x $icon-y; }
+  }
+}
+
+.services-icon-left:before { display: inline-block; width: 24px; height: 24px; content: " "; margin-right: 12px; float: left; background: $color-text; mask: url(../img/services-icons.svg) no-repeat; } // TDV
+
+.services-icon-left.icon-dark:before { background: $color-text !important; }
+.services-icon-left.icon-secondary:before { background: $color-text-secondary; } // TDV
+.services-icon-left.icon-disabled:before { background: $color-text-disabled; } // TDV
+.services-icon-left.icon-light:before { background: $color-text-light !important; }
+.services-icon-left.icon-light.icon-disabled:before { background: $color-text-light-disabled !important; }
+.services-icon-left.icon-primary:before { background: $color-primary; } // TDV, TO DO: CTV
+.services-icon-left.icon-accent:before { background: $color-accent; } // TDV, TO DO: CTV
+
+a.services-icon-left:not(.btn) {
+  &:before { background: $color-accent; }
+  &:hover:before { background: $color-accent-hover; }
+  &:active:before { background: $color-accent-active; }
+} // TDV, TO DO: CTV
+
+.btn.services-icon-left, .menu a.services-icon-left {
+  &:before, &:hover:before, &:focus:before { background: $color-text; }
+} // TDV
+
+.btn-colored.services-icon-left, .btn.btn-colored.services-icon-left { 
+  &:before, &:hover:before, &:focus:before { background: $color-primary-hover; }
+} // TDV, TO DO: CTV
+.btn-accent.services-icon-left, .btn.btn-accent.services-icon-left { 
+  &:before, &:hover:before, &:focus:before { background: $color-accent; }
+} // TDV, TO DO: CTV
+
+.btn-raised.services-icon-left, .btn.btn-raised.services-icon-left {
+  &.btn-colored {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary); }
+  }
+  &.btn-accent { 
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent); }
+  }
+} // TDV, TO DO: CTV
+
+.btn.btn-disabled.services-icon-left { 
+  &:before, &:hover:before, &:focus:before, &:active:before { background: $color-text-disabled; }
+} // TDV
+
+.fab.services-icon-left {
+  &:before, &:hover:before, &:focus:before { background: $color-text; }
+  &.fab-colored {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary); }
+  }
+  &.fab-accent {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent); }
+  }
+} // TDV, TO DO: CTV
+
+.services-icon-left {
+  @each $icon in $si-map {
+    $icon-name: nth($icon, 1);
+    $icon-x: nth($icon, 2);
+    $icon-y: nth($icon, 3);
+
+    &.si-#{$icon-name}, &[data-icon="#{$icon-name}"] { &:before { mask-position: $icon-x $icon-y; } }
+  }
+}
+
+.services-icon-right:after { display: inline-block; width: 24px; height: 24px; content: " "; margin-left: 12px; float: right; background: $color-text; mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icon-right.icon-dark:after { background: $color-text !important; }
+.services-icon-right.icon-secondary:after { background: $color-text-secondary; } // TDV
+.services-icon-right.icon-disabled:after { background: $color-text-disabled; } // TDV
+.services-icon-right.icon-light:after { background: $color-text-light !important; }
+.services-icon-right.icon-light.icon-disabled:after { background: $color-text-light-disabled !important; }
+.services-icon-right.icon-primary:after { background: $color-primary; } // TDV, TO DO: CTV
+.services-icon-right.icon-accent:after { background: $color-accent; } // TDV, TO DO: CTV
+
+a.services-icon-right:not(.btn) {
+  &:after { background: $color-accent; }
+  &:hover:after { background: $color-accent-hover; }
+  &:active:after { background: $color-accent-active; }
+} // TDV, TO DO: CTV
+
+.btn.services-icon-right {
+  &:after, &:hover:after, &:focus:after { background: $color-text; }
+} // TDV
+
+.btn-colored.services-icon-right, .btn.btn-colored.services-icon-right { 
+  &:after, &:hover:after, &:focus:after { background: $color-primary-hover; }
+} // TDV, TO DO: CTV
+.btn-accent.services-icon-right, .btn.btn-accent.services-icon-right { 
+  &:after, &:hover:after, &:focus:after { background: $color-accent; }
+} // TDV, TO DO: CTV
+
+.btn-raised.services-icon-right, .btn.btn-raised.services-icon-right {
+  &.btn-colored {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary); }
+  }
+  &.btn-accent { 
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent); }
+  }
+} // TDV, TO DO: CTV
+
+.btn.btn-disabled.services-icon-right { 
+  &:after, &:hover:after, &:focus:after, &:active:after { background: $color-text-disabled; }
+} // TDV
+
+.fab.services-icon-right {
+  &:after, &:hover:after, &:focus:after { background: $color-text; }
+  &.fab-colored {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary); }
+  }
+  &.fab-accent {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent); }
+  }
+} // TDV, TO DO: CTV
+
+.services-icon-right {
+  @each $icon in $si-map {
+    $icon-name: nth($icon, 1);
+    $icon-x: nth($icon, 2);
+    $icon-y: nth($icon, 3);
+
+    &.si-#{$icon-name}, &[data-icon="#{$icon-name}"] { &:after { mask-position: $icon-x $icon-y; } }
+  }
+}
+
+.theme-dark {
+  .services-icons { background: $color-text-light; }
+  .services-icons.icon-secondary { background: $color-text-light-secondary; }
+  .services-icons.icon-disabled { background: $color-text-light-disabled; }
+  .services-icons.icon-primary { background: $color-primary-light; } // TO DO: CTV
+  .services-icons.icon-accent { background: $color-accent-light; } // TO DO: CTV
+  .btn .services-icons {
+    &, &:hover, &:focus { background: $color-text-light; }
+  }
+  .btn-colored, .btn.btn-colored {
+    &, &:hover, &:focus {
+      .services-icons { background: $color-primary-light; }
+    }
+  } // TO DO: CTV
+  .btn-accent, .btn.btn-accent {
+    &, &:hover, &:focus {
+      .services-icons { background: $color-accent-light; }
+    }
+  } // TO DO: CTV
+  .btn-raised, .btn.btn-raised {
+    &.btn-colored {
+      &, &:hover, &:focus {
+        .services-icons { background: contrast-color($color-primary-light); }
+      }
+    }
+    &.btn-accent {
+      &, &:hover, &:focus {
+        .services-icons { background: contrast-color($color-accent-light); }
+      }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled {
+    &, &:hover, &:focus, &:active {
+      .services-icons { background: $color-text-light-disabled; }
+    }
+  }
+  .fab {
+    &, &:hover, &:focus {
+      .services-icons { background: $color-text-light; }
+    }
+    &.fab-colored {
+      &, &:hover, &:focus {
+        .services-icons { background: contrast-color($color-primary-light); }
+      }
+    }
+    &.fab-accent {
+      &, &:hover, &:focus {
+        .services-icons { background: contrast-color($color-accent-light); }
+      }
+    }
+  } // TO DO: CTV
+
+  .services-icon-left:before, .services-icon-right:after { background: $color-text-light; }
+  .services-icon-left.icon-secondary:before, .services-icon-right.icon-secondary:after { background: $color-text-light-secondary; }
+  .services-icon-left.icon-disabled:before, .services-icon-right.icon-disabled:after { background: $color-text-light-disabled; }
+  .services-icon-left.icon-primary:before, .services-icon-right.icon-primary:after { background: $color-primary-light; } // TO DO: CTV
+  .services-icon-left.icon-accent:before, .services-icon-right.icon-accent:after { background: $color-accent-light; } // TO DO: CTV
+
+  a.services-icon-left:not(.btn) {
+    &:before { background: $color-accent-light; }
+    &:hover:before { background: $color-accent-light-hover; }
+    &:active:before { background: $color-accent-light-active; }
+  } // TO DO: CTV
+  .btn.services-icon-left, .menu a.services-icon-left {
+    &:before, &:hover:before, &:focus:before { background: $color-text-light; }
+  } 
+  .btn-colored.services-icon-left, .btn.btn-colored.services-icon-left { 
+    &:before, &:hover:before, &:focus:before { background: $color-primary-light; }
+  } // TO DO: CTV
+  .btn-accent.services-icon-left, .btn.btn-accent.services-icon-left { 
+    &:before, &:hover:before, &:focus:before { background: $color-accent-light; }
+  } // TO DO: CTV
+  .btn-raised.services-icon-left, .btn.btn-raised.services-icon-left {
+    &.btn-colored {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary-light); }
+    }
+    &.btn-accent { 
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled.services-icon-left { 
+    &:before, &:hover:before, &:focus:before, &:active:before { background: $color-text-light-disabled; }
+  }
+  .fab.services-icon-left {
+    &:before, &:hover:before, &:focus:before { background: $color-text-light; }
+    &.fab-colored {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary-light); }
+    }
+    &.fab-accent {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  
+  a.services-icon-right:not(.btn) {
+    &:after { background: $color-accent-light; }
+    &:hover:after { background: $color-accent-light-hover; }
+    &:active:after { background: $color-accent-light-active; }
+  } // TO DO: CTV
+  .btn.services-icon-right {
+    &:after, &:hover:after, &:focus:after { background: $color-text-light; }
+  }
+  .btn-colored.services-icon-right, .btn.btn-colored.services-icon-right { 
+    &:after, &:hover:after, &:focus:after { background: $color-primary-light; }
+  } // TO DO: CTV
+  .btn-accent.services-icon-right, .btn.btn-accent.services-icon-right { 
+    &:after, &:hover:after, &:focus:after { background: $color-accent-light; }
+  } // TO DO: CTV
+  .btn-raised.services-icon-right, .btn.btn-raised.services-icon-right {
+    &.btn-colored {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary-light); }
+    }
+    &.btn-accent { 
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled.services-icon-right { 
+    &:after, &:hover:after, &:focus:after, &:active:after { background: $color-text-light-disabled; }
+  }
+  .fab.services-icon-right {
+    &:after, &:hover:after, &:focus:after { background: $color-text-light; }
+    &.fab-colored {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary-light); }
+    }
+    &.fab-accent {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+} 

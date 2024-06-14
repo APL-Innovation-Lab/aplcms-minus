@@ -1,0 +1,18 @@
+uuid: df185c46-7386-4a98-9288-66e0627b40c9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: virtual_library_alert
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

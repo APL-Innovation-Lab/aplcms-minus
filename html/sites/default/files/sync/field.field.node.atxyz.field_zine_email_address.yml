@@ -1,0 +1,19 @@
+uuid: 3c38e850-81ab-416d-82fb-7b7e39f50758
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zine_email_address
+    - node.type.atxyz
+id: node.atxyz.field_zine_email_address
+field_name: field_zine_email_address
+entity_type: node
+bundle: atxyz
+label: 'Email Address / Dirección de Correo Electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

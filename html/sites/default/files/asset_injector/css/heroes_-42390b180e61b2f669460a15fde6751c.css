@@ -1,0 +1,16 @@
+.hero img {
+	position: absolute;
+	display: none;
+}
+.hero-title2 {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1.1em !important;
+}
+.hero-text2 p {
+	margin: 0;
+	padding: 0 0 10px !important;
+}
+.widget_pager_bottom {
+	padding-left: 0;
+}

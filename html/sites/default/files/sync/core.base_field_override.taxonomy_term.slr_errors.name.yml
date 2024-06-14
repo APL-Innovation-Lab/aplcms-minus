@@ -1,0 +1,18 @@
+uuid: c0b510f7-19b9-4b92-a5a1-f7753e0861fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.slr_errors
+id: taxonomy_term.slr_errors.name
+field_name: name
+entity_type: taxonomy_term
+bundle: slr_errors
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

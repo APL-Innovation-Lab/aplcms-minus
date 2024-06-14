@@ -1,0 +1,31 @@
+uuid: af63fa0b-5804-486b-8331-1fdb26f066cc
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.exhibit
+    - taxonomy.vocabulary.alert_zone
+    - taxonomy.vocabulary.library_location
+id: node.exhibit.field_locations
+field_name: field_locations
+entity_type: node
+bundle: exhibit
+label: 'Promotion Display'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alert_zone: alert_zone
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: alert_zone
+field_type: entity_reference

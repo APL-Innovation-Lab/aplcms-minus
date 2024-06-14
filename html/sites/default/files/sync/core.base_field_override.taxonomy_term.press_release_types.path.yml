@@ -1,0 +1,20 @@
+uuid: df130472-ad3f-44c1-aa7c-8ee34352e74f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.press_release_types
+  module:
+    - path
+id: taxonomy_term.press_release_types.path
+field_name: path
+entity_type: taxonomy_term
+bundle: press_release_types
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,23 @@
+uuid: db362570-99a2-46cd-beb5-7f8a8506695a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.group
+  module:
+    - feeds
+id: node.group.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: group
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

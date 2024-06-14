@@ -1,0 +1,18 @@
+uuid: 88a5ce26-e2de-497d-ab0c-7883453d8f27
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: room_reservation
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

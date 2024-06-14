@@ -1,0 +1,16 @@
+uuid: a0c00dc1-8169-414b-b2f5-7ecd81bd6acf
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: locations
+label: '2023'
+weight: 2
+theme: claro2
+admin_theme: claro2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/locations\r\n/app/*\r\n/community-resource-hub\r\n/computers-and-wifi\r\n/slr/calendar\r\n/youth/*\r\n/makerspace\r\n/blog/*\r\n/librarycard\r\n/meeting-rooms\r\n/meeting-rooms/policies\r\n/meeting-rooms/ahc\r\n/social/*\r\n/social\r\n/recommended/*\r\n/virtual/*\r\n/about-library/*\r\n/virtual\r\n<front>\r\n/mylibrarycard\r\n/event/*\r\n/events\r\n/events/*\r\n/jobportal\r\n/about-library\r\n/library-services\r\n/interlibrary-loan\r\n/volunteer\r\n/holiday-schedule\r\n/ahc/*\r\n/central-library\r\n/shop\r\n/recycled-reads\r\n/passports\r\n/es/pasaportes\r\n/pasaportes\r\n/rental\r\n/rental/*\r\n/yarborough-branch\r\n/windsor-park-branch\r\n/university-hills-branch\r\n/willie-mae-kirk-branch\r\n/twin-oaks-branch\r\n/terrazas-branch\r\n/spicewood-springs-branch\r\n/southeast-branch\r\n/st-john-branch\r\n/ruiz-branch\r\n/pleasant-hill-branch\r\n/old-quarry-branch\r\n/north-village-branch\r\n/milwood-branch\r\n/menchaca-road-branch\r\n/little-walnut-creek-branch\r\n/howson-branch\r\n/hampton-branch-at-oak-hill\r\n/cepeda-branch\r\n/carver-branch\r\n/summer\r\n/support\r\n/meeting-rooms/calendar"

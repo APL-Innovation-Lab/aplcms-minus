@@ -1,0 +1,18 @@
+uuid: 88e2b170-32a3-4a2e-862d-473836e77fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.title
+field_name: title
+entity_type: node
+bundle: slr
+label: 'Meeting Topic'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

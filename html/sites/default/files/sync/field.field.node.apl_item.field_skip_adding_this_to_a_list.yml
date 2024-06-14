@@ -1,0 +1,23 @@
+uuid: 7f3f1ee0-83aa-4acb-b17e-2dd81bc5ab04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skip_adding_this_to_a_list
+    - node.type.apl_item
+id: node.apl_item.field_skip_adding_this_to_a_list
+field_name: field_skip_adding_this_to_a_list
+entity_type: node
+bundle: apl_item
+label: 'Skip adding this to a list automatically'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Skip adding this item to a list'
+  off_label: 'Add this item to a list'
+field_type: boolean

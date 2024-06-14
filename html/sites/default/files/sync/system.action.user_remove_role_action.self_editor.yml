@@ -1,0 +1,14 @@
+uuid: a703f49b-8732-441a-8046-28b40dbfba24
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.self_editor
+  module:
+    - user
+id: user_remove_role_action.self_editor
+label: 'Remove the Self Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: self_editor

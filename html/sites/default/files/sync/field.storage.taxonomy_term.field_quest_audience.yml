@@ -1,0 +1,33 @@
+uuid: 95336278-2b0b-47b1-986d-c956ec890bc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_quest_audience
+field_name: field_quest_audience
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Adult (18+)'
+    -
+      value: '2'
+      label: 'Teen (13-17)'
+    -
+      value: '4'
+      label: 'Youth (5-12)'
+    -
+      value: '3'
+      label: 'Children (0-5)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

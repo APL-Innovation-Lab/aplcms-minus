@@ -1,0 +1,46 @@
+uuid: f36f1a77-690c-4239-8f1e-e74bf0cc5bb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_jp_what_is_your_age_
+field_name: field_jp_what_is_your_age_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '17 or younger'
+    -
+      value: '2'
+      label: 18-20
+    -
+      value: '3'
+      label: 21-29
+    -
+      value: '4'
+      label: 30-39
+    -
+      value: '5'
+      label: 40-49
+    -
+      value: '6'
+      label: 50-59
+    -
+      value: '7'
+      label: '60 or older'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

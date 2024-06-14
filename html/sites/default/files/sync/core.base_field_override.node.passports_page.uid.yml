@@ -1,0 +1,20 @@
+uuid: 445d0051-4fb2-4512-8652-10b41048b90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.uid
+field_name: uid
+entity_type: node
+bundle: passports_page
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

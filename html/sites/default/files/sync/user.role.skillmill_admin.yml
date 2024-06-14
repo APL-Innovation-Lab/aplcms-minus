@@ -1,0 +1,12 @@
+uuid: 194404df-f127-45b4-b3d3-075598d598ec
+langcode: eng
+status: true
+dependencies:
+  module:
+    - config_perms
+id: skillmill_admin
+label: 'Skillmill Admin'
+weight: 24
+is_admin: null
+permissions:
+  - 'admin webform results'

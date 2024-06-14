@@ -1,0 +1,17 @@
+uuid: e1d62395-6ac1-440d-8fbe-70f36c881a9f
+langcode: eng
+status: true
+dependencies:
+  module:
+    - focal_point
+name: card_image_530x325_
+label: 'card image (530x325)'
+effects:
+  5c1b6ffe-2887-45eb-b629-e6b7214d8143:
+    uuid: 5c1b6ffe-2887-45eb-b629-e6b7214d8143
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 530
+      height: 325
+      crop_type: focal_point

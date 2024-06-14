@@ -1,0 +1,20 @@
+uuid: f0c1658a-8665-4b21-a641-86d4fdbf4d41
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.menu_link
+field_name: menu_link
+entity_type: node
+bundle: qr
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

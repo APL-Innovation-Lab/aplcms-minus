@@ -1,0 +1,17 @@
+uuid: 4fffa054-f40d-44e8-8332-b2791ff97bbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job Coaching Request'
+type: job_portal_assistance_request
+description: ''
+help: "<h1>Book a Job Coach</h1>\r\n<div id=\"apl_intro_w\">\r\n<p>We look forward to assisting you in your job search. Tell us a bit about yourself and your job search so we can match you with a Job Coach.</p>\r\n<p>Note: Appointments can also be made by calling the reference line at (512) 974-7400, option 1. Let the librarian know you need to request a job coaching appointment and they will fill out the form on your behalf.</p>\r\n</div>\r\n"
+new_revision: false
+preview_mode: 0
+display_submitted: false

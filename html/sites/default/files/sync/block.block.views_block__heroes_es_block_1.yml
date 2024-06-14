@@ -1,0 +1,37 @@
+uuid: f02c4efe-85a5-46c4-a89d-bcf37b9f7103
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.heroes_es
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__heroes_es_block_1
+theme: aplpa
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:heroes_es-block_1'
+settings:
+  id: 'views_block:heroes_es-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

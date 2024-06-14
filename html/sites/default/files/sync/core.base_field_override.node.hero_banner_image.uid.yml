@@ -1,0 +1,20 @@
+uuid: f0657176-597b-4c56-bd60-5c0983198104
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.uid
+field_name: uid
+entity_type: node
+bundle: hero_banner_image
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

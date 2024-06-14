@@ -1,0 +1,18 @@
+uuid: 3a2228d0-1fe2-4cc9-b920-839dea9d505c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.publish_on
+field_name: publish_on
+entity_type: node
+bundle: passport_reservation
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

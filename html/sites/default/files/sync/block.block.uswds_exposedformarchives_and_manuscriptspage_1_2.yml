@@ -1,0 +1,25 @@
+uuid: 1ec98ff5-ef56-406d-ab7d-e2cec4c3b4e7
+langcode: eng
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_exposedformarchives_and_manuscriptspage_1_2
+theme: uswds
+region: content
+weight: -1
+provider: null
+plugin: 'views_exposed_filter_block:archives_and_manuscripts-page_1'
+settings:
+  id: 'views_exposed_filter_block:archives_and_manuscripts-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/archives/home

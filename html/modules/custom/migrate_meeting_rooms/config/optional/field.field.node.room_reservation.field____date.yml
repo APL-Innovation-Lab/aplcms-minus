@@ -1,0 +1,21 @@
+uuid: 0d4203b4-3215-4a92-b912-a14a3d4555f2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field____date
+    - node.type.room_reservation
+  module:
+    - datetime
+id: node.room_reservation.field____date
+field_name: field____date
+entity_type: node
+bundle: room_reservation
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

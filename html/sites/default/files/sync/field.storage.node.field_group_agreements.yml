@@ -1,0 +1,43 @@
+uuid: 88e181da-86da-4df1-a8f8-6560c33126c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_group_agreements
+field_name: field_group_agreements
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'We are a not-for-profit organization or community group.'
+      label: 'We are a not-for-profit organization or community group.'
+    -
+      value: 'We will not use the meeting room for commercial activity.'
+      label: 'We will not use the meeting room for commercial activity.'
+    -
+      value: 'Our meeting is free and open to the public.'
+      label: 'Our meeting is free and open to the public.'
+    -
+      value: 'We agree to honor the meeting room''s General Guidelines.'
+      label: 'We agree to abide by the <a target="_blank" href="/meeting-rooms/policies">meeting room policies</a> and <a target="_blank" href="/meeting-rooms/ahc">Austin History Center guidelines</a>.'
+    -
+      value: 'We agree to abide by the Care and Use of Facilities guidelines.'
+      label: 'We agree to abide by the Care and Use of Facilities guidelines.'
+    -
+      value: 'We agree to abide by the Reservations Guidelines.'
+      label: 'Our meeting will include 3 or more individuals.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 3176ada4-73f5-452e-84a4-82a528981e95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_summary
+    - node.type.event
+id: node.event.field_movie_summary
+field_name: field_movie_summary
+entity_type: node
+bundle: event
+label: 'Movie Summary'
+description: 'Enter a description if the movie isn''t in the catalog'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,74 @@
+uuid: 431ad9d0-a4e0-420d-84f6-bf5c5aa44af9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.unfiltered_html
+    - node.type.alert
+    - node.type.database
+    - node.type.virtual_library_page
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - content_translation
+    - editoria11y
+    - filter
+    - node
+    - publishcontent
+    - taxonomy
+    - toolbar
+    - webform
+id: virtual_library_editor
+label: 'Virtual Library Editor'
+weight: 11
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'create alert content'
+  - 'create content translations'
+  - 'create database content'
+  - 'create terms in database_subjects'
+  - 'create virtual_library_page content'
+  - 'delete alert revisions'
+  - 'delete any alert content'
+  - 'delete any database content'
+  - 'delete any virtual_library_page content'
+  - 'delete content translations'
+  - 'delete own alert content'
+  - 'delete own database content'
+  - 'delete own virtual_library_page content'
+  - 'edit any alert content'
+  - 'edit any database content'
+  - 'edit any virtual_library_page content'
+  - 'edit own alert content'
+  - 'edit own database content'
+  - 'edit own virtual_library_page content'
+  - 'edit own webform'
+  - 'edit terms in database_subjects'
+  - 'publish any node type alert'
+  - 'publish any node type database'
+  - 'publish editable node type alert'
+  - 'publish own node type alert'
+  - 'revert alert revisions'
+  - 'revert database revisions'
+  - 'translate editable entities'
+  - 'translate virtual_library_page node'
+  - 'unpublish any node type alert'
+  - 'unpublish any node type database'
+  - 'unpublish any node type virtual_library_alert'
+  - 'unpublish any node type virtual_library_page'
+  - 'unpublish editable node type alert'
+  - 'unpublish own node type alert'
+  - 'unpublish own node type database'
+  - 'update content translations'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format unfiltered_html'
+  - 'view alert revisions'
+  - 'view database revisions'
+  - 'view editoria11y checker'
+  - 'view own unpublished content'

@@ -1,0 +1,268 @@
+uuid: b8bb4bcb-9b15-4b22-aeee-f5e8477fb33e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_portal_assistance_request.field__i_need_help_
+    - field.field.node.job_portal_assistance_request.field_anything_else_you_d_like_u
+    - field.field.node.job_portal_assistance_request.field_assigned_to
+    - field.field.node.job_portal_assistance_request.field_cr_history
+    - field.field.node.job_portal_assistance_request.field_do_you_have_a_library_card
+    - field.field.node.job_portal_assistance_request.field_email_message
+    - field.field.node.job_portal_assistance_request.field_how_can_we_help_
+    - field.field.node.job_portal_assistance_request.field_i_am_a_n_
+    - field.field.node.job_portal_assistance_request.field_i_am_interested_in_a_virtu
+    - field.field.node.job_portal_assistance_request.field_i_prefer_to_be_contacted_b
+    - field.field.node.job_portal_assistance_request.field_jb_status
+    - field.field.node.job_portal_assistance_request.field_jp_5_digit_zip
+    - field.field.node.job_portal_assistance_request.field_jp_access_code
+    - field.field.node.job_portal_assistance_request.field_jp_anecdata
+    - field.field.node.job_portal_assistance_request.field_jp_area
+    - field.field.node.job_portal_assistance_request.field_jp_date
+    - field.field.node.job_portal_assistance_request.field_jp_did_you_benefit
+    - field.field.node.job_portal_assistance_request.field_jp_email
+    - field.field.node.job_portal_assistance_request.field_jp_notes_comments
+    - field.field.node.job_portal_assistance_request.field_jp_phone
+    - field.field.node.job_portal_assistance_request.field_jp_ready_to_reply
+    - field.field.node.job_portal_assistance_request.field_jp_tell_us_more
+    - field.field.node.job_portal_assistance_request.field_jp_were_you_satisfied
+    - field.field.node.job_portal_assistance_request.field_jp_what_is_your_age_
+    - field.field.node.job_portal_assistance_request.field_jp_which_race_ethnicity
+    - field.field.node.job_portal_assistance_request.field_jp_which_service
+    - field.field.node.job_portal_assistance_request.field_jp_would_you_refer
+    - field.field.node.job_portal_assistance_request.field_were_you_satisfied_with_th
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+    - text
+    - user
+id: node.job_portal_assistance_request.default
+targetEntityType: node
+bundle: job_portal_assistance_request
+mode: default
+content:
+  field__i_need_help_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_anything_else_you_d_like_u:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_assigned_to:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_cr_history:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_do_you_have_a_library_card:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_email_message:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_how_can_we_help_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_i_am_a_n_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_i_am_interested_in_a_virtu:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_i_prefer_to_be_contacted_b:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_jb_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_jp_5_digit_zip:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 127
+    region: content
+  field_jp_access_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 128
+    region: content
+  field_jp_anecdata:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_jp_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_jp_date:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_jp_did_you_benefit:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_jp_email:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_jp_notes_comments:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_jp_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_jp_ready_to_reply:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_jp_tell_us_more:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 126
+    region: content
+  field_jp_were_you_satisfied:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_jp_what_is_your_age_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 125
+    region: content
+  field_jp_which_race_ethnicity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 124
+    region: content
+  field_jp_which_service:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  field_jp_would_you_refer:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_were_you_satisfied_with_th:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

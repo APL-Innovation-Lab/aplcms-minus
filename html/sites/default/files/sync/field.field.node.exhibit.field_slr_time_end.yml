@@ -1,0 +1,21 @@
+uuid: 037089cd-3654-4372-aa12-742b5f3ee00c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.exhibit
+  module:
+    - datetime
+id: node.exhibit.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: exhibit
+label: 'Time End'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

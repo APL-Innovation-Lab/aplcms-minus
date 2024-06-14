@@ -1,0 +1,20 @@
+uuid: 4f195b25-397c-485c-9674-5c0ace8cfb56
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_time
+  module:
+    - path
+id: taxonomy_term.staff_time.path
+field_name: path
+entity_type: taxonomy_term
+bundle: staff_time
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

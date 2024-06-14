@@ -1,0 +1,36 @@
+uuid: 2f2e4811-d9d6-4750-aeb0-7d6669de5471
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+  module:
+    - config_perms
+    - editoria11y
+    - field_permissions
+    - node
+    - webform
+id: passports_page_editor
+label: 'Passports Page Editor'
+weight: 22
+is_admin: null
+permissions:
+  - 'admin delete webform'
+  - 'admin resend'
+  - 'admin webform results'
+  - 'admin webform subs'
+  - 'admin webform subs2'
+  - 'admin webform subs3'
+  - 'admin webform subs4'
+  - 'create field_additional_info'
+  - 'create passports_page content'
+  - 'delete any passports_page content'
+  - 'delete own passports_page content'
+  - 'edit any passports_page content'
+  - 'edit field_additional_info'
+  - 'edit own field_additional_info'
+  - 'edit own passports_page content'
+  - 'edit own webform'
+  - 'view editoria11y checker'
+  - 'view field_additional_info'
+  - 'view own field_additional_info'

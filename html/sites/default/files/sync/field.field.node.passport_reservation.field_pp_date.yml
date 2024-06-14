@@ -1,0 +1,21 @@
+uuid: 97076209-35c0-419a-8d83-4df4bd4e6ec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_date
+    - node.type.passport_reservation
+  module:
+    - datetime
+id: node.passport_reservation.field_pp_date
+field_name: field_pp_date
+entity_type: node
+bundle: passport_reservation
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,94 @@
+dependencies:
+  enforced:
+    module:
+      - migrate_file
+id: migrate_ahc_pages
+migration_group: apl_dev
+label: 'AHC Pages'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_ahc_pages/ahc_pages.json'
+  fields:
+    - name: nid
+      selector: nid
+    - name: path
+      selector: path
+    - name: title
+      selector: title
+    - name: body
+      selector: body
+    - name: field_main_image
+      selector: field_main_image
+    - name: field_main_image_alt
+      selector: field_main_image_alt
+    - name: field_image_attribution_ahc
+      selector: field_image_attribution_ahc
+    - name: field_accordions
+      selector: field_accordions
+    - name: status
+      selector: status
+    - name: changed
+      selector: changed
+    - name: langcode
+      selector: langcode
+  ids:
+    nid:
+      type: integer
+    langcode:
+      type: string
+process:
+  langcode: langcode
+  type:
+    plugin: default_value
+    default_value: ahc_page
+  path: path
+  title:
+    -
+      plugin: callback
+      callable: html_entity_decode
+      source: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_main_image:
+    plugin: image_import
+    source: field_main_image
+    title: title
+    alt: field_main_image_alt
+  field_image_attribution_ahc: field_image_attribution_ahc
+  field_accordions: 
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_accordions
+    -
+      plugin: explode
+      source: field_accordions
+      delimiter: ','
+  status: status
+  changed: changed
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 284
+destination:
+  plugin: 'entity:node'
+  translations: true
+  overwrite_properties:
+    - title
+    - path
+    - body
+    - field_main_image
+    - field_image_attribution_ahc
+    - field_accordions
+    - status
+    - changed
+  update: true
+migration_dependencies: {  }

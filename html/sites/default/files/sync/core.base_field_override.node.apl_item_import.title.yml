@@ -1,0 +1,18 @@
+uuid: f811b24c-57f9-4fdd-9765-76c06dd14bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.title
+field_name: title
+entity_type: node
+bundle: apl_item_import
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

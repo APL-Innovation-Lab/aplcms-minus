@@ -1,0 +1,19 @@
+uuid: 56f9424f-c537-4c3f-b10e-4d51cdd6cbdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audience_text
+    - node.type.event
+id: node.event.field_audience_text
+field_name: field_audience_text
+entity_type: node
+bundle: event
+label: 'Audience Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 3391cc78-3c3e-42ae-afee-97a61baefcc9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__alerts_block_6
+theme: claro2noGA
+region: header
+weight: -26
+provider: null
+plugin: 'views_block:alerts-block_6'
+settings:
+  id: 'views_block:alerts-block_6'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/rooms-calendar/ace/*\r\n/slr/*\r\n/slr-request\r\n/slr-request/*\r\n/node/2"

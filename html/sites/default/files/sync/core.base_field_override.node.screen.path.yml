@@ -1,0 +1,20 @@
+uuid: 83833615-0173-4f85-aa6d-260e3aa3646b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.screen
+  module:
+    - path
+id: node.screen.path
+field_name: path
+entity_type: node
+bundle: screen
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

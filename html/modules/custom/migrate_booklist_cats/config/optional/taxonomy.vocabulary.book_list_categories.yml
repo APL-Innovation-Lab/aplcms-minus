@@ -1,0 +1,8 @@
+uuid: e36cf3b2-4238-42fe-bf8b-2019fb6d16d9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Item Facets'
+vid: book_list_categories
+description: ''
+weight: -14

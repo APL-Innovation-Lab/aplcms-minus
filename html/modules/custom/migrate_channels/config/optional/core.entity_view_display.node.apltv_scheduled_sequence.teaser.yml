@@ -1,0 +1,30 @@
+uuid: 4eb62e66-4b31-47cb-b385-ca5fd06c1bd3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.apltv_scheduled_sequence.field_sch_seq_channel
+    - field.field.node.apltv_scheduled_sequence.field_sch_sequence
+    - field.field.node.apltv_scheduled_sequence.field_slr_time_end
+    - field.field.node.apltv_scheduled_sequence.field_slr_time_start
+    - node.type.apltv_scheduled_sequence
+  module:
+    - user
+id: node.apltv_scheduled_sequence.teaser
+targetEntityType: node
+bundle: apltv_scheduled_sequence
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_sch_seq_channel: true
+  field_sch_sequence: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

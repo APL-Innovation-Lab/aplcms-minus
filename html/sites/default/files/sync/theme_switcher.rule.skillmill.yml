@@ -1,0 +1,16 @@
+uuid: 7e32c786-39fe-454e-9735-f91c3594ae5c
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: skillmill
+label: skillmill
+weight: 9
+theme: uswds
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /skillmill/request

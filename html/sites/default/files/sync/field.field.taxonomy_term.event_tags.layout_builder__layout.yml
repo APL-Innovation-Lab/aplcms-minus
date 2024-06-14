@@ -1,0 +1,21 @@
+uuid: c9e24aff-036a-4ec9-96c5-225a4372db41
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.event_tags
+  module:
+    - layout_builder
+id: taxonomy_term.event_tags.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: event_tags
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

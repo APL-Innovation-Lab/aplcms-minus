@@ -1,0 +1,38 @@
+uuid: e721e434-218b-4208-9ac6-980ff32d377f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.sections_en
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__sections_en_block_1
+theme: aplpa
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:sections_en-block_1'
+settings:
+  id: 'views_block:sections_en-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+      en: en
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/staging/1"

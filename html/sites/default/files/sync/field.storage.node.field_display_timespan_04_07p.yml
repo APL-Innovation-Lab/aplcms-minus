@@ -1,0 +1,24 @@
+uuid: 8bebe2ce-fba1-402b-bfbf-b2b159ebf7e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

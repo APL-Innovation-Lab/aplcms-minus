@@ -1,0 +1,23 @@
+uuid: 4de7c7f6-7396-468a-ae16-c0d01aca865e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hdmi
+    - taxonomy.vocabulary.rooms
+id: taxonomy_term.rooms.field_hdmi
+field_name: field_hdmi
+entity_type: taxonomy_term
+bundle: rooms
+label: HDMI
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

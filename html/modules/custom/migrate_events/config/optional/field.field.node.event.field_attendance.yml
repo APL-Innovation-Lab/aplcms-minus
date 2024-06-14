@@ -1,0 +1,23 @@
+uuid: f7602029-d2f8-4068-935d-05d76035f45e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attendance
+    - node.type.event
+id: node.event.field_attendance
+field_name: field_attendance
+entity_type: node
+bundle: event
+label: Attendance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

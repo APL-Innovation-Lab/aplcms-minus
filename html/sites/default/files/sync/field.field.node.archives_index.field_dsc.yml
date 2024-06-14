@@ -1,0 +1,21 @@
+uuid: f621858d-34eb-4040-a813-68d79fe55627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsc
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_dsc
+field_name: field_dsc
+entity_type: node
+bundle: archives_index
+label: Dsc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

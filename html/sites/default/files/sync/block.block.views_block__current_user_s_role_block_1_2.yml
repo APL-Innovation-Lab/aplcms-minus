@@ -1,0 +1,30 @@
+uuid: 1fc0eea6-729d-4cc5-a324-c54298c78119
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.current_user_s_role
+  module:
+    - system
+    - views
+  theme:
+    - claro
+id: views_block__current_user_s_role_block_1_2
+theme: claro
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:current_user_s_role-block_1'
+settings:
+  id: 'views_block:current_user_s_role-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /slr-request

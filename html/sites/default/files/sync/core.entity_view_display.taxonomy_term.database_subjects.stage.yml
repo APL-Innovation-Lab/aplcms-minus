@@ -1,0 +1,89 @@
+uuid: e81921ce-bf1a-44eb-93b6-e1025eb1665e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.stage
+    - field.field.taxonomy_term.database_subjects.feeds_item
+    - field.field.taxonomy_term.database_subjects.field_main_image_ds
+    - field.field.taxonomy_term.database_subjects.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+    - views.view.accordion
+    - views.view.digital_resource_subject
+    - views.view.digital_resources_by_subject
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          214bc81f-ca91-46e5-8935-d5ba7d845ce8:
+            uuid: 214bc81f-ca91-46e5-8935-d5ba7d845ce8
+            region: content
+            configuration:
+              id: 'views_block:digital_resource_subject-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c9021ef5-7de4-4055-b7d4-b5aa6a4c9d3b:
+            uuid: c9021ef5-7de4-4055-b7d4-b5aa6a4c9d3b
+            region: content
+            configuration:
+              id: 'views_block:digital_resources_by_subject-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          1bb8b05e-4d5d-4b3c-a599-1614b3715acc:
+            uuid: 1bb8b05e-4d5d-4b3c-a599-1614b3715acc
+            region: content
+            configuration:
+              id: 'views_block:accordion-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.database_subjects.stage
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: stage
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image_ds: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

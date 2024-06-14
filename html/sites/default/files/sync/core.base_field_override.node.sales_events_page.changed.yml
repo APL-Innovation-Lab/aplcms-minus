@@ -1,0 +1,18 @@
+uuid: 62410826-f558-4237-814f-8eec2ac97411
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.changed
+field_name: changed
+entity_type: node
+bundle: sales_events_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

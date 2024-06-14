@@ -1,0 +1,21 @@
+uuid: c4b639ce-817e-4560-89f2-1fa13b15ca0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_minor_applicants
+    - node.type.passport_reservation
+  module:
+    - options
+id: node.passport_reservation.field_pp_minor_applicants
+field_name: field_pp_minor_applicants
+entity_type: node
+bundle: passport_reservation
+label: 'Number of applicants age 15 or younger'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

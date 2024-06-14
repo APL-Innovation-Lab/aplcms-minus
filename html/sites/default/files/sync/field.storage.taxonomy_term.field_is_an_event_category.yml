@@ -1,0 +1,18 @@
+uuid: 97d5d0e3-ccbf-431c-8f4e-7d77bf902693
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_is_an_event_category
+field_name: field_is_an_event_category
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

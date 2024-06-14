@@ -1,0 +1,29 @@
+uuid: 9dd6018f-7c74-4758-af4e-2c24b0a4883e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: uswds_views_block__alerts_block_5
+theme: uswds
+region: header
+weight: -23
+provider: null
+plugin: 'views_block:alerts-block_5'
+settings:
+  id: 'views_block:alerts-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/es/*\r\n/es"

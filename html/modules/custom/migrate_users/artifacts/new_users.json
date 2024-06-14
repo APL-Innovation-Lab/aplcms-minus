@@ -1,0 +1,757 @@
+[
+  {
+    "uid": "40",
+    "name": "houlihank",
+    "roles": "event_editor,item_editor,job_coach,self_editor,slr_internal,internal_group_representative"
+  },
+  {
+    "uid": "1",
+    "name": "drupaladmin",
+    "roles": ""
+  },
+  {
+    "uid": "63",
+    "name": "HyinkJ",
+    "roles": "event_editor,item_editor,slr_internal,internal_group_representative"
+  },
+  {
+    "uid": "39",
+    "name": "BlancheB",
+    "roles": "event_editor,item_editor,self_editor,slr_admin,internal_group_representative"
+  },
+  {
+    "uid": "48110",
+    "name": "SanchezMe",
+    "roles": "event_editor,item_editor,job_coach,internal_group_representative"
+  },
+  {
+    "uid": "70885",
+    "name": "owensp",
+    "roles": "event_editor,item_editor,reflection_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70927",
+    "name": "VanWinkleT",
+    "roles": "event_editor,item_editor,recommendation_editor,slr_internal"
+  },
+  {
+    "uid": "70882",
+    "name": "WilsonBr",
+    "roles": "event_editor,item_editor,job_coach,job_coach_administrator,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70875",
+    "name": "TesslerJ",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "70946",
+    "name": "lumpkinj",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "51",
+    "name": "PinC",
+    "roles": "reflection_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70938",
+    "name": "petersje",
+    "roles": "survey_editor,pio,internal_group_representative"
+  },
+  {
+    "uid": "12487",
+    "name": "mirandaa",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70943",
+    "name": "MerlissR",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70922",
+    "name": "PlailS",
+    "roles": "slr_internal"
+  },
+  {
+    "uid": "70925",
+    "name": "HofstadP",
+    "roles": "pio,events_super_admin"
+  },
+  {
+    "uid": "33998",
+    "name": "ParsonsJ",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "32413",
+    "name": "AthasH",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "8433",
+    "name": "abramovm",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "14",
+    "name": "parsonsb",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "19232",
+    "name": "AbelK",
+    "roles": "item_editor,job_coach,slr_internal"
+  },
+  {
+    "uid": "46342",
+    "name": "DeLaPortillaK",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "61",
+    "name": "mullina",
+    "roles": "item_editor,virtual_library_editor,self_editor,slr_internal,internal_group_representative"
+  },
+  {
+    "uid": "70889",
+    "name": "PanJ",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "70924",
+    "name": "Pfannenstielm",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70891",
+    "name": "OtoupalikM",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "16015",
+    "name": "WalkerDa",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "78",
+    "name": "SandersA",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "80",
+    "name": "DonaldsonW",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "19744",
+    "name": "GarciaFri",
+    "roles": "reflection_editor,slr_internal"
+  },
+  {
+    "uid": "20",
+    "name": "Cronins",
+    "roles": "administrator,slr_admin,meeting_rooms_administrator"
+  },
+  {
+    "uid": "43",
+    "name": "beebowerm",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "127",
+    "name": "chiarchiaroc",
+    "roles": "event_editor,item_editor,slr_internal,events_super_admin"
+  },
+  {
+    "uid": "70923",
+    "name": "garzabr",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "113",
+    "name": "jonesmo",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "58",
+    "name": "ferates",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "70",
+    "name": "wheatm",
+    "roles": "highlighted_images_editor,pio,internal_group_representative"
+  },
+  {
+    "uid": "13808",
+    "name": "bakermi",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "26812",
+    "name": "PolioL",
+    "roles": "slr_admin,internal_group_representative"
+  },
+  {
+    "uid": "70937",
+    "name": "evanscy",
+    "roles": "ahc_editor"
+  },
+  {
+    "uid": "32414",
+    "name": "NiwagabaA",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "7409",
+    "name": "magana-noverolai",
+    "roles": "event_editor,item_editor,job_coach,meeting_rooms_administrator"
+  },
+  {
+    "uid": "1692",
+    "name": "kibodeaux-poseys",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "2383",
+    "name": "reichs",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70921",
+    "name": "AlvarezL",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "70760",
+    "name": "JohnsonBa",
+    "roles": "pio"
+  },
+  {
+    "uid": "73",
+    "name": "Gonzalezt",
+    "roles": "administrator,pio"
+  },
+  {
+    "uid": "70910",
+    "name": "nguyenk",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70926",
+    "name": "WidhalmM",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "48922",
+    "name": "HeckerJ",
+    "roles": "ahc_editor,news_alerts_editor,event_editor,highlighted_images_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "70935",
+    "name": "NajjarL",
+    "roles": "slr_internal"
+  },
+  {
+    "uid": "23",
+    "name": "connorj",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "93",
+    "name": "TownsendK",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70955",
+    "name": "FlynnL",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "70761",
+    "name": "LopezP",
+    "roles": "self_editor,slr_admin"
+  },
+  {
+    "uid": "64",
+    "name": "ellisonl",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "17973",
+    "name": "Nyfelers",
+    "roles": "event_editor,item_editor,slr_internal"
+  },
+  {
+    "uid": "70939",
+    "name": "TadenaL",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "70933",
+    "name": "BoykinB",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70956",
+    "name": "KobetichA",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "70930",
+    "name": "McWilliamsK",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "70945",
+    "name": "SteinC",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "135",
+    "name": "melkersonj",
+    "roles": "event_editor,item_editor,reflection_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "1847",
+    "name": "reynoldsh",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "40144",
+    "name": "OvertonK",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "32448",
+    "name": "addisons",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "25632",
+    "name": "RaabS",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "23065",
+    "name": "rowanh",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "70957",
+    "name": "mikeska-benfielde",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "14402",
+    "name": "MonthieR",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "15031",
+    "name": "GodfreyS",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70749",
+    "name": "NguyenTh",
+    "roles": "gift_shop_page_editor,passports_page_editor"
+  },
+  {
+    "uid": "70950",
+    "name": "HansonJ",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "144",
+    "name": "gentilea",
+    "roles": "basic_page_editor,library_info_editor"
+  },
+  {
+    "uid": "70563",
+    "name": "McCoyT",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "22829",
+    "name": "BrownJul",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "30941",
+    "name": "FassettH",
+    "roles": "reflection_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70941",
+    "name": "CasasC",
+    "roles": "item_editor,recommendation_editor,slr_internal"
+  },
+  {
+    "uid": "70944",
+    "name": "rodriguezlin",
+    "roles": "event_editor,item_editor,reflection_editor,skillmill_admin"
+  },
+  {
+    "uid": "70949",
+    "name": "LealL",
+    "roles": "reflection_editor"
+  },
+  {
+    "uid": "70883",
+    "name": "mathisn",
+    "roles": "slr_internal,passports_page_editor"
+  },
+  {
+    "uid": "26773",
+    "name": "PattersonKat",
+    "roles": "event_editor,item_editor,reflection_editor,slr_internal"
+  },
+  {
+    "uid": "2411",
+    "name": "garzace",
+    "roles": "event_editor,item_editor,self_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70920",
+    "name": "GonzalesJess",
+    "roles": "item_editor,recommendation_editor,slr_internal"
+  },
+  {
+    "uid": "70928",
+    "name": "BearyC",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "2158",
+    "name": "FurchesT",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "70932",
+    "name": "WaylandV",
+    "roles": "event_editor,item_editor,reflection_editor"
+  },
+  {
+    "uid": "6",
+    "name": "hamiltonli",
+    "roles": "event_editor,item_editor,job_coach,self_editor,slr_admin"
+  },
+  {
+    "uid": "107",
+    "name": "reyesma",
+    "roles": "slr_internal"
+  },
+  {
+    "uid": "38",
+    "name": "rich-wulfmeyerr",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "81",
+    "name": "coleyt",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "12689",
+    "name": "nguyena",
+    "roles": "meeting_rooms_administrator,slr_internal,passports_page_editor"
+  },
+  {
+    "uid": "45903",
+    "name": "ChagnonN",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "102",
+    "name": "amescuat",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "7",
+    "name": "bellb",
+    "roles": "administrator"
+  },
+  {
+    "uid": "46",
+    "name": "cookp",
+    "roles": "basic_page_editor,event_editor,item_editor,self_editor,internal_group_representative"
+  },
+  {
+    "uid": "49010",
+    "name": "gibsone",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "24215",
+    "name": "SalcidoB",
+    "roles": "event_editor,item_editor,slr_admin,internal_group_representative"
+  },
+  {
+    "uid": "20334",
+    "name": "hultsm",
+    "roles": "ahc_editor,internal_group_representative"
+  },
+  {
+    "uid": "70919",
+    "name": "bonierm",
+    "roles": "internal_group_representative"
+  },
+  {
+    "uid": "14964",
+    "name": "boydd",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "25",
+    "name": "holmc",
+    "roles": "event_editor,item_editor,reflection_editor,internal_group_representative"
+  },
+  {
+    "uid": "70881",
+    "name": "NewquistM",
+    "roles": "slr_internal"
+  },
+  {
+    "uid": "70954",
+    "name": "harlanw",
+    "roles": "slr_internal,skillmill_admin"
+  },
+  {
+    "uid": "70748",
+    "name": "CarrubbaJ",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "70953",
+    "name": "ParkerN",
+    "roles": "event_editor,exhibit_editor"
+  },
+  {
+    "uid": "70931",
+    "name": "wiseme",
+    "roles": "reflection_editor"
+  },
+  {
+    "uid": "70894",
+    "name": "IslasM",
+    "roles": "ahc_editor,internal_group_representative"
+  },
+  {
+    "uid": "49011",
+    "name": "GoldmanA",
+    "roles": "event_editor,item_editor,meeting_rooms_administrator"
+  },
+  {
+    "uid": "70219",
+    "name": "BoehmT",
+    "roles": "survey_editor"
+  },
+  {
+    "uid": "70913",
+    "name": "fowlerp",
+    "roles": "slr_admin"
+  },
+  {
+    "uid": "22192",
+    "name": "RayA",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "19",
+    "name": "mirandad",
+    "roles": "basic_page_editor,item_editor,self_editor,spanish_editor"
+  },
+  {
+    "uid": "57",
+    "name": "sotog",
+    "roles": "reflection_editor"
+  },
+  {
+    "uid": "22830",
+    "name": "Oswaldl",
+    "roles": "item_editor,slr_internal"
+  },
+  {
+    "uid": "69421",
+    "name": "bryce2",
+    "roles": "events_super_admin"
+  },
+  {
+    "uid": "1636",
+    "name": "rezabekh",
+    "roles": "basic_page_editor,reflection_editor,slr_internal"
+  },
+  {
+    "uid": "21805",
+    "name": "gravesa",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "2029",
+    "name": "ransenbergg",
+    "roles": "event_editor,item_editor,internal_group_representative,remote_locations_editor"
+  },
+  {
+    "uid": "70876",
+    "name": "HutchinsV",
+    "roles": "ahc_editor,internal_group_representative"
+  },
+  {
+    "uid": "70880",
+    "name": "HernandezJes",
+    "roles": "job_coach_administrator,slr_internal,spanish_editor"
+  },
+  {
+    "uid": "70948",
+    "name": "StirratJ",
+    "roles": "self_editor"
+  },
+  {
+    "uid": "70917",
+    "name": "SkawC",
+    "roles": "passports_page_editor"
+  },
+  {
+    "uid": "45553",
+    "name": "GutierrezBi",
+    "roles": "reflection_editor"
+  },
+  {
+    "uid": "70951",
+    "name": "connerm",
+    "roles": "pio"
+  },
+  {
+    "uid": "70940",
+    "name": "riverada",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "21",
+    "name": "cronins-reflection-editor",
+    "roles": "slr_admin,meeting_rooms_administrator,exhibit_editor"
+  },
+  {
+    "uid": "70947",
+    "name": "WilkinsonJ",
+    "roles": "sales_events_editor"
+  },
+  {
+    "uid": "70942",
+    "name": "perezro",
+    "roles": "administrator"
+  },
+  {
+    "uid": "100",
+    "name": "yatesp",
+    "roles": "reflection_editor"
+  },
+  {
+    "uid": "69420",
+    "name": "bentonbry",
+    "roles": "administrator"
+  },
+  {
+    "uid": "22542",
+    "name": "ratcliffr",
+    "roles": "internal_group_representative"
+  },
+  {
+    "uid": "70507",
+    "name": "harrellk",
+    "roles": "ahc_editor,internal_group_representative"
+  },
+  {
+    "uid": "70873",
+    "name": "FaulkS",
+    "roles": "reflection_editor,slr_internal"
+  },
+  {
+    "uid": "70936",
+    "name": "faulkj",
+    "roles": "administrator"
+  },
+  {
+    "uid": "24153",
+    "name": "thompsonc",
+    "roles": "internal_group_representative"
+  },
+  {
+    "uid": "70892",
+    "name": "BetancourtJ",
+    "roles": "internal_group_representative"
+  },
+  {
+    "uid": "1561",
+    "name": "inabnittd",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70893",
+    "name": "McGheeD",
+    "roles": "ahc_editor,internal_group_representative"
+  },
+  {
+    "uid": "70916",
+    "name": "TroyT",
+    "roles": "event_editor,item_editor,internal_group_representative"
+  },
+  {
+    "uid": "70878",
+    "name": "TrevinoSa",
+    "roles": "slr_internal,passports_page_editor"
+  },
+  {
+    "uid": "667",
+    "name": "franciscok",
+    "roles": "item_editor,library_info_editor,self_editor"
+  },
+  {
+    "uid": "70918",
+    "name": "GoheenT",
+    "roles": "event_editor,item_editor"
+  },
+  {
+    "uid": "70915",
+    "name": "acls-slr",
+    "roles": "slr_internal"
+  },
+  {
+    "uid": "48374",
+    "name": "ThomasJe",
+    "roles": "internal_group_representative"
+  },
+  {
+    "uid": "70909",
+    "name": "TerrellH",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70790",
+    "name": "aplapi",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "5019",
+    "name": "item-editor-bryce",
+    "roles": "item_editor"
+  },
+  {
+    "uid": "70952",
+    "name": "CooperJ",
+    "roles": "meeting_rooms_administrator"
+  },
+  {
+    "uid": "70958",
+    "name": "wickstroml",
+    "roles": "reflection_editor,skillmill_admin"
+  },
+  {
+    "uid": "70959",
+    "name": "caraballoj",
+    "roles": "skillmill_admin"
+  }
+]

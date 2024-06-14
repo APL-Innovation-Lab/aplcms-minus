@@ -1,0 +1,64 @@
+uuid: c19f9bd1-5720-4872-aacb-2061b378bba8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_tags.field_library_priority
+    - taxonomy.vocabulary.event_tags
+  module:
+    - taxonomy
+id: event_tags_field
+label: 'Event Tags - field'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: event_tags
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  priority:
+    value: priority
+    label: priority
+    machine_name: priority
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_library_priority
+    map:
+      target_id: priority
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0

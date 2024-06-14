@@ -1,0 +1,20 @@
+uuid: 18cf6458-f5bb-4e5e-938e-6aa539a9ca3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interest_channels
+  module:
+    - path
+id: taxonomy_term.interest_channels.path
+field_name: path
+entity_type: taxonomy_term
+bundle: interest_channels
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

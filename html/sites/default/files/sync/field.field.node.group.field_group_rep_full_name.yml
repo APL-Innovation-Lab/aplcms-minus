@@ -1,0 +1,19 @@
+uuid: ff4fda44-2def-4489-ae98-bfd65fb58e64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_rep_full_name
+    - node.type.group
+id: node.group.field_group_rep_full_name
+field_name: field_group_rep_full_name
+entity_type: node
+bundle: group
+label: 'Group Representative Full Name'
+description: 'Please include your first and last name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

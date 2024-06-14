@@ -1,0 +1,18 @@
+uuid: 9ef42b3d-5d09-4307-9650-3e9d5537a367
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: fullscreen_image
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,7 @@
+uuid: 5b09d8c8-4cb0-4c24-9fa1-215f604f5e94
+langcode: eng
+status: true
+dependencies: {  }
+id: admin_webform_results
+label: 'admin webform results'
+route: entity.webform.results_submissions

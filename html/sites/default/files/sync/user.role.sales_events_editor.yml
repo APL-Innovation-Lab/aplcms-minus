@@ -1,0 +1,30 @@
+uuid: 90c183a8-7fdf-48f1-a0d1-9aadc89a2252
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.sales_events_page
+  module:
+    - editoria11y
+    - filter
+    - node
+    - shortcut
+    - toolbar
+id: sales_events_editor
+label: 'Rentals Editor'
+weight: 9
+is_admin: null
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create sales_events_page content'
+  - 'delete any sales_events_page content'
+  - 'delete own sales_events_page content'
+  - 'delete sales_events_page revisions'
+  - 'edit any sales_events_page content'
+  - 'edit own sales_events_page content'
+  - 'revert sales_events_page revisions'
+  - 'use text format full_html'
+  - 'view editoria11y checker'
+  - 'view sales_events_page revisions'

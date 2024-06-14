@@ -1,0 +1,23 @@
+uuid: ebe9b7a2-0f19-4141-b7b7-de5a158c304b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reservations_count
+    - node.type.group
+id: node.group.field_reservations_count
+field_name: field_reservations_count
+entity_type: node
+bundle: group
+label: 'Reservations Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

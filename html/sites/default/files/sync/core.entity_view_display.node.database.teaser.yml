@@ -1,0 +1,94 @@
+uuid: 6c8b9ea1-f41a-4f49-8adb-9840d1ab3679
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.database.body
+    - field.field.node.database.feeds_item
+    - field.field.node.database.field_associated_file
+    - field.field.node.database.field_boost
+    - field.field.node.database.field_database_access
+    - field.field.node.database.field_database_category
+    - field.field.node.database.field_database_link
+    - field.field.node.database.field_database_subjects
+    - field.field.node.database.field_database_types
+    - field.field.node.database.field_display_timespan
+    - field.field.node.database.field_former_product_names
+    - field.field.node.database.field_grade_level
+    - field.field.node.database.field_help_text
+    - field.field.node.database.field_homework_help_icon
+    - field.field.node.database.field_intended_audience
+    - field.field.node.database.field_product_names
+    - field.field.node.database.field_promoted
+    - field.field.node.database.field_searchable_2018
+    - field.field.node.database.field_skip_apl_tv
+    - field.field.node.database.field_virtual_library_stat
+    - field.field.node.database.layout_builder__layout
+    - node.type.database
+    - views.view.teasers_2023
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f0e96acb-e019-4a75-a73c-6a0ba2cd5f85:
+            uuid: f0e96acb-e019-4a75-a73c-6a0ba2cd5f85
+            region: content
+            configuration:
+              id: 'views_block:teasers_2023-block_18'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.database.teaser
+targetEntityType: node
+bundle: database
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_associated_file: true
+  field_boost: true
+  field_database_access: true
+  field_database_category: true
+  field_database_link: true
+  field_database_subjects: true
+  field_database_types: true
+  field_display_timespan: true
+  field_former_product_names: true
+  field_grade_level: true
+  field_help_text: true
+  field_homework_help_icon: true
+  field_intended_audience: true
+  field_product_names: true
+  field_promoted: true
+  field_searchable_2018: true
+  field_skip_apl_tv: true
+  field_virtual_library_stat: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

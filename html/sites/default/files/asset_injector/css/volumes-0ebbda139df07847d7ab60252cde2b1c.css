@@ -1,0 +1,11 @@
+.field.field--name-name.field--type-string.field--label-hidden.field__item {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 15px;
+}
+#block-claro2-content > div.content > div {
+	background: white !important;
+}
+.block.block-layout-builder.block-field-blocktaxonomy-termevent-tagsdescription {
+	padding: 15px;
+}

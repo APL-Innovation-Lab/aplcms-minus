@@ -1,0 +1,43 @@
+uuid: 6a651000-8579-4c78-bfd6-c1a2a2f364bd
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: add_alert
+label: 'Add Alert'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+      function getSearchParams(k) {
+        var p = {};
+        location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(s, k, v) {
+          p[k] = v
+        })
+        return k ? p[k] : p;
+      }
+      var my_zone = getSearchParams('zone');
+  	
+  	
+      if (my_zone == 'virtual') {
+        $('#edit-field-zone-1686').attr('checked', 'checked');
+  	}
+  	
+
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      alert: alert
+contexts: {  }
+conditions_require_all: true

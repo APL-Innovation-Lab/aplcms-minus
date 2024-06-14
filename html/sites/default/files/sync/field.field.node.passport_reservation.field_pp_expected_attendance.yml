@@ -1,0 +1,21 @@
+uuid: 99e4494a-9aed-4d2f-97ac-7a536f529dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_expected_attendance
+    - node.type.passport_reservation
+  module:
+    - options
+id: node.passport_reservation.field_pp_expected_attendance
+field_name: field_pp_expected_attendance
+entity_type: node
+bundle: passport_reservation
+label: 'Number of applicants age 16 or over'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

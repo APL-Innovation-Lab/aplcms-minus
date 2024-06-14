@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * USWDS theme implementation for a breadcrumb trail.
+ */
+#}
+{% if breadcrumb %}
+<h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+<ol class="add-list-reset uswds-breadcrumbs uswds-horizontal-list">
+{% for item in breadcrumb %}
+  <li>
+    {% if item.url %}
+      <a href="{{ item.url }}">{{ item.text }}</a>
+    {% else %}
+      {{ item.text }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>
+{% endif %}

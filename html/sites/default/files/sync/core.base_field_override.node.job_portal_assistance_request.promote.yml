@@ -1,0 +1,22 @@
+uuid: fd21348e-b8cf-4a89-9e4e-84ab0d608add
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.promote
+field_name: promote
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

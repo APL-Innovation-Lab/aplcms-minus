@@ -1,0 +1,20 @@
+uuid: b01147ac-38e9-46f3-bfdc-9892e78f58df
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.uid
+field_name: uid
+entity_type: node
+bundle: accordion
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

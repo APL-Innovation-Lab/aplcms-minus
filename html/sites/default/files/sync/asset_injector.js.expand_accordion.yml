@@ -1,0 +1,31 @@
+uuid: fc986efd-1501-4152-ada6-ebec8c54059b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: expand_accordion
+label: 'expand accordion'
+code: |
+  console.log('expand accordion');
+  (function ($,jQuery) {
+    $(document).ready(function(){
+    	
+      $('h2.section-heading').addClass('active');
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      accordion: accordion
+contexts: {  }
+conditions_require_all: true

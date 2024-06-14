@@ -1,0 +1,18 @@
+uuid: 0f6295ff-e04c-4a0e-8f99-3589a2560bb2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taglets
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.taglets
+target_entity_type_id: taxonomy_term
+target_bundle: taglets
+default_langcode: site_default
+language_alterable: true

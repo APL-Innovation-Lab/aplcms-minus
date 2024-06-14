@@ -1,0 +1,14 @@
+uuid: dd7f4cce-6195-44e4-9325-d1b2b970d363
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.self_editor
+  module:
+    - user
+id: user_add_role_action.self_editor
+label: 'Add the Self Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: self_editor

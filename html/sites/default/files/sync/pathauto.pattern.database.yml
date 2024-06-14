@@ -1,0 +1,22 @@
+uuid: bcc3f909-66a8-424a-bc58-64ad8aa5125e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: database
+label: 'Digital Resource'
+type: 'canonical_entities:node'
+pattern: '/digital/[node:title]'
+selection_criteria:
+  e029da3e-21f1-47f1-b2a4-5ddc25e91ccb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e029da3e-21f1-47f1-b2a4-5ddc25e91ccb
+    context_mapping:
+      node: node
+    bundles:
+      database: database
+selection_logic: and
+weight: -5
+relationships: {  }

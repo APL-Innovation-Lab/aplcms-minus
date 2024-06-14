@@ -1,0 +1,14 @@
+uuid: 0cce3eda-649a-4886-a4ef-ab8809f21f2b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.pio
+  module:
+    - user
+id: user_add_role_action.pio
+label: 'Add the PIO role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pio

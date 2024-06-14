@@ -1,0 +1,214 @@
+uuid: e8c3f351-9d71-489d-8b7e-beb6e03b34b8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.slr.title
+    - core.base_field_override.node.slr.uid
+    - field.field.node.slr.field_how_many_people_
+    - field.field.node.slr.field_slr_email
+    - field.field.node.slr.field_slr_full_name
+    - field.field.node.slr.field_slr_reservation_date
+    - field.field.node.slr.field_slr_room
+    - field.field.node.slr.field_slr_time_end
+    - field.field.node.slr.field_slr_time_start
+    - node.type.slr
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      8907a68d-06ff-4719-8507-3cf8c32534e8:
+        find: 'SLR 531'
+        replace: 'Shared Learning - 531'
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 8907a68d-06ff-4719-8507-3cf8c32534e8
+        plugin: find_replace
+        source: room
+        weight: 0
+        label: 'Find replace'
+      012657dc-8ee9-4d8b-a0d7-ef621b1bacbf:
+        text: '[date] [time_start]'
+        uuid: 012657dc-8ee9-4d8b-a0d7-ef621b1bacbf
+        plugin: rewrite
+        source: time_start
+        weight: 0
+        label: Rewrite
+      4df45b0f-cac5-4800-80fb-42094e22bfbc:
+        text: '[date] [time_end]'
+        uuid: 4df45b0f-cac5-4800-80fb-42094e22bfbc
+        plugin: rewrite
+        source: time_end
+        weight: 0
+        label: Rewrite
+      5b517680-b7f6-401a-94be-0e5f2b646e83:
+        text: David.Faulkner@austintexas.gov
+        uuid: 5b517680-b7f6-401a-94be-0e5f2b646e83
+        plugin: rewrite
+        source: email
+        weight: 0
+        label: Rewrite
+      b873cff8-ba7f-4e1c-9071-cd9d2a744ec5:
+        text: 'David Faulkner'
+        uuid: b873cff8-ba7f-4e1c-9071-cd9d2a744ec5
+        plugin: rewrite
+        source: full_name
+        weight: 0
+        label: Rewrite
+      f322173f-3b1f-479c-89bc-802672cd6647:
+        uuid: f322173f-3b1f-479c-89bc-802672cd6647
+        plugin: strtotime
+        source: time_start
+        weight: 1
+        label: 'String to Unix Timestamp'
+      c052cdab-0daf-4db7-a8f4-add2132303dc:
+        uuid: c052cdab-0daf-4db7-a8f4-add2132303dc
+        plugin: strtotime
+        source: time_end
+        weight: 1
+        label: 'String to Unix Timestamp'
+id: slr
+label: SLR
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: slr
+  langcode: eng
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  user_name:
+    value: 'User Name'
+    label: 'User Name'
+    machine_name: user_name
+    type: csv
+  topic:
+    value: Topic
+    label: Topic
+    machine_name: topic
+    type: csv
+  room:
+    value: Room
+    label: Room
+    machine_name: room
+    type: csv
+  expected_attendance:
+    value: 'Expected Attendance'
+    label: 'Expected Attendance'
+    machine_name: expected_attendance
+    type: csv
+  date:
+    value: Date
+    label: Date
+    machine_name: date
+    type: csv
+  time_start:
+    value: 'Time Start'
+    label: 'Time Start'
+    machine_name: time_start
+    type: csv
+  time_end:
+    value: 'Time End'
+    label: 'Time End'
+    machine_name: time_end
+    type: csv
+  email:
+    value: Email
+    label: Email
+    machine_name: email
+    type: csv
+  full_name:
+    value: 'Full Name'
+    label: 'Full Name'
+    machine_name: full_name
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: user_name
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: topic
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_slr_room
+    map:
+      target_id: room
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_how_many_people_
+    map:
+      value: expected_attendance
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_slr_reservation_date
+    map:
+      value: date
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_start
+    map:
+      value: time_start
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: time_end
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_email
+    map:
+      value: email
+    settings:
+      language: null
+      defuse: false
+    unique: {  }
+  -
+    target: field_slr_full_name
+    map:
+      value: full_name
+    settings:
+      language: null
+    unique: {  }

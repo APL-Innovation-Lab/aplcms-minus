@@ -1,0 +1,21 @@
+uuid: 80755770-6664-45cc-a66d-d29726012184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan
+    - node.type.database
+  module:
+    - datetime
+id: node.database.field_display_timespan
+field_name: field_display_timespan
+entity_type: node
+bundle: database
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

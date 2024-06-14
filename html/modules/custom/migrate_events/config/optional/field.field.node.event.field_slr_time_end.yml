@@ -1,0 +1,21 @@
+uuid: 320173c7-40f7-425b-b206-42f4cf8b1be2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: event
+label: 'Date & Time End:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

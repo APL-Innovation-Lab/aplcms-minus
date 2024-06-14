@@ -1,0 +1,18 @@
+uuid: 2f4a31b6-0f2c-4157-b5b5-ddffe51d8280
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_list_categories
+id: taxonomy_term.book_list_categories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: book_list_categories
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

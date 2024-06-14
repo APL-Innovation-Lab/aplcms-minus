@@ -1,0 +1,18 @@
+uuid: 8b524b00-bfd0-48f6-baf0-de3a9d9560d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.suggest_a_title
+id: node.suggest_a_title.title
+field_name: title
+entity_type: node
+bundle: suggest_a_title
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

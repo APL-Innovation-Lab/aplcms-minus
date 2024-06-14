@@ -1,0 +1,32 @@
+uuid: e6bcb15f-5e4c-429a-a0cd-2c91ba6116cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.champion_image.field_button_link
+    - field.field.node.champion_image.field_display_timespan_04_07p
+    - field.field.node.champion_image.field_hero_image
+    - field.field.node.champion_image.field_hero_summary
+    - field.field.node.champion_image.field_section
+    - node.type.champion_image
+  module:
+    - user
+id: node.champion_image.teaser
+targetEntityType: node
+bundle: champion_image
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_link: true
+  field_display_timespan_04_07p: true
+  field_hero_image: true
+  field_hero_summary: true
+  field_section: true
+  langcode: true
+  search_api_excerpt: true

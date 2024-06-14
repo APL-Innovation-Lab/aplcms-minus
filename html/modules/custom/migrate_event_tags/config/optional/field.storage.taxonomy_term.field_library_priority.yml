@@ -1,0 +1,19 @@
+uuid: 2e9a70ec-51ed-4327-ac8b-466ebbe33385
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_library_priority
+field_name: field_library_priority
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

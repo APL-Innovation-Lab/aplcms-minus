@@ -1,0 +1,213 @@
+uuid: 0af11413-7797-48d5-8981-abf6798f48e9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_events
+id: apl_dev_events
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: 'APL Events'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_events/apl_events.json'
+  item_selector: apl_event
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: path
+      selector: path
+    -
+      name: event_category
+      selector: event_category
+    -
+      name: field__this_event_main_image
+      selector: field__this_event_main_image
+    -
+      name: field_subtitle
+      selector: field_subtitle
+    -
+      name: field_sponsors
+      selector: field_sponsors
+    -
+      name: field_invisible
+      selector: field_invisible
+    -
+      name: field_signature_event
+      selector: field_signature_event
+    -
+      name: field_show_full_description
+      selector: field_show_full_description
+    -
+      name: body
+      selector: body
+    -
+      name: field_slr_time_start
+      selector: field_slr_time_start
+    -
+      name: field_remote_location
+      selector: field_remote_location
+    -
+      name: field_event_recommended_ages
+      selector: field_event_recommended_ages
+    -
+      name: field_omit_category_description
+      selector: field_omit_category_description
+    -
+      name: field_is_there_a_fee_for_attendi
+      selector: field_is_there_a_fee_for_attendi
+    -
+      name: field_cat_ia
+      selector: field_cat_ia
+    -
+      name: field_event_summary
+      selector: field_event_summary
+    -
+      name: field_event_loc
+      selector: field_event_loc
+    -
+      name: field_event_tag
+      selector: field_event_tag
+    -
+      name: field_slr_time_end
+      selector: field_slr_time_end
+    -
+      name: field_community_services_outreac
+      selector: field_community_services_outreac
+    -
+      name: field_central_event_location
+      selector: field_central_event_location
+    -
+      name: field_audience_text
+      selector: field_audience_text
+    -
+      name: field_item_list
+      selector: field_item_list
+    -
+      name: field__this_event_main_image
+      selector: field__this_event_main_image
+    -
+      name: field_link_for_registration
+      selector: field_link_for_registration
+
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: event
+  nid: nid
+  title: title
+  path: path
+  field__this_event_main_image:
+    plugin: image_import
+    source: field__this_event_main_image
+    title: title
+    alt: title
+  field_link_for_registration: field_link_for_registration
+  field_slr_time_start:
+    -
+      plugin: format_date
+      source: field_slr_time_start
+      from_timezone: America/Chicago
+      to_timezone: UTC
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  field_show_full_description: field_show_full_description
+  field_audience_text: field_audience_text
+  field_central_event_location:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_central_event_location
+  field_community_services_outreac: field_community_services_outreac
+  field_slr_time_end:
+    -
+      plugin: format_date
+      source: field_slr_time_end
+      from_timezone: America/Chicago
+      to_timezone: UTC
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  body: body
+  field_event_category_tags_:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: event_category
+  field_event_tag:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_event_tag
+    -
+      plugin: explode
+      source: field_event_tag
+      delimiter: ','
+  field_event_loc:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_event_loc
+  field_event_summary: field_event_summary
+  field_cat_ia:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_cat_ia
+    -
+      plugin: explode
+      source: field_cat_ia
+      delimiter: ','
+  field_item_list:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_item_list
+    -
+      plugin: explode
+      source: field_item_list
+      delimiter: ','
+  field_is_there_a_fee_for_attendi: field_is_there_a_fee_for_attendi
+  field_omit_category_description: field_omit_category_description
+  field_event_recommended_ages: field_event_recommended_ages
+  field_remote_location:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_remote_location
+  field_signature_event: field_signature_event
+  field_invisible: field_invisible
+  field_sponsors:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_sponsors
+    -
+      plugin: explode
+      source: field_sponsors
+      delimiter: ','
+  field_subtitle: field_subtitle
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,119 @@
+uuid: b1552731-722c-4f12-8190-69061a3b828a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.fullscreen_image.title
+    - field.field.node.fullscreen_image.field_1920_x_1080_image
+    - node.type.fullscreen_image
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      677888ab-d639-4536-a5cd-1595e6aa822e:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 677888ab-d639-4536-a5cd-1595e6aa822e
+        plugin: find_replace_regex
+        source: image
+        weight: 0
+        label: 'Find replace REGEX'
+      91604898-4f20-4d03-ad41-155f5e117675:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 91604898-4f20-4d03-ad41-155f5e117675
+        plugin: find_replace_regex
+        source: image
+        weight: 1
+        label: 'Find replace REGEX'
+      c0c32377-22d8-4e46-88e5-161e38c0213d:
+        text: eng
+        uuid: c0c32377-22d8-4e46-88e5-161e38c0213d
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: fullscreen_image
+label: 'Fullscreen Image'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: fullscreen_image
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 69420
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  image:
+    value: image
+    label: image
+    machine_name: image
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_1920_x_1080_image
+    map:
+      target_id: image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

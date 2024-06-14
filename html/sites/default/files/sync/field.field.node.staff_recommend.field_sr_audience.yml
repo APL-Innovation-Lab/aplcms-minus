@@ -1,0 +1,29 @@
+uuid: 1162fb1a-64fb-4973-a30b-eba3a69eceb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sr_audience
+    - node.type.staff_recommend
+    - taxonomy.vocabulary.intended_audience
+id: node.staff_recommend.field_sr_audience
+field_name: field_sr_audience
+entity_type: node
+bundle: staff_recommend
+label: Audience
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      intended_audience: intended_audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

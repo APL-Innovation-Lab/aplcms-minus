@@ -1,0 +1,168 @@
+uuid: aa267206-f580-4aa9-8ee6-4d2c1d687b63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apltv_recommendation_slide.feeds_item
+    - field.field.node.apltv_recommendation_slide.field_display_timespan_04_07p
+    - field.field.node.apltv_recommendation_slide.field_exclude_from_we_recommend
+    - field.field.node.apltv_recommendation_slide.field_intended_audience_2016i
+    - field.field.node.apltv_recommendation_slide.field_rec_introduction
+    - field.field.node.apltv_recommendation_slide.field_rec_items
+    - field.field.node.apltv_recommendation_slide.field_rec_subtitle
+    - field.field.node.apltv_recommendation_slide.field_rec_theme
+    - field.field.node.apltv_recommendation_slide.field_screenshot
+    - field.field.node.apltv_recommendation_slide.field_template_type
+    - field.field.node.apltv_recommendation_slide.field_web_category_2
+    - field.field.node.apltv_recommendation_slide.layout_builder__layout
+    - node.type.apltv_recommendation_slide
+  module:
+    - datetime_range
+    - path
+    - scheduler
+id: node.apltv_recommendation_slide.default
+targetEntityType: node
+bundle: apltv_recommendation_slide
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_display_timespan_04_07p:
+    type: daterange_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_exclude_from_we_recommend:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_intended_audience_2016i:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_rec_introduction:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rec_items:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Item Title...'
+    third_party_settings: {  }
+  field_rec_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rec_theme:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_web_category_2:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 8
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  field_screenshot: true
+  field_template_type: true
+  layout_builder__layout: true

@@ -1,0 +1,29 @@
+uuid: e2ca356d-e768-41e0-8de4-b041de5bca6e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__alerts_block_7
+theme: claro2
+region: header
+weight: -19
+provider: null
+plugin: 'views_block:alerts-block_7'
+settings:
+  id: 'views_block:alerts-block_7'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms/*\r\n/meeting-rooms\r\n/ahc/meeting-room"

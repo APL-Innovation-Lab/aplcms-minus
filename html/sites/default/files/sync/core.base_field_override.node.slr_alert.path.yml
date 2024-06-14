@@ -1,0 +1,20 @@
+uuid: ebb8afa2-97a3-4868-a6ef-655f98875e4e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+  module:
+    - path
+id: node.slr_alert.path
+field_name: path
+entity_type: node
+bundle: slr_alert
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

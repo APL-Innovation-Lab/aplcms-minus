@@ -1,0 +1,18 @@
+uuid: 502bec60-852b-4fb8-81cf-5ffa182eb2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+id: node.job_portal_page.title
+field_name: title
+entity_type: node
+bundle: job_portal_page
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

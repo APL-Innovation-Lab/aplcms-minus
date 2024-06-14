@@ -1,0 +1,11 @@
+uuid: ddf240c7-929e-4582-93e7-0bd9c2912b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.homework_help_icons
+id: taxonomy_term.homework_help_icons
+target_entity_type_id: taxonomy_term
+target_bundle: homework_help_icons
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: e53336b7-7da7-4ed8-8d61-5a075e92fc57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity.sticky
+field_name: sticky
+entity_type: node
+bundle: activity
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: efe2d8fb-8b74-4d60-ba6a-7983d9dd18ad
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.exhibit
+  module:
+    - text
+id: node.exhibit.body
+field_name: body
+entity_type: node
+bundle: exhibit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

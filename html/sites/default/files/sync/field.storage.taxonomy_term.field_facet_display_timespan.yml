@@ -1,0 +1,20 @@
+uuid: 21a8e3c9-8217-4351-a1d5-308bfd54785a
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - taxonomy
+id: taxonomy_term.field_facet_display_timespan
+field_name: field_facet_display_timespan
+entity_type: taxonomy_term
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

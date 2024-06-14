@@ -1,0 +1,21 @@
+uuid: 5a77296c-49a9-42a6-bfbf-73f6025322b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_general
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_format_general
+field_name: field_format_general
+entity_type: node
+bundle: archives_index
+label: 'Format General'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

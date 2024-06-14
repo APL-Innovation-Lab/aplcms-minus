@@ -1,0 +1,23 @@
+uuid: b7069a9b-b657-4c2e-93f5-7363125a1661
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_url
+    - node.type.alert
+  module:
+    - link
+id: node.alert.field_button_url
+field_name: field_button_url
+entity_type: node
+bundle: alert
+label: 'Button URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

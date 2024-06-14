@@ -1,0 +1,64 @@
+uuid: fd12ef7c-7ff0-46e9-a570-475392de3f15
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_kids_block_party_category
+field_name: field_kids_block_party_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Ages 0-5'
+    -
+      value: '2'
+      label: 'Ages 5-8'
+    -
+      value: '3'
+      label: 'Ages 5-12'
+    -
+      value: '4'
+      label: 'All ages'
+    -
+      value: '5'
+      label: 'Caregiver Resources'
+    -
+      value: '6'
+      label: 'En Español'
+    -
+      value: '7'
+      label: Equity
+    -
+      value: '8'
+      label: Family-Friendly
+    -
+      value: '9'
+      label: 'Indoor Activity'
+    -
+      value: '10'
+      label: 'Books and Reading'
+    -
+      value: '11'
+      label: Creativity
+    -
+      value: '12'
+      label: 'Recorded Video Event'
+    -
+      value: '13'
+      label: 'Science Event'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

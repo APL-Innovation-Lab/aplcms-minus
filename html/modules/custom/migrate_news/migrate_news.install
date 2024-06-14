@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_news.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the news file to the sites/default/files folder.
+ */
+function migrate_news_install(): void {
+  // Create the news file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_news';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the rooms file to migrate_news directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_news')->getPath();
+  $file_source = $module_path . '/artifacts/news.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/news.json', FileSystemInterface::EXISTS_REPLACE);
+}

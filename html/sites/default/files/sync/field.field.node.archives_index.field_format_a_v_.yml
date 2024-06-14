@@ -1,0 +1,21 @@
+uuid: 2a259dd0-caca-428e-9038-c114c796dc12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_a_v_
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_format_a_v_
+field_name: field_format_a_v_
+entity_type: node
+bundle: archives_index
+label: 'Format A/V'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

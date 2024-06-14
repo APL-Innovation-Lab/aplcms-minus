@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: 1KtMq77r11Up8xB2acdeDhrNIlFzu-Edepx453c20Ws
+langcode: eng
+disable_messages_enable: '1'
+disable_messages_exclude_users: ''
+disable_messages_filter_by_page: 1
+disable_messages_page_filter_paths: '/slr/*'
+disable_messages_enable_debug: '0'
+disable_messages_debug_visible_div: '0'
+disable_messages_ignore_patterns: "Passport Reservation.*\r\n.*email.*\r\nJob Coaching Request .*\r\n.* has been created.*\r\n.* There are no new .*\r\n.* scheduled to be unpublished .*\r\n.*Action processing results .*\r\nUnrecognized username.*"
+disable_messages_enable_permissions: '0'
+disable_messages_ignore_exclude: '0'
+disable_messages_ignore_case: '1'
+disable_messages_strip_html_tags: '0'
+disable_messages_ignore_regex:
+  - '/^Passport Reservation.*$/i'
+  - '/^.*email.*$/i'
+  - '/^Job Coaching Request .*$/i'
+  - '/^.* has been created.*$/i'
+  - '/^.* There are no new .*$/i'
+  - '/^.* scheduled to be unpublished .*$/i'
+  - '/^.*Action processing results .*$/i'
+  - '/^Unrecognized username.*$/i'

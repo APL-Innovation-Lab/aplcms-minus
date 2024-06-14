@@ -1,0 +1,23 @@
+uuid: 051e9559-16f8-4cb4-bf48-c239d2d2db09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_link
+    - node.type.article
+  module:
+    - link
+id: node.article.field_button_link
+field_name: field_button_link
+entity_type: node
+bundle: article
+label: 'Button Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

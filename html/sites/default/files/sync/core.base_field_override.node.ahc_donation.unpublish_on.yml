@@ -1,0 +1,18 @@
+uuid: 54433f04-806f-4dbc-9838-281cce60e759
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+id: node.ahc_donation.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: ahc_donation
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

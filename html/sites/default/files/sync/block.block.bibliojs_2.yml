@@ -1,0 +1,30 @@
+uuid: 97f81d89-7143-4323-adb5-27940ae83d9a
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: bibliojs_2
+theme: uswds_base
+region: footer_secondary
+weight: 0
+provider: null
+plugin: 'block_content:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+settings:
+  id: 'block_content:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+  label: 'Biblio JS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stage/*'

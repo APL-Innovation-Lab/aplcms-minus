@@ -1,0 +1,51 @@
+langcode: en
+status: true
+id: migrate_accordion_ids
+migration_group: apl_dev
+label: 'Accordion IDs'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_accordion_ids/accordion_ids_es.json'
+    - 'public://migrate_accordion_ids/accordion_ids_en.json'
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: langcode
+      selector: langcode
+    -
+      name: field_accordions_modified
+      selector: field_accordions_modified
+  ids:
+    nid:
+      type: integer
+    langcode:
+      type: string
+process:
+  field_accordions: 
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_accordions_modified
+    -
+      plugin: explode
+      source: field_accordions_modified
+      delimiter: ','
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+  translations: true
+  overwrite_properties:
+    - field_accordions
+  update: true
+migration_dependencies: {  }

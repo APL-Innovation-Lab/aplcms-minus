@@ -1,0 +1,30 @@
+uuid: fb2bb71b-eae0-41f5-b878-f97c9e748141
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:318c95ff-5520-4846-b93d-752505ec184e'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: iframe
+theme: claro2
+region: content
+weight: -34
+provider: null
+plugin: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+settings:
+  id: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+  label: iframe
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/apltv/sequence/*\r\n/sequence/*\r\n/apltv/channel/*"

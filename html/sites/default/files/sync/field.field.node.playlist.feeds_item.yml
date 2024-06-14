@@ -1,0 +1,23 @@
+uuid: 1a6534d4-204a-4d87-ba04-304946e4b3ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.playlist
+  module:
+    - feeds
+id: node.playlist.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: playlist
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

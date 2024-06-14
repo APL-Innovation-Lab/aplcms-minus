@@ -1,0 +1,21 @@
+uuid: 24ca4c39-3d8f-465c-abf8-0676f1c47dfb
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_a_service
+    - node.type.passport_reservation
+  module:
+    - options
+id: node.passport_reservation.field_select_a_service
+field_name: field_select_a_service
+entity_type: node
+bundle: passport_reservation
+label: 'Select a service'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

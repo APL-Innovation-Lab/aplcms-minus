@@ -1,0 +1,18 @@
+uuid: 1afac8e3-5107-479f-aa9c-ad80b3afd96b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.title
+field_name: title
+entity_type: node
+bundle: playlist
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

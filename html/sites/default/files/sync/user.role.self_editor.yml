@@ -1,0 +1,42 @@
+uuid: 979859f3-bd49-47d5-ae75-a04cf7333e29
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.accordion
+    - node.type.alert
+    - node.type.article
+    - node.type.database
+    - node.type.event
+    - node.type.exhibit
+    - node.type.page
+    - node.type.page_
+  module:
+    - editoria11y
+    - filter
+    - node
+    - publishcontent
+id: self_editor
+label: 'Self Editor'
+weight: 14
+is_admin: null
+permissions:
+  - 'create accordion content'
+  - 'delete own accordion content'
+  - 'edit own accordion content'
+  - 'edit own alert content'
+  - 'edit own article content'
+  - 'edit own database content'
+  - 'edit own event content'
+  - 'edit own exhibit content'
+  - 'edit own page content'
+  - 'edit own page_ content'
+  - 'publish editable node type accordion'
+  - 'publish own node type accordion'
+  - 'unpublish editable node type accordion'
+  - 'unpublish own node type accordion'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view editoria11y checker'

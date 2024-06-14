@@ -1,0 +1,26 @@
+uuid: 51a7c243-175d-4cd7-8555-630254781c5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: claro2_local_actions
+theme: claro2
+region: content
+weight: -30
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/apltv/*"

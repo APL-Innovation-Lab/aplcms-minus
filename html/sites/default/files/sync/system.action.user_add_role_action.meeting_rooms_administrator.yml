@@ -1,0 +1,14 @@
+uuid: 3f4f5717-1251-427e-ad1b-601a50498246
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.meeting_rooms_administrator
+  module:
+    - user
+id: user_add_role_action.meeting_rooms_administrator
+label: 'Add the Meeting Rooms Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: meeting_rooms_administrator

@@ -1,0 +1,18 @@
+uuid: 0c9802f0-12d5-418e-bb43-a4ad5bdaaa65
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.publish_on
+field_name: publish_on
+entity_type: node
+bundle: image_rotator
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

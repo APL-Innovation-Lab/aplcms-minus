@@ -1,0 +1,18 @@
+uuid: d6ea53b5-b7c9-4cd7-bcf7-9b908796663e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.press_release_types
+id: taxonomy_term.press_release_types.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: press_release_types
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

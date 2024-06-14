@@ -1,0 +1,8 @@
+uuid: f2bfcdd5-58c5-415b-bd72-51497faf3c14
+langcode: en
+status: true
+dependencies: {  }
+name: Quests
+vid: quests
+description: ''
+weight: -3

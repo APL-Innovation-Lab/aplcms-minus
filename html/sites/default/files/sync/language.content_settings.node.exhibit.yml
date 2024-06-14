@@ -1,0 +1,18 @@
+uuid: 1d1d8686-5384-4728-a2bf-7dc74202025f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.exhibit
+target_entity_type_id: node
+target_bundle: exhibit
+default_langcode: site_default
+language_alterable: false

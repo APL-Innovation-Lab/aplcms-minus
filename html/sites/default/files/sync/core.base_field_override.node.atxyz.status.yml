@@ -1,0 +1,22 @@
+uuid: 5e2607bb-67ca-4644-8fa6-588f87cf41f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.status
+field_name: status
+entity_type: node
+bundle: atxyz
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,44 @@
+uuid: ac7170ce-2030-4ff2-9e4d-9b0f97616c57
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: meeting_room_date_sync
+label: 'meeting room - date sync'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+  	  
+  	  
+  var b_date = $('#edit-field-date-0-value-date').val();
+  var b_start = $('#edit-field-slr-time-start-0-value-date');
+  var b_end = $('#edit-field-slr-time-end-0-value-date');
+
+  	b_start.val(b_date).css('display','none');		
+  	b_end.val(b_date).css('display','none');
+  	
+  document.querySelector('#edit-field-date-0-value-date').addEventListener('change', function(event) {
+    var b_date = $('#edit-field-date-0-value-date').val();
+
+  	b_start.val(b_date);		
+  	b_end.val(b_date);		
+  });
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      room_reservation: room_reservation
+contexts: {  }
+conditions_require_all: true

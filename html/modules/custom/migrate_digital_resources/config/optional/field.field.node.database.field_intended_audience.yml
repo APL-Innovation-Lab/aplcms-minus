@@ -1,0 +1,28 @@
+uuid: c2b288b1-556a-411a-9ec1-28d032993224
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intended_audience
+    - node.type.database
+    - taxonomy.vocabulary.intended_audience
+id: node.database.field_intended_audience
+field_name: field_intended_audience
+entity_type: node
+bundle: database
+label: 'Intended Audience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      intended_audience: intended_audience
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

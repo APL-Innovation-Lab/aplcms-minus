@@ -1,0 +1,23 @@
+uuid: 3d5029f2-c37d-477d-9035-f19af19119ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promoted_event
+    - node.type.event
+id: node.event.field_promoted_event
+field_name: field_promoted_event
+entity_type: node
+bundle: event
+label: 'Promoted Event'
+description: 'Selecting this option will enable the event to appear on all branches'' displays.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Promoted
+  off_label: Normal
+field_type: boolean

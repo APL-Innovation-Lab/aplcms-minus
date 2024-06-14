@@ -1,0 +1,29 @@
+uuid: 68dc9eb5-3d33-45ec-84e4-9dc428c2a351
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__sections_block_6
+theme: claro2
+region: content_footer
+weight: -26
+provider: null
+plugin: 'views_block:sections-block_6'
+settings:
+  id: 'views_block:sections-block_6'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/apltv/*\r\n/app/*\r\n/community-resource-hub\r\n/admin/*\r\n/editor/*\r\n/sequence/*\r\n/user/*\r\n/ahc/*"

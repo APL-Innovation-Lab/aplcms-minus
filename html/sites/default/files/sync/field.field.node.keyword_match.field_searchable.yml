@@ -1,0 +1,19 @@
+uuid: a37eb57a-babb-4372-b919-04d9170569fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_searchable
+    - node.type.keyword_match
+id: node.keyword_match.field_searchable
+field_name: field_searchable
+entity_type: node
+bundle: keyword_match
+label: Searchable
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

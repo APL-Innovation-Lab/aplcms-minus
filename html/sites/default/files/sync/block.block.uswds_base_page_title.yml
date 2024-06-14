@@ -1,0 +1,26 @@
+uuid: eb1e501b-3c8e-49c5-a863-fca3c35a940c
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds_base
+_core:
+  default_config_hash: nCwPdh9v96oDlivWz71bLHUdUjXmXNGzCtZZg3hxmco
+id: uswds_base_page_title
+theme: uswds_base
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/app/*\r\n/stage/*"

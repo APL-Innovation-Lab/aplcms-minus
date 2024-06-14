@@ -1,0 +1,20 @@
+uuid: 29c9a942-d446-409f-a8b3-8a974025c398
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_section
+  module:
+    - path
+id: taxonomy_term.workbench_section.path
+field_name: path
+entity_type: taxonomy_term
+bundle: workbench_section
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

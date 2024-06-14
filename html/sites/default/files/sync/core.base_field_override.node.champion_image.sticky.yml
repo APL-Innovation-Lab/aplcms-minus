@@ -1,0 +1,22 @@
+uuid: 4ae3bc52-3896-4e8f-8fda-7cd450072071
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.champion_image
+id: node.champion_image.sticky
+field_name: sticky
+entity_type: node
+bundle: champion_image
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: b6b79270-6c0d-48fe-9b9e-d30a97f8f816
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.public_computer_page
+  module:
+    - editoria11y
+    - filter
+    - node
+    - toolbar
+id: public_computer_page_editor
+label: 'Public Computer Page Editor'
+weight: 6
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create public_computer_page content'
+  - 'delete any public_computer_page content'
+  - 'delete own public_computer_page content'
+  - 'delete public_computer_page revisions'
+  - 'edit any public_computer_page content'
+  - 'edit own public_computer_page content'
+  - 'revert public_computer_page revisions'
+  - 'use text format full_html'
+  - 'view editoria11y checker'
+  - 'view public_computer_page revisions'

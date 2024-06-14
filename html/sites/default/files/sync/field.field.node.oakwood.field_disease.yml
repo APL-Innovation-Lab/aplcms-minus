@@ -1,0 +1,19 @@
+uuid: a5517064-13d7-4cff-b60d-5cb45a23a4ef
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disease
+    - node.type.oakwood
+id: node.oakwood.field_disease
+field_name: field_disease
+entity_type: node
+bundle: oakwood
+label: 'Cause of Death'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

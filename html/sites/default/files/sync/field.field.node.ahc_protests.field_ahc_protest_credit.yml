@@ -1,0 +1,23 @@
+uuid: 344330b3-a49e-4ea8-b41a-194a00436cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_protest_credit
+    - node.type.ahc_protests
+id: node.ahc_protests.field_ahc_protest_credit
+field_name: field_ahc_protest_credit
+entity_type: node
+bundle: ahc_protests
+label: Credit
+description: 'All photograph submissions will be credited to the donor.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Check here if you prefer not to have your name shared on the website.'
+  off_label: '0'
+field_type: boolean

@@ -1,0 +1,40 @@
+uuid: af7610ff-f24c-4830-8d9e-a762312b8a30
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_kids_block_party_tags
+field_name: field_kids_block_party_tags
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Big Body Play'
+    -
+      value: '2'
+      label: 'Books & Stories Play'
+    -
+      value: '3'
+      label: 'Creative Play'
+    -
+      value: '4'
+      label: 'Eco Play'
+    -
+      value: '5'
+      label: 'Tech Play'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

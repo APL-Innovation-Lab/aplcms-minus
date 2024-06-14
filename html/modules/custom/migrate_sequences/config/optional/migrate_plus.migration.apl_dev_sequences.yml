@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBKaJ6bVeOtAXDbxWVgIfmSKLE2ewq96XBW6iGMHAPQ
+id: apl_dev_sequences
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_group: apl_dev
+label: 'APL Sequences'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_sequences/sequences.json'
+  item_selector: sequence
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: field_tv_sequence
+      selector: field_tv_sequence
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: playlist
+  title: title
+  field_tv_sequence: 
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_tv_sequence
+    -
+      plugin: explode
+      source: field_tv_sequence
+      delimiter: ','
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,18 @@
+uuid: f887e53e-0ec4-4471-9250-76484d94102d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.changed
+field_name: changed
+entity_type: node
+bundle: archives_index
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

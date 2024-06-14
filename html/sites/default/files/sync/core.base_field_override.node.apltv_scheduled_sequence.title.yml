@@ -1,0 +1,18 @@
+uuid: 88bc5d67-d1ea-4dc0-84cc-c997e88370ab
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_scheduled_sequence
+id: node.apltv_scheduled_sequence.title
+field_name: title
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 676d1068-e56a-4b54-ba6f-9e93a4f36493
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_special_weight
+    - taxonomy.vocabulary.recommended_links
+  module:
+    - options
+id: taxonomy_term.recommended_links.field_special_weight
+field_name: field_special_weight
+entity_type: taxonomy_term
+bundle: recommended_links
+label: 'Special Weight'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

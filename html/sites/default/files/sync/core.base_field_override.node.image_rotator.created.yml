@@ -1,0 +1,18 @@
+uuid: 31f09f9f-e330-475c-b9db-75e068ff491d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.created
+field_name: created
+entity_type: node
+bundle: image_rotator
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

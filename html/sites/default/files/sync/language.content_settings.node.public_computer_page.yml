@@ -1,0 +1,18 @@
+uuid: 2cf2bfa4-2f9e-42f5-85cc-10f9007cf227
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.public_computer_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.public_computer_page
+target_entity_type_id: node
+target_bundle: public_computer_page
+default_langcode: site_default
+language_alterable: false

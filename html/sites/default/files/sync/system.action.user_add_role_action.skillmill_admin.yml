@@ -1,0 +1,14 @@
+uuid: f27aede5-9772-4a71-a92a-a9646389c11c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.skillmill_admin
+  module:
+    - user
+id: user_add_role_action.skillmill_admin
+label: 'Add the Skillmill Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: skillmill_admin

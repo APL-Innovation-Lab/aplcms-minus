@@ -1,0 +1,8 @@
+uuid: 1291d299-f0f4-4780-ba28-b082d2aae987
+langcode: en
+status: true
+dependencies: {  }
+name: 'Press Release Types'
+vid: press_release_types
+description: 'Types of Press Releases'
+weight: -5

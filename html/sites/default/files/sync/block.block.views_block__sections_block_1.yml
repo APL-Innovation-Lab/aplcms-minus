@@ -1,0 +1,29 @@
+uuid: cc7fc449-5e24-4b95-b37e-b02549a55960
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__sections_block_1
+theme: claro2
+region: header
+weight: -32
+provider: null
+plugin: 'views_block:sections-block_1'
+settings:
+  id: 'views_block:sections-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/passport/*\r\n/special/*\r\n/ahc/*\r\n/app/*\r\n/slr/calendar/room/*\r\n/apltv/*\r\n/user/*\r\n/feed/add/*\r\n/admin/structure/taxonomy/manage/*\r\n/feed/*"

@@ -1,0 +1,20 @@
+uuid: c66b4b54-7140-4537-8c88-8817329e8d5d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_scheduled_sequence
+  module:
+    - path
+id: node.apltv_scheduled_sequence.path
+field_name: path
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

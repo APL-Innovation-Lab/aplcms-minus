@@ -1,0 +1,28 @@
+uuid: f3f4b8b2-6fe2-4b34-9100-1e51e60c971f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.title_
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: title
+theme: claro2
+region: content
+weight: -19
+provider: null
+plugin: 'facet_block:title_'
+settings:
+  id: 'facet_block:title_'
+  label: 'What''s Hot'
+  label_display: visible
+  provider: facets
+  block_id: title
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/recommended/*'

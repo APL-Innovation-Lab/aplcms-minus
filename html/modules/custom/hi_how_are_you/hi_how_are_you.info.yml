@@ -1,0 +1,5 @@
+name: 'Hi, how are you'
+type: module
+description: 'A simple module that invokes the php_info() command.'
+package: Custom
+core_version_requirement: ^8 || ^9

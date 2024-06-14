@@ -1,0 +1,7 @@
+hi_how_are_you.content:
+  path: '/extra/hi_how_are_you'
+  defaults:
+    _controller: '\Drupal\hi_how_are_you\Controller\HiHowAreYouController::content'
+    _title: 'Hi, how are you?'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,30 @@
+uuid: 7bbe01a7-1ef5-4991-9dfa-5cbaf85fad9a
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:01a98fa3-5ae5-48ea-ab17-0f71a8993c54'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: aplheader
+theme: uswds_base
+region: header_top
+weight: 0
+provider: null
+plugin: 'block_content:01a98fa3-5ae5-48ea-ab17-0f71a8993c54'
+settings:
+  id: 'block_content:01a98fa3-5ae5-48ea-ab17-0f71a8993c54'
+  label: 'APL Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stage/*'

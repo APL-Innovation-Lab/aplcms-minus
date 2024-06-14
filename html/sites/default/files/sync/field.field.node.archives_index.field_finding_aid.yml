@@ -1,0 +1,21 @@
+uuid: 41c02ad8-d806-4b37-9b5b-b0d8c5a15b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_finding_aid
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_finding_aid
+field_name: field_finding_aid
+entity_type: node
+bundle: archives_index
+label: 'Finding Aid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

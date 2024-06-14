@@ -1,0 +1,29 @@
+uuid: 25e9e6d0-1357-4ea3-983e-5f7c8d755fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branch_location
+    - node.type.reflection
+    - taxonomy.vocabulary.library_location
+id: node.reflection.field_branch_location
+field_name: field_branch_location
+entity_type: node
+bundle: reflection
+label: 'Branch / Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,194 @@
+uuid: 39345352-f8d2-424c-8ecd-767cf6198a51
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search
+    - field.field.node.exhibit.body
+    - field.field.node.exhibit.feeds_item
+    - field.field.node.exhibit.field_about_artist
+    - field.field.node.exhibit.field_about_exhibit
+    - field.field.node.exhibit.field_artist
+    - field.field.node.exhibit.field_button_link
+    - field.field.node.exhibit.field_central_event_location
+    - field.field.node.exhibit.field_event_loc
+    - field.field.node.exhibit.field_ex_main_image
+    - field.field.node.exhibit.field_exhibit_location
+    - field.field.node.exhibit.field_image_credit
+    - field.field.node.exhibit.field_location
+    - field.field.node.exhibit.field_locations
+    - field.field.node.exhibit.field_slr_time_end
+    - field.field.node.exhibit.field_slr_time_start
+    - field.field.node.exhibit.field_sponsors
+    - field.field.node.exhibit.layout_builder__layout
+    - node.type.exhibit
+    - views.view.exhibits_search
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b1cec150-a88d-49ca-89fa-5eb8c0c38592:
+            uuid: b1cec150-a88d-49ca-89fa-5eb8c0c38592
+            region: content
+            configuration:
+              id: 'views_block:exhibits_search-block_7'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.exhibit.search
+targetEntityType: node
+bundle: exhibit
+mode: search
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_about_artist:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_about_exhibit:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_artist:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_button_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_central_event_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_event_loc:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_ex_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_exhibit_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_image_credit:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_sponsors:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_locations: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: f1ef15cb-061d-4690-b7ec-804d23bbef86
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: redirect_if_anon
+label: 'redirect if anon'
+code: 'window.location.href = ''/meeting-rooms'';'
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: true
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/admin/structure/webform/manage/meeting_room_reservation_request/results/*\r\n/meeting-rooms/request/submissions"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      pio: pio
+contexts: {  }
+conditions_require_all: true

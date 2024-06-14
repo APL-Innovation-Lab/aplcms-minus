@@ -1,0 +1,81 @@
+uuid: a9930aa3-68a9-42d1-939d-fc3ff111c202
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search
+    - field.field.node.staff_recommend.field_biblio_list_urls
+    - field.field.node.staff_recommend.field_recommend_tags
+    - field.field.node.staff_recommend.field_sr_audience
+    - field.field.node.staff_recommend.layout_builder__layout
+    - node.type.staff_recommend
+    - views.view.staff_recommend_default
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          9dde08f2-a95c-4d6d-8b23-2e5e63f3de57:
+            uuid: 9dde08f2-a95c-4d6d-8b23-2e5e63f3de57
+            region: content
+            configuration:
+              id: 'views_block:staff_recommend_default-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.staff_recommend.search
+targetEntityType: node
+bundle: staff_recommend
+mode: search
+content:
+  field_biblio_list_urls:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_recommend_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_sr_audience:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

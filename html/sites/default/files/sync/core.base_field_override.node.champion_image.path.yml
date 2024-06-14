@@ -1,0 +1,20 @@
+uuid: 8fc18747-b8b3-45fd-8168-f3fc565d22ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.champion_image
+  module:
+    - path
+id: node.champion_image.path
+field_name: path
+entity_type: node
+bundle: champion_image
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,19 @@
+uuid: 8a96201c-b794-411f-a6f6-97f157f4eeaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title40
+    - node.type.event
+id: node.event.field_title40
+field_name: field_title40
+entity_type: node
+bundle: event
+label: Title40
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

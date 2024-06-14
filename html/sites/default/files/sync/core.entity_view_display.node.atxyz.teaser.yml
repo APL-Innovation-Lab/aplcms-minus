@@ -1,0 +1,30 @@
+uuid: 53011808-d9a9-4c7e-a5a0-f9194f84d1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.atxyz.feeds_item
+    - field.field.node.atxyz.field_atxyz_files
+    - field.field.node.atxyz.field_zine_agreement
+    - field.field.node.atxyz.field_zine_email_address
+    - node.type.atxyz
+  module:
+    - user
+id: node.atxyz.teaser
+targetEntityType: node
+bundle: atxyz
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_atxyz_files: true
+  field_zine_agreement: true
+  field_zine_email_address: true
+  langcode: true
+  search_api_excerpt: true

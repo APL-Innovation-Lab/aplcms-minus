@@ -1,0 +1,22 @@
+uuid: 05c531f5-9e90-4b81-8ee4-3ff11fc42d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.sticky
+field_name: sticky
+entity_type: node
+bundle: apl_item_import
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

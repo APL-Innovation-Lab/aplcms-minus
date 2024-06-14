@@ -1,0 +1,29 @@
+uuid: 774b9245-7ff9-4d97-b049-f1f5370ecb11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_category_tags_
+    - node.type.event
+    - taxonomy.vocabulary.event_tags
+id: node.event.field_event_category_tags_
+field_name: field_event_category_tags_
+entity_type: node
+bundle: event
+label: 'Event Category'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_tags: event_tags
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

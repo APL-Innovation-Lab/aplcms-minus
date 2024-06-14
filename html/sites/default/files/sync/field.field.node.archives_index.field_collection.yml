@@ -1,0 +1,21 @@
+uuid: f9e3bcfe-b6b7-499f-8667-44fe550a6c01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_collection
+field_name: field_collection
+entity_type: node
+bundle: archives_index
+label: Collection
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,14 @@
+uuid: d9614dd8-66b9-47c0-bbd2-46162b803d7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.highlighted_images_editor
+  module:
+    - user
+id: user_remove_role_action.highlighted_images_editor
+label: 'Remove the Highlighted Images Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: highlighted_images_editor

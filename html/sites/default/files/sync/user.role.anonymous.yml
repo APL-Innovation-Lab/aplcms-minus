@@ -1,0 +1,68 @@
+uuid: def780fe-ba09-4c79-aaf6-c33ad0891d3f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.slr_cancel
+    - feeds.feed_type.slr_confirm
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.passport_reservation
+    - rest.resource.webform_rest_complete_submission
+    - rest.resource.webform_rest_submission
+  module:
+    - comment
+    - contact
+    - disable_messages
+    - feeds
+    - field_permissions
+    - filter
+    - jsonapi_permission
+    - media
+    - media_entity_download
+    - node
+    - rest
+    - scheduler
+    - search
+    - simple_styleguide
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: -12
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access jsonapi'
+  - 'access site-wide contact form'
+  - 'access style guide'
+  - 'create passport_reservation content'
+  - 'create slr_cancel feeds'
+  - 'create slr_confirm feeds'
+  - 'download media'
+  - 'import slr_cancel feeds'
+  - 'import slr_confirm feeds'
+  - 'restful get webform_rest_complete_submission'
+  - 'restful get webform_rest_submission'
+  - 'restful patch webform_rest_submission'
+  - 'schedule publishing of nodes'
+  - 'search content'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view field_apl_item_image'
+  - 'view field_iframe'
+  - 'view field_internal_'
+  - 'view field_item_list'
+  - 'view field_jacket_cover'
+  - 'view field_webform'
+  - 'view media'
+  - 'view own field_apl_item_image'
+  - 'view own field_iframe'
+  - 'view own field_internal_'
+  - 'view own field_item_list'
+  - 'view own field_jacket_cover'
+  - 'view own field_webform'
+  - 'view status messages'
+  - 'view the administration theme'

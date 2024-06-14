@@ -1,0 +1,18 @@
+uuid: 43fa4522-ccae-4ecb-a65f-826aa6cacbd7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.changed
+field_name: changed
+entity_type: node
+bundle: qr
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

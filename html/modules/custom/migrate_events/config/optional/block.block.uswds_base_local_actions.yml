@@ -1,0 +1,20 @@
+uuid: 9224b8c2-b465-4ab6-9cf8-17713bf98286
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uswds_base
+_core:
+  default_config_hash: WvhJomAnIQT0keg1Yz2xbxmqzqT4vGCfSbSK2M6XQLs
+id: uswds_base_local_actions
+theme: uswds_base
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

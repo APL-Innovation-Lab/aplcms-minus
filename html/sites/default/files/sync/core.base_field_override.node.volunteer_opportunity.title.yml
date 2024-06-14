@@ -1,0 +1,18 @@
+uuid: 68b26933-ad8b-4fb3-bac8-075e07a923bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+id: node.volunteer_opportunity.title
+field_name: title
+entity_type: node
+bundle: volunteer_opportunity
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 1cc57b21-7cc4-4028-933f-5ba9ae158a80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zine_agreement
+    - node.type.zine
+id: node.zine.field_zine_agreement
+field_name: field_zine_agreement
+entity_type: node
+bundle: zine
+label: Agreement
+description: '<a target="_blank" href="/zine-files/rights">Terms for Rights & Permissions</a> / <a target="_blank" href="/zine-files/rights#es">Términos por Derechos y Permisos</a>'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms for Rights & Permissions. / Estoy de acuerdo con los Términos por Derechos y Permisos.'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 193a2e74-0271-4983-ad81-2992e08804fd
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purpose_of_group_
+    - node.type.room_reservation
+id: node.room_reservation.field_purpose_of_group_
+field_name: field_purpose_of_group_
+entity_type: node
+bundle: room_reservation
+label: 'Purpose of Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

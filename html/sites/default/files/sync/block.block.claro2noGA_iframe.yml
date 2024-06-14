@@ -1,0 +1,30 @@
+uuid: 4e27abc4-5d62-4ff9-9987-501a17a95ca9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:318c95ff-5520-4846-b93d-752505ec184e'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_iframe
+theme: claro2noGA
+region: content
+weight: -27
+provider: null
+plugin: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+settings:
+  id: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+  label: iframe
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/apltv/sequence/*\r\n/sequence/*\r\n/apltv/channel/*"

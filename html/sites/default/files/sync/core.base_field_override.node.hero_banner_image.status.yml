@@ -1,0 +1,22 @@
+uuid: 31e88bd4-289e-4300-a9d7-b9bd371ff676
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.status
+field_name: status
+entity_type: node
+bundle: hero_banner_image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

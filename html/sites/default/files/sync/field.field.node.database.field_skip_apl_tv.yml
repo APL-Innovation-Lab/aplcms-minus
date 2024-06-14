@@ -1,0 +1,21 @@
+uuid: 9e8e92a4-74b9-49d5-a5ed-171c2e2dc3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skip_apl_tv
+    - node.type.database
+id: node.database.field_skip_apl_tv
+field_name: field_skip_apl_tv
+entity_type: node
+bundle: database
+label: 'Skip APL TV'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Skip APL TV'
+  off_label: 'Display on APL TV'
+field_type: boolean

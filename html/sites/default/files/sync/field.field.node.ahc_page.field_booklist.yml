@@ -1,0 +1,23 @@
+uuid: 22b109eb-d080-48d9-9b28-a33ea7f1122f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booklist
+    - node.type.ahc_page
+id: node.ahc_page.field_booklist
+field_name: field_booklist
+entity_type: node
+bundle: ahc_page
+label: 'Booklist ID Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

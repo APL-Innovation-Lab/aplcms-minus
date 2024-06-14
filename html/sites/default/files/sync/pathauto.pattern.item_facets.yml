@@ -1,0 +1,22 @@
+uuid: ed2efda8-3633-4b6b-a0d7-a8b749cbab37
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: item_facets
+label: 'Staff Recommend'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/staff-recommend/[term:name]'
+selection_criteria:
+  7322be14-4825-44c6-b585-09756dc32674:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 7322be14-4825-44c6-b585-09756dc32674
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      book_list_categories: book_list_categories
+selection_logic: and
+weight: -5
+relationships: {  }

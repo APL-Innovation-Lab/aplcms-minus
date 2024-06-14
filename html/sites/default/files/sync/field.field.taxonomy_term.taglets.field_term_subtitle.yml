@@ -1,0 +1,19 @@
+uuid: f8cd0947-a929-44f3-98f3-72cdb63ed20d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_term_subtitle
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.field_term_subtitle
+field_name: field_term_subtitle
+entity_type: taxonomy_term
+bundle: taglets
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

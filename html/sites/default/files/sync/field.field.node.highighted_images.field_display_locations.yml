@@ -1,0 +1,28 @@
+uuid: 7c66799a-e88c-450b-bf07-5353dd7ae3eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_locations
+    - node.type.highighted_images
+    - taxonomy.vocabulary.library_location
+id: node.highighted_images.field_display_locations
+field_name: field_display_locations
+entity_type: node
+bundle: highighted_images
+label: 'Display Locations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_location: library_location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

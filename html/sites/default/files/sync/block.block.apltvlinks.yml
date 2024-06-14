@@ -1,0 +1,39 @@
+uuid: 5572b634-5e9c-4d05-b4f8-b9f9e870b6e0
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:58283265-47c3-477f-9138-ac741f00a567'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - claro2
+id: apltvlinks
+theme: claro2
+region: help
+weight: -34
+provider: null
+plugin: 'block_content:58283265-47c3-477f-9138-ac741f00a567'
+settings:
+  id: 'block_content:58283265-47c3-477f-9138-ac741f00a567'
+  label: 'APL TV links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      pio: pio

@@ -1,0 +1,17 @@
+uuid: 4e7e6741-647f-41bf-96be-45eb8f935cd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Alert
+type: alert
+description: ''
+help: 'Provides a time-sensitive report about an announcement or occurrence'
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,28 @@
+uuid: a61e7832-d0f9-4b5f-8711-cfdd9e5d2b99
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.__event_location
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_eventlocation_2
+theme: uswds
+region: content
+weight: -16
+provider: null
+plugin: 'facet_block:__event_location'
+settings:
+  id: 'facet_block:__event_location'
+  label: 'Event Location'
+  label_display: visible
+  provider: facets
+  block_id: eventlocation_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/events2"

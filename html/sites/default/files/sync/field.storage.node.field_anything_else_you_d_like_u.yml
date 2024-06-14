@@ -1,0 +1,23 @@
+uuid: 52d626cb-011a-4795-bf93-24732fc4bb7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_anything_else_you_d_like_u
+field_name: field_anything_else_you_d_like_u
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

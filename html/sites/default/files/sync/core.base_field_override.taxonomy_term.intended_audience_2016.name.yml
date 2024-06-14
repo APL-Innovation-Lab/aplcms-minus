@@ -1,0 +1,18 @@
+uuid: db4cac0c-dacc-4873-9ae7-86b2009dd9a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.intended_audience_2016
+id: taxonomy_term.intended_audience_2016.name
+field_name: name
+entity_type: taxonomy_term
+bundle: intended_audience_2016
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

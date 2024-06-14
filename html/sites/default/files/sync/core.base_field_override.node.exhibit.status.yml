@@ -1,0 +1,22 @@
+uuid: 7b5a7f79-02e3-429d-b4bc-e59103f966de
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+id: node.exhibit.status
+field_name: status
+entity_type: node
+bundle: exhibit
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

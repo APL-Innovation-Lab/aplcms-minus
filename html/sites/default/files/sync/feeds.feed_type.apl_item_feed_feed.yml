@@ -1,0 +1,91 @@
+uuid: b7c99891-725c-43d4-bad9-0dee702b355c
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.apl_item
+  module:
+    - feeds_tamper
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      0a51d829-17cd-4d12-8ecc-5cab1455cb22:
+        default_value: Untitled
+        only_if_empty: true
+        uuid: 0a51d829-17cd-4d12-8ecc-5cab1455cb22
+        plugin: default_value
+        source: feeds_title
+        weight: 0
+        label: 'Set value or default value'
+      b0477599-b102-47bf-8032-1897d05f83cd:
+        find: '/\D*/'
+        replace: ''
+        limit: null
+        uuid: b0477599-b102-47bf-8032-1897d05f83cd
+        plugin: find_replace_regex
+        source: title
+        weight: -10
+        label: 'Find replace REGEX'
+      f925c50d-5b31-494d-9599-97f81cabde12:
+        format: 'https://api.bibliocommons.com/v1/titles/%s?api_key=ehqxke4ubaq3x2e2nm96vhv7'
+        uuid: f925c50d-5b31-494d-9599-97f81cabde12
+        plugin: sprintf
+        source: title
+        weight: -8
+        label: 'Format string'
+id: apl_item_feed_feed
+label: 'Batch import'
+description: 'Upload a list of Biblio IDs for subsequent importing'
+help: "<em>Example <a href=\"/library/feeds/example_biblio_ids.csv\">CSV</a></em><br><pre>title,biblio_id\r\nTitle of import (optional),811503067\r\n\"Quotes are optional, (but required if title has a comma)\",588547067\r\nHeader row is optional (but if omitted select \"No Headers\" below),1816754067\r\nThe importer ignores non-digits in the biblio_id field so feel free to include full URL,https://austin.bibliocommons.com/item/show/2076003067</pre>\r\n<br>\r\nFirst you upload a CSV with a list of one or more Biblio IDs, and subsequently you import each item by selecting the Import button on the following page."
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:feeds_feed'
+processor_configuration:
+  values:
+    type: apl_item
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 1
+custom_sources:
+  title:
+    value: biblio_id
+    label: biblio_id
+    machine_name: title
+    type: csv
+  url:
+    value: url
+    label: url
+    machine_name: url
+    type: csv
+  feeds_title:
+    value: title
+    label: title
+    machine_name: feeds_title
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: feeds_title
+    settings: {  }
+    unique: {  }
+  -
+    target: source
+    map:
+      value: title
+    settings: {  }
+    unique:
+      value: '1'

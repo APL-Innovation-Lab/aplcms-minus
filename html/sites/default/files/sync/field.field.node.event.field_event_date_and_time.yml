@@ -1,0 +1,26 @@
+uuid: 0cf6583a-98eb-40c8-9759-3375a7bcec71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date_and_time
+    - node.type.event
+  module:
+    - smart_date
+id: node.event.field_event_date_and_time
+field_name: field_event_date_and_time
+entity_type: node
+bundle: event
+label: 'Date and Time'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_duration: 120
+    default_duration_increments: "0|Open-ended\r\n30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: ''
+    default_date: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

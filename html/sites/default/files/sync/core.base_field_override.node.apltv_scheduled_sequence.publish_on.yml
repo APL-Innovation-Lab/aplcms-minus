@@ -1,0 +1,18 @@
+uuid: 8efcbebe-0b4c-47e9-83ef-a09f612544f4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_scheduled_sequence
+id: node.apltv_scheduled_sequence.publish_on
+field_name: publish_on
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

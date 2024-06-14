@@ -1,0 +1,11 @@
+.layout-container {
+	background: whitesmoke;
+}
+.d-col-3, .d-col-9 {
+	background: white;
+	box-shadow: 3px 3px 8px silver;
+	margin-bottom: 20px;
+	margin-right: 0 !important;
+	margin-top: 0;
+	padding-bottom: 30px;
+}

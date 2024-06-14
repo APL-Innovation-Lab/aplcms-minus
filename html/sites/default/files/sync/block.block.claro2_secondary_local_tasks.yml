@@ -1,0 +1,28 @@
+uuid: 140e2c3d-2720-4147-9b9e-1a3f4720dcc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: D_hUB_AW2IvKbVo3lVG-B2KfTsX6xJ-CxfOcRYUnL3E
+id: claro2_secondary_local_tasks
+theme: claro2
+region: pre_content
+weight: -25
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/sequence/*'

@@ -1,0 +1,126 @@
+uuid: 87cb0df2-91ae-4f94-8694-c384de4513b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.champion_image.field_button_link
+    - field.field.node.champion_image.field_display_timespan_04_07p
+    - field.field.node.champion_image.field_hero_image
+    - field.field.node.champion_image.field_hero_summary
+    - field.field.node.champion_image.field_section
+    - node.type.champion_image
+    - views.view.champions
+  module:
+    - datetime_range
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          1bb45c8d-9659-405f-9508-6122e96f56a3:
+            uuid: 1bb45c8d-9659-405f-9508-6122e96f56a3
+            region: content
+            configuration:
+              id: 'views_block:champions-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          1c56b91f-a974-4151-964e-3e3af689f42a:
+            uuid: 1c56b91f-a974-4151-964e-3e3af689f42a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:champion_image:field_hero_image'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.champion_image.default
+targetEntityType: node
+bundle: champion_image
+mode: default
+content:
+  field_button_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_display_timespan_04_07p:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_hero_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_hero_summary:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_section:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

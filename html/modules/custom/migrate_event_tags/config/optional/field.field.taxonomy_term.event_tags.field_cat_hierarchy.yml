@@ -1,0 +1,26 @@
+uuid: 62c87376-b6b7-4e2a-8173-db591aa4e8ae
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cat_hierarchy
+    - taxonomy.vocabulary.event_tags
+  module:
+    - entity_hierarchy
+id: taxonomy_term.event_tags.field_cat_hierarchy
+field_name: field_cat_hierarchy
+entity_type: taxonomy_term
+bundle: event_tags
+label: Hierarchy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+  weight_min: -50
+  weight_max: 50
+  weight_label: Weight
+field_type: entity_reference_hierarchy

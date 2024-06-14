@@ -1,0 +1,23 @@
+uuid: 3048c82b-ca0c-43a2-b722-788485f8f26d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_size_in_gb
+    - node.type.archives_index
+id: node.archives_index.field_digital_size_in_gb
+field_name: field_digital_size_in_gb
+entity_type: node
+bundle: archives_index
+label: 'Digital Size, in GB'
+description: 'example: 0.17'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

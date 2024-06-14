@@ -1,0 +1,23 @@
+uuid: 6daf272d-a4f3-4941-85d8-7891d76c9029
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.article
+  module:
+    - datetime
+_core:
+  default_config_hash: MHm2vdiv2Rqnoli74yHiz7l9y61uV7qyubUTzLVbFWY
+id: node.article.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: article
+label: 'Time End'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

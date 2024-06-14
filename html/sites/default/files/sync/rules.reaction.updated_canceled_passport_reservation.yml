@@ -1,0 +1,98 @@
+uuid: 7851155a-6a78-4ecd-8027-03743b7db3ad
+langcode: eng
+status: false
+dependencies: {  }
+id: updated_canceled_passport_reservation
+label: 'Updated, canceled Passport Reservation'
+events:
+  -
+    event_name: 'rules_entity_update:node--passport_reservation'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 774a2db0-dd1d-4498-abf6-44ab8b688228
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: f9245191-8e9b-483a-b4b3-247fa6bb4be2
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: f7aca8c1-750f-49f7-9520-a5005b374252
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: false
+        context_values:
+          operation: '=='
+          value: '2'
+        context_mapping:
+          data: node.field_reservation_status.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 80b02474-10b2-48ed-9f21-d290c9dffa4f
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: fed4d52c-a675-4f68-976f-305eac950337
+        weight: -50
+        action_id: rules_page_redirect
+        context_values:
+          url: /passports/list
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 4e1d6b1d-d384-4464-9e1f-d4385c43351b
+        weight: -49
+        action_id: rules_system_message
+        context_values:
+          message: 'Reservation canceled.'
+          type: warning
+          repeat: true
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 8e1fdd10-e6b8-4cdb-990a-1a3fc876081a
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.field_ppp_email}}'
+          subject: 'Your appointment with the Austin Public Library Passport Office has been canceled.'
+          message: "Your appointment with the Austin Public Library Passport Office has been canceled. If you would like to reschedule, please visit our online reservation system at library.austintexs.gov/passport. \r\n\r\nQuestions? Contact us at APLpassport@austintexas.gov or by phone at 512-974-9639. "
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

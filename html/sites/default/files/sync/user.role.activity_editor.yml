@@ -1,0 +1,38 @@
+uuid: a7bad6b7-9c12-4163-abc1-820bd063d928
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.activity
+    - node.type.activity_page
+  module:
+    - filter
+    - node
+    - shortcut
+    - toolbar
+id: activity_editor
+label: 'Activity Editor'
+weight: -10
+is_admin: null
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create activity content'
+  - 'create activity_page content'
+  - 'delete activity revisions'
+  - 'delete activity_page revisions'
+  - 'delete any activity content'
+  - 'delete any activity_page content'
+  - 'delete own activity content'
+  - 'delete own activity_page content'
+  - 'edit any activity content'
+  - 'edit any activity_page content'
+  - 'edit own activity content'
+  - 'edit own activity_page content'
+  - 'revert activity revisions'
+  - 'revert activity_page revisions'
+  - 'switch shortcut sets'
+  - 'use text format full_html'
+  - 'view activity revisions'
+  - 'view activity_page revisions'

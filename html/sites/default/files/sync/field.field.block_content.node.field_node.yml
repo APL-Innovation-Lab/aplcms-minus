@@ -1,0 +1,31 @@
+uuid: 55ce3a6e-5256-493d-9872-b8cd78d10c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node
+    - field.storage.block_content.field_node
+    - node.type.apl_site_content
+    - node.type.sales_events_page
+id: block_content.node.field_node
+field_name: field_node
+entity_type: block_content
+bundle: node
+label: Node
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      apl_site_content: apl_site_content
+      sales_events_page: sales_events_page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: apl_site_content
+field_type: entity_reference

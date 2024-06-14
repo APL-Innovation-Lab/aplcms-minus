@@ -1,0 +1,22 @@
+uuid: 2fc1a682-0c7b-440e-a759-a4b960a7e5cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+id: node.volunteer_opportunity.promote
+field_name: promote
+entity_type: node
+bundle: volunteer_opportunity
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

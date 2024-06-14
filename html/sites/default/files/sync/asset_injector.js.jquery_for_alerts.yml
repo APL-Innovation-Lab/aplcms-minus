@@ -1,0 +1,66 @@
+uuid: 894801dd-97d0-4e07-89fc-3daea4cebf2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - system
+id: jquery_for_alerts
+label: 'jquery for alerts'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+  //console.log('jquery for alerts loaded.');
+
+  $('li a').click(function(){
+    var hash4 = this.hash;
+    $(hash4).attr('open','open');
+    $(hash4 + ' h2').addClass('active');
+      console.log(hash4);
+
+  });
+
+
+  function get_hash() {
+  	var hash3 = window.location.hash;
+      $(hash3).attr('open','open');
+  }
+  get_hash();
+
+
+
+   $('.apl-expand').click(function(e) {
+  	console.log('clicked');
+  		$(this).toggleClass('active');
+
+  }); 
+   $('.apl-alert-row').click(function(e) {
+  	console.log('clicked');
+  		$(this).toggleClass('active');
+
+  }); 
+
+
+      
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/apltv/*\r\n/user/*"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      eng: eng
+contexts: {  }
+conditions_require_all: true

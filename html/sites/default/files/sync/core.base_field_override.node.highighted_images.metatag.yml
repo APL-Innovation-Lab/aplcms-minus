@@ -1,0 +1,18 @@
+uuid: 89d93f5e-660f-4c32-aea3-906133935f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.metatag
+field_name: metatag
+entity_type: node
+bundle: highighted_images
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

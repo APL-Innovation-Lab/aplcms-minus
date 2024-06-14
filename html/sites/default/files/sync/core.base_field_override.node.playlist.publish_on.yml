@@ -1,0 +1,18 @@
+uuid: 1a3f6a0a-33ea-4824-8dcc-28228860e1e9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.publish_on
+field_name: publish_on
+entity_type: node
+bundle: playlist
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

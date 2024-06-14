@@ -1,0 +1,18 @@
+uuid: 2095c609-80d6-4b45-a1be-7ba752e5bb9c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.publish_on
+field_name: publish_on
+entity_type: node
+bundle: slide
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

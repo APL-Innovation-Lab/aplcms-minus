@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_keywords.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the keywords file to the sites/default/files folder.
+ */
+function migrate_keywords_install(): void {
+  // Create the keywords file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_keywords';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the rooms file to migrate_keywords directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_keywords')->getPath();
+  $file_source = $module_path . '/artifacts/keywords.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/keywords.json', FileSystemInterface::EXISTS_REPLACE);
+}

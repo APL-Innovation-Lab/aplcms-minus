@@ -1,0 +1,23 @@
+uuid: fed1fe50-0703-4ccc-b44e-9f3d37bb73ad
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_retire
+    - taxonomy.vocabulary.event_tags
+id: taxonomy_term.event_tags.field_retire
+field_name: field_retire
+entity_type: taxonomy_term
+bundle: event_tags
+label: Retire
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

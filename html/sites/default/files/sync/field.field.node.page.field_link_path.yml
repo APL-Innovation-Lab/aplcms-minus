@@ -1,0 +1,19 @@
+uuid: 29e5e715-dc2b-4d35-ad3d-8d55912f1217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_path
+    - node.type.page
+id: node.page.field_link_path
+field_name: field_link_path
+entity_type: node
+bundle: page
+label: 'Link Path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

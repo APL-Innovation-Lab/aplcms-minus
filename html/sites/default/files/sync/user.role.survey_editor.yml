@@ -1,0 +1,58 @@
+uuid: 360872f7-2f3a-4ab6-be5e-d3622e0e426a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - config_perms
+    - editoria11y
+    - filter
+    - shortcut
+    - system
+    - toolbar
+    - webform
+    - webform_node
+id: survey_editor
+label: 'Survey Editor'
+weight: 10
+is_admin: null
+permissions:
+  - 'access any webform configuration'
+  - 'access own webform configuration'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'admin webform results'
+  - 'admin webform subs'
+  - 'admin webform subs2'
+  - 'admin webform subs3'
+  - 'admin webform subs4'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'create webform'
+  - 'customize shortcut links'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'edit webform variants'
+  - 'switch shortcut sets'
+  - 'use text format full_html'
+  - 'view any webform submission'
+  - 'view editoria11y checker'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

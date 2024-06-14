@@ -1,0 +1,8 @@
+uuid: a0142328-aed4-4fa1-9e0f-2ca042558fc9
+langcode: eng
+status: true
+dependencies: {  }
+id: rss
+label: RSS
+locked: false
+pattern: 'D, d M Y H:i:s'

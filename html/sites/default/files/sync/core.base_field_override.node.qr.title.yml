@@ -1,0 +1,18 @@
+uuid: 5f6fd256-5ff1-4eca-a55f-09ae5c2b7c71
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.title
+field_name: title
+entity_type: node
+bundle: qr
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

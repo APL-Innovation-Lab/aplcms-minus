@@ -1,0 +1,22 @@
+uuid: 0f348406-982d-4742-a4e2-ee5a998f1c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.promote
+field_name: promote
+entity_type: node
+bundle: sales_events_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

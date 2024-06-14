@@ -1,0 +1,18 @@
+uuid: e16264d3-185c-4f20-9556-5ee516a80d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.title
+field_name: title
+entity_type: node
+bundle: job_portal_assistance_request
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

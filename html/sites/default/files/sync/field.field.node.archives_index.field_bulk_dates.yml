@@ -1,0 +1,21 @@
+uuid: 3cac27ce-e23f-45f8-ba99-095b3bcb1d7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bulk_dates
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_bulk_dates
+field_name: field_bulk_dates
+entity_type: node
+bundle: archives_index
+label: 'Bulk Dates'
+description: 'examples: 1920''s- 1940''s; 1880-1970;'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

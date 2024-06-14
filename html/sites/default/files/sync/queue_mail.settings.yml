@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: L1NLZHorv0hiCyXT83hfpLptiTWHi9nsKNYnDMcMVDg
+langcode: eng
+queue_mail_keys: ''
+queue_mail_queue_time: 240
+queue_mail_queue_wait_time: 1
+threshold: null
+requeue_interval: 1

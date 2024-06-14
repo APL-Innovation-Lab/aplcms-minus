@@ -1,0 +1,8 @@
+uuid: a4e0b45d-416d-4df7-8b63-14b6d10676db
+langcode: eng
+status: true
+dependencies: {  }
+id: snippet_date
+label: 'Snippet Date'
+locked: false
+pattern: 'D, M j'

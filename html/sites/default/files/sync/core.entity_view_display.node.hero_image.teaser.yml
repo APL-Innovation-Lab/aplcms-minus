@@ -1,0 +1,40 @@
+uuid: c079a275-cd75-4955-a873-932c1d36e569
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hero_image.feeds_item
+    - field.field.node.hero_image.field_button_link
+    - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_image_small
+    - field.field.node.hero_image.field_hero_summary
+    - field.field.node.hero_image.field_hero_template
+    - field.field.node.hero_image.field_locations
+    - field.field.node.hero_image.field_slr_time_end
+    - field.field.node.hero_image.field_slr_time_start
+    - node.type.hero_image
+  module:
+    - user
+id: node.hero_image.teaser
+targetEntityType: node
+bundle: hero_image
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_button_link: true
+  field_hero_image: true
+  field_hero_image_small: true
+  field_hero_summary: true
+  field_hero_template: true
+  field_locations: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

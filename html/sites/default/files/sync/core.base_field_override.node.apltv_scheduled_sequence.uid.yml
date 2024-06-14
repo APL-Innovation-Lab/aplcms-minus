@@ -1,0 +1,20 @@
+uuid: 004fa31a-ae81-4075-8fbe-7d444f61e1ed
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_scheduled_sequence
+id: node.apltv_scheduled_sequence.uid
+field_name: uid
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

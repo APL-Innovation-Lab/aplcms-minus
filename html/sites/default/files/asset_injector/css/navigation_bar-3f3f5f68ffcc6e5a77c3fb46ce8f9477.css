@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "fontello";
+  src: url("https://cor-cdn-static.bibliocommons.com/assets/fontello-7aaf5df643343c6846d1d2be8803acd8.woff") format("woff");
+}
+.dropdown-toggle::after {
+	font-family: "fontello";
+	content: "\0000a0\abcd";
+	font-size: 14px;
+	margin: 0px 0px 0 2px;
+}
+.apl_menu > li > a {
+	border-left: 1px solid transparent;
+}
+.dropdown-toggle {
+	padding-right: 26px !important;
+}
+.apl_submenus.active {
+	display: block !important;
+}
+
+.toolbar .toolbar-tray-vertical.is-active, 
+body.toolbar-fixed .toolbar .toolbar-tray-vertical {
+	display: none !important;
+}
+
+body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
+	margin-left: 0 !important;
+}

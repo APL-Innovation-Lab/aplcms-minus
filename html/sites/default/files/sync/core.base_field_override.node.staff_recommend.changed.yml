@@ -1,0 +1,18 @@
+uuid: 7f9f47e3-1bde-46e5-9640-31c5832b3050
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.changed
+field_name: changed
+entity_type: node
+bundle: staff_recommend
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

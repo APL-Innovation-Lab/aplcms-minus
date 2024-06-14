@@ -1,0 +1,19 @@
+uuid: c0e04380-1a97-4650-b17a-1c1591d33de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_for_match
+    - node.type.keyword_match
+id: node.keyword_match.field_url_for_match
+field_name: field_url_for_match
+entity_type: node
+bundle: keyword_match
+label: 'URL for Match'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

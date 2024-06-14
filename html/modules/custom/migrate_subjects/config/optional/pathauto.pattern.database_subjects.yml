@@ -1,0 +1,22 @@
+uuid: d6f954e0-c021-4575-9095-45b2dae850a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: database_subjects
+label: 'Database Subjects'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/virtual/[term:name]'
+selection_criteria:
+  95cd162e-f0ee-4bcd-96be-add8f7649a6c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 95cd162e-f0ee-4bcd-96be-add8f7649a6c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      database_subjects: database_subjects
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,65 @@
+uuid: 6e3212e2-6591-4113-a907-dab37d3eb0af
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+    - system
+id: job_portal
+label: 'Accordion like on Enhanced Card page'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+  console.log('hhh')
+  var hash = window.location.hash;
+  if(hash) {
+  $(hash + ' h2').addClass('active')
+  $(hash + ' h4').addClass('active')
+  }
+
+  $('h2').click(function() {
+      $( this ).toggleClass('active');
+  });
+
+  $('h4').click(function() {
+      $( this ).toggleClass('active');
+  });
+
+  $('.jobportal-menu a').click(function() {
+      
+  var hash2 = (this).attr(href);
+  console.log(hash2 + ' is my hash2');
+
+  var dd = hash2 + ' h2';
+  var dd2 = hash2 + ' h4';
+  console.log(dd);
+  $(dd).addClass('active');
+  $(dd2).addClass('active');
+  });
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/jobportal\r\n/portaldeempleo\r\n/es/portaldeempleo\r\n/community-resource-hub\r\n/verano\r\n/es/verano\r\n/app/virtual/all-databases/226"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      eng: eng
+      es: es
+  current_theme:
+    id: current_theme
+    negate: true
+    theme: aplpa
+contexts: {  }
+conditions_require_all: true

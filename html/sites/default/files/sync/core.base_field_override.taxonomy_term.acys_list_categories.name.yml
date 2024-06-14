@@ -1,0 +1,18 @@
+uuid: 95eefbfb-ce04-4e2a-8a0d-7a2c401e8ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acys_list_categories
+id: taxonomy_term.acys_list_categories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: acys_list_categories
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

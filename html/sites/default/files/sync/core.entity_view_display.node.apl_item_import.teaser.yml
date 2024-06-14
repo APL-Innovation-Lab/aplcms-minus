@@ -1,0 +1,24 @@
+uuid: c42dd0ee-14c4-4e1d-a969-f832f1c2761c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.apl_item_import.field_json
+    - node.type.apl_item_import
+  module:
+    - user
+id: node.apl_item_import.teaser
+targetEntityType: node
+bundle: apl_item_import
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_json: true
+  langcode: true
+  search_api_excerpt: true

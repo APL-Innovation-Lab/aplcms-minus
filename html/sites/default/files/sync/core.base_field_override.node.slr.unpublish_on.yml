@@ -1,0 +1,18 @@
+uuid: b05669b0-f2bf-40e9-8a23-9e03fd77dfe9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: slr
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

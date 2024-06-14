@@ -1,0 +1,29 @@
+uuid: a21d5d14-d700-4fe9-b854-15e04aabf9d4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_library_priority
+    - taxonomy.vocabulary.library_priorities
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.field_library_priority
+field_name: field_library_priority
+entity_type: taxonomy_term
+bundle: taglets
+label: 'Library Priority'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_priorities: library_priorities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

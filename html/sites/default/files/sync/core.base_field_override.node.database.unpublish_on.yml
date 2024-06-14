@@ -1,0 +1,18 @@
+uuid: 2dfa0083-9034-430d-a06e-b02f29780d7d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.database
+id: node.database.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: database
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

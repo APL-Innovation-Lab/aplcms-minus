@@ -1,0 +1,28 @@
+uuid: 677afc58-fbea-4054-88b6-5e4987eb34b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promote_in_remote
+    - node.type.event
+    - taxonomy.vocabulary.library_location
+id: node.event.field_promote_in_remote
+field_name: field_promote_in_remote
+entity_type: node
+bundle: event
+label: 'Promote in Remote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_location: library_location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

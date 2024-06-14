@@ -1,0 +1,133 @@
+uuid: 8f70f62e-2af1-4a7d-ab5c-55f0a524a88d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.archives_index.field_abstract
+    - field.field.node.archives_index.field_accessno
+    - field.field.node.archives_index.field_bioghist
+    - field.field.node.archives_index.field_dsc
+    - field.field.node.archives_index.field_odd
+    - field.field.node.archives_index.field_scopecontent
+    - node.type.archives_index
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
+id: finding_aids_xml
+label: 'Finding Aids XML'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: xml
+parser_configuration:
+  context:
+    value: //ead
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+  use_tidy: false
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: archives_index
+  langcode: en
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _archdesc_unitid:
+    value: './/archdesc/*/unitid'
+    label: './/archdesc/*/unitid'
+    machine_name: _archdesc_unitid
+    type: xml
+  _abstract:
+    value: .//abstract
+    label: .//abstract
+    machine_name: _abstract
+    type: xml
+  _bioghist:
+    value: .//bioghist
+    label: .//bioghist
+    machine_name: _bioghist
+    type: xml
+  _bioghist_:
+    value: .//bioghist
+    label: .//bioghist
+    machine_name: _bioghist_
+    type: xml
+  _scopecontent:
+    value: .//scopecontent
+    label: .//scopecontent
+    machine_name: _scopecontent
+    type: xml
+  _dsc:
+    value: .//dsc
+    label: .//dsc
+    machine_name: _dsc
+    type: xml
+  _odd:
+    value: .//odd
+    label: .//odd
+    machine_name: _odd
+    type: xml
+mappings:
+  -
+    target: field_accessno
+    map:
+      value: _archdesc_unitid
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_abstract
+    map:
+      value: _abstract
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_bioghist
+    map:
+      value: _bioghist_
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_scopecontent
+    map:
+      value: _scopecontent
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_dsc
+    map:
+      value: _dsc
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_odd
+    map:
+      value: _odd
+    settings:
+      language: ''
+      format: full_html

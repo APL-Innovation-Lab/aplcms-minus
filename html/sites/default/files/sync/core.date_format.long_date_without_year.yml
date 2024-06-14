@@ -1,0 +1,8 @@
+uuid: f05c832f-30ed-4604-a4db-63317835a441
+langcode: eng
+status: true
+dependencies: {  }
+id: long_date_without_year
+label: 'Long date without year l, F j - g:i A'
+locked: false
+pattern: 'l, F j - g:i A'

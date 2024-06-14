@@ -1,0 +1,18 @@
+uuid: 9006ed5c-b772-4fbf-9049-06d9770f58fa
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: open_hours
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

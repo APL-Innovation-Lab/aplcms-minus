@@ -1,0 +1,83 @@
+uuid: 5de975cc-e3a9-4eea-a532-2f3983fbc3f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.keyword_match.feeds_item
+    - field.field.node.keyword_match.field_link_type
+    - field.field.node.keyword_match.field_search_terms
+    - field.field.node.keyword_match.field_searchable
+    - field.field.node.keyword_match.field_url_for_match
+    - node.type.keyword_match
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          4d1b16c3-4eea-48f5-9990-da94014e0d7c:
+            uuid: 4d1b16c3-4eea-48f5-9990-da94014e0d7c
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_13'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.keyword_match.teaser
+targetEntityType: node
+bundle: keyword_match
+mode: teaser
+content:
+  field_link_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_search_terms:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_url_for_match:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_searchable: true
+  langcode: true
+  search_api_excerpt: true

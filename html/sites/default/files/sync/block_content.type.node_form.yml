@@ -1,0 +1,8 @@
+uuid: a9d8eeda-4f88-418f-9ae8-3af80ea8db9c
+langcode: en
+status: true
+dependencies: {  }
+id: node_form
+label: 'Node Form'
+revision: 0
+description: ''

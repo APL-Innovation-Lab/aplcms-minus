@@ -1,0 +1,87 @@
+uuid: 5c6da884-c7cf-4965-bf5f-b48691de12e6
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+    - system
+id: search_
+label: 'Search '
+code: |
+  .search-result .field.field--name-name.field--type-string.field--label-hidden {
+  	display: none;
+  }
+  .search-result__description p img {
+  	max-height: 150px;
+  }
+  strong + h3 {
+  	margin-top: 0;
+  }
+  .search-result.grid-col-10.grid-offset-1 {
+  	border-bottom: 1px solid #efefef;
+  	margin-bottom: 1em;
+  }
+   
+   /* Style the UL element for both active and inactive facets */
+  ul.facet-active, ul.facet-inactive {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Clear floats */
+    border: 1px solid #ccc; /* Optional border */
+    background-color: #f1f1f1; /* Optional background color */
+  }
+
+  /* Float the list items side by side for both active and inactive facets */
+  ul.facet-active li, ul.facet-inactive li {
+    float: left;
+  }
+
+  /* Style the links inside the list items for both active and inactive facets */
+  ul.facet-active li a, ul.facet-inactive li a {
+    display: block; /* Change the display to block to fill the whole LI */
+    color: black; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add some padding for spacing */
+    text-decoration: none; /* Remove underlines from links */
+  }
+
+  /* Change the background color of links on hover for both active and inactive facets */
+  ul.facet-active li a:hover, ul.facet-inactive li a:hover {
+    background-color: #ddd;
+  }
+
+  /* Add a background color to the active/current link */
+  ul.facet-active li a:focus, ul.facet-active li a:active, 
+  ul.facet-inactive li a:focus, ul.facet-inactive li a:active {
+    background-color: #ccc;
+  }
+
+  /* Additional style for the reset link */
+  ul.facet-active li.facets-reset a, ul.facet-inactive li.facets-reset a {
+    background-color: #e7e7e7; /* Different background to distinguish it */
+    font-weight: bold; /* Make it stand out */
+  }
+
+  /* Style for items with the is-active class */
+  ul.facet-active li a.is-active, ul.facet-inactive li a.is-active {
+    background-color: #a9a9a9; /* Highlight the active facet */
+  }
+media: all
+preprocess: false
+conditions:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      eng: eng
+      es: es
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/search/facets"
+contexts: {  }
+conditions_require_all: true

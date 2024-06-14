@@ -1,0 +1,21 @@
+uuid: 51eba7e3-4d4a-49b2-b7e0-a9f2ad95b7c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_can_we_help_
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_how_can_we_help_
+field_name: field_how_can_we_help_
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'How can we help?'
+description: 'Please tell us how we can help you with the issue you selected above. Let us know what you have tried already.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

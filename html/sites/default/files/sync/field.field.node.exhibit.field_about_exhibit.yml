@@ -1,0 +1,21 @@
+uuid: 69304c51-c431-4142-a010-c48a864adbf5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_exhibit
+    - node.type.exhibit
+  module:
+    - text
+id: node.exhibit.field_about_exhibit
+field_name: field_about_exhibit
+entity_type: node
+bundle: exhibit
+label: 'About Exhibit'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

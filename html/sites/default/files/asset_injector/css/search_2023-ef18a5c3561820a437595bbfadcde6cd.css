@@ -1,0 +1,10 @@
+.field.field--name-name.field--type-string.field--label-hidden.field__item {
+	font-size: 2em;
+	margin: 0 15px;
+}
+.clearfix.text-formatted.field.field--name-description.field--type-text-long.field--label-hidden.field__item p {
+	padding: 0 15px;
+}
+#block-claro2-content div {
+	background: white !important;
+}

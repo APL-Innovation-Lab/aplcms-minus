@@ -1,0 +1,24 @@
+uuid: cfb4f90e-8e52-45e9-80c9-51966e570dad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_pagetitle
+theme: claro2noGA
+region: content
+weight: -24
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/collaboration-request\r\n/form/*"

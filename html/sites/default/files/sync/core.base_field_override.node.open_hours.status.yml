@@ -1,0 +1,22 @@
+uuid: 7e0b174b-f72f-4a6a-9fc1-fa1155e5e4db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.status
+field_name: status
+entity_type: node
+bundle: open_hours
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

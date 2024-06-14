@@ -1,0 +1,4 @@
+.js-form-item.form-item.js-form-type-email.form-type--email.js-form-item-mail.form-item--mail,#block-claro-help,#edit-pass-disabled,#edit-ldap-user-fields,#edit-field-first-name-wrapper,#edit-field-last-name-wrapper,#edit-field-division-wrapper,#edit-field-phone-number-wrapper,#edit-user-picture-wrapper,#edit-language,#edit-contact,#edit-path-wrapper,#edit-field-api-key-wrapper,
+#edit-field-locations-wrapper {
+	display: none;
+}

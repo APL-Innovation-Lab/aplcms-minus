@@ -1,0 +1,23 @@
+uuid: b70a13b8-0aa1-4ad5-929c-dfa986884b60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exclude_from_we_recommend
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.field_exclude_from_we_recommend
+field_name: field_exclude_from_we_recommend
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Exclude from We Recommend'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

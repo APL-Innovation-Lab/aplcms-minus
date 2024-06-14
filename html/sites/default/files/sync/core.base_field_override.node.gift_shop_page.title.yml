@@ -1,0 +1,18 @@
+uuid: 0086741c-39e1-4cb2-8b36-3e95dc8f64da
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.title
+field_name: title
+entity_type: node
+bundle: gift_shop_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

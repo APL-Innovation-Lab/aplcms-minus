@@ -1,0 +1,72 @@
+uuid: 32f36437-4d9c-453f-a976-2cacbf62363e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.playlist.feeds_item
+    - field.field.node.playlist.field_length
+    - field.field.node.playlist.field_tv_sequence
+    - node.type.playlist
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_builder_blank
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          59a8b280-2b12-4f79-b575-f6bf6460b0e1:
+            uuid: 59a8b280-2b12-4f79-b575-f6bf6460b0e1
+            region: null
+            configuration:
+              id: 'field_block:node:playlist:field_length'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.playlist.default
+targetEntityType: node
+bundle: playlist
+mode: default
+content:
+  field_length:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: null
+  field_tv_sequence:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,32 @@
+uuid: be0da3b3-5190-4a78-9210-dcf4d95768af
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: cancel_slr
+label: 'Cancel SLR'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+  $('.usa-alert__text').html('Are you sure you want to cancel your Shared Learning Room Reservation?');
+  $('#edit-submit').val('Cancel reservation');
+
+  $('#edit-cancel, .item-list').css('display','none');
+
+  //$('#webform-submission-passport-appointment-request-delete-form').css('color','transparent');
+   }); // end of ready
+  })(jQuery); // end of jQuery
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/webform/shared_learning_room_reservation/submissions/*/delete'
+contexts: {  }
+conditions_require_all: true

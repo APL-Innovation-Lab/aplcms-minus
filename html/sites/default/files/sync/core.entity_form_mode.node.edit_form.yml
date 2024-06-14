@@ -1,0 +1,10 @@
+uuid: 90c263ff-5cb8-4a1d-8573-896f640d4d69
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.edit_form
+label: 'Edit Form'
+targetEntityType: node
+cache: true

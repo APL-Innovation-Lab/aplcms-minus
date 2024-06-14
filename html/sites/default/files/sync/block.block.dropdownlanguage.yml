@@ -1,0 +1,19 @@
+uuid: c4c63a17-b8f3-4a6c-9ca1-fdea871e60c8
+langcode: en
+status: false
+dependencies:
+  theme:
+    - claro2
+id: dropdownlanguage
+theme: claro2
+region: header
+weight: -12
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility: {  }

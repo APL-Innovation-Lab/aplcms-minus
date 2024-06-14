@@ -1,0 +1,21 @@
+uuid: 9a7cc786-ba07-42f3-9f24-6fb80811bcf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.apl_item
+  module:
+    - text
+id: node.apl_item.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: apl_item
+label: 'Display Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

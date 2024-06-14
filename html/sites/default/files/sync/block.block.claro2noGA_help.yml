@@ -1,0 +1,27 @@
+uuid: 4288cde8-c89a-4fba-87aa-72930a029382
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+    - system
+  theme:
+    - claro2noGA
+_core:
+  default_config_hash: bMLNWPKf3uHuqgmVszMb5zhM205c4Y-r7j5Tw6NDo-o
+id: claro2noGA_help
+theme: claro2noGA
+region: help
+weight: -35
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/apltv/*'

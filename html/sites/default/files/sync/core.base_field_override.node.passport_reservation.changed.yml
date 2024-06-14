@@ -1,0 +1,18 @@
+uuid: dabee038-c53b-4fdf-9c49-8a9ec19de667
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.changed
+field_name: changed
+entity_type: node
+bundle: passport_reservation
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

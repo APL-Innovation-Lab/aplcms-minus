@@ -1,0 +1,21 @@
+uuid: 649602a6-07fb-4a36-bff0-69f5a8fdb786
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_audience_text
+field_name: field_audience_text
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

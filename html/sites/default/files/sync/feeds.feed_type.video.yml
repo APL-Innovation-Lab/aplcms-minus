@@ -1,0 +1,113 @@
+uuid: f365adce-2d69-4c38-bdd9-9c3f4d5d9ff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.screen.title
+    - field.field.node.screen.field_minutes
+    - field.field.node.screen.field_seconds
+    - field.field.node.screen.field_video_type
+    - field.field.node.screen.field_video_url
+    - node.type.screen
+  module:
+    - node
+id: video
+label: Video
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: screen
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 69420
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  type:
+    value: type
+    label: type
+    machine_name: type
+    type: csv
+  url:
+    value: url
+    label: url
+    machine_name: url
+    type: csv
+  minutes:
+    value: minutes
+    label: minutes
+    machine_name: minutes
+    type: csv
+  seconds:
+    value: seconds
+    label: seconds
+    machine_name: seconds
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_video_type
+    map:
+      value: type
+    settings:
+      language: null
+  -
+    target: field_video_url
+    map:
+      value: url
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_minutes
+    map:
+      value: minutes
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_seconds
+    map:
+      value: seconds
+    settings:
+      language: null
+    unique: {  }

@@ -1,0 +1,38 @@
+uuid: cb7190b4-abe3-4322-8bae-330847fc64a2
+langcode: eng
+status: true
+dependencies: {  }
+id: after_deleting_passport_appointment
+label: 'after deleting Passport Appointment'
+events:
+  -
+    event_name: 'rules_entity_delete:webform_submission--passport_appointment_request'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 044cc090-700d-410e-b834-6ba89842d6ae
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 6fba323e-396c-4929-a6da-f5232aa05639
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 8a64e153-a9f0-4777-94a7-3f03f80602fc
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 640966c6-3848-4e3c-9b89-b955cde975f4
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /passports
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

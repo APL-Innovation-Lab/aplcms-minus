@@ -1,0 +1,20 @@
+uuid: c2f445b7-d52e-4bde-b1f1-6cd1326f6bf3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.name
+field_name: name
+entity_type: media
+bundle: document
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

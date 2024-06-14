@@ -1,0 +1,14 @@
+uuid: 6b07f1d0-bc8f-42b3-ab93-aef53e55d412
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.item_editor
+  module:
+    - user
+id: user_add_role_action.item_editor
+label: 'Add the Item Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: item_editor

@@ -1,0 +1,15 @@
+.content-header::after {
+	content: "";
+	height: 200px;
+	background: #00a3cc;
+	display: block;
+}
+article {
+	background: white;
+	max-width: 980px;
+	margin: -180px auto 30px;
+	padding: 20px;
+}
+.field--name-body {
+	text-align: left;
+}

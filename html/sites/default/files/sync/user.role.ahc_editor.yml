@@ -1,0 +1,94 @@
+uuid: 6f9d5803-c2af-4025-94ac-0390b7ed94fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.document
+    - node.type.accordion
+    - node.type.ahc_page
+    - node.type.article
+    - node.type.champion_image
+    - node.type.hero_image
+    - node.type.highighted_images
+    - node.type.oakwood
+  module:
+    - editoria11y
+    - filter
+    - media
+    - node
+    - publishcontent
+    - quickedit
+    - system
+    - toolbar
+id: ahc_editor
+label: 'AHC editor'
+weight: -9
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create accordion content'
+  - 'create ahc_page content'
+  - 'create article content'
+  - 'create champion_image content'
+  - 'create document media'
+  - 'create hero_image content'
+  - 'create highighted_images content'
+  - 'create media'
+  - 'delete ahc_page revisions'
+  - 'delete any ahc_page content'
+  - 'delete any document media'
+  - 'delete any highighted_images content'
+  - 'delete any media'
+  - 'delete any oakwood content'
+  - 'delete media'
+  - 'delete oakwood revisions'
+  - 'delete own accordion content'
+  - 'delete own ahc_page content'
+  - 'delete own article content'
+  - 'delete own document media'
+  - 'delete own highighted_images content'
+  - 'delete own oakwood content'
+  - 'edit any accordion content'
+  - 'edit any ahc_page content'
+  - 'edit any article content'
+  - 'edit any document media'
+  - 'edit any highighted_images content'
+  - 'edit any oakwood content'
+  - 'edit own accordion content'
+  - 'edit own ahc_page content'
+  - 'edit own article content'
+  - 'edit own document media'
+  - 'edit own highighted_images content'
+  - 'edit own oakwood content'
+  - 'publish any node type accordion'
+  - 'publish any node type ahc_page'
+  - 'publish editable content'
+  - 'publish editable node type accordion'
+  - 'publish editable node type ahc_page'
+  - 'publish own node type accordion'
+  - 'publish own node type ahc_page'
+  - 'revert ahc_page revisions'
+  - 'revert oakwood revisions'
+  - 'unpublish any node type ahc_page'
+  - 'unpublish editable content'
+  - 'unpublish editable node type ahc_page'
+  - 'unpublish own node type accordion'
+  - 'unpublish own node type ahc_page'
+  - 'unpublish own node type article'
+  - 'update any media'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view ahc_page revisions'
+  - 'view all media revisions'
+  - 'view editoria11y checker'
+  - 'view oakwood revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

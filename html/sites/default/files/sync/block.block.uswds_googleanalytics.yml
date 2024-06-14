@@ -1,0 +1,30 @@
+uuid: e57566ee-26f1-46bc-8d04-13b18a9f0182
+langcode: eng
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:43739dbf-be50-4855-bb77-129c516516a0'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds
+id: uswds_googleanalytics
+theme: uswds
+region: header_top
+weight: -19
+provider: null
+plugin: 'block_content:43739dbf-be50-4855-bb77-129c516516a0'
+settings:
+  id: 'block_content:43739dbf-be50-4855-bb77-129c516516a0'
+  label: 'Google Analytics'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/slr/*\r\n/apltv/*\r\n/accs-contact"

@@ -1,0 +1,19 @@
+uuid: a572c214-8a55-4325-94e5-2570d3c7af55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_api_format
+    - node.type.apl_item
+id: node.apl_item.field_api_format
+field_name: field_api_format
+entity_type: node
+bundle: apl_item
+label: Format
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

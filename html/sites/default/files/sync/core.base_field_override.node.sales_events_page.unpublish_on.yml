@@ -1,0 +1,18 @@
+uuid: 84f238c8-d5aa-4009-a8a3-8d2117813130
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: sales_events_page
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

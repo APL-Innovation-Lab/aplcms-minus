@@ -1,0 +1,18 @@
+uuid: a4bd60c7-3e42-4257-b2b5-ec2512ed9d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activity_page
+id: node.activity_page.title
+field_name: title
+entity_type: node
+bundle: activity_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 4c7f44d6-3924-4231-9104-9c90c735d4ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.created
+field_name: created
+entity_type: node
+bundle: highighted_images
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

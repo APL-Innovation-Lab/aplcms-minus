@@ -1,0 +1,18 @@
+uuid: d11e98f8-71f4-4edf-bb63-65cd70f6ce9e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.database
+id: node.database.publish_on
+field_name: publish_on
+entity_type: node
+bundle: database
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,21 @@
+uuid: 953e41c9-444a-4c37-86ab-744401908737
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_notes
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_general_notes
+field_name: field_general_notes
+entity_type: node
+bundle: archives_index
+label: 'General Notes'
+description: 'example: Banner is hanging in the archives workroom'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

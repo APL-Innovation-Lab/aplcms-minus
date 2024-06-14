@@ -1,0 +1,12 @@
+#calendar td {
+	vertical-align: top;
+	width: 100px;
+}
+#calendar a {
+	display: block;
+}
+.thumbnail {
+	width: 25%;
+	float: left;
+	margin: 0 1px 5px;
+}

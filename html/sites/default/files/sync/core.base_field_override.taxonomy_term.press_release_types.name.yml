@@ -1,0 +1,18 @@
+uuid: c4d0e71b-fdaf-4d51-a6d5-295f1ae5dda7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.press_release_types
+id: taxonomy_term.press_release_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: press_release_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

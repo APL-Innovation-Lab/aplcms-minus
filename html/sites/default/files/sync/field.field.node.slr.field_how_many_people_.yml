@@ -1,0 +1,23 @@
+uuid: 689c4bff-9da3-4d93-96a7-a09aa05ef3d9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_many_people_
+    - node.type.slr
+id: node.slr.field_how_many_people_
+field_name: field_how_many_people_
+entity_type: node
+bundle: slr
+label: 'How many people?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

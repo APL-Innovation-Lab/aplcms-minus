@@ -1,0 +1,22 @@
+uuid: a609d7a4-3842-4fac-b427-c44833f2cd63
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_tag
+id: taxonomy_term.recycled_reads_tag.status
+field_name: status
+entity_type: taxonomy_term
+bundle: recycled_reads_tag
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,31 @@
+uuid: 1873bb34-b67b-4cb7-b33a-13860ef2470f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bibliocommons_list
+  module:
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__bibliocommons_list_block_5
+theme: aplpa
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:bibliocommons_list-block_5'
+settings:
+  id: 'views_block:bibliocommons_list-block_5'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    nid: '@node.node_route_context:node'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ahc\r\n/node/7740751"

@@ -1,0 +1,8 @@
+uuid: 6ffee6d1-d8ef-4816-9bc3-b35fa73c35e3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Interest Channels'
+vid: interest_channels
+description: ''
+weight: 10

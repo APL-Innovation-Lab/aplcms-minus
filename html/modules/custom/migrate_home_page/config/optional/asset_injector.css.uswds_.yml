@@ -1,0 +1,22 @@
+uuid: 3d1f8030-be6a-4440-91ae-99ba15d26a8a
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ejL5s5dweHfxPfS52Loyep_p6vRrtz_7SJfVW16omXo
+id: uswds_
+label: 'uswds '
+code: |-
+  .apl-alert-row {
+  	background: #f7a700;
+  	padding: 3px 0;
+  }
+  .webform-options-display-two-columns div.form-item, 
+  .webform-options-display-three-columns div.form-item {
+  	border: 1px solid transparent;
+  }
+conditions_require_all: true
+conditions: {  }
+contexts: {  }
+media: all
+preprocess: true

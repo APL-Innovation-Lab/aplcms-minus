@@ -1,0 +1,31 @@
+id: meeting_room_migration
+label: 'Migrate Meeting Room Reservations from CSV'
+migration_group: meeting_room
+source:
+  plugin: csv
+  path: 'sites/default/files/migrate_meeting_rooms/submissions.csv'
+  header_row_count: 1
+  fields:
+    -
+      name: serial
+      selector: serial
+  ids:
+    serial:
+      type: integer
+process:
+  webform_id:
+    plugin: default_value
+    default_value: 'meeting_room_reservation_request'
+  serial: serial
+  sid: sid
+  group_representative_full_name: group_representative_full_name
+  location: 
+    plugin: entity_lookup
+    source: location__id
+    value_key: 'tid'  # or 'uuid' or any unique identifier for the entity
+    entity_type: 'taxonomy_term'
+    bundle: 'library_location'  # optional
+  # Add more fields here.
+destination:
+  plugin: 'entity:webform_submission'
+

@@ -1,0 +1,32 @@
+uuid: dcd9e621-685a-4a1c-b8b8-df2a95676aa8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.event
+    - taxonomy.vocabulary.event_tags
+    - taxonomy.vocabulary.remote_locations
+    - taxonomy.vocabulary.sponsors
+  module:
+    - filter
+    - node
+    - taxonomy
+id: events_super_admin
+label: 'Events Super Admin'
+weight: 25
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'create event content'
+  - 'create terms in event_tags'
+  - 'create terms in remote_locations'
+  - 'create terms in sponsors'
+  - 'delete any event content'
+  - 'delete own event content'
+  - 'edit any event content'
+  - 'edit own event content'
+  - 'edit terms in event_tags'
+  - 'edit terms in remote_locations'
+  - 'edit terms in sponsors'
+  - 'use text format full_html'

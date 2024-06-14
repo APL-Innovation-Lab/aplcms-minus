@@ -1,0 +1,18 @@
+uuid: 3630f1db-50c6-43c0-a7e0-d6b7dd61976c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.metatag
+field_name: metatag
+entity_type: node
+bundle: hero_banner_image
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,35 @@
+uuid: 99f4ed29-856f-43b5-a3fd-cbe9e2bf3aa1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - field.field.taxonomy_term.database_subjects.feeds_item
+    - field.field.taxonomy_term.database_subjects.field_main_image_ds
+    - field.field.taxonomy_term.database_subjects.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.database_subjects.token
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: token
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image_ds: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

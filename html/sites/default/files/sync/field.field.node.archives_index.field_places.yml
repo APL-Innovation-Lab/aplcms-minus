@@ -1,0 +1,19 @@
+uuid: 54020783-be52-4405-833b-d97b4f3645c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_places
+    - node.type.archives_index
+id: node.archives_index.field_places
+field_name: field_places
+entity_type: node
+bundle: archives_index
+label: Places
+description: 'examples: Austin (Tex.); Oakwood Cemetery (Austin, Tex.); Bee County (Tex.); Dallas County (Tex.); Galveston (Tex.); Mexico'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: e17e647c-34bd-4a66-9c62-c571895ce11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.database
+id: node.database.promote
+field_name: promote
+entity_type: node
+bundle: database
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

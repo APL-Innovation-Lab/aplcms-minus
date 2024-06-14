@@ -1,0 +1,18 @@
+uuid: 8564d0d7-4418-4123-9f32-02b42fbb279b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.errors_meeting_rooms
+id: taxonomy_term.errors_meeting_rooms.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: errors_meeting_rooms
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

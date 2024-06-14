@@ -1,0 +1,56 @@
+uuid: a9262362-716b-4355-a4c4-410df306073d
+langcode: eng
+status: true
+dependencies: {  }
+id: reference_stats_redirect_2
+label: 'Reference Stats redirect 2'
+events:
+  -
+    event_name: 'rules_entity_insert:node--reference_stats'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 3be5a708-3c8b-4292-8abd-bca443ecf070
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 0f0c7b81-bdb8-4b11-b503-9e9f1df61396
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 9c20c7ca-4c14-4508-9e50-15ad503241bb
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: cc340a12-c4eb-4adc-858e-18030e5a88fa
+        weight: -50
+        action_id: rules_system_message
+        context_values:
+          message: 'Reference Stat added.'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 0c689b59-ddb6-4be0-84c6-cfd946e08689
+        weight: -49
+        action_id: rules_page_redirect
+        context_values:
+          url: /admin/attendance-stats
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

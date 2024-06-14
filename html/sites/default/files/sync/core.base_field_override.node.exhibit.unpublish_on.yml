@@ -1,0 +1,18 @@
+uuid: f51dac24-a6ab-489d-a661-9d3c26e444ad
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.exhibit
+id: node.exhibit.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: exhibit
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

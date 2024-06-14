@@ -1,0 +1,22 @@
+uuid: 10edbcb1-999d-4b70-a450-8804083ee816
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.sticky
+field_name: sticky
+entity_type: node
+bundle: playlist
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

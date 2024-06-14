@@ -1,0 +1,13 @@
+.ahc-title.grid-offset-1.grid-col-10 {
+	padding: 0 !important;
+}
+nav.grid-offset-1.grid-col-10 {
+	clear: both;
+	padding: 0;
+}
+div div.ahc-title.grid-offset-1.grid-col-10 h1 {
+	padding-top: 0 !important;
+}
+nav ol.breadcrumbs {
+	display: flex !important;
+}

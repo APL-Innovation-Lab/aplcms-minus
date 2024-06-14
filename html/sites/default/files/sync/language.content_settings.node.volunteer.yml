@@ -1,0 +1,18 @@
+uuid: 871677fb-a62a-4659-a9ee-a3dc1ae99681
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.volunteer
+target_entity_type_id: node
+target_bundle: volunteer
+default_langcode: site_default
+language_alterable: false

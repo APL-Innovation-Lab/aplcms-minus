@@ -1,0 +1,120 @@
+title: 'User Profile'
+description: 'A user profile webform template.'
+elements: |
+  account_information:
+    '#title': 'Your Account Information'
+    '#type': webform_section
+    user_name:
+      '#type': textfield
+      '#title': 'User Name'
+    picture:
+      '#type': managed_file
+      '#title': Picture
+      '#description': 'Your virtual face or picture. Pictures larger than 1024x1024 pixels will be scaled down.'
+      '#max_filesize': '2'
+      '#file_extensions': 'gif jpg png svg'
+  personal_information:
+    '#title': 'Your Personal Information'
+    '#type': webform_section
+    first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    last_name:
+      '#type': textfield
+      '#title': 'Last Name'
+      '#required': true
+    country:
+      '#type': select
+      '#title': Country
+      '#options': country_names
+    location:
+      '#type': webform_location_places
+      '#title': Location
+      '#title_display': invisible
+      '#description': 'Your location will be saved and may be shared.'
+      '#geolocation': true
+      '#address__title': Locations
+    languages:
+      '#type': select
+      '#title': 'Languages Spoken'
+      '#description': 'Select one or more languages you speak.'
+      '#multiple': true
+      '#select2': true
+      '#options': languages
+    sex:
+      '#type': webform_radios_other
+      '#title': Sex
+      '#options': sex
+    biography:
+      '#type': text_format
+      '#title': Biography
+      '#description': 'Please include a short blurb about yourself to let us know who you are outside of Drupal.'
+    website:
+      '#type': url
+      '#title': Website
+    irc:
+      '#type': textfield
+      '#title': IRC
+      '#description': 'The nickname you use on various channels of irc.freenode.net'
+    twitter:
+      '#type': textfield
+      '#title': Twitter
+      '#description': 'Your Twitter handle.'
+    github:
+      '#type': textfield
+      '#title': GitHub
+      '#description': 'Your GitHub user name.'
+  work_information:
+    '#title': 'Your Work Information'
+    '#type': webform_section
+    current_organization:
+      '#type': textfield
+      '#title': 'Current Organization'
+    current_title:
+      '#type': textfield
+      '#title': 'Current Job Title'
+    organizations:
+      '#type': textarea
+      '#title': 'Past Organizations'
+      '#description': 'List companies or institutions you have worked for.'
+    industries:
+      '#type': webform_select_other
+      '#title': 'Industries Worked In'
+      '#options': industry
+      '#multiple': true
+      '#select2': true
+  email_settings:
+    '#title': 'Email addresses'
+    '#type': webform_section
+    email:
+      '#type': email
+      '#title': 'Primary E-mail Address'
+      '#description': 'Enter your primary email addresses, which will be used for all email communications.'
+    emails:
+      '#type': webform_email_multiple
+      '#title': 'Secondary E-mail Addresses'
+      '#description': 'Enter multiple email addresses separated by commas.'
+  regional_settings:
+    '#title': 'Regional Settings'
+    '#type': webform_section
+    time_zone:
+      '#type': select
+      '#title': Timezone
+      '#options': time_zones
+    language:
+      '#type': select
+      '#title': 'Preferred Language'
+      '#description': 'This account''s default language for emails, and preferred language for site presentation.'
+      '#options': languages
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Register
+handlers:
+  email_notification:
+    label: 'Email Notification'
+    settings:
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default

@@ -1,0 +1,74 @@
+uuid: 7bcceceb-59e8-481b-99e3-d8b4bbd6f6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.special_dates.feeds_item
+    - field.field.node.special_dates.field_early_closing
+    - field.field.node.special_dates.field_special_date
+    - node.type.special_dates
+    - views.view.teasers
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - options
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          69a170d7-057a-4fb1-a691-0839967ae0f7:
+            uuid: 69a170d7-057a-4fb1-a691-0839967ae0f7
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_14'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.special_dates.teaser
+targetEntityType: node
+bundle: special_dates
+mode: teaser
+content:
+  field_early_closing:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_special_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

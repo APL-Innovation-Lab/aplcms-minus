@@ -1,0 +1,14 @@
+uuid: b8de8cc9-f377-4df9-8c9c-8f401e09650d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hours_dates_editor
+  module:
+    - user
+id: user_add_role_action.hours_dates_editor
+label: 'Add the Hours &amp; Dates Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hours_dates_editor

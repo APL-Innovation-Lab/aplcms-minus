@@ -1,0 +1,18 @@
+uuid: eeeba15d-0c44-4de3-9b92-83799e5d6f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.title
+field_name: title
+entity_type: node
+bundle: archives_index
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

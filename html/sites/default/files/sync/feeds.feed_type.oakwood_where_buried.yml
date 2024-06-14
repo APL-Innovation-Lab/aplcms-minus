@@ -1,0 +1,95 @@
+uuid: a555c4bc-c65b-4ddd-9bb5-dd76d0d4818c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.oakwood.field_disease
+    - field.field.node.oakwood.field_pkoakwood
+    - field.field.node.oakwood.field_seclotspace
+    - field.field.node.oakwood.field_whereburied
+    - node.type.oakwood
+  module:
+    - node
+label: 'oakwood - where buried'
+id: oakwood_where_buried
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: oakwood
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  pkoakwood:
+    value: pkoakwood
+    label: pkoakwood
+    machine_name: pkoakwood
+    type: csv
+  whereburied:
+    value: whereburied
+    label: whereburied
+    machine_name: whereburied
+    type: csv
+  seclotspace:
+    value: SecLotSpace
+    label: SecLotSpace
+    machine_name: seclotspace
+    type: csv
+  id:
+    value: id
+    label: id
+    machine_name: id
+    type: csv
+  disease:
+    value: disease
+    label: disease
+    machine_name: disease
+    type: csv
+mappings:
+  -
+    target: field_pkoakwood
+    map:
+      value: id
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_whereburied
+    map:
+      value: whereburied
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_seclotspace
+    map:
+      value: seclotspace
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_disease
+    map:
+      value: disease
+    settings:
+      language: null
+    unique: {  }

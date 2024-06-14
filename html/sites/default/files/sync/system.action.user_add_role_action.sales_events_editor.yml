@@ -1,0 +1,14 @@
+uuid: 9e1d6b3a-73da-40ea-b320-3a80ef8b0a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sales_events_editor
+  module:
+    - user
+id: user_add_role_action.sales_events_editor
+label: 'Add the Sales &amp; Events Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sales_events_editor

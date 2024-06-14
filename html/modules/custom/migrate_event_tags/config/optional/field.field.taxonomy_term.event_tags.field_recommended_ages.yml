@@ -1,0 +1,21 @@
+uuid: 6feda03b-6b2f-48c7-9fb4-a7695e750f84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_recommended_ages
+    - taxonomy.vocabulary.event_tags
+  module:
+    - options
+id: taxonomy_term.event_tags.field_recommended_ages
+field_name: field_recommended_ages
+entity_type: taxonomy_term
+bundle: event_tags
+label: 'Recommended Ages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

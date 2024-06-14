@@ -1,0 +1,22 @@
+uuid: 733855ac-8afb-4863-bd5c-8ab793403a3e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.status
+field_name: status
+entity_type: node
+bundle: staff_recommend
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

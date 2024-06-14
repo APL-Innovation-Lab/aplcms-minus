@@ -1,0 +1,146 @@
+uuid: 2966a5d2-906d-4bcc-b37f-46dc6b41ce4e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.page.body
+    - field.field.node.page.feeds_item
+    - field.field.node.page.field_accordions
+    - field.field.node.page.field_biblio_list_urls
+    - field.field.node.page.field_bibliocommons_list_url
+    - field.field.node.page.field_booklist
+    - field.field.node.page.field_do_not_index
+    - field.field.node.page.field_image_attribution_ahc
+    - field.field.node.page.field_image_gallery
+    - field.field.node.page.field_link_path
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_misc_images
+    - field.field.node.page.field_pdf
+    - field.field.node.page.field_vimeo
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - file
+    - image
+    - layout_builder
+    - metatag
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.list
+targetEntityType: node
+bundle: page
+mode: list
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  field_booklist:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_image_attribution_ahc:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image_gallery:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_link_path:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: first
+  field_misc_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_vimeo:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  feeds_item: true
+  field_accordions: true
+  field_biblio_list_urls: true
+  field_bibliocommons_list_url: true
+  field_do_not_index: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

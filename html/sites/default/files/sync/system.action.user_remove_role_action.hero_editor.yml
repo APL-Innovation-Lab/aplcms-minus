@@ -1,0 +1,14 @@
+uuid: c3bfa40d-d46e-49f2-a00b-640c75e1576d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hero_editor
+  module:
+    - user
+id: user_remove_role_action.hero_editor
+label: 'Remove the Hero Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hero_editor

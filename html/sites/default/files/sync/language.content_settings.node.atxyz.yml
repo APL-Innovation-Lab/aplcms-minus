@@ -1,0 +1,18 @@
+uuid: 83e9e71b-187a-4bed-8a04-d71677fa3ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.atxyz
+target_entity_type_id: node
+target_bundle: atxyz
+default_langcode: site_default
+language_alterable: false

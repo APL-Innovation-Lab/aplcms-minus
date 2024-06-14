@@ -1,0 +1,21 @@
+uuid: 403e78cc-3dad-4458-a9dd-e33efb5d1a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.archives_index
+  module:
+    - datetime_range
+id: node.archives_index.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: archives_index
+label: 'Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

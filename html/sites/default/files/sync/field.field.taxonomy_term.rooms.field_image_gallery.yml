@@ -1,0 +1,45 @@
+uuid: bd280b69-a335-4e0e-b1ef-38c6b4bf44be
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image_gallery
+    - taxonomy.vocabulary.rooms
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: taxonomy_term.rooms.field_image_gallery
+field_name: field_image_gallery
+entity_type: taxonomy_term
+bundle: rooms
+label: 'Image Gallery'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

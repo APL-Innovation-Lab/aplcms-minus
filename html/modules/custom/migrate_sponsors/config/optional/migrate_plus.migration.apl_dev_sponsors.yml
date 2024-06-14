@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_sponsors
+id: apl_dev_sponsors
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: Sponsors
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_sponsors/sponsors.json'
+  item_selector: sponsor
+  fields:
+    -
+      name: tid
+      selector: tid
+    -
+      name: name
+      selector: name
+    -
+      name: field_link
+      selector: field_link
+    -
+      name: logo_image
+      selector: logo_image
+    -
+      name: logo_text
+      selector: logo_text
+  ids:
+    tid:
+      type: integer
+process:
+  vid:
+    plugin: default_value
+    default_value: sponsors
+  name: name
+  field_link/uri: field_link
+  field_logo:
+    plugin: image_import
+    source: logo_image
+    destination: 'public://sponsors/'
+    alt: logo_text
+    skip_on_missing_source: true
+
+  tid: tid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: {  }

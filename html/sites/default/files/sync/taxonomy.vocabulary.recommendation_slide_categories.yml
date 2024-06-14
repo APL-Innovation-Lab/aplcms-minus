@@ -1,0 +1,8 @@
+uuid: bec25211-ac07-4703-be82-06c4235a7212
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recommendation Slide Categories'
+vid: recommendation_slide_categories
+description: ''
+weight: -2

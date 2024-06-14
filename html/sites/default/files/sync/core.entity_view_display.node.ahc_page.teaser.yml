@@ -1,0 +1,92 @@
+uuid: 42c131eb-b8f5-480f-ba74-635aefa82b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ahc_page.body
+    - field.field.node.ahc_page.feeds_item
+    - field.field.node.ahc_page.field_accordions
+    - field.field.node.ahc_page.field_bibliocommons_list_url
+    - field.field.node.ahc_page.field_body_bottom_
+    - field.field.node.ahc_page.field_booklist
+    - field.field.node.ahc_page.field_image_attribution_ahc
+    - field.field.node.ahc_page.field_main_image
+    - field.field.node.ahc_page.field_more_lists
+    - field.field.node.ahc_page.field_pdf
+    - field.field.node.ahc_page.field_postscript
+    - field.field.node.ahc_page.field_slideshow_ahc
+    - field.field.node.ahc_page.field_template
+    - field.field.node.ahc_page.field_video_ahc
+    - field.field.node.ahc_page.field_webform
+    - field.field.node.ahc_page.layout_builder__layout
+    - node.type.ahc_page
+    - views.view.teasers
+  module:
+    - file
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b32ebe9d-a068-44e8-814b-920200a8fe9e:
+            uuid: b32ebe9d-a068-44e8-814b-920200a8fe9e
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_8'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.ahc_page.teaser
+targetEntityType: node
+bundle: ahc_page
+mode: teaser
+content:
+  field_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_accordions: true
+  field_bibliocommons_list_url: true
+  field_body_bottom_: true
+  field_booklist: true
+  field_image_attribution_ahc: true
+  field_main_image: true
+  field_more_lists: true
+  field_postscript: true
+  field_slideshow_ahc: true
+  field_template: true
+  field_video_ahc: true
+  field_webform: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

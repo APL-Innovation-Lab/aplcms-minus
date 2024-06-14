@@ -1,0 +1,21 @@
+uuid: b2624ece-56c0-4ec3-afb5-de1e473d423f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_type
+    - node.type.keyword_match
+  module:
+    - options
+id: node.keyword_match.field_link_type
+field_name: field_link_type
+entity_type: node
+bundle: keyword_match
+label: 'Link Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,12 @@
+.block.block-layout-builder.block-field-blocknodearticletitle,
+.block.block-layout-builder.block-field-blocknodearticlebody {
+	background: white;
+	padding: 1px 15px;
+}
+.views-row {
+	margin-bottom: 20px;
+}
+.apl-language-switcher.usa-button.usa-button-outline {
+	float: right;
+	margin-left: 20px;
+}

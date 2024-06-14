@@ -1,0 +1,21 @@
+uuid: 09881ef3-423a-4d0b-91a2-906cdac8fa74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_final_process_date
+    - node.type.archives_index
+  module:
+    - datetime
+id: node.archives_index.field_final_process_date
+field_name: field_final_process_date
+entity_type: node
+bundle: archives_index
+label: 'Final Process Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

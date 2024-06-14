@@ -1,0 +1,28 @@
+uuid: 1bb13e93-e184-4970-b404-ef5c9eabee91
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.recommendation_category
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_recommendationcategory
+theme: claro2noGA
+region: content
+weight: -13
+provider: null
+plugin: 'facet_block:recommendation_category'
+settings:
+  id: 'facet_block:recommendation_category'
+  label: 'Recommendation Category'
+  label_display: visible
+  provider: facets
+  block_id: recommendationcategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

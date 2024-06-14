@@ -1,0 +1,21 @@
+uuid: 8b276485-357f-4d1c-9277-5329a4e0d22a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_restrictions
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_restrictions
+field_name: field_restrictions
+entity_type: node
+bundle: archives_index
+label: Restrictions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

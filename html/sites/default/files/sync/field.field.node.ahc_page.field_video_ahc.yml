@@ -1,0 +1,27 @@
+uuid: d67e1f36-76fe-4d2b-9dda-424af2dba8a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_ahc
+    - node.type.ahc_page
+  module:
+    - file
+id: node.ahc_page.field_video_ahc
+field_name: field_video_ahc
+entity_type: node
+bundle: ahc_page
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

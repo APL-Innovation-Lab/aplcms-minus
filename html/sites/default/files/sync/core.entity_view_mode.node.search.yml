@@ -1,0 +1,10 @@
+uuid: ef232627-6578-4500-8540-aa7dd50306c6
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: node.search
+label: search
+targetEntityType: node
+cache: true

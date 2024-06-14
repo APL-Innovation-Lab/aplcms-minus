@@ -1,0 +1,14 @@
+uuid: 76d47265-c2d0-4ab4-99d2-edf866eb9fe9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.passports_page_editor
+  module:
+    - user
+id: user_add_role_action.passports_page_editor
+label: 'Add the Passports Page Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: passports_page_editor

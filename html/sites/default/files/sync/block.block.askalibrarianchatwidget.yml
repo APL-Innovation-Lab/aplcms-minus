@@ -1,0 +1,30 @@
+uuid: de351d89-1c04-4070-9789-fdcf07a15fb5
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: askalibrarianchatwidget
+theme: claro2
+region: content_footer
+weight: -24
+provider: null
+plugin: 'block_content:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+settings:
+  id: 'block_content:1c0300c5-9ace-49b3-882c-0daac176c6a5'
+  label: 'Ask a Librarian Chat Widget'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/2user/*\r\n/2admin/*"

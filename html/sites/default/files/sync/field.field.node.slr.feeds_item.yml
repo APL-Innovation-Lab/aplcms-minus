@@ -1,0 +1,23 @@
+uuid: 709c8b50-7c62-4651-a885-3300b4baf9b2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.slr
+  module:
+    - feeds
+id: node.slr.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: slr
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

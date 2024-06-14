@@ -1,0 +1,14 @@
+uuid: e074c5b7-d407-4a44-9571-381617e35791
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.outreach
+  module:
+    - user
+id: user_remove_role_action.outreach
+label: 'Remove the Outreach role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: outreach

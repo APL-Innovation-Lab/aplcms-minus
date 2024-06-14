@@ -1,0 +1,21 @@
+uuid: b30fa0aa-fbcf-494f-90ba-3b2d1e03abcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_area
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_jp_area
+field_name: field_jp_area
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Coaching area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

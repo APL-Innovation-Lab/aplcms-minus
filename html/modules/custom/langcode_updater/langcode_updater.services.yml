@@ -1,0 +1,4 @@
+services:
+  langcode_updater.migrate_langcode:
+    class: Drupal\langcode_updater\MigrateLangcode
+    arguments: ['@entity_type.manager', '@messenger']

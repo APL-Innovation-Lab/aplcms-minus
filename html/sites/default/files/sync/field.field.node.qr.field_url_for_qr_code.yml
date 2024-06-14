@@ -1,0 +1,23 @@
+uuid: ae419ad0-22ef-43b5-acd5-c07253668c5e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_for_qr_code
+    - node.type.qr
+  module:
+    - endroid_qr_code
+id: node.qr.field_url_for_qr_code
+field_name: field_url_for_qr_code
+entity_type: node
+bundle: qr
+label: 'URL for QR Code'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'https://library.austintexas.gov/'
+default_value_callback: ''
+settings: {  }
+field_type: endroid_qr_code

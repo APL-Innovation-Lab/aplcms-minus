@@ -1,0 +1,22 @@
+uuid: d3082747-8af1-425d-b2b0-3cfefe4db2d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.sticky
+field_name: sticky
+entity_type: node
+bundle: sales_events_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

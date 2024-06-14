@@ -1,0 +1,182 @@
+uuid: 7422158a-6cbe-40ee-b998-7a9575bf47f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.atxyz.created
+    - core.base_field_override.node.atxyz.title
+    - core.base_field_override.node.atxyz.uid
+    - field.field.node.atxyz.field_atxyz_files
+    - field.field.node.atxyz.field_zine_agreement
+    - field.field.node.atxyz.field_zine_email_address
+    - node.type.atxyz
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      1c4e7db2-9501-4bd9-9ae0-9f44fe263204:
+        separator: ','
+        limit: null
+        uuid: 1c4e7db2-9501-4bd9-9ae0-9f44fe263204
+        plugin: explode
+        source: field_atxyz_files
+        weight: 0
+        label: Explode
+      2c2a3044-6f25-4e5a-bdaa-d82aa1bd109c:
+        character: ''
+        side: trim
+        uuid: 2c2a3044-6f25-4e5a-bdaa-d82aa1bd109c
+        plugin: trim
+        source: field_atxyz_files
+        weight: 1
+        label: 'Characters to trim'
+      55199748-4100-4bc0-873b-4a69b9188e90:
+        separator: ','
+        limit: null
+        uuid: 55199748-4100-4bc0-873b-4a69b9188e90
+        plugin: explode
+        source: field_atxyz_files_description
+        weight: 0
+        label: Explode
+      88aed86a-16a5-4539-a531-61587a82163a:
+        character: ''
+        side: trim
+        uuid: 88aed86a-16a5-4539-a531-61587a82163a
+        plugin: trim
+        source: field_atxyz_files_description
+        weight: 1
+        label: 'Characters to trim'
+id: atxyz
+label: ATXyz
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: atxyz
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  field_zine_agreement:
+    value: field_zine_agreement
+    label: field_zine_agreement
+    machine_name: field_zine_agreement
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  field_zine_email_address:
+    value: field_zine_email_address
+    label: field_zine_email_address
+    machine_name: field_zine_email_address
+    type: csv
+  field_zines_files:
+    value: field_zines_files
+    label: field_zines_files
+    machine_name: field_zines_files
+    type: csv
+  field_zines_files_description:
+    value: field_zines_files-description
+    label: field_zines_files-description
+    machine_name: field_zines_files_description
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_atxyz_files:
+    value: field_atxyz_files
+    label: field_atxyz_files
+    machine_name: field_atxyz_files
+    type: csv
+  field_atxyz_files_description:
+    value: field_atxyz_files-description
+    label: field_atxyz_files-description
+    machine_name: field_atxyz_files_description
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_zine_agreement
+    map:
+      value: field_zine_agreement
+    settings:
+      language: ''
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_zine_email_address
+    map:
+      value: field_zine_email_address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_atxyz_files
+    map:
+      target_id: field_atxyz_files
+      description: field_atxyz_files_description
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'

@@ -1,0 +1,38 @@
+uuid: e0edafb9-6f5f-4b2a-b217-def798855bdd
+langcode: eng
+status: true
+dependencies: {  }
+id: apl_item
+label: 'APL Item'
+events:
+  -
+    event_name: 'rules_entity_insert:node--apl_item'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 99acbea2-63a7-4208-a267-141a86449925
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 37b45512-1638-49fa-8b05-37ad7e39c67b
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 1ae196fe-e0a3-4972-9e71-dc6bbc2dbf70
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 8a30eba9-2914-493d-85d2-9a0627819610
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /node/add/apl_item
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

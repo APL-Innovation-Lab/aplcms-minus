@@ -1,0 +1,20 @@
+uuid: 89b25c7d-5e33-4923-90fc-4001876a6d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_tag
+  module:
+    - path
+id: taxonomy_term.recycled_reads_tag.path
+field_name: path
+entity_type: taxonomy_term
+bundle: recycled_reads_tag
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

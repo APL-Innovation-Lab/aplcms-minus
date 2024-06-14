@@ -1,0 +1,22 @@
+uuid: 46437b6d-793c-45d1-a1ef-8bcee7d5ff09
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.intended_audience
+id: taxonomy_term.intended_audience.status
+field_name: status
+entity_type: taxonomy_term
+bundle: intended_audience
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

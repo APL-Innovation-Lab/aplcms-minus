@@ -1,0 +1,23 @@
+uuid: 28409a15-364f-4039-bbc2-2676ab28c646
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internal_
+    - node.type.room_reservation
+id: node.room_reservation.field_internal_
+field_name: field_internal_
+entity_type: node
+bundle: room_reservation
+label: 'Is this reservation for Internal use ?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Internal
+  off_label: Public
+field_type: boolean

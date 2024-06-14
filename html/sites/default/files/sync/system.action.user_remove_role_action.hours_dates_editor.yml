@@ -1,0 +1,14 @@
+uuid: 480ac15a-3c52-4d49-aaa5-d6dc5619b3e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hours_dates_editor
+  module:
+    - user
+id: user_remove_role_action.hours_dates_editor
+label: 'Remove the Hours &amp; Dates Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hours_dates_editor

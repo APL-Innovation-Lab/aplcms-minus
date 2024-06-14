@@ -1,0 +1,20 @@
+uuid: f341eef0-25fa-4fe2-b834-94715b8ba3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+  module:
+    - path
+id: node.playlist.path
+field_name: path
+entity_type: node
+bundle: playlist
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

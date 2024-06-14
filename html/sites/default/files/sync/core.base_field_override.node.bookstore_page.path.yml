@@ -1,0 +1,20 @@
+uuid: 04b4371d-104e-4536-91cf-d5a27bd4e3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+  module:
+    - path
+id: node.bookstore_page.path
+field_name: path
+entity_type: node
+bundle: bookstore_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

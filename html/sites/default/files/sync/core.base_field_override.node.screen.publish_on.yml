@@ -1,0 +1,18 @@
+uuid: 816a5067-5119-46fa-bb2b-99ec00fdad4e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.screen
+id: node.screen.publish_on
+field_name: publish_on
+entity_type: node
+bundle: screen
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

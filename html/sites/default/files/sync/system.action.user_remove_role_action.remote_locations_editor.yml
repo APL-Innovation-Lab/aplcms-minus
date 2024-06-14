@@ -1,0 +1,14 @@
+uuid: c110de8e-6a4f-4ada-b360-f285d8cfd6c5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.remote_locations_editor
+  module:
+    - user
+id: user_remove_role_action.remote_locations_editor
+label: 'Remove the Remote Locations editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: remote_locations_editor

@@ -1,0 +1,94 @@
+uuid: 1afa8e5f-2b61-4e17-96cd-566e7d9d254d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser2
+    - field.field.taxonomy_term.library_location.feeds_item
+    - field.field.taxonomy_term.library_location.field_accordions
+    - field.field.taxonomy_term.library_location.field_bibliocommons_list_url
+    - field.field.taxonomy_term.library_location.field_body_bottom_
+    - field.field.taxonomy_term.library_location.field_body_top_
+    - field.field.taxonomy_term.library_location.field_capacities
+    - field.field.taxonomy_term.library_location.field_district
+    - field.field.taxonomy_term.library_location.field_do_not_index
+    - field.field.taxonomy_term.library_location.field_latitude_longitude
+    - field.field.taxonomy_term.library_location.field_location_code
+    - field.field.taxonomy_term.library_location.field_location_main_image
+    - field.field.taxonomy_term.library_location.field_notes
+    - field.field.taxonomy_term.library_location.field_open_hours_html
+    - field.field.taxonomy_term.library_location.field_phone_num
+    - field.field.taxonomy_term.library_location.field_special_hours_note
+    - field.field.taxonomy_term.library_location.field_special_weight
+    - field.field.taxonomy_term.library_location.field_staff_recommendations
+    - field.field.taxonomy_term.library_location.field_street_address
+    - field.field.taxonomy_term.library_location.field_zipcode
+    - field.field.taxonomy_term.library_location.layout_builder__layout
+    - taxonomy.vocabulary.library_location
+    - views.view.terms_taxonomy
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          de4d22db-f095-4e2d-a76c-954f442ece36:
+            uuid: de4d22db-f095-4e2d-a76c-954f442ece36
+            region: content
+            configuration:
+              id: 'views_block:terms_taxonomy-block_5'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.library_location.teaser2
+targetEntityType: taxonomy_term
+bundle: library_location
+mode: teaser2
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_accordions: true
+  field_bibliocommons_list_url: true
+  field_body_bottom_: true
+  field_body_top_: true
+  field_capacities: true
+  field_district: true
+  field_do_not_index: true
+  field_latitude_longitude: true
+  field_location_code: true
+  field_location_main_image: true
+  field_notes: true
+  field_open_hours_html: true
+  field_phone_num: true
+  field_special_hours_note: true
+  field_special_weight: true
+  field_staff_recommendations: true
+  field_street_address: true
+  field_zipcode: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

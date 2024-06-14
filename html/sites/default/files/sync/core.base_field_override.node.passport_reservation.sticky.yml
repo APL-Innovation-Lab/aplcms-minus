@@ -1,0 +1,22 @@
+uuid: 902bd05e-65f6-475e-9fc5-f9b3978f7360
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.sticky
+field_name: sticky
+entity_type: node
+bundle: passport_reservation
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

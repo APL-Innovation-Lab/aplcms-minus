@@ -1,0 +1,22 @@
+uuid: a38435a0-c08f-4179-8645-1945255ea698
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.status
+field_name: status
+entity_type: node
+bundle: bookstore_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

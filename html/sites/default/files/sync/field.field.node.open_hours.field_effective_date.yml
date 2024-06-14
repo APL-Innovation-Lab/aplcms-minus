@@ -1,0 +1,26 @@
+uuid: 160d4292-0ab3-4bf7-8b73-195f387c414d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_effective_date
+    - node.type.open_hours
+  module:
+    - datetime_range
+id: node.open_hours.field_effective_date
+field_name: field_effective_date
+entity_type: node
+bundle: open_hours
+label: 'Effective Date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+5 years'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,37 @@
+uuid: 10327056-bcf7-4a30-b3b2-c9829c09cdc4
+langcode: eng
+status: false
+dependencies:
+  config:
+    - views.view.more_navigation
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__more_navigation_block_1
+theme: claro2noGA
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:more_navigation-block_1'
+settings:
+  id: 'views_block:more_navigation-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      event_editor: event_editor

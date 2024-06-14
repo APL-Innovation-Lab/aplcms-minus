@@ -1,0 +1,23 @@
+uuid: 998a511d-404b-4c09-a99d-02c5fa4ef0b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_questions
+    - node.type.reference_stats
+id: node.reference_stats.field_number_of_questions
+field_name: field_number_of_questions
+entity_type: node
+bundle: reference_stats
+label: 'Number of Questions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

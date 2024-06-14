@@ -1,0 +1,20 @@
+uuid: bfbeb1d0-4ab7-4f8a-88f5-af25d5a18484
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+  module:
+    - path
+id: node.sales_events_page.path
+field_name: path
+entity_type: node
+bundle: sales_events_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

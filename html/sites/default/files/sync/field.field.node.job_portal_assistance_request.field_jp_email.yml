@@ -1,0 +1,19 @@
+uuid: da1f4221-9b5e-45c4-8c5a-a0904890fd54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_email
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_jp_email
+field_name: field_jp_email
+entity_type: node
+bundle: job_portal_assistance_request
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

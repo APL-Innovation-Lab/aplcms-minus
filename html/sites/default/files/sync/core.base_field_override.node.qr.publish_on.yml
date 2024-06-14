@@ -1,0 +1,18 @@
+uuid: 0ce7017b-ec79-45dc-8235-90d9e767bc14
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.publish_on
+field_name: publish_on
+entity_type: node
+bundle: qr
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

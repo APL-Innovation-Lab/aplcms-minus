@@ -1,0 +1,20 @@
+uuid: 5ab0960c-c233-4595-81a7-2a80f21a0376
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_restriction_notes
+field_name: field_restriction_notes
+entity_type: node
+type: text
+settings:
+  max_length: 1000
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

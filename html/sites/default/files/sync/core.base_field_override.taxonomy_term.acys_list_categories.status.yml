@@ -1,0 +1,22 @@
+uuid: cdac30dd-329b-4b6b-8fae-e68aeea0789f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acys_list_categories
+id: taxonomy_term.acys_list_categories.status
+field_name: status
+entity_type: taxonomy_term
+bundle: acys_list_categories
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

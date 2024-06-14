@@ -1,0 +1,22 @@
+uuid: 8d375c57-db60-47c0-bf9c-3e74dd31f0ea
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.status
+field_name: status
+entity_type: node
+bundle: slr_alert
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

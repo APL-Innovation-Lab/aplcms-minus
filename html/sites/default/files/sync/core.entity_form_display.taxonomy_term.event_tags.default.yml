@@ -1,0 +1,153 @@
+uuid: f54a3f87-ba51-4a1c-9a7f-67f4bde95928
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_cat_hierarchy
+    - field.field.taxonomy_term.event_tags.field_is_an_event_category
+    - field.field.taxonomy_term.event_tags.field_library_priority
+    - field.field.taxonomy_term.event_tags.field_main_image_event
+    - field.field.taxonomy_term.event_tags.field_recommended_ages
+    - field.field.taxonomy_term.event_tags.field_ref_event_category
+    - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_retire
+    - field.field.taxonomy_term.event_tags.field_summary
+    - field.field.taxonomy_term.event_tags.field_term_subtitle
+    - field.field.taxonomy_term.event_tags.layout_builder__layout
+    - image.style.thumbnail
+    - taxonomy.vocabulary.event_tags
+  module:
+    - entity_hierarchy
+    - focal_point
+    - path
+    - text
+id: taxonomy_term.event_tags.default
+targetEntityType: taxonomy_term
+bundle: event_tags
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_cat_hierarchy:
+    type: entity_reference_hierarchy_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+      hide_weight: false
+    third_party_settings: {  }
+  field_is_an_event_category:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_library_priority:
+    type: options_buttons
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_main_image_event:
+    type: image_focal_point
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  field_recommended_ages:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ref_event_category:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reflection_category:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_retire:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_summary:
+    type: string_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_term_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 13
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  layout_builder__layout: true

@@ -1,0 +1,18 @@
+uuid: f197c51a-414e-4e63-8a06-ad192175c25b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+id: node.volunteer.publish_on
+field_name: publish_on
+entity_type: node
+bundle: volunteer
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

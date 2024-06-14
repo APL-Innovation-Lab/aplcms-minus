@@ -1,0 +1,44 @@
+uuid: dffc67a2-73e2-4770-a9d4-69d82c6bfe46
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.book_list_categories.feeds_item
+    - field.field.taxonomy_term.book_list_categories.field_facet_display_timespan
+    - field.field.taxonomy_term.book_list_categories.layout_builder__layout
+    - taxonomy.vocabulary.book_list_categories
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: taxonomy_term.book_list_categories.teaser
+targetEntityType: taxonomy_term
+bundle: book_list_categories
+mode: teaser
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_facet_display_timespan: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

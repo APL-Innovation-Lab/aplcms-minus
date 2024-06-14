@@ -1,0 +1,44 @@
+title: Feedback
+description: 'A basic feedback template.'
+elements: |
+  type:
+    '#title': 'Type of Feedback'
+    '#type': webform_radios_other
+    '#required': true
+    '#options':
+      Comments: Comments
+      'Report a Bug': 'Report a Bug'
+      Questions: Questions
+    '#options_display': side_by_side
+  comments:
+    '#title': 'Your Feedback'
+    '#type': textarea
+    '#required': true
+  name:
+    '#title': 'Your Name'
+    '#type': textfield
+    '#required': true
+  email:
+    '#title': 'Your Email'
+    '#type': email
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Submit feedback'
+settings:
+  confirmation_message: 'Thank you for your feedback.'
+  confirmation_url: '<front>'
+handlers:
+  email_confirmation:
+    label: 'Email confirmation'
+    settings:
+      from_name: _default
+      subject: _default
+      body: '[webform_submission:values:comments:value]'
+  email_notification:
+    label: 'Email notification'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: _default
+      body: '[webform_submission:values:comments:value]'

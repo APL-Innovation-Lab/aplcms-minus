@@ -1,0 +1,19 @@
+uuid: acde5320-60a2-4364-a94b-25eb8fca84f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibliocommons_id
+    - node.type.apl_item
+id: node.apl_item.field_bibliocommons_id
+field_name: field_bibliocommons_id
+entity_type: node
+bundle: apl_item
+label: 'Bibliocommons ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

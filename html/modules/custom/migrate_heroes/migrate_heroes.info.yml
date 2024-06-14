@@ -1,0 +1,8 @@
+type: module
+name: Migrate Heroes
+description: 'Heroes'
+package: apl_dev
+core_version_requirement: '>=9.1'
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus

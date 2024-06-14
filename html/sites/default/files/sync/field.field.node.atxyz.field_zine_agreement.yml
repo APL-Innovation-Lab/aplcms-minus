@@ -1,0 +1,23 @@
+uuid: 87c05514-b9c3-4ada-8eaf-d67f6ab5a16d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zine_agreement
+    - node.type.atxyz
+id: node.atxyz.field_zine_agreement
+field_name: field_zine_agreement
+entity_type: node
+bundle: atxyz
+label: Agreement
+description: '<a target="_blank" href="/atxyz-files/rights">Terms for Rights & Permissions</a> / <a target="_blank" href="/atxyz-files/rights#es">Términos por Derechos y Permisos</a>'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms for Rights & Permissions. / Estoy de acuerdo con los Términos por Derechos y Permisos.'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 6fa49835-554e-4633-ae46-31736f305844
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_text
+    - node.type.database
+  module:
+    - text
+id: node.database.field_help_text
+field_name: field_help_text
+entity_type: node
+bundle: database
+label: 'Help Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

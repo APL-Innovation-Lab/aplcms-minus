@@ -1,0 +1,21 @@
+uuid: 9497401d-6fc7-4b5c-877b-6ea61f0328d5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.hero_banner_image
+  module:
+    - datetime
+id: node.hero_banner_image.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: hero_banner_image
+label: 'Time End'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

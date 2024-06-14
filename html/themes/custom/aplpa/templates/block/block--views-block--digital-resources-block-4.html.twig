@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * This template has been adapted from the default block.html.twig.
+ * It includes additional JSON-LD structured data to support schema.org
+ * breadcrumbs for individual Digital Resource content. This structured
+ * data is essential for enhancing the page's SEO and providing richer
+ * breadcrumbs in search engine results.
+ *
+ * The JSON-LD is specifically tailored for the Digital Resource content, ensuring
+ * it meets the requirements for schema.org's breadcrumb guidelines.
+ *
+ */
+#}
+
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    bundle ? 'block--type-' ~ bundle|clean_class,
+    view_mode ? 'block--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://library.austintexas.gov",
+        "name": "Home"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://library.austintexas.gov/digital/all",
+        "name": "All Digital Resources"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://library.austintexas.gov/digital/subjects",
+        "name": "Subjects"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "{{ url('<current>') }}", 
+        "name": "{{ page_title }}"
+      }
+    }
+  ]
+}
+</script>
+
+
+  </script>
+</div>

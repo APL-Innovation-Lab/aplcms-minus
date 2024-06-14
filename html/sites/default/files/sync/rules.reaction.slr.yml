@@ -1,0 +1,109 @@
+uuid: a94b0bf0-4469-4501-b57d-9602db5f1b3c
+langcode: eng
+status: false
+dependencies: {  }
+id: slr
+label: SLR
+events:
+  -
+    event_name: 'rules_entity_insert:node--slr'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 50174055-4195-4e00-8768-ef9b5fe7f6ab
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 8ebd6916-cc91-44d0-b82e-f6b3102958a2
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: c6bd4abc-ba5e-4456-9719-9833fae06e11
+        weight: 0
+        condition_id: rules_entity_is_of_type
+        negate: false
+        context_values:
+          type: slr
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 91f1bf7d-a2ea-4133-8434-14ffe31beb3b
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 0647025d-fdaf-47e4-96e0-fc06efa1b955
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 1965a2ef-2ab0-410b-805a-16c41c715c8c
+        weight: 0
+        action_id: rules_system_message
+        context_values:
+          message: '{{node.title}} reserved for {{node.field_slr_room.name.value}}'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: faf5cf90-9f6b-4a01-8d65-157a8f52de82
+        weight: 0
+        action_id: rules_token_get_token_value
+        context_values:
+          token: '[node:field_slr_email:value]'
+        context_mapping:
+          token_entity: node
+        context_processors:
+          token:
+            rules_tokens: {  }
+        provides_mapping:
+          token_value: email_value
+      -
+        id: rules_action
+        uuid: bb0c7f60-e06f-4569-8342-19f669306bf3
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - bryce.benton@austintexas.gov
+          subject: '4 Your Shared Learning Room at the Austin Public Library'
+          message: 'Thank your for reserving a room at the Austin Public Library.'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

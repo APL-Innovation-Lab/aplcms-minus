@@ -1,0 +1,20 @@
+uuid: 102e7e98-1b8c-4d1c-b50b-0e00b65eb686
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.how_to
+  module:
+    - text
+id: taxonomy_term.how_to.description
+field_name: description
+entity_type: taxonomy_term
+bundle: how_to
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

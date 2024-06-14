@@ -1,0 +1,18 @@
+uuid: 1a0a3e57-5a00-45aa-94f5-cce7c103603c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommendation_slide_categories
+id: taxonomy_term.recommendation_slide_categories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: recommendation_slide_categories
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

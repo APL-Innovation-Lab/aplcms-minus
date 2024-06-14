@@ -1,0 +1,27 @@
+uuid: 71ac7326-afa0-48aa-8008-3b131780ef25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.apltv
+    - field.field.node.fullscreen_image.field_1920_x_1080_image
+    - node.type.fullscreen_image
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.fullscreen_image.apltv
+targetEntityType: node
+bundle: fullscreen_image
+mode: apltv
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_1920_x_1080_image: true

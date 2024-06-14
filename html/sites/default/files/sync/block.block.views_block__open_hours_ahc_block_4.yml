@@ -1,0 +1,38 @@
+uuid: 3b43df3b-12f6-4105-9abf-fa30ff19994f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.open_hours_ahc
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__open_hours_ahc_block_4
+theme: aplpa
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:open_hours_ahc-block_4'
+settings:
+  id: 'views_block:open_hours_ahc-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ahc\r\n/ahc/staging"

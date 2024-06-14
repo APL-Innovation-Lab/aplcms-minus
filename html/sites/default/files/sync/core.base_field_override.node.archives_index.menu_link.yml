@@ -1,0 +1,20 @@
+uuid: f0f37ad9-9b22-4266-a6fd-ce2d2b20c643
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.menu_link
+field_name: menu_link
+entity_type: node
+bundle: archives_index
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

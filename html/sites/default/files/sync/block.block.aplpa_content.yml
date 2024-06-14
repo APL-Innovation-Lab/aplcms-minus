@@ -1,0 +1,22 @@
+uuid: c93f0514-63cf-4c9b-8163-e5702677da24
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aplpa
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: aplpa_content
+theme: aplpa
+region: content
+weight: -12
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

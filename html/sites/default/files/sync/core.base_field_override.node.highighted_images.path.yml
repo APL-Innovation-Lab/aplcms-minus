@@ -1,0 +1,20 @@
+uuid: 8e392be1-fde7-4b97-b512-5735229bff9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+  module:
+    - path
+id: node.highighted_images.path
+field_name: path
+entity_type: node
+bundle: highighted_images
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

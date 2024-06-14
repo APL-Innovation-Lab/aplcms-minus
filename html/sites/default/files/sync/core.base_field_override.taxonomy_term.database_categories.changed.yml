@@ -1,0 +1,18 @@
+uuid: 779294a5-2caf-437a-8879-509691406e99
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_categories
+id: taxonomy_term.database_categories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: database_categories
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

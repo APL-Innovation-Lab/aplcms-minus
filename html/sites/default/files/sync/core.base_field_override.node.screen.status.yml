@@ -1,0 +1,22 @@
+uuid: 23f20b24-b6c5-4d79-bcb7-5b45fabedfc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.screen
+id: node.screen.status
+field_name: status
+entity_type: node
+bundle: screen
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

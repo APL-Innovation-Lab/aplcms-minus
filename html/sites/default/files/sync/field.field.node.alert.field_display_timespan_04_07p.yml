@@ -1,0 +1,26 @@
+uuid: f042bc61-4e4c-45e3-b39f-30168598c35d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan_04_07p
+    - node.type.alert
+  module:
+    - datetime_range
+id: node.alert.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+bundle: alert
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,23 @@
+uuid: 52aaf74d-d9c4-4d1f-8c4c-d15b3468c7a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_index
+    - node.type.page_
+id: node.page_.field_do_not_index
+field_name: field_do_not_index
+entity_type: node
+bundle: page_
+label: 'Do not index'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

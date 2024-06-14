@@ -1,0 +1,18 @@
+uuid: ecc5ff74-d6b2-4943-9a81-a5ad956bb37c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+id: node.ahc_donation.created
+field_name: created
+entity_type: node
+bundle: ahc_donation
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,82 @@
+uuid: 05b67e64-c8ff-40cf-b4dc-5ffca87efba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.database_subjects.description
+    - core.base_field_override.taxonomy_term.database_subjects.name
+    - core.entity_view_mode.taxonomy_term.link
+    - field.field.taxonomy_term.database_subjects.feeds_item
+    - field.field.taxonomy_term.database_subjects.field_main_image_ds
+    - field.field.taxonomy_term.database_subjects.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          be6292e4-3c83-401e-9bb7-65d523b6d9c7:
+            uuid: be6292e4-3c83-401e-9bb7-65d523b6d9c7
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:database_subjects:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1ce36a3c-8b54-4afb-b6fb-02ab5ae6b5c8:
+            uuid: 1ce36a3c-8b54-4afb-b6fb-02ab5ae6b5c8
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:database_subjects:description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.database_subjects.link
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: link
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image_ds: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

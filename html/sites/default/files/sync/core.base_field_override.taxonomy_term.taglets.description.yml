@@ -1,0 +1,20 @@
+uuid: e5cdcf4e-9b77-4a5c-b093-9816d1e1a38e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taglets
+  module:
+    - text
+id: taxonomy_term.taglets.description
+field_name: description
+entity_type: taxonomy_term
+bundle: taglets
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,11 @@
+.node__content .layout.layout--onecol {
+	width: 580px;
+	float: right;
+	margin-left: 10px;
+}
+.hh_icon img {
+	display: none;
+}
+iframe {
+	width: 100%;
+}

@@ -1,0 +1,96 @@
+uuid: 2a9e6784-7023-4f48-9268-195807904c41
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.apltv_channel.layout_builder__layout
+    - taxonomy.vocabulary.apltv_channel
+    - views.view.apltv_channel
+    - views.view.channel_sequences
+  module:
+    - layout_builder
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          adcadccc-df03-4179-b5a8-760ed9cadab0:
+            uuid: adcadccc-df03-4179-b5a8-760ed9cadab0
+            region: second
+            configuration:
+              id: 'views_block:apltv_channel-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          33e9b20d-44c6-4ff8-8422-60719aedb744:
+            uuid: 33e9b20d-44c6-4ff8-8422-60719aedb744
+            region: first
+            configuration:
+              id: 'views_block:apltv_channel-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          0976ab87-16b1-40dd-a702-d86bdd5948bc:
+            uuid: 0976ab87-16b1-40dd-a702-d86bdd5948bc
+            region: first
+            configuration:
+              id: 'views_block:apltv_channel-block_5'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          592a6597-21b0-4dd4-8ffc-61afe147da22:
+            uuid: 592a6597-21b0-4dd4-8ffc-61afe147da22
+            region: second
+            configuration:
+              id: 'views_block:channel_sequences-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.apltv_channel.default
+targetEntityType: taxonomy_term
+bundle: apltv_channel
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

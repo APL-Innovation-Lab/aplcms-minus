@@ -1,0 +1,21 @@
+uuid: af6cbd99-98e6-4b3d-b566-1f7d3d040de6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.apl_item
+  module:
+    - text
+id: node.apl_item.field_description
+field_name: field_description
+entity_type: node
+bundle: apl_item
+label: Description
+description: 'For items appearing on APL TV, it''s best to limit the text length to a maximum of 260 characters.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

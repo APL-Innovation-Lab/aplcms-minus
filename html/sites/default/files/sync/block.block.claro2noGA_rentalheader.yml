@@ -1,0 +1,27 @@
+uuid: ed15d76c-a857-4456-8da7-e72bcc28678f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_rentalheader
+theme: claro2noGA
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:66daef86-1e89-4eb0-9b63-d6b8a55d9e2f'
+settings:
+  id: 'block_content:66daef86-1e89-4eb0-9b63-d6b8a55d9e2f'
+  label: 'Rental header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/rental\r\n/rental/*"

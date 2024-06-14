@@ -1,0 +1,10 @@
+uuid: 866dce40-868f-418e-bf7a-ce97c04442f3
+langcode: eng
+status: true
+name: 'APLTV Scheduled Sequence'
+type: apltv_scheduled_sequence
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

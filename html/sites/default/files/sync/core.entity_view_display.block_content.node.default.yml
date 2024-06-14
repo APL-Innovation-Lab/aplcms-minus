@@ -1,0 +1,30 @@
+uuid: 0628ee52-81ec-430f-80f0-357f700dbcb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node
+    - field.field.block_content.node.field_node
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.node.default
+targetEntityType: block_content
+bundle: node
+mode: default
+content:
+  field_node:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

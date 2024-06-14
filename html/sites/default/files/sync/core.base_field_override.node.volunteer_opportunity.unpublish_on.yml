@@ -1,0 +1,18 @@
+uuid: 009331af-0f0d-48ae-ba39-2b98e8e0aa20
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+id: node.volunteer_opportunity.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: volunteer_opportunity
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

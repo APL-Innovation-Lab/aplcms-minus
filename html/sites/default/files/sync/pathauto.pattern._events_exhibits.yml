@@ -1,0 +1,22 @@
+uuid: 79921ca7-4b97-4ec9-a7da-0f73124c8701
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: _events_exhibits
+label: '/events/exhibit/[node:title]-[node:nid]'
+type: 'canonical_entities:node'
+pattern: '/events/exhibit/[node:title]-[node:nid]'
+selection_criteria:
+  628dc86a-82e8-4bfa-b2ec-587fc498c188:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 628dc86a-82e8-4bfa-b2ec-587fc498c188
+    context_mapping:
+      node: node
+    bundles:
+      exhibit: exhibit
+selection_logic: and
+weight: -5
+relationships: {  }

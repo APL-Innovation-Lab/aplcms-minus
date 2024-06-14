@@ -1,0 +1,23 @@
+uuid: 9b02d63d-2df6-42be-9727-df79cf4742ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_full_description
+    - node.type.event
+id: node.event.field_show_full_description
+field_name: field_show_full_description
+entity_type: node
+bundle: event
+label: 'Show full description'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Show full description'
+  off_label: ''
+field_type: boolean

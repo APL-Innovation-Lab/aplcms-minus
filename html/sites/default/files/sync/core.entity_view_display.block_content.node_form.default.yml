@@ -1,0 +1,23 @@
+uuid: 2c46a1fc-db3a-47d3-b1aa-81802e750444
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+    - field.field.block_content.node_form.field_node
+id: block_content.node_form.default
+targetEntityType: block_content
+bundle: node_form
+mode: default
+content:
+  field_node:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

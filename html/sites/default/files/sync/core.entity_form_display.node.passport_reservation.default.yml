@@ -1,0 +1,190 @@
+uuid: 604469da-a65d-445a-b479-1fbf7897d691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.passport_reservation.field_additional_info
+    - field.field.node.passport_reservation.field_jp_5_digit_zip
+    - field.field.node.passport_reservation.field_pp_date
+    - field.field.node.passport_reservation.field_pp_expected_attendance
+    - field.field.node.passport_reservation.field_pp_i_understand
+    - field.field.node.passport_reservation.field_pp_minor_applicants
+    - field.field.node.passport_reservation.field_pp_photo
+    - field.field.node.passport_reservation.field_pp_please_state
+    - field.field.node.passport_reservation.field_pp_time
+    - field.field.node.passport_reservation.field_ppp_agreement
+    - field.field.node.passport_reservation.field_ppp_email
+    - field.field.node.passport_reservation.field_ppp_phone
+    - field.field.node.passport_reservation.field_reservation_status
+    - field.field.node.passport_reservation.field_select_a_service
+    - node.type.passport_reservation
+  module:
+    - datetime
+    - path
+    - scheduler
+    - text
+id: node.passport_reservation.default
+targetEntityType: node
+bundle: passport_reservation
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_info:
+    type: text_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_jp_5_digit_zip:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_pp_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pp_expected_attendance:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pp_i_understand:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  field_pp_minor_applicants:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pp_photo:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  field_ppp_agreement:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  field_ppp_email:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Your Email Address'
+    third_party_settings: {  }
+  field_ppp_phone:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Your Phone Number'
+    third_party_settings: {  }
+  field_reservation_status:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_select_a_service:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 11
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 18
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Your Name'
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_pp_please_state: true
+  field_pp_time: true

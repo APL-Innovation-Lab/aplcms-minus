@@ -1,0 +1,22 @@
+uuid: 484baf79-2c6f-4ff2-ba89-d7f443400d93
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.keyword_match
+id: node.keyword_match.status
+field_name: status
+entity_type: node
+bundle: keyword_match
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

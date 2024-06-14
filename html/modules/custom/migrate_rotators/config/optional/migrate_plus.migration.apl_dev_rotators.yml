@@ -1,0 +1,90 @@
+uuid: 79539dbe-ad31-4310-87a2-110dfef7dccc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBKaJ6bVeOtAXDbxWVgIfmSKLE2ewq96XBW6iGMHAPQ
+id: apl_dev_rotators
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: apl_dev
+label: Rotators
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_rotators/rotators.json'
+  item_selector: rotator
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: body
+      selector: body
+    -
+      name: field_link_path
+      selector: field_link_path
+    -
+      name: start
+      selector: start
+    -
+      name: end
+      selector: end
+    -
+      name: field_exhibit_summary
+      selector: field_exhibit_summary
+    -
+      name: field_highlighted_image
+      selector: field_highlighted_image
+    -
+      name: field_image_audience
+      selector: audience
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: highighted_images
+  title: title
+  field_link_path: field_link_path
+  field_exhibit_summary: field_exhibit_summary
+  field_image_audience: field_image_audience
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_slr_time_start:
+    -
+      plugin: format_date
+      source: start
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  field_slr_time_end:
+    -
+      plugin: format_date
+      source: end
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  field_highlighted_image:
+    plugin: image_import
+    source: field_highlighted_image
+    title: title
+    alt: title
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

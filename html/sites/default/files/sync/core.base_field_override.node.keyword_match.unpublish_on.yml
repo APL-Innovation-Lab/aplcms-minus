@@ -1,0 +1,18 @@
+uuid: 99e9aa40-bdc2-4da8-acb1-a5520fd724ce
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.keyword_match
+id: node.keyword_match.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: keyword_match
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

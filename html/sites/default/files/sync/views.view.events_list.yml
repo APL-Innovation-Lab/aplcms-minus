@@ -1,0 +1,2337 @@
+uuid: 58ded80e-7876-437d-8bf6-01c5c4c8ae9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_event_date
+    - field.storage.node.field_event_loc
+    - node.type.event
+    - taxonomy.vocabulary.intended_audience
+    - taxonomy.vocabulary.library_location
+  content:
+    - 'taxonomy_term:library_location:19ae4075-cf59-45a3-bdd1-5ad8fffa303a'
+    - 'taxonomy_term:library_location:27cb0a18-122d-4412-871a-a60b3046ffe6'
+    - 'taxonomy_term:library_location:2df8ced0-61f4-4e50-bb76-ab81444fcc5e'
+    - 'taxonomy_term:library_location:34e34065-8aae-4358-ab64-46f92ad630cf'
+    - 'taxonomy_term:library_location:379dcb80-9258-48aa-b159-0566fb27e74f'
+    - 'taxonomy_term:library_location:6959cc95-55f9-4d7a-814f-6f1516fe3878'
+    - 'taxonomy_term:library_location:72b8847a-11e3-4cce-b79d-0f562e8d03cd'
+    - 'taxonomy_term:library_location:7f8b61f5-43c3-49c4-ba37-085d180ff394'
+    - 'taxonomy_term:library_location:82dd7ddd-1668-4f5a-9d85-7b43289d8f2d'
+    - 'taxonomy_term:library_location:8750ace2-9f37-40c3-9fa3-d635dbd6fc0c'
+    - 'taxonomy_term:library_location:88aac2fe-b785-45df-b36c-1c7d14fe1192'
+    - 'taxonomy_term:library_location:a09c2709-cc91-443b-bc9e-cfb7f3142c3d'
+    - 'taxonomy_term:library_location:abd1e762-2d15-4568-a299-9f504b65eedc'
+    - 'taxonomy_term:library_location:af9ecdef-1291-4ca9-8da7-dbe7f8716508'
+    - 'taxonomy_term:library_location:b08d17e3-3a1b-49f7-a157-1c0b7f1e781e'
+    - 'taxonomy_term:library_location:b7828fd9-fd91-409e-88d4-fa6c1308d2b5'
+    - 'taxonomy_term:library_location:be48876a-062b-44d8-8f59-5bdb335952f5'
+    - 'taxonomy_term:library_location:be6aa01f-19e0-4a10-893f-e92ab46821fa'
+    - 'taxonomy_term:library_location:c3833539-f3e9-44ce-9963-7a519222e7c6'
+    - 'taxonomy_term:library_location:c3a134a2-83a4-44da-8cb1-5e6cfdc260fb'
+    - 'taxonomy_term:library_location:c91a8370-7735-4913-85d5-ff7ebf269571'
+    - 'taxonomy_term:library_location:d069ff77-2af8-47c4-8518-e58ae1a327f8'
+    - 'taxonomy_term:library_location:d3117d30-1e80-4a81-bd93-a09eba388670'
+    - 'taxonomy_term:library_location:f9e090d1-aaf2-4ea5-8b98-e15a9ac4c917'
+    - 'taxonomy_term:library_location:fdf5c462-a170-4dbc-8f84-34ed0b045a03'
+  module:
+    - better_exposed_filters
+    - datetime
+    - datetime_range
+    - node
+    - taxonomy
+    - text
+    - user
+id: events_list
+label: 'Events List'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: ''
+      fields:
+        field_event_date:
+          id: field_event_date
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_event_date__value|date("D, M m") }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_date
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_date_1:
+          id: field_event_date_1
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">access_time</i>\r\n<div>{{ field_event_date_1 }}</div>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: '<i><div>'
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_time
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">place</i>\r\n{{ field_event_loc }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"apl-event\">\r\n\t<div class=\"field-event-date\">\r\n\t\t\t{{ field_event_date }}\r\n\t</div>\r\n\t<div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"field-event-time\">\r\n\t\t{{ field_event_date_1 }}\r\n\t</div>\r\n\t<div class=\"field-event-loc\">\r\n\t\t{{ field_event_loc }}\t</div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_event_date_value:
+          id: field_event_date_value
+          table: node__field_event_date
+          field: field_event_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_event_date_value
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            event: event
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_event_date_end_value:
+          id: field_event_date_end_value
+          table: node__field_event_date
+          field: field_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: apl-events
+      use_more: false
+      use_more_always: true
+      use_more_text: 'More Events'
+      link_display: custom_url
+      link_url: /events
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"flex-grid\">\r\n <div class=\"d-col-12 t-col-12 m-col-12 apl-events-header\">Events</div>\r\n</div>"
+            format: unfiltered_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"flex-grid\">\r\n<div class=\"d-col-12 t-col-12 m-col-12 apl-events-footer\">\r\n <a href=\"/events\">More Events</a>\r\n</div>\r\n</div>\r\n<style>\r\n.apl-events-footer {\r\n\ttext-align: right;\r\n}\r\n.apl-events-footer a {\r\n\tbackground: #00a3cc;\r\n\tcolor: white;\r\n\tpadding: 10px;\r\n\tborder-radius: 4px;\r\n\ttext-decoration: none;\r\n}\r\n.view-footer {\r\n\tmargin-top: 20px;\r\n}\r\n.field-event-time div, .field-event-loc a {\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n.material-icons {\r\n\tcolor: #00a3cc;\r\n}\r\n.field-event-loc a {\r\n\tcolor: #333;\r\n\ttext-decoration: none;\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n\r\n.apl-events-header {\r\n\tcolor: #00A3CC;\r\n\tfont-size: 2em;\r\n\tfont-weight: bold;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol {\r\n\tbackground: transparent !important;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol:nth-child(2){\r\n\tbackground: #00A3CC !important;\r\n}\r\n.section_icon {\r\n\tbackground: #00a3cc;\r\n\theight: 150px !important;\r\n\tborder-radius: 75px !important;\r\n\twidth: 150px !important;\r\n\tmargin: 20px auto 40px;\r\n}\r\n\r\n\r\n.block.block-views.block-views-blockevents-block-1 .view-content {\r\n\tdisplay: flex;\r\n\tmax-width: 1420px;\r\n\tmargin: 0 auto;\r\n\tjustify-content: space-between;\r\n\tflex-flow: wrap;\r\n}\r\n.block.block-views.block-views-blockevents-block-1 .views-row {\r\n\tpadding: 10px 0;\r\n\ttext-align: left;\r\n}\r\n.apl-event {\r\n\tborder: 2px solid #00a3cc;\r\n}\r\n\r\n.field-event-date {\r\n\tcolor: #52bdde;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n\tfont-size: .8em;\r\n}\r\n.field-title a {\r\n\ttext-decoration: none;\r\n\tcolor: #333;\r\n\tfont-weight: bold;\r\n\tfont-size: 1.1em;\r\n\tpadding-bottom: 40px;\r\n\tdisplay: block;\r\n}\r\n\r\n.apl-event {\r\n\tpadding: 20px 50px;\r\n}\r\n</style>"
+            format: unfiltered_html
+          tokenize: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_loc'
+  block_1:
+    id: block_1
+    display_title: Events
+    display_plugin: block
+    position: 1
+    display_options:
+      fields:
+        field_event_date:
+          id: field_event_date
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_event_date__value|date("D, M m") }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_date
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_date_1:
+          id: field_event_date_1
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">access_time</i>\r\n<div>{{ field_event_date_1 }}</div>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: '<i><div>'
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_time
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">place</i>\r\n{{ field_event_loc }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"apl-event\">\r\n<div class=\"apl-event-deets\">\r\n\t<div class=\"field-event-date\">\r\n\t\t\t{{ field_event_date }}\r\n\t</div>\t\r\n<div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"field-event-time\">\r\n\t\t{{ field_event_date_1 }}\r\n\t</div>\r\n\t<div class=\"field-event-loc\">\r\n\t\t{{ field_event_loc }}\t\r\n\t</div>\r\n</div>\r\n<div class=\"apl-event-desc\">\r\n\t<div class=\"event-body\">\r\n\t\t{{ body }}\t\r\n\t</div>\r\n</div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_event_loc_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            event: event
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_event_date_end_value:
+          id: field_event_date_end_value
+          table: node__field_event_date
+          field: field_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_event_loc_target_id:
+          id: field_event_loc_target_id
+          table: node__field_event_loc
+          field: field_event_loc_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            183: 183
+            194: 194
+            3939: 3939
+            186: 186
+            195: 195
+            196: 196
+            197: 197
+            198: 198
+            199: 199
+            2311: 2311
+            200: 200
+            202: 202
+            4999: 4999
+            203: 203
+            204: 204
+            205: 205
+            207: 207
+            208: 208
+            206: 206
+            209: 209
+            210: 210
+            185: 185
+            201: 201
+            184: 184
+            211: 211
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_loc_target_id_op
+            label: Location
+            description: ''
+            use_operator: false
+            operator: field_event_loc_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: loc
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: library_location
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        exposed_form: false
+        fields: false
+        filters: false
+        filter_groups: false
+        footer: false
+      display_description: ''
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"flex-grid\">\r\n<div class=\"d-col-12 t-col-12 m-col-12 apl-events-footer\">\r\n <a href=\"/events\">More Events</a>\r\n</div>\r\n</div>\r\n<style>\r\n.apl-event {\r\nbackground: white;\r\ndisplay: flex;\r\njustify-content: space-between;\r\n\r\n}\r\n.apl-event-desc {\r\nwidth: 50%;\r\npadding-top: 5px;\r\n}\r\n.apl-events-footer {\r\n\ttext-align: right;\r\n}\r\n.apl-events-footer a {\r\n\tbackground: #00a3cc;\r\n\tcolor: white;\r\n\tpadding: 10px;\r\n\tborder-radius: 4px;\r\n\ttext-decoration: none;\r\n}\r\n.view-footer {\r\n\tmargin-top: 20px;\r\n}\r\n.field-event-time div, .field-event-loc a {\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n.material-icons {\r\n\tcolor: #00a3cc;\r\n}\r\n.field-event-loc a {\r\n\tcolor: #333;\r\n\ttext-decoration: none;\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n\r\n.apl-events-header {\r\n\tcolor: #00A3CC;\r\n\tfont-size: 50px;\r\n\tfont-weight: bold;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol {\r\n\tbackground: transparent !important;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol:nth-child(2){\r\n\tbackground: #00A3CC !important;\r\n}\r\n.section_icon {\r\n\tbackground: #00a3cc;\r\n\theight: 150px !important;\r\n\tborder-radius: 75px !important;\r\n\twidth: 150px !important;\r\n\tmargin: 20px auto 40px;\r\n}\r\n\r\n\r\n.block.block-views.block-views-blockevents-block-1 .view-content {\r\n\tdisplay: flex;\r\n\tmax-width: 1420px;\r\n\tmargin: 0 auto;\r\n\tjustify-content: space-between;\r\n\tflex-flow: wrap;\r\n}\r\n.block.block-views.block-views-blockevents-block-1 .views-row {\r\n\tpadding: 10px 0;\r\n\ttext-align: left;\r\n}\r\n.apl-event {\r\n\tborder: 3px solid #00a3cc;\r\n\tpadding: 20px 50px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.apl-event-time,\r\n.apl-event-loc {\r\n\tfont-size: 21px;\r\n}\r\n\r\n.field-event-date {\r\n\tcolor: #52bdde;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n}\r\n.field-title a {\r\n\ttext-decoration: none;\r\n\tcolor: #333;\r\n\tfont-weight: bold;\r\n\tfont-size: 24px;\r\n\tpadding-bottom: 40px;\r\n\tdisplay: block;\r\n}\r\n\r\n\r\n</style>"
+            format: unfiltered_html
+          tokenize: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_loc'
+  block_2:
+    id: block_2
+    display_title: Events
+    display_plugin: block
+    position: 1
+    display_options:
+      fields:
+        field_event_date:
+          id: field_event_date
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_event_date__value|date("D, M m") }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_date
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_date_1:
+          id: field_event_date_1
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">access_time</i>\r\n<div>{{ field_event_date_1 }}</div>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: '<i><div>'
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_time
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">place</i>\r\n{{ field_event_loc }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"apl-event\">\r\n<div class=\"apl-event-deets\">\r\n\t<div class=\"field-event-date\">\r\n\t\t\t{{ field_event_date }}\r\n\t</div>\t\r\n<div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"field-event-time\">\r\n\t\t{{ field_event_date_1 }}\r\n\t</div>\r\n\t<div class=\"field-event-loc\">\r\n\t\t{{ field_event_loc }}\t\r\n\t</div>\r\n</div>\r\n<div class=\"apl-event-desc\">\r\n\t<div class=\"event-body\">\r\n\t\t{{ body }}\t\r\n\t</div>\r\n</div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      defaults:
+        pager: false
+        fields: false
+        footer: false
+      display_description: ''
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"flex-grid\">\r\n<div class=\"d-col-12 t-col-12 m-col-12 apl-events-footer\">\r\n <a href=\"/events\">More Events</a>\r\n</div>\r\n</div>\r\n<style>\r\n.apl-event {\r\nbackground: white;\r\ndisplay: flex;\r\njustify-content: space-between;\r\n\r\n}\r\n.apl-event-desc {\r\nwidth: 50%;\r\npadding-top: 5px;\r\n}\r\n.apl-events-footer {\r\n\ttext-align: right;\r\n}\r\n.apl-events-footer a {\r\n\tbackground: #00a3cc;\r\n\tcolor: white;\r\n\tpadding: 10px;\r\n\tborder-radius: 4px;\r\n\ttext-decoration: none;\r\n}\r\n.view-footer {\r\n\tmargin-top: 20px;\r\n}\r\n.field-event-time div, .field-event-loc a {\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n.material-icons {\r\n\tcolor: #00a3cc;\r\n}\r\n.field-event-loc a {\r\n\tcolor: #333;\r\n\ttext-decoration: none;\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n\r\n.apl-events-header {\r\n\tcolor: #00A3CC;\r\n\tfont-size: 50px;\r\n\tfont-weight: bold;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol {\r\n\tbackground: transparent !important;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol:nth-child(2){\r\n\tbackground: #00A3CC !important;\r\n}\r\n.section_icon {\r\n\tbackground: #00a3cc;\r\n\theight: 150px !important;\r\n\tborder-radius: 75px !important;\r\n\twidth: 150px !important;\r\n\tmargin: 20px auto 40px;\r\n}\r\n\r\n\r\n.block.block-views.block-views-blockevents-block-1 .view-content {\r\n\tdisplay: flex;\r\n\tmax-width: 1420px;\r\n\tmargin: 0 auto;\r\n\tjustify-content: space-between;\r\n\tflex-flow: wrap;\r\n}\r\n.block.block-views.block-views-blockevents-block-1 .views-row {\r\n\tpadding: 10px 0;\r\n\ttext-align: left;\r\n}\r\n.apl-event {\r\n\tborder: 3px solid #00a3cc;\r\n\tpadding: 20px 50px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.apl-event-time,\r\n.apl-event-loc {\r\n\tfont-size: 21px;\r\n}\r\n\r\n.field-event-date {\r\n\tcolor: #52bdde;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n}\r\n.field-title a {\r\n\ttext-decoration: none;\r\n\tcolor: #333;\r\n\tfont-weight: bold;\r\n\tfont-size: 24px;\r\n\tpadding-bottom: 40px;\r\n\tdisplay: block;\r\n}\r\n\r\n\r\n</style>"
+            format: unfiltered_html
+          tokenize: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_loc'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 3
+    display_options:
+      enabled: true
+      fields:
+        field_event_date:
+          id: field_event_date
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_event_date__value|date("D, M m") }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_date
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_date_1:
+          id: field_event_date_1
+          table: node__field_event_date
+          field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">access_time</i>\r\n<div>{{ field_event_date_1 }}</div>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: '<i><div>'
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: snippet_time
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<i class=\"material-icons\">place</i>\r\n{{ field_event_loc }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"apl-event\">\r\n<div class=\"apl-event-deets\">\r\n\t<div class=\"field-event-date\">\r\n\t\t\t{{ field_event_date }}\r\n\t</div>\t\r\n<div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"field-event-time\">\r\n\t\t{{ field_event_date_1 }}\r\n\t</div>\r\n\t<div class=\"field-event-loc\">\r\n\t\t{{ field_event_loc }}\t\r\n\t</div>\r\n</div>\r\n<div class=\"apl-event-desc\">\r\n\t<div class=\"event-body\">\r\n\t\t{{ body }}\t\r\n\t</div>\r\n</div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 3
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_event_loc_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No upcoming events with your search filters. Would you like to <a href="/events">start over ?</a>'
+          tokenize: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            event: event
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_event_date_end_value:
+          id: field_event_date_end_value
+          table: node__field_event_date
+          field: field_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_event_loc_target_id:
+          id: field_event_loc_target_id
+          table: node__field_event_loc
+          field: field_event_loc_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            183: 183
+            194: 194
+            3939: 3939
+            186: 186
+            195: 195
+            196: 196
+            197: 197
+            198: 198
+            199: 199
+            2311: 2311
+            200: 200
+            202: 202
+            4999: 4999
+            203: 203
+            204: 204
+            205: 205
+            207: 207
+            208: 208
+            206: 206
+            209: 209
+            210: 210
+            185: 185
+            201: 201
+            184: 184
+            211: 211
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_loc_target_id_op
+            label: Location
+            description: ''
+            use_operator: false
+            operator: field_event_loc_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: loc
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: library_location
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: false
+        field_cat_ia_target_id:
+          id: field_cat_ia_target_id
+          table: node__field_cat_ia
+          field: field_cat_ia_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_cat_ia_target_id_op
+            label: Audience
+            description: ''
+            use_operator: false
+            operator: field_cat_ia_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: aud
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: intended_audience
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        pager: false
+        exposed_form: false
+        fields: false
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<style>\r\n.apl-exhibits {\r\n\tdisplay: inline-block;\r\n\tbackground: white;\r\n\tmargin-top: 20px;\r\n\tpadding: 10px;\r\n\tcolor: #00a3cc;\r\n\tborder: 1px solid #00a3cc;\r\n\tborder-radius: 4px;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.apl-events-cal {\r\n\tfont-size: 58px;\r\n\tvertical-align: middle;\r\n\tpadding: 5px 0 10px;\r\n\tmargin-right: -5px;\r\n}\r\n</style>\r\n\r\n<div class=\"flex-grid\">\r\n <div class=\"d-col-6 t-col-6 m-col-6 apl-events-header\">Events</div>\r\n <div class=\"d-col-6 t-col-6 m-col-6\" style=\"text-align:right\">\r\n<a href=\"/\" class=\"apl-exhibits\">Exhibits</a>\r\n<a href=\"/\"><span class=\"material-icons apl-events-cal\">date_range</span></a>\r\n</div>\r\n</div>"
+            format: unfiltered_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<style>\r\n.pager__link:hover, .pager__link.is-active:hover {\r\n\tbackground: #00a3cc;\r\n\tcolor: white;\r\n\tborder-radius: 0;\r\n}\r\n.pager__link .pager__link::after {\r\n\tbackground-image: url(\"data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 14L11 8L5 2' stroke='%2300a3cc' stroke-width='2'/%3E%3C/svg%3E%0A\");\r\n}\r\n\r\n.pager__link:hover .pager__link::after {\r\n\tbackground-image: url(\"data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 14L11 8L5 2' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E%0A\");\r\n}\r\n.pager__link.is-active, .pager__item--current {\r\n\tcolor: #fff;\r\n\tbackground: #00a3cc;\r\n\tborder-radius: 0;\r\n}\r\n\r\n.pager__item {\r\n\tdisplay: inline-block;\r\n\tmargin-right: 0;\r\n\tmargin-left: 0;\r\n\tvertical-align: top;\r\n\tborder: 1px solid #00a3cc;\r\n}\r\n.pager__item.pager__item--action.pager__item--last,\r\n.pager__item.pager__item--ellipsis {\r\n\tdisplay: none;\r\n}\r\n.pager__link {\r\n\tcolor: #00a3cc;\r\n}\r\n.views-exposed-form.views-exposed-form {\r\n\tdisplay: flex;\r\n\tflex-wrap: wrap;\r\n\talign-items: flex-end;\r\n\tmargin-top: 1.5rem;\r\n\tmargin-bottom: 1.5rem;\r\n\tpadding: 0;\r\n\tborder: none;\r\n\tborder-radius: 2px;\r\n\tbackground-color: #fff;\r\n\tbox-shadow: none;\r\n}\r\n.apl-event {\r\nbackground: white;\r\ndisplay: flex;\r\njustify-content: space-between;\r\n\r\n}\r\n.apl-event-desc {\r\nwidth: 50%;\r\npadding-top: 5px;\r\n}\r\n.apl-events-footer {\r\n\ttext-align: right;\r\n}\r\n.apl-events-footer a {\r\n\tbackground: #00a3cc;\r\n\tcolor: white;\r\n\tpadding: 10px;\r\n\tborder-radius: 4px;\r\n\ttext-decoration: none;\r\n}\r\n.view-footer {\r\n\tmargin-top: 20px;\r\n}\r\n.field-event-time div, .field-event-loc a {\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n.material-icons {\r\n\tcolor: #00a3cc;\r\n}\r\n.field-event-loc a {\r\n\tcolor: #333;\r\n\ttext-decoration: none;\r\n\tdisplay: inline-block;\r\n\tvertical-align: top;\r\n}\r\n\r\n.apl-events-header {\r\n\tcolor: #00A3CC;\r\n\tfont-size: 50px;\r\n\tfont-weight: bold;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol {\r\n\tbackground: transparent !important;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.region-content .node--type-apl-site-content .layout--onecol:nth-child(2){\r\n\tbackground: #00A3CC !important;\r\n}\r\n.section_icon {\r\n\tbackground: #00a3cc;\r\n\theight: 150px !important;\r\n\tborder-radius: 75px !important;\r\n\twidth: 150px !important;\r\n\tmargin: 20px auto 40px;\r\n}\r\n\r\n\r\n.block.block-views.block-views-blockevents-block-1 .view-content {\r\n\tdisplay: flex;\r\n\tmax-width: 1420px;\r\n\tmargin: 0 auto;\r\n\tjustify-content: space-between;\r\n\tflex-flow: wrap;\r\n}\r\n.block.block-views.block-views-blockevents-block-1 .views-row {\r\n\tpadding: 10px 0;\r\n\ttext-align: left;\r\n}\r\n.apl-event {\r\n\tborder: 3px solid #00a3cc;\r\n\tpadding: 20px 50px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.apl-event-time,\r\n.apl-event-loc {\r\n\tfont-size: 21px;\r\n}\r\n\r\n.field-event-date {\r\n\tcolor: #52bdde;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n}\r\n.field-title a {\r\n\ttext-decoration: none;\r\n\tcolor: #333;\r\n\tfont-weight: bold;\r\n\tfont-size: 24px;\r\n\tpadding-bottom: 40px;\r\n\tdisplay: block;\r\n}\r\n\r\n\r\n</style>"
+            format: unfiltered_html
+          tokenize: false
+      exposed_block: false
+      display_extenders: {  }
+      path: events2
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_loc'

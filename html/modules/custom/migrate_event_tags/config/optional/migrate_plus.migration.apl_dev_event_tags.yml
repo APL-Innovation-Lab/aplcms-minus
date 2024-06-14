@@ -1,0 +1,89 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_plus
+      - migrate_file
+      - migrate_event_tags
+id: apl_dev_event_tags
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: 'Event Tags'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_event_tags/event_tags_1.json'
+    - 'public://migrate_event_tags/event_tags_2.json'
+    - 'public://migrate_event_tags/event_tags_3.json'
+    - 'public://migrate_event_tags/event_tags_4.json'
+  fields:
+    -
+      name: tid
+      selector: tid
+    -
+      name: name
+      selector: name
+    -
+      name: main_image
+      selector: main_image
+    -
+      name: main_image_alt
+      selector: main_image_alt
+    -
+      name: recommended_ages
+      selector: recommended_ages
+    -
+      name: subtitle
+      selector: subtitle
+    -
+      name: field_library_priority
+      selector: field_library_priority
+    -
+      name: description
+      selector: description
+    -
+      name: parent
+      selector: parent
+  ids:
+    tid:
+      type: integer
+process:
+  vid:
+    plugin: default_value
+    default_value: event_tags
+  name:
+    -
+      plugin: callback
+      callable: html_entity_decode
+      source: name
+  tid: tid
+  parent: parent
+  field_library_priority: field_library_priority
+  field_recommended_ages: recommended_ages
+  field_main_image_event:
+    plugin: image_import
+    source: main_image
+    destination: 'public://event_tags/'
+    alt: main_image_alt
+    skip_on_missing_source: true
+  description/value: description
+  description/format:
+    plugin: default_value
+    default_value: basic_html
+  subtitle: subtitle
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: {  }

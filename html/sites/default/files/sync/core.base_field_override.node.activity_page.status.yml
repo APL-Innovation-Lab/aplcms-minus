@@ -1,0 +1,22 @@
+uuid: b99b9e64-884e-4414-b3cc-396ff44b7ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activity_page
+id: node.activity_page.status
+field_name: status
+entity_type: node
+bundle: activity_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

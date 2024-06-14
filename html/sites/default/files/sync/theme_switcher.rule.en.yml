@@ -1,0 +1,21 @@
+uuid: 69e18c86-b946-400c-b23b-214e1531c39b
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+id: en
+label: 'en, es'
+weight: -8
+theme: aplpa
+admin_theme: ''
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      eng: eng
+      es: es

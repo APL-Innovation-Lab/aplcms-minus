@@ -1,0 +1,60 @@
+uuid: cde9dd03-57b3-455f-99b7-62ee438e81f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.list
+    - field.field.taxonomy_term.database_subjects.feeds_item
+    - field.field.taxonomy_term.database_subjects.field_main_image_ds
+    - field.field.taxonomy_term.database_subjects.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+    - views.view.digital_subject
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b64ccd5e-a58c-4f16-86d1-9096f3ef62df:
+            uuid: b64ccd5e-a58c-4f16-86d1-9096f3ef62df
+            region: content
+            configuration:
+              id: 'views_block:digital_subject-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.database_subjects.list
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: list
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image_ds: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

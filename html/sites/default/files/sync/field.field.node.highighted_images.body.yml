@@ -1,0 +1,23 @@
+uuid: a4c64910-31a3-4a4d-8b6b-81260e5063bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.highighted_images
+  module:
+    - text
+id: node.highighted_images.body
+field_name: body
+entity_type: node
+bundle: highighted_images
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

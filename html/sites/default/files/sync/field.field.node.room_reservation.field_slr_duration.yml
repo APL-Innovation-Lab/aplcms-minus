@@ -1,0 +1,21 @@
+uuid: 187ffc5d-14a3-46b2-8967-da0bfca1a7ae
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_duration
+    - node.type.room_reservation
+  module:
+    - options
+id: node.room_reservation.field_slr_duration
+field_name: field_slr_duration
+entity_type: node
+bundle: room_reservation
+label: Duration
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

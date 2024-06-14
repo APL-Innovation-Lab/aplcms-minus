@@ -1,0 +1,11 @@
+uuid: fdf901b1-fa16-447c-8b52-6a7168551aee
+langcode: en
+status: true
+
+name: 'Imported Catalog Item'
+type: apl_item
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,110 @@
+uuid: aa0c2c06-d6d7-453a-9194-db6261892cff
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.remote_locations.name
+    - field.field.taxonomy_term.remote_locations.field_remote_url
+    - field.field.taxonomy_term.remote_locations.field_rl_street_address
+    - taxonomy.vocabulary.remote_locations
+  module:
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      b87debfc-1258-4180-856e-be43edc93658:
+        text: eng
+        uuid: b87debfc-1258-4180-856e-be43edc93658
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: remote_locations
+label: 'Remote Locations'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: remote_locations
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  address:
+    value: address
+    label: address
+    machine_name: address
+    type: csv
+  url:
+    value: url
+    label: url
+    machine_name: url
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_rl_street_address
+    map:
+      value: address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_remote_url
+    map:
+      value: url
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

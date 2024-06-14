@@ -1,0 +1,21 @@
+uuid: bb06985c-6780-46e2-83f8-b2799632fe91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_condition
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_condition
+field_name: field_condition
+entity_type: node
+bundle: archives_index
+label: Condition
+description: 'example: scapbook is in very poor condition and needs to be photocopied'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

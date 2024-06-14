@@ -1,0 +1,25 @@
+uuid: 13a559d3-2554-41f7-8dfc-10936b56f9a2
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: admin_website_pages
+label: admin/website-pages
+code: |+
+  const params = new URLSearchParams(window.location.search)
+  var header = document.getElementsByClassName('view-header');
+      header[0].innerHTML = '<a class="usa-button" href="/admin/website-pages.csv?' + params + '">Export to .csv</a>' + header[0].innerHTML;
+
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/website-pages
+contexts: {  }
+conditions_require_all: true

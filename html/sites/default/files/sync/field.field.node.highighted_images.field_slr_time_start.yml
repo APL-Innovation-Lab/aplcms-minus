@@ -1,0 +1,21 @@
+uuid: 14365193-94db-4246-ba82-b46f3b746acd
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.highighted_images
+  module:
+    - datetime
+id: node.highighted_images.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: highighted_images
+label: 'Time Start'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

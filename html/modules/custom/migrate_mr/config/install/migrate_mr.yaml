@@ -1,0 +1,89 @@
+id: migrate_mr
+label: 'Migrate Webform Submissions from CSV'
+migration_group: custom_migration_group # Optional
+
+source:
+  plugin: csv
+  path: '../migrations/migrate_mr.csv'
+  header_row_count: 1
+  keys:
+    - Created
+
+process:
+  webform_id:
+    plugin: default_value
+    default_value: 'meeting_room_reservation_request'
+  
+  status:
+    plugin: get
+    source: Status
+
+  is_this_meeting_for_internal_use_:
+    plugin: get
+    source: 'Is this meeting for Internal use?'
+
+  group_name:
+    plugin: get
+    source: 'Group or Organization Name'
+
+  purpose_of_group:
+    plugin: get
+    source: 'Purpose of Group or Organization'
+
+  website:
+    plugin: get
+    source: Website
+
+  group_representative_full_name:
+    plugin: get
+    source: 'Full Name'
+
+  group_representative_phone_number:
+    plugin: get
+    source: 'Phone Number'
+
+  group_representative_email_address:
+    plugin: get
+    source: 'Email Address'
+
+  topic:
+    plugin: get
+    source: Topic
+
+  expected_attendance:
+    plugin: get
+    source: 'Expected Attendance'
+
+  date:
+    plugin: get
+    source: Date
+
+  location: 
+    plugin: entity_lookup
+    source: 'Location: ID'
+    value_key: 'tid'
+    entity_type: 'taxonomy_term'  
+    bundle: 'library_location' 
+
+  meeting_room: 
+    plugin: entity_lookup
+    source: 'Meeting Room: ID'
+    value_key: 'tid'  
+    entity_type: 'taxonomy_term' 
+    bundle: 'rooms'  
+
+  date_time_start:
+    plugin: callback
+    callable: strtotime
+    source: 'Date/Time Start'
+
+  date_time_end:
+    plugin: callback
+    callable: strtotime
+    source: 'Date/Time End'
+
+
+destination:
+  plugin: 'entity:webform_submission'
+
+migration_dependencies: {}

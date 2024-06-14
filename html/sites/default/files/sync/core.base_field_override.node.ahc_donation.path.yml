@@ -1,0 +1,20 @@
+uuid: 1fe1ffb2-e0da-4f7c-9e51-a00a59a900ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_donation
+  module:
+    - path
+id: node.ahc_donation.path
+field_name: path
+entity_type: node
+bundle: ahc_donation
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

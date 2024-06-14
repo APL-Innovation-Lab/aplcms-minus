@@ -1,0 +1,29 @@
+uuid: efe6f0b6-4490-4bdf-b2e7-f9ef1374e8f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intended_audience_2016i
+    - node.type.apltv_recommendation_slide
+    - taxonomy.vocabulary.intended_audience_2016
+id: node.apltv_recommendation_slide.field_intended_audience_2016i
+field_name: field_intended_audience_2016i
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Intended Audience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      intended_audience_2016: intended_audience_2016
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

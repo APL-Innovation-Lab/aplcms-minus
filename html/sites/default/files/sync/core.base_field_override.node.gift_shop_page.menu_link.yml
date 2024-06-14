@@ -1,0 +1,20 @@
+uuid: 964d6da2-4e4b-42f1-8ca9-a23a5646f36e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.menu_link
+field_name: menu_link
+entity_type: node
+bundle: gift_shop_page
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

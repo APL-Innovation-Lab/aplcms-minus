@@ -1,0 +1,23 @@
+uuid: 82965fdf-42e8-4f85-94c8-b362bd20dcfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.sales_events_page
+  module:
+    - feeds
+id: node.sales_events_page.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: sales_events_page
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

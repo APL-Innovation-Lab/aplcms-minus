@@ -1,0 +1,33 @@
+uuid: ac598e60-77f2-4b50-a455-f4d7bfabc69f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: apltv_fullscreen_image
+label: 'apltv fullscreen image'
+type: 'canonical_entities:node'
+pattern: '/apltv/fullscreen/[node:nid]'
+selection_criteria:
+  35828304-a7eb-4d92-b5d1-4f79bcc7d3d8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 35828304-a7eb-4d92-b5d1-4f79bcc7d3d8
+    context_mapping:
+      node: node
+    bundles:
+      fullscreen_image: fullscreen_image
+  12a52e6f-7ad3-4449-8b21-a0a617373511:
+    id: language
+    negate: false
+    uuid: 12a52e6f-7ad3-4449-8b21-a0a617373511
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      eng: eng
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,23 @@
+uuid: 98d0de0d-dfad-4efd-a142-ff28907de13d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.reflection
+  module:
+    - filter
+    - node
+    - system
+    - toolbar
+id: reflection_editor
+label: 'Reflection Editor'
+weight: 8
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create reflection content'
+  - 'delete own reflection content'
+  - 'edit own reflection content'
+  - 'use text format full_html'
+  - 'view the administration theme'

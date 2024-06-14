@@ -1,0 +1,20 @@
+uuid: 6223e749-50af-4f79-bc1a-379f1d0f48d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apltv_recommendation_slide
+  module:
+    - path
+id: node.apltv_recommendation_slide.path
+field_name: path
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

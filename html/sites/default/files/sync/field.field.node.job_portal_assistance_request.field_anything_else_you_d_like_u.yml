@@ -1,0 +1,21 @@
+uuid: fa37a805-cf6b-4c46-af35-d5fd7578055f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anything_else_you_d_like_u
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_anything_else_you_d_like_u
+field_name: field_anything_else_you_d_like_u
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Anything else you’d like us to know about your job search or your professional background?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

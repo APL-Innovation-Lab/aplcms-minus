@@ -1,0 +1,19 @@
+uuid: 55ab61db-700f-4b4b-a223-f98dfefc7ee7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_for_qr
+    - node.type.qr
+id: node.qr.field_url_for_qr
+field_name: field_url_for_qr
+entity_type: node
+bundle: qr
+label: 'URL for QR'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: a1cf0466-5560-41bb-94f1-d1ef83e42a9a
+langcode: eng
+status: false
+dependencies:
+  config:
+    - views.view.more_navigation
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - claro2
+id: views_block__more_navigation_block_3
+theme: claro2
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:more_navigation-block_3'
+settings:
+  id: 'views_block:more_navigation-block_3'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      slr_admin: slr_admin
+      slr_internal: slr_internal

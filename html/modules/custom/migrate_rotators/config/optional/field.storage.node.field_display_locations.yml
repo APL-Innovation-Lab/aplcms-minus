@@ -1,0 +1,20 @@
+uuid: 49148bcc-4af4-41f8-b0d3-0c08dc738bde
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_display_locations
+field_name: field_display_locations
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

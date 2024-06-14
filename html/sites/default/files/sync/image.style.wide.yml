@@ -1,0 +1,19 @@
+uuid: 8d85f29b-ae33-49d5-b287-742737965cb9
+langcode: eng
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: LswCVLg8z4Zk1u6pV1Dpj1qUj5YY2CQ7_ojx7bJQ8qk
+name: wide
+label: 'Wide (1024 x 400) crosshairs'
+effects:
+  228ebf75-41d7-4875-b17d-5966fe25670e:
+    uuid: 228ebf75-41d7-4875-b17d-5966fe25670e
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 1024
+      height: 400
+      crop_type: focal_point

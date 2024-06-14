@@ -1,0 +1,18 @@
+uuid: 99410831-d28b-4b67-a17e-1b6ab239ab10
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.changed
+field_name: changed
+entity_type: node
+bundle: slr_alert
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

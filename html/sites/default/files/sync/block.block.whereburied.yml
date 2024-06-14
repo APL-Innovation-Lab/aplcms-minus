@@ -1,0 +1,28 @@
+uuid: 15439b5b-6798-4188-95cb-b87485c775e9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.where_buried
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: whereburied
+theme: claro2
+region: header
+weight: -21
+provider: null
+plugin: 'facet_block:where_buried'
+settings:
+  id: 'facet_block:where_buried'
+  label: 'Where Buried'
+  label_display: visible
+  provider: facets
+  block_id: whereburied
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood/facets

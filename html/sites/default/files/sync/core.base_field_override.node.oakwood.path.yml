@@ -1,0 +1,20 @@
+uuid: 766eed1c-cfad-46e7-83dd-14476791292c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+  module:
+    - path
+id: node.oakwood.path
+field_name: path
+entity_type: node
+bundle: oakwood
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

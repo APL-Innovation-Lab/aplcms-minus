@@ -1,0 +1,18 @@
+uuid: 6f9aa57e-93fb-4631-9263-0f3bc1b1b8f9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: activity
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

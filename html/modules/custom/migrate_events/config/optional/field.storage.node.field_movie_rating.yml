@@ -1,0 +1,42 @@
+uuid: c9fefc2a-a3b0-462f-8b02-e970562b9715
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_movie_rating
+field_name: field_movie_rating
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: G
+      label: G
+    -
+      value: M
+      label: M
+    -
+      value: NR
+      label: NR
+    -
+      value: PG
+      label: PG
+    -
+      value: PG-13
+      label: PG-13
+    -
+      value: R
+      label: R
+    -
+      value: 'TV-Y7 FV'
+      label: 'TV-Y7 FV'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

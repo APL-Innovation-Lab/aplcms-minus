@@ -1,0 +1,18 @@
+uuid: 27f4962a-09d8-4fb3-8861-51ad1aeaf57f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_site_content
+id: node.apl_site_content.changed
+field_name: changed
+entity_type: node
+bundle: apl_site_content
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

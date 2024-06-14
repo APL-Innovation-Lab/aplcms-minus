@@ -1,0 +1,21 @@
+uuid: dd5f7724-9900-4073-aeaa-c47504c8174e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_attribution_ahc
+    - node.type.ahc_page
+  module:
+    - text
+id: node.ahc_page.field_image_attribution_ahc
+field_name: field_image_attribution_ahc
+entity_type: node
+bundle: ahc_page
+label: 'Image Attribution'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

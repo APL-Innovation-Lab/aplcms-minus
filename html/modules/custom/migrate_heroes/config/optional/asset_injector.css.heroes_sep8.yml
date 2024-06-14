@@ -1,0 +1,25 @@
+uuid: 7a13d887-e981-48f2-a5b9-57c75979070c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: heroes_sep8
+label: 'heroes sep8'
+code: |-
+  .hero-image img {
+  	display: none;
+  }
+  .hero-image2 .hero-grid-container.grid-container {
+  	position: absolute;
+  	top: 0;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+contexts: {  }
+conditions_require_all: false

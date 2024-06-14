@@ -1,0 +1,30 @@
+uuid: b0f3cf61-f93b-4e56-95f1-d6b464903c31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - claro
+id: footer
+theme: claro
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:a4bdea75-2c3e-44bd-a58d-15ad9138a732'
+settings:
+  id: 'block_content:a4bdea75-2c3e-44bd-a58d-15ad9138a732'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      teen_page: teen_page

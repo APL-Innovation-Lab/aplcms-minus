@@ -1,0 +1,28 @@
+uuid: 07a04e1d-1d3c-4294-bf1f-819f61e2127b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.virtual_library_resource_subjects
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: virtuallibraryresourcesubjects
+theme: claro2
+region: content
+weight: -21
+provider: null
+plugin: 'facet_block:virtual_library_resource_subjects'
+settings:
+  id: 'facet_block:virtual_library_resource_subjects'
+  label: 'Resource Subject'
+  label_display: visible
+  provider: facets
+  block_id: virtuallibraryresourcesubjects
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

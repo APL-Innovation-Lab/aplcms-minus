@@ -1,0 +1,23 @@
+uuid: 73b45e5f-876b-43bc-ad82-0be6dd3361e8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_5_digit_zip
+    - node.type.passport_reservation
+id: node.passport_reservation.field_jp_5_digit_zip
+field_name: field_jp_5_digit_zip
+entity_type: node
+bundle: passport_reservation
+label: 'What is your 5-digit ZIP Code?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

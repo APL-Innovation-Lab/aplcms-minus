@@ -1,0 +1,31 @@
+uuid: 46a33d84-2e74-435c-a0ac-61562d7f01ac
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.alerts_locations
+  module:
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__alerts_locations_block_1
+theme: aplpa
+region: header_top
+weight: -9
+provider: null
+plugin: 'views_block:alerts_locations-block_1'
+settings:
+  id: 'views_block:alerts_locations-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping:
+    tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

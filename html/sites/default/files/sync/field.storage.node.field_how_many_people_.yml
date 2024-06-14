@@ -1,0 +1,24 @@
+uuid: 4a1d2177-4f09-4721-83f0-868ce7b36fbd
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_how_many_people_
+field_name: field_how_many_people_
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

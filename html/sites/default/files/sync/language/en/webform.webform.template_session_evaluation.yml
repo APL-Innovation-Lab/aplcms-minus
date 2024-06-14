@@ -1,0 +1,41 @@
+title: 'Session Evaluation'
+description: 'A session evaluation webform template.'
+elements: |
+  overall:
+    '#type': radios
+    '#title': 'How was the session overall?'
+    '#options_display': side_by_side
+    '#options': likert_quality
+    '#required': true
+  speaker:
+    '#type': webform_likert
+    '#title': 'Please rate the speaker''s…'
+    '#questions':
+      mastery: 'Mastery of this topic'
+      presentation: 'Presentation skills'
+      quality: 'Quality of slides and visual aids'
+    '#answers': likert_quality
+    '#na_answer': true
+    '#required': true
+  learn:
+    '#type': radios
+    '#title': 'Did you learn something in this session you can use in real life?'
+    '#options_display': side_by_side
+    '#options':
+      'Yes': 'Yes'
+      'No': 'No'
+      N/A: N/A
+    '#required': true
+  comments:
+    '#type': textarea
+    '#title': Comments
+    '#description': 'What did you like most? What would you change? Advice for the speaker to make this session better?'
+settings:
+  confirmation_message: 'Thank you for your feedback.'
+handlers:
+  email_notification:
+    label: 'Email Notification'
+    settings:
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default

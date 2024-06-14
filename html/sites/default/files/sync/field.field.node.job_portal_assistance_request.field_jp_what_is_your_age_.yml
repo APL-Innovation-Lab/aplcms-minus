@@ -1,0 +1,21 @@
+uuid: df83218a-0bbc-4d24-9107-0a631eb3c3bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_what_is_your_age_
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field_jp_what_is_your_age_
+field_name: field_jp_what_is_your_age_
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'What is your age?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,14 @@
+uuid: 6fb5e039-ab97-4273-a237-85d5b245b8d5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+  module:
+    - node
+id: meeting_room_reservation_tester
+label: 'Meeting Room Reservation tester'
+weight: 21
+is_admin: null
+permissions:
+  - 'create room_reservation content'

@@ -1,0 +1,29 @@
+uuid: 11f8be12-ea52-4db6-8b6a-124fca9be1e1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.alert
+    - taxonomy.vocabulary.alert_zone
+id: node.alert.field_locations
+field_name: field_locations
+entity_type: node
+bundle: alert
+label: Locations
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alert_zone: alert_zone
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: alert_zone
+field_type: entity_reference

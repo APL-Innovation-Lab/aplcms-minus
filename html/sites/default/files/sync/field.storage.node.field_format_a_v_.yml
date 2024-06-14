@@ -1,0 +1,54 @@
+uuid: e162824f-9f1c-4332-a210-3afe16ffdedd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format_a_v_
+field_name: field_format_a_v_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Audiocassettes
+    -
+      value: '2'
+      label: 'Compact discs'
+    -
+      value: '3'
+      label: 'Digital audio'
+    -
+      value: '4'
+      label: 'Digital moving image'
+    -
+      value: '5'
+      label: DVDs
+    -
+      value: '6'
+      label: 'Motion picture film'
+    -
+      value: '7'
+      label: Records
+    -
+      value: '8'
+      label: 'Tape reels'
+    -
+      value: '9'
+      label: Videocassettes
+    -
+      value: '10'
+      label: Other
+    -
+      value: '11'
+      label: 'Born digital'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

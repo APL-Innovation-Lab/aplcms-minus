@@ -1,0 +1,18 @@
+uuid: 32957f0c-1008-4c6b-b2b7-b2fa76544766
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.title
+field_name: title
+entity_type: node
+bundle: passport_reservation
+label: 'First and Last Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: f218a6c9-1785-4389-8067-89f384eeeb99
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.keyword_match
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.keyword_match
+target_entity_type_id: node
+target_bundle: keyword_match
+default_langcode: site_default
+language_alterable: false

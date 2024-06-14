@@ -1,0 +1,22 @@
+uuid: 6b9abeb2-95ab-4412-a4b8-54f041d7f304
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.promote
+field_name: promote
+entity_type: node
+bundle: image_rotator
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

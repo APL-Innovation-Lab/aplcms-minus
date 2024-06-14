@@ -1,0 +1,19 @@
+uuid: 75d5dcc6-bc35-45b5-942e-f26c47342090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_staff_recommendations
+    - taxonomy.vocabulary.recommended_links
+id: taxonomy_term.recommended_links.field_staff_recommendations
+field_name: field_staff_recommendations
+entity_type: taxonomy_term
+bundle: recommended_links
+label: 'Staff Picks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

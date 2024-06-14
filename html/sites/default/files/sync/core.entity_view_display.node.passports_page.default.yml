@@ -1,0 +1,180 @@
+uuid: 3f927d28-8fa2-48fd-8f49-cfc435ab5996
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.passports_page.title
+    - field.field.node.passports_page.body
+    - field.field.node.passports_page.feeds_item
+    - field.field.node.passports_page.field_do_not_index
+    - field.field.node.passports_page.field_main_image
+    - field.field.node.passports_page.field_search_terms
+    - field.field.node.passports_page.layout_builder__layout
+    - node.type.passports_page
+    - views.view.navigation
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+    - vefl
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: vefl_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          6cfa7c9d-9e78-4624-b774-e0ba1c81e0a0:
+            uuid: 6cfa7c9d-9e78-4624-b774-e0ba1c81e0a0
+            region: content
+            configuration:
+              id: 'field_block:node:passports_page:field_main_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a1435735-61bf-49e4-b797-21d203ef873a:
+            uuid: a1435735-61bf-49e4-b797-21d203ef873a
+            region: middle
+            configuration:
+              id: 'views_block:navigation-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: vefl_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          d8558ae8-43c0-425a-9842-44ba1a90b154:
+            uuid: d8558ae8-43c0-425a-9842-44ba1a90b154
+            region: middle
+            configuration:
+              id: 'field_block:node:passports_page:field_main_image'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4b403ad6-96ef-4ff0-be01-6b6d6277d3e7:
+            uuid: 4b403ad6-96ef-4ff0-be01-6b6d6277d3e7
+            region: middle
+            configuration:
+              id: 'field_block:node:passports_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4ab4ea9c-931d-49bb-b066-8d1f1eab8d4e:
+            uuid: 4ab4ea9c-931d-49bb-b066-8d1f1eab8d4e
+            region: middle
+            configuration:
+              id: 'field_block:node:passports_page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.passports_page.default
+targetEntityType: node
+bundle: passports_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_do_not_index:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: middle
+  field_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_search_terms:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: middle
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

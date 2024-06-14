@@ -1,0 +1,19 @@
+uuid: 9799a0cd-655f-4b9e-ba68-2dfd981a89d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_bibliocommons_list
+    - taxonomy.vocabulary.quests
+id: taxonomy_term.quests.field_quest_bibliocommons_list
+field_name: field_quest_bibliocommons_list
+entity_type: taxonomy_term
+bundle: quests
+label: '  Bibliocommons List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

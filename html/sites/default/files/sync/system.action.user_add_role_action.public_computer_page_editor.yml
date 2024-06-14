@@ -1,0 +1,14 @@
+uuid: 6a3a0dc4-b94d-485f-96fe-69d9746b1546
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.public_computer_page_editor
+  module:
+    - user
+id: user_add_role_action.public_computer_page_editor
+label: 'Add the Public Computer Page Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: public_computer_page_editor

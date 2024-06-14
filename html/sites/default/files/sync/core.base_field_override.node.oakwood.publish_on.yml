@@ -1,0 +1,18 @@
+uuid: 3c1f5c64-f04b-485b-9aac-a3edae39123a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood.publish_on
+field_name: publish_on
+entity_type: node
+bundle: oakwood
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

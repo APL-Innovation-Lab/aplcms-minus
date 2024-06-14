@@ -1,0 +1,23 @@
+uuid: aab8a85d-459a-4b4e-a572-39d88d8e0387
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_do_not_index
+    - taxonomy.vocabulary.library_location
+id: taxonomy_term.library_location.field_do_not_index
+field_name: field_do_not_index
+entity_type: taxonomy_term
+bundle: library_location
+label: 'Do not index'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

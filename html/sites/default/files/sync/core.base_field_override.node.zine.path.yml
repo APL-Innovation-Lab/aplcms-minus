@@ -1,0 +1,20 @@
+uuid: aac8fd3a-f84f-4d1a-b66e-406fa8f2d38b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+  module:
+    - path
+id: node.zine.path
+field_name: path
+entity_type: node
+bundle: zine
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

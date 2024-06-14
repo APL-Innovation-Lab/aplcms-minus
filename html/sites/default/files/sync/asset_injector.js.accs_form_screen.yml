@@ -1,0 +1,53 @@
+uuid: 845e6afa-08b3-4dd0-839c-360426f24513
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: accs_form_screen
+label: 'ACCS form screen'
+code: |+
+  window.onload = function() {
+        try {
+          var url_string = (window.location.href).toLowerCase();
+          var url = new URL(url_string);
+          var staff = url.searchParams.get("staff");
+          
+          console.log(staff);
+            
+            if(staff != 'apl') {
+                var elem = document.querySelector('#webform-submission-contact-acquisitions-cataloging-add-form');
+
+  // Get HTML content
+  var html = elem.innerHTML;
+
+  // Set HTML content
+  elem.innerHTML = 'This page is for APL staff only.';
+            }
+            
+            
+        } catch (err) {
+          console.log("Issues with Parsing URL Parameter's - " + err);
+        }
+  }
+
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /accs-contact222
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+contexts: {  }
+conditions_require_all: true

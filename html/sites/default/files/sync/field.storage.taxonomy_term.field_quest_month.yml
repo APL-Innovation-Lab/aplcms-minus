@@ -1,0 +1,30 @@
+uuid: 8e64a180-3b04-4172-aa0f-f47e5416ea24
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_quest_month
+field_name: field_quest_month
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: May-June
+    -
+      value: '2'
+      label: July
+    -
+      value: '3'
+      label: August
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

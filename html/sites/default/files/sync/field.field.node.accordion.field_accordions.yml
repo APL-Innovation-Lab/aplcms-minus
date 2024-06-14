@@ -1,0 +1,28 @@
+uuid: ec57e09b-5bee-4ed9-a342-3b30c012bbff
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accordions
+    - node.type.accordion
+id: node.accordion.field_accordions
+field_name: field_accordions
+entity_type: node
+bundle: accordion
+label: Accordions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

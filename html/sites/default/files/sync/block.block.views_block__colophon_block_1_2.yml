@@ -1,0 +1,26 @@
+uuid: e9e44a65-a532-4413-94dc-6a817919431e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.colophon
+  module:
+    - views
+  theme:
+    - uswds
+id: views_block__colophon_block_1_2
+theme: uswds
+region: footer_secondary
+weight: 0
+provider: null
+plugin: 'views_block:colophon-block_1'
+settings:
+  id: 'views_block:colophon-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping:
+    nid: '@node.node_route_context:node'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

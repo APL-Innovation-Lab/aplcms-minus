@@ -1,0 +1,19 @@
+uuid: e01bcecf-86d2-42cb-9f1f-3ba37aab2da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_email_address
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_email_address
+field_name: field_ahc_d_email_address
+entity_type: node
+bundle: ahc_donation
+label: '  Email Address / Dirección de Correo Electrónico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,37 @@
+uuid: ccd7d424-a060-48b6-9b55-230c58897e49
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.heroes
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__heroes_block_1
+theme: claro2noGA
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:heroes-block_1'
+settings:
+  id: 'views_block:heroes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hero_editor: hero_editor

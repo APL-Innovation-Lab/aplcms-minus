@@ -1,0 +1,236 @@
+uuid: f87f2166-8bc1-4a45-9a18-fa8643904b43
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attendingphysician
+    - field.storage.node.field_bywhomburied
+    - field.storage.node.field_color
+    - field.storage.node.field_disease
+    - field.storage.node.field_firstname
+    - field.storage.node.field_lastname
+    - field.storage.node.field_lastname_soundex
+    - field.storage.node.field_nativity
+    - field.storage.node.field_oakwood_date
+    - field.storage.node.field_pkoakwood
+    - field.storage.node.field_profession
+    - field.storage.node.field_remarks
+    - field.storage.node.field_seclotspace
+    - field.storage.node.field_sex
+    - field.storage.node.field_showrow
+    - field.storage.node.field_whereburied
+    - search_api.server.drupal
+  module:
+    - node
+    - search_api
+id: oakwood
+name: Oakwood
+description: ''
+read_only: false
+field_settings:
+  field_attendingphysician:
+    label: attendingphysician
+    datasource_id: 'entity:node'
+    property_path: field_attendingphysician
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_attendingphysician
+  field_bywhomburied:
+    label: bywhomburied
+    datasource_id: 'entity:node'
+    property_path: field_bywhomburied
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bywhomburied
+  field_color:
+    label: color
+    datasource_id: 'entity:node'
+    property_path: field_color
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_color
+  field_disease:
+    label: disease
+    datasource_id: 'entity:node'
+    property_path: field_disease
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_disease
+  field_disease_1:
+    label: disease
+    datasource_id: 'entity:node'
+    property_path: field_disease
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_disease
+  field_firstname:
+    label: firstname
+    datasource_id: 'entity:node'
+    property_path: field_firstname
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_firstname
+  field_lastname:
+    label: lastname
+    datasource_id: 'entity:node'
+    property_path: field_lastname
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_lastname
+  field_lastname_soundex:
+    label: lastname_soundex
+    datasource_id: 'entity:node'
+    property_path: field_lastname_soundex
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_lastname_soundex
+  field_nativity:
+    label: nativity
+    datasource_id: 'entity:node'
+    property_path: field_nativity
+    type: string
+    boost: !!float 13
+    dependencies:
+      config:
+        - field.storage.node.field_nativity
+  field_oakwood_date:
+    label: date
+    datasource_id: 'entity:node'
+    property_path: field_oakwood_date
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_oakwood_date
+  field_oakwood_date_1:
+    label: date
+    datasource_id: 'entity:node'
+    property_path: field_oakwood_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_oakwood_date
+  field_pkoakwood:
+    label: pkoakwood
+    datasource_id: 'entity:node'
+    property_path: field_pkoakwood
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_pkoakwood
+  field_profession:
+    label: profession
+    datasource_id: 'entity:node'
+    property_path: field_profession
+    type: string
+    boost: !!float 8
+    dependencies:
+      config:
+        - field.storage.node.field_profession
+  field_remarks:
+    label: remarks
+    datasource_id: 'entity:node'
+    property_path: field_remarks
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_remarks
+  field_seclotspace:
+    label: SecLotSpace
+    datasource_id: 'entity:node'
+    property_path: field_seclotspace
+    type: string
+    boost: !!float 5
+    dependencies:
+      config:
+        - field.storage.node.field_seclotspace
+  field_sex:
+    label: sex
+    datasource_id: 'entity:node'
+    property_path: field_sex
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_sex
+  field_showrow:
+    label: showrow
+    datasource_id: 'entity:node'
+    property_path: field_showrow
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_showrow
+  field_whereburied:
+    label: whereburied
+    datasource_id: 'entity:node'
+    property_path: field_whereburied
+    type: string
+    boost: !!float 5
+    dependencies:
+      config:
+        - field.storage.node.field_whereburied
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 13
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - oakwood
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - field_attendingphysician
+      - field_bywhomburied
+      - field_color
+      - field_disease
+      - field_disease_1
+      - field_firstname
+      - field_lastname
+      - field_lastname_soundex
+      - field_nativity
+      - field_oakwood_date
+      - field_profession
+      - field_remarks
+      - field_seclotspace
+      - field_sex
+      - field_showrow
+      - field_whereburied
+      - title
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
+server: drupal

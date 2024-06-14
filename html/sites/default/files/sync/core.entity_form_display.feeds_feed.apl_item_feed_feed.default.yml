@@ -1,0 +1,22 @@
+uuid: 23c712e4-4218-40b3-a5e5-b227383df210
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.apl_item_feed_feed
+id: feeds_feed.apl_item_feed_feed.default
+targetEntityType: feeds_feed
+bundle: apl_item_feed_feed
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Title for this batch'
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

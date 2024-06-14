@@ -1,0 +1,68 @@
+uuid: f36719af-4c86-4e5e-81dc-67035d3530a2
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: events_calendar
+label: 'Events Calendar'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+      
+          currenthtml = $('.fc-event')[0];
+  		
+  		console.log('current html');
+  		
+
+  setInterval(function() {
+
+          latesthtml = $('.fc-event')[0];
+
+
+          if(currenthtml != latesthtml) {
+  			currenthtml = $('.fc-event')[0];
+
+  var container = $('.fc-scroller');
+  var element = $('.fc-event-container:first');
+
+  container.animate({
+      scrollTop: container.scrollTop = container.scrollTop() + element.offset().top - container.offset().top - 60
+  }, {
+      duration: 500,
+      specialEasing: {
+          width: 'linear',
+          height: 'easeOutBounce'
+      },
+      complete: function (e) {
+          console.log("animation completed");
+      }
+  });
+        
+
+          } 
+      }, 500);
+      
+
+
+  	  
+    });
+  })(jQuery);
+
+  	 
+
+  	  
+  	  
+  	  
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events/calendar
+contexts: {  }
+conditions_require_all: true

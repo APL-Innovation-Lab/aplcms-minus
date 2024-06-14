@@ -1,0 +1,18 @@
+uuid: 6c4a14b2-8cf6-4071-9a83-8a52af7124b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.screen
+id: node.screen.created
+field_name: created
+entity_type: node
+bundle: screen
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: fc611c42-abb2-4580-9e84-6fb9ba2ecf7d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.name
+field_name: name
+entity_type: taxonomy_term
+bundle: taglets
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

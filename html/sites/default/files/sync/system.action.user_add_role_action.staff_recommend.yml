@@ -1,0 +1,14 @@
+uuid: 9b988d70-d7c7-4ac5-9c56-9826f5594d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.staff_recommend
+  module:
+    - user
+id: user_add_role_action.staff_recommend
+label: 'Add the Staff Recommend role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: staff_recommend

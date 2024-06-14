@@ -1,0 +1,18 @@
+uuid: c8b55d86-0b32-4503-973f-cc078f0af5b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_page
+id: node.virtual_library_page.title
+field_name: title
+entity_type: node
+bundle: virtual_library_page
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

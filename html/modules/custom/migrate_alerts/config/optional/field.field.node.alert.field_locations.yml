@@ -1,0 +1,31 @@
+uuid: b436019b-7da3-48fc-8600-a36f3a614ef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.alert
+    - taxonomy.vocabulary.intended_audience
+    - taxonomy.vocabulary.library_location
+id: node.alert.field_locations
+field_name: field_locations
+entity_type: node
+bundle: alert
+label: Locations
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      intended_audience: intended_audience
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: intended_audience
+field_type: entity_reference

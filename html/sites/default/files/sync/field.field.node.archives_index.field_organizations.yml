@@ -1,0 +1,19 @@
+uuid: a460591a-b082-4937-9d51-7ee8eeb07bc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizations
+    - node.type.archives_index
+id: node.archives_index.field_organizations
+field_name: field_organizations
+entity_type: node
+bundle: archives_index
+label: Organizations
+description: 'examples: Women''s Symphony League of Austin; Austin Symphony Orchestra'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

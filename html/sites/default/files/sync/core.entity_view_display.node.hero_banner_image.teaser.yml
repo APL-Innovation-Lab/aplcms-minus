@@ -1,0 +1,30 @@
+uuid: b2b9219f-7c74-4498-8a82-7b2a91850155
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hero_banner_image.field_button_url
+    - field.field.node.hero_banner_image.field_hero_banner_image
+    - field.field.node.hero_banner_image.field_slr_time_end
+    - field.field.node.hero_banner_image.field_slr_time_start
+    - node.type.hero_banner_image
+  module:
+    - user
+id: node.hero_banner_image.teaser
+targetEntityType: node
+bundle: hero_banner_image
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_url: true
+  field_hero_banner_image: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

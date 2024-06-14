@@ -1,0 +1,17 @@
+uuid: 22237082-7e1e-4189-898a-1e69525b20be
+langcode: eng
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wide_preview_1024_x_200_
+label: 'Wide preview (1024 x 200)'
+effects:
+  1d1bfbcc-ea2d-4945-ba0d-9adbc002c3b6:
+    uuid: 1d1bfbcc-ea2d-4945-ba0d-9adbc002c3b6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 200
+      crop_type: focal_point

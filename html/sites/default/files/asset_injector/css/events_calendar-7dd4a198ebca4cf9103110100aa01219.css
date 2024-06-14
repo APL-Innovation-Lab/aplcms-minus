@@ -1,0 +1,29 @@
+.fc-center {
+	margin: 0 auto;
+}
+.fc-head-container.fc-widget-header {
+	background: #f3f4f9;
+}
+.views-exposed-form__item.views-exposed-form__item {
+	margin: 0 0.5rem 0 0 !important;
+}
+.fc-right {
+	display: none !important;
+	opacity: 0 !important;
+}
+.fc-left {
+	position: absolute;
+}
+.fc-day-top, .fc-day-header {
+	height: auto;
+}
+.region.region-content {
+	margin: 0 auto !important;
+}
+#views-exposed-form-events-calendar-10-eventscalendar {
+	background: none;
+	box-shadow: none !important;
+	padding: 0;
+	margin-top: 0;
+	border: none;
+}

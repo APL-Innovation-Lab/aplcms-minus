@@ -1,0 +1,20 @@
+uuid: c4e8f02f-8b13-406e-ba0c-a0d366b3a9d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.menu_link
+field_name: menu_link
+entity_type: node
+bundle: atxyz
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

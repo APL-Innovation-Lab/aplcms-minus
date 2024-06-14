@@ -1,0 +1,18 @@
+uuid: 990512b3-dd10-44a8-8587-35f02d9bf21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_event_type
+id: taxonomy_term.recycled_reads_event_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: recycled_reads_event_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

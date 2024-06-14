@@ -1,0 +1,23 @@
+uuid: 0c98f40d-91d6-4f1d-85f7-bb2afada603f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_acknowledgement
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_acknowledgement
+field_name: field_ahc_d_acknowledgement
+entity_type: node
+bundle: ahc_donation
+label: Acknowledgement
+description: 'Quisiera reconocimiento escrito de mi donación al  Centro Historia del Austin'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I would like written acknowledgement of my donation to the Austin History Center.'
+  off_label: 'Off'
+field_type: boolean

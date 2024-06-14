@@ -1,0 +1,18 @@
+uuid: 53003c2b-0030-4da1-97f8-5c27e1beed2d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood.title
+field_name: title
+entity_type: node
+bundle: oakwood
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

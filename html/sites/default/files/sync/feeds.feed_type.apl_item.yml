@@ -1,0 +1,462 @@
+uuid: bc0bdd1f-eb4a-43c2-8af1-ed46cee38944
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.apl_item.created
+    - core.base_field_override.node.apl_item.title
+    - core.base_field_override.node.apl_item.uid
+    - field.field.node.apl_item.field_api_format
+    - field.field.node.apl_item.field_api_subtitle
+    - field.field.node.apl_item.field_apl_authors
+    - field.field.node.apl_item.field_apl_item_image
+    - field.field.node.apl_item.field_bib_isbn
+    - field.field.node.apl_item.field_bibliocommons_id
+    - field.field.node.apl_item.field_call_number
+    - field.field.node.apl_item.field_custom_link
+    - field.field.node.apl_item.field_description
+    - field.field.node.apl_item.field_display_timespan_04_07p
+    - field.field.node.apl_item.field_display_title
+    - field.field.node.apl_item.field_intended_audience_2016i
+    - field.field.node.apl_item.field_isbn
+    - field.field.node.apl_item.field_item_list_category
+    - field.field.node.apl_item.field_jacket_cover
+    - field.field.node.apl_item.field_other_formats
+    - field.field.node.apl_item.field_publication_date
+    - field.field.node.apl_item.field_skip_adding_this_to_a_list
+    - field.field.node.apl_item.field_sort_order
+    - field.field.node.apl_item.field_upc
+    - node.type.apl_item
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c05fba7a-a799-4344-a494-135b10b4e264:
+        separator: ','
+        limit: null
+        uuid: c05fba7a-a799-4344-a494-135b10b4e264
+        plugin: explode
+        source: field_other_formats
+        weight: 0
+        label: Explode
+      c7770815-5734-4399-818c-699984448b9c:
+        character: ''
+        side: trim
+        uuid: c7770815-5734-4399-818c-699984448b9c
+        plugin: trim
+        source: field_other_formats
+        weight: 1
+        label: 'Characters to trim'
+      34c972d4-6e14-49a0-9639-a58f1ed68dbe:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 34c972d4-6e14-49a0-9639-a58f1ed68dbe
+        plugin: find_replace_regex
+        source: field_apl_item_image
+        weight: 1
+        label: 'Find replace REGEX'
+      335890e2-ae64-4fe9-a773-c2979174fa0c:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 335890e2-ae64-4fe9-a773-c2979174fa0c
+        plugin: find_replace_regex
+        source: field_apl_item_image
+        weight: 2
+        label: 'Find replace REGEX 2'
+      4552a92a-5ca6-44ce-9f7d-7398b93f8ca0:
+        find: '/\.jpg.*/'
+        replace: .jpg
+        limit: null
+        uuid: 4552a92a-5ca6-44ce-9f7d-7398b93f8ca0
+        plugin: find_replace_regex
+        source: field_apl_item_image
+        weight: 3
+        label: 'Find replace REGEX'
+      7142483e-4288-4129-96b0-d180dd8dcef2:
+        text: eng
+        uuid: 7142483e-4288-4129-96b0-d180dd8dcef2
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      66839674-beca-4835-85fc-254bb14430c2:
+        separator: ','
+        limit: null
+        uuid: 66839674-beca-4835-85fc-254bb14430c2
+        plugin: explode
+        source: facets
+        weight: 0
+        label: Explode
+      81244e0e-b066-4d3c-bf25-aa5b5deec8f5:
+        separator: ','
+        limit: null
+        uuid: 81244e0e-b066-4d3c-bf25-aa5b5deec8f5
+        plugin: explode
+        source: audience
+        weight: 0
+        label: Explode
+id: apl_item
+label: 'APL Item'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: apl_item
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: json
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: json
+  field_apl_authors:
+    value: field_apl_authors
+    label: field_apl_authors
+    machine_name: field_apl_authors
+    type: json
+  field_bib_isbn:
+    value: field_bib_isbn
+    label: field_bib_isbn
+    machine_name: field_bib_isbn
+    type: json
+  field_bibliocommons_id:
+    value: field_bibliocommons_id
+    label: field_bibliocommons_id
+    machine_name: field_bibliocommons_id
+    type: json
+  field_call_number:
+    value: field_call_number
+    label: field_call_number
+    machine_name: field_call_number
+    type: json
+  field_custom_link:
+    value: field_custom_link
+    label: field_custom_link
+    machine_name: field_custom_link
+    type: json
+  field_description:
+    value: field_description
+    label: field_description
+    machine_name: field_description
+    type: json
+  field_display_timespan:
+    value: field_display_timespan
+    label: field_display_timespan
+    machine_name: field_display_timespan
+    type: json
+  field_display_timespan2:
+    value: field_display_timespan2
+    label: field_display_timespan2
+    machine_name: field_display_timespan2
+    type: json
+  field_display_title:
+    value: field_display_title
+    label: field_display_title
+    machine_name: field_display_title
+    type: json
+  field_item_list_category:
+    value: field_item_list_category
+    label: field_item_list_category
+    machine_name: field_item_list_category
+    type: json
+  field_api_format:
+    value: field_api_format
+    label: field_api_format
+    machine_name: field_api_format
+    type: json
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: json
+  field_isbn:
+    value: field_isbn
+    label: field_isbn
+    machine_name: field_isbn
+    type: json
+  field_intended_audience_2016i:
+    value: field_intended_audience_2016i
+    label: field_intended_audience_2016i
+    machine_name: field_intended_audience_2016i
+    type: json
+  field_other_formats:
+    value: field_other_formats
+    label: field_other_formats
+    machine_name: field_other_formats
+    type: json
+  field_publication_date:
+    value: field_publication_date
+    label: field_publication_date
+    machine_name: field_publication_date
+    type: json
+  field_skip_adding_this_to_a_list:
+    value: field_skip_adding_this_to_a_list
+    label: field_skip_adding_this_to_a_list
+    machine_name: field_skip_adding_this_to_a_list
+    type: json
+  field_sort_order:
+    value: field_sort_order
+    label: field_sort_order
+    machine_name: field_sort_order
+    type: json
+  field_api_subtitle:
+    value: field_api_subtitle
+    label: field_api_subtitle
+    machine_name: field_api_subtitle
+    type: json
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: json
+  field_upc:
+    value: field_upc
+    label: field_upc
+    machine_name: field_upc
+    type: json
+  field_jacket_cover:
+    value: field_jacket_cover
+    label: field_jacket_cover
+    machine_name: field_jacket_cover
+    type: json
+  field_apl_item_image:
+    value: field_apl_item_image
+    label: field_apl_item_image
+    machine_name: field_apl_item_image
+    type: json
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: json
+  facets:
+    value: facets
+    label: facets
+    machine_name: facets
+    type: json
+  format:
+    value: format
+    label: format
+    machine_name: format
+    type: json
+  audience:
+    value: audience
+    label: audience
+    machine_name: audience
+    type: json
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_apl_authors
+    map:
+      value: field_apl_authors
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_bib_isbn
+    map:
+      value: field_bib_isbn
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_bibliocommons_id
+    map:
+      value: field_bibliocommons_id
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_call_number
+    map:
+      value: field_call_number
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_custom_link
+    map:
+      value: field_custom_link
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_description
+    map:
+      value: field_description
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_display_timespan_04_07p
+    map:
+      value: field_display_timespan
+      end_value: field_display_timespan2
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_display_title
+    map:
+      value: field_display_title
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_item_list_category
+    map:
+      target_id: facets
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_api_format
+    map:
+      value: format
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_isbn
+    map:
+      value: field_isbn
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_intended_audience_2016i
+    map:
+      target_id: audience
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_other_formats
+    map:
+      value: field_other_formats
+    settings:
+      language: null
+  -
+    target: field_publication_date
+    map:
+      value: field_publication_date
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_skip_adding_this_to_a_list
+    map:
+      value: field_skip_adding_this_to_a_list
+    settings:
+      language: null
+  -
+    target: field_sort_order
+    map:
+      value: field_sort_order
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_api_subtitle
+    map:
+      value: field_api_subtitle
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_upc
+    map:
+      value: field_upc
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_jacket_cover
+    map:
+      value: field_jacket_cover
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_apl_item_image
+    map:
+      target_id: field_apl_item_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

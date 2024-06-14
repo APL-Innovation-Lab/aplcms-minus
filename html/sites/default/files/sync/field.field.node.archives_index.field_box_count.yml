@@ -1,0 +1,23 @@
+uuid: c1bf5bb4-64b8-4c2f-a210-ad312688b5f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box_count
+    - node.type.archives_index
+id: node.archives_index.field_box_count
+field_name: field_box_count
+entity_type: node
+bundle: archives_index
+label: 'Box Count'
+description: 'example: 3'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

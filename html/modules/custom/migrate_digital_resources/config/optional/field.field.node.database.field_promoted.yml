@@ -1,0 +1,23 @@
+uuid: a5401053-e3ed-4663-af99-a670e97e18f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promoted
+    - node.type.database
+id: node.database.field_promoted
+field_name: field_promoted
+entity_type: node
+bundle: database
+label: Promoted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Promoted
+  off_label: 'Not Promoted'
+field_type: boolean

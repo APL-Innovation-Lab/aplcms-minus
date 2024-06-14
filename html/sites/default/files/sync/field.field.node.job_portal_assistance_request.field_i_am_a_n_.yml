@@ -1,0 +1,21 @@
+uuid: 85032a78-0cab-4dfb-85ce-2cd907a7c94d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_am_a_n_
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field_i_am_a_n_
+field_name: field_i_am_a_n_
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'I am a(n)...'
+description: 'Please check as many as applicable to help us match you to a Job Coach.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

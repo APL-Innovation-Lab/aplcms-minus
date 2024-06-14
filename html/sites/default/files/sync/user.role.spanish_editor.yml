@@ -1,0 +1,42 @@
+uuid: f75a09e2-d63d-4b2b-b012-11e2c71194af
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.unfiltered_html
+    - node.type.alert
+    - node.type.highighted_images
+    - node.type.job_portal_page
+    - node.type.library_info
+    - node.type.page
+    - node.type.passports_page
+    - node.type.virtual_library_page
+  module:
+    - content_translation
+    - editoria11y
+    - filter
+id: spanish_editor
+label: 'Spanish Editor'
+weight: 23
+is_admin: null
+permissions:
+  - 'create content translations'
+  - 'delete content translations'
+  - 'translate alert node'
+  - 'translate any entity'
+  - 'translate editable entities'
+  - 'translate highighted_images node'
+  - 'translate job_portal_page node'
+  - 'translate library_info node'
+  - 'translate page node'
+  - 'translate passports_page node'
+  - 'translate virtual_library_page node'
+  - 'update content translations'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format unfiltered_html'
+  - 'view editoria11y checker'

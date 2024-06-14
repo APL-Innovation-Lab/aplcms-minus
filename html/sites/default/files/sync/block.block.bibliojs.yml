@@ -1,0 +1,30 @@
+uuid: e11d1d55-7028-4daf-8944-4b9cd4e95163
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: bibliojs
+theme: claro2
+region: content_footer
+weight: 0
+provider: null
+plugin: 'block_content:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+settings:
+  id: 'block_content:d6d0e090-9e7f-4a48-b105-bbb20f2add8c'
+  label: 'Biblio JS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stage/*'

@@ -1,0 +1,18 @@
+uuid: 51af16b2-2a9a-4960-b01b-34b0688e0272
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+id: node.job_portal_page.metatag
+field_name: metatag
+entity_type: node
+bundle: job_portal_page
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

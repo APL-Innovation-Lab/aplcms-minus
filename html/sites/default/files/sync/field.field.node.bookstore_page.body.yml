@@ -1,0 +1,23 @@
+uuid: 44951dcb-47b1-4960-bda3-fa8563281ee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bookstore_page
+  module:
+    - text
+id: node.bookstore_page.body
+field_name: body
+entity_type: node
+bundle: bookstore_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

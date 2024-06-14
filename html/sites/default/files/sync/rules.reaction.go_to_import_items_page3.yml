@@ -1,0 +1,56 @@
+uuid: e7cd760b-1442-4a64-ada3-d7917daa09f4
+langcode: en
+status: true
+dependencies: {  }
+id: go_to_import_items_page3
+label: 'go to Import Items page3'
+events:
+  -
+    event_name: 'rules_entity_insert:node--apl_item'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 7e50134a-27a2-422b-98d4-4bc8b7fcc138
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: fcd02404-eeb7-4eaa-99ef-5213eee3adaa
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 7f5f3444-0f98-4622-8dc4-c18229ee5c85
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: e413c504-dfe6-4aee-809f-0a1e5df16ffd
+        weight: -50
+        action_id: rules_system_message
+        context_values:
+          message: 'Item added'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 7708bf1a-d07a-415d-af80-624a69733bcb
+        weight: -49
+        action_id: rules_page_redirect
+        context_values:
+          url: /node/add/apl_item
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

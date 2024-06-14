@@ -1,0 +1,23 @@
+uuid: 09a58c19-880f-4f98-91d9-c139d427633c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_size
+    - node.type.highighted_images
+  module:
+    - options
+id: node.highighted_images.field_image_size
+field_name: field_image_size
+entity_type: node
+bundle: highighted_images
+label: 'Image Size'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

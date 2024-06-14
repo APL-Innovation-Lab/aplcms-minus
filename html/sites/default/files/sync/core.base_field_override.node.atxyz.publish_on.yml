@@ -1,0 +1,18 @@
+uuid: 0fd523d6-7a13-4f5d-9d28-3a3dfa1b721c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.publish_on
+field_name: publish_on
+entity_type: node
+bundle: atxyz
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,18 @@
+uuid: c6f8439f-ddee-41ce-a1ae-7318ba9a6a31
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slide
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.slide
+target_entity_type_id: node
+target_bundle: slide
+default_langcode: site_default
+language_alterable: false

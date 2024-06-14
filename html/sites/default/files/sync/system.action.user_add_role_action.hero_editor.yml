@@ -1,0 +1,14 @@
+uuid: 42de2bae-da12-4258-a248-df5df674b9d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hero_editor
+  module:
+    - user
+id: user_add_role_action.hero_editor
+label: 'Add the Hero Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hero_editor

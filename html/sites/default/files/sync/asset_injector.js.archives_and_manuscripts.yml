@@ -1,0 +1,31 @@
+uuid: b34610a6-6405-42ec-a481-0513be6af30e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: archives_and_manuscripts
+label: 'archives and manuscripts'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+
+  $( '.view-archives-and-manuscripts .views-field .views-label' ).click(function() {
+    $( this ).toggleClass( 'active' );
+  });
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/ahc/archives/*'
+contexts: {  }
+conditions_require_all: true

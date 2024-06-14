@@ -1,0 +1,30 @@
+uuid: f22c3d39-371f-46dc-a8cd-c6e67545332b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_archives_access
+field_name: field_archives_access
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Available on-site'
+      label: 'Available on-site'
+    -
+      value: 'Advance notice required'
+      label: 'Advance notice required'
+    -
+      value: 'Some portions may require advance notice'
+      label: 'Some portions may require advance notice'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

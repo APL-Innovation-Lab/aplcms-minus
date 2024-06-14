@@ -1,0 +1,24 @@
+uuid: d996c328-b9dc-437b-87ed-2db36421870e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.hero_image
+  module:
+    - datetime
+id: node.hero_image.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: hero_image
+label: Start
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

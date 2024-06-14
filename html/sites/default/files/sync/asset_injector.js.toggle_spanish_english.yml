@@ -1,0 +1,40 @@
+uuid: 97b52d43-e8e4-44c5-8eb4-52de992f7d89
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: toggle_spanish_english
+label: 'toggle spanish/english'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+      $('#ahc-button-en').click(function(e) {
+  		      e.preventDefault();
+  			  console.log('english selected');
+
+  		$('#ahc-en').css('display','block');
+  		$('#ahc-es').css('display','none');
+  	});    
+  	$('#ahc-button-es').click(function(e) {
+  		      e.preventDefault();
+  			  console.log('spanish selected');
+
+  		$('#ahc-es').css('display','block');
+  		$('#ahc-en').css('display','none');
+  	});
+  	
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/ahc/*'
+contexts: {  }
+conditions_require_all: true

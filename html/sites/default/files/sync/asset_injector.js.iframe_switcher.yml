@@ -1,0 +1,33 @@
+uuid: 3c631296-7e2c-468d-b919-d5c4252554d8
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: iframe_switcher
+label: 'iframe switcher'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+    console.log('loaded');
+  $( '.switchy' ).each(function() {
+     	var mysrc = $( this ).attr('realsrc');
+  	  console.log(mysrc);
+
+    $( this ).parent().append( '<iframe class="iffy-frame" src="' + mysrc + '"></iframe>');
+  });
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/admin/item-organizer\r\n/admin/item-organizer/*\r\n/admin/slide-organizer\r\n/admin/slide-organizer/*"
+contexts: {  }
+conditions_require_all: true

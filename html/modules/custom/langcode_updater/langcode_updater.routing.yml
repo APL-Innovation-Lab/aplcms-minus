@@ -1,0 +1,7 @@
+langcode_updater.form:
+  path: '/admin/config/system/langcode-updater'
+  defaults:
+    _form: '\Drupal\langcode_updater\Form\LangcodeUpdaterForm'
+    _title: 'Langcode Updater'
+  requirements:
+    _permission: 'administer site configuration'

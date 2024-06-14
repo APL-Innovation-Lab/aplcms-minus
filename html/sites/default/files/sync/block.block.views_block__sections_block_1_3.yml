@@ -1,0 +1,29 @@
+uuid: 57b6ab68-9fa4-4697-8dbd-39647a860e83
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - system
+    - views
+  theme:
+    - claro
+id: views_block__sections_block_1_3
+theme: claro
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:sections-block_1'
+settings:
+  id: 'views_block:sections-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/confirm/*\r\n/cancel/*\r\n/feed/*\r\n/feeds/*"

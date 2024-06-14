@@ -1,0 +1,31 @@
+uuid: 0e759411-73db-4019-9860-aa7bea185999
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sch_seq_channel
+    - node.type.apltv_scheduled_sequence
+    - taxonomy.vocabulary.apltv_channel
+    - taxonomy.vocabulary.library_location
+id: node.apltv_scheduled_sequence.field_sch_seq_channel
+field_name: field_sch_seq_channel
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: Channel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      apltv_channel: apltv_channel
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: apltv_channel
+field_type: entity_reference

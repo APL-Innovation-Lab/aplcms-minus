@@ -1,0 +1,20 @@
+uuid: ff59f8dc-5dbd-431e-b36e-ed7f3cca49d7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.menu_link
+field_name: menu_link
+entity_type: node
+bundle: slr_alert
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

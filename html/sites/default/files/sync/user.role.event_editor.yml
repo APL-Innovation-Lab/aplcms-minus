@@ -1,0 +1,38 @@
+uuid: 5590c436-5a50-4be1-8d77-9c5a0aa94701
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.event
+    - node.type.reflection
+  module:
+    - editoria11y
+    - filter
+    - node
+    - publishcontent
+    - shortcut
+    - system
+    - toolbar
+id: event_editor
+label: 'Event Editor'
+weight: -4
+is_admin: null
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create event content'
+  - 'create reflection content'
+  - 'delete any event content'
+  - 'delete event revisions'
+  - 'delete own event content'
+  - 'delete own reflection content'
+  - 'edit any event content'
+  - 'edit own event content'
+  - 'edit own reflection content'
+  - 'revert event revisions'
+  - 'unpublish any node type event'
+  - 'use text format basic_html'
+  - 'view editoria11y checker'
+  - 'view event revisions'
+  - 'view the administration theme'

@@ -1,0 +1,28 @@
+uuid: a54167b0-57f9-42db-be57-bf8f87b4a081
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_exposedformsearchsearch_2
+theme: claro2noGA
+region: content
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:search-search'
+settings:
+  id: 'views_exposed_filter_block:search-search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

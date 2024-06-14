@@ -1,0 +1,27 @@
+uuid: 68304e49-89b6-472b-bd77-acde6dda1bd7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+id: rentalheader
+theme: claro2
+region: header
+weight: -14
+provider: null
+plugin: 'block_content:66daef86-1e89-4eb0-9b63-d6b8a55d9e2f'
+settings:
+  id: 'block_content:66daef86-1e89-4eb0-9b63-d6b8a55d9e2f'
+  label: 'Rental header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/rental\r\n/rental/*"

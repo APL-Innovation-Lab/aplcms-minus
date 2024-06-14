@@ -1,0 +1,21 @@
+uuid: 0428daf5-dfea-4f9d-b716-67639b8ed86a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_related
+field_name: field_related
+entity_type: node
+bundle: archives_index
+label: Related
+description: 'example: AR.M.004 Carrington Family Papers'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

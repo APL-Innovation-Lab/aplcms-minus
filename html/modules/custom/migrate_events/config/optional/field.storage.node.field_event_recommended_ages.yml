@@ -1,0 +1,57 @@
+uuid: 0f542688-3884-4faf-9440-ee30d77eb814
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_recommended_ages
+field_name: field_event_recommended_ages
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: all
+      label: 'All ages welcome'
+    -
+      value: youth1
+      label: 'Recommended for ages 18 months to 3 years'
+    -
+      value: youth2
+      label: 'Recommended for ages 3 and up'
+    -
+      value: youth3
+      label: 'Recommended for ages 3-5'
+    -
+      value: youth4
+      label: 'Recommended for ages 5 and under'
+    -
+      value: youth5
+      label: 'Recommended for ages 5 and up'
+    -
+      value: youth6
+      label: 'Recommended for ages 5-9'
+    -
+      value: youth7
+      label: 'Recommended for ages 9-12'
+    -
+      value: youth10
+      label: 'Recommended for ages 10 and up'
+    -
+      value: youth8
+      label: 'Recommended for ages 13-18'
+    -
+      value: youth9
+      label: 'Teens 13-18 only'
+    -
+      value: adult
+      label: 'Recommended for ages 18 and up'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

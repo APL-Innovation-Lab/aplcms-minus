@@ -1,0 +1,35 @@
+uuid: 77f8f3fa-595c-4b17-8cfd-df6593551dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.hero_image
+    - taxonomy.vocabulary.database_subjects
+    - taxonomy.vocabulary.intended_audience
+    - taxonomy.vocabulary.library_location
+    - taxonomy.vocabulary.rooms
+id: node.hero_image.field_locations
+field_name: field_locations
+entity_type: node
+bundle: hero_image
+label: Locations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      database_subjects: database_subjects
+      intended_audience: intended_audience
+      library_location: library_location
+      rooms: rooms
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: intended_audience
+field_type: entity_reference

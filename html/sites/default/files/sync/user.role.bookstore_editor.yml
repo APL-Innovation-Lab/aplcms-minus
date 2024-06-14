@@ -1,0 +1,30 @@
+uuid: f923bb5c-d76e-48a2-bed6-d21be88a6365
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.bookstore_page
+  module:
+    - editoria11y
+    - filter
+    - node
+    - system
+    - toolbar
+id: bookstore_editor
+label: 'Bookstore Editor'
+weight: -5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create bookstore_page content'
+  - 'delete any bookstore_page content'
+  - 'delete bookstore_page revisions'
+  - 'delete own bookstore_page content'
+  - 'edit any bookstore_page content'
+  - 'edit own bookstore_page content'
+  - 'revert bookstore_page revisions'
+  - 'use text format full_html'
+  - 'view bookstore_page revisions'
+  - 'view editoria11y checker'
+  - 'view the administration theme'

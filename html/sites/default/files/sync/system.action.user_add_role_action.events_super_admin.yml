@@ -1,0 +1,14 @@
+uuid: 54653ddd-ae7b-4404-b3c2-974733e9304e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.events_super_admin
+  module:
+    - user
+id: user_add_role_action.events_super_admin
+label: 'Add the Events Super Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: events_super_admin

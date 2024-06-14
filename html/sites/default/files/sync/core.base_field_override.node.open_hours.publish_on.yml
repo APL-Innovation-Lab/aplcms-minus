@@ -1,0 +1,18 @@
+uuid: 8ee35f0a-e53d-42dd-ba19-7cce7a8bc75c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.publish_on
+field_name: publish_on
+entity_type: node
+bundle: open_hours
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,28 @@
+uuid: e631c418-5912-44d9-89cb-cadc4a2e7d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.virtual_library_resource_subjects
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_virtuallibraryresourcesubjects
+theme: uswds
+region: content
+weight: -12
+provider: null
+plugin: 'facet_block:virtual_library_resource_subjects'
+settings:
+  id: 'facet_block:virtual_library_resource_subjects'
+  label: 'Resource Subject'
+  label_display: visible
+  provider: facets
+  block_id: virtuallibraryresourcesubjects
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

@@ -1,0 +1,18 @@
+uuid: 4dd6e503-7f3c-467c-91e1-7925473729ab
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: taglets
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 294b6928-a9d2-48e3-8b50-4985c92f725b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.title
+field_name: title
+entity_type: node
+bundle: ahc_protests
+label: 'Donor Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

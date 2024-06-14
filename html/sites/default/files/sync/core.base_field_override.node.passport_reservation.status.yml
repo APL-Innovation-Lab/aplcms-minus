@@ -1,0 +1,22 @@
+uuid: 7fcf4a4a-e030-4bf1-a375-e6ba5bdc089f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.status
+field_name: status
+entity_type: node
+bundle: passport_reservation
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 9bd0878f-674a-4b72-9c2b-684be655e5e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anecdote
+    - node.type.reflection
+  module:
+    - text
+id: node.reflection.field_anecdote
+field_name: field_anecdote
+entity_type: node
+bundle: reflection
+label: Anecdote
+description: 'This should be a story about the impact of the program on a customer.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

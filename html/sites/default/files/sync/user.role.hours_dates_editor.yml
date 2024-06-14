@@ -1,0 +1,33 @@
+uuid: f270a8aa-c188-467a-b5ea-72eb77ff28dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.open_hours
+    - node.type.special_dates
+  module:
+    - filter
+    - node
+id: hours_dates_editor
+label: 'Hours & Dates Editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'create open_hours content'
+  - 'create special_dates content'
+  - 'delete any open_hours content'
+  - 'delete any special_dates content'
+  - 'delete open_hours revisions'
+  - 'delete own open_hours content'
+  - 'delete own special_dates content'
+  - 'delete special_dates revisions'
+  - 'edit any open_hours content'
+  - 'edit any special_dates content'
+  - 'edit own open_hours content'
+  - 'edit own special_dates content'
+  - 'revert open_hours revisions'
+  - 'revert special_dates revisions'
+  - 'use text format full_html'
+  - 'view open_hours revisions'
+  - 'view special_dates revisions'

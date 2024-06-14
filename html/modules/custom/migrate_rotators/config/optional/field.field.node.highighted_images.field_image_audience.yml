@@ -1,0 +1,21 @@
+uuid: 5977bddc-b228-49cb-975d-7fc6737aa95c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_audience
+    - node.type.highighted_images
+  module:
+    - options
+id: node.highighted_images.field_image_audience
+field_name: field_image_audience
+entity_type: node
+bundle: highighted_images
+label: 'Image Audience'
+description: 'This setting affects where the image appears: the home page (All Ages), the Spanish home page, Youth Services pages, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

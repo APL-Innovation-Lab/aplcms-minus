@@ -1,0 +1,40 @@
+uuid: a7a5da5a-b6e1-49a7-b150-95b78c010730
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_video_type
+field_name: field_video_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Video + Item'
+      label: 'Video + Item'
+    -
+      value: 'Video + Sequence'
+      label: 'Video + Sequence'
+    -
+      value: 'Video + Headline'
+      label: 'Video + Headline'
+    -
+      value: 'Slow TV (Fullscreen)'
+      label: 'Video - Fullscreen'
+    -
+      value: 'Web URL'
+      label: 'Web URL'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

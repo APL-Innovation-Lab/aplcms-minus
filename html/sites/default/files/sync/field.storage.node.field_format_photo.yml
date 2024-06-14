@@ -1,0 +1,81 @@
+uuid: fd0ee32a-b094-4c52-9644-2cff6b60a85f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format_photo
+field_name: field_format_photo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Ambrotypes
+    -
+      value: '2'
+      label: 'Black-and-white photographs'
+    -
+      value: '3'
+      label: 'Black-and-white negatives'
+    -
+      value: '4'
+      label: 'Cabinet photographs'
+    -
+      value: '5'
+      label: 'Color photographs'
+    -
+      value: '6'
+      label: 'Color negatives'
+    -
+      value: '7'
+      label: Daguerreotypes
+    -
+      value: '8'
+      label: 'Digital images'
+    -
+      value: '9'
+      label: 'Photograph albums'
+    -
+      value: '10'
+      label: 'Slides and transparencies'
+    -
+      value: '11'
+      label: Tintypes
+    -
+      value: '12'
+      label: Other
+    -
+      value: '13'
+      label: 'Glass plates/lantern slides'
+    -
+      value: '14'
+      label: 'Nitrate negatives'
+    -
+      value: '15'
+      label: Cyanotypes
+    -
+      value: '16'
+      label: Cartes-de-visite
+    -
+      value: '17'
+      label: Stereographs
+    -
+      value: '18'
+      label: Panoramic
+    -
+      value: '19'
+      label: 'Copy negatives'
+    -
+      value: '20'
+      label: 'Born digital'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

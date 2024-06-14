@@ -1,0 +1,117 @@
+uuid: 8b5b0bc1-fcde-4331-b7b3-242ba3866983
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_archive_location
+field_name: field_archive_location
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '34'
+      label: 'AHC Processing Workroom'
+    -
+      value: '1'
+      label: 'Archives stacks'
+    -
+      value: '2'
+      label: 'Archives video collection room'
+    -
+      value: '4'
+      label: 'Archt. flat files'
+    -
+      value: '3'
+      label: 'Archt. qAR'
+    -
+      value: '28'
+      label: 'Archt. rolls'
+    -
+      value: '23'
+      label: 'Archt. Shelves'
+    -
+      value: '27'
+      label: 'Art Room'
+    -
+      value: '5'
+      label: Artifacts
+    -
+      value: '33'
+      label: 'AV stacks'
+    -
+      value: '19'
+      label: 'Digital Storage'
+    -
+      value: '7'
+      label: 'Faulk - 3rd floor'
+    -
+      value: '30'
+      label: 'Faulk - processing'
+    -
+      value: '26'
+      label: G8
+    -
+      value: '9'
+      label: 'General collection-east wall'
+    -
+      value: '8'
+      label: 'Inner vault'
+    -
+      value: '10'
+      label: Maps
+    -
+      value: '11'
+      label: 'Mayor''s room'
+    -
+      value: '16'
+      label: 'Microfilm room'
+    -
+      value: '12'
+      label: 'O. Henry room'
+    -
+      value: '18'
+      label: 'Oral history collection'
+    -
+      value: '13'
+      label: 'Outer vault'
+    -
+      value: '14'
+      label: 'Oversize volumes'
+    -
+      value: '29'
+      label: 'Photo lab'
+    -
+      value: '15'
+      label: 'Photo room'
+    -
+      value: '20'
+      label: qAR
+    -
+      value: '17'
+      label: 'Rare format storage'
+    -
+      value: '6'
+      label: 'Reading room digital collections'
+    -
+      value: '22'
+      label: 'Recordings collection'
+    -
+      value: '32'
+      label: 'Restricted Shelf'
+    -
+      value: '24'
+      label: 'Secure storage'
+    -
+      value: '31'
+      label: 'Travis County Room'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

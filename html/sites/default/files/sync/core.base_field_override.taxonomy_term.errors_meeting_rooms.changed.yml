@@ -1,0 +1,18 @@
+uuid: 13c6fc70-7aaa-4838-807b-2a12143ea4f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.errors_meeting_rooms
+id: taxonomy_term.errors_meeting_rooms.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: errors_meeting_rooms
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

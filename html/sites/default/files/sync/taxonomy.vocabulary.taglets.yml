@@ -1,0 +1,8 @@
+uuid: 277511e2-378d-4bf4-a3ea-a0a6f6335430
+langcode: eng
+status: true
+dependencies: {  }
+name: Taglets
+vid: taglets
+description: ''
+weight: 0

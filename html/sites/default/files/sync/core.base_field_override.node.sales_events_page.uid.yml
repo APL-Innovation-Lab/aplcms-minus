@@ -1,0 +1,20 @@
+uuid: 9dbb226f-6eee-461d-a9a0-d6f912b546fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+id: node.sales_events_page.uid
+field_name: uid
+entity_type: node
+bundle: sales_events_page
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

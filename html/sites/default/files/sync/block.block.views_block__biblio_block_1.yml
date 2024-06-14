@@ -1,0 +1,39 @@
+uuid: 798a5f2e-f371-4f06-a83b-812694c79148
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.biblio
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__biblio_block_1
+theme: aplpa
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:biblio-block_1'
+settings:
+  id: 'views_block:biblio-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+      en: en
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/staging/1"

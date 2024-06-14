@@ -1,0 +1,18 @@
+uuid: b3766a6d-be71-4451-8c0b-fa4cff63d76e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_show_full_description
+field_name: field_show_full_description
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

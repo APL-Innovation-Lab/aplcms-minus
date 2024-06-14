@@ -1,0 +1,109 @@
+uuid: e5e0bc42-20d2-4aab-ba95-b4cbe9db94a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.virtual_library_page.title
+    - core.base_field_override.node.virtual_library_page.uid
+    - node.type.virtual_library_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4d1ea666-f4b2-410e-aede-d9fea4e23d95:
+        text: eng
+        uuid: 4d1ea666-f4b2-410e-aede-d9fea4e23d95
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: virtual_library_page
+label: 'Virtual Library Page'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: virtual_library_page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 69420
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: eng
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: eng
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0

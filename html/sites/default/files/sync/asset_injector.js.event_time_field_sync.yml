@@ -1,0 +1,48 @@
+uuid: 5662aa7d-4164-4a8c-b7ac-1fd3ae6d3ab1
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: event_time_field_sync
+label: 'Event - Time field sync'
+code: |+
+  (function ($,jQuery) {
+    $(document).ready(function(){
+  console.log('hellloo1a');
+
+  $('#edit-field-slr-time-start-0-value-date').change(function() {
+
+  var n_date = $('#edit-field-slr-time-start-0-value-date').val();
+  var n_date2 = $('#edit-field-slr-time-end-0-value-date');
+  n_date2.val(n_date);	
+
+  });
+        
+  $('#edit-field-slr-time-end-0-value-date').change(function() {
+
+  var n_date = $('#edit-field-slr-time-start-0-value-date');
+  var n_date2 = $('#edit-field-slr-time-end-0-value-date').val();
+  n_date.val(n_date2);	
+
+  });
+
+  });
+  })(jQuery);
+
+
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,19 @@
+uuid: 8cf003d9-8868-455b-88d6-ea428a8fd63b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upc
+    - node.type.apl_item
+id: node.apl_item.field_upc
+field_name: field_upc
+entity_type: node
+bundle: apl_item
+label: UPC
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

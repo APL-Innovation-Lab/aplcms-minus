@@ -1,0 +1,18 @@
+uuid: f63037dc-0411-4e52-8f9b-4629e75b572d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.created
+field_name: created
+entity_type: node
+bundle: room_reservation
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

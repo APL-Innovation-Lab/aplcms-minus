@@ -1,0 +1,35 @@
+uuid: 75ca6ac8-e938-42dc-9f2c-785fbbdd62f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.gift_shop_page
+    - node.type.open_hours
+  module:
+    - editoria11y
+    - filter
+    - node
+    - toolbar
+id: gift_shop_page_editor
+label: 'Gift Shop Page Editor'
+weight: -3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create gift_shop_page content'
+  - 'create open_hours content'
+  - 'delete any gift_shop_page content'
+  - 'delete gift_shop_page revisions'
+  - 'delete open_hours revisions'
+  - 'delete own gift_shop_page content'
+  - 'delete own open_hours content'
+  - 'edit any gift_shop_page content'
+  - 'edit own gift_shop_page content'
+  - 'edit own open_hours content'
+  - 'revert gift_shop_page revisions'
+  - 'revert open_hours revisions'
+  - 'use text format full_html'
+  - 'view editoria11y checker'
+  - 'view gift_shop_page revisions'
+  - 'view open_hours revisions'

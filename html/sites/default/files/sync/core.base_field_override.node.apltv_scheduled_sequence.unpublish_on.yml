@@ -1,0 +1,18 @@
+uuid: 50edfba7-a20f-4f7b-8eed-8442bc22fefe
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.apltv_scheduled_sequence
+id: node.apltv_scheduled_sequence.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

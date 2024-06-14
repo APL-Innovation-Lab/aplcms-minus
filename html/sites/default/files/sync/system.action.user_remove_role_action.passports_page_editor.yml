@@ -1,0 +1,14 @@
+uuid: 9cd515a1-1b2f-4fb1-bb36-55c3ecbc3280
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.passports_page_editor
+  module:
+    - user
+id: user_remove_role_action.passports_page_editor
+label: 'Remove the Passports Page Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: passports_page_editor

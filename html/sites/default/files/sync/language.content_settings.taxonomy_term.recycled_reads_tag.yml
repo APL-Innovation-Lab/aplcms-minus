@@ -1,0 +1,18 @@
+uuid: 0f5c766d-dbbd-461f-b024-d47870a2928b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_tag
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.recycled_reads_tag
+target_entity_type_id: taxonomy_term
+target_bundle: recycled_reads_tag
+default_langcode: site_default
+language_alterable: false

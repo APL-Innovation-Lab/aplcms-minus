@@ -1,0 +1,42 @@
+uuid: 50b760db-59a7-4d9d-b8fd-1c9b14fe13a0
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: heroes
+label: Heroes
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+  /*
+  setTimeout(() => {
+
+
+  console.log('hero8');
+
+  $('.hero-image').each(function() {
+    var image = $( this ).attr('data-url');
+    console.log(image);
+    $( this ).css('background-image','url(' + image + ')');
+  });
+
+    console.log("Delayed for 1 second.");
+  }, "1000")
+
+  */
+  console.log('heroes js muted')
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "xbb<front>\r\nbbbb/ahc/about-us"
+contexts: {  }
+conditions_require_all: true

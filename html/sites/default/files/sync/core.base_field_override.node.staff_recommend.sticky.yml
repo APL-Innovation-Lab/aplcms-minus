@@ -1,0 +1,22 @@
+uuid: e2f4e117-e0b7-4a9c-a2f2-59d53f71cd80
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.sticky
+field_name: sticky
+entity_type: node
+bundle: staff_recommend
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

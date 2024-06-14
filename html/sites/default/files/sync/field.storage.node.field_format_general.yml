@@ -1,0 +1,45 @@
+uuid: 6791956b-a407-4ecf-a247-6d2644131780
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format_general
+field_name: field_format_general
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Architectural drawings'
+    -
+      value: '2'
+      label: Art
+    -
+      value: '3'
+      label: Artifacts
+    -
+      value: '4'
+      label: Audio
+    -
+      value: '5'
+      label: 'Digital records'
+    -
+      value: '6'
+      label: 'Photographic materials'
+    -
+      value: '7'
+      label: 'Text materials'
+    -
+      value: '8'
+      label: Video
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,44 @@
+uuid: ee9bf648-3354-4fdb-922c-15f487060d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - path
+    - text
+id: taxonomy_term.database_subjects.default
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

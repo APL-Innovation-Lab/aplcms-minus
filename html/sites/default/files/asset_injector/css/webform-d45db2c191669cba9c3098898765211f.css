@@ -1,0 +1,9 @@
+#block-claro2-content,
+.page-title {
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+}
+td .button--primary {
+	color: white !important;
+}

@@ -1,0 +1,18 @@
+uuid: df8b4fdc-1dc8-4647-8c79-39308f4d11c1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: bookstore_page
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

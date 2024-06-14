@@ -1,0 +1,10 @@
+uuid: e4f54ad2-f902-4446-b92f-f51018a27131
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: node.biblio_list
+label: 'Biblio List'
+targetEntityType: node
+cache: true

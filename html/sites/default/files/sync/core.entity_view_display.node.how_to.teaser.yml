@@ -1,0 +1,34 @@
+uuid: a4171723-7fc4-4eec-b0bb-0e8a5f1cd414
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.how_to.body
+    - field.field.node.how_to.field_howto_tags
+    - node.type.how_to
+  module:
+    - text
+    - user
+id: node.how_to.teaser
+targetEntityType: node
+bundle: how_to
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_howto_tags: true
+  langcode: true
+  search_api_excerpt: true

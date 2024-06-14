@@ -1,0 +1,20 @@
+uuid: c070fda4-2541-4f16-ac3c-22030f5d490c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+  module:
+    - path
+id: node.fullscreen_image.path
+field_name: path
+entity_type: node
+bundle: fullscreen_image
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

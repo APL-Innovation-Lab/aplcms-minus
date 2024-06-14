@@ -1,0 +1,27 @@
+uuid: ffd1d162-af7f-4462-a689-e8e9f5b6d38f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_giftshopheader
+theme: claro2noGA
+region: header
+weight: -16
+provider: null
+plugin: 'block_content:b31dd7dd-e282-45c3-a735-372dd728ed8f'
+settings:
+  id: 'block_content:b31dd7dd-e282-45c3-a735-372dd728ed8f'
+  label: 'Giftshop header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/giftshop\r\n/giftshop/*"

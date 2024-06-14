@@ -1,0 +1,150 @@
+uuid: 0c914787-a1d7-424f-9576-f8eac7370322
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.event_tags.name
+    - field.field.taxonomy_term.event_tags.field_is_an_event_category
+    - taxonomy.vocabulary.event_tags
+  module:
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e4a54d1a-9877-4862-8396-2879a95d7d76:
+        text: eng
+        uuid: e4a54d1a-9877-4862-8396-2879a95d7d76
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: event_tags
+label: 'Event Tags'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: event_tags
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  main_image:
+    value: main_image
+    label: main_image
+    machine_name: main_image
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  field_is_an_event_category:
+    value: field_is_an_event_category
+    label: field_is_an_event_category
+    machine_name: field_is_an_event_category
+    type: csv
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  field_main_image_event:
+    value: field_main_image_event
+    label: field_main_image_event
+    machine_name: field_main_image_event
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  parent:
+    value: parent
+    label: parent
+    machine_name: parent
+    type: csv
+  weight:
+    value: weight
+    label: weight
+    machine_name: weight
+    type: csv
+  event_category:
+    value: event_category
+    label: event_category
+    machine_name: event_category
+    type: csv
+  main_image_:
+    value: main_image
+    label: main_image
+    machine_name: main_image_
+    type: csv
+  field_is_an_event_category_:
+    value: field_is_an_event_category
+    label: field_is_an_event_category
+    machine_name: field_is_an_event_category_
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_is_an_event_category
+    map:
+      value: field_is_an_event_category_
+    settings:
+      language: null
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: parent
+    map:
+      target_id: parent
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: weight
+    map:
+      value: weight
+    settings: {  }
+    unique: {  }

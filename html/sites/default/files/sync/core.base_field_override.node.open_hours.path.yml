@@ -1,0 +1,20 @@
+uuid: e0e8ee18-6a34-4904-be58-29b42e8c1a53
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+  module:
+    - path
+id: node.open_hours.path
+field_name: path
+entity_type: node
+bundle: open_hours
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

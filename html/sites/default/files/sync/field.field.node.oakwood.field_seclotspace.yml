@@ -1,0 +1,19 @@
+uuid: 756e385e-405e-4e0d-b7ad-77ac42f41628
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seclotspace
+    - node.type.oakwood
+id: node.oakwood.field_seclotspace
+field_name: field_seclotspace
+entity_type: node
+bundle: oakwood
+label: SecLotSpace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

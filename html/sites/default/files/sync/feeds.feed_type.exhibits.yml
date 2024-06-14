@@ -1,0 +1,126 @@
+uuid: fe308762-4f6c-431f-b72c-596f7cd5ee93
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.exhibit.title
+    - field.field.node.exhibit.body
+    - field.field.node.exhibit.field_ex_main_image
+    - node.type.exhibit
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e8e424cf-108c-4f98-a339-592ca2e4d07f:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: e8e424cf-108c-4f98-a339-592ca2e4d07f
+        plugin: find_replace_regex
+        source: main_image
+        weight: 0
+        label: 'Find replace REGEX'
+      711e36d2-a0f5-471f-aa0f-38eae2976b05:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 711e36d2-a0f5-471f-aa0f-38eae2976b05
+        plugin: find_replace_regex
+        source: main_image
+        weight: 1
+        label: 'Find replace REGEX'
+label: Exhibits
+id: exhibits
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: exhibit
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  main_image:
+    value: main_image
+    label: main_image
+    machine_name: main_image
+    type: csv
+  field_display_timespan1:
+    value: field_display_timespan1
+    label: field_display_timespan1
+    machine_name: field_display_timespan1
+    type: csv
+  field_display_timespan2:
+    value: field_display_timespan2
+    label: field_display_timespan2
+    machine_name: field_display_timespan2
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_ex_main_image
+    map:
+      target_id: main_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }

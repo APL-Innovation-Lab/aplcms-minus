@@ -1,0 +1,12 @@
+uuid: 34a153cc-09ba-44b4-b16e-f034a10d4f6a
+langcode: eng
+status: true
+dependencies: {  }
+id: search_api__views_block__archives_and_manuscripts__block_1
+name: 'search_api:views_block__archives_and_manuscripts__block_1'
+filter_key: people
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

@@ -1,0 +1,1502 @@
+uuid: 83c304d2-815a-4153-b72c-dd06f47192bf
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_category_tags_
+    - field.storage.node.field_event_grouping_or_series2
+    - field.storage.node.field_event_loc
+    - field.storage.node.field_event_tag
+    - field.storage.node.field_remote_location
+    - field.storage.node.field_slr_time_start
+    - node.type.event
+    - taxonomy.vocabulary.event_tags
+    - taxonomy.vocabulary.remote_locations
+  content:
+    - 'taxonomy_term:event_tags:03ea5448-481e-461a-a4d6-2ca947d5e6eb'
+    - 'taxonomy_term:event_tags:067c30e0-20d7-42dd-94cd-a07462fee373'
+    - 'taxonomy_term:event_tags:0a4d2216-e10c-4206-97ba-924a08643016'
+    - 'taxonomy_term:event_tags:0d8ac4c0-ba4a-4470-9422-840980ee3941'
+    - 'taxonomy_term:event_tags:1136ae5e-88ab-4bd3-a54b-a1575c10e2f0'
+    - 'taxonomy_term:event_tags:12061898-7c70-41e9-a855-f58cecae379d'
+    - 'taxonomy_term:event_tags:13368363-2c6f-4cdc-a71a-a3c47f18e91e'
+    - 'taxonomy_term:event_tags:199e063a-ea3e-4295-bc1e-3ef76f485fb1'
+    - 'taxonomy_term:event_tags:1cd30eb8-d0ab-424f-96c9-b5f48b687396'
+    - 'taxonomy_term:event_tags:1dcfbf53-2342-441c-b3cc-ad293b9a4f09'
+    - 'taxonomy_term:event_tags:1f0d22f0-e4cb-475a-88e1-fbd5f6e84d6e'
+    - 'taxonomy_term:event_tags:238a9ebe-a36c-40c4-afd5-f68aa2b6796b'
+    - 'taxonomy_term:event_tags:28389521-df40-4fe5-856a-ce3c81897cfb'
+    - 'taxonomy_term:event_tags:290a8418-14a1-4a3c-b3be-10d3d20f8f3b'
+    - 'taxonomy_term:event_tags:32eaf6a4-8acd-4e81-b7ff-f323816a1e13'
+    - 'taxonomy_term:event_tags:36190f24-577e-4b29-bc16-81251af2945a'
+    - 'taxonomy_term:event_tags:362f1b4b-7245-422a-acfd-fb587c0576b5'
+    - 'taxonomy_term:event_tags:363bfb98-3cca-4c6d-9b3e-0310fbbc4c67'
+    - 'taxonomy_term:event_tags:365f9f92-b364-4096-a4d0-cf1a915c5077'
+    - 'taxonomy_term:event_tags:369a38ca-0d48-41df-b436-014f15c14b20'
+    - 'taxonomy_term:event_tags:37e5ecdc-dcdb-464e-8fb4-8e5b9178d5cc'
+    - 'taxonomy_term:event_tags:3ab8dccb-f439-4d49-bcf7-2413089cf056'
+    - 'taxonomy_term:event_tags:41f659d7-d1ec-4385-86bd-77f6191a1414'
+    - 'taxonomy_term:event_tags:43d03213-13ee-4682-92d1-5ea950f29951'
+    - 'taxonomy_term:event_tags:440b4ee1-5281-4a73-be91-b06fe7bee8be'
+    - 'taxonomy_term:event_tags:449bb054-8883-4645-9ed1-8efd4c421c4d'
+    - 'taxonomy_term:event_tags:44c59a6f-d5c4-4a83-8868-9355662834d5'
+    - 'taxonomy_term:event_tags:4d3c1af1-b6a3-40d7-87f6-53f6c5ee1648'
+    - 'taxonomy_term:event_tags:4e82efad-2674-4385-868f-145fc95040eb'
+    - 'taxonomy_term:event_tags:50b9c902-c8d4-4bba-933a-1f4476cee35f'
+    - 'taxonomy_term:event_tags:5593cbee-a4ef-4add-bc58-afcd9daba7b7'
+    - 'taxonomy_term:event_tags:56898eaf-edc0-475e-87dd-26c0ece1beb9'
+    - 'taxonomy_term:event_tags:581c87c3-2e0c-487f-a66e-4e8a6dad3712'
+    - 'taxonomy_term:event_tags:59215c46-ec1c-466c-8ac4-909b1773e6d4'
+    - 'taxonomy_term:event_tags:5bf3ed17-b15c-4b1b-80ce-5c0cdba898e3'
+    - 'taxonomy_term:event_tags:62d58309-e435-4906-8dcc-047dcb2836d2'
+    - 'taxonomy_term:event_tags:67e68c26-9c39-4b15-baf1-5fe6f35e16d3'
+    - 'taxonomy_term:event_tags:69d83f03-f704-47a1-be12-f187b5af4be1'
+    - 'taxonomy_term:event_tags:6e9fc1d2-a355-47c9-b946-63c3d5aad97d'
+    - 'taxonomy_term:event_tags:6f718dfa-34ff-491e-a115-80970cf01a38'
+    - 'taxonomy_term:event_tags:7405ae5f-57c0-4d4c-8296-bde2ace96887'
+    - 'taxonomy_term:event_tags:7a2996a7-52e5-4c66-b22d-615a04a21047'
+    - 'taxonomy_term:event_tags:7a9e7424-4999-45be-a791-8a5b5e1e5836'
+    - 'taxonomy_term:event_tags:7c110494-58fc-46f6-9573-15082987f387'
+    - 'taxonomy_term:event_tags:8328b0e7-d4e9-4b2d-a665-b8d53d245b12'
+    - 'taxonomy_term:event_tags:836b21fa-2523-42c0-a0f0-9d75a3750857'
+    - 'taxonomy_term:event_tags:87e2a3b7-0154-4411-a879-8bb6ef7430cc'
+    - 'taxonomy_term:event_tags:891180d1-9f9d-4706-b3d3-266ed7ae5a51'
+    - 'taxonomy_term:event_tags:8939d310-0e00-4f9b-b531-14855c05aff1'
+    - 'taxonomy_term:event_tags:8b066db7-7804-47b3-9688-00e228707dcd'
+    - 'taxonomy_term:event_tags:95fdcf4e-72a5-4c2a-9a00-e55a5684c8fe'
+    - 'taxonomy_term:event_tags:9ab0989e-ce3b-45c0-b1a7-d50330551f59'
+    - 'taxonomy_term:event_tags:9f20a1c8-f615-48bf-88bc-0c2dbdc3c906'
+    - 'taxonomy_term:event_tags:a5785243-9716-430a-a603-05b000d35730'
+    - 'taxonomy_term:event_tags:a92f34a2-7d98-4163-8faa-91d6f4377a5b'
+    - 'taxonomy_term:event_tags:aa0cc0a4-b39c-4b49-93c1-8c652b9b5965'
+    - 'taxonomy_term:event_tags:ab154061-0f42-48ed-a029-5ca23a5899c8'
+    - 'taxonomy_term:event_tags:adfdb1cf-7f86-495a-bc63-b4569fad3851'
+    - 'taxonomy_term:event_tags:b0862c0c-3285-4f31-8948-f1c79d2768fe'
+    - 'taxonomy_term:event_tags:b66a6d1a-c7eb-440d-b58b-3054994a9f39'
+    - 'taxonomy_term:event_tags:b7d52139-de7c-4666-b953-ef93eaf04f3e'
+    - 'taxonomy_term:event_tags:c54f4396-3289-4f52-8861-7b16410102d9'
+    - 'taxonomy_term:event_tags:c5a69047-7fea-41e0-94f8-7389e8363672'
+    - 'taxonomy_term:event_tags:c77b1186-ac94-4c7b-8cdb-3f4a365ffa81'
+    - 'taxonomy_term:event_tags:c9467ce3-33e0-44c9-9a8b-58e9a4107d8f'
+    - 'taxonomy_term:event_tags:cbdb9852-c5a5-4b81-a969-b1f8fa2ecb4f'
+    - 'taxonomy_term:event_tags:cf68108d-8bd2-4656-97b2-a468754fa12e'
+    - 'taxonomy_term:event_tags:d1db41ba-35d7-4113-b99e-f9e3fd49e665'
+    - 'taxonomy_term:event_tags:d512f5da-ccb1-4f95-b193-9c959d7cc2dd'
+    - 'taxonomy_term:event_tags:d9ea14cb-4675-4945-9757-a5aee63d9078'
+    - 'taxonomy_term:event_tags:db84ef16-f637-4363-b954-1808fe33e926'
+    - 'taxonomy_term:event_tags:dfbd2b5c-6b1c-4731-9002-21303357c50e'
+    - 'taxonomy_term:event_tags:e4bb20cb-597f-46d9-bbf9-2e5aeecd1914'
+    - 'taxonomy_term:event_tags:e7069a44-9c04-4caf-a944-5d2cbc3df544'
+    - 'taxonomy_term:event_tags:ecb54906-3809-4d79-a2fd-90b6d1279d84'
+    - 'taxonomy_term:event_tags:ee42e23a-0921-475a-a02b-bad25f6cb7b6'
+    - 'taxonomy_term:event_tags:efe7e635-e9f7-4ad7-ac99-9511895cf9cf'
+    - 'taxonomy_term:event_tags:f40f98ac-1f35-4bc5-9411-a7f462e7c8da'
+    - 'taxonomy_term:event_tags:f4a04aa4-8dd4-4fa6-bb63-5b26605d0174'
+    - 'taxonomy_term:event_tags:f6719322-4478-4d21-9bd2-3ce9f5d7f26c'
+    - 'taxonomy_term:event_tags:faec5853-ffe3-40c1-97c6-f28fa3368864'
+    - 'taxonomy_term:event_tags:fc702cc7-838f-4561-8f18-7e0c7c773106'
+    - 'taxonomy_term:event_tags:fd1a8d52-d061-4940-87ad-7c46776d6a67'
+    - 'taxonomy_term:event_tags:ffc61bd9-ad80-4ee8-81fc-bd1686cf711f'
+  module:
+    - better_exposed_filters
+    - datetime
+    - node
+    - taxonomy
+    - user
+id: events_and_categories
+label: 'Events and Categories'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Events Categories'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_category_tags_:
+          id: field_event_category_tags_
+          table: node__field_event_category_tags_
+          field: field_event_category_tags_
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Event Category'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_slr_time_start:
+          id: field_slr_time_start
+          table: node__field_slr_time_start
+          field: field_slr_time_start
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Date
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: m_d_y
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Location
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_grouping_or_series2:
+          id: field_event_grouping_or_series2
+          table: node__field_event_grouping_or_series2
+          field: field_event_grouping_or_series2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Event Grouping or Series'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_tag:
+          id: field_event_tag
+          table: node__field_event_tag
+          field: field_event_tag
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Event Grouping or Series'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: null
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+              reset_button_always_show: false
+            sort:
+              plugin_id: default
+            filter:
+              field_slr_time_start_value:
+                plugin_id: default
+              field_event_category_tags__target_id:
+                plugin_id: default
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_slr_time_start_value:
+          id: field_slr_time_start_value
+          table: node__field_slr_time_start
+          field: field_slr_time_start_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            event: event
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_event_category_tags__target_id:
+          id: field_event_category_tags__target_id
+          table: node__field_event_category_tags_
+          field: field_event_category_tags__target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            1918: 1918
+            2355: 2355
+            1928: 1928
+            1920: 1920
+            1927: 1927
+            1926: 1926
+            1925: 1925
+            1921: 1921
+            1922: 1922
+            2121: 2121
+            2061: 2061
+            2964: 2964
+            4879: 4879
+            2068: 2068
+            2777: 2777
+            4800: 4800
+            2730: 2730
+            4798: 4798
+            1930: 1930
+            2122: 2122
+            1947: 1947
+            1944: 1944
+            1936: 1936
+            1935: 1935
+            1933: 1933
+            1955: 1955
+            4883: 4883
+            1966: 1966
+            1970: 1970
+            3148: 3148
+            2728: 2728
+            2062: 2062
+            2729: 2729
+            4881: 4881
+            2586: 2586
+            2346: 2346
+            5125: 5125
+            1975: 1975
+            1978: 1978
+            1979: 1979
+            1977: 1977
+            4882: 4882
+            1914: 1914
+            2129: 2129
+            1958: 1958
+            2734: 2734
+            4843: 4843
+            2069: 2069
+            1900: 1900
+            1908: 1908
+            1910: 1910
+            4880: 4880
+            2119: 2119
+            4775: 4775
+            2125: 2125
+            4667: 4667
+            2478: 2478
+            1993: 1993
+            2126: 2126
+            1980: 1980
+            2557: 2557
+            2065: 2065
+            2066: 2066
+            4801: 4801
+            5012: 5012
+            4810: 4810
+            4842: 4842
+            2072: 2072
+            4303: 4303
+            3014: 3014
+            5095: 5095
+            2671: 2671
+            3968: 3968
+            2075: 2075
+            2074: 2074
+            2073: 2073
+            2079: 2079
+            2846: 2846
+            2080: 2080
+            2081: 2081
+            3967: 3967
+            2084: 2084
+            2077: 2077
+            2741: 2741
+            2743: 2743
+            2813: 2813
+            5148: 5148
+            2814: 2814
+            2815: 2815
+            2886: 2886
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_category_tags__target_id_op
+            label: 'Event Category'
+            description: ''
+            use_operator: false
+            operator: field_event_category_tags__target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: cat
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              administrator: '0'
+              anonymous: '0'
+              activity_editor: '0'
+              ahc_editor: '0'
+              news_alerts_editor: '0'
+              basic_page_editor: '0'
+              bookstore_editor: '0'
+              event_editor: '0'
+              gift_shop_page_editor: '0'
+              hero_editor: '0'
+              highlighted_images_editor: '0'
+              hours_dates_editor: '0'
+              item_editor: '0'
+              job_coach: '0'
+              job_coach_administrator: '0'
+              library_info_editor: '0'
+              public_computer_page_editor: '0'
+              recommendation_editor: '0'
+              reflection_editor: '0'
+              sales_events_editor: '0'
+              survey_editor: '0'
+              virtual_library_editor: '0'
+              outreach: '0'
+              pio: '0'
+              self_editor: '0'
+              slr_admin: '0'
+              meeting_rooms_administrator: '0'
+              slr_internal: '0'
+              internal_group_representative: '0'
+              meeting_room_reservation_tester: '0'
+              passports_page_editor: '0'
+              spanish_editor: '0'
+              skillmill_admin: '0'
+              events_super_admin: '0'
+              remote_locations_editor: '0'
+              exhibit_editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event_tags
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_op
+            label: 'Event Tag'
+            description: ''
+            use_operator: false
+            operator: tid_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: cat2
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              administrator: '0'
+              anonymous: '0'
+              activity_editor: '0'
+              ahc_editor: '0'
+              news_alerts_editor: '0'
+              basic_page_editor: '0'
+              bookstore_editor: '0'
+              event_editor: '0'
+              gift_shop_page_editor: '0'
+              hero_editor: '0'
+              highlighted_images_editor: '0'
+              hours_dates_editor: '0'
+              item_editor: '0'
+              job_coach: '0'
+              job_coach_administrator: '0'
+              library_info_editor: '0'
+              public_computer_page_editor: '0'
+              recommendation_editor: '0'
+              reflection_editor: '0'
+              sales_events_editor: '0'
+              survey_editor: '0'
+              virtual_library_editor: '0'
+              outreach: '0'
+              pio: '0'
+              self_editor: '0'
+              slr_admin: '0'
+              meeting_rooms_administrator: '0'
+              slr_internal: '0'
+              internal_group_representative: '0'
+              meeting_room_reservation_tester: '0'
+              passports_page_editor: '0'
+              spanish_editor: '0'
+              skillmill_admin: '0'
+              events_super_admin: '0'
+              remote_locations_editor: '0'
+              exhibit_editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event_tags
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Event Tag (with depth)'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: cat3
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              administrator: '0'
+              anonymous: '0'
+              activity_editor: '0'
+              ahc_editor: '0'
+              news_alerts_editor: '0'
+              basic_page_editor: '0'
+              bookstore_editor: '0'
+              event_editor: '0'
+              gift_shop_page_editor: '0'
+              hero_editor: '0'
+              highlighted_images_editor: '0'
+              hours_dates_editor: '0'
+              item_editor: '0'
+              job_coach: '0'
+              job_coach_administrator: '0'
+              library_info_editor: '0'
+              public_computer_page_editor: '0'
+              recommendation_editor: '0'
+              reflection_editor: '0'
+              sales_events_editor: '0'
+              survey_editor: '0'
+              virtual_library_editor: '0'
+              outreach: '0'
+              pio: '0'
+              self_editor: '0'
+              slr_admin: '0'
+              meeting_rooms_administrator: '0'
+              slr_internal: '0'
+              internal_group_representative: '0'
+              meeting_room_reservation_tester: '0'
+              passports_page_editor: '0'
+              spanish_editor: '0'
+              skillmill_admin: '0'
+              events_super_admin: '0'
+              remote_locations_editor: '0'
+              exhibit_editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event_tags
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+          depth: 0
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            title: title
+            field_event_category_tags_: field_event_category_tags_
+            field_slr_time_start: field_slr_time_start
+            field_event_loc: field_event_loc
+            field_remote_location: field_remote_location
+          default: '-1'
+          info:
+            title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_event_category_tags_:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_slr_time_start:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_event_loc:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_remote_location:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<a href="/admin/structure/taxonomy/manage/event_tags/overview">Event Tags list</a>'
+            format: basic_html
+          tokenize: false
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_event_category_tags_'
+        - 'config:field.storage.node.field_event_grouping_or_series2'
+        - 'config:field.storage.node.field_event_loc'
+        - 'config:field.storage.node.field_event_tag'
+        - 'config:field.storage.node.field_slr_time_start'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: admin/events-categories
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_event_category_tags_'
+        - 'config:field.storage.node.field_event_grouping_or_series2'
+        - 'config:field.storage.node.field_event_loc'
+        - 'config:field.storage.node.field_event_tag'
+        - 'config:field.storage.node.field_slr_time_start'
+  page_2:
+    id: page_2
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      title: 'Remote Locations'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_category_tags_:
+          id: field_event_category_tags_
+          table: node__field_event_category_tags_
+          field: field_event_category_tags_
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Event Category'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_slr_time_start:
+          id: field_slr_time_start
+          table: node__field_slr_time_start
+          field: field_slr_time_start
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Date
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: m_d_y
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_event_loc:
+          id: field_event_loc
+          table: node__field_event_loc
+          field: field_event_loc
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Location
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_remote_location:
+          id: field_remote_location
+          table: node__field_remote_location
+          field: field_remote_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Remote Location'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            event: event
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_remote_location_target_id:
+          id: field_remote_location_target_id
+          table: node__field_remote_location
+          field: field_remote_location_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: 'not empty'
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_remote_location_target_id_op
+            label: 'Remote Location'
+            description: ''
+            use_operator: true
+            operator: field_remote_location_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_remote_location_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              administrator: '0'
+              anonymous: '0'
+              activity_editor: '0'
+              ahc_editor: '0'
+              news_alerts_editor: '0'
+              basic_page_editor: '0'
+              bookstore_editor: '0'
+              event_editor: '0'
+              gift_shop_page_editor: '0'
+              hero_editor: '0'
+              highlighted_images_editor: '0'
+              hours_dates_editor: '0'
+              item_editor: '0'
+              job_coach: '0'
+              job_coach_administrator: '0'
+              library_info_editor: '0'
+              public_computer_page_editor: '0'
+              recommendation_editor: '0'
+              reflection_editor: '0'
+              sales_events_editor: '0'
+              survey_editor: '0'
+              virtual_library_editor: '0'
+              outreach: '0'
+              pio: '0'
+              self_editor: '0'
+              slr_admin: '0'
+              meeting_rooms_administrator: '0'
+              slr_internal: '0'
+              internal_group_representative: '0'
+              meeting_room_reservation_tester: '0'
+              passports_page_editor: '0'
+              spanish_editor: '0'
+              skillmill_admin: '0'
+              events_super_admin: '0'
+              remote_locations_editor: '0'
+              exhibit_editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: remote_locations
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+        header: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<a href="/admin/structure/taxonomy/manage/remote_locations/overview">Remote Locations list</a>'
+            format: basic_html
+          tokenize: false
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: admin/remote-locations
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_event_category_tags_'
+        - 'config:field.storage.node.field_event_loc'
+        - 'config:field.storage.node.field_remote_location'
+        - 'config:field.storage.node.field_slr_time_start'

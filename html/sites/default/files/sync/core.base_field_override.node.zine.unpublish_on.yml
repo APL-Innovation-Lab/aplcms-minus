@@ -1,0 +1,18 @@
+uuid: e8508a65-a589-4608-abc7-4d0e381f291e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: zine
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

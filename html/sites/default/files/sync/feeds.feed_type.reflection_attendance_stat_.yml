@@ -1,0 +1,316 @@
+uuid: 7d1c8027-d18a-4d7d-8594-5e9ca48c16bd
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.reflection.title
+    - core.base_field_override.node.reflection.uid
+    - field.field.node.reflection.field_accessible
+    - field.field.node.reflection.field_anecdote
+    - field.field.node.reflection.field_branch_location
+    - field.field.node.reflection.field_community_services_outreac
+    - field.field.node.reflection.field_event_category_tags_
+    - field.field.node.reflection.field_how_many_attended_
+    - field.field.node.reflection.field_library_priority
+    - field.field.node.reflection.field_multilanguage
+    - field.field.node.reflection.field_node_id
+    - field.field.node.reflection.field_older_adults
+    - field.field.node.reflection.field_reflect_intended_audience
+    - field.field.node.reflection.field_reflection_date_and_time
+    - field.field.node.reflection.field_reflection_description
+    - field.field.node.reflection.field_reflection_type
+    - field.field.node.reflection.field_target_audience
+    - node.type.reflection
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4a4602b6-670d-4779-b0b4-c6cb421d7ff7:
+        separator: ','
+        limit: null
+        uuid: 4a4602b6-670d-4779-b0b4-c6cb421d7ff7
+        plugin: explode
+        source: priority
+        weight: 0
+        label: Explode
+      b315d492-0eae-4812-b777-02b1cbe6d0b5:
+        text: eng
+        uuid: b315d492-0eae-4812-b777-02b1cbe6d0b5
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: reflection_attendance_stat_
+label: 'Reflection (Attendance Stat)'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: reflection
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  event:
+    value: event
+    label: event
+    machine_name: event
+    type: csv
+  type:
+    value: type
+    label: type
+    machine_name: type
+    type: csv
+  attendance:
+    value: attendance
+    label: attendance
+    machine_name: attendance
+    type: csv
+  audience:
+    value: audience
+    label: audience
+    machine_name: audience
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  priority:
+    value: priority
+    label: priority
+    machine_name: priority
+    type: csv
+  older:
+    value: older
+    label: older
+    machine_name: older
+    type: csv
+  multilanguage:
+    value: multilanguage
+    label: multilanguage
+    machine_name: multilanguage
+    type: csv
+  accessible:
+    value: accessible
+    label: accessible
+    machine_name: accessible
+    type: csv
+  anecdote:
+    value: anecdote
+    label: anecdote
+    machine_name: anecdote
+    type: csv
+  outreach:
+    value: outreach
+    label: outreach
+    machine_name: outreach
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  event_category:
+    value: event_category
+    label: event_category
+    machine_name: event_category
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  event_category4:
+    value: event_category4
+    label: event_category4
+    machine_name: event_category4
+    type: csv
+  date1:
+    value: date1
+    label: date1
+    machine_name: date1
+    type: csv
+  event_location:
+    value: event_location
+    label: event_location
+    machine_name: event_location
+    type: csv
+  audience2:
+    value: audience2
+    label: audience2
+    machine_name: audience2
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_node_id
+    map:
+      target_id: event
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_reflection_type
+    map:
+      value: type
+    settings:
+      language: null
+  -
+    target: field_how_many_attended_
+    map:
+      value: attendance
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_library_priority
+    map:
+      target_id: priority
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_older_adults
+    map:
+      value: older
+    settings:
+      language: null
+  -
+    target: field_multilanguage
+    map:
+      value: multilanguage
+    settings:
+      language: null
+  -
+    target: field_accessible
+    map:
+      value: accessible
+    settings:
+      language: null
+  -
+    target: field_anecdote
+    map:
+      value: anecdote
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_community_services_outreac
+    map:
+      value: outreach
+    settings:
+      language: null
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_reflect_intended_audience
+    map:
+      target_id: audience
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_category_tags_
+    map:
+      target_id: event_category4
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_reflection_description
+    map:
+      value: description
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_reflection_date_and_time
+    map:
+      value: date1
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_branch_location
+    map:
+      target_id: event_location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_target_audience
+    map:
+      value: audience2
+    settings:
+      language: ''

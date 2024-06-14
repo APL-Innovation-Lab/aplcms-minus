@@ -1,0 +1,129 @@
+uuid: 6f84c440-346c-487b-8a8b-4b3bd48fa924
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apl_item.feeds_item
+    - field.field.node.apl_item.field_api_format
+    - field.field.node.apl_item.field_api_subtitle
+    - field.field.node.apl_item.field_apl_authors
+    - field.field.node.apl_item.field_apl_item_image
+    - field.field.node.apl_item.field_bib_isbn
+    - field.field.node.apl_item.field_bibliocommons_id
+    - field.field.node.apl_item.field_call_number
+    - field.field.node.apl_item.field_custom_link
+    - field.field.node.apl_item.field_description
+    - field.field.node.apl_item.field_display_timespan_04_07p
+    - field.field.node.apl_item.field_display_title
+    - field.field.node.apl_item.field_exclude_from_we_recommend
+    - field.field.node.apl_item.field_intended_audience_2016i
+    - field.field.node.apl_item.field_isbn
+    - field.field.node.apl_item.field_item_list_category
+    - field.field.node.apl_item.field_jacket_cover
+    - field.field.node.apl_item.field_other_formats
+    - field.field.node.apl_item.field_publication_date
+    - field.field.node.apl_item.field_skip_adding_this_to_a_list
+    - field.field.node.apl_item.field_sort_order
+    - field.field.node.apl_item.field_upc
+    - node.type.apl_item
+    - views.view.apl_tv
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Item
+          context_mapping: {  }
+        components:
+          852d26cb-0819-409d-a25e-bb90f71d2602:
+            uuid: 852d26cb-0819-409d-a25e-bb90f71d2602
+            region: content
+            configuration:
+              id: 'views_block:apl_tv-apl_tv_item'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 4
+            additional: {  }
+          32dcb2fb-a1eb-44e6-b43f-e5b1b4a14a1c:
+            uuid: 32dcb2fb-a1eb-44e6-b43f-e5b1b4a14a1c
+            region: content
+            configuration:
+              id: 'field_block:node:apl_item:field_exclude_from_we_recommend'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.apl_item.default
+targetEntityType: node
+bundle: apl_item
+mode: default
+content:
+  field_exclude_from_we_recommend:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_jacket_cover:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_api_format: true
+  field_api_subtitle: true
+  field_apl_authors: true
+  field_apl_item_image: true
+  field_bib_isbn: true
+  field_bibliocommons_id: true
+  field_call_number: true
+  field_custom_link: true
+  field_description: true
+  field_display_timespan_04_07p: true
+  field_display_title: true
+  field_intended_audience_2016i: true
+  field_isbn: true
+  field_item_list_category: true
+  field_other_formats: true
+  field_publication_date: true
+  field_skip_adding_this_to_a_list: true
+  field_sort_order: true
+  field_upc: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: bf979ceb-4b0c-4f60-a586-d87a0ca9ffb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_photo
+    - node.type.archives_index
+  module:
+    - options
+id: node.archives_index.field_format_photo
+field_name: field_format_photo
+entity_type: node
+bundle: archives_index
+label: 'Format Photo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

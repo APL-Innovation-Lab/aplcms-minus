@@ -1,0 +1,10 @@
+uuid: 9426e3f7-4e29-4bfc-9c11-c7235ef1d5b9
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: node.staff
+label: staff
+targetEntityType: node
+cache: true

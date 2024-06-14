@@ -1,0 +1,52 @@
+uuid: 79d1af83-bb02-47ea-a383-d3a8954c23c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Assigned To'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        job_coach: job_coach
+        administrator: '0'
+        activity_editor: '0'
+        ahc_editor: '0'
+        news_alerts_editor: '0'
+        apl_site_content_editor: '0'
+        basic_page_editor: '0'
+        bookstore_editor: '0'
+        event_editor: '0'
+        gift_shop_page_editor: '0'
+        hero_editor: '0'
+        highlighted_images_editor: '0'
+        hours_dates_editor: '0'
+        how_to_editor: '0'
+        item_editor: '0'
+        job_coach_administrator: '0'
+        library_info_editor: '0'
+        public_computer_page_editor: '0'
+        recommendation_editor: '0'
+        sales_events_editor: '0'
+        survey_editor: '0'
+        virtual_library_editor: '0'
+    include_anonymous: false
+field_type: entity_reference

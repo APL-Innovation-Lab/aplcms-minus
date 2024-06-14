@@ -1,0 +1,282 @@
+uuid: 70e9b858-670d-40ef-b0de-e4ee75811c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.page.created
+    - core.base_field_override.node.page.path
+    - core.base_field_override.node.page.title
+    - core.base_field_override.node.page.uid
+    - field.field.node.page.body
+    - field.field.node.page.field_main_image
+    - node.type.page
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e967d3ed-2d11-4090-9257-f9595be6d856:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: e967d3ed-2d11-4090-9257-f9595be6d856
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: -9
+        label: 'Find replace REGEX'
+      673a2837-0ddd-4afa-93a2-4ac4a001e96c:
+        text: eng
+        uuid: 673a2837-0ddd-4afa-93a2-4ac4a001e96c
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      771d8e1f-5549-412e-ba88-fb1e462bff62:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 771d8e1f-5549-412e-ba88-fb1e462bff62
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: -8
+        label: 'Find replace REGEX'
+      8ff38f0f-9df8-40a3-a565-ff31188c706c:
+        default_value: ''
+        only_if_empty: true
+        uuid: 8ff38f0f-9df8-40a3-a565-ff31188c706c
+        plugin: default_value
+        source: field_main_image
+        weight: -10
+        label: 'Set value or default value'
+      690bce3a-fe32-4bd5-bbb1-25c21aef06a3:
+        uuid: 690bce3a-fe32-4bd5-bbb1-25c21aef06a3
+        plugin: html_entity_decode
+        source: title
+        weight: 0
+        label: 'HTML entity decode'
+id: basic_page
+label: 'Basic Page'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://page-feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: page
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: json
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: json
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: json
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: json
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: json
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: json
+  field_main_image_alt:
+    value: field_main_image_alt
+    label: field_main_image_alt
+    machine_name: field_main_image_alt
+    type: json
+  field_main_image_title:
+    value: field_main_image_title
+    label: field_main_image_title
+    machine_name: field_main_image_title
+    type: json
+  field_image_attribution_ahc:
+    value: field_image_attribution_ahc
+    label: field_image_attribution_ahc
+    machine_name: field_image_attribution_ahc
+    type: json
+  field_image_gallery:
+    value: field_image_gallery
+    label: field_image_gallery
+    machine_name: field_image_gallery
+    type: json
+  field_image_gallery_alt:
+    value: field_image_gallery_alt
+    label: field_image_gallery_alt
+    machine_name: field_image_gallery_alt
+    type: json
+  field_image_gallery_title:
+    value: field_image_gallery_title
+    label: field_image_gallery_title
+    machine_name: field_image_gallery_title
+    type: json
+  field_link_path:
+    value: field_link_path
+    label: field_link_path
+    machine_name: field_link_path
+    type: json
+  field_misc_images:
+    value: field_misc_images
+    label: field_misc_images
+    machine_name: field_misc_images
+    type: json
+  field_misc_images_alt:
+    value: field_misc_images_alt
+    label: field_misc_images_alt
+    machine_name: field_misc_images_alt
+    type: json
+  field_misc_images_title:
+    value: field_misc_images_title
+    label: field_misc_images_title
+    machine_name: field_misc_images_title
+    type: json
+  field_pdf:
+    value: field_pdf
+    label: field_pdf
+    machine_name: field_pdf
+    type: json
+  field_pdf_desc:
+    value: field_pdf_desc
+    label: field_pdf_desc
+    machine_name: field_pdf_desc
+    type: json
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: json
+  updated:
+    value: updated
+    label: updated
+    machine_name: updated
+    type: json
+  changed:
+    value: changed
+    label: changed
+    machine_name: changed
+    type: json
+  path:
+    value: path
+    label: path
+    machine_name: path
+    type: json
+  path_state:
+    value: path_state
+    label: path_state
+    machine_name: path_state
+    type: json
+  '':
+    value: changed
+    label: changed
+    machine_name: ''
+    type: json
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: json
+  changed_:
+    value: changed
+    label: changed
+    machine_name: changed_
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: path
+      pathauto: path_state
+    settings:
+      language: null
+  -
+    target: field_main_image
+    map:
+      target_id: field_main_image
+      alt: field_main_image_alt
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: changed_
+    settings:
+      language: null
+      timezone: UTC

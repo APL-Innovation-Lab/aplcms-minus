@@ -1,0 +1,20 @@
+uuid: 8a67b636-902b-47dc-b453-35c543d2e2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.remote_locations
+  module:
+    - path
+id: taxonomy_term.remote_locations.path
+field_name: path
+entity_type: taxonomy_term
+bundle: remote_locations
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

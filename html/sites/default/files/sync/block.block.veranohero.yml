@@ -1,0 +1,38 @@
+uuid: 0b8ada39-e55c-4567-bc80-9b2bce2f6cdd
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:794fa4d7-69a4-4126-9ee4-5d01b1969e72'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - claro2
+id: veranohero
+theme: claro2
+region: header
+weight: -23
+provider: null
+plugin: 'block_content:794fa4d7-69a4-4126-9ee4-5d01b1969e72'
+settings:
+  id: 'block_content:794fa4d7-69a4-4126-9ee4-5d01b1969e72'
+  label: 'Verano hero'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/verano\r\n/es/verano"

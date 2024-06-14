@@ -1,0 +1,14 @@
+uuid: b59ae35d-2928-4393-8d1b-9d26e443437c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gift_shop_page_editor
+  module:
+    - user
+id: user_add_role_action.gift_shop_page_editor
+label: 'Add the Gift Shop Page Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gift_shop_page_editor

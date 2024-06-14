@@ -1,0 +1,7 @@
+uuid: 05b759ce-e455-4491-94a5-45d887e45e4b
+langcode: eng
+status: true
+dependencies: {  }
+id: admin_resend
+label: 'admin resend'
+route: entity.webform_submission.resend_form

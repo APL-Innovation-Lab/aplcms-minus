@@ -1,0 +1,18 @@
+uuid: b2665c68-b196-4f9e-95f0-f667618793b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_page
+id: node.ahc_page.changed
+field_name: changed
+entity_type: node
+bundle: ahc_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

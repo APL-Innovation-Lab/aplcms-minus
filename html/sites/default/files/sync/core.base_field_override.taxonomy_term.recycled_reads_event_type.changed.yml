@@ -1,0 +1,18 @@
+uuid: 507bf9da-b033-4527-8c93-c3ec7666a26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_event_type
+id: taxonomy_term.recycled_reads_event_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: recycled_reads_event_type
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

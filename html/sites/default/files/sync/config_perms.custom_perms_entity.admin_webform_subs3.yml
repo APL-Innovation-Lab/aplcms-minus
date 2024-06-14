@@ -1,0 +1,7 @@
+uuid: 015348f6-8bde-4cab-a20e-b14db72d2799
+langcode: eng
+status: true
+dependencies: {  }
+id: admin_webform_subs3
+label: 'admin webform subs3'
+route: entity.webform_submission.text

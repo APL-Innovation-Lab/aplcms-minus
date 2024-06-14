@@ -1,0 +1,52 @@
+uuid: a950d08d-bc2e-4d44-8da7-e939cc240e75
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_jp_which_race_ethnicity
+field_name: field_jp_which_race_ethnicity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Black
+    -
+      value: '2'
+      label: Asian
+    -
+      value: '3'
+      label: 'Hispanic / Latino'
+    -
+      value: '4'
+      label: White
+    -
+      value: '5'
+      label: Multiracial
+    -
+      value: '6'
+      label: 'Native American / Alaskan Native'
+    -
+      value: '7'
+      label: 'Hawaiian / Pacific Islander'
+    -
+      value: '8'
+      label: 'Prefer not to say'
+    -
+      value: '9'
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

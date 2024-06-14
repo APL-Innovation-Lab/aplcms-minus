@@ -1,0 +1,18 @@
+uuid: e4bb2440-e3fe-42e9-bd5f-53f350eedc5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommended_links
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.recommended_links
+target_entity_type_id: taxonomy_term
+target_bundle: recommended_links
+default_langcode: site_default
+language_alterable: false

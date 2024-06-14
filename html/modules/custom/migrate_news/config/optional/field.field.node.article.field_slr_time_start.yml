@@ -1,0 +1,23 @@
+uuid: 1c6740f7-60e6-4c0f-8c70-e9cc46f8c724
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.article
+  module:
+    - datetime
+_core:
+  default_config_hash: 7kSaQp8V-8f1exEAu1j6hswGcSqgETY88iloOYud8fQ
+id: node.article.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: article
+label: 'Time Start'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

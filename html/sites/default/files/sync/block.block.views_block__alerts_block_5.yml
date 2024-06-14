@@ -1,0 +1,29 @@
+uuid: 00db3ea6-11e6-4103-ac88-cb19d2c8c547
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__alerts_block_5
+theme: claro2
+region: header
+weight: -27
+provider: null
+plugin: 'views_block:alerts-block_5'
+settings:
+  id: 'views_block:alerts-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/es/*\r\n/es"

@@ -1,0 +1,30 @@
+uuid: 70bf6b45-55b7-4911-8bb4-8d774e39e662
+langcode: eng
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.slr_cancel
+    - feeds.feed_type.slr_confirm
+    - node.type.slr
+  module:
+    - config_perms
+    - feeds
+    - node
+id: slr_admin
+label: 'SLR Admin'
+weight: 16
+is_admin: null
+permissions:
+  - 'admin resend'
+  - 'admin webform results'
+  - 'admin webform subs'
+  - 'admin webform subs2'
+  - 'admin webform subs3'
+  - 'admin webform subs4'
+  - 'create slr content'
+  - 'delete any slr content'
+  - 'delete own slr content'
+  - 'edit any slr content'
+  - 'edit own slr content'
+  - 'import slr_cancel feeds'
+  - 'import slr_confirm feeds'

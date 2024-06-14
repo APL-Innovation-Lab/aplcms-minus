@@ -1,0 +1,21 @@
+uuid: 842e1e49-85fd-41dc-8719-d24b7387b1e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_prefer_to_be_contacted_b
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_i_prefer_to_be_contacted_b
+field_name: field_i_prefer_to_be_contacted_b
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'I prefer to be contacted by...'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Email
+  off_label: Phone
+field_type: boolean

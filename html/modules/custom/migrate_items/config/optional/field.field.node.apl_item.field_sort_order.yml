@@ -1,0 +1,23 @@
+uuid: a2de96b2-237a-4c87-9d53-fd588dcef411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_order
+    - node.type.apl_item
+id: node.apl_item.field_sort_order
+field_name: field_sort_order
+entity_type: node
+bundle: apl_item
+label: 'Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

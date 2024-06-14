@@ -1,0 +1,22 @@
+uuid: 7dc06d16-1655-440c-a5e6-067088f39975
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.status
+field_name: status
+entity_type: node
+bundle: fullscreen_image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

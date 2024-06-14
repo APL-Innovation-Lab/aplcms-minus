@@ -1,0 +1,22 @@
+uuid: 5e9b8e69-e81a-4324-ab9f-3313dccef60e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: passport_reservation
+label: 'Passport Reservation'
+type: 'canonical_entities:node'
+pattern: '/passport/[random:number]/[node:nid]/[node:title]/'
+selection_criteria:
+  1e4da29f-721e-4435-9174-a47fc150bca0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1e4da29f-721e-4435-9174-a47fc150bca0
+    context_mapping:
+      node: node
+    bundles:
+      passport_reservation: passport_reservation
+selection_logic: and
+weight: -5
+relationships: {  }

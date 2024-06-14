@@ -1,0 +1,22 @@
+uuid: f408f2db-8b17-4ed8-8829-2f5090d62c2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alert_zone
+id: taxonomy_term.alert_zone.status
+field_name: status
+entity_type: taxonomy_term
+bundle: alert_zone
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

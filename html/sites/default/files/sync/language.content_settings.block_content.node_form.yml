@@ -1,0 +1,18 @@
+uuid: f64efb0d-4915-49b3-95f8-a5cf43d1fe7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.node_form
+target_entity_type_id: block_content
+target_bundle: node_form
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: 8ec2ed94-af31-4e7b-b667-8f3f11737213
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.status
+field_name: status
+entity_type: node
+bundle: apl_item_import
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

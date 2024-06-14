@@ -1,0 +1,19 @@
+uuid: d0d7a1a6-d38d-4b37-bc6e-e98f3acf0334
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.room_reservation
+id: node.room_reservation.field_email
+field_name: field_email
+entity_type: node
+bundle: room_reservation
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

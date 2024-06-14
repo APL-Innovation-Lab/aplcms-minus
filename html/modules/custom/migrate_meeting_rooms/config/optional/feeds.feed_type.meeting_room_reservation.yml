@@ -1,0 +1,275 @@
+uuid: 9be69c67-979d-4d7e-8b34-023151f7e37d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.room_reservation.title
+    - core.base_field_override.node.room_reservation.uid
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - node.type.room_reservation
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      caf19973-45ea-497a-a15a-8d1a3fa3653a:
+        text: en
+        uuid: caf19973-45ea-497a-a15a-8d1a3fa3653a
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      2e0417f7-6fd3-42bd-865c-3b06086fd888:
+        find: 'Yarborough Branch'
+        replace: 'Yarborough Branch #1'
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 2e0417f7-6fd3-42bd-865c-3b06086fd888
+        plugin: find_replace
+        source: room_
+        weight: 0
+        label: 'Find replace'
+      b8097566-1d69-4c90-8185-14439f772172:
+        text: '[date_] [timestart]'
+        uuid: b8097566-1d69-4c90-8185-14439f772172
+        plugin: rewrite
+        source: timestart
+        weight: 0
+        label: Rewrite
+      05bf5a26-6162-4ed9-b03c-90e8e23f5292:
+        uuid: 05bf5a26-6162-4ed9-b03c-90e8e23f5292
+        plugin: strtotime
+        source: timestart
+        weight: 1
+        label: 'String to Unix Timestamp'
+      8aa86a13-752b-4422-b218-6345fb1fd5b7:
+        text: '[date_] [timeend]'
+        uuid: 8aa86a13-752b-4422-b218-6345fb1fd5b7
+        plugin: rewrite
+        source: timeend
+        weight: 0
+        label: Rewrite
+      25740584-fb88-4a39-81d7-26ccde9e37cc:
+        uuid: 25740584-fb88-4a39-81d7-26ccde9e37cc
+        plugin: strtotime
+        source: timeend
+        weight: 1
+        label: 'String to Unix Timestamp'
+label: 'Meeting Room Reservation - Internal'
+id: meeting_room_reservation
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: room_reservation
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 97
+custom_sources:
+  topic:
+    value: topic
+    label: topic
+    machine_name: topic
+    type: csv
+  room:
+    value: room
+    label: room
+    machine_name: room
+    type: csv
+  internal:
+    value: internal
+    label: internal
+    machine_name: internal
+    type: csv
+  expected_attendance:
+    value: expected_attendance
+    label: expected_attendance
+    machine_name: expected_attendance
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  group:
+    value: group
+    label: group
+    machine_name: group
+    type: csv
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: csv
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  start_:
+    value: start
+    label: start
+    machine_name: start_
+    type: csv
+  end_:
+    value: end
+    label: end
+    machine_name: end_
+    type: csv
+  start__:
+    value: start
+    label: start
+    machine_name: start__
+    type: csv
+  end__:
+    value: end
+    label: end
+    machine_name: end__
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  username:
+    value: username
+    label: username
+    machine_name: username
+    type: csv
+  attendance:
+    value: attendance
+    label: attendance
+    machine_name: attendance
+    type: csv
+  user_name:
+    value: 'User Name'
+    label: 'User Name'
+    machine_name: user_name
+    type: csv
+  topic_:
+    value: Topic
+    label: Topic
+    machine_name: topic_
+    type: csv
+  room_:
+    value: Room
+    label: Room
+    machine_name: room_
+    type: csv
+  expected_attendance_:
+    value: 'Expected Attendance'
+    label: 'Expected Attendance'
+    machine_name: expected_attendance_
+    type: csv
+  date_:
+    value: Date
+    label: Date
+    machine_name: date_
+    type: csv
+  timestart:
+    value: TimeStart
+    label: TimeStart
+    machine_name: timestart
+    type: csv
+  timeend:
+    value: TimeEnd
+    label: TimeEnd
+    machine_name: timeend
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: topic_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_meeting_room
+    map:
+      target_id: room_
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: uid
+    map:
+      target_id: user_name
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field____date
+    map:
+      value: date_
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_start
+    map:
+      value: timestart
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: timeend
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_room_expected_attendance
+    map:
+      value: expected_attendance_
+    settings:
+      language: null
+    unique: {  }

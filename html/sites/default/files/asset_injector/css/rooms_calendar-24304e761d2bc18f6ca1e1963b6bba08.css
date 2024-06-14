@@ -1,0 +1,5 @@
+.fc-timeGridDay-button.fc-button.fc-button-primary.fc-button-active,
+.fc-head,
+.fc-day-grid {
+	display: none !important;
+}

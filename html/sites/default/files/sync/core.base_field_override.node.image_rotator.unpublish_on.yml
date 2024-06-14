@@ -1,0 +1,18 @@
+uuid: ad52d24a-d3fa-444e-8092-af11053d97d3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.image_rotator
+id: node.image_rotator.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: image_rotator
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

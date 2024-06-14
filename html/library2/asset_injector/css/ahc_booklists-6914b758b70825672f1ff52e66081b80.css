@@ -1,0 +1,40 @@
+.block-views-blockahc-booklists-block-1 {
+	background: white;
+	box-shadow: 3px 3px 8px silver;
+	margin-bottom: 20px;
+	margin-right: 0 !important;
+	margin-top: 0;
+	padding-bottom: 1px;
+}
+#ahc-more-lists {
+  margin-top: 25px !important;
+}
+
+body .layout.layout--onecol:nth-child(2) {
+	float: right !important;
+	width: 580px !important;
+	clear: right;
+	background: none;
+	padding-bottom: 1px !important;
+}
+#ahc-booklist-links {
+	margin-left: 10px;
+	text-align: center;
+}
+#ahc-booklist-links p,
+#ahc-booklist-links a {
+	margin: 0;
+}
+#ahc-booklist {
+	border: none;
+	margin-left: -6px !important;
+  margin-bottom: 0px;
+	padding: 0 8px;
+	position: relative;
+	}
+	
+@media only screen and (min-width: 0px) and (max-width: 959px) {
+#ahc-booklist {
+	width: 528px;
+}
+}

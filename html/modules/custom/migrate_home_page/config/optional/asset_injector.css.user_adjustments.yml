@@ -1,0 +1,26 @@
+uuid: ceccace2-c7b4-4878-8093-7ef2955070c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: skO8_VWlt-5Hfh8JmSFEwrLMkdD__tYnPDdE1agaanU
+id: user_adjustments
+label: 'User adjustments'
+code: |
+  #toolbar-item-administration {
+  	margin-left: -1000px;
+  }
+conditions_require_all: true
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+contexts: {  }
+media: all
+preprocess: true

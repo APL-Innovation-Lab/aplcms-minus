@@ -1,0 +1,103 @@
+uuid: 6078a326-0cb8-49a2-8cf1-c838f03220ac
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.database.title
+    - field.field.node.database.body
+    - field.field.node.database.field_database_access
+    - node.type.database
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e100361e-dd50-4353-9401-8575a1ab2bc5:
+        separator: ','
+        limit: null
+        uuid: e100361e-dd50-4353-9401-8575a1ab2bc5
+        plugin: explode
+        source: field_database_access
+        weight: 0
+        label: Explode
+id: database_2
+label: 'Database 2'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: database
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 61
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  field_database_access:
+    value: field_database_access
+    label: field_database_access
+    machine_name: field_database_access
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_database_access
+    map:
+      target_id: field_database_access
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0

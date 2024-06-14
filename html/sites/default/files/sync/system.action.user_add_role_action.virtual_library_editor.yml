@@ -1,0 +1,14 @@
+uuid: 79610806-ee93-4429-87ca-da53d765cb8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.virtual_library_editor
+  module:
+    - user
+id: user_add_role_action.virtual_library_editor
+label: 'Add the Virtual Library Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: virtual_library_editor

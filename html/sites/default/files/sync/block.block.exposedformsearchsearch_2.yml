@@ -1,0 +1,28 @@
+uuid: 6d79b567-5a32-4fd0-a5f9-1e5647ea4169
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: exposedformsearchsearch_2
+theme: claro2
+region: content
+weight: -22
+provider: null
+plugin: 'views_exposed_filter_block:search-search'
+settings:
+  id: 'views_exposed_filter_block:search-search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

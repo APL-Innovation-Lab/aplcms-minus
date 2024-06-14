@@ -1,0 +1,14 @@
+uuid: c90c0ccf-1265-47d9-a317-c5f9fa1c8ab8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.slr_admin
+  module:
+    - user
+id: user_remove_role_action.slr_admin
+label: 'Remove the SLR Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: slr_admin

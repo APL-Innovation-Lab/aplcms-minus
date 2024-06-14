@@ -1,0 +1,22 @@
+uuid: f1d30172-5596-4f21-b763-1b8921ad0bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.status
+field_name: status
+entity_type: node
+bundle: ahc_protests
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

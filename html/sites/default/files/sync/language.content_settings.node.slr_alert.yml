@@ -1,0 +1,18 @@
+uuid: 4414b1c8-4a2d-47d0-b701-6bd8e648eb60
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.slr_alert
+target_entity_type_id: node
+target_bundle: slr_alert
+default_langcode: site_default
+language_alterable: false

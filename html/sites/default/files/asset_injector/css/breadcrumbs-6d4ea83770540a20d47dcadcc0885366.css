@@ -1,0 +1,29 @@
+ol.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ol.breadcrumbs li {
+    margin-right: 10px; /* Spacing between breadcrumb items */
+}
+
+ol.breadcrumbs li::after {
+    content: url('/library/ii/breadcrumb_arrow.svg'); /* Arrow image */
+    margin-left: 10px;
+}
+
+ol.breadcrumbs li:last-child::after {
+    content: none; /* No arrow after the last item */
+}
+.nav--breadcrumbs,
+nav.grid-offset-1.grid-col-10 {
+	padding-top: 2px;
+}
+div nav.nav--breadcrumbs.grid-col-10.grid-offset-1 + h1, 
+div.grid-col-10.grid-offset-1 nav.nav--breadcrumbs + h1, 
+div.grid-col-10.grid-offset-1 nav + div h1, 
+nav.grid-offset-1.grid-col-10.grid-offset-1 + div.grid-offset-1.grid-col-10 h1 {
+	padding-top: 0 !important;
+}

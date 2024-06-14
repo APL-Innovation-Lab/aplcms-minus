@@ -1,0 +1,27 @@
+uuid: e9880f96-be6d-40b1-99c0-1b3c2bde0256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_list
+    - node.type.event
+id: node.event.field_item_list
+field_name: field_item_list
+entity_type: node
+bundle: event
+label: 'Attached APL Items'
+description: 'If the APL Item already exists in our Drupal system, you can attach it to the event using this field. If the APL Item isn''t in Drupal yet, you can add it here: <a target="_blank" href="https://library.austintexas.gov/node/add/apl_item">https://library.austintexas.gov/node/add/apl_item</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

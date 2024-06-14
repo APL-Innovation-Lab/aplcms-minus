@@ -1,0 +1,14 @@
+uuid: 7789e8f0-77fd-46ef-8a73-80d1fec26954
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.exhibit_editor
+  module:
+    - user
+id: user_add_role_action.exhibit_editor
+label: 'Add the Exhibit Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: exhibit_editor

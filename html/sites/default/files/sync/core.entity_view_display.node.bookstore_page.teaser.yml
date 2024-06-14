@@ -1,0 +1,66 @@
+uuid: 8f141e86-e766-4690-95d4-827a9c2e8770
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bookstore_page.body
+    - field.field.node.bookstore_page.feeds_item
+    - field.field.node.bookstore_page.field_main_image
+    - node.type.bookstore_page
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          103f7f99-3314-40ad-bc60-fb2d1780d574:
+            uuid: 103f7f99-3314-40ad-bc60-fb2d1780d574
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_16'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.bookstore_page.teaser
+targetEntityType: node
+bundle: bookstore_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image: true
+  langcode: true
+  search_api_excerpt: true

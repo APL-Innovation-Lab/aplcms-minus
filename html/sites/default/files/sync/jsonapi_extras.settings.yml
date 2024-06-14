@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: eZ7KZ6nM56SRhfriFWCo1372Z9UiKufhSLRbkdhVmUg
+langcode: eng
+path_prefix: aplapi
+include_count: false
+default_disabled: false

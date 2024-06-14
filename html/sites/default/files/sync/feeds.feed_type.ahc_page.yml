@@ -1,0 +1,350 @@
+uuid: 0e1cde7e-13a4-40c2-b986-93ebb315d74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.ahc_page.title
+    - core.base_field_override.node.ahc_page.uid
+    - field.field.node.ahc_page.body
+    - field.field.node.ahc_page.field_booklist
+    - field.field.node.ahc_page.field_image_attribution_ahc
+    - field.field.node.ahc_page.field_main_image
+    - field.field.node.ahc_page.field_pdf
+    - field.field.node.ahc_page.field_postscript
+    - field.field.node.ahc_page.field_template
+    - field.field.node.ahc_page.field_video_ahc
+    - node.type.ahc_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      0db710fc-a8e3-4cbc-b2a6-914dd3ba43d0:
+        separator: ','
+        limit: null
+        uuid: 0db710fc-a8e3-4cbc-b2a6-914dd3ba43d0
+        plugin: explode
+        source: field_pdf
+        weight: -9
+        label: Explode
+      c29563e3-899e-4387-b935-a95c1ecd507e:
+        character: ''
+        side: trim
+        uuid: c29563e3-899e-4387-b935-a95c1ecd507e
+        plugin: trim
+        source: field_pdf
+        weight: -8
+        label: 'Characters to trim'
+      08ee0209-88a0-4cd1-9723-15e217deb53f:
+        separator: ','
+        limit: null
+        uuid: 08ee0209-88a0-4cd1-9723-15e217deb53f
+        plugin: explode
+        source: field_pdf_description
+        weight: -8
+        label: Explode
+      de331750-a11d-49f9-8be3-a931a94ebd18:
+        character: ''
+        side: trim
+        uuid: de331750-a11d-49f9-8be3-a931a94ebd18
+        plugin: trim
+        source: field_pdf_description
+        weight: -9
+        label: 'Characters to trim'
+      562bc884-3567-478b-9a7f-f197330cd089:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 562bc884-3567-478b-9a7f-f197330cd089
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: -9
+        label: 'Find replace REGEX'
+      2a32dd2c-353f-42e8-851a-efc8b7d6080f:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 2a32dd2c-353f-42e8-851a-efc8b7d6080f
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: -8
+        label: 'Find replace REGEX2'
+      d90ec793-2223-4764-9d6b-2e60e185b996:
+        text: eng
+        uuid: d90ec793-2223-4764-9d6b-2e60e185b996
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      99904c8d-42ca-4a24-a424-b80ac4c19397:
+        default_value: ''
+        only_if_empty: true
+        uuid: 99904c8d-42ca-4a24-a424-b80ac4c19397
+        plugin: default_value
+        source: field_main_image
+        weight: -10
+        label: 'Set value or default value'
+      279ad3e7-d76e-400a-be4c-3620caa2cb85:
+        default_value: ''
+        only_if_empty: true
+        uuid: 279ad3e7-d76e-400a-be4c-3620caa2cb85
+        plugin: default_value
+        source: field_pdf
+        weight: -10
+        label: 'Set value or default value'
+      a577abdc-cd9e-4029-8bb3-5f5f91a58ab7:
+        default_value: ''
+        only_if_empty: true
+        uuid: a577abdc-cd9e-4029-8bb3-5f5f91a58ab7
+        plugin: default_value
+        source: field_pdf_description
+        weight: -10
+        label: 'Set value or default value'
+id: ahc_page
+label: 'AHC Page'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: ahc_page
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  field_booklist:
+    value: field_booklist
+    label: field_booklist
+    machine_name: field_booklist
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  field_image_attribution_ahc:
+    value: field_image_attribution_ahc
+    label: field_image_attribution_ahc
+    machine_name: field_image_attribution_ahc
+    type: csv
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: csv
+  field_main_image_alt:
+    value: field_main_image-alt
+    label: field_main_image-alt
+    machine_name: field_main_image_alt
+    type: csv
+  field_main_image_title:
+    value: field_main_image-title
+    label: field_main_image-title
+    machine_name: field_main_image_title
+    type: csv
+  field_pdf:
+    value: field_pdf
+    label: field_pdf
+    machine_name: field_pdf
+    type: csv
+  field_pdf_description:
+    value: field_pdf-description
+    label: field_pdf-description
+    machine_name: field_pdf_description
+    type: csv
+  field_postscript:
+    value: field_postscript
+    label: field_postscript
+    machine_name: field_postscript
+    type: csv
+  field_template:
+    value: field_template
+    label: field_template
+    machine_name: field_template
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_video_ahc:
+    value: field_video_ahc
+    label: field_video_ahc
+    machine_name: field_video_ahc
+    type: csv
+  field_video_ahc_description:
+    value: field_video_ahc-description
+    label: field_video_ahc-description
+    machine_name: field_video_ahc_description
+    type: csv
+  field_slideshow_ahc:
+    value: field_slideshow_ahc
+    label: field_slideshow_ahc
+    machine_name: field_slideshow_ahc
+    type: csv
+  field_slideshow_ahc_alt:
+    value: field_slideshow_ahc-alt
+    label: field_slideshow_ahc-alt
+    machine_name: field_slideshow_ahc_alt
+    type: csv
+  field_slideshow_ahc_title:
+    value: field_slideshow_ahc-title
+    label: field_slideshow_ahc-title
+    machine_name: field_slideshow_ahc_title
+    type: csv
+  field_slideshow:
+    value: field_slideshow
+    label: field_slideshow
+    machine_name: field_slideshow
+    type: csv
+  field_slideshow_ahc_time:
+    value: field_slideshow_ahc
+    label: field_slideshow_ahc
+    machine_name: field_slideshow_ahc_time
+    type: csv
+  field_slideshow_ahc_title1:
+    value: field_slideshow_ahc_alt
+    label: field_slideshow_ahc_alt
+    machine_name: field_slideshow_ahc_title1
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_booklist
+    map:
+      value: field_booklist
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_image_attribution_ahc
+    map:
+      value: field_image_attribution_ahc
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_main_image
+    map:
+      target_id: field_main_image
+      alt: field_main_image_alt
+      title: field_main_image_title
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_pdf
+    map:
+      target_id: field_pdf
+      description: field_pdf_description
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_postscript
+    map:
+      value: field_postscript
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_template
+    map:
+      target_id: field_template
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_video_ahc
+    map:
+      target_id: field_video_ahc
+      description: field_video_ahc_description
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

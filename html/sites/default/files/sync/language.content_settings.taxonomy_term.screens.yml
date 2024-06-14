@@ -1,0 +1,18 @@
+uuid: c81c14c3-39dc-4c1a-97f1-d873f1a5b46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screens
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.screens
+target_entity_type_id: taxonomy_term
+target_bundle: screens
+default_langcode: site_default
+language_alterable: false

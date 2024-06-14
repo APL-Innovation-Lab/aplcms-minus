@@ -1,0 +1,32 @@
+uuid: c4510ce9-ec75-409d-baf0-3c7e856d2881
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: cancel_passport_appointment
+label: 'Cancel Passport Appointment'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+      $('#edit-submit').val('Cancel Appointment');
+  console.log('hi b');
+  $('.usa-alert__text').html('Are you sure you want to cancel your appointment?');
+
+  $('#edit-cancel, .item-list').css('display','none');
+
+  $('#webform-submission-passport-appointment-request-delete-form').css('color','transparent');
+   }); // end of ready
+  })(jQuery); // end of jQuery
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/webform/passport_appointment_request/submissions/*/delete'
+contexts: {  }
+conditions_require_all: true

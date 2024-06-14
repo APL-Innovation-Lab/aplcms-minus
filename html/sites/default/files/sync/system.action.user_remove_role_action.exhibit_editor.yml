@@ -1,0 +1,14 @@
+uuid: 24e2cbba-f181-4b5d-9391-478ccef68e71
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.exhibit_editor
+  module:
+    - user
+id: user_remove_role_action.exhibit_editor
+label: 'Remove the Exhibit Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: exhibit_editor

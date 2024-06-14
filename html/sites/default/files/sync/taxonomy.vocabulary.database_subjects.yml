@@ -1,0 +1,8 @@
+uuid: ce79cd5e-74cb-4d8b-98c2-234940b6daca
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digital Resource Subjects'
+vid: database_subjects
+description: ''
+weight: -12

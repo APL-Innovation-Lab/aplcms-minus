@@ -1,0 +1,18 @@
+uuid: 7bfd3477-8ae7-47b5-ba0e-41167f949b1c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: staff_recommend
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

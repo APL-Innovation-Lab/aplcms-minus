@@ -1,0 +1,18 @@
+uuid: 1cee4715-a923-456d-b335-6d2319035dd5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.created
+field_name: created
+entity_type: node
+bundle: accordion
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

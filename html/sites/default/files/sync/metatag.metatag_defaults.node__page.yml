@@ -1,0 +1,8 @@
+uuid: fe24be81-b388-4f45-bf6c-43b208d11a75
+langcode: eng
+status: true
+dependencies: {  }
+id: node__page
+label: 'Content: Basic page'
+tags:
+  viewport: 'width=device-width, initial-scale=1'

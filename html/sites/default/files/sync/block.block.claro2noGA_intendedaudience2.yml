@@ -1,0 +1,28 @@
+uuid: 3e1dcce6-3733-4b64-8d10-3ffcb9ddd1ce
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_intendedaudience2
+theme: claro2noGA
+region: content
+weight: -28
+provider: null
+plugin: 'facet_block:intended_audience'
+settings:
+  id: 'facet_block:intended_audience'
+  label: 'Intended Audience 2'
+  label_display: '0'
+  provider: facets
+  block_id: intendedaudience2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /recommended/titles/covers

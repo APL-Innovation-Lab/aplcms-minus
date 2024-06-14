@@ -1,0 +1,20 @@
+uuid: 7aaf2fc5-7b52-432a-aa69-b523721d62f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.menu_link
+field_name: menu_link
+entity_type: node
+bundle: virtual_library_alert
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

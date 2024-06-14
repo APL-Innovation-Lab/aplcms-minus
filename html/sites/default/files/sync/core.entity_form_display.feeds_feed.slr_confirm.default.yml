@@ -1,0 +1,29 @@
+uuid: 7cd1854e-789b-43ea-9140-699bfbf099f6
+langcode: eng
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.slr_confirm
+id: feeds_feed.slr_confirm.default
+targetEntityType: feeds_feed
+bundle: slr_confirm
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  title: true

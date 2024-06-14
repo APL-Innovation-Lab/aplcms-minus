@@ -1,0 +1,36 @@
+uuid: 38f0d6c6-52a1-4fb8-8632-cfa295ef7cb3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.colophon
+  module:
+    - node
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__colophon_block_1
+theme: claro2noGA
+region: content_footer
+weight: 0
+provider: null
+plugin: 'views_block:colophon-block_1'
+settings:
+  id: 'views_block:colophon-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping:
+    nid: '@node.node_route_context:node'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      apl_site_content: apl_site_content
+      event: event
+      library_info: library_info

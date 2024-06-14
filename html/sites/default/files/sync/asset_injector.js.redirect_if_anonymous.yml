@@ -1,0 +1,29 @@
+uuid: d3e68141-cdd7-4ab7-a70a-ff9498dd1502
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: redirect_if_anonymous
+label: 'redirect if anonymous'
+code: 'window.location.replace("https://library.austintexas.gov");'
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: true
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/admin/structure/webform/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,19 @@
+uuid: 8a504481-bf66-4b0d-ac32-ea7498c06fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_address1
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_address1
+field_name: field_ahc_d_address1
+entity_type: node
+bundle: ahc_donation
+label: 'Address 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

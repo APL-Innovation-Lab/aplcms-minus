@@ -1,0 +1,14 @@
+uuid: ea00e88e-3cee-4b79-a4b3-d415ea0db0e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ahc_editor
+  module:
+    - user
+id: user_add_role_action.ahc_editor
+label: 'Add the AHC editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ahc_editor

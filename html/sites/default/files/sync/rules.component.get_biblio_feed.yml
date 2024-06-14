@@ -1,0 +1,24 @@
+uuid: 940b8d62-2e67-481d-bf6a-8c7c8b0b0cef
+langcode: en
+status: true
+dependencies: {  }
+id: get_biblio_feed
+label: 'get Biblio feed'
+description: ''
+tags: {  }
+config_version: '3'
+component:
+  expression:
+    id: rules_rule
+    uuid: 599ab1e2-cd2a-4d3e-b71b-73e413404c8c
+    weight: 0
+    conditions:
+      id: rules_and
+      uuid: af083b45-7911-4be0-8c59-51e1e4d484b2
+      weight: 0
+      conditions: {  }
+    actions:
+      id: rules_action_set
+      uuid: f078a5e0-9f68-466b-a9eb-8e74b36f4435
+      weight: 0
+      actions: {  }

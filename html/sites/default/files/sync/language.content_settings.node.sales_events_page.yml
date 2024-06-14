@@ -1,0 +1,18 @@
+uuid: 2a13ac9c-fcd6-42d9-b3d7-5479033222c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_events_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.sales_events_page
+target_entity_type_id: node
+target_bundle: sales_events_page
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+.section-summer .view-activities:nth-child(odd) {
+	background: #ECE1B5 !important;
+}
+.section-summer .view-activities:nth-child(even) {
+	background: #B5E1EC !important;
+}
+.block.block-views.block-views-blockactivities-and-activity-pages-block-1 > h2 {
+	padding: 1px 15px;
+}
+.view-activities.views-row {
+	padding: 15px;
+}
+.block.block-layout-builder.block-field-blocknodeactivity-pagetitle {
+	margin-left: 15px;
+}
+#apl_sections_wrapper {
+	margin-left: 10px;
+}

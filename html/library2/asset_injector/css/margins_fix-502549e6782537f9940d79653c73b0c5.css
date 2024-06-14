@@ -1,0 +1,17 @@
+form {
+	margin-left: 30px;
+}
+#views-exposed-form-my-pages-block-2 {
+	padding: 0 15px;
+	margin: 0;
+	border: 0;
+	box-shadow: none;
+	align-items: center !important;
+}
+.form-text {
+	margin-right: 10px;
+}
+
+.block-views h2 {
+	padding: 1px 15px;
+}

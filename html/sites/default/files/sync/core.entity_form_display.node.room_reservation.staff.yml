@@ -1,0 +1,236 @@
+uuid: af94b303-a73d-421a-b313-4c9665b97eac
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.staff
+    - field.field.node.room_reservation.feeds_item
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_agreements
+    - field.field.node.room_reservation.field_checked_for_conflicts
+    - field.field.node.room_reservation.field_conflicting_reservations
+    - field.field.node.room_reservation.field_digital_signature
+    - field.field.node.room_reservation.field_email
+    - field.field.node.room_reservation.field_group_name
+    - field.field.node.room_reservation.field_group_rep_full_name
+    - field.field.node.room_reservation.field_group_rep_phone
+    - field.field.node.room_reservation.field_group_website
+    - field.field.node.room_reservation.field_internal_
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_purpose_of_group_
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_room_group
+    - field.field.node.room_reservation.field_room_status
+    - field.field.node.room_reservation.field_slr_duration
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - field.field.node.room_reservation.field_submission_id
+    - node.type.room_reservation
+  module:
+    - datetime
+    - datetimehideseconds
+    - field_group
+third_party_settings:
+  field_group:
+    group_group:
+      children:
+        - field_room_group
+        - field_group_name
+        - field_purpose_of_group
+        - field_group_website
+        - field_agreements
+        - group_group_representative
+      label: Group
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+    group_group_representative:
+      children:
+        - field_group_rep_full_name
+        - field_group_rep_phone
+        - field_email
+        - field_digital_signature
+      label: 'Group Representative'
+      region: content
+      parent_name: group_group
+      weight: 19
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+    group_meeting_room_reservation:
+      children:
+        - title
+        - field_room_expected_attendance
+        - field____date
+        - field_meeting_room
+      label: 'Meeting Room Reservation'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+    group_internal_use:
+      children:
+        - field_internal_
+        - field_room_status
+      label: 'Internal Use'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+        effect: none
+id: node.room_reservation.staff
+targetEntityType: node
+bundle: room_reservation
+mode: staff
+content:
+  field____date:
+    type: datetime_datelist
+    weight: 4
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings:
+      datetimehideseconds:
+        hide: true
+  field_agreements:
+    type: options_buttons
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_digital_signature:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_group_name:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_group_rep_full_name:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_group_rep_phone:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_group_website:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_internal_:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_meeting_room:
+    type: entity_reference_autocomplete_tags
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_room_expected_attendance:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_room_group:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_room_status:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  field_checked_for_conflicts: true
+  field_conflicting_reservations: true
+  field_purpose_of_group_: true
+  field_slr_duration: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  field_submission_id: true
+  langcode: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

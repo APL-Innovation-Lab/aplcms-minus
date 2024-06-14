@@ -1,0 +1,15 @@
+uuid: 65bb8473-5362-4dc4-8eef-79adcef63a81
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_term__event_tags
+label: 'Taxonomy term: Event Categories'
+tags:
+  schema_event_event_attendance_mode: 'https://schema.org/OfflineEventAttendanceMode'
+  schema_event_event_status: 'https://schema.org/EventScheduled'
+  schema_event_is_accessible_for_free: 'True'
+  schema_event_location: 'a:3:{s:5:"@type";s:7:"Library";s:4:"name";s:21:"Austin Public Library";s:3:"url";s:31:"https://library.austintexas.gov";}'
+  schema_event_organizer: 'a:4:{s:5:"@type";s:13:"LibrarySystem";s:3:"@id";s:31:"https://library.austintexas.gov";s:4:"name";s:21:"Austin Public Library";s:3:"url";s:31:"https://library.austintexas.gov";}'
+  schema_event_type: EventSeries
+  schema_web_page_is_accessible_for_free: 'True'
+  schema_web_page_type: WebPage

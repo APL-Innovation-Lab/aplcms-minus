@@ -1,0 +1,31 @@
+uuid: d4f82152-8c47-49c0-b7e0-87ed5850434f
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_template_type
+field_name: field_template_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Highlighted
+      label: Highlighted
+    -
+      value: 'Double Feature'
+      label: 'Double Feature'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

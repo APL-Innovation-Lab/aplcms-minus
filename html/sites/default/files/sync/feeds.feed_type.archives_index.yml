@@ -1,0 +1,799 @@
+uuid: ce7b9f9f-e8de-4190-b15f-14e683f2b702
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.archives_index.title
+    - field.field.node.archives_index.field_accessno
+    - field.field.node.archives_index.field_archive_creator
+    - field.field.node.archives_index.field_archive_id
+    - field.field.node.archives_index.field_archive_language
+    - field.field.node.archives_index.field_archive_location
+    - field.field.node.archives_index.field_archive_status
+    - field.field.node.archives_index.field_archives_access
+    - field.field.node.archives_index.field_box_count
+    - field.field.node.archives_index.field_bulk_dates
+    - field.field.node.archives_index.field_collection
+    - field.field.node.archives_index.field_condition
+    - field.field.node.archives_index.field_digital_size_in_gb
+    - field.field.node.archives_index.field_display_title
+    - field.field.node.archives_index.field_donorno
+    - field.field.node.archives_index.field_final_process_date
+    - field.field.node.archives_index.field_flat_file_drawer
+    - field.field.node.archives_index.field_format_a_v_
+    - field.field.node.archives_index.field_format_electronic
+    - field.field.node.archives_index.field_format_general
+    - field.field.node.archives_index.field_format_note
+    - field.field.node.archives_index.field_format_photo
+    - field.field.node.archives_index.field_format_text
+    - field.field.node.archives_index.field_general_notes
+    - field.field.node.archives_index.field_item_count
+    - field.field.node.archives_index.field_item_count_notes
+    - field.field.node.archives_index.field_linear_feet
+    - field.field.node.archives_index.field_organizations
+    - field.field.node.archives_index.field_persons
+    - field.field.node.archives_index.field_places
+    - field.field.node.archives_index.field_posted_taro
+    - field.field.node.archives_index.field_process_note
+    - field.field.node.archives_index.field_record_creation_date
+    - field.field.node.archives_index.field_related
+    - field.field.node.archives_index.field_restriction_notes
+    - field.field.node.archives_index.field_restrictions
+    - field.field.node.archives_index.field_start_date
+    - field.field.node.archives_index.field_subjects
+    - field.field.node.archives_index.field_taro_filename
+    - node.type.archives_index
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      97a87bd5-d8c0-412b-8773-b69d2742b8aa:
+        separator: ;
+        limit: null
+        uuid: 97a87bd5-d8c0-412b-8773-b69d2742b8aa
+        plugin: explode
+        source: location
+        weight: 0
+        label: Explode
+      4d0dab7d-1e41-4656-af89-de655a400f84:
+        separator: ;
+        limit: null
+        uuid: 4d0dab7d-1e41-4656-af89-de655a400f84
+        plugin: explode
+        source: formattext
+        weight: 0
+        label: Explode
+      252d917b-1d87-4aaa-948f-7a240f370510:
+        separator: ;
+        limit: null
+        uuid: 252d917b-1d87-4aaa-948f-7a240f370510
+        plugin: explode
+        source: formatgeneral
+        weight: 0
+        label: Explode
+      c311b1df-0a94-4899-8976-e75773a413b4:
+        separator: ;
+        limit: null
+        uuid: c311b1df-0a94-4899-8976-e75773a413b4
+        plugin: explode
+        source: formatelectronic
+        weight: 0
+        label: Explode
+      f438f57c-05bc-496f-afbd-c72f6ebf7dd8:
+        separator: ;
+        limit: null
+        uuid: f438f57c-05bc-496f-afbd-c72f6ebf7dd8
+        plugin: explode
+        source: formatphoto
+        weight: 0
+        label: Explode
+      72109624-33de-4e78-9547-65ef82ca1dc4:
+        separator: ;
+        limit: null
+        uuid: 72109624-33de-4e78-9547-65ef82ca1dc4
+        plugin: explode
+        source: formatvideoaudio
+        weight: 0
+        label: Explode
+      840c5ec6-61c2-4740-85ad-3066cb9cade6:
+        separator: ;
+        limit: null
+        uuid: 840c5ec6-61c2-4740-85ad-3066cb9cade6
+        plugin: explode
+        source: persons
+        weight: 0
+        label: Explode
+      38e2debd-2c85-43ab-bf99-bdd908568b28:
+        character: ''
+        side: trim
+        uuid: 38e2debd-2c85-43ab-bf99-bdd908568b28
+        plugin: trim
+        source: persons
+        weight: 1
+        label: 'Characters to trim'
+      f11f4a58-95f4-4793-b412-e0e048368879:
+        separator: ;
+        limit: null
+        uuid: f11f4a58-95f4-4793-b412-e0e048368879
+        plugin: explode
+        source: organizations
+        weight: 0
+        label: Explode
+      382bedab-5293-4080-a7cc-611c456773c0:
+        character: ''
+        side: trim
+        uuid: 382bedab-5293-4080-a7cc-611c456773c0
+        plugin: trim
+        source: organizations
+        weight: 1
+        label: 'Characters to trim'
+      c347bb0f-587f-487d-bbaa-05ad2e754462:
+        separator: ;
+        limit: null
+        uuid: c347bb0f-587f-487d-bbaa-05ad2e754462
+        plugin: explode
+        source: places
+        weight: 0
+        label: Explode
+      6c8a08a5-32c1-4288-b404-e56f22564c52:
+        character: ''
+        side: trim
+        uuid: 6c8a08a5-32c1-4288-b404-e56f22564c52
+        plugin: trim
+        source: places
+        weight: 1
+        label: 'Characters to trim'
+      787c0622-f56c-48a6-8747-157a53e0cf1a:
+        separator: ;
+        limit: null
+        uuid: 787c0622-f56c-48a6-8747-157a53e0cf1a
+        plugin: explode
+        source: subjects
+        weight: 0
+        label: Explode
+      781eb87e-527b-40de-86d2-6813fa2368bc:
+        character: ''
+        side: trim
+        uuid: 781eb87e-527b-40de-86d2-6813fa2368bc
+        plugin: trim
+        source: subjects
+        weight: 1
+        label: 'Characters to trim'
+      5f0757ef-7a81-4bf9-a3bd-320da8dc3399:
+        separator: ;
+        limit: null
+        uuid: 5f0757ef-7a81-4bf9-a3bd-320da8dc3399
+        plugin: explode
+        source: restrictions
+        weight: 0
+        label: Explode
+      98878bcc-5f7e-4016-89d9-762280162a8f:
+        character: ''
+        side: trim
+        uuid: 98878bcc-5f7e-4016-89d9-762280162a8f
+        plugin: trim
+        source: restrictions
+        weight: 1
+        label: 'Characters to trim'
+      a77192f4-68d0-439f-aaf9-6d644a38a6c4:
+        character: ''
+        side: trim
+        uuid: a77192f4-68d0-439f-aaf9-6d644a38a6c4
+        plugin: trim
+        source: formatelectronic
+        weight: 1
+        label: 'Characters to trim'
+      957f9f58-0af2-43a9-b5d0-8508193e9672:
+        character: ''
+        side: trim
+        uuid: 957f9f58-0af2-43a9-b5d0-8508193e9672
+        plugin: trim
+        source: location
+        weight: 1
+        label: 'Characters to trim'
+      20f0c0ef-5ece-4203-bbe4-c9af6de6355b:
+        separator: ;
+        limit: null
+        uuid: 20f0c0ef-5ece-4203-bbe4-c9af6de6355b
+        plugin: explode
+        source: access
+        weight: 0
+        label: Explode
+      368df1c2-58bf-4285-8f06-759997b196e4:
+        character: ''
+        side: trim
+        uuid: 368df1c2-58bf-4285-8f06-759997b196e4
+        plugin: trim
+        source: access
+        weight: 1
+        label: 'Characters to trim'
+      6577b4d4-5bd2-4b09-abf5-ccc9b6baed18:
+        find: /\.+$/
+        replace: ''
+        limit: null
+        uuid: 6577b4d4-5bd2-4b09-abf5-ccc9b6baed18
+        plugin: find_replace_regex
+        source: persons
+        weight: 2
+        label: 'replace trailing period'
+      e9f86697-5b0d-428a-9961-f83018fc0e3d:
+        find: '/([A-Z]|Jr|Sr)$/'
+        replace: $1.
+        limit: null
+        uuid: e9f86697-5b0d-428a-9961-f83018fc0e3d
+        plugin: find_replace_regex
+        source: persons
+        weight: 3
+        label: 'replace trailing period if capital letter'
+      e171bc24-29e0-4f2f-b768-f0b4feb27ae7:
+        find: '/(\,\s\(?\d+.*)|(\,\s?\??\-\d+.*)$/'
+        replace: ''
+        limit: null
+        uuid: e171bc24-29e0-4f2f-b768-f0b4feb27ae7
+        plugin: find_replace_regex
+        source: persons
+        weight: 4
+        label: 'strip dates from names'
+      27a12c42-690e-48f3-a150-e166bb5971cd:
+        find: '/\.+\s?$/'
+        replace: ''
+        limit: null
+        uuid: 27a12c42-690e-48f3-a150-e166bb5971cd
+        plugin: find_replace_regex
+        source: places
+        weight: 2
+        label: 'strip trailing period'
+      fc827e71-1b51-4f6b-8dca-63acf598c050:
+        find: /etc$/
+        replace: etc.
+        limit: null
+        uuid: fc827e71-1b51-4f6b-8dca-63acf598c050
+        plugin: find_replace_regex
+        source: places
+        weight: 3
+        label: 'replace period after etc'
+      76673ae5-3d8c-4838-a21d-8efd525337dc:
+        operation: addition
+        flip: false
+        value: !!float 10000
+        uuid: 76673ae5-3d8c-4838-a21d-8efd525337dc
+        plugin: math
+        source: nid
+        weight: -8
+        label: Math
+      32c14784-850f-48d3-abb8-411ed2423d47:
+        text: '[id]'
+        uuid: 32c14784-850f-48d3-abb8-411ed2423d47
+        plugin: rewrite
+        source: nid
+        weight: -10
+        label: Rewrite
+      cb2cf259-8d11-426d-b175-516c2a19e384:
+        uuid: cb2cf259-8d11-426d-b175-516c2a19e384
+        plugin: cast_to_int
+        source: nid
+        weight: -9
+        label: 'Cast to integer'
+      63195244-5122-4069-b272-dadca1ad97c0:
+        text: eng
+        uuid: 63195244-5122-4069-b272-dadca1ad97c0
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: archives_index
+label: 'Archives Index'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: archives_index
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  accessno:
+    value: AccessNo
+    label: AccessNo
+    machine_name: accessno
+    type: csv
+  creator:
+    value: Creator
+    label: Creator
+    machine_name: creator
+    type: csv
+  accessno_:
+    value: AccessNo
+    label: AccessNo
+    machine_name: accessno_
+    type: csv
+  startdate:
+    value: StartDate
+    label: StartDate
+    machine_name: startdate
+    type: csv
+  enddate:
+    value: EndDate
+    label: EndDate
+    machine_name: enddate
+    type: csv
+  bulkdates:
+    value: BulkDates
+    label: BulkDates
+    machine_name: bulkdates
+    type: csv
+  processnote:
+    value: ProcessNote
+    label: ProcessNote
+    machine_name: processnote
+    type: csv
+  finalprocessdate:
+    value: FinalProcessDate
+    label: FinalProcessDate
+    machine_name: finalprocessdate
+    type: csv
+  tarofilename:
+    value: TAROFileName
+    label: TAROFileName
+    machine_name: tarofilename
+    type: csv
+  postedtaro:
+    value: PostedTARO
+    label: PostedTARO
+    machine_name: postedtaro
+    type: csv
+  collection:
+    value: Collection
+    label: Collection
+    machine_name: collection
+    type: csv
+  formatgeneral:
+    value: FormatGeneral
+    label: FormatGeneral
+    machine_name: formatgeneral
+    type: csv
+  formattext:
+    value: FormatText
+    label: FormatText
+    machine_name: formattext
+    type: csv
+  formatphoto:
+    value: FormatPhoto
+    label: FormatPhoto
+    machine_name: formatphoto
+    type: csv
+  formatvideoaudio:
+    value: FormatVideoAudio
+    label: FormatVideoAudio
+    machine_name: formatvideoaudio
+    type: csv
+  formatnote:
+    value: FormatNote
+    label: FormatNote
+    machine_name: formatnote
+    type: csv
+  language:
+    value: Language
+    label: Language
+    machine_name: language
+    type: csv
+  linearft:
+    value: LinearFt
+    label: LinearFt
+    machine_name: linearft
+    type: csv
+  digitalsizegb:
+    value: DigitalSizeGB
+    label: DigitalSizeGB
+    machine_name: digitalsizegb
+    type: csv
+  boxcount:
+    value: BoxCount
+    label: BoxCount
+    machine_name: boxcount
+    type: csv
+  flatfiledrawer:
+    value: FlatFileDrawer
+    label: FlatFileDrawer
+    machine_name: flatfiledrawer
+    type: csv
+  itemcountnotes:
+    value: ItemCountNotes
+    label: ItemCountNotes
+    machine_name: itemcountnotes
+    type: csv
+  itemcount:
+    value: ItemCount
+    label: ItemCount
+    machine_name: itemcount
+    type: csv
+  location:
+    value: Location
+    label: Location
+    machine_name: location
+    type: csv
+  access:
+    value: Access
+    label: Access
+    machine_name: access
+    type: csv
+  conditionnote:
+    value: ConditionNote
+    label: ConditionNote
+    machine_name: conditionnote
+    type: csv
+  persons:
+    value: Persons
+    label: Persons
+    machine_name: persons
+    type: csv
+  organizations:
+    value: Organizations
+    label: Organizations
+    machine_name: organizations
+    type: csv
+  places:
+    value: Places
+    label: Places
+    machine_name: places
+    type: csv
+  subjects:
+    value: Subjects
+    label: Subjects
+    machine_name: subjects
+    type: csv
+  restrictions:
+    value: Restrictions
+    label: Restrictions
+    machine_name: restrictions
+    type: csv
+  restrictionnotes:
+    value: RestrictionNotes
+    label: RestrictionNotes
+    machine_name: restrictionnotes
+    type: csv
+  donorno:
+    value: DonorNo
+    label: DonorNo
+    machine_name: donorno
+    type: csv
+  generalnotes:
+    value: GeneralNotes
+    label: GeneralNotes
+    machine_name: generalnotes
+    type: csv
+  related:
+    value: Related
+    label: Related
+    machine_name: related
+    type: csv
+  recordcreationdate:
+    value: RecordCreationDate
+    label: RecordCreationDate
+    machine_name: recordcreationdate
+    type: csv
+  id:
+    value: ID
+    label: ID
+    machine_name: id
+    type: csv
+  status:
+    value: Status
+    label: Status
+    machine_name: status
+    type: csv
+  formatelectronic:
+    value: FormatElectronic
+    label: FormatElectronic
+    machine_name: formatelectronic
+    type: csv
+  title:
+    value: Title
+    label: Title
+    machine_name: title
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: field_accessno
+    map:
+      value: accessno_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_archive_creator
+    map:
+      value: creator
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_start_date
+    map:
+      value: startdate
+      end_value: enddate
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_bulk_dates
+    map:
+      value: bulkdates
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_process_note
+    map:
+      value: processnote
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_final_process_date
+    map:
+      value: finalprocessdate
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_taro_filename
+    map:
+      value: tarofilename
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_posted_taro
+    map:
+      value: postedtaro
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_collection
+    map:
+      value: collection
+    settings:
+      language: null
+  -
+    target: field_format_general
+    map:
+      value: formatgeneral
+    settings:
+      language: null
+  -
+    target: field_format_text
+    map:
+      value: formattext
+    settings:
+      language: null
+  -
+    target: field_format_photo
+    map:
+      value: formatphoto
+    settings:
+      language: null
+  -
+    target: field_format_a_v_
+    map:
+      value: formatvideoaudio
+    settings:
+      language: null
+  -
+    target: field_format_note
+    map:
+      value: formatnote
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_archive_language
+    map:
+      value: language
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_linear_feet
+    map:
+      value: linearft
+    settings:
+      language: null
+  -
+    target: field_digital_size_in_gb
+    map:
+      value: digitalsizegb
+    settings:
+      language: null
+  -
+    target: field_box_count
+    map:
+      value: boxcount
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_flat_file_drawer
+    map:
+      value: flatfiledrawer
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_item_count_notes
+    map:
+      value: itemcountnotes
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_item_count
+    map:
+      value: itemcount
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_archive_location
+    map:
+      value: location
+    settings:
+      language: null
+  -
+    target: field_archives_access
+    map:
+      value: access
+    settings:
+      language: null
+  -
+    target: field_condition
+    map:
+      value: conditionnote
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_persons
+    map:
+      value: persons
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_organizations
+    map:
+      value: organizations
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_places
+    map:
+      value: places
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_subjects
+    map:
+      value: subjects
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_restrictions
+    map:
+      value: restrictions
+    settings:
+      language: null
+  -
+    target: field_restriction_notes
+    map:
+      value: restrictionnotes
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_donorno
+    map:
+      value: donorno
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_general_notes
+    map:
+      value: generalnotes
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_related
+    map:
+      value: related
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_record_creation_date
+    map:
+      value: recordcreationdate
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_archive_id
+    map:
+      value: id
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_archive_status
+    map:
+      value: status
+    settings:
+      language: null
+  -
+    target: field_format_electronic
+    map:
+      value: formatelectronic
+    settings:
+      language: null
+  -
+    target: field_display_title
+    map:
+      value: title
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

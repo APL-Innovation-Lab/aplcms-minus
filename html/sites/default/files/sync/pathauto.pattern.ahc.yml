@@ -1,0 +1,22 @@
+uuid: 0919da5f-04f6-4164-bada-9686274caf20
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ahc
+label: ahc
+type: 'canonical_entities:node'
+pattern: '/ahc/[node:title]'
+selection_criteria:
+  b62cc949-dd60-4816-8a7e-3aa21574ac84:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b62cc949-dd60-4816-8a7e-3aa21574ac84
+    context_mapping:
+      node: node
+    bundles:
+      ahc_page: ahc_page
+selection_logic: and
+weight: -5
+relationships: {  }

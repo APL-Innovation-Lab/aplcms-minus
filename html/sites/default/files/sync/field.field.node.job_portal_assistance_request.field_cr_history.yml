@@ -1,0 +1,21 @@
+uuid: ae4588f8-b833-4f7f-a58d-88e16e403506
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cr_history
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_cr_history
+field_name: field_cr_history
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Coaching History'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

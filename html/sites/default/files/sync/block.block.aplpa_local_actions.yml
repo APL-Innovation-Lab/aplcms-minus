@@ -1,0 +1,26 @@
+uuid: 57b82220-e298-4744-bcb0-1d8d3d9f82b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aplpa
+_core:
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: aplpa_local_actions
+theme: aplpa
+region: content
+weight: -13
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sequence/*\r\n/apltv/*"

@@ -1,0 +1,29 @@
+uuid: 557c9288-6448-41c2-8802-2868ced57459
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__alerts_block_4
+theme: claro2
+region: header
+weight: -30
+provider: null
+plugin: 'views_block:alerts-block_4'
+settings:
+  id: 'views_block:alerts-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/apltv/*\r\n/apl-tv/*\r\n/admin/*\r\n/community-resource-hub"

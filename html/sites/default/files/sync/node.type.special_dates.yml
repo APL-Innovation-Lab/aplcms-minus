@@ -1,0 +1,17 @@
+uuid: ca198731-037a-484a-b70e-8c2593508099
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Special Dates'
+type: special_dates
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

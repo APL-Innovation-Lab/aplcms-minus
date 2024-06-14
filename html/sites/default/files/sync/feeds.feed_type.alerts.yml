@@ -1,0 +1,193 @@
+uuid: b8970cbf-4658-417a-a3e0-3fcde131b636
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.alert.created
+    - core.base_field_override.node.alert.title
+    - core.base_field_override.node.alert.uid
+    - field.field.node.alert.field_display_timespan_04_07p
+    - field.field.node.alert.field_more_info
+    - field.field.node.alert.field_zone
+    - node.type.alert
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      b7ee34d4-15fc-4567-95e8-03c7cff2aca7:
+        text: eng
+        uuid: b7ee34d4-15fc-4567-95e8-03c7cff2aca7
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: alerts
+label: Alerts
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: alert
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: json
+  field_display_timespan_04_07p_value:
+    value: field_display_timespan_04_07p|value
+    label: field_display_timespan_04_07p|value
+    machine_name: field_display_timespan_04_07p_value
+    type: json
+  field_display_timespan_04_07p_end_value:
+    value: field_display_timespan_04_07p|end_value
+    label: field_display_timespan_04_07p|end_value
+    machine_name: field_display_timespan_04_07p_end_value
+    type: json
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: json
+  field_zone:
+    value: field_zone
+    label: field_zone
+    machine_name: field_zone
+    type: json
+  field_headline:
+    value: field_headline
+    label: field_headline
+    machine_name: field_headline
+    type: json
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: json
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: json
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: json
+  field_more_inf:
+    value: body
+    label: body
+    machine_name: field_more_inf
+    type: json
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: json
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: json
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: json
+  zone:
+    value: zone
+    label: zone
+    machine_name: zone
+    type: json
+  more_info:
+    value: more_info
+    label: more_info
+    machine_name: more_info
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_display_timespan_04_07p
+    map:
+      value: start
+      end_value: end
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_zone
+    map:
+      target_id: zone
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field_more_info
+    map:
+      value: more_info
+    settings:
+      language: ''
+      format: full_html

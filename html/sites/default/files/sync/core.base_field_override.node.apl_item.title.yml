@@ -1,0 +1,18 @@
+uuid: ee959fe5-42ab-4103-ad6c-b854e4046b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item
+id: node.apl_item.title
+field_name: title
+entity_type: node
+bundle: apl_item
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

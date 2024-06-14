@@ -1,0 +1,20 @@
+uuid: 926d184d-aee7-44ec-88df-47ba93366d41
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - text
+id: taxonomy_term.database_subjects.description
+field_name: description
+entity_type: taxonomy_term
+bundle: database_subjects
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

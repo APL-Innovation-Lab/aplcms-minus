@@ -1,0 +1,27 @@
+uuid: 65ad18b5-e4da-45b6-ab16-adb3db41fb94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_atxyz_files
+    - node.type.atxyz
+  module:
+    - file
+id: node.atxyz.field_atxyz_files
+field_name: field_atxyz_files
+entity_type: node
+bundle: atxyz
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: atxyz
+  file_extensions: 'png gif jpg jpeg pdf doc docx txt mp3 mp4'
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,454 @@
+uuid: 3393e026-1562-4c6b-be20-7315881ab660
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.database.created
+    - core.base_field_override.node.database.title
+    - core.base_field_override.node.database.uid
+    - field.field.node.database.body
+    - field.field.node.database.field_associated_file
+    - field.field.node.database.field_database_access
+    - field.field.node.database.field_database_category
+    - field.field.node.database.field_database_link
+    - field.field.node.database.field_database_subjects
+    - field.field.node.database.field_database_types
+    - field.field.node.database.field_former_product_names
+    - field.field.node.database.field_grade_level
+    - field.field.node.database.field_help_text
+    - field.field.node.database.field_intended_audience
+    - field.field.node.database.field_product_names
+    - field.field.node.database.field_promoted
+    - field.field.node.database.field_searchable_2018
+    - field.field.node.database.field_skip_apl_tv
+    - field.field.node.database.field_virtual_library_stat
+    - node.type.database
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      852a96dd-849d-44d3-90bc-002c4b56f867:
+        separator: ','
+        limit: null
+        uuid: 852a96dd-849d-44d3-90bc-002c4b56f867
+        plugin: explode
+        source: field_grade_level
+        weight: 0
+        label: Explode
+      a0362f76-4462-4de6-a78d-0d8cf6a72f55:
+        character: ''
+        side: trim
+        uuid: a0362f76-4462-4de6-a78d-0d8cf6a72f55
+        plugin: trim
+        source: field_grade_level
+        weight: 1
+        label: 'Characters to trim'
+      cff1ff7b-5a9f-4d57-bb72-81c52d8d2580:
+        separator: ','
+        limit: null
+        uuid: cff1ff7b-5a9f-4d57-bb72-81c52d8d2580
+        plugin: explode
+        source: field_database_access
+        weight: 0
+        label: Explode
+      c4a4f60f-9cd1-48f0-bd8a-60ec7cd2ae20:
+        character: ''
+        side: trim
+        uuid: c4a4f60f-9cd1-48f0-bd8a-60ec7cd2ae20
+        plugin: trim
+        source: field_database_access
+        weight: 1
+        label: 'Characters to trim'
+      b0597207-8c45-4bd3-9365-bb019f070ff0:
+        separator: ','
+        limit: null
+        uuid: b0597207-8c45-4bd3-9365-bb019f070ff0
+        plugin: explode
+        source: field_database_category
+        weight: 0
+        label: Explode
+      662041f5-4e38-46e2-b1a1-8e429cdf7265:
+        character: ''
+        side: trim
+        uuid: 662041f5-4e38-46e2-b1a1-8e429cdf7265
+        plugin: trim
+        source: field_database_category
+        weight: 1
+        label: 'Characters to trim'
+      c5d3e278-2ecd-4ebe-8fb7-5f6ef685b1fa:
+        separator: ','
+        limit: null
+        uuid: c5d3e278-2ecd-4ebe-8fb7-5f6ef685b1fa
+        plugin: explode
+        source: field_database_subjects
+        weight: 0
+        label: Explode
+      79289152-575c-42d1-b5e6-8f57203ba07c:
+        character: ''
+        side: trim
+        uuid: 79289152-575c-42d1-b5e6-8f57203ba07c
+        plugin: trim
+        source: field_database_subjects
+        weight: 1
+        label: 'Characters to trim'
+      5914a110-987b-4fdc-920b-2cacd2c40d0b:
+        separator: ','
+        limit: null
+        uuid: 5914a110-987b-4fdc-920b-2cacd2c40d0b
+        plugin: explode
+        source: field_database_types
+        weight: 0
+        label: Explode
+      194de2d8-eee4-4aca-a2d8-f79cefc8106e:
+        character: ''
+        side: trim
+        uuid: 194de2d8-eee4-4aca-a2d8-f79cefc8106e
+        plugin: trim
+        source: field_database_types
+        weight: 1
+        label: 'Characters to trim'
+      27736534-616c-4b79-b2a9-c9717756d17b:
+        separator: ','
+        limit: null
+        uuid: 27736534-616c-4b79-b2a9-c9717756d17b
+        plugin: explode
+        source: field_intended_audience
+        weight: 0
+        label: Explode
+      0d0eabda-f1c3-4944-834e-f3c5abbff465:
+        character: ''
+        side: trim
+        uuid: 0d0eabda-f1c3-4944-834e-f3c5abbff465
+        plugin: trim
+        source: field_intended_audience
+        weight: 1
+        label: 'Characters to trim'
+      aa25daf3-9555-4067-aaf4-2d9676136b34:
+        text: '61'
+        uuid: aa25daf3-9555-4067-aaf4-2d9676136b34
+        plugin: rewrite
+        source: uid
+        weight: 0
+        label: Rewrite
+      76a5655d-bd5f-4255-9863-d107c31bc73a:
+        separator: ','
+        limit: null
+        uuid: 76a5655d-bd5f-4255-9863-d107c31bc73a
+        plugin: explode
+        source: product_names
+        weight: 0
+        label: Explode
+      ce8e0240-c1e5-470a-aa8e-871c00f5b2fc:
+        separator: ','
+        limit: null
+        uuid: ce8e0240-c1e5-470a-aa8e-871c00f5b2fc
+        plugin: explode
+        source: former_product_names
+        weight: 0
+        label: Explode
+      d072e537-0093-4a18-a1b1-b8875fb98687:
+        text: eng
+        uuid: d072e537-0093-4a18-a1b1-b8875fb98687
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: database
+label: Database
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: database
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 61
+custom_sources:
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  field_database_access:
+    value: field_database_access
+    label: field_database_access
+    machine_name: field_database_access
+    type: csv
+  field_database_category:
+    value: field_database_category
+    label: field_database_category
+    machine_name: field_database_category
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  field_database_subjects:
+    value: field_database_subjects
+    label: field_database_subjects
+    machine_name: field_database_subjects
+    type: csv
+  field_database_types:
+    value: field_database_types
+    label: field_database_types
+    machine_name: field_database_types
+    type: csv
+  field_grade_level:
+    value: field_grade_level
+    label: field_grade_level
+    machine_name: field_grade_level
+    type: csv
+  field_associated_file:
+    value: field_associated_file
+    label: field_associated_file
+    machine_name: field_associated_file
+    type: csv
+  field_help_text:
+    value: field_help_text
+    label: field_help_text
+    machine_name: field_help_text
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  field_intended_audience:
+    value: field_intended_audience
+    label: field_intended_audience
+    machine_name: field_intended_audience
+    type: csv
+  field_database_link:
+    value: field_database_link
+    label: field_database_link
+    machine_name: field_database_link
+    type: csv
+  field_promoted:
+    value: field_promoted
+    label: field_promoted
+    machine_name: field_promoted
+    type: csv
+  field_searchable_2018:
+    value: field_searchable_2018
+    label: field_searchable_2018
+    machine_name: field_searchable_2018
+    type: csv
+  field_skip_apl_tv:
+    value: field_skip_apl_tv
+    label: field_skip_apl_tv
+    machine_name: field_skip_apl_tv
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  product_names:
+    value: product_names
+    label: product_names
+    machine_name: product_names
+    type: csv
+  former_product_names:
+    value: former_product_names
+    label: former_product_names
+    machine_name: former_product_names
+    type: csv
+  virtual_library_stat:
+    value: virtual_library_stat
+    label: virtual_library_stat
+    machine_name: virtual_library_stat
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: eng
+      timezone: UTC
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: eng
+      format: full_html
+  -
+    target: field_database_access
+    map:
+      target_id: field_database_access
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_category
+    map:
+      target_id: field_database_category
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_subjects
+    map:
+      target_id: field_database_subjects
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_types
+    map:
+      target_id: field_database_types
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_grade_level
+    map:
+      value: field_grade_level
+    settings:
+      language: ''
+  -
+    target: field_associated_file
+    map:
+      target_id: field_associated_file
+      description: ''
+    settings:
+      language: eng
+      reference_by: fid
+      existing: '2'
+      autocreate: 0
+  -
+    target: field_help_text
+    map:
+      value: field_help_text
+      summary: ''
+    settings:
+      language: eng
+      format: full_html
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_intended_audience
+    map:
+      target_id: field_intended_audience
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_link
+    map:
+      value: field_database_link
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_promoted
+    map:
+      value: field_promoted
+    settings:
+      language: eng
+  -
+    target: field_searchable_2018
+    map:
+      value: field_searchable_2018
+    settings:
+      language: eng
+  -
+    target: field_skip_apl_tv
+    map:
+      value: field_skip_apl_tv
+    settings:
+      language: eng
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: eng
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_product_names
+    map:
+      value: product_names
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_former_product_names
+    map:
+      value: former_product_names
+    settings:
+      language: ''
+    unique: {  }
+  -
+    target: field_virtual_library_stat
+    map:
+      value: virtual_library_stat
+    settings:
+      language: eng
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: eng

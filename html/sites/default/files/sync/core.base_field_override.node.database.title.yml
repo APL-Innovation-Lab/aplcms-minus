@@ -1,0 +1,18 @@
+uuid: 9e1d1a2b-79d0-4b6e-9d37-3883863f5c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.database
+id: node.database.title
+field_name: title
+entity_type: node
+bundle: database
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

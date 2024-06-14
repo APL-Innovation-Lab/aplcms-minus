@@ -1,0 +1,140 @@
+uuid: 1b0853c4-014b-4e48-9ffb-69c63e01fc63
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.bookstore_page.title
+    - core.base_field_override.node.bookstore_page.uid
+    - field.field.node.bookstore_page.body
+    - field.field.node.bookstore_page.field_main_image
+    - node.type.bookstore_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      fe170642-bf96-437d-ae04-2a5d78d459ae:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: fe170642-bf96-437d-ae04-2a5d78d459ae
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: 0
+        label: 'Find replace REGEX'
+      2d0c9d77-9447-4a23-9075-77ca499294fb:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 2d0c9d77-9447-4a23-9075-77ca499294fb
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: 1
+        label: 'Find replace REGEX'
+id: bookstore_page_
+label: 'Bookstore Page-'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: bookstore_page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: csv
+  field_main_image_alt:
+    value: field_main_image_alt
+    label: field_main_image_alt
+    machine_name: field_main_image_alt
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_image
+    map:
+      target_id: field_main_image
+      alt: field_main_image_alt
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'

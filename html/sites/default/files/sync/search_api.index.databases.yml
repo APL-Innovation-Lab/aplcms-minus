@@ -1,0 +1,66 @@
+uuid: f5420d53-f7c3-4acb-aae8-b861507e7706
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_database_subjects
+    - search_api.server.drupal
+  module:
+    - taxonomy
+    - node
+    - search_api
+id: databases
+name: Databases
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  tid:
+    label: 'Database Subjects » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_database_subjects:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_database_subjects
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    boost: !!float 2
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - database
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: drupal

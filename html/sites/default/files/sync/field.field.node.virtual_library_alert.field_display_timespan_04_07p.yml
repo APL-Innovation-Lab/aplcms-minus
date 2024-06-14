@@ -1,0 +1,26 @@
+uuid: b28c2d35-5295-4c75-87ed-0cc5626c2ac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan_04_07p
+    - node.type.virtual_library_alert
+  module:
+    - datetime_range
+id: node.virtual_library_alert.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+bundle: virtual_library_alert
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+2 months'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

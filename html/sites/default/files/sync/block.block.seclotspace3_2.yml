@@ -1,0 +1,28 @@
+uuid: f98fdc4a-b30c-4196-8efe-a21e62a127c0
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.seclotspace3
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: seclotspace3_2
+theme: claro2
+region: header
+weight: -20
+provider: null
+plugin: 'facet_block:seclotspace3'
+settings:
+  id: 'facet_block:seclotspace3'
+  label: SecLotSpace
+  label_display: visible
+  provider: facets
+  block_id: seclotspace3_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood/facets

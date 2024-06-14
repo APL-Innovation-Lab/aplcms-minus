@@ -1,0 +1,246 @@
+uuid: 3b44362b-4f8f-4cbc-b2f4-385d0645013f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.sales_events_page.title
+    - core.base_field_override.node.sales_events_page.uid
+    - field.field.node.sales_events_page.body
+    - field.field.node.sales_events_page.field_main_image
+    - field.field.node.sales_events_page.field_se_gallery
+    - node.type.sales_events_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4d2a79ce-1e81-4d58-b7cd-7fab399986ac:
+        text: eng
+        uuid: 4d2a79ce-1e81-4d58-b7cd-7fab399986ac
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      49d50b11-bc15-4590-a8a1-05a2affeeaae:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 49d50b11-bc15-4590-a8a1-05a2affeeaae
+        plugin: find_replace_regex
+        source: field_main_image1
+        weight: 0
+        label: 'Find replace REGEX'
+      a3636fa7-9ffd-49b3-af76-c3bd2ebdd7c1:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: a3636fa7-9ffd-49b3-af76-c3bd2ebdd7c1
+        plugin: find_replace_regex
+        source: field_main_image1
+        weight: 1
+        label: 'Find replace REGEX'
+      fe312d38-0667-41da-9c97-12230aeba8ad:
+        separator: ','
+        limit: null
+        uuid: fe312d38-0667-41da-9c97-12230aeba8ad
+        plugin: explode
+        source: gallery
+        weight: 0
+        label: Explode
+      c8ab2764-ecfc-4571-b8da-77ed86c66610:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: c8ab2764-ecfc-4571-b8da-77ed86c66610
+        plugin: find_replace_regex
+        source: gallery
+        weight: 1
+        label: 'Find replace REGEX'
+      5bc80c74-9a9f-4c35-89b4-3dec2ce761a7:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 5bc80c74-9a9f-4c35-89b4-3dec2ce761a7
+        plugin: find_replace_regex
+        source: gallery
+        weight: 2
+        label: 'Find replace REGEX'
+id: sales_events_pages
+label: 'Sales & Events Pages'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: sales_events_page
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  updated:
+    value: updated
+    label: updated
+    machine_name: updated
+    type: csv
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: csv
+  field_main_image_alt:
+    value: field_main_image_alt
+    label: field_main_image_alt
+    machine_name: field_main_image_alt
+    type: csv
+  field_se_gallery:
+    value: field_se_gallery
+    label: field_se_gallery
+    machine_name: field_se_gallery
+    type: csv
+  field_se_gallery_alt:
+    value: field_se_gallery_alt
+    label: field_se_gallery_alt
+    machine_name: field_se_gallery_alt
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  gallery:
+    value: gallery
+    label: gallery
+    machine_name: gallery
+    type: csv
+  gallery_alt:
+    value: gallery_alt
+    label: gallery_alt
+    machine_name: gallery_alt
+    type: csv
+  gallery_title:
+    value: gallery_title
+    label: gallery_title
+    machine_name: gallery_title
+    type: csv
+  field_main_image1:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image1
+    type: csv
+  field_main_image_alt1:
+    value: field_main_image_alt1
+    label: field_main_image_alt1
+    machine_name: field_main_image_alt1
+    type: csv
+  field_main_image_title1:
+    value: field_main_image_title1
+    label: field_main_image_title1
+    machine_name: field_main_image_title1
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field_se_gallery
+    map:
+      target_id: gallery
+      alt: gallery_alt
+      title: gallery_title
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_main_image
+    map:
+      target_id: field_main_image1
+      alt: field_main_image_alt1
+      title: field_main_image_title1
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'

@@ -1,0 +1,16 @@
+uuid: 5a86e28a-04ce-47e1-bb2b-516fe9847248
+langcode: eng
+status: false
+dependencies:
+  module:
+    - system
+id: how_to
+label: 'How To'
+weight: 6
+theme: uswds
+admin_theme: uswds
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/how-to/*'

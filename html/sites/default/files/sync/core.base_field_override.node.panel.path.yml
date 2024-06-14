@@ -1,0 +1,20 @@
+uuid: b73e0f66-8e7d-4928-8a6c-2a8c08bf77b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+  module:
+    - path
+id: node.panel.path
+field_name: path
+entity_type: node
+bundle: panel
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

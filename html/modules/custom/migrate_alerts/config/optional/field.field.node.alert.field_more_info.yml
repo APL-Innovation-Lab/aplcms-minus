@@ -1,0 +1,21 @@
+uuid: 85a4a97c-ef8c-4417-95e4-4abf7c4b2570
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_info
+    - node.type.alert
+  module:
+    - text
+id: node.alert.field_more_info
+field_name: field_more_info
+entity_type: node
+bundle: alert
+label: 'More Info'
+description: 'Optional. If used, the alert will generate a link to a page with this info.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

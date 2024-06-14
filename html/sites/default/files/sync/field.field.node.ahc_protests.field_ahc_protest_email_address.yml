@@ -1,0 +1,19 @@
+uuid: 2469c395-d1b6-4e8c-a952-23a9bf918fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_protest_email_address
+    - node.type.ahc_protests
+id: node.ahc_protests.field_ahc_protest_email_address
+field_name: field_ahc_protest_email_address
+entity_type: node
+bundle: ahc_protests
+label: 'Email Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

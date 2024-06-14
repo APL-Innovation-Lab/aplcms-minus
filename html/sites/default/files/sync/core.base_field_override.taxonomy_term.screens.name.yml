@@ -1,0 +1,18 @@
+uuid: 8df3ddcd-4875-4652-b80f-2d129f5a7d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screens
+id: taxonomy_term.screens.name
+field_name: name
+entity_type: taxonomy_term
+bundle: screens
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

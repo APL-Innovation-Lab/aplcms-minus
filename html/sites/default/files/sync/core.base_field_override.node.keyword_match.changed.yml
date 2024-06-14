@@ -1,0 +1,18 @@
+uuid: cd668033-6b20-4481-a84e-8fbaedcaa450
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.keyword_match
+id: node.keyword_match.changed
+field_name: changed
+entity_type: node
+bundle: keyword_match
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

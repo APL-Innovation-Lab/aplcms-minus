@@ -1,0 +1,121 @@
+uuid: f791c6bc-5146-4a64-96f2-86e9729924d2
+langcode: en
+status: true
+dependencies: {  }
+id: header_2023
+label: 'Header 2023'
+code: |-
+  #block-languages::before {
+  	display: block;
+  	content: ' ';
+  	height: 25px;
+  	width: 25px;
+  	background-image: url(/themes/custom/apl/assets/img/globe.png);
+  	float: left;
+  	background-position: 2px 2px;
+  	background-repeat: no-repeat;
+  	padding: 10px !important;
+  }
+  #block-languages {
+  	display: none;
+  }
+  .usa-banner-inner > div {
+  	display: flex;
+  	justify-content: right;
+  }
+  #search-block-form,
+  .region.region-header.usa-navbar,
+  .usa-banner-inner {
+  	max-width: 64rem;
+  	margin: 0 auto;
+  }
+  .usa-nav__primary.usa-accordion li a span::before {
+  	content: ' ';
+  	height: 25px;
+  	width: 25px;
+  	float: left;
+  	background-position: 0px 0px;
+  	background-repeat: no-repeat;
+  	margin: -5px 0 0 0;
+  }
+  .link.usa-nav__link {
+  	padding: 0 !important;
+  }
+  .usa-nav__primary.usa-accordion li:first-child a span::before {
+  	background-image: url(/themes/custom/apl/assets/img/events.png);
+  }
+  .usa-nav__primary.usa-accordion li:nth-child(2) a span::before {
+  	background-image: url(/themes/custom/apl/assets/img/locations.png);
+  }
+  .usa-nav__primary.usa-accordion li:nth-child(3) a span::before {
+  	background-image: url(/themes/custom/apl/assets/img/log_in.png);
+  }
+  .usa-nav__primary.usa-accordion li:nth-child(3) a {
+  	color: white;
+  	text-transform: capitalize;
+  }
+  .usa-nav__primary.usa-accordion li:nth-child(3) a span::after {
+  	background-image: url(/themes/custom/apl/assets/img/arrow_down_white.png);
+  }
+
+  .usa-nav__primary.usa-accordion li a span {
+  	display: inline-block;
+  	padding: 15px 15px 10px;
+  }
+  html .usa-header--basic .usa-nav__link:hover::after, 
+  html .usa-header--basic .usa-nav__primary-item > .usa-current::after {
+  	left: 0;
+  	right: 0;
+  }
+  .usa-nav__primary.usa-accordion li:nth-child(3) {
+  	background-color: #C42026;
+  }
+
+  .usa-navbar {
+  	min-height: 4.3rem !important;
+  }
+  .menu.menu--main.nav li.first a {
+  	color: transparent;
+  	background-image: url(/themes/custom/apl/assets/img/APL.png);
+  	width: 263px;
+  	background-repeat: no-repeat;
+  	display: block;
+  	padding: 3px 0;
+  	margin: 0;
+  	background-position: 0px 6px;
+  }
+  .region.region-header.usa-navbar {
+  	display: flex;
+  }
+  .grid-row.grid-gap {
+  	position: relative;
+  	z-index: 9;
+  	background: white;
+  }
+  .img_container {
+  	display: block;
+  	height: 131px;
+  }
+  footer .grid-row.grid-gap {
+  	background: transparent;
+  }
+  @media screen and (max-width: 63.99em) {
+  	.menu.menu--main.nav li {
+  	 height: auto;
+    }
+   .region.region-header.usa-navbar {
+  	text-align: left;
+   }
+   .usa-navbar {
+   	  display: flex !important;
+    	height: auto;
+  }
+   .menu--main.nav li {
+    display: block !important;
+   }
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

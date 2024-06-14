@@ -1,0 +1,18 @@
+uuid: 959026ec-2a95-4ec3-b1e8-2540bb037473
+langcode: eng
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+id: block_content.webform.info
+field_name: info
+entity_type: block_content
+bundle: webform
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

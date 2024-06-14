@@ -1,0 +1,21 @@
+uuid: 242fac78-256c-471f-824b-337812cb52a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_q_description_english
+    - taxonomy.vocabulary.quests
+  module:
+    - text
+id: taxonomy_term.quests.field_q_description_english
+field_name: field_q_description_english
+entity_type: taxonomy_term
+bundle: quests
+label: 'Description - English'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

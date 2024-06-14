@@ -1,0 +1,19 @@
+uuid: 1ac4d4d5-e573-4cc0-8d3f-7e731ceb2557
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bywhomburied
+    - node.type.oakwood
+id: node.oakwood.field_bywhomburied
+field_name: field_bywhomburied
+entity_type: node
+bundle: oakwood
+label: bywhomburied
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

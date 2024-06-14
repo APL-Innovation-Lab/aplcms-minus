@@ -1,0 +1,61 @@
+uuid: fa8bc69a-b10e-4fb1-98a3-8081f917ad97
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_alert_icon
+field_name: field_alert_icon
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: warning
+      label: '<span class="material-icons-outlined">warning</span>'
+    -
+      value: info
+      label: '<span class="material-icons-outlined">info</span>'
+    -
+      value: favorite
+      label: '<span class="material-icons-outlined">favorite</span>'
+    -
+      value: language
+      label: '<span class="material-icons-outlined">language</span>'
+    -
+      value: help_outline
+      label: '<span class="material-icons-outlined">help_outline</span>'
+    -
+      value: schedule
+      label: '<span class="material-icons-outlined">schedule</span>'
+    -
+      value: lightbulb
+      label: '<span class="material-icons-outlined">lightbulb</span>'
+    -
+      value: help
+      label: '<span class="material-icons-outlined">help</span>'
+    -
+      value: work
+      label: '<span class="material-icons-outlined">work</span>'
+    -
+      value: bookmark
+      label: '<span class="material-icons-outlined">bookmark</span>'
+    -
+      value: touch_app
+      label: '<span class="material-icons-outlined">touch_app</span>'
+    -
+      value: get_app
+      label: '<span class="material-icons-outlined">get_app</span>'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

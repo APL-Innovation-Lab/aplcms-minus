@@ -1,0 +1,25 @@
+uuid: 730525fb-75c0-4840-9eb4-ad5d9445dd8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_id
+    - node.type.reflection
+id: node.reflection.field_node_id
+field_name: field_node_id
+entity_type: node
+bundle: reflection
+label: Event
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: reflection_picker
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+type: module
+name: Migrate Event Tags
+description: 'Event Tags'
+package: apl_dev
+core_version_requirement: '>=9.1'
+dependencies:
+  - drupal:migrate
+  - drupal:layout_builder
+  - migrate_plus:migrate_plus
+  - migrate_file:migrate_file
+  - entity_hierarchy:entity_hierarchy
+  - views_data_export:views_data_export
+  - views_autocomplete_filters:views_autocomplete_filters
+  - field_permissions:field_permissions
+  - feeds:feeds
+  - feeds_tamper:feeds_tamper
+  - better_exposed_filters:better_exposed_filters
+  - views_conditional:views_conditional
+
+# Information added by Drupal.org packaging script on 2022-04-22
+version: '6.0.0'
+project: 'migrate_plus'
+datestamp: 1650658064

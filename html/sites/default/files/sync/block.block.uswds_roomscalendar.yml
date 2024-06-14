@@ -1,0 +1,30 @@
+uuid: d6d424b3-56f4-4e0e-b0be-e24d3d340df8
+langcode: eng
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds
+id: uswds_roomscalendar
+theme: uswds
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+settings:
+  id: 'block_content:07bc72f4-65a6-4122-b80a-6de1bfc0a2ca'
+  label: rooms-calendar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/rooms-calendar/ace/*'

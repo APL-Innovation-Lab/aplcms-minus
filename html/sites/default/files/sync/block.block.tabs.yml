@@ -1,0 +1,29 @@
+uuid: 733d0c86-7269-4bff-9b44-284eb32d0be8
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - aplpa
+id: tabs
+theme: aplpa
+region: header_top
+weight: -15
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

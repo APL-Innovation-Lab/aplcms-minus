@@ -1,0 +1,14 @@
+uuid: e8aba382-032b-4e43-b901-6b371ad5390e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.activity_editor
+  module:
+    - user
+id: user_remove_role_action.activity_editor
+label: 'Remove the Activity Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: activity_editor

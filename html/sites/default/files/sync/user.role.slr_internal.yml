@@ -1,0 +1,28 @@
+uuid: 29a99e0e-376b-43b8-ad72-3bf5fd760d3d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.slr_cancel
+    - feeds.feed_type.slr_confirm
+    - node.type.slr
+  module:
+    - config_perms
+    - editoria11y
+    - feeds
+    - node
+id: slr_internal
+label: 'SLR Internal'
+weight: 18
+is_admin: null
+permissions:
+  - 'admin delete webform'
+  - 'admin resend'
+  - 'create slr content'
+  - 'delete any slr content'
+  - 'delete own slr content'
+  - 'edit any slr content'
+  - 'edit own slr content'
+  - 'import slr_cancel feeds'
+  - 'import slr_confirm feeds'
+  - 'view editoria11y checker'

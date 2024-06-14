@@ -1,0 +1,22 @@
+uuid: 01fe2dd2-565d-43f6-9cd9-575d7c4d9a6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_page
+id: node.ahc_page.sticky
+field_name: sticky
+entity_type: node
+bundle: ahc_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

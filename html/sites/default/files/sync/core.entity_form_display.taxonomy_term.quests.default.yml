@@ -1,0 +1,156 @@
+uuid: e94427d1-b448-4193-8f0a-23fbc406f2db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.quests.field_description
+    - field.field.taxonomy_term.quests.field_description_1
+    - field.field.taxonomy_term.quests.field_description_2
+    - field.field.taxonomy_term.quests.field_q_badge
+    - field.field.taxonomy_term.quests.field_q_description_english
+    - field.field.taxonomy_term.quests.field_q_description_spanish
+    - field.field.taxonomy_term.quests.field_q_summary_english
+    - field.field.taxonomy_term.quests.field_q_summary_spanish
+    - field.field.taxonomy_term.quests.field_q_title_spanish
+    - field.field.taxonomy_term.quests.field_quest_audience
+    - field.field.taxonomy_term.quests.field_quest_bibliocommons_list
+    - field.field.taxonomy_term.quests.field_quest_category
+    - field.field.taxonomy_term.quests.field_quest_image
+    - field.field.taxonomy_term.quests.field_quest_month
+    - field.field.taxonomy_term.quests.field_quest_spanish
+    - field.field.taxonomy_term.quests.field_quest_video
+    - image.style.thumbnail
+    - taxonomy.vocabulary.quests
+  module:
+    - image
+    - text
+    - video_embed_field
+id: taxonomy_term.quests.default
+targetEntityType: taxonomy_term
+bundle: quests
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_q_badge:
+    type: image_image
+    weight: 12
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_q_description_english:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_q_description_spanish:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_q_summary_english:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_q_summary_spanish:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_q_title_spanish:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quest_audience:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quest_bibliocommons_list:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quest_category:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quest_image:
+    type: image_image
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_quest_month:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quest_spanish:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_quest_video:
+    type: video_embed_field_textfield
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_description: true
+  field_description_1: true
+  field_description_2: true
+  path: true
+  status: true

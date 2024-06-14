@@ -1,0 +1,27 @@
+uuid: b2642d3b-1560-4ec4-acec-642c66b37d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_files
+    - node.type.activity
+  module:
+    - file
+id: node.activity.field_activity_files
+field_name: field_activity_files
+entity_type: node
+bundle: activity
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: activity
+  file_extensions: 'pdf png jpg gif'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

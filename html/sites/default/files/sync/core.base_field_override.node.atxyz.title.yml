@@ -1,0 +1,18 @@
+uuid: 2b18ce3c-63d2-4499-b42c-56b3722dd427
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.title
+field_name: title
+entity_type: node
+bundle: atxyz
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

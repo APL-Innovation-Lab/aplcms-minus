@@ -1,0 +1,18 @@
+uuid: 4fd4677c-2eb2-4f59-a922-67e5a1268cf2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.publish_on
+field_name: publish_on
+entity_type: node
+bundle: virtual_library_alert
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

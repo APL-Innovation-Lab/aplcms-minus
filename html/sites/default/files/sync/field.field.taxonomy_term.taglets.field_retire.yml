@@ -1,0 +1,21 @@
+uuid: 2f795606-9c63-40bf-a3e2-7650603845e6
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_retire
+    - taxonomy.vocabulary.taglets
+id: taxonomy_term.taglets.field_retire
+field_name: field_retire
+entity_type: taxonomy_term
+bundle: taglets
+label: Retire
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

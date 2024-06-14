@@ -1,0 +1,23 @@
+uuid: 4484282b-abba-4b92-aef1-adf8281a8e16
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.reflection
+  module:
+    - feeds
+id: node.reflection.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: reflection
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

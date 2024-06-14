@@ -1,0 +1,19 @@
+uuid: 8e8f9efd-348f-452c-8bc1-bb52f869dbdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_access_code
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_jp_access_code
+field_name: field_jp_access_code
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Access Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

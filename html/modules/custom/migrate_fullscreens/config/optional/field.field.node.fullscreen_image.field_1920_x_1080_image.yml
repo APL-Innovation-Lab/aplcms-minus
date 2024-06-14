@@ -1,0 +1,38 @@
+uuid: 68f3592c-3c72-4fc9-beee-308855b048f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_1920_x_1080_image
+    - node.type.fullscreen_image
+  module:
+    - image
+id: node.fullscreen_image.field_1920_x_1080_image
+field_name: field_1920_x_1080_image
+entity_type: node
+bundle: fullscreen_image
+label: 'Fullscreen Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: apltv
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

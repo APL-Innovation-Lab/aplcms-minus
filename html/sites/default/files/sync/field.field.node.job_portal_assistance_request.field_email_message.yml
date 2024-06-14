@@ -1,0 +1,21 @@
+uuid: d30b4dd1-be98-4bec-9849-d3b55fe7e9a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_message
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_email_message
+field_name: field_email_message
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Email Message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

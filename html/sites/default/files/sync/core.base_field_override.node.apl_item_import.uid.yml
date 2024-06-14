@@ -1,0 +1,20 @@
+uuid: db5c44eb-495a-4464-8bd2-014368044ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.uid
+field_name: uid
+entity_type: node
+bundle: apl_item_import
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 877133aa-fa2a-4779-b7af-c8d8ca6411bc
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_end
+    - node.type.page_
+  module:
+    - datetime
+id: node.page_.field_slr_time_end
+field_name: field_slr_time_end
+entity_type: node
+bundle: page_
+label: 'Time End'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

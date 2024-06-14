@@ -1,0 +1,7 @@
+form {
+	background: white;
+	padding: 20px;
+}
+form > * {
+	margin: 10px;
+}

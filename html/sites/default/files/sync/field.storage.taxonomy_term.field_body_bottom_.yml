@@ -1,0 +1,23 @@
+uuid: aa0df91b-8eac-44a1-bd48-a7938da8630e
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_body_bottom_
+field_name: field_body_bottom_
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

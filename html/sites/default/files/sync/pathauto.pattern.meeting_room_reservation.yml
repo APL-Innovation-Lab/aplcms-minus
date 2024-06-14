@@ -1,0 +1,24 @@
+uuid: bfbfb556-c745-483f-85ee-c6210c7006de
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: meeting_room_reservation
+label: 'Meeting Room Reservation'
+type: 'canonical_entities:node'
+pattern: '/rr/[node:title]-[node:nid]'
+selection_criteria:
+  28f35d22-df02-45c3-ba4f-32f3a89295fb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 28f35d22-df02-45c3-ba4f-32f3a89295fb
+    context_mapping:
+      node: node
+    bundles:
+      room_reservation: room_reservation
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language

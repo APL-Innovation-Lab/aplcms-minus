@@ -1,0 +1,116 @@
+{#
+/**
+ * @file
+ * USWDS theme implementation to display a single page.
+ */
+#}
+
+{% if page.header_top or government_banner %}
+  {{ government_banner }}
+{% endif %}
+
+<div class="usa-overlay"></div>
+
+{% if page.header_top %}
+  <div class="grid-container">
+    {{ page.header_top }}
+  </div>
+{% endif %}
+
+<header class="{{ header_classes }}" role="banner">
+  {% if header_basic %}
+    <div class="usa-nav-container">
+   {% endif %}
+      <div class="usa-navbar">
+        {{ page.header }}
+        <button class="usa-menu-btn">{{ 'Menu'|t }}</button>
+      </div>
+
+      <nav aria-label="Primary navigation" class="usa-nav" role="navigation">
+        <button class="usa-nav__close">
+          <img src="{{ active_theme_path }}/assets/img/close.svg" alt="close" />
+        </button>
+        {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
+        {% if header_extended %}
+          <div class="usa-nav__inner">
+        {% endif %}
+
+        {% if page.primary_menu|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim %}
+          {{ page.primary_menu }}
+        {% endif %}
+
+        {% if page.secondary_menu|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim %}
+          <div class="usa-nav__secondary">
+            {{ page.secondary_menu }}
+          </div>
+        {% endif %}
+
+        {% if header_extended %}
+          </div>
+        {% endif %}
+     </nav>
+
+  {% if header_basic %}
+    </div>
+  {% endif %}
+
+</header>
+ <main class="usa-section" id="main-content">
+  {% if page.hero %}
+    <section class="usa-hero">
+      {{ page.hero }}
+    </section>
+  {% endif %}
+   <div class="{{ main_class }}">
+     <div class="grid-row grid-gap">
+       <div class="grid-col-12">
+         {{ page.breadcrumb }}
+         {{ page.highlighted }}
+
+         {% if page.help|render|trim %}
+           <div class="usa-alert usa-alert--info">
+             <div class="usa-alert__body">
+               <p class="usa-alert__text">
+                 {{ page.help }}
+               </p>
+             </div>
+           </div>
+         {% endif %}
+
+      </div>
+    </div>
+
+    <div class="grid-row grid-gap">
+    {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
+    {% if page.sidebar_first|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim %}
+      <aside class="tablet:grid-col-3">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+      <div class="region-content {{ content_class }}">
+       {{ page.content }}
+      </div>
+    {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
+    {% if page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim %}
+      <aside class="tablet:grid-col-3">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+    </div>
+  </div>
+</main>
+
+<footer class="{{ footer_classes }}" role="contentinfo">
+  <div class="grid-container usa-footer__return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  {% if footer_slim %}
+    {% include '@uswds/includes/slim-footer.html.twig' %}
+  {% elseif footer_medium %}
+    {% include '@uswds/includes/medium-footer.html.twig' %}
+  {% else %}
+    {% include '@uswds/includes/big-footer.html.twig' %}
+  {% endif %}
+</footer>

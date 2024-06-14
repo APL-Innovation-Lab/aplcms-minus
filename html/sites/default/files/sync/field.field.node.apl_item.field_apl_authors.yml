@@ -1,0 +1,21 @@
+uuid: 8455da69-a38e-49cc-846c-5b24542f1166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apl_authors
+    - node.type.apl_item
+  module:
+    - text
+id: node.apl_item.field_apl_authors
+field_name: field_apl_authors
+entity_type: node
+bundle: apl_item
+label: Authors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

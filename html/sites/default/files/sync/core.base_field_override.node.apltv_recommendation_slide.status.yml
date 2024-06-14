@@ -1,0 +1,22 @@
+uuid: 27cd58f2-f116-4976-8e10-1a8d9ee2c855
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.status
+field_name: status
+entity_type: node
+bundle: apltv_recommendation_slide
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

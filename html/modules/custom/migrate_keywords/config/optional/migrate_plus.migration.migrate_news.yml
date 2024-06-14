@@ -1,0 +1,79 @@
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_news
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: apl_dev
+label: News
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_news/news.json'
+  item_selector: news
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: body
+      selector: body
+    -
+      name: field_external_link
+      selector: field_external_link
+    -
+      name: start
+      selector: start
+    -
+      name: end
+      selector: end
+    -
+      name: field_image
+      selector: field_image
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  field_external_link: field_external_link
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_slr_time_start:
+    -
+      plugin: format_date
+      source: start
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  field_slr_time_end:
+    -
+      plugin: format_date
+      source: end
+      from_format: U
+      to_format: 'Y-m-d\TH:i:s'
+  field_image:
+    plugin: image_import
+    source: field_image
+    title: title
+    alt: title
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

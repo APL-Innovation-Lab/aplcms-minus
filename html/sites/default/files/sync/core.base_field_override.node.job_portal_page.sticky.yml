@@ -1,0 +1,22 @@
+uuid: 80dee9ae-0641-4674-8013-512e815d3e24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+id: node.job_portal_page.sticky
+field_name: sticky
+entity_type: node
+bundle: job_portal_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

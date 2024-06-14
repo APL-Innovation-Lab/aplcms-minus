@@ -1,0 +1,106 @@
+uuid: 2f2882a2-2da1-4e65-a528-8d7f78e3ae4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_month_year
+field_name: field_month_year
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'October 2019'
+    -
+      value: '2'
+      label: 'November 2019'
+    -
+      value: '3'
+      label: 'December 2019'
+    -
+      value: '4'
+      label: 'January 2020'
+    -
+      value: '5'
+      label: 'February 2020'
+    -
+      value: '6'
+      label: 'March 2020'
+    -
+      value: '7'
+      label: 'April 2020'
+    -
+      value: '8'
+      label: 'May 2020'
+    -
+      value: '9'
+      label: 'June 2020'
+    -
+      value: '10'
+      label: 'July 2020'
+    -
+      value: '11'
+      label: 'August 2020'
+    -
+      value: '12'
+      label: 'September 2020'
+    -
+      value: '13'
+      label: 'October 2020'
+    -
+      value: '14'
+      label: 'November 2020'
+    -
+      value: '15'
+      label: 'December 2020'
+    -
+      value: '16'
+      label: 'January 2021'
+    -
+      value: '17'
+      label: 'February 2021'
+    -
+      value: '18'
+      label: 'March 2021'
+    -
+      value: '19'
+      label: 'April 2021'
+    -
+      value: '20'
+      label: 'May 2021'
+    -
+      value: '21'
+      label: 'June 2021'
+    -
+      value: '22'
+      label: 'July 2021'
+    -
+      value: '23'
+      label: 'August 2021'
+    -
+      value: '24'
+      label: 'September 2021'
+    -
+      value: '25'
+      label: 'October 2021'
+    -
+      value: '26'
+      label: 'November 2021'
+    -
+      value: '27'
+      label: 'December 2021'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

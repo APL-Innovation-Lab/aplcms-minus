@@ -1,0 +1,29 @@
+uuid: 4881e777-98f4-495c-a652-39029ea74e2d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__alerts_block_7
+theme: claro2noGA
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:alerts-block_7'
+settings:
+  id: 'views_block:alerts-block_7'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms/*\r\n/meeting-rooms\r\n/ahc/meeting-room"

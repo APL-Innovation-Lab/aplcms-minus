@@ -1,0 +1,256 @@
+uuid: deaa7d97-21d5-48e2-b4b7-f48552ec794d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.group.title
+    - core.base_field_override.node.group.uid
+    - field.field.node.group.field_digital_signature
+    - field.field.node.group.field_email
+    - field.field.node.group.field_group_agreements
+    - field.field.node.group.field_group_notes
+    - field.field.node.group.field_group_purpose_of_meeting
+    - field.field.node.group.field_group_rep_email
+    - field.field.node.group.field_group_rep_full_name
+    - field.field.node.group.field_group_rep_phone
+    - field.field.node.group.field_group_website
+    - field.field.node.group.field_purpose_of_group
+    - field.field.node.group.field_reservations_count
+    - field.field.node.group.field_verified_group
+    - node.type.group
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      8df8a5ad-6d92-4a19-b081-2ec2c7b825a0:
+        text: eng
+        uuid: 8df8a5ad-6d92-4a19-b081-2ec2c7b825a0
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      77b51d6a-41b2-4e8f-b3f3-0783d219b893:
+        text: '1'
+        uuid: 77b51d6a-41b2-4e8f-b3f3-0783d219b893
+        plugin: rewrite
+        source: field_verified_group
+        weight: 0
+        label: Rewrite
+id: meeting_room_group
+label: 'Meeting Room Group'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: group
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_verified_group:
+    value: field_verified_group
+    label: field_verified_group
+    machine_name: field_verified_group
+    type: csv
+  field_purpose_of_group2:
+    value: field_purpose_of_group2
+    label: field_purpose_of_group2
+    machine_name: field_purpose_of_group2
+    type: csv
+  field_purpose_of_meeting:
+    value: field_purpose_of_meeting
+    label: field_purpose_of_meeting
+    machine_name: field_purpose_of_meeting
+    type: csv
+  field_agreements_group:
+    value: field_agreements_group
+    label: field_agreements_group
+    machine_name: field_agreements_group
+    type: csv
+  field_digital_signature_group:
+    value: field_digital_signature_group
+    label: field_digital_signature_group
+    machine_name: field_digital_signature_group
+    type: csv
+  field_full_name2:
+    value: field_full_name2
+    label: field_full_name2
+    machine_name: field_full_name2
+    type: csv
+  field_phone2:
+    value: field_phone2
+    label: field_phone2
+    machine_name: field_phone2
+    type: csv
+  field_email2:
+    value: field_email2
+    label: field_email2
+    machine_name: field_email2
+    type: csv
+  field_website:
+    value: field_website
+    label: field_website
+    machine_name: field_website
+    type: csv
+  field_notes2:
+    value: field_notes2
+    label: field_notes2
+    machine_name: field_notes2
+    type: csv
+  field_reservations_count:
+    value: field_reservations_count
+    label: field_reservations_count
+    machine_name: field_reservations_count
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_verified_group
+    map:
+      value: field_verified_group
+    settings:
+      language: null
+  -
+    target: field_purpose_of_group
+    map:
+      value: field_purpose_of_group2
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_group_purpose_of_meeting
+    map:
+      value: field_purpose_of_meeting
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_group_agreements
+    map:
+      value: field_agreements_group
+    settings:
+      language: null
+  -
+    target: field_digital_signature
+    map:
+      value: field_digital_signature_group
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_group_rep_full_name
+    map:
+      value: field_full_name2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_group_rep_phone
+    map:
+      value: field_phone2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_group_rep_email
+    map:
+      value: field_email2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_group_website
+    map:
+      value: field_website
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_group_notes
+    map:
+      value: field_notes2
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_reservations_count
+    map:
+      value: field_reservations_count
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field_email
+    map:
+      value: field_email2
+    settings:
+      language: null
+      defuse: false
+    unique: {  }

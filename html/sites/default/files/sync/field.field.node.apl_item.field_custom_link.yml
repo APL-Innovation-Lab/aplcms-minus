@@ -1,0 +1,19 @@
+uuid: 02481afb-b2f0-4347-8f5d-6fc4f20fc358
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_link
+    - node.type.apl_item
+id: node.apl_item.field_custom_link
+field_name: field_custom_link
+entity_type: node
+bundle: apl_item
+label: 'Custom Link'
+description: 'Use this field if you want to link to a search result in the catalog, for example, instead of a link to an individual item in the catalog.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 64558d17-bfb6-4ffb-913a-f3f30ead75c7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsors
+  module:
+    - path
+id: taxonomy_term.sponsors.path
+field_name: path
+entity_type: taxonomy_term
+bundle: sponsors
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

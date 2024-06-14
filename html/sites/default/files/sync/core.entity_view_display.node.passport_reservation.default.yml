@@ -1,0 +1,303 @@
+uuid: 698aa02e-58c5-48dd-9926-6b52d607c2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.passport_reservation.field_additional_info
+    - field.field.node.passport_reservation.field_jp_5_digit_zip
+    - field.field.node.passport_reservation.field_pp_date
+    - field.field.node.passport_reservation.field_pp_expected_attendance
+    - field.field.node.passport_reservation.field_pp_i_understand
+    - field.field.node.passport_reservation.field_pp_minor_applicants
+    - field.field.node.passport_reservation.field_pp_photo
+    - field.field.node.passport_reservation.field_pp_please_state
+    - field.field.node.passport_reservation.field_pp_time
+    - field.field.node.passport_reservation.field_ppp_agreement
+    - field.field.node.passport_reservation.field_ppp_email
+    - field.field.node.passport_reservation.field_ppp_phone
+    - field.field.node.passport_reservation.field_reservation_status
+    - field.field.node.passport_reservation.field_select_a_service
+    - node.type.passport_reservation
+    - views.view.passports
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Passport Reservation'
+          context_mapping: {  }
+        components:
+          e485dca9-99e2-4638-88ad-3bef2aa8ac9f:
+            uuid: e485dca9-99e2-4638-88ad-3bef2aa8ac9f
+            region: content
+            configuration:
+              id: 'views_block:passports-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c3af1564-431c-40a6-a661-69a28d056685:
+            uuid: c3af1564-431c-40a6-a661-69a28d056685
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_pp_minor_applicants'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          46d8e7a3-8a9f-4cd5-9853-10994a45e817:
+            uuid: 46d8e7a3-8a9f-4cd5-9853-10994a45e817
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_pp_please_state'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ad588a25-9502-403b-9d0d-0a62c838a904:
+            uuid: ad588a25-9502-403b-9d0d-0a62c838a904
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_pp_photo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          cb4af29b-9d67-4030-8b8d-0684f30fcc08:
+            uuid: cb4af29b-9d67-4030-8b8d-0684f30fcc08
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_pp_i_understand'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          470aed1c-e70e-4c26-b0e6-b811e474e373:
+            uuid: 470aed1c-e70e-4c26-b0e6-b811e474e373
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_select_a_service'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          dd61e044-b9c8-4e3d-8c33-0a8775e438d7:
+            uuid: dd61e044-b9c8-4e3d-8c33-0a8775e438d7
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_reservation_status'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          59285bcc-d263-436f-be3a-3f103ed826db:
+            uuid: 59285bcc-d263-436f-be3a-3f103ed826db
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_additional_info'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          4e62566a-d71f-4f48-b39b-36579ac2fa6d:
+            uuid: 4e62566a-d71f-4f48-b39b-36579ac2fa6d
+            region: content
+            configuration:
+              id: 'field_block:node:passport_reservation:field_jp_5_digit_zip'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: node.passport_reservation.default
+targetEntityType: node
+bundle: passport_reservation
+mode: default
+content:
+  field_additional_info:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_jp_5_digit_zip:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_pp_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_pp_expected_attendance:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_pp_i_understand:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_pp_minor_applicants:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_pp_photo:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_pp_please_state:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_ppp_agreement:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_ppp_email:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_ppp_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_reservation_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_select_a_service:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_pp_time: true
+  langcode: true
+  search_api_excerpt: true

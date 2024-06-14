@@ -1,0 +1,46 @@
+uuid: 1eeb0e65-9124-4f44-8891-bf9d1135ad11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slr.feeds_item
+    - field.field.node.slr.field_ac
+    - field.field.node.slr.field_how_many_people_
+    - field.field.node.slr.field_request_status
+    - field.field.node.slr.field_slr_agreement
+    - field.field.node.slr.field_slr_duration
+    - field.field.node.slr.field_slr_email
+    - field.field.node.slr.field_slr_full_name
+    - field.field.node.slr.field_slr_reservation_date
+    - field.field.node.slr.field_slr_room
+    - field.field.node.slr.field_slr_time_end
+    - field.field.node.slr.field_slr_time_start
+    - node.type.slr
+  module:
+    - user
+id: node.slr.teaser
+targetEntityType: node
+bundle: slr
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_ac: true
+  field_how_many_people_: true
+  field_request_status: true
+  field_slr_agreement: true
+  field_slr_duration: true
+  field_slr_email: true
+  field_slr_full_name: true
+  field_slr_reservation_date: true
+  field_slr_room: true
+  field_slr_time_end: true
+  field_slr_time_start: true
+  langcode: true
+  search_api_excerpt: true

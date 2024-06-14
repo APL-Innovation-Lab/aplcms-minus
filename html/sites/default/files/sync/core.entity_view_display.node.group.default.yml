@@ -1,0 +1,128 @@
+uuid: 9569582d-c75c-46d6-8d46-030d361331ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.group.feeds_item
+    - field.field.node.group.field_digital_signature
+    - field.field.node.group.field_email
+    - field.field.node.group.field_group_agreements
+    - field.field.node.group.field_group_notes
+    - field.field.node.group.field_group_purpose_of_meeting
+    - field.field.node.group.field_group_rep_email
+    - field.field.node.group.field_group_rep_full_name
+    - field.field.node.group.field_group_rep_phone
+    - field.field.node.group.field_group_website
+    - field.field.node.group.field_purpose_of_group
+    - field.field.node.group.field_reservations_count
+    - field.field.node.group.field_verified_group
+    - node.type.group
+  module:
+    - options
+    - text
+    - user
+id: node.group.default
+targetEntityType: node
+bundle: group
+mode: default
+content:
+  field_digital_signature:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_group_agreements:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_group_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_group_purpose_of_meeting:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_group_rep_email:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_group_rep_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_group_rep_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_group_website:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_purpose_of_group:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_reservations_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_verified_group:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

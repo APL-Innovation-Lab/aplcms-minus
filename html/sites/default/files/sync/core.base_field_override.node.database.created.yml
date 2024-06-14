@@ -1,0 +1,18 @@
+uuid: c2de6182-43fd-403f-b066-b265cd6b74c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.database
+id: node.database.created
+field_name: created
+entity_type: node
+bundle: database
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

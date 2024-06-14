@@ -1,0 +1,21 @@
+uuid: 88ec5576-d67d-48db-8c8b-17f1e224824b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kids_block_party_tags
+    - node.type.activity
+  module:
+    - options
+id: node.activity.field_kids_block_party_tags
+field_name: field_kids_block_party_tags
+entity_type: node
+bundle: activity
+label: 'Kids Block Party Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

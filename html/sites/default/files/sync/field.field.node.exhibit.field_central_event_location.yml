@@ -1,0 +1,25 @@
+uuid: 24e3dc07-9336-4d7f-b5a1-44a62285ad12
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_central_event_location
+    - node.type.exhibit
+id: node.exhibit.field_central_event_location
+field_name: field_central_event_location
+entity_type: node
+bundle: exhibit
+label: 'Central Event Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: central_library_locations
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

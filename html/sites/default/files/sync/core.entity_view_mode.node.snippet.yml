@@ -1,0 +1,10 @@
+uuid: 5ab9c3cb-c36d-4098-97b9-03785367b342
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.snippet
+label: snippet
+targetEntityType: node
+cache: true

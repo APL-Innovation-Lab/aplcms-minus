@@ -1,0 +1,18 @@
+uuid: 23843cf4-d09b-4b4c-be6b-4b9516c6bd74
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.volunteer_opportunity
+id: node.volunteer_opportunity.publish_on
+field_name: publish_on
+entity_type: node
+bundle: volunteer_opportunity
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

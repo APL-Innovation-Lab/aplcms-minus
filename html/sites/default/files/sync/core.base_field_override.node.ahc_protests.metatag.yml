@@ -1,0 +1,18 @@
+uuid: 7505506e-f4b3-48d5-aee5-f775e853c1b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.metatag
+field_name: metatag
+entity_type: node
+bundle: ahc_protests
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

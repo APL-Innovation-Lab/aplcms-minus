@@ -1,0 +1,19 @@
+uuid: 0c46bf0a-1582-43d6-b039-25534c9f36e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.apl_item
+id: node.apl_item.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: apl_item
+label: 'Publication Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

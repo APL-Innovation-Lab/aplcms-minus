@@ -1,0 +1,109 @@
+uuid: baaa27ee-b279-4aa9-ab6a-d1408fba24e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.job_portal_page.path
+    - core.base_field_override.node.job_portal_page.title
+    - core.base_field_override.node.job_portal_page.uid
+    - field.field.node.job_portal_page.body
+    - node.type.job_portal_page
+  module:
+    - feeds_ex
+    - node
+id: job_portal_pages_xml
+label: 'Job Portal Pages XML'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: xml
+  directory: 'private://feeds'
+parser: xml
+parser_configuration:
+  context:
+    value: //item
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+  use_tidy: false
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: job_portal_page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _nid:
+    value: .//nid
+    label: .//nid
+    machine_name: _nid
+    type: xml
+  _uid:
+    value: .//uid
+    label: .//uid
+    machine_name: _uid
+    type: xml
+  _body:
+    value: .//body
+    label: .//body
+    machine_name: _body
+    type: xml
+  _path:
+    value: .//path
+    label: .//path
+    machine_name: _path
+    type: xml
+  _title:
+    value: .//title
+    label: .//title
+    machine_name: _title
+    type: xml
+mappings:
+  -
+    target: nid
+    map:
+      value: _nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: _uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: body
+    map:
+      value: _body
+      summary: ''
+    settings:
+      language: ''
+      format: unfiltered_html
+  -
+    target: path
+    map:
+      alias: _path
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: _title
+    settings:
+      language: null
+    unique: {  }

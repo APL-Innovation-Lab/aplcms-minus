@@ -1,0 +1,19 @@
+uuid: 76eafc72-f0e1-4d41-9553-e7b6c28c24fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_subtitle
+    - node.type.screen
+id: node.screen.field_video_subtitle
+field_name: field_video_subtitle
+entity_type: node
+bundle: screen
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

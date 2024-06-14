@@ -1,0 +1,16 @@
+uuid: ca061f5c-b772-4461-bc97-c00d65cd8b5e
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: slr
+label: SLR
+weight: 0
+theme: uswds
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/slr/calendar\r\n/slr/confirm\r\n/meeting-rooms/calendar\r\n/webform/shared_learning_room_reservation/submissions/*\r\n/webform/meeting_room_reservation_request/submissions/*\r\n/slr/calendar/*\r\n/passports/calendar\r\n/passports/calendar/*\r\n/slr/list\r\n/meeting-rooms/list\r\n/webform/shared_learning_room_reservation/submissions/*/edit\r\n"

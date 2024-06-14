@@ -1,0 +1,18 @@
+uuid: c2104c77-271c-4a04-b854-cb8a8e341430
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.metatag
+field_name: metatag
+entity_type: node
+bundle: slr
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,21 @@
+uuid: bb4e466e-47a9-4a5e-a318-c852573c9b2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_did_you_benefit
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field_jp_did_you_benefit
+field_name: field_jp_did_you_benefit
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Did you benefit from using the job coaching service or job portal?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

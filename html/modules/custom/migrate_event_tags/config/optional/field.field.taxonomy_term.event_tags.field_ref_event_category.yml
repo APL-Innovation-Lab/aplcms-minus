@@ -1,0 +1,31 @@
+uuid: 64efeef5-9cff-4d2b-b282-46783ee392dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ref_event_category
+    - taxonomy.vocabulary.event_tags
+id: taxonomy_term.event_tags.field_ref_event_category
+field_name: field_ref_event_category
+entity_type: taxonomy_term
+bundle: event_tags
+label: 'Reflection Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_tags: event_tags
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 0
+field_type: entity_reference

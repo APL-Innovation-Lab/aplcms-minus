@@ -1,0 +1,20 @@
+uuid: 68145238-f845-4cb7-bc60-b1c2dec42a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.uid
+field_name: uid
+entity_type: node
+bundle: ahc_protests
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

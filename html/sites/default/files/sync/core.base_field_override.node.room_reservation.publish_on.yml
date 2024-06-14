@@ -1,0 +1,18 @@
+uuid: 0c644445-c457-4524-812c-6069f7d764c4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.publish_on
+field_name: publish_on
+entity_type: node
+bundle: room_reservation
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

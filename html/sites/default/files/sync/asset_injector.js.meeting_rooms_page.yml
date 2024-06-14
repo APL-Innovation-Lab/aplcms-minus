@@ -1,0 +1,29 @@
+uuid: f1f5cf92-b772-456a-9633-7087659c530f
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: meeting_rooms_page
+label: 'Meeting Rooms page'
+code: |-
+  console.log('Meeting Rooms page')
+  document.querySelector('#loc').addEventListener('change',
+      function(event) {
+        const queryString3 = window.location.search;
+        const urlParams3 = new URLSearchParams(queryString3);
+        var go_to2 = '/meeting-rooms/calendar?loc=' + event.target.value;
+        window.location.href = go_to2;
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms\r\n/meeting-rooms/staging"
+contexts: {  }
+conditions_require_all: false

@@ -1,0 +1,25 @@
+uuid: 38344690-0751-4f5a-8042-6d998dc4b81d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_room
+    - node.type.slr_alert
+id: node.slr_alert.field_slr_room
+field_name: field_slr_room
+entity_type: node
+bundle: slr_alert
+label: 'Disable Room(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: slrs
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

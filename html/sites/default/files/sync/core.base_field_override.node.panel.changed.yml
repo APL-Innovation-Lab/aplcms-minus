@@ -1,0 +1,18 @@
+uuid: 02b2792e-d33a-4299-a59f-ffd78cba82a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+id: node.panel.changed
+field_name: changed
+entity_type: node
+bundle: panel
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

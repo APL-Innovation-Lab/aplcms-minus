@@ -1,0 +1,23 @@
+uuid: e591b686-2827-416b-b97b-cc0d450183d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.special_dates
+  module:
+    - feeds
+id: node.special_dates.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: special_dates
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,29 @@
+uuid: 802d7245-d856-4dc6-a854-2be7b6ed5ce2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.navigation
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__navigation_block_31_2
+theme: claro2
+region: content
+weight: -36
+provider: null
+plugin: 'views_block:navigation-block_31'
+settings:
+  id: 'views_block:navigation-block_31'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events/exhibits\r\n/events/exhibits/*"

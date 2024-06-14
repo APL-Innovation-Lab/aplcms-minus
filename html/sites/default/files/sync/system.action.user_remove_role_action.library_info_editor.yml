@@ -1,0 +1,14 @@
+uuid: 355889a2-3cd6-401d-9801-aa473d9f1b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.library_info_editor
+  module:
+    - user
+id: user_remove_role_action.library_info_editor
+label: 'Remove the Library Info Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: library_info_editor

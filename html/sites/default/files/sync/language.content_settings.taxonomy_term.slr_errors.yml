@@ -1,0 +1,18 @@
+uuid: ab23cadc-7284-4db7-bfc2-cc2ee8dbd2d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.slr_errors
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.slr_errors
+target_entity_type_id: taxonomy_term
+target_bundle: slr_errors
+default_langcode: site_default
+language_alterable: false

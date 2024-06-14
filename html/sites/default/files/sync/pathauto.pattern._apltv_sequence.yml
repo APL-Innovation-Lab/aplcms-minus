@@ -1,0 +1,22 @@
+uuid: 1a235b76-576a-4306-96bf-e4715d397738
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: _apltv_sequence
+label: Sequence
+type: 'canonical_entities:node'
+pattern: '/sequence/[node:nid]'
+selection_criteria:
+  68e02603-533d-47dd-bf96-4430a9060ea3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 68e02603-533d-47dd-bf96-4430a9060ea3
+    context_mapping:
+      node: node
+    bundles:
+      playlist: playlist
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,18 @@
+uuid: 49dc2591-2beb-4d8c-bcb9-5211d7d29286
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+id: block_content.node_form.info
+field_name: info
+entity_type: block_content
+bundle: node_form
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 52216385-4421-4787-8f92-766b6a783e0f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.reference_stats
+id: node.reference_stats.publish_on
+field_name: publish_on
+entity_type: node
+bundle: reference_stats
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

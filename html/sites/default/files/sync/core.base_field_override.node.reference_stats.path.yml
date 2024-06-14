@@ -1,0 +1,20 @@
+uuid: b64e5232-84bf-4ee6-ad0f-abb4d7a129b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reference_stats
+  module:
+    - path
+id: node.reference_stats.path
+field_name: path
+entity_type: node
+bundle: reference_stats
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 54b10889-7899-415e-9701-999b51975979
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_priorities
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.library_priorities
+target_entity_type_id: taxonomy_term
+target_bundle: library_priorities
+default_langcode: site_default
+language_alterable: false

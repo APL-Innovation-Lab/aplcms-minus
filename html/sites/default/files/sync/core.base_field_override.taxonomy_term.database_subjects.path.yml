@@ -1,0 +1,20 @@
+uuid: 1d9f78e9-28fa-486e-8575-a926b4b50b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - path
+id: taxonomy_term.database_subjects.path
+field_name: path
+entity_type: taxonomy_term
+bundle: database_subjects
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

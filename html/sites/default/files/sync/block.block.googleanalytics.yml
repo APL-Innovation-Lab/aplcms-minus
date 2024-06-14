@@ -1,0 +1,30 @@
+uuid: d5386597-9ce3-4ac2-9f7a-32af2d359551
+langcode: eng
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:43739dbf-be50-4855-bb77-129c516516a0'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: googleanalytics
+theme: claro2
+region: content_footer
+weight: -23
+provider: null
+plugin: 'block_content:43739dbf-be50-4855-bb77-129c516516a0'
+settings:
+  id: 'block_content:43739dbf-be50-4855-bb77-129c516516a0'
+  label: 'Google Analytics'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/slr/*\r\n/virtual/dictionary-american-family-names\r\n/apltv/*\r\n/user/*\r\n/node/7718097\r\n/node/7718098\r\n/node/7718099\r\n/meeting-rooms/list\r\n/sequence/*\r\n/user\r\n/node/add/*\r\n/accs-contact/*"

@@ -1,0 +1,208 @@
+uuid: 62ca7c56-39f3-4a2a-b234-8c53710d6163
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.rooms.description
+    - core.base_field_override.taxonomy_term.rooms.name
+    - field.field.taxonomy_term.rooms.field_capacity2
+    - field.field.taxonomy_term.rooms.field_is_slr
+    - field.field.taxonomy_term.rooms.field_location
+    - field.field.taxonomy_term.rooms.field_map
+    - field.field.taxonomy_term.rooms.field_room_number
+    - field.field.taxonomy_term.rooms.field_short_name
+    - field.field.taxonomy_term.rooms.field_slr_floor
+    - field.field.taxonomy_term.rooms.field_slr_image
+    - taxonomy.vocabulary.rooms
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      f97f5e67-197d-4d17-8231-16bfecd01417:
+        uuid: f97f5e67-197d-4d17-8231-16bfecd01417
+        plugin: html_entity_decode
+        source: name
+        weight: 0
+        label: 'HTML entity decode'
+      3bd60de4-0b7f-4666-b9d1-4c929a22b4d0:
+        uuid: 3bd60de4-0b7f-4666-b9d1-4c929a22b4d0
+        plugin: html_entity_decode
+        source: short_name
+        weight: 0
+        label: 'HTML entity decode'
+label: Rooms
+id: rooms
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: rooms
+  langcode: en
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: json
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: json
+  short_name:
+    value: short_name
+    label: short_name
+    machine_name: short_name
+    type: json
+  room_number:
+    value: room_number
+    label: room_number
+    machine_name: room_number
+    type: json
+  is_slr:
+    value: is_slr
+    label: is_slr
+    machine_name: is_slr
+    type: json
+  location:
+    value: location
+    label: location
+    machine_name: location
+    type: json
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: json
+  image_file:
+    value: image_file
+    label: image_file
+    machine_name: image_file
+    type: json
+  map_file:
+    value: map_file
+    label: map_file
+    machine_name: map_file
+    type: json
+  capacities:
+    value: capacities
+    label: capacities
+    machine_name: capacities
+    type: json
+  floor:
+    value: floor
+    label: floor
+    machine_name: floor
+    type: json
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_short_name
+    map:
+      value: short_name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_room_number
+    map:
+      value: room_number
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_is_slr
+    map:
+      value: is_slr
+    settings:
+      language: null
+  -
+    target: field_location
+    map:
+      target_id: location
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_slr_image
+    map:
+      target_id: image_file
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: field_map
+    map:
+      target_id: map_file
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: field_capacity2
+    map:
+      value: capacities
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_slr_floor
+    map:
+      value: floor
+    settings:
+      language: null
+    unique: {  }

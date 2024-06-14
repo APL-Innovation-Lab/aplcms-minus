@@ -1,0 +1,29 @@
+uuid: d9d118f6-6173-4762-b747-dd1454b7a69d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: views_block__alerts_block_7_2
+theme: uswds
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:alerts-block_7'
+settings:
+  id: 'views_block:alerts-block_7'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms/*\r\n/meeting-rooms"

@@ -1,0 +1,28 @@
+uuid: c12b41d0-06fd-4939-8586-50e8388a1e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.recommendation_category
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_recommendationcategory
+theme: uswds
+region: content
+weight: -11
+provider: null
+plugin: 'facet_block:recommendation_category'
+settings:
+  id: 'facet_block:recommendation_category'
+  label: 'Recommendation Category'
+  label_display: visible
+  provider: facets
+  block_id: recommendationcategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

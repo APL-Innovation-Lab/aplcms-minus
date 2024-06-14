@@ -1,0 +1,436 @@
+uuid: aba6085e-9907-4af2-85af-62c84d831000
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: image_reproduction_request_form
+title: 'Image Reproduction Request Form'
+description: "<div class=\"WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover\" contenteditable=\"false\" id=\"WACViewPanel_ClipboardElement\" spellcheck=\"false\" style=\"overflow: hidden; visibility: visible; direction: ltr;\" tabindex=\"0\">\r\n<div class=\"SCXW240800925 BCX2\">\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{25}\" paraid=\"1767146560\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><strong class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"none\" lang=\"EN\" style=\"color:#7030a0; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:12pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:21.85px; text-transform:none\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">STOP.</span></strong><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"none\" lang=\"EN\" style=\"color:#7030a0; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:12pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\"> Before you proceed, please check if any of the following forms and links apply to you</span><span class=\"BCX2 NormalTextRun SCXW240800925\">:</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}\" style=\"color:#7030a0; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:12pt; line-height:21.85px\">&nbsp;</span></p>\r\n</div>\r\n\r\n<div class=\"ListContainerWrapper SCXW240800925 BCX2\">\r\n<ul class=\"BulletListStyle1 SCXW240800925 BCX2\" role=\"list\">\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"1\" data-font=\"Symbol\" data-leveltext=\"\" data-listid=\"7\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{35}\" paraid=\"460414902\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I want an image or a print that shows historic material from your collections. But, I don&rsquo;t know the exact item(s) I&rsquo;m interested in:</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240,&quot;335559740&quot;:276}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n\t</li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{42}\" paraid=\"1862383325\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">Reference Request Form&nbsp; </span></span><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"none\" lang=\"EN\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">[link]</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:276}\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n</div>\r\n\r\n<div class=\"SCXW240800925 BCX2\">\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{54}\" paraid=\"1678016765\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:240,&quot;335559739&quot;:240,&quot;335559740&quot;:240}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:19px\">&nbsp;</span></p>\r\n</div>\r\n\r\n<div class=\"ListContainerWrapper SCXW240800925 BCX2\">\r\n<ul class=\"BulletListStyle1 SCXW240800925 BCX2\" role=\"list\">\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"1\" data-font=\"Symbol\" data-leveltext=\"\" data-listid=\"6\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{58}\" paraid=\"1697359670\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I want an audiovisual reproduction, not a still image:</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559737&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240,&quot;335559740&quot;:240}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:19px\">&nbsp;</span></p>\r\n\t</li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{65}\" paraid=\"2139098701\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">AV Reproduction Request Form </span></span><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"none\" lang=\"EN\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">[link]</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:19px\">&nbsp;</span></p>\r\n</div>\r\n\r\n<div class=\"SCXW240800925 BCX2\">\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{77}\" paraid=\"1114398032\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:120,&quot;335559740&quot;:276}\" style=\"color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n</div>\r\n\r\n<div class=\"ListContainerWrapper SCXW240800925 BCX2\">\r\n<ul class=\"BulletListStyle1 SCXW240800925 BCX2\" role=\"list\">\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"1\" data-font=\"Calibri\" data-leveltext=\"●\" data-listid=\"3\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{81}\" paraid=\"692219975\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I am wondering if there are any free and instant ways to download images from your collection.</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:120,&quot;335559740&quot;:276}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n\t</li>\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"2\" data-font=\"Calibri\" data-leveltext=\"●\" data-listid=\"3\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{88}\" paraid=\"1731146286\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I want a free and simple scan of an item. A watermarked scan will suffice, and I am able to visit the Austin History Center to scan it myself using a public copier.&nbsp;</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559739&quot;:120,&quot;335559740&quot;:276,&quot;335559991&quot;:360}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n\t</li>\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"3\" data-font=\"Calibri\" data-leveltext=\"●\" data-listid=\"3\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{95}\" paraid=\"91462668\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I have questions about the image reproduction request form and process.</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559739&quot;:120,&quot;335559740&quot;:276,&quot;335559991&quot;:360}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n\t</li>\r\n\t<li aria-setsize=\"-1\" class=\"OutlineElement Ltr SCXW240800925 BCX2\" data-aria-level=\"1\" data-aria-posinset=\"4\" data-font=\"Calibri\" data-leveltext=\"●\" data-listid=\"3\" role=\"listitem\" style=\"display: block; margin-left: 24px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;\">\r\n\t<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{102}\" paraid=\"761325760\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:21.85px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">I want information or guidance on pricing, image resolution, licensing policies, fee exemptions, how you can collect payment, or other matters related to image reproduction orders.</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559739&quot;:120,&quot;335559740&quot;:276,&quot;335559991&quot;:360}\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px\">&nbsp;</span></p>\r\n\t</li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"OutlineElement Ltr SCXW240800925 BCX2\" style=\"direction: ltr;\">\r\n<p class=\"Paragraph SCXW240800925 BCX2\" paraeid=\"{946b43e8-7b8a-4881-9a6a-21472f920407}{109}\" paraid=\"1160712512\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"auto\" lang=\"EN\" style=\"font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">FAQs about Photo Orders &amp; Copyright Consultation </span></span><span class=\"BCX2 SCXW240800925 TextRun\" data-contrast=\"none\" lang=\"EN\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px\" xml:lang=\"EN\"><span class=\"BCX2 NormalTextRun SCXW240800925\">[link]</span></span><span class=\"BCX2 EOP SCXW240800925\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}\" style=\"color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:19px\">&nbsp;</span></p>\r\n</div>\r\n</div>\r\n&nbsp;"
+category: ahc
+elements: |-
+  markup:
+    '#type': webform_markup
+    '#markup': |-
+      <div class="WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover" contenteditable="false" id="WACViewPanel_ClipboardElement" spellcheck="false" style="overflow: hidden; visibility: visible; direction: ltr;" tabindex="0">
+      <div class="SCXW98033628 BCX2">
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{125}" paraid="1826394610" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:20pt; font-style:normal; font-weight:normal; line-height:27px" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">Image Reproduction Request Form</span></span><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}" style="color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:20pt; line-height:27px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{131}" paraid="1497271434" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-weight:normal; line-height:19px" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">The purpose of th</span><span class="BCX2 NormalTextRun SCXW98033628">is form</span><span class="BCX2 NormalTextRun SCXW98033628"> is to request any of the following:</span></span><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}" style="color:#9900ff; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:19px">&nbsp;</span></p>
+      </div>
+
+      <div class="ListContainerWrapper SCXW98033628 BCX2">
+      <ul class="BulletListStyle1 SCXW98033628 BCX2" role="list">
+      	<li aria-setsize="-1" class="OutlineElement Ltr SCXW98033628 BCX2" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="●" data-listid="4" role="listitem" style="display: block; margin-left: 6px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;">
+      	<p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{141}" paraid="1323889377" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">A </span><span class="BCX2 NormalTextRun SCXW98033628">still image </span><span class="BCX2 NormalTextRun SCXW98033628">reproduction</span></strong><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628"> of an item in our collections</span><span class="BCX2 NormalTextRun SCXW98033628"> (</span><span class="BCX2 NormalTextRun SCXW98033628">a</span><span class="BCX2 NormalTextRun SCXW98033628"> print or image file)</span><span class="BCX2 NormalTextRun SCXW98033628">.</span></span><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:360,&quot;335559738&quot;:240,&quot;335559739&quot;:160,&quot;335559740&quot;:276,&quot;335559991&quot;:270}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px">&nbsp;</span></p>
+      	</li>
+      	<li aria-setsize="-1" class="OutlineElement Ltr SCXW98033628 BCX2" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="●" data-listid="4" role="listitem" style="display: block; margin-left: 6px; font-size: 14pt; font-family: Calibri, &quot;Calibri_MSFontService&quot;, sans-serif; vertical-align: baseline; direction: ltr;">
+      	<p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{162}" paraid="1751880847" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">Permission to license</span></strong><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">, display (online or in print), or publish an image</span></span><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:360,&quot;335559739&quot;:120,&quot;335559740&quot;:276,&quot;335559991&quot;:270}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px">&nbsp;</span></p>
+      	</li>
+      </ul>
+      </div>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{171}" paraid="1124712368" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">Please complete the fields to the best of your knowledge. After you submit the form, we will respond to your request within </span><span class="BCX2 CommentHighlightPipeRest CommentHighlightRest CommentStart NormalTextRun SCXW98033628">3 business days. </span><span class="BCX2 CommentHighlightPipeRest NormalTextRun SCXW98033628">&nbsp;</span></span><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{183}" paraid="471532902" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightPipeRest CommentHighlightRest CommentStart NormalTextRun SCXW98033628">In our response we will provide you with a price estimate for any applicable fees. As you will see from our </span></span><a class="Hyperlink SCXW98033628 BCX2" href="https://library.austintexas.gov/ahc/reproduction-price-list" rel="noreferrer noopener" style="text-decoration: none; color: inherit;" target="_blank"><span class="BCX2 SCXW98033628 TextRun Underlined" data-contrast="none" lang="EN" style="color:#0563c1; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628" data-ccp-charstyle="Hyperlink">reproduction price list</span></span></a><a class="Hyperlink SCXW98033628 BCX2" href="https://library.austintexas.gov/ahc/reproduction-price-list" rel="noreferrer noopener" style="text-decoration: none; color: inherit;" target="_blank"><strong class="BCX2 SCXW98033628 TextRun Underlined" data-contrast="none" lang="EN" style="color:#0563c1; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:21.85px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628" data-ccp-charstyle="Hyperlink">,</span></strong></a><strong class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628"> </span></strong><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628">&ldquo;new digitization&rdquo; requests for image files cost $15 instead of $5. This applies to items that have not been photographed or scanned yet. We will check our files to see if the item needs to be digitized, to provide an estimate. Please see our </span></span><span class="BCX2 SCXW98033628 TextRun Underlined" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628">FAQs page </span></span><span class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-transform:none" xml:lang="EN"><span class="BCX2 CommentHighlightRest NormalTextRun SCXW98033628">for more information on pricing and exemptions.</span></span><span class="BCX2 CommentHighlightPipeRest EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{205}" paraid="281919917" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:17.25px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW98033628 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW98033628 BCX2" paraeid="{946b43e8-7b8a-4881-9a6a-21472f920407}{209}" paraid="813438785" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW98033628 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:18pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:33.35px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW98033628">Image Reproduction Request Form</span></strong><span class="BCX2 EOP SCXW98033628" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:18pt; line-height:33.35px">&nbsp;</span></p>
+      </div>
+      </div>
+      &nbsp;
+  name:
+    '#type': webform_name
+    '#title': Name
+    '#title__access': false
+    '#first__placeholder': Name
+    '#first__required': true
+    '#middle__access': false
+    '#last__access': false
+    '#suffix__access': false
+    '#degree__access': false
+  email:
+    '#type': email
+    '#title': Email
+    '#required': true
+  phone:
+    '#type': tel
+    '#title': Phone
+  company_organization:
+    '#type': textfield
+    '#title': Company/Organization
+  billing_address:
+    '#type': webform_address
+    '#title': 'Billing address'
+    '#country__access': false
+  mailing_address_if_different_from_billing_:
+    '#type': webform_address
+    '#title': 'Mailing address (if different from billing)'
+    '#country__access': false
+  does_your_organization_have_a_501_c_3_nonprofit_status_:
+    '#type': radios
+    '#title': 'Does your organization have a 501(c)(3) nonprofit status?'
+    '#options': yes_no
+  is_your_organization_a_governmental_agency_this_includes_local_s:
+    '#type': radios
+    '#title': 'Is your organization a governmental agency? This includes local, state, and federal governments.'
+    '#options': yes_no
+  are_you_a_city_of_austin_general_fund_employee_:
+    '#type': radios
+    '#title': 'Are you a City of Austin General Fund employee?'
+    '#options': yes_no
+  per_our_policy_local_news_media_agencies_are_austin_television_n:
+    '#type': radios
+    '#title': 'Per our policy, local news media agencies are Austin television news stations and publications that are published and distributed solely in the Travis County area. Is your organization a local news media agency?'
+    '#options': yes_no
+  are_you_using_images_for_personal_use_or_for_display_in_a_non_pu:
+    '#type': radios
+    '#title': 'Are you using images for personal use or for display in a non-public area?'
+    '#options': yes_no
+  are_you_a_texas_resident_or_is_your_organization_based_in_texas_:
+    '#type': radios
+    '#title': 'Are you a Texas resident, or is your organization based in Texas?'
+    '#options': yes_no
+  select_one_of_the_following_:
+    '#type': radios
+    '#title': 'Select one of the following:'
+    '#options':
+      personal: 'These reproductions are for personal use only. -- I agree to be legally responsible for any unauthorized copy, publication, or public display of the reproduction. I certify that the information on this form is correct. I have read and comply with the conditions established by the AHC in the Reproduction Policies and Procedures.'
+      public: 'These reproductions are for publication and/or display. -- I agree to be legally responsible for any unauthorized copy, publication, or public display of the reproduction. I certify that the information on this form is correct. I have read and comply with the conditions established by the AHC in the Reproduction Policies and Procedures.'
+  state_how_the_ahc_reproductions_will_be_used_:
+    '#type': textarea
+    '#title': 'State how the AHC reproductions will be used:'
+    '#required': true
+  title_of_publication:
+    '#type': textfield
+    '#title': 'Title of publication'
+  publication_dates:
+    '#type': textfield
+    '#title': 'Publication dates'
+  print_run_size:
+    '#type': textfield
+    '#title': 'Print run size'
+  markup_01:
+    '#type': webform_markup
+    '#markup': |-
+      <div class="WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover" contenteditable="false" id="WACViewPanel_ClipboardElement" spellcheck="false" style="overflow: hidden; visibility: visible; direction: ltr;" tabindex="0">
+      <div class="OutlineElement Ltr SCXW38096164 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW38096164 BCX2" paraeid="{01464cb7-e28f-4ec8-9dbd-5590855504a0}{165}" paraid="1716104127" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 48px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW38096164 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW38096164">Unless exempt from licensing, </span></strong><a class="Hyperlink SCXW38096164 BCX2" href="https://library.austintexas.gov/ahc/licensing-fees" rel="noreferrer noopener" style="text-decoration: none; color: inherit;" target="_blank"><strong class="BCX2 SCXW38096164 TextRun Underlined" data-contrast="none" lang="EN" style="color:#0563c1; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW38096164" data-ccp-charstyle="Hyperlink">fees</span></strong></a><strong class="BCX2 SCXW38096164 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW38096164"> will apply based on use case. </span><span class="BCX2 NormalTextRun SCXW38096164">You are exempt if you answered &ldquo;yes&rdquo; to questions </span><span class="BCX2 NormalTextRun SCXW38096164">#1-5 above. </span><span class="BCX2 NormalTextRun SCXW38096164">Note that prices </span><span class="BCX2 NormalTextRun SCXW38096164">indicated below </span><span class="BCX2 NormalTextRun SCXW38096164">will apply per image or print.&nbsp;</span></strong><span class="BCX2 EOP SCXW38096164" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:17.25px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW38096164 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW38096164 BCX2" paraeid="{01464cb7-e28f-4ec8-9dbd-5590855504a0}{186}" paraid="1248739209" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 48px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW38096164 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW38096164">Please check any applicable categories</span><span class="BCX2 NormalTextRun SCXW38096164"> for your use case. If you&rsquo;re exempt, prices will not apply, and usage information is just for our records</span><span class="BCX2 NormalTextRun SCXW38096164">:</span></strong><span class="BCX2 EOP SCXW38096164" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:17.25px">&nbsp;</span></p>
+      </div>
+      </div>
+      &nbsp;
+  books_opt:
+    '#type': checkbox
+    '#title': Books
+  books:
+    '#type': radios
+    '#title': Books
+    '#options':
+      15: '1-5,000 copies ($15)'
+      25: '5,001-10,000 copies ($25)'
+      35: '10,001-25,000 copies ($35)'
+      60: 'Over 25,000 copies ($60)'
+  serials_opt:
+    '#type': checkbox
+    '#title': Serials
+  serials:
+    '#type': radios
+    '#title': Serials
+    '#options':
+      15: 'Under 50,000 circulation ($15)'
+      25: '50,001-100,000 circulation ($25)'
+      35: 'Over 100,000 circulation ($35)'
+  book_jacket_75_:
+    '#type': checkbox
+    '#title': 'Book Jacket ($75)'
+  commercial_motion_picture_or_tv_use_for_photographs_still_images:
+    '#type': checkbox
+    '#title': 'Commercial Motion Picture or TV Use for Photographs (Still Images) ($150)'
+    '#description': '<span class="BCX2 SCXW48988216 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW48988216">Includes Theatrical Release, Television Broadcast, Streaming Platforms, Home Video (any media), and Clips or Trailer from Full-Length Production for a single production for the life of the work.</span></span>'
+  website_social_media_or_presentation_use_25_:
+    '#type': checkbox
+    '#title': 'Website, Social Media, or Presentation Use ($25)'
+  local_business_display_25_:
+    '#type': checkbox
+    '#title': 'Local Business Display ($25)'
+  advertising_use_175_:
+    '#type': checkbox
+    '#title': 'Advertising Use ($175)'
+  print_or_digital_collateral_for_promotional_purposes_only_not_fo:
+    '#type': checkbox
+    '#title': 'Print or Digital Collateral - For Promotional Purposes only, not for commercial resale'
+  print_or_digital_collateral:
+    '#type': radios
+    '#title': 'Print or Digital Collateral'
+    '#options':
+      25: '1-5,000 copies ($25)'
+      35: '5,001-10,000 copies ($35)'
+      50: '10,001-25,000 copies ($50)'
+      60: 'Over 25,000 copies ($60)'
+  markup_02:
+    '#type': webform_markup
+    '#markup': |-
+      <div class="OutlineElement Ltr SCXW218367529 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW218367529 BCX2" paraeid="{9ec63613-f527-4b5f-8123-681332c7b4a1}{117}" paraid="818562193" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW218367529 TextRun Underlined" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:21.85px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529">Requested Items</span></span><span class="BCX2 EOP SCXW218367529" data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:14pt; line-height:21.85px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW218367529 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW218367529 BCX2" paraeid="{9ec63613-f527-4b5f-8123-681332c7b4a1}{123}" paraid="504231986" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW218367529 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529">Some orders will not incur any fees, dependent on exemptions (see </span></span><span class="BCX2 SCXW218367529 TextRun Underlined" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-decoration:underline; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529">FAQs</span></span><span class="BCX2 SCXW218367529 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529"> for more information). Until we can confirm this, </span></span><strong class="BCX2 SCXW218367529 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529">please select your preferred method of payment</span></strong><span class="BCX2 SCXW218367529 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW218367529">:</span></span></p>
+      </div>
+  method_of_payment:
+    '#type': select
+    '#title': 'Method of Payment'
+    '#options':
+      cc: 'Credit Card'
+      cash: Cash
+      check: 'Check payable to Austin Public Library'
+      tba: 'Will determine later'
+  markup_03:
+    '#type': webform_markup
+    '#markup': |-
+      <div class="OutlineElement Ltr SCXW178948893 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW178948893 BCX2" paraeid="{9ec63613-f527-4b5f-8123-681332c7b4a1}{143}" paraid="1045140780" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW178948893 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW178948893">If requesting image files, </span><span class="BCX2 NormalTextRun SCXW178948893">all images will be sent by email</span></strong><span class="BCX2 EOP SCXW178948893" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:17.25px">&nbsp;</span></p>
+      </div>
+
+      <div class="OutlineElement Ltr SCXW178948893 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW178948893 BCX2" paraeid="{9ec63613-f527-4b5f-8123-681332c7b4a1}{151}" paraid="2067697620" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><strong class="BCX2 SCXW178948893 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:bold; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW178948893">If requesting prints, please select how you will like to receive them:</span></strong><span class="BCX2 SCXW178948893 TextRun" data-contrast="none" lang="EN" style="color:#000000; font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; font-style:normal; font-variant:normal; font-weight:normal; line-height:17.25px; text-transform:none" xml:lang="EN"><span class="BCX2 NormalTextRun SCXW178948893"> </span></span></p>
+      </div>
+  receiving_items:
+    '#type': select
+    '#title': 'Receiving Items'
+    '#options':
+      ahc: 'Pick up at Austin History Center'
+      shipment: 'Shipment ($5)'
+      tba: 'Will determine later'
+  item_1:
+    '#type': fieldset
+    '#title': 'Item: 1'
+    austin_files_collection:
+      '#type': checkbox
+      '#title': 'Austin Files Collection'
+    austin_files_collection_:
+      '#type': select
+      '#title': 'Austin Files Collection'
+      '#options':
+        1: Drop
+        2: Down
+        3: Values
+        4: TBA
+    archival_collections:
+      '#type': checkbox
+      '#title': 'Archival Collections'
+  markup_04:
+    '#type': webform_markup
+    '#markup': |-
+      <div class="WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover" contenteditable="false" id="WACViewPanel_ClipboardElement" spellcheck="false" style="overflow: hidden; visibility: visible; direction: ltr;" tabindex="0">
+      <div class="OutlineElement Ltr SCXW239940389 BCX2" style="direction: ltr;">
+      <p class="Paragraph SCXW239940389 BCX2" paraeid="{ee92785e-e5fd-4a86-80d6-c3c468717d28}{98}" paraid="2129571038" style="font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;"><span class="BCX2 SCXW239940389 TextRun" data-contrast="auto" lang="EN-US" style="font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:16.1875px" xml:lang="EN-US"><span class="BCX2 CommentHighlightPipeRest CommentHighlightRest CommentStart NormalTextRun SCXW239940389">Images are not to be altered, published, or publicly displayed without permission of the AHC Photo Curator or the AHC Manager. I have read and agree to comply with the Reproduction Policies and Procedures.</span></span><span class="BCX2 CommentHighlightPipeRest EOP SCXW239940389" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}" style="font-family:Calibri,&quot;Calibri_EmbeddedFont&quot;,sans-serif; font-size:11pt; line-height:16.1875px">&nbsp;</span></p>
+      </div>
+      </div>
+      &nbsp;
+  selections:
+    '#type': textarea
+    '#title': Selections
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

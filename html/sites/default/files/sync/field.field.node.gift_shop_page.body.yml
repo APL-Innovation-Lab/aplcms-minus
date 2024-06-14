@@ -1,0 +1,23 @@
+uuid: 45ee169b-6209-4572-b8de-9b76236c579f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gift_shop_page
+  module:
+    - text
+id: node.gift_shop_page.body
+field_name: body
+entity_type: node
+bundle: gift_shop_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

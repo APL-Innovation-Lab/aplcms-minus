@@ -1,0 +1,38 @@
+uuid: b43bf28d-f6cb-4b17-b405-afa8412d7f5e
+langcode: en
+status: true
+dependencies: {  }
+id: redirect_to_import_page
+label: 'redirect to import page'
+events:
+  -
+    event_name: 'rules_entity_insert:feeds_feed--apl_item'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: b9719d2c-3f8f-4815-a8a0-ca789fe5b6d9
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 352a3d82-5313-4112-bbc7-230c5639228c
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 98b7de6f-ab8b-4fbf-a9fc-45c66e16e381
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 7fdc8443-6c74-4184-8e30-94413e5a10e7
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /import-items
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

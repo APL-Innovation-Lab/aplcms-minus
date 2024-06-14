@@ -1,0 +1,292 @@
+uuid: 5c652161-da0d-47fa-a0ee-eca145a178dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.highighted_images.created
+    - core.base_field_override.node.highighted_images.title
+    - core.base_field_override.node.highighted_images.uid
+    - field.field.node.highighted_images.body
+    - field.field.node.highighted_images.field_display_locations
+    - field.field.node.highighted_images.field_display_timespan_04_07p
+    - field.field.node.highighted_images.field_exhibit_summary
+    - field.field.node.highighted_images.field_highlighted_image
+    - field.field.node.highighted_images.field_image_audience
+    - field.field.node.highighted_images.field_image_size
+    - field.field.node.highighted_images.field_link_path
+    - node.type.highighted_images
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      750b470c-c33c-42ec-b6aa-320158aefcf2:
+        separator: ','
+        limit: null
+        uuid: 750b470c-c33c-42ec-b6aa-320158aefcf2
+        plugin: explode
+        source: field_display_locations
+        weight: 0
+        label: Explode
+      54c55bee-8f9b-49f5-bb32-ce661d909263:
+        separator: ','
+        limit: null
+        uuid: 54c55bee-8f9b-49f5-bb32-ce661d909263
+        plugin: explode
+        source: field_image_audience
+        weight: 0
+        label: Explode
+      02db6f34-ad64-40ee-9fb0-0c4bcc37bcbc:
+        character: ''
+        side: trim
+        uuid: 02db6f34-ad64-40ee-9fb0-0c4bcc37bcbc
+        plugin: trim
+        source: field_display_locations
+        weight: 1
+        label: 'Characters to trim'
+      4e6595c0-1ae9-4d5a-930b-18cee186d4e3:
+        uuid: 4e6595c0-1ae9-4d5a-930b-18cee186d4e3
+        plugin: cast_to_int
+        source: field_display_timespan1
+        weight: 0
+        label: 'Cast to integer'
+      7158d814-cf0c-4568-a4ef-eeb252e77953:
+        uuid: 7158d814-cf0c-4568-a4ef-eeb252e77953
+        plugin: cast_to_int
+        source: field_display_timespan2
+        weight: 0
+        label: 'Cast to integer'
+      4e584fb5-8c73-424e-a7d0-b83f79083cf9:
+        text: eng
+        uuid: 4e584fb5-8c73-424e-a7d0-b83f79083cf9
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      3fbf3034-4da0-4289-b2b9-56b4dc1f41bf:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 3fbf3034-4da0-4289-b2b9-56b4dc1f41bf
+        plugin: find_replace_regex
+        source: field_highlighted_image
+        weight: 0
+        label: 'Find replace REGEX'
+      49e3034a-a1c7-4381-9cf7-d5089f0c89c5:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 49e3034a-a1c7-4381-9cf7-d5089f0c89c5
+        plugin: find_replace_regex
+        source: field_highlighted_image
+        weight: 1
+        label: 'Find replace REGEX'
+id: highlighted_images
+label: 'Highlighted Images'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://high-feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: highighted_images
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  field_display_locations:
+    value: field_display_locations
+    label: field_display_locations
+    machine_name: field_display_locations
+    type: csv
+  field_display_timespan_start_value:
+    value: field_display_timespan|start_value
+    label: field_display_timespan|start_value
+    machine_name: field_display_timespan_start_value
+    type: csv
+  field_display_timespan_end_value:
+    value: field_display_timespan|end_value
+    label: field_display_timespan|end_value
+    machine_name: field_display_timespan_end_value
+    type: csv
+  field_image_audience:
+    value: field_image_audience
+    label: field_image_audience
+    machine_name: field_image_audience
+    type: csv
+  field_image_size:
+    value: field_image_size
+    label: field_image_size
+    machine_name: field_image_size
+    type: csv
+  field_link_path:
+    value: field_link_path
+    label: field_link_path
+    machine_name: field_link_path
+    type: csv
+  field_exhibit_summary:
+    value: field_exhibit_summary
+    label: field_exhibit_summary
+    machine_name: field_exhibit_summary
+    type: csv
+  field_display_timespan1:
+    value: field_display_timespan1
+    label: field_display_timespan1
+    machine_name: field_display_timespan1
+    type: csv
+  field_display_timespan2:
+    value: field_display_timespan2
+    label: field_display_timespan2
+    machine_name: field_display_timespan2
+    type: csv
+  field_highlighted_image:
+    value: field_highlighted_image
+    label: field_highlighted_image
+    machine_name: field_highlighted_image
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: eng
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_display_locations
+    map:
+      target_id: field_display_locations
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_display_timespan_04_07p
+    map:
+      value: field_display_timespan1
+      end_value: field_display_timespan2
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_image_audience
+    map:
+      value: field_image_audience
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_image_size
+    map:
+      value: field_image_size
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_link_path
+    map:
+      value: field_link_path
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_exhibit_summary
+    map:
+      value: field_exhibit_summary
+    settings:
+      language: null
+  -
+    target: field_highlighted_image
+    map:
+      target_id: field_highlighted_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '2'
+      autocreate: 0
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: eng

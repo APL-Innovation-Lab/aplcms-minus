@@ -1,0 +1,22 @@
+uuid: 3de21cd4-14c2-4f8f-a4f5-ec630c533492
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: apltv_events
+label: 'APLTV events'
+type: 'canonical_entities:node'
+pattern: '/apltv/events/[node:nid]'
+selection_criteria:
+  bfd86c4e-32a5-4e33-8ebf-e86a887627c7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bfd86c4e-32a5-4e33-8ebf-e86a887627c7
+    context_mapping:
+      node: node
+    bundles:
+      url_for_display: url_for_display
+selection_logic: and
+weight: -5
+relationships: {  }

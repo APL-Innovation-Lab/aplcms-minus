@@ -1,0 +1,42 @@
+.field--name-name {
+	font-size: 28px;
+	font-weight: bold;
+}
+.views-row .node--type-event .layout.layout--onecol {
+	width: 580px;
+}
+.d-col-9 {
+	background: none !important;
+	box-shadow: none !important;
+	margin-right: 0 !important;
+	margin-top: 0;
+	padding-bottom: 30px;
+}
+
+.apl-event-row {
+	background: white;
+	box-shadow: 3px 3px 8px silver;
+	margin-bottom: 20px;
+	margin-right: 0 !important;
+	margin-top: 0;
+	padding-bottom: 1px;
+}
+
+.block.block-layout-builder.block-field-blocktaxonomy-termevent-tagsname,
+.block.block-layout-builder.block-field-blocktaxonomy-termevent-tagsdescription {
+	background: white;
+	padding: 1px 15px;
+}
+
+.d-col-9.t-col-9.m-col-10.layout__region.layout__region--second {
+	background: white !important;
+}
+
+.block.block-views.block-views-blockevents-by-category-block-7 h2 {
+	margin: 20px 0 15px 15px;
+}
+
+.apl-events .apl-event-row {
+	box-shadow: none;
+
+}

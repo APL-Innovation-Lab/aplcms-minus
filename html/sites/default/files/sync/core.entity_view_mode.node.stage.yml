@@ -1,0 +1,10 @@
+uuid: f876e47f-692b-494b-8f47-6c965ec2abe8
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: node.stage
+label: stage
+targetEntityType: node
+cache: true

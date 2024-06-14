@@ -1,0 +1,14 @@
+uuid: 6df3c27c-cdc5-46db-b662-f215cb7a39a9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.meeting_room_reservation_tester
+  module:
+    - user
+id: user_add_role_action.meeting_room_reservation_tester
+label: 'Add the Meeting Room Reservation tester role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: meeting_room_reservation_tester

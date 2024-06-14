@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: qE7nRF7VKMVNntpJzc4mJtGeq3MOzeYF9orshg3dXyE
+langcode: eng
+send: true
+log: true
+verbose: true

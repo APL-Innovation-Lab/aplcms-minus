@@ -1,0 +1,24 @@
+uuid: 7d39a3f6-8091-4459-9391-88feefe16ad7
+langcode: en
+status: true
+dependencies: {  }
+id: set_taxonomy_heirarchy
+label: 'Set Taxonomy Heirarchy'
+description: ''
+tags: {  }
+config_version: '3'
+component:
+  expression:
+    id: rules_rule
+    uuid: a17d3d0d-c2c3-4074-a33b-1cd809ea3be4
+    weight: 0
+    conditions:
+      id: rules_and
+      uuid: 3341b838-2d0f-4d48-9eb9-e195e21dc220
+      weight: 0
+      conditions: {  }
+    actions:
+      id: rules_action_set
+      uuid: 205ff9ad-c134-4cf3-9851-cd9209ebed58
+      weight: 0
+      actions: {  }

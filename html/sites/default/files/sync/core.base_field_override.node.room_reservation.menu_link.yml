@@ -1,0 +1,20 @@
+uuid: 18906955-e796-471e-8963-b4238108c54e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.menu_link
+field_name: menu_link
+entity_type: node
+bundle: room_reservation
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 8b050ff9-0066-4f88-970e-c229ed928375
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.intended_audience_2016
+id: taxonomy_term.intended_audience_2016.status
+field_name: status
+entity_type: taxonomy_term
+bundle: intended_audience_2016
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

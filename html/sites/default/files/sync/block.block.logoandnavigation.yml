@@ -1,0 +1,30 @@
+uuid: 426c4494-68f6-4bc6-97a4-1d039a215f02
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - claro
+id: logoandnavigation
+theme: claro
+region: header
+weight: -4
+provider: null
+plugin: 'block_content:c1bfe14f-c997-4ba0-9086-5c0ec816ba43'
+settings:
+  id: 'block_content:c1bfe14f-c997-4ba0-9086-5c0ec816ba43'
+  label: 'logo and navigation'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      teen_page: teen_page

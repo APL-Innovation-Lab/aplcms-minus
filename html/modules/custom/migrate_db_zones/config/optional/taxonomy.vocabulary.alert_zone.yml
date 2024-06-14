@@ -1,0 +1,8 @@
+uuid: 859d2bf0-0fe2-4d7e-b100-581f95387587
+langcode: en
+status: true
+dependencies: {  }
+name: 'Alert Zone'
+vid: alert_zone
+description: ''
+weight: 7

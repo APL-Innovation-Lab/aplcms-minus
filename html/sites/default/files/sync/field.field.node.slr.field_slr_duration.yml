@@ -1,0 +1,23 @@
+uuid: 5b0d0b44-090f-488f-aa48-37b13dfaa1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_duration
+    - node.type.slr
+  module:
+    - options
+id: node.slr.field_slr_duration
+field_name: field_slr_duration
+entity_type: node
+bundle: slr
+label: Duration
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '120'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

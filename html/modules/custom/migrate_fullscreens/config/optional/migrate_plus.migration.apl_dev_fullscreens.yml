@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_fullscreens
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: 'APL Fullscreens'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_fullscreens/fullscreens.json'
+  item_selector: fullscreen
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: image
+      selector: image
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: fullscreen_image
+  title: title
+  field_1920_x_1080_image:
+    -
+      source: image
+      plugin: callback
+      callable: trim
+    -
+      plugin: image_import
+      title: title
+      alt: title
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,8 @@
+uuid: 50bc7ae3-319d-4689-b2ef-e1e866db5092
+langcode: en
+status: true
+dependencies: {  }
+id: add_content_menu
+label: 'Add Content Menu'
+revision: 0
+description: ''

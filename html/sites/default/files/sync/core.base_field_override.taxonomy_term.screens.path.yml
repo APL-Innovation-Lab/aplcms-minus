@@ -1,0 +1,20 @@
+uuid: cfef796b-5aa7-47ef-aca7-b54a2ac8224f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screens
+  module:
+    - path
+id: taxonomy_term.screens.path
+field_name: path
+entity_type: taxonomy_term
+bundle: screens
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

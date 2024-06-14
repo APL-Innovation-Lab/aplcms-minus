@@ -1,0 +1,20 @@
+uuid: 36e41959-74eb-4c71-9a4b-5ea0b95028fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.menu_link
+field_name: menu_link
+entity_type: node
+bundle: highighted_images
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: f51fc66e-7db2-4275-a203-68ad5a1c331e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invisible
+    - node.type.event
+id: node.event.field_invisible
+field_name: field_invisible
+entity_type: node
+bundle: event
+label: 'Skip the public calendar'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Skip the public calendar'
+  off_label: 'Published on the Web'
+field_type: boolean

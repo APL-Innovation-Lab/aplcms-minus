@@ -1,0 +1,22 @@
+uuid: e10effa6-e55e-4d8a-818b-ab36fab83f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.status
+field_name: status
+entity_type: node
+bundle: room_reservation
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

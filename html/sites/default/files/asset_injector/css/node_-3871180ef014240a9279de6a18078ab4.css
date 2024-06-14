@@ -1,0 +1,4 @@
+#drupal-off-canvas ul li, #drupal-off-canvas ol li {
+	border: none !important;
+	padding: 0 !important;
+}

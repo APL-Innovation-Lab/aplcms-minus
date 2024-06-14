@@ -1,0 +1,21 @@
+uuid: 5f97da12-d8e1-4ea5-884e-0a8e0a5224a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_category
+    - taxonomy.vocabulary.quests
+  module:
+    - options
+id: taxonomy_term.quests.field_quest_category
+field_name: field_quest_category
+entity_type: taxonomy_term
+bundle: quests
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

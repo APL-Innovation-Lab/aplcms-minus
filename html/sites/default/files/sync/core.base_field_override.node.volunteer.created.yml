@@ -1,0 +1,18 @@
+uuid: c44f2613-5614-44e1-96e3-8850ccef5b47
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.volunteer
+id: node.volunteer.created
+field_name: created
+entity_type: node
+bundle: volunteer
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,17 @@
+uuid: c3198604-41bb-4c43-8651-eadeb663f56f
+langcode: eng
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: swmYtBVUbwq7aHJWWDN7ODByuvur9vMkexDC9h64NZ8
+id: likert_databases
+label: 'Likert: Databases'
+category: Likert
+likert: true
+options: |-
+  1: Poor
+  2: Adequate
+  3: Excellent

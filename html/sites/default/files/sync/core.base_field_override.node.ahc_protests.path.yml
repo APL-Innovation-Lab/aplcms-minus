@@ -1,0 +1,20 @@
+uuid: 270a7f4d-c513-4df9-a3c8-2585ff76c201
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+  module:
+    - path
+id: node.ahc_protests.path
+field_name: path
+entity_type: node
+bundle: ahc_protests
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

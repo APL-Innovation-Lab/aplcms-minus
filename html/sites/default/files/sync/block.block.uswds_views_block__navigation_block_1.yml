@@ -1,0 +1,29 @@
+uuid: 8f8535a4-0e06-42a4-8bee-b036d7ea965a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.navigation
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: uswds_views_block__navigation_block_1
+theme: uswds
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'views_block:navigation-block_1'
+settings:
+  id: 'views_block:navigation-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /book-a-librarian222

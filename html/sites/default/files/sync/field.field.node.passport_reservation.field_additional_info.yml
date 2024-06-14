@@ -1,0 +1,21 @@
+uuid: 59d0c75a-39af-4287-b667-93feade2905b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_info
+    - node.type.passport_reservation
+  module:
+    - text
+id: node.passport_reservation.field_additional_info
+field_name: field_additional_info
+entity_type: node
+bundle: passport_reservation
+label: 'Additional info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

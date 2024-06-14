@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions and alterations for the aplpa theme.
+ */
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function aplpa_preprocess_block(&$variables) {
+    // Attempt to get the current node title.
+    $route_match = Drupal::routeMatch();
+    $title = $route_match->getParameter('node') ? $route_match->getParameter('node')->getTitle() : NULL;
+
+    // If no node title is found, use the title resolver service.
+    if (!$title) {
+        $title = Drupal::service('title_resolver')->getTitle(Drupal::request(), $route_match->getRouteObject());
+    }
+
+    // Add the title to the block template variables.
+    $variables['page_title'] = $title;
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML documents.
+ */
+function aplpa_preprocess_html(&$variables) {
+  $current_path = \Drupal::request()->getRequestUri();
+
+  // Define paths where the aplpa2024 library should not be loaded.
+  $exclude_paths = [
+    '/apltv', // This will match paths starting with /apltv.
+    '/node/add/staff_recommend',
+  ];
+
+  // Determine if the current path starts with any of the excluded paths.
+  $exclude_library = false;
+  foreach ($exclude_paths as $path) {
+    if (strpos($current_path, $path) === 0) {
+      $exclude_library = true;
+      break;
+    }
+  }
+
+  // Attach the library if the current path is not excluded.
+  if (!$exclude_library) {
+    $variables['#attached']['library'][] = 'aplpa/aplpa2024';
+  }
+}

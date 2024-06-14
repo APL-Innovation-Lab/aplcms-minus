@@ -1,0 +1,20 @@
+uuid: 429c9eb1-6bed-4a09-a8e0-bb247abbd74b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activity
+  module:
+    - path
+id: node.activity.path
+field_name: path
+entity_type: node
+bundle: activity
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

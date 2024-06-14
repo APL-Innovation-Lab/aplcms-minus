@@ -1,0 +1,10 @@
+.field--name-name {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.views-field-operations,
+.views-field-changed {
+	text-align: right;
+	width: 13%;
+}

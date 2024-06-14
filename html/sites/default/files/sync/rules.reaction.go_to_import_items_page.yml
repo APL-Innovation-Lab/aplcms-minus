@@ -1,0 +1,38 @@
+uuid: b5dbd1ca-9638-45d7-b23e-64484e3462c4
+langcode: en
+status: true
+dependencies: {  }
+id: go_to_import_items_page
+label: 'go to Import Items page'
+events:
+  -
+    event_name: 'rules_entity_insert:feeds_feed--apl_item_feed_feed'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f629550b-01b3-47e7-a66c-aff83af6e48c
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d5a16c2c-1a53-4186-8e51-f1b1e925c47d
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: b14cc1cb-c1b5-4c90-a31f-c1ae7b6b3e4a
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: b3732e49-9171-4b43-83b3-69545884fd9f
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /import-items
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

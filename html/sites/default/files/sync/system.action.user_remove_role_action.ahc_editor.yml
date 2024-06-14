@@ -1,0 +1,14 @@
+uuid: 6028e2df-7369-4dd2-b6bc-4f3e5c33f775
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ahc_editor
+  module:
+    - user
+id: user_remove_role_action.ahc_editor
+label: 'Remove the AHC editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ahc_editor

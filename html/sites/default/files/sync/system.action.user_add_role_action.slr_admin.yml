@@ -1,0 +1,14 @@
+uuid: 55072429-a1e2-4a07-b99b-ed8724f49440
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.slr_admin
+  module:
+    - user
+id: user_add_role_action.slr_admin
+label: 'Add the SLR Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: slr_admin

@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Override of system/menu.html.twig for the footer menu.
+ */
+#}
+
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, 0, footer_style) }}
+
+{% macro menu_links(items, menu_level, footer_style) %}
+  {% import _self as menus %}
+  {% if items %}
+
+    {# Menu should not apply this wrapper if the macro already recursed. #}
+    {% if menu_level == 0 %}
+    {% if footer_style == 'big' %}
+    <div class="grid-row grid-gap">
+    {% else %}
+    <ul class="grid-row grid-gap add-list-reset">
+    {% endif %}
+    {% endif %}
+
+    {% for item in items %}
+
+      {% if menu_level == 0 and 'big' == footer_style %}
+      {# Turn the menu item into a header and its children the links. #}
+      <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+          <h4 class="usa-footer__primary-link">{{ item.title }}</h4>
+          {% if item.below %}
+          <ul class="usa-list usa-list--unstyled">
+            {{ menus.menu_links(item.below, 1, footer_style) }}
+          </ul>
+          {% endif %}
+        </section>
+      </div>
+      {% elseif 'big' == footer_style %}
+      {# Big menu links. We've already recursed once, from above. #}
+      <li class="usa-footer__secondary-link">
+        {{ link(item.title, item.url) }}
+      </li>
+      {% elseif 'medium' == footer_style %}
+      {# Medium menu links. #}
+      <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
+        {{ link(item.title, item.url, { class: ['usa-footer__primary-link'] }) }}
+      </li>
+      {% else %}
+      {# Slim menu links. #}
+      <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+        {{ link(item.title, item.url, { class: ['usa-footer__primary-link'] }) }}
+      </li>
+      {% endif %}
+
+    {% endfor %}
+
+    {# Menu should not apply this wrapper if the macro already recursed. #}
+    {% if menu_level == 0 %}
+    {% if footer_style == 'big' %}
+    </div>
+    {% else %}
+    </ul>
+    {% endif %}
+    {% endif %}
+
+  {% endif %}
+{% endmacro %}

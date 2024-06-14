@@ -1,0 +1,104 @@
+{
+    "alert": [
+        {
+            "nid": "7737282",
+            "title": "All locations are out of solar eclipse glasses",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1697209200",
+            "field_slr_time_end": "1697320800"
+        },
+        {
+            "nid": "7737176",
+            "title": "Terrazas Branch will be closed on Saturdays and Sundays",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1696957320",
+            "field_slr_time_end": "1697209200"
+        },
+        {
+            "nid": "7737198",
+            "title": "All APL locations will be closed on Friday, October 20th, for a Staff Development Day",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1697365380",
+            "field_slr_time_end": "1697851800"
+        },
+        {
+            "nid": "7734560",
+            "title": "Old Quarry Branch is closed for maintenance ",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1692888180",
+            "field_slr_time_end": "1696783800"
+        },
+        {
+            "nid": "7736612",
+            "title": "The Central Library will be closed on Saturday, 9/30",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1695740100",
+            "field_slr_time_end": "1696132440"
+        },
+        {
+            "nid": "7736607",
+            "title": "9/25: Little Walnut Creek Branch is closed early",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1695676980",
+            "field_slr_time_end": "1695690000"
+        },
+        {
+            "nid": "7736540",
+            "title": "The Austin History Center is closed through October 31st",
+            "field_locations": "183",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1696240860",
+            "field_slr_time_end": "1698805800"
+        },
+        {
+            "nid": "7736539",
+            "title": "The Austin History Center will be closed October 2-31",
+            "field_locations": "183",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1695407280",
+            "field_slr_time_end": "1696240800"
+        },
+        {
+            "nid": "7736379",
+            "title": "Terrazas Branch will be closed Monday, 9/18 for emergency maintenance",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1694899260",
+            "field_slr_time_end": "1695115260"
+        },
+        {
+            "nid": "7734518",
+            "title": "Old Quarry branch is closed 8/23, due to HVAC issues. ",
+            "field_locations": "5190",
+            "field_more_info": "",
+            "field_button_url": "",
+            "field_button_url_title": "",
+            "field_slr_time_start": "1692803100",
+            "field_slr_time_end": "1692885900"
+        }
+    ]
+}

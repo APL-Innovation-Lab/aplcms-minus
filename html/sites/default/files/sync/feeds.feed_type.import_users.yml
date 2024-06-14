@@ -1,0 +1,147 @@
+uuid: 596788e3-d845-48c1-ac8d-692d21ab0ef4
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds_tamper
+    - user
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      5e249d03-53a5-40ab-a72e-cc3841036f81:
+        text: eng
+        uuid: 5e249d03-53a5-40ab-a72e-cc3841036f81
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      6291ae13-600b-4121-b511-a1f5818c86d6:
+        text: '1'
+        uuid: 6291ae13-600b-4121-b511-a1f5818c86d6
+        plugin: rewrite
+        source: status
+        weight: 0
+        label: Rewrite
+      d7b30b02-10bc-4d9d-8fec-371c0bc730e0:
+        separator: ','
+        limit: null
+        uuid: d7b30b02-10bc-4d9d-8fec-371c0bc730e0
+        plugin: explode
+        source: roles
+        weight: 0
+        label: Explode
+      70811a39-e2eb-4c87-97f3-2d21eb804be0:
+        character: ''
+        side: trim
+        uuid: 70811a39-e2eb-4c87-97f3-2d21eb804be0
+        plugin: trim
+        source: roles
+        weight: 1
+        label: 'Characters to trim'
+      7f5a1cb8-5840-4e1b-aea2-1f4fa36ea4fa:
+        text: 'bryce.benton.[uid]@austintexas.gov'
+        uuid: 7f5a1cb8-5840-4e1b-aea2-1f4fa36ea4fa
+        plugin: rewrite
+        source: mail
+        weight: 0
+        label: Rewrite
+id: import_users
+label: 'Import Users'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:user'
+processor_configuration:
+  values: {  }
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  roles:
+    value: roles
+    label: roles
+    machine_name: roles
+    type: csv
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  mail:
+    value: mail
+    label: mail
+    machine_name: mail
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      value: uid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: roles
+    map:
+      target_id: roles
+    settings:
+      reference_by: label
+      allowed_roles:
+        administrator: 0
+      autocreate: 0
+      revoke_roles: 0
+  -
+    target: status
+    map:
+      value: status
+    settings: {  }
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: mail
+    map:
+      value: mail
+    settings:
+      defuse: 0
+    unique: {  }

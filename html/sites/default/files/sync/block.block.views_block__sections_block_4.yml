@@ -1,0 +1,29 @@
+uuid: 7e534472-9619-45c3-813f-85a6661cf040
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__sections_block_4
+theme: claro2
+region: header
+weight: -25
+provider: null
+plugin: 'views_block:sections-block_4'
+settings:
+  id: 'views_block:sections-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ahc\r\n/ahc/*"

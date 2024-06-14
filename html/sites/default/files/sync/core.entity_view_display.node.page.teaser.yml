@@ -1,0 +1,97 @@
+uuid: 37804ddd-0b5b-4e84-979f-3ff42f2a9433
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.feeds_item
+    - field.field.node.page.field_accordions
+    - field.field.node.page.field_biblio_list_urls
+    - field.field.node.page.field_bibliocommons_list_url
+    - field.field.node.page.field_booklist
+    - field.field.node.page.field_do_not_index
+    - field.field.node.page.field_image_attribution_ahc
+    - field.field.node.page.field_image_gallery
+    - field.field.node.page.field_link_path
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_misc_images
+    - field.field.node.page.field_pdf
+    - field.field.node.page.field_vimeo
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - video_embed_field
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          4956a1fb-fcde-424d-bbf3-1d180a269059:
+            uuid: 4956a1fb-fcde-424d-bbf3-1d180a269059
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_11'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  field_vimeo:
+    type: video_embed_field_video
+    label: hidden
+    settings:
+      autoplay: false
+      responsive: false
+      width: 800
+      height: 450
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_accordions: true
+  field_biblio_list_urls: true
+  field_bibliocommons_list_url: true
+  field_booklist: true
+  field_do_not_index: true
+  field_image_attribution_ahc: true
+  field_image_gallery: true
+  field_link_path: true
+  field_main_image: true
+  field_metatag: true
+  field_misc_images: true
+  field_pdf: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_locations.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the ahc_pages.json file to the sites/default/files folder.
+ */
+function migrate_ahc_pages(): void {
+  // Create the AHC Pages file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_ahc_pages';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the file to migrate_ahc_pages directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_ahc_pages')->getPath();
+  $file_source = $module_path . '/artifacts/ahc_pages.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/ahc_pages.json', FileSystemInterface::EXISTS_REPLACE);
+}

@@ -1,0 +1,20 @@
+uuid: a365f104-ac62-4127-a3d2-456a3148fbb3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+  module:
+    - path
+id: node.hero_banner_image.path
+field_name: path
+entity_type: node
+bundle: hero_banner_image
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,22 @@
+uuid: 4e046fd5-c128-4208-97ae-3f95b07804a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.sticky
+field_name: sticky
+entity_type: node
+bundle: zine
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

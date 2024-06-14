@@ -1,0 +1,32 @@
+uuid: 181344a1-8469-4ea4-be5c-160cc9cf9490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_database_category
+    - node.type.database
+    - taxonomy.vocabulary.database_categories
+id: node.database.field_database_category
+field_name: field_database_category
+entity_type: node
+bundle: database
+label: 'Database Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      database_categories: database_categories
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 0
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: e13f4a98-f0a4-4089-9249-e062f8bc3a78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_spanish
+    - taxonomy.vocabulary.quests
+id: taxonomy_term.quests.field_quest_spanish
+field_name: field_quest_spanish
+entity_type: taxonomy_term
+bundle: quests
+label: Spanish
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Spanish
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 2fd3e19e-726b-4c55-b95e-096eed7e6264
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pkoakwood
+    - node.type.oakwood
+id: node.oakwood.field_pkoakwood
+field_name: field_pkoakwood
+entity_type: node
+bundle: oakwood
+label: pkoakwood
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

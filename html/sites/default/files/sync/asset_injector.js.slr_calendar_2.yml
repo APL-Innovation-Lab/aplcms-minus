@@ -1,0 +1,56 @@
+uuid: 5e16bb0a-a2bf-44ee-8bb6-3af1fdb7689c
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: slr_calendar_2
+label: 'SLR Calendar 2'
+code: |-
+  document.addEventListener('DOMContentLoaded', function() {
+   // var calendarEl = document.getElementById('calendar');
+    var calendarEl = document.getElementsByClassName('fc-unthemed')[0];
+    
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'dayGrid', 'timeGrid' ],
+      header: {
+        left: 'dayGridMonth,timeGridWeek,timeGridDay custom1',
+        center: 'title',
+        right: 'custom2 prevYear,prev,next,nextYear'
+      },
+      footer: {
+        left: 'custom1,custom2',
+        center: '',
+        right: 'prev,next'
+      },
+      customButtons: {
+        custom1: {
+          text: 'custom 1',
+          click: function() {
+            alert('clicked custom button 1!');
+          }
+        },
+        custom2: {
+          text: 'custom 2',
+          click: function() {
+            alert('clicked custom button 2!');
+          }
+        }
+      }
+    });
+
+    calendar.render();
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /rooms-calendar/ace/day2
+contexts: {  }
+conditions_require_all: true

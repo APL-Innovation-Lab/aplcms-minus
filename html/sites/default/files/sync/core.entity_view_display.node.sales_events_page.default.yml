@@ -1,0 +1,211 @@
+uuid: 530f16b2-893e-4ac7-80cf-49c27eda20d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.sales_events_page.title
+    - field.field.node.sales_events_page.body
+    - field.field.node.sales_events_page.feeds_item
+    - field.field.node.sales_events_page.field_main_image
+    - field.field.node.sales_events_page.field_se_gallery
+    - field.field.node.sales_events_page.field_se_section
+    - field.field.node.sales_events_page.layout_builder__layout
+    - node.type.sales_events_page
+    - views.view.navigation
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 25-75
+          context_mapping: {  }
+        components:
+          b29b06b9-8902-491e-aec0-05ff42687f61:
+            uuid: b29b06b9-8902-491e-aec0-05ff42687f61
+            region: second
+            configuration:
+              id: 'field_block:node:sales_events_page:field_main_image'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          941a9c69-5cac-408d-9542-be3e5916dca9:
+            uuid: 941a9c69-5cac-408d-9542-be3e5916dca9
+            region: second
+            configuration:
+              id: 'field_block:node:sales_events_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b739951c-332c-41e1-9d98-6f25b956328a:
+            uuid: b739951c-332c-41e1-9d98-6f25b956328a
+            region: second
+            configuration:
+              id: 'field_block:node:sales_events_page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ebd0acf0-b965-47a8-a295-93d2ececf2ef:
+            uuid: ebd0acf0-b965-47a8-a295-93d2ececf2ef
+            region: second
+            configuration:
+              id: 'field_block:node:sales_events_page:field_se_gallery'
+              label: Gallery
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: colorbox
+                label: hidden
+                settings:
+                  colorbox_node_style: medium
+                  colorbox_node_style_first: ''
+                  colorbox_image_style: ''
+                  colorbox_gallery: post
+                  colorbox_gallery_custom: ''
+                  colorbox_caption: auto
+                  colorbox_caption_custom: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          f3dcd8af-9172-4fe9-b900-6eaeacf2f697:
+            uuid: f3dcd8af-9172-4fe9-b900-6eaeacf2f697
+            region: first
+            configuration:
+              id: 'views_block:navigation-block_9'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          5598029c-27ed-4dff-a9d7-1d05339ad80d:
+            uuid: 5598029c-27ed-4dff-a9d7-1d05339ad80d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:sales_events_page:field_main_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          46b8bb03-ce36-4e66-b342-a366090547ca:
+            uuid: 46b8bb03-ce36-4e66-b342-a366090547ca
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:sales_events_page:field_se_gallery'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.sales_events_page.default
+targetEntityType: node
+bundle: sales_events_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_main_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_se_gallery:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_se_section: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

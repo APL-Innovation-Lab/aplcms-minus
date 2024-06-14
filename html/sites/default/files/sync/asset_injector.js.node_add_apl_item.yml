@@ -1,0 +1,38 @@
+uuid: 6e4444d0-5a6a-44f5-a3c0-28cc663a392b
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: node_add_apl_item
+label: node/add/apl_item
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+    	
+    	
+    	var currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname;    
+        var currentURL2 = window.location.pathname;    
+        var newURL = currentURL + '?destination=node/add/apl_item';   
+        var newURL2 = currentURL2 + '?destination=node/add/apl_item';   
+        console.log(newURL.toString()); 
+        console.log(newURL2.toString()); 
+        window.history.pushState({ path: newURL }, '', newURL);
+
+        $('form.node-form').attr('action',newURL2.toString());
+        
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/add/apl_item
+contexts: {  }
+conditions_require_all: true

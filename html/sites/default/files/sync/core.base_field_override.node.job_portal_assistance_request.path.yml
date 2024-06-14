@@ -1,0 +1,20 @@
+uuid: 33c8d44a-5129-4c32-8474-7b83cca79897
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_assistance_request
+  module:
+    - path
+id: node.job_portal_assistance_request.path
+field_name: path
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

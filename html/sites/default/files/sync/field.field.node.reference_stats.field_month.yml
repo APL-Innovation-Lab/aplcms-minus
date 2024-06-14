@@ -1,0 +1,21 @@
+uuid: a7f02fb3-35f5-400b-85f9-08c45da3fcca
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_month
+    - node.type.reference_stats
+  module:
+    - options
+id: node.reference_stats.field_month
+field_name: field_month
+entity_type: node
+bundle: reference_stats
+label: Month
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

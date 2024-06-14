@@ -1,0 +1,42 @@
+uuid: 9ffa23cd-d8d2-4eff-8d11-d91d40e54666
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MjgZCc9U1Rg06Pn0Han2lTu3WdVKqqtJZHR28zyO3nc
+id: navigation_bar
+label: 'Navigation Bar'
+code: |-
+  @font-face {
+    font-family: "fontello";
+    src: url("https://cor-cdn-static.bibliocommons.com/assets/fontello-7aaf5df643343c6846d1d2be8803acd8.woff") format("woff");
+  }
+  .dropdown-toggle::after {
+  	font-family: "fontello";
+  	content: "\0000a0\abcd";
+  	font-size: 14px;
+  	margin: 0px 0px 0 2px;
+  }
+  .apl_menu > li > a {
+  	border-left: 1px solid transparent;
+  }
+  .dropdown-toggle {
+  	padding-right: 26px !important;
+  }
+  .apl_submenus.active {
+  	display: block !important;
+  }
+
+  .toolbar .toolbar-tray-vertical.is-active, 
+  body.toolbar-fixed .toolbar .toolbar-tray-vertical {
+  	display: none !important;
+  }
+
+  body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
+  	margin-left: 0 !important;
+  }
+conditions_require_all: true
+conditions: {  }
+contexts: {  }
+media: all
+preprocess: true

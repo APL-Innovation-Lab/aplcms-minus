@@ -1,0 +1,29 @@
+uuid: e4fb9086-d723-4e81-91ed-cf8166af5444
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: login
+label: Login
+code: |
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+  $('.form-item__error-message a').hide();
+  $('#edit-name--description').html('Your username is the same as your computer/windows login, for example Alex Doe logs in as <em>doea</em>.');  
+        
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+contexts: {  }
+conditions_require_all: true

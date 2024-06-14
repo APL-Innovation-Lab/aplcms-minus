@@ -1,0 +1,22 @@
+uuid: d80a5c66-480a-4659-9e8c-e63ccbcb83eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reference_stats
+id: node.reference_stats.status
+field_name: status
+entity_type: node
+bundle: reference_stats
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

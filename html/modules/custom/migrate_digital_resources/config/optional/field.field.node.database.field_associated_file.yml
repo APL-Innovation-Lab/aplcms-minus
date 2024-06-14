@@ -1,0 +1,27 @@
+uuid: db20fa94-ad33-40bf-bafe-ec02841940ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_file
+    - node.type.database
+  module:
+    - file
+id: node.database.field_associated_file
+field_name: field_associated_file
+entity_type: node
+bundle: database
+label: 'Help Pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: virtual-library
+  file_extensions: 'doc docx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

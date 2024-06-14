@@ -1,0 +1,18 @@
+uuid: 9f6fde7e-9c9a-4172-aa60-d3012e4f4fd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.title
+field_name: title
+entity_type: node
+bundle: passports_page
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

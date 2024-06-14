@@ -1,0 +1,18 @@
+uuid: 8439646d-bd34-47bf-ac3f-afb392a33422
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.created
+field_name: created
+entity_type: node
+bundle: gift_shop_page
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

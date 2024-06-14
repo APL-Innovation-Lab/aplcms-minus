@@ -1,0 +1,18 @@
+uuid: 5542fafa-c2b5-4978-bf42-d77f8c33f9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alert_zone
+id: taxonomy_term.alert_zone.name
+field_name: name
+entity_type: taxonomy_term
+bundle: alert_zone
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

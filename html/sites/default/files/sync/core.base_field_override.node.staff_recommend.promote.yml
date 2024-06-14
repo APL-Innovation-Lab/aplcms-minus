@@ -1,0 +1,22 @@
+uuid: f7896286-aa25-4f00-a352-b7792ed05cb2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.promote
+field_name: promote
+entity_type: node
+bundle: staff_recommend
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

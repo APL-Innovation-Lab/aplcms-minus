@@ -1,0 +1,29 @@
+uuid: a922aa77-a277-42e6-ba00-f07342b4365d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_group
+    - node.type.group
+    - node.type.room_reservation
+id: node.room_reservation.field_room_group
+field_name: field_room_group
+entity_type: node
+bundle: room_reservation
+label: 'Meeting Room Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      group: group
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

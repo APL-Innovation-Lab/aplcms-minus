@@ -1,0 +1,14 @@
+uuid: e06bd78b-a99b-42d5-b740-e3a67a099287
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_coach_administrator
+  module:
+    - user
+id: user_add_role_action.job_coach_administrator
+label: 'Add the Job Coach Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_coach_administrator

@@ -1,0 +1,165 @@
+uuid: a6417f1f-06e2-4ec5-92b5-36c0d8b0e51e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.gift_shop_page.title
+    - field.field.node.gift_shop_page.body
+    - field.field.node.gift_shop_page.feeds_item
+    - field.field.node.gift_shop_page.field_main_image
+    - node.type.gift_shop_page
+    - views.view.navigation
+    - views.view.open_hours
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 25-75
+          context_mapping: {  }
+        components:
+          e542f11b-abd8-4e25-b56a-4d1bb9c1a1b0:
+            uuid: e542f11b-abd8-4e25-b56a-4d1bb9c1a1b0
+            region: second
+            configuration:
+              id: 'field_block:node:gift_shop_page:field_main_image'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c3b7d910-0927-4045-862c-7df25be00936:
+            uuid: c3b7d910-0927-4045-862c-7df25be00936
+            region: second
+            configuration:
+              id: 'field_block:node:gift_shop_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          431f0da2-47dd-4b72-a422-6dbac2c49999:
+            uuid: 431f0da2-47dd-4b72-a422-6dbac2c49999
+            region: second
+            configuration:
+              id: 'field_block:node:gift_shop_page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          15b9ce19-ce9c-45c1-adc9-3e12d9ffd67a:
+            uuid: 15b9ce19-ce9c-45c1-adc9-3e12d9ffd67a
+            region: first
+            configuration:
+              id: 'views_block:navigation-block_11'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          f41bfd2b-049d-4276-85ab-2239c977ec01:
+            uuid: f41bfd2b-049d-4276-85ab-2239c977ec01
+            region: first
+            configuration:
+              id: 'views_block:open_hours-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          e137b74b-bb31-4502-bd43-c78609d2a11a:
+            uuid: e137b74b-bb31-4502-bd43-c78609d2a11a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:gift_shop_page:field_main_image'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.gift_shop_page.default
+targetEntityType: node
+bundle: gift_shop_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

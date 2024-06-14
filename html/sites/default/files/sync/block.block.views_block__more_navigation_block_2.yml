@@ -1,0 +1,38 @@
+uuid: 5147ca18-7880-4f23-94a4-84122cb2a568
+langcode: eng
+status: false
+dependencies:
+  config:
+    - views.view.more_navigation
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - claro2
+id: views_block__more_navigation_block_2
+theme: claro2
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:more_navigation-block_2'
+settings:
+  id: 'views_block:more_navigation-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      meeting_rooms_administrator: meeting_rooms_administrator
+      internal_group_representative: internal_group_representative

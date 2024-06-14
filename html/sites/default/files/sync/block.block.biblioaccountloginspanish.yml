@@ -1,0 +1,38 @@
+uuid: f3092a37-5aa7-4d04-af2a-d3852d0590ef
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5ac54b58-90f9-415d-b3d1-2928aaf4bd67'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - aplpa
+id: biblioaccountloginspanish
+theme: aplpa
+region: header_top
+weight: -10
+provider: null
+plugin: 'block_content:5ac54b58-90f9-415d-b3d1-2928aaf4bd67'
+settings:
+  id: 'block_content:5ac54b58-90f9-415d-b3d1-2928aaf4bd67'
+  label: 'APL Header (Spanish)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+  request_path:
+    id: request_path
+    negate: true
+    pages: /x

@@ -1,0 +1,20 @@
+uuid: 6b477131-97b3-4dea-99ce-af55bfe5ff24
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.uid
+field_name: uid
+entity_type: node
+bundle: slr_alert
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

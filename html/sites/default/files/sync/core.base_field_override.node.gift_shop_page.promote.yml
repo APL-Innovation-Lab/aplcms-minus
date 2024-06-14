@@ -1,0 +1,22 @@
+uuid: 68bbe4f5-0ae3-41ae-96cc-04ea39253bca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.promote
+field_name: promote
+entity_type: node
+bundle: gift_shop_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

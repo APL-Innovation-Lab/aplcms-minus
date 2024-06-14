@@ -1,0 +1,24 @@
+uuid: 1f68c10f-65b7-47b1-9ae6-9bbc5ff6c8f5
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_pkoakwood
+field_name: field_pkoakwood
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

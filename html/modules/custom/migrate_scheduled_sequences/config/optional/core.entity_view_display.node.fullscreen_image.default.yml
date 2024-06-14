@@ -1,0 +1,43 @@
+uuid: d529762e-b50b-4ab0-806b-cdfc9219117f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fullscreen_image.field_1920_x_1080_image
+    - node.type.fullscreen_image
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a82716e4-8f85-458d-afc5-6d19280b143e:
+            uuid: a82716e4-8f85-458d-afc5-6d19280b143e
+            region: content
+            configuration:
+              id: 'extra_field_block:node:fullscreen_image:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.fullscreen_image.default
+targetEntityType: node
+bundle: fullscreen_image
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_1920_x_1080_image: true

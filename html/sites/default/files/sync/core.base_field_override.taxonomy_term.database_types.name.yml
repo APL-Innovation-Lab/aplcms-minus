@@ -1,0 +1,18 @@
+uuid: 39bab0a2-dcaa-4fc5-8229-25fa4043f7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_types
+id: taxonomy_term.database_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: database_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

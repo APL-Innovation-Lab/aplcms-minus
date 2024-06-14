@@ -1,0 +1,14 @@
+uuid: b51badf5-0bcc-42d8-91b7-4460152ec918
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reflection_editor
+  module:
+    - user
+id: user_remove_role_action.reflection_editor
+label: 'Remove the Reflection Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: reflection_editor

@@ -1,0 +1,22 @@
+uuid: a0613c44-8554-4836-ac41-02db53e4e19d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.promote
+field_name: promote
+entity_type: node
+bundle: virtual_library_alert
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

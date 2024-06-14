@@ -1,0 +1,19 @@
+uuid: 3011e044-fb24-4445-88db-d735d8649448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn_for_image3
+    - node.type.event
+id: node.event.field_isbn_for_image3
+field_name: field_isbn_for_image3
+entity_type: node
+bundle: event
+label: 'ISBN for image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

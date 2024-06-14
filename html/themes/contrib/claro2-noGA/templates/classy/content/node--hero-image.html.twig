@@ -1,0 +1,32 @@
+{{ attach_library('claro/classy.node') }}
+ <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ content.field_hero_image }});">
+<div class="flex-grid hero-flex">
+  <div class="hero-text2 d-col-3 t-col-3 m-col-3">
+    <p class="hero-title2">{{ label }}</p>
+    <p class="hero-summary">{{ content.field_hero_summary }}</p>
+    <a href="{{ content.field_hero_link }}">Check it out</a>
+  </div>
+</div> 
+</div>
+<style>
+body, html {
+    height: 100%;
+}
+header + .layout-container {
+	margin: 0 !important;
+}
+
+.hero-image {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text2 {
+  background: white;
+  padding: 20px;
+  margin-top: 100px;
+}
+</style>

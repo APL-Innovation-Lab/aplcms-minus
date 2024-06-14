@@ -1,0 +1,21 @@
+uuid: 646e6a49-6d1c-45a7-a0f2-a34e3efba6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.champion_image
+  module:
+    - options
+id: node.champion_image.field_section
+field_name: field_section
+entity_type: node
+bundle: champion_image
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,48 @@
+uuid: ab4475b6-d977-49ee-a36e-a63154cf1121
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_restrictions
+field_name: field_restrictions
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: none
+    -
+      value: '2'
+      label: '01'
+    -
+      value: '3'
+      label: '02'
+    -
+      value: '4'
+      label: '03'
+    -
+      value: '5'
+      label: '04'
+    -
+      value: '6'
+      label: '05'
+    -
+      value: '7'
+      label: 'see donor file'
+    -
+      value: '8'
+      label: unknown
+    -
+      value: '9'
+      label: '06'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

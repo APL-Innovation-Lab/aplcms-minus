@@ -1,0 +1,17 @@
+uuid: 6ada1353-7892-4440-a801-bda6277abd5a
+langcode: eng
+status: true
+dependencies:
+  module:
+    - office_hours
+title: 'Default cron handler'
+id: office_hours_cron
+weight: 0
+module: office_hours
+callback: office_hours_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

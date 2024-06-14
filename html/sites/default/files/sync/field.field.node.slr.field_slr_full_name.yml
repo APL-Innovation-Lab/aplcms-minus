@@ -1,0 +1,19 @@
+uuid: 6d3e503a-b4ff-4f5f-a4a2-b034a5b6ed36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_full_name
+    - node.type.slr
+id: node.slr.field_slr_full_name
+field_name: field_slr_full_name
+entity_type: node
+bundle: slr
+label: 'Full Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

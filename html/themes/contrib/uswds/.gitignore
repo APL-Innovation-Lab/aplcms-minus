@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Generated files and directories
+assets/*
+
+# Log files
+*.log
+
+# Hidden files and directories
+.*
+!.gitignore
+
+# Lock files
+~*

@@ -1,0 +1,30 @@
+uuid: f2917883-c2bb-40e3-bb5c-3504298229e1
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bc4692ac-28dc-466f-bbb0-6feeb094a670'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_austincompletelybooked
+theme: claro2noGA
+region: header
+weight: -21
+provider: null
+plugin: 'block_content:bc4692ac-28dc-466f-bbb0-6feeb094a670'
+settings:
+  id: 'block_content:bc4692ac-28dc-466f-bbb0-6feeb094a670'
+  label: 'Austin Completely Booked'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /summer

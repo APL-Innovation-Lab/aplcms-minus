@@ -1,0 +1,12 @@
+.apl-language {
+	background: white;
+	border: 1px solid;
+	border-radius: 3px;
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.apl-language:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+uuid: a2ead6b8-f5b2-4783-bd36-c86fae0f2bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.recommendation_editor
+  module:
+    - user
+id: user_remove_role_action.recommendation_editor
+label: 'Remove the Recommendation Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: recommendation_editor

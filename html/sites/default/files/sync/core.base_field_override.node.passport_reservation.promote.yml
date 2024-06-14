@@ -1,0 +1,22 @@
+uuid: b812ace5-3132-4c8a-ba22-2378f53f5e2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.promote
+field_name: promote
+entity_type: node
+bundle: passport_reservation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

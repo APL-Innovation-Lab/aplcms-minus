@@ -1,0 +1,21 @@
+uuid: 6972baf5-271e-4a5d-b101-a24e57d00aff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_q_description_spanish
+    - taxonomy.vocabulary.quests
+  module:
+    - text
+id: taxonomy_term.quests.field_q_description_spanish
+field_name: field_q_description_spanish
+entity_type: taxonomy_term
+bundle: quests
+label: 'Description - Spanish'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

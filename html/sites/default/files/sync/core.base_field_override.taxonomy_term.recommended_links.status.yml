@@ -1,0 +1,22 @@
+uuid: f32cb3a5-6d77-4f79-bafa-4e4564cf1d43
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommended_links
+id: taxonomy_term.recommended_links.status
+field_name: status
+entity_type: taxonomy_term
+bundle: recommended_links
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

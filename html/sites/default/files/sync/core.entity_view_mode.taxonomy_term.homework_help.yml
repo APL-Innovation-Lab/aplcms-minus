@@ -1,0 +1,10 @@
+uuid: fefc47c6-fc9a-464b-9295-68c4cdd1ba28
+langcode: eng
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.homework_help
+label: 'homework help'
+targetEntityType: taxonomy_term
+cache: true

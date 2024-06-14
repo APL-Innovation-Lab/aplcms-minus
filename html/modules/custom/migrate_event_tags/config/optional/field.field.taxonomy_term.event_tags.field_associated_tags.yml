@@ -1,0 +1,23 @@
+uuid: 56d68da1-a8ae-4a25-9012-d5010150ff16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_associated_tags
+    - taxonomy.vocabulary.event_tags
+id: taxonomy_term.event_tags.field_associated_tags
+field_name: field_associated_tags
+entity_type: taxonomy_term
+bundle: event_tags
+label: 'Associated Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

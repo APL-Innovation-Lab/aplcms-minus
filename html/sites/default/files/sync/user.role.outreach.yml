@@ -1,0 +1,26 @@
+uuid: 0e3e694f-4561-411d-9c9a-aa65b5eb0f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - taxonomy.vocabulary.remote_locations
+  module:
+    - field_ui
+    - filter
+    - system
+    - taxonomy
+    - toolbar
+id: outreach
+label: Outreach
+weight: 12
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer taxonomy_term display'
+  - 'create terms in remote_locations'
+  - 'delete terms in remote_locations'
+  - 'edit terms in remote_locations'
+  - 'use text format full_html'
+  - 'view the administration theme'

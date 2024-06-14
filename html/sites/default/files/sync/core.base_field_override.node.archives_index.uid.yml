@@ -1,0 +1,20 @@
+uuid: 6e9d7442-61ba-4fec-9fb3-984f0b694269
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archives_index
+id: node.archives_index.uid
+field_name: uid
+entity_type: node
+bundle: archives_index
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 5fdef970-fb96-4312-9549-bbf3fd5b0343
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bookstore_page
+id: node.bookstore_page.changed
+field_name: changed
+entity_type: node
+bundle: bookstore_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 93764bca-bdc9-43d2-b151-fecadbbd95c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.uid
+field_name: uid
+entity_type: node
+bundle: playlist
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

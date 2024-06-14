@@ -1,0 +1,18 @@
+uuid: b9a9815d-0ba3-4396-8f2f-695a8a06a296
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: playlist
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

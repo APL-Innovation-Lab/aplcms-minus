@@ -1,0 +1,23 @@
+uuid: 8a55f6cd-c0cb-479e-9697-366e617943c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_am_interested_in_a_virtu
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_i_am_interested_in_a_virtu
+field_name: field_i_am_interested_in_a_virtu
+entity_type: node
+bundle: job_portal_assistance_request
+label: '  I am interested in a virtual (video) coaching session.'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 659e95c0-9fc5-46d0-a356-0a80a0ddf16a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screens
+id: taxonomy_term.screens.status
+field_name: status
+entity_type: taxonomy_term
+bundle: screens
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: b196ea81-76f6-42c7-896c-de3f564b9f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.add_content_menu
+    - field.field.block_content.add_content_menu.body
+  module:
+    - text
+id: block_content.add_content_menu.default
+targetEntityType: block_content
+bundle: add_content_menu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

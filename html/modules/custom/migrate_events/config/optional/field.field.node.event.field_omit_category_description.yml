@@ -1,0 +1,23 @@
+uuid: 78f6cc36-7b9f-4fd3-b820-0285e6fd5f94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_omit_category_description
+    - node.type.event
+id: node.event.field_omit_category_description
+field_name: field_omit_category_description
+entity_type: node
+bundle: event
+label: 'Omit category description'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Omit category description'
+  off_label: ''
+field_type: boolean

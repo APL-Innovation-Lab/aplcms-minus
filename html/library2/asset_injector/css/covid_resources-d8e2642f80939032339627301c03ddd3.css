@@ -1,0 +1,45 @@
+#apl_public_computers div {
+	float: left;
+	height: 200px;
+	margin: 0 20px 20px 0;
+	width: 250px;
+}
+#apl_public_computers img {
+	margin: 15px;
+	width: 130px;
+}
+#apl_find {
+	background-color: #009abf;
+}
+#apl_email {
+  background-color: #F5a81c;
+}
+#apl_google {
+  background-color: #A90d0b;
+}
+#apl_online {
+  background-color: #9696cd;
+}
+#apl_search2 {
+  background-color: #B01657;
+}
+#apl_information {
+  background-color: #519313;
+}
+#apl_computer {
+  background-color: #7dc242;
+}
+#apl_computer_classes {
+  background-color: #Ff8300;
+}
+#apl_computer_classes2 {
+  background-color: #0069aa;
+}
+
+#apl_public_computers a {
+	color: white;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}

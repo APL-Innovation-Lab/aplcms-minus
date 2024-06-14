@@ -1,0 +1,18 @@
+uuid: ccd68ea0-87fa-4dae-b628-3407607fa99c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apltv_channel
+id: taxonomy_term.apltv_channel.name
+field_name: name
+entity_type: taxonomy_term
+bundle: apltv_channel
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

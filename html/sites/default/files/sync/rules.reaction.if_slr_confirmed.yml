@@ -1,0 +1,86 @@
+uuid: dd5e23bf-d57e-4d56-b9e6-56ddd8384eb8
+langcode: eng
+status: false
+dependencies: {  }
+id: if_slr_confirmed
+label: 'If SLR Confirmed'
+events:
+  -
+    event_name: 'rules_entity_update:node--slr'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: de095672-88b3-4e47-ae44-96772bd7c315
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: c27306ac-4f46-425e-8485-2b56ebf5cc29
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 25e2f0d7-2580-4f16-bab2-db6a53029d33
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: false
+        context_values:
+          operation: '=='
+          value: '2'
+        context_mapping:
+          data: node.field_request_status.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 001177de-6c75-4ec3-9df2-df1d5c654c0a
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: df981edb-b2c1-43f4-aac0-ec1a58b24cd2
+        weight: -50
+        action_id: rules_system_message
+        context_values:
+          message: 'Thank you for confirming your Shared Learning Room Reservation. Confirmation email sent to {{node.field_slr_email}} .'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: bd8fa324-f3ac-4905-8e8b-c2dcb6a36e9e
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.field_slr_email}}'
+          subject: 'Thank you for confirming your shared learning room reservation at Central Library'
+          message: "<p style=\"color:black;\">Thank you for confirming your shared learning room reservation at Central Library, which is located at 710 W Cesar Chavez St, Austin, TX 78701.<p>\r\n<p style=\"color:black;\"><span style=\"color:black;\" class=\"deets\">Room: {{node.field_slr_room.entity.name}}</span><br/><span style=\"color:black;\" class=\"deets\">Start Time: {{node.field_slr_time_start.value|format_date('long')}}</span><br/>\r\nEnd Time: {{node.field_slr_time_end.value|format_date('long')}}</span><br/><span style=\"color:black;\" class=\"deets\">Name: {{node.field_slr_full_name.value}}</span><br/><span style=\"color:black;\" class=\"deets\">Topic: {{node.title}}</span><br/><span style=\"color:black;\" class=\"deets\">Status: Confirmed</span></p><p style=\"color:black;\">By booking a room, you agree to abide by the <a href=\"http://austinlibrary.com/downloads/shared_learning_rooms_policy.pdf\">shared learning room policy</a>.</p><p style=\"color:black;\">If necessary, you can <a href=\"https://library.austintexas.gov/cancel/slr?id={{node.nid.value}}&ac={{node.field_ac.value}}\">cancel</a> before your reservation time.</p><p style=\"color:black;\">Questions? Call 512-974-7400 (option 1) or <a href=\"http://library.austintexas.libanswers.com/\">Ask a Librarian</a>.</p><style>* {font-family: \"Source Sans Pro\", \"Helvetica\", \"Arial\", sans-serif;line-height: 1.3em;color: black !important;}.im, .deets {color: black !important;}</style>"
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

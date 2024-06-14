@@ -1,0 +1,19 @@
+uuid: 8b943e42-ac8d-4ab2-95dd-4ca9321a66a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.field_icon
+field_name: field_icon
+entity_type: node
+bundle: virtual_library_alert
+label: 'Custom Icon'
+description: 'Use any icon from this page: <a href="https://fonts.google.com/icons">https://fonts.google.com/icons</a> by adding the text label such as "lens_blur" here.<br>Leave this blank if you instead select an icon from the list above.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,67 @@
+uuid: dc055c40-6a74-45aa-8fba-99a92bfa9dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sales_events_page.body
+    - field.field.node.sales_events_page.feeds_item
+    - field.field.node.sales_events_page.field_main_image
+    - field.field.node.sales_events_page.field_se_gallery
+    - field.field.node.sales_events_page.field_se_section
+    - field.field.node.sales_events_page.layout_builder__layout
+    - node.type.sales_events_page
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          706dc0de-8240-41f1-9909-683dcc649f57:
+            uuid: 706dc0de-8240-41f1-9909-683dcc649f57
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_10'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.sales_events_page.teaser
+targetEntityType: node
+bundle: sales_events_page
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image: true
+  field_se_gallery: true
+  field_se_section: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

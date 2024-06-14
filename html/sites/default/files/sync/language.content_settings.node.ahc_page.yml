@@ -1,0 +1,18 @@
+uuid: 80da45bd-6ca8-4248-84fb-65bef8e4fc7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.ahc_page
+target_entity_type_id: node
+target_bundle: ahc_page
+default_langcode: site_default
+language_alterable: false

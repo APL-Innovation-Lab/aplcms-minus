@@ -1,0 +1,23 @@
+uuid: 9744646d-e1a9-4dc0-8ce6-76baa7b49ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive_id
+    - node.type.archives_index
+id: node.archives_index.field_archive_id
+field_name: field_archive_id
+entity_type: node
+bundle: archives_index
+label: ID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,30 @@
+uuid: 327ae6c1-dbe6-417e-afb4-520f499815b4
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: makefullwidth
+theme: claro2
+region: header
+weight: -17
+provider: null
+plugin: 'block_content:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+settings:
+  id: 'block_content:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+  label: 'make fullwidth'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/how-to/*'

@@ -1,0 +1,30 @@
+uuid: 101ae729-fd76-4da3-a29e-b6b75dc2283f
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:56ed027f-9a41-4a2d-bc0b-5ff2632bbf13'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: footer_2
+theme: uswds_base
+region: footer_secondary
+weight: 0
+provider: null
+plugin: 'block_content:56ed027f-9a41-4a2d-bc0b-5ff2632bbf13'
+settings:
+  id: 'block_content:56ed027f-9a41-4a2d-bc0b-5ff2632bbf13'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stage/*'

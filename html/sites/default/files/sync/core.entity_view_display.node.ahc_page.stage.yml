@@ -1,0 +1,121 @@
+uuid: e64586a1-c3fa-45a1-8272-fae3cb55ff42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.stage
+    - field.field.node.ahc_page.body
+    - field.field.node.ahc_page.feeds_item
+    - field.field.node.ahc_page.field_accordions
+    - field.field.node.ahc_page.field_bibliocommons_list_url
+    - field.field.node.ahc_page.field_body_bottom_
+    - field.field.node.ahc_page.field_booklist
+    - field.field.node.ahc_page.field_image_attribution_ahc
+    - field.field.node.ahc_page.field_main_image
+    - field.field.node.ahc_page.field_more_lists
+    - field.field.node.ahc_page.field_pdf
+    - field.field.node.ahc_page.field_postscript
+    - field.field.node.ahc_page.field_slideshow_ahc
+    - field.field.node.ahc_page.field_template
+    - field.field.node.ahc_page.field_video_ahc
+    - field.field.node.ahc_page.field_webform
+    - field.field.node.ahc_page.layout_builder__layout
+    - node.type.ahc_page
+    - views.view.ahc_page
+  module:
+    - file
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+    - webform
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          0c088d61-1ff8-4743-bf5d-ca67ab165859:
+            uuid: 0c088d61-1ff8-4743-bf5d-ca67ab165859
+            region: content
+            configuration:
+              id: 'views_block:ahc_page-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.ahc_page.stage
+targetEntityType: node
+bundle: ahc_page
+mode: stage
+content:
+  field_accordions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: first
+  field_bibliocommons_list_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: first
+  field_body_bottom_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: first
+  field_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 102
+    region: first
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_booklist: true
+  field_image_attribution_ahc: true
+  field_main_image: true
+  field_more_lists: true
+  field_postscript: true
+  field_slideshow_ahc: true
+  field_template: true
+  field_video_ahc: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

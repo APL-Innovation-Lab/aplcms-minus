@@ -1,0 +1,25 @@
+uuid: f8d7d389-52ab-421c-bef4-b37a207edeb9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accordions
+    - node.type.page
+id: node.page.field_accordions
+field_name: field_accordions
+entity_type: node
+bundle: page
+label: Accordions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: accordion_entity_ref
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

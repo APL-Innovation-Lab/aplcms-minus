@@ -1,0 +1,22 @@
+uuid: cae23211-3cb3-4215-947a-d3917fbb7413
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: _apltv_video
+label: /apltv/video
+type: 'canonical_entities:node'
+pattern: '/apltv/video/[node:nid]'
+selection_criteria:
+  79747d22-e815-4e39-9003-878eee335c9a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 79747d22-e815-4e39-9003-878eee335c9a
+    context_mapping:
+      node: node
+    bundles:
+      screen: screen
+selection_logic: and
+weight: -5
+relationships: {  }

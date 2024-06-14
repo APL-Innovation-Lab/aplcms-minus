@@ -1,0 +1,92 @@
+uuid: c7fdbb22-180e-4df5-a0f3-958851847b23
+langcode: eng
+status: true
+dependencies:
+  module:
+    - user
+id: user_add_role
+label: 'User - add role'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:user'
+processor_configuration:
+  values: {  }
+  langcode: eng
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  roles:
+    value: roles
+    label: roles
+    machine_name: roles
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      value: uid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: roles
+    map:
+      target_id: roles
+    settings:
+      reference_by: label
+      allowed_roles:
+        administrator: administrator
+        activity_editor: activity_editor
+        ahc_editor: ahc_editor
+        news_alerts_editor: news_alerts_editor
+        apl_site_content_editor: apl_site_content_editor
+        basic_page_editor: basic_page_editor
+        bookstore_editor: bookstore_editor
+        event_editor: event_editor
+        gift_shop_page_editor: gift_shop_page_editor
+        hero_editor: hero_editor
+        highlighted_images_editor: highlighted_images_editor
+        hours_dates_editor: hours_dates_editor
+        how_to_editor: how_to_editor
+        item_editor: item_editor
+        job_coach: job_coach
+        job_coach_administrator: job_coach_administrator
+        library_info_editor: library_info_editor
+        public_computer_page_editor: public_computer_page_editor
+        recommendation_editor: recommendation_editor
+        reflection_editor: reflection_editor
+        sales_events_editor: sales_events_editor
+        survey_editor: survey_editor
+        virtual_library_editor: virtual_library_editor
+        outreach: outreach
+        pio: pio
+        self_editor: self_editor
+        slr_tester: slr_tester
+        slr_admin: slr_admin
+        meeting_rooms_administrator: meeting_rooms_administrator
+        slr_internal: slr_internal
+        meeting_room_group_representative: meeting_room_group_representative
+        internal_group_representative: internal_group_representative
+      autocreate: 0
+      revoke_roles: 0

@@ -1,0 +1,31 @@
+uuid: a2dde5c4-5087-41d5-8862-e75429f251df
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.article
+    - taxonomy.vocabulary.alert_zone
+    - taxonomy.vocabulary.library_location
+id: node.article.field_locations
+field_name: field_locations
+entity_type: node
+bundle: article
+label: Locations
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alert_zone: alert_zone
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: alert_zone
+field_type: entity_reference

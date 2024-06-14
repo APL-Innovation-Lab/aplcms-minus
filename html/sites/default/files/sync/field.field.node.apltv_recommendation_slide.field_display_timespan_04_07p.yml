@@ -1,0 +1,26 @@
+uuid: 75fd903c-d78b-490b-a625-3283e1cbbd10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan_04_07p
+    - node.type.apltv_recommendation_slide
+  module:
+    - datetime_range
+id: node.apltv_recommendation_slide.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+6 months'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

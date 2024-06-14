@@ -1,0 +1,21 @@
+uuid: f986229b-6b98-4770-b5ab-aec5a7226eb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kids_block_party_category
+    - node.type.event
+  module:
+    - options
+id: node.event.field_kids_block_party_category
+field_name: field_kids_block_party_category
+entity_type: node
+bundle: event
+label: 'kids block party category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: bbd6a637-ed4f-4cae-a5f8-fc525d257a2a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attendingphysician
+    - node.type.oakwood
+id: node.oakwood.field_attendingphysician
+field_name: field_attendingphysician
+entity_type: node
+bundle: oakwood
+label: attendingphysician
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,51 @@
+uuid: 25b5c494-e980-47d8-9e08-bf0cc45e7e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours__
+    - node.type.open_hours
+  module:
+    - office_hours
+id: node.open_hours.field_open_hours__
+field_name: field_open_hours__
+entity_type: node
+bundle: open_hours
+label: 'Open Hours'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    day: 1
+    starthours: 900
+    endhours: 2000
+    comment: null
+  -
+    day: 2
+    starthours: 900
+    endhours: 2000
+    comment: null
+  -
+    day: 3
+    starthours: 900
+    endhours: 2000
+    comment: null
+  -
+    day: 4
+    starthours: 900
+    endhours: 2000
+    comment: null
+  -
+    day: 5
+    starthours: 900
+    endhours: 1700
+    comment: null
+  -
+    day: 6
+    starthours: 1000
+    endhours: 1700
+    comment: null
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

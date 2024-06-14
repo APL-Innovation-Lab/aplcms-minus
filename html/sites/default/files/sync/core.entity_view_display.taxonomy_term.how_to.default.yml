@@ -1,0 +1,79 @@
+uuid: 4ae3f9d9-2d0c-4107-91e6-dd9edbebfb03
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.how_to
+    - views.view.how_to
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          05b8982d-39ba-43f5-98a3-4918ba45ba69:
+            uuid: 05b8982d-39ba-43f5-98a3-4918ba45ba69
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:how_to:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5d0104b6-55ce-4a7c-9167-b7bda52bd61b:
+            uuid: 5d0104b6-55ce-4a7c-9167-b7bda52bd61b
+            region: content
+            configuration:
+              id: 'views_block:how_to-how'
+              label: 'How To'
+              label_display: '0'
+              provider: views
+              context_mapping:
+                field_howto_tags_target_id: layout_builder.entity
+              views_label: 'How To'
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.how_to.default
+targetEntityType: taxonomy_term
+bundle: how_to
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

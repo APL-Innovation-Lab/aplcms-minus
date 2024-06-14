@@ -1,0 +1,62 @@
+uuid: ebce2da6-f20f-4f55-ab86-43f5a77f833e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.database_subjects.description
+    - taxonomy.vocabulary.database_subjects
+  module:
+    - taxonomy
+id: database_subjects
+label: 'Database Subjects'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: database_subjects
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: full_html

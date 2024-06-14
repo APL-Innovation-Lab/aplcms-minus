@@ -1,0 +1,28 @@
+uuid: 3df2e2ef-4c17-4588-b128-fa2d3a5ff73c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template
+    - node.type.ahc_page
+    - taxonomy.vocabulary.templates
+id: node.ahc_page.field_template
+field_name: field_template
+entity_type: node
+bundle: ahc_page
+label: Template
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      templates: templates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_locations.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the community_resource_hub file to the sites/default/files folder.
+ */
+function migrate_community_resource_hub_install(): void {
+  // Create the community_resource_hub file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_community_resource_hub';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the .json file to the directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_community_resource_hub')->getPath();
+  $file_source = $module_path . '/artifacts/community-resource-hub.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/community-resource-hub.json', FileSystemInterface::EXISTS_REPLACE);
+}

@@ -1,0 +1,18 @@
+uuid: 665f09ea-7670-4aca-9ad4-c5840b6c3c79
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: oakwood
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

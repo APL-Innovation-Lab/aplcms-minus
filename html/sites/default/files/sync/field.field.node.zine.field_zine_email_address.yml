@@ -1,0 +1,19 @@
+uuid: 12e34516-4b64-4e7f-859f-746e1e2f1146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zine_email_address
+    - node.type.zine
+id: node.zine.field_zine_email_address
+field_name: field_zine_email_address
+entity_type: node
+bundle: zine
+label: 'Email Address / Dirección de Correo Electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

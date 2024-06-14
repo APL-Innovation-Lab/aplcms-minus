@@ -1,0 +1,147 @@
+uuid: da99b293-e873-414d-8e14-9fecf9eb6aa7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.user.user.feeds_item
+    - field.field.user.user.field_api_key
+    - field.field.user.user.field_division
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_locations
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.layout_builder__layout
+    - field.field.user.user.user_picture
+    - views.view.more_navigation
+    - views.view.navigation
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          eef2505a-903a-4992-a8f6-b6176df4f1c8:
+            uuid: eef2505a-903a-4992-a8f6-b6176df4f1c8
+            region: content
+            configuration:
+              id: 'views_block:navigation-block_16'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          646fcca7-915c-4542-b7eb-e6b5c4841707:
+            uuid: 646fcca7-915c-4542-b7eb-e6b5c4841707
+            region: content
+            configuration:
+              id: 'views_block:more_navigation-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          372a11d9-46d1-4a5f-a698-a48d5d40346a:
+            uuid: 372a11d9-46d1-4a5f-a698-a48d5d40346a
+            region: content
+            configuration:
+              id: 'views_block:more_navigation-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          957295cf-06fb-4777-8ac6-e805efd316ec:
+            uuid: 957295cf-06fb-4777-8ac6-e805efd316ec
+            region: content
+            configuration:
+              id: 'views_block:more_navigation-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_api_key:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: first
+  field_division:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_locations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: first
+  field_phone_number:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  layout_builder__layout: true
+  member_for: true
+  search_api_excerpt: true
+  user_picture: true

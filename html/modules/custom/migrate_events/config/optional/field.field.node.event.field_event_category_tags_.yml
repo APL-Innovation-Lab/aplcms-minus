@@ -1,0 +1,25 @@
+uuid: 774b9245-7ff9-4d97-b049-f1f5370ecb11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_category_tags_
+    - node.type.event
+id: node.event.field_event_category_tags_
+field_name: field_event_category_tags_
+entity_type: node
+bundle: event
+label: 'Event Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: event_categories
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

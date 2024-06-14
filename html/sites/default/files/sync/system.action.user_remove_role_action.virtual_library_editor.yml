@@ -1,0 +1,14 @@
+uuid: cce31183-8caf-474c-89b6-c9f2d95aff7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.virtual_library_editor
+  module:
+    - user
+id: user_remove_role_action.virtual_library_editor
+label: 'Remove the Virtual Library Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: virtual_library_editor

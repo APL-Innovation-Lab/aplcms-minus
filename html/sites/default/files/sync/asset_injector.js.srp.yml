@@ -1,0 +1,66 @@
+uuid: 5819edf3-6b36-479f-9e13-19300b96a969
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: srp
+label: SRP
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+  var k_slides = document.getElementsByClassName('views_slideshow_slide');
+  var m = 0;
+  var l = k_slides.length;
+  k_slides[m].classList.add('active');
+  	
+  $('.views_slideshow_controls_text_previous').click(function(e){
+  	k_slides[m].classList.remove('active');
+  	if(m > 0) {
+  		m--;
+  	} else {
+  		m = l - 1;
+  	}
+  	e.preventDefault();
+  	k_slides[m].classList.add('active');
+  	
+  });
+  	
+  $('.views_slideshow_controls_text_next').click(function(e){
+  	k_slides[m].classList.remove('active');
+  	if(m < (l - 1)) {
+  		m++;
+  	} else {
+  		m = 0;
+  	}
+  	e.preventDefault();
+  	k_slides[m].classList.add('active');
+  	
+  });
+  	
+  	
+  	
+  	
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/srp\r\n/srp/*\r\n/srp/children"
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      srp_activity: srp_activity
+contexts: {  }
+conditions_require_all: false

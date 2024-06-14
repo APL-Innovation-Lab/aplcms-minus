@@ -1,0 +1,19 @@
+uuid: 6b2d446d-6e2d-4855-8c45-30a76e45444a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ac
+    - node.type.slr
+id: node.slr.field_ac
+field_name: field_ac
+entity_type: node
+bundle: slr
+label: AC
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

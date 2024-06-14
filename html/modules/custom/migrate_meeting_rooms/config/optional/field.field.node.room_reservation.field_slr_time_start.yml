@@ -1,0 +1,21 @@
+uuid: 86d2c32e-8d72-40b7-ace5-e594e9094809
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.room_reservation
+  module:
+    - datetime
+id: node.room_reservation.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: room_reservation
+label: 'Time Start'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

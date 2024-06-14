@@ -1,0 +1,21 @@
+uuid: f5dc92ab-c5a8-4478-8cfd-be084627369e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_formats
+    - node.type.apl_item
+  module:
+    - options
+id: node.apl_item.field_other_formats
+field_name: field_other_formats
+entity_type: node
+bundle: apl_item
+label: 'Other Formats'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

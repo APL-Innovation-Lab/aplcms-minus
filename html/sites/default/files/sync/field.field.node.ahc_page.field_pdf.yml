@@ -1,0 +1,27 @@
+uuid: d282e97c-ff65-4f83-be6d-cd8300b1d146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf
+    - node.type.ahc_page
+  module:
+    - file
+id: node.ahc_page.field_pdf
+field_name: field_pdf
+entity_type: node
+bundle: ahc_page
+label: PDF
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ahc/supplemental
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

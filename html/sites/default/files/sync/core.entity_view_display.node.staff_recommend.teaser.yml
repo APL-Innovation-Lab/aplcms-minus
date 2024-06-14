@@ -1,0 +1,30 @@
+uuid: e5b4e6be-47bd-4a1a-8b06-418d27fcc162
+langcode: eng
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_recommend.field_biblio_list_urls
+    - field.field.node.staff_recommend.field_recommend_tags
+    - field.field.node.staff_recommend.field_sr_audience
+    - field.field.node.staff_recommend.layout_builder__layout
+    - node.type.staff_recommend
+  module:
+    - user
+id: node.staff_recommend.teaser
+targetEntityType: node
+bundle: staff_recommend
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_biblio_list_urls: true
+  field_recommend_tags: true
+  field_sr_audience: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

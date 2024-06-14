@@ -1,0 +1,11 @@
+uuid: a858d404-ffb1-49c1-9c0f-8f80fe4cd97c
+langcode: eng
+status: true
+dependencies: {  }
+id: toggle_spanish_english
+label: 'a.apl-language Translation Toggle'
+description:
+  value: "<p>A text link to a translation of the current page. Use the English button on Spanish pages and vice versa.</p>\r\n"
+  format: full_html
+pattern: "<a class=\"apl-language\" href=\"/es/node/1\">español</a>\r\n<a class=\"apl-language\" href=\"/node/1\">English</a>"
+weight: 1

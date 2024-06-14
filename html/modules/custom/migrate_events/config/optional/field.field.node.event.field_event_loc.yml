@@ -1,0 +1,25 @@
+uuid: 25027ba3-5168-4f87-9385-9cd461fff2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_loc
+    - node.type.event
+id: node.event.field_event_loc
+field_name: field_event_loc
+entity_type: node
+bundle: event
+label: 'Event Location'
+description: 'Please select the location where the event will take place. <em>This is one of the easiest places to make a critical mistake, so double check to make sure that the location is correct.</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: apl_locations
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

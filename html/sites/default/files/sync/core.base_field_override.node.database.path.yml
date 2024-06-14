@@ -1,0 +1,20 @@
+uuid: c334fa84-155d-4633-a960-aae18cced85b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.database
+  module:
+    - path
+id: node.database.path
+field_name: path
+entity_type: node
+bundle: database
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

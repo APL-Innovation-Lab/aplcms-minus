@@ -1,0 +1,18 @@
+uuid: 10e726d1-0629-4363-80d1-0f7667955b72
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_time
+id: taxonomy_term.staff_time.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: staff_time
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

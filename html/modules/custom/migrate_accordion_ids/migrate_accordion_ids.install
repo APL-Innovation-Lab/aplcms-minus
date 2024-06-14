@@ -1,0 +1,29 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Install, update, and uninstall functions for migrate_accordion_ids.
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Copies the files to the sites/default/files folder.
+ */
+function migrate_accordion_ids_install(): void {
+  // Create the accordions file directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_accordion_ids';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  // Copy the accordion files to migrate_accordion_ids directory.
+  // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
+  // require Drupal > 9.3.0.
+  $module_path = \Drupal::moduleHandler()->getModule('migrate_accordion_ids')->getPath();
+  $files = ['accordion_ids_es.json', 'accordion_ids_en.json'];
+  foreach ($files as $file) {
+    $file_source = $module_path . '/artifacts/' . $file;
+    \Drupal::service('file_system')->copy($file_source, $directory . '/' . $file, FileSystemInterface::EXISTS_REPLACE);
+  }
+}

@@ -1,0 +1,14 @@
+uuid: 9c804b08-5d22-4d65-9e1d-f2c3a80892ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.public_computer_page_editor
+  module:
+    - user
+id: user_remove_role_action.public_computer_page_editor
+label: 'Remove the Public Computer Page Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: public_computer_page_editor

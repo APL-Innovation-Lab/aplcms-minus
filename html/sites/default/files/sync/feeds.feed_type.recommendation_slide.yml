@@ -1,0 +1,315 @@
+uuid: c59ed476-20b8-4141-9a1b-79f5c12bff0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.apltv_recommendation_slide.created
+    - core.base_field_override.node.apltv_recommendation_slide.title
+    - core.base_field_override.node.apltv_recommendation_slide.uid
+    - field.field.node.apltv_recommendation_slide.field_display_timespan_04_07p
+    - field.field.node.apltv_recommendation_slide.field_exclude_from_we_recommend
+    - field.field.node.apltv_recommendation_slide.field_intended_audience_2016i
+    - field.field.node.apltv_recommendation_slide.field_rec_introduction
+    - field.field.node.apltv_recommendation_slide.field_rec_items
+    - field.field.node.apltv_recommendation_slide.field_rec_subtitle
+    - field.field.node.apltv_recommendation_slide.field_rec_theme
+    - field.field.node.apltv_recommendation_slide.field_screenshot
+    - field.field.node.apltv_recommendation_slide.field_template_type
+    - field.field.node.apltv_recommendation_slide.field_web_category_2
+    - node.type.apltv_recommendation_slide
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      3deb48aa-e985-48a6-b83e-50b1759f2ab3:
+        separator: ','
+        limit: null
+        uuid: 3deb48aa-e985-48a6-b83e-50b1759f2ab3
+        plugin: explode
+        source: field_intended_audience_2016i
+        weight: 0
+        label: Explode
+      16b84bec-1f65-4dd2-a87a-d2b04fba79d5:
+        character: ''
+        side: trim
+        uuid: 16b84bec-1f65-4dd2-a87a-d2b04fba79d5
+        plugin: trim
+        source: field_intended_audience_2016i
+        weight: 1
+        label: 'Characters to trim'
+      9cd94a24-2615-4392-9b7d-1e7bda06b58f:
+        separator: ','
+        limit: null
+        uuid: 9cd94a24-2615-4392-9b7d-1e7bda06b58f
+        plugin: explode
+        source: field_rec_items
+        weight: 0
+        label: Explode
+      11bd9916-63ec-4297-b9e3-d522ef16eeae:
+        character: ''
+        side: trim
+        uuid: 11bd9916-63ec-4297-b9e3-d522ef16eeae
+        plugin: trim
+        source: field_rec_items
+        weight: 1
+        label: 'Characters to trim'
+      a57016fe-b170-485d-a1ef-1897d2a1221e:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: a57016fe-b170-485d-a1ef-1897d2a1221e
+        plugin: find_replace_regex
+        source: field_screenshot
+        weight: 0
+        label: 'Find replace REGEX'
+      6520db8b-8f23-4547-b088-2ed29e82d890:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 6520db8b-8f23-4547-b088-2ed29e82d890
+        plugin: find_replace_regex
+        source: field_screenshot
+        weight: 1
+        label: 'Find replace REGEX'
+      6c600edd-af29-4b99-852d-079b95ff63f1:
+        text: eng
+        uuid: 6c600edd-af29-4b99-852d-079b95ff63f1
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: recommendation_slide
+label: 'Recommendation Slide'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: apltv_recommendation_slide
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  field_template_type:
+    value: field_template_type
+    label: field_template_type
+    machine_name: field_template_type
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_intended_audience_2016i:
+    value: field_intended_audience_2016i
+    label: field_intended_audience_2016i
+    machine_name: field_intended_audience_2016i
+    type: csv
+  field_rec_theme:
+    value: field_rec_theme
+    label: field_rec_theme
+    machine_name: field_rec_theme
+    type: csv
+  field_display_timespan:
+    value: field_display_timespan
+    label: field_display_timespan
+    machine_name: field_display_timespan
+    type: csv
+  field_display_timespan2:
+    value: field_display_timespan2
+    label: field_display_timespan2
+    machine_name: field_display_timespan2
+    type: csv
+  field_exclude_from_we_recommend:
+    value: field_exclude_from_we_recommend
+    label: field_exclude_from_we_recommend
+    machine_name: field_exclude_from_we_recommend
+    type: csv
+  field_rec_introduction:
+    value: field_rec_introduction
+    label: field_rec_introduction
+    machine_name: field_rec_introduction
+    type: csv
+  field_rec_items:
+    value: field_rec_items
+    label: field_rec_items
+    machine_name: field_rec_items
+    type: csv
+  field_screenshot:
+    value: field_screenshot
+    label: field_screenshot
+    machine_name: field_screenshot
+    type: csv
+  field_rec_subtitle:
+    value: field_rec_subtitle
+    label: field_rec_subtitle
+    machine_name: field_rec_subtitle
+    type: csv
+  '':
+    value: field_template_type
+    label: field_template_type
+    machine_name: ''
+    type: csv
+  field_template_type2:
+    value: field_template_type
+    label: field_template_type
+    machine_name: field_template_type2
+    type: csv
+  field_web_category_2:
+    value: field_web_category_2
+    label: field_web_category_2
+    machine_name: field_web_category_2
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  created:
+    value: created
+    label: created
+    machine_name: created
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_intended_audience_2016i
+    map:
+      target_id: field_intended_audience_2016i
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_rec_theme
+    map:
+      value: field_rec_theme
+    settings:
+      language: ''
+  -
+    target: field_display_timespan_04_07p
+    map:
+      value: field_display_timespan
+      end_value: field_display_timespan2
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_exclude_from_we_recommend
+    map:
+      value: field_exclude_from_we_recommend
+    settings:
+      language: ''
+  -
+    target: field_rec_introduction
+    map:
+      value: field_rec_introduction
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_rec_items
+    map:
+      target_id: field_rec_items
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_screenshot
+    map:
+      target_id: field_screenshot
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_rec_subtitle
+    map:
+      value: field_rec_subtitle
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_template_type
+    map:
+      value: field_template_type2
+    settings:
+      language: ''
+  -
+    target: field_web_category_2
+    map:
+      target_id: field_web_category_2
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC

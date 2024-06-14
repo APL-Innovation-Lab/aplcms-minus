@@ -1,0 +1,21 @@
+uuid: ec19b528-02ec-45e7-b42c-263fc133d676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.sales_events_page
+  module:
+    - layout_builder
+id: node.sales_events_page.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: sales_events_page
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

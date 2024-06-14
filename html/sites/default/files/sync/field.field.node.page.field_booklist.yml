@@ -1,0 +1,23 @@
+uuid: 5a1a1386-05dc-4551-a3e3-6079946cfc76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booklist
+    - node.type.page
+id: node.page.field_booklist
+field_name: field_booklist
+entity_type: node
+bundle: page
+label: 'Booklist ID Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

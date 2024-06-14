@@ -1,0 +1,29 @@
+uuid: 0e484ee8-0237-4ac2-96ab-1c6b412f1e5c
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__sections_block_2
+theme: claro2
+region: content_footer
+weight: -22
+provider: null
+plugin: 'views_block:sections-block_2'
+settings:
+  id: 'views_block:sections-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/add/*\r\n/admin/*\r\n/passport/*\r\n/special/*\r\n/sequence/*\r\n/apltv/*"

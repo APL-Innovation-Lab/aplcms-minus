@@ -1,0 +1,24 @@
+uuid: 96440abe-8894-425a-b53d-0dab1d5240ef
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.apltv_scheduled_sequence
+  module:
+    - datetime
+id: node.apltv_scheduled_sequence.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: 'Time Start'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

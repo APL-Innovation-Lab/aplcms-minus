@@ -1,0 +1,18 @@
+uuid: 1e3ff3a3-c5a9-4b57-b230-edeaeff6a450
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.room_reservation
+target_entity_type_id: node
+target_bundle: room_reservation
+default_langcode: site_default
+language_alterable: false

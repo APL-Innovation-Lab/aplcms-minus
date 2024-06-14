@@ -1,0 +1,8 @@
+uuid: 23b03942-f4a4-4b55-aff3-4d5749798454
+langcode: en
+status: true
+dependencies: {  }
+name: Partners
+vid: partners
+description: ''
+weight: -6

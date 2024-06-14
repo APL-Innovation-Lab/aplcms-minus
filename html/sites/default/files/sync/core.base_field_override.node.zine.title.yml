@@ -1,0 +1,18 @@
+uuid: 298d48aa-1f52-4ba0-b7b2-6e6d3b6a1ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.title
+field_name: title
+entity_type: node
+bundle: zine
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

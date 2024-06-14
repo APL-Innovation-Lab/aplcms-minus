@@ -1,0 +1,18 @@
+uuid: 67db059f-45ec-42de-95d4-ea9c72dee3e4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.publish_on
+field_name: publish_on
+entity_type: node
+bundle: slr_alert
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

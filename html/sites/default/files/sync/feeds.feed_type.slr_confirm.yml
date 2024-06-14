@@ -1,0 +1,140 @@
+uuid: eaeed11f-3ef5-44c8-b9ff-1ebe5fbd92c4
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.slr.unpublish_on
+    - field.field.node.slr.field_ac
+    - field.field.node.slr.field_request_status
+    - node.type.slr
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      be2b3320-4a72-4dd5-b5b9-ef2b88275660:
+        text: '2'
+        uuid: be2b3320-4a72-4dd5-b5b9-ef2b88275660
+        plugin: rewrite
+        source: _status_
+        weight: 0
+        label: Rewrite
+      fdf582a8-d71b-4456-a218-5942e3345f6e:
+        date_format: U
+        uuid: fdf582a8-d71b-4456-a218-5942e3345f6e
+        plugin: timetodate
+        source: _ac_
+        weight: 1
+        label: 'Unix timestamp to Date'
+      b249ceb9-a476-4c02-896d-43b3dbb0a413:
+        uuid: b249ceb9-a476-4c02-896d-43b3dbb0a413
+        plugin: strtotime
+        source: _publish
+        weight: -9
+        label: 'String to Unix Timestamp'
+      3c374a79-de83-4684-9258-cdb39ccd1bb1:
+        text: '2030-01-31'
+        uuid: 3c374a79-de83-4684-9258-cdb39ccd1bb1
+        plugin: rewrite
+        source: _publish
+        weight: -10
+        label: Rewrite
+id: slr_confirm
+label: 'SLR Confirm'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: slr
+  langcode: eng
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _nid:
+    value: .//nid
+    label: .//nid
+    machine_name: _nid
+    type: json
+  _status:
+    value: .//status
+    label: .//status
+    machine_name: _status
+    type: json
+  _ac:
+    value: .//ac
+    label: .//ac
+    machine_name: _ac
+    type: json
+  _nid_:
+    value: $.nid
+    label: $.nid
+    machine_name: _nid_
+    type: json
+  _status_:
+    value: $.status
+    label: $.status
+    machine_name: _status_
+    type: json
+  _ac_:
+    value: $.ac
+    label: $.ac
+    machine_name: _ac_
+    type: json
+  _publish:
+    value: $.publish
+    label: $.publish
+    machine_name: _publish
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: _nid_
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_request_status
+    map:
+      value: _status_
+    settings:
+      language: eng
+  -
+    target: field_ac
+    map:
+      value: _ac_
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: unpublish_on
+    map:
+      value: _publish
+    settings:
+      language: null
+      timezone: UTC

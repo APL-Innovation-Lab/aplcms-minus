@@ -1,0 +1,23 @@
+uuid: 9d183e65-6f84-4401-9c76-382a82b8d392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booklist
+    - node.type.activity
+id: node.activity.field_booklist
+field_name: field_booklist
+entity_type: node
+bundle: activity
+label: 'Biblio Booklist ID '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

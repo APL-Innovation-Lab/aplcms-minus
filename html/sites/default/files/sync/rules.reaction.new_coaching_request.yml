@@ -1,0 +1,81 @@
+uuid: 37766a04-e2ae-4960-a31f-5fe6f98a494d
+langcode: en
+status: true
+dependencies: {  }
+id: new_coaching_request
+label: 'New Coaching Request'
+events:
+  -
+    event_name: 'rules_entity_insert:node--job_portal_assistance_request'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 170226bd-6434-4195-be67-30c06cd8d8ff
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d329030f-a9f0-4d99-aa92-91b6dab2a448
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 5290fba5-430a-4f93-9cd1-e85924b3dfd6
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 15021f3d-0c4c-4481-a214-377fc38b8b22
+        weight: -50
+        action_id: rules_page_redirect
+        context_values:
+          url: /jobportal
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 445c11a7-904b-410f-b9bf-addc0b33fe52
+        weight: -49
+        action_id: rules_system_message
+        context_values:
+          message: 'A Job Coach will contact you within the next 1-2 business days to schedule a coaching session.'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: dede3ea8-40b3-4be5-b82b-b3f13609944c
+        weight: -48
+        action_id: rules_send_email
+        context_values:
+          to:
+            - jace.furches@austintexas.gov
+          subject: 'New Coaching Request: {{node.title}}'
+          message: "New Job Coaching Request: {{node.title}}<br>\r\n<br>\r\nSee requests at:<br>\r\nhttps://library.austintexas.gov/admin/job-coaching-requests"
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

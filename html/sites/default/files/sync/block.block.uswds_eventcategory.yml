@@ -1,0 +1,28 @@
+uuid: 04c351cd-bcb3-423a-bbf4-8592e8b1dc47
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet._cat_
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_eventcategory
+theme: uswds
+region: content
+weight: -14
+provider: null
+plugin: 'facet_block:_cat_'
+settings:
+  id: 'facet_block:_cat_'
+  label: 'Event Type'
+  label_display: visible
+  provider: facets
+  block_id: eventcategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

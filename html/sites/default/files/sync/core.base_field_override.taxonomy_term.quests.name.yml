@@ -1,0 +1,18 @@
+uuid: 012d0eb4-b5aa-4b1d-ac79-a1594abb7e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.quests
+id: taxonomy_term.quests.name
+field_name: name
+entity_type: taxonomy_term
+bundle: quests
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

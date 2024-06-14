@@ -1,0 +1,20 @@
+uuid: a3ba00cf-4ba7-47e3-ad24-43aa53740c5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acys_list_categories
+  module:
+    - path
+id: taxonomy_term.acys_list_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: acys_list_categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

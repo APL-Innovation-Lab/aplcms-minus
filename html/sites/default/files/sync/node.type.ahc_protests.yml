@@ -1,0 +1,17 @@
+uuid: 26f065af-9814-4704-878b-8c9769f2c211
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'AHC Protests'
+type: ahc_protests
+description: ''
+help: 'If you don’t have any additional photos to upload, click “Save”'
+new_revision: false
+preview_mode: 1
+display_submitted: false

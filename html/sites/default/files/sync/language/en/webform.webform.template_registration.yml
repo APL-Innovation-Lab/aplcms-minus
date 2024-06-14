@@ -1,0 +1,49 @@
+title: Registration
+description: 'A registration webform template.'
+elements: |
+  personal_information:
+    '#title': 'Your Personal Information'
+    '#type': webform_section
+    first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    last_name:
+      '#title': 'Last Name'
+      '#type': textfield
+      '#required': true
+  contact_information:
+    '#title': 'Your Contact Information'
+    '#type': webform_section
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#title_display': invisible
+      '#name__access': false
+      '#company__access': false
+  mailinglist:
+    '#title': 'Mailing List'
+    '#type': webform_section
+    subscribe:
+      '#title': 'Please subscribe me to your mailing list.'
+      '#type': checkbox
+  additional_information:
+    '#title': 'Additional Information'
+    '#type': webform_section
+    '#open': true
+    notes:
+      '#title': Comments
+      '#type': textarea
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Register
+settings:
+  confirmation_message: 'Thank you for registering.'
+handlers:
+  email_notification:
+    label: 'Email Notification'
+    settings:
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default

@@ -1,0 +1,47 @@
+uuid: 509a7952-b779-4cb8-b011-a8a2c558d1d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: job_portal_coaching_request_
+label: 'Job Portal Coaching Request '
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+
+
+  $('#node-job-portal-assistance-request-form').change(function(){
+  	selected_value = $("input[name='field_i_prefer_to_be_contacted_b']:checked").val();
+
+  	if(selected_value == '0') {
+  		$('#edit-field-jp-email-wrapper').css('display','none');
+  		$('#edit-field-jp-phone-wrapper').css('display','block');
+  	} else {
+  		$('#edit-field-jp-email-wrapper').css('display','block');
+  		$('#edit-field-jp-phone-wrapper').css('display','none');
+  	};
+  	
+  	
+  });  
+
+
+     
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      job_portal_assistance_request: job_portal_assistance_request
+contexts: {  }
+conditions_require_all: true

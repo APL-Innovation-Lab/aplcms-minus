@@ -1,0 +1,18 @@
+uuid: 4333fab2-29eb-431d-a93a-6af10bdbb8c9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: atxyz
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

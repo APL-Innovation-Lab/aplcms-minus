@@ -1,0 +1,29 @@
+uuid: 44672a54-5e15-46e0-a5a6-4446c30f03d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.alerts
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__alerts_block_2
+theme: claro2noGA
+region: header
+weight: -23
+provider: null
+plugin: 'views_block:alerts-block_2'
+settings:
+  id: 'views_block:alerts-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/virtual\r\n/virtual/*"

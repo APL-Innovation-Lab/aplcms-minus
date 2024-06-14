@@ -1,0 +1,29 @@
+uuid: 3771bfff-4682-4191-8122-c5c4019852a5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.apltv_channel
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__apltv_channel_block_5
+theme: claro2
+region: content
+weight: -18
+provider: null
+plugin: 'views_block:apltv_channel-block_5'
+settings:
+  id: 'views_block:apltv_channel-block_5'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/apl-tv/branch/*'

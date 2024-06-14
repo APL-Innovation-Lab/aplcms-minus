@@ -1,0 +1,23 @@
+uuid: 897f0434-a12e-4469-8176-bc027062044a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_type
+    - node.type.apltv_recommendation_slide
+  module:
+    - options
+id: node.apltv_recommendation_slide.field_template_type
+field_name: field_template_type
+entity_type: node
+bundle: apltv_recommendation_slide
+label: 'Template Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Highlighted
+default_value_callback: ''
+settings: {  }
+field_type: list_string

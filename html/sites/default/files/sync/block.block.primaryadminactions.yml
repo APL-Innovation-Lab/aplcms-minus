@@ -1,0 +1,28 @@
+uuid: 3cdd6f69-e38b-4609-8142-95b6d54f1ff8
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - aplpa
+id: primaryadminactions
+theme: aplpa
+region: footer_secondary
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: visible
+  provider: core
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+      en: en

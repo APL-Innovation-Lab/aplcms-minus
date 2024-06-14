@@ -1,0 +1,37 @@
+uuid: 982aa48c-13a9-4a82-8cdc-9f2b2d6a668a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.hero_banner_image
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__hero_banner_image_block_1
+theme: claro2noGA
+region: header
+weight: -35
+provider: null
+plugin: 'views_block:hero_banner_image-block_1'
+settings:
+  id: 'views_block:hero_banner_image-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hero_editor: hero_editor

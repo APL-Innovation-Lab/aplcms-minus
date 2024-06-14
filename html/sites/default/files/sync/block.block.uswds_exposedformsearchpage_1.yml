@@ -1,0 +1,28 @@
+uuid: ac204e23-87e1-4d25-992c-8a838c648549
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - uswds
+id: uswds_exposedformsearchpage_1
+theme: uswds
+region: header
+weight: -16
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/search-website*"

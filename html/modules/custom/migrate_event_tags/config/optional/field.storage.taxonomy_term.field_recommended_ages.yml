@@ -1,0 +1,54 @@
+uuid: deee039a-4224-4bf9-b7f1-ec6ca94dfd14
+langcode: und
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_recommended_ages
+field_name: field_recommended_ages
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: all
+      label: 'All ages welcome'
+    -
+      value: youth1
+      label: 'Recommended for ages 18 months to 3 years'
+    -
+      value: youth2
+      label: 'Recommended for ages 3 and up'
+    -
+      value: youth3
+      label: 'Recommended for ages 3-5'
+    -
+      value: youth4
+      label: 'Recommended for ages 5 and under'
+    -
+      value: youth5
+      label: 'Recommended for ages 5 and up'
+    -
+      value: youth6
+      label: 'Recommended for ages 5-10'
+    -
+      value: youth7
+      label: 'Recommended for ages 8-12'
+    -
+      value: youth8
+      label: 'Recommended for ages 13-18'
+    -
+      value: youth9
+      label: 'Teens 13-18 only'
+    -
+      value: adult
+      label: 'Adults only'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

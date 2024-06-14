@@ -1,0 +1,18 @@
+uuid: 47428d1f-399e-4fe4-9a68-befcf20deed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_access
+id: taxonomy_term.database_access.name
+field_name: name
+entity_type: taxonomy_term
+bundle: database_access
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

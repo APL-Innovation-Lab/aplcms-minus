@@ -1,0 +1,18 @@
+uuid: c100d33d-870d-42da-bfee-aac3b6eede27
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item
+id: node.apl_item.created
+field_name: created
+entity_type: node
+bundle: apl_item
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

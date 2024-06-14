@@ -1,0 +1,7 @@
+#babies .details img,
+#kids .details img,
+#tweens .details img,
+#teens .details img,
+#adults .details img {
+	float: right;
+}

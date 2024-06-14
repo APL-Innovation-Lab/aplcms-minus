@@ -1,0 +1,30 @@
+uuid: fbef0132-622f-48f5-9309-536a39e3c1fd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8f121741-7674-4db5-8396-2a590a20458f'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: slrhelp
+theme: claro2
+region: content
+weight: -33
+provider: null
+plugin: 'block_content:8f121741-7674-4db5-8396-2a590a20458f'
+settings:
+  id: 'block_content:8f121741-7674-4db5-8396-2a590a20458f'
+  label: 'SLR help'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/add/slr

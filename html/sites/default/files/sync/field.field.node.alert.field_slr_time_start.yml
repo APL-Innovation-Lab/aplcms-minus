@@ -1,0 +1,21 @@
+uuid: d1b33342-156a-4b76-b971-6395dc999437
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.alert
+  module:
+    - datetime
+id: node.alert.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: alert
+label: 'Time Start'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

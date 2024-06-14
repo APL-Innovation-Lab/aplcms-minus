@@ -1,0 +1,30 @@
+uuid: d90cccaa-af3b-4fc9-906c-0d2347c5a0d0
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:19a97cef-3482-447b-9796-985a84212d0c'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro
+id: meetingroomreservationhelp_2
+theme: claro
+region: header
+weight: -3
+provider: null
+plugin: 'block_content:19a97cef-3482-447b-9796-985a84212d0c'
+settings:
+  id: 'block_content:19a97cef-3482-447b-9796-985a84212d0c'
+  label: 'Meeting Room Reservation Help'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/add/room_reservation

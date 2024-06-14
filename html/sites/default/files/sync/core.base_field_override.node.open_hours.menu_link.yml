@@ -1,0 +1,20 @@
+uuid: 9fea1ad3-699f-45de-8c3f-3b5d955e871c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.menu_link
+field_name: menu_link
+entity_type: node
+bundle: open_hours
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

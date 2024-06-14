@@ -1,0 +1,162 @@
+langcode: en
+status: true
+id: migrate_digital_resources
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: digital_resources
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_digital_resources/digital_resources.json'
+  item_selector: database
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: field_database_access
+      selector: db_access
+    -
+      name: field_database_category
+      selector: db_cat
+    -
+      name: field_database_subjects
+      selector: db_subjects
+    -
+      name: field_former_product_names
+      selector: former_names
+    -
+      name: body
+      selector: body
+    -
+      name: summary
+      selector: summary
+    -
+      name: field_grade_level
+      selector: grade
+    -
+      name: field_associated_file
+      selector: file
+    -
+      name: field_help_text
+      selector: help
+    -
+      name: field_intended_audience
+      selector: audience
+    -
+      name: field_database_link
+      selector: link
+    -
+      name: field_product_names
+      selector: names
+    -
+      name: field_promoted
+      selector: promoted
+    -
+      name: status
+      selector: status
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: database
+  nid: nid
+  title:
+    -
+      plugin: callback
+      callable: html_entity_decode
+      source: title
+  field_database_access:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_database_access
+    -
+      plugin: explode
+      source: field_database_access
+      delimiter: ','
+  field_grade_level: field_grade_level
+  field_former_product_names:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_former_product_names
+    -
+      plugin: explode
+      source: field_former_product_names
+      delimiter: ','
+  body/value: body
+  body/summary: summary
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  field_database_link: field_database_link
+  field_product_names:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_product_names
+    -
+      plugin: explode
+      source: field_product_names
+      delimiter: ','
+  field_intended_audience:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_intended_audience
+    -
+      plugin: explode
+      source: field_intended_audience
+      delimiter: ','
+  field_help_text/value: field_help_text  
+  field_help_text/format:
+    plugin: default_value
+    default_value: full_html
+  field_associated_file: field_associated_file
+  field_database_types:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_database_types
+    -
+      plugin: explode
+      source: field_database_types
+      delimiter: ','
+  field_database_subjects:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_database_subjects
+    -
+      plugin: explode
+      source: field_database_subjects
+      delimiter: ','
+  field_database_category:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_database_category
+    -
+      plugin: explode
+      source: field_database_category
+      delimiter: ','
+  field_promoted: field_promoted
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+  status: status
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

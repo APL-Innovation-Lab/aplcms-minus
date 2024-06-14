@@ -1,0 +1,57 @@
+uuid: 90ac2447-f486-4bf4-afcb-0a67fd720fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - system
+id: search
+label: search
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() { 
+
+  var catalog_action = 'https://austin.bibliocommons.com/v2/search?query=';
+  var website_action = '/search-website?search=';
+
+
+  $( "#apl_search" ).submit(function( event ) {
+    event.preventDefault();
+  	var radio_opt = $("input[name='apl_search_opt']:checked").val();
+  	var search_term = $('#apl_search_input').val();
+
+
+    if(radio_opt == 'catalog') {
+  	which_search = catalog_action;
+    } else {
+  	which_search = website_action;
+    }
+    window.location.href = which_search + search_term;
+  });
+  	
+  	
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/*\r\n/ahc/*"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      eng: eng
+  current_theme:
+    id: current_theme
+    negate: true
+    theme: aplpa
+contexts: {  }
+conditions_require_all: true

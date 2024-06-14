@@ -1,0 +1,23 @@
+uuid: 73fca713-3859-4286-9b30-818be9aeb3c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_services_outreac
+    - node.type.event
+id: node.event.field_community_services_outreac
+field_name: field_community_services_outreac
+entity_type: node
+bundle: event
+label: 'Community Services Outreach'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

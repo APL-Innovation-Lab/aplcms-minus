@@ -1,0 +1,14 @@
+uuid: 46e250c9-4ddf-483d-af5d-0e1eb02c017d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.basic_page_editor
+  module:
+    - user
+id: user_add_role_action.basic_page_editor
+label: 'Add the Basic Page Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: basic_page_editor

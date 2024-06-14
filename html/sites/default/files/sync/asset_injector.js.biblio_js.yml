@@ -1,0 +1,28 @@
+uuid: c535a639-e19d-40b9-8486-9a550c2a6f85
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+id: biblio_js
+label: 'Biblio JS'
+code: |-
+  (function(){var e=document.createElement("script");
+  e.src="https://austin.bibliocommons.com/javascripts/sdk.js";
+  e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+      en: en
+contexts: {  }
+conditions_require_all: true

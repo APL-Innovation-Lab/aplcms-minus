@@ -1,0 +1,14 @@
+uuid: 94dde85b-71d5-43f5-b722-8cbf29b1d8c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sales_events_editor
+  module:
+    - user
+id: user_remove_role_action.sales_events_editor
+label: 'Remove the Sales &amp; Events Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: sales_events_editor

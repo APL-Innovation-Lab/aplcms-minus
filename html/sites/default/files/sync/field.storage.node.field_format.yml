@@ -1,0 +1,81 @@
+uuid: c6b097e2-d4a0-4946-9ffc-d8d0c0be1a38
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format
+field_name: field_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Not Specified'
+      label: 'Not Specified'
+    -
+      value: 'Blu-ray Disc'
+      label: 'Blu-ray Disc'
+    -
+      value: 'Book on CD'
+      label: 'Book on CD'
+    -
+      value: Book-fiction
+      label: Book-fiction
+    -
+      value: 'Book-graphic novel'
+      label: 'Book-graphic novel'
+    -
+      value: 'Book-large type'
+      label: 'Book-large type'
+    -
+      value: Book-nonfiction
+      label: Book-nonfiction
+    -
+      value: Book-picture
+      label: Book-picture
+    -
+      value: DVD
+      label: DVD
+    -
+      value: eAudiobook-fiction
+      label: eAudiobook-fiction
+    -
+      value: eAudiobook-nonfiction
+      label: eAudiobook-nonfiction
+    -
+      value: eBook-fiction
+      label: eBook-fiction
+    -
+      value: eBook-nonfiction
+      label: eBook-nonfiction
+    -
+      value: eMusic
+      label: eMusic
+    -
+      value: eVideo
+      label: eVideo
+    -
+      value: ePeriodical
+      label: ePeriodical
+    -
+      value: eNewspaper
+      label: eNewspaper
+    -
+      value: 'Music CD'
+      label: 'Music CD'
+    -
+      value: Periodical/Newspaper
+      label: Periodical/Newspaper
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

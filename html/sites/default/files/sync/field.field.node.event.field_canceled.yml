@@ -1,0 +1,23 @@
+uuid: 6ceeb23e-eea7-45e1-b4d9-389d5bf5ac16
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_canceled
+    - node.type.event
+id: node.event.field_canceled
+field_name: field_canceled
+entity_type: node
+bundle: event
+label: Canceled
+description: 'If your event is more than a 1 week in the future, please click the unpublish link.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

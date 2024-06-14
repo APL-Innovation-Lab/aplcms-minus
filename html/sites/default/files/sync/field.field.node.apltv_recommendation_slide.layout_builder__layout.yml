@@ -1,0 +1,21 @@
+uuid: 8878cdaa-25dd-4a8e-aecf-71acdb747739
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.apltv_recommendation_slide
+  module:
+    - layout_builder
+id: node.apltv_recommendation_slide.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: apltv_recommendation_slide
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

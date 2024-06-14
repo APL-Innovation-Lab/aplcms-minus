@@ -1,0 +1,88 @@
+uuid: 0ef8b9f9-baf3-4f41-97c8-2feb295fb7f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.database_subjects.feeds_item
+    - field.field.taxonomy_term.database_subjects.field_main_image_ds
+    - field.field.taxonomy_term.database_subjects.layout_builder__layout
+    - taxonomy.vocabulary.database_subjects
+    - views.view.accordion
+    - views.view.digital_resource_subject
+    - views.view.digital_resources_by_subject
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          4a4e50d1-338e-4354-b002-b4bfce10016a:
+            uuid: 4a4e50d1-338e-4354-b002-b4bfce10016a
+            region: content
+            configuration:
+              id: 'views_block:digital_resource_subject-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          fb4f8bf9-13db-4e42-a8be-63aac6a82cc5:
+            uuid: fb4f8bf9-13db-4e42-a8be-63aac6a82cc5
+            region: content
+            configuration:
+              id: 'views_block:digital_resources_by_subject-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          506fb12c-2592-4044-b6d6-f8403a3d1d56:
+            uuid: 506fb12c-2592-4044-b6d6-f8403a3d1d56
+            region: content
+            configuration:
+              id: 'views_block:accordion-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.database_subjects.default
+targetEntityType: taxonomy_term
+bundle: database_subjects
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image_ds: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

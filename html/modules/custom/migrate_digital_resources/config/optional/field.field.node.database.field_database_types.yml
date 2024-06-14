@@ -1,0 +1,28 @@
+uuid: 786f0598-4de9-412b-8da1-17ac219b2923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_database_types
+    - node.type.database
+    - taxonomy.vocabulary.database_types
+id: node.database.field_database_types
+field_name: field_database_types
+entity_type: node
+bundle: database
+label: 'Database Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      database_types: database_types
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

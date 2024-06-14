@@ -1,0 +1,30 @@
+uuid: 42f36461-33d7-41e7-9ed5-90c968a051d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:318c95ff-5520-4846-b93d-752505ec184e'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds
+id: uswds_iframe
+theme: uswds
+region: content
+weight: -25
+provider: null
+plugin: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+settings:
+  id: 'block_content:318c95ff-5520-4846-b93d-752505ec184e'
+  label: iframe
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/apltv/sequence/*\r\n/sequence/*\r\n/apltv/channel/*"

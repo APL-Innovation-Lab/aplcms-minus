@@ -1,0 +1,268 @@
+uuid: 944cee08-b622-4dfe-b35c-c72cafecfd54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.library_info.path
+    - core.base_field_override.node.library_info.title
+    - core.base_field_override.node.library_info.uid
+    - field.field.node.library_info.body
+    - field.field.node.library_info.field_main_image
+    - field.field.node.library_info.field_pdf
+    - node.type.library_info
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      d1f5c6f2-779a-42b8-832a-f80dfae6f747:
+        text: eng
+        uuid: d1f5c6f2-779a-42b8-832a-f80dfae6f747
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: library_info
+label: 'Library Info'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://library-info-feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: library_info
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: json
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: json
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: json
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: json
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: json
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: json
+  field_main_image_alt:
+    value: field_main_image_alt
+    label: field_main_image_alt
+    machine_name: field_main_image_alt
+    type: json
+  field_main_image_title:
+    value: field_main_image_title
+    label: field_main_image_title
+    machine_name: field_main_image_title
+    type: json
+  path:
+    value: path
+    label: path
+    machine_name: path
+    type: json
+  path_state:
+    value: path_state
+    label: path_state
+    machine_name: path_state
+    type: json
+  _nid:
+    value: $.nid
+    label: $.nid
+    machine_name: _nid
+    type: json
+  _uid:
+    value: $.uid
+    label: $.uid
+    machine_name: _uid
+    type: json
+  _body:
+    value: $.body
+    label: $.body
+    machine_name: _body
+    type: json
+  _summary:
+    value: $.summary
+    label: $.summary
+    machine_name: _summary
+    type: json
+  _path:
+    value: $.path
+    label: $.path
+    machine_name: _path
+    type: json
+  _field_main_image:
+    value: $.field_main_image
+    label: $.field_main_image
+    machine_name: _field_main_image
+    type: json
+  _field_main_image1:
+    value: $.field_main_image1
+    label: $.field_main_image1
+    machine_name: _field_main_image1
+    type: json
+  _view_node:
+    value: $.view_node
+    label: $.view_node
+    machine_name: _view_node
+    type: json
+  nid___:
+    value: nid
+    label: nid
+    machine_name: nid___
+    type: json
+  uid____:
+    value: uid
+    label: uid
+    machine_name: uid____
+    type: json
+  body___:
+    value: body
+    label: body
+    machine_name: body___
+    type: json
+  summary___:
+    value: summary
+    label: summary
+    machine_name: summary___
+    type: json
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: json
+  summary_:
+    value: summary
+    label: summary
+    machine_name: summary_
+    type: json
+  pdf:
+    value: pdf
+    label: pdf
+    machine_name: pdf
+    type: json
+  pdf_description:
+    value: pdf_description
+    label: pdf_description
+    machine_name: pdf_description
+    type: json
+  main_image:
+    value: main_image
+    label: main_image
+    machine_name: main_image
+    type: json
+  main_image_alt:
+    value: main_image_alt
+    label: main_image_alt
+    machine_name: main_image_alt
+    type: json
+  path_:
+    value: path
+    label: path
+    machine_name: path_
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: nid___
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: uid____
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body___
+      summary: summary_
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field_pdf
+    map:
+      target_id: pdf
+      description: pdf_description
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: field_main_image
+    map:
+      target_id: main_image
+      alt: main_image_alt
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: path
+    map:
+      alias: path_
+      pathauto: ''
+    settings:
+      language: null

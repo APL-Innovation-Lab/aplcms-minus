@@ -1,0 +1,30 @@
+uuid: 9a7cdc2a-f10e-407d-8121-a304b3fda80a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_item
+    - node.type.event
+id: node.event.field_first_item
+field_name: field_first_item
+entity_type: node
+bundle: event
+label: 'First Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 0
+field_type: entity_reference

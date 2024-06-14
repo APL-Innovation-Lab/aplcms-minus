@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: ZKaBtyYFEhfwE4xVP-khSsZabdsN3NSjwOfzaZksez0
+langcode: eng
+system_log:
+  log_level: error
+debug_log:
+  enabled: false
+  system_debug: true
+  log_level: debug

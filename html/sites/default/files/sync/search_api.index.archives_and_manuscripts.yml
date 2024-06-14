@@ -1,0 +1,255 @@
+uuid: 7e0efa44-6964-436e-8a61-3c2bc2f33457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - field.storage.node.field_accessno
+    - field.storage.node.field_archive_status
+    - field.storage.node.field_archives_access
+    - field.storage.node.field_bioghist
+    - field.storage.node.field_display_title
+    - field.storage.node.field_dsc
+    - field.storage.node.field_format_general
+    - field.storage.node.field_odd
+    - field.storage.node.field_organizations
+    - field.storage.node.field_persons
+    - field.storage.node.field_places
+    - field.storage.node.field_subjects
+    - search_api.server.drupal
+  module:
+    - node
+    - search_api
+id: archives_and_manuscripts
+name: 'Archives and Manuscripts'
+description: ''
+read_only: false
+field_settings:
+  field_abstract:
+    label: Abstract
+    datasource_id: 'entity:node'
+    property_path: field_abstract
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_abstract
+  field_accessno:
+    label: AccessNo
+    datasource_id: 'entity:node'
+    property_path: field_accessno
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_accessno
+  field_archive_status:
+    label: Status
+    datasource_id: 'entity:node'
+    property_path: field_archive_status
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_archive_status
+  field_archives_access:
+    label: Access
+    datasource_id: 'entity:node'
+    property_path: field_archives_access
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_archives_access
+  field_bioghist:
+    label: Bioghist
+    datasource_id: 'entity:node'
+    property_path: field_bioghist
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bioghist
+  field_display_title:
+    label: 'Display Title'
+    datasource_id: 'entity:node'
+    property_path: field_display_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_display_title
+  field_dsc:
+    label: Dsc
+    datasource_id: 'entity:node'
+    property_path: field_dsc
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_dsc
+  field_format_general:
+    label: 'Format General'
+    datasource_id: 'entity:node'
+    property_path: field_format_general
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_format_general
+  field_odd:
+    label: Odd
+    datasource_id: 'entity:node'
+    property_path: field_odd
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_odd
+  field_organizations:
+    label: Organizations
+    datasource_id: 'entity:node'
+    property_path: field_organizations
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_organizations
+  field_organizations_1:
+    label: Organizations
+    datasource_id: 'entity:node'
+    property_path: field_organizations
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_organizations
+  field_persons:
+    label: Persons
+    datasource_id: 'entity:node'
+    property_path: field_persons
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_persons
+  field_persons_1:
+    label: Persons
+    datasource_id: 'entity:node'
+    property_path: field_persons
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_persons
+  field_places:
+    label: Places
+    datasource_id: 'entity:node'
+    property_path: field_places
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_places
+  field_places_1:
+    label: Places
+    datasource_id: 'entity:node'
+    property_path: field_places
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_places
+  field_subjects:
+    label: Subjects
+    datasource_id: 'entity:node'
+    property_path: field_subjects
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_subjects
+  field_subjects_1:
+    label: Subjects
+    datasource_id: 'entity:node'
+    property_path: field_subjects
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subjects
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - archives_index
+    languages:
+      default: false
+      selected:
+        - eng
+        - es
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: true
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - field_accessno
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Cc
+      - Cf
+      - Co
+      - Mc
+      - Me
+      - Mn
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+      - Sc
+      - Sk
+      - Sm
+      - So
+      - Zl
+      - Zp
+      - Zs
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+    fields:
+      - field_abstract
+      - field_accessno
+      - field_archive_status
+      - field_archives_access
+      - field_bioghist
+      - field_display_title
+      - field_dsc
+      - field_format_general
+      - field_odd
+      - field_organizations
+      - field_persons_1
+      - field_places
+      - field_subjects
+      - title
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
+server: drupal

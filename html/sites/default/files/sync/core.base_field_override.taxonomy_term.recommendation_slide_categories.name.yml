@@ -1,0 +1,18 @@
+uuid: 22bf6c23-0962-46d3-b5a8-e05933408e82
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommendation_slide_categories
+id: taxonomy_term.recommendation_slide_categories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: recommendation_slide_categories
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

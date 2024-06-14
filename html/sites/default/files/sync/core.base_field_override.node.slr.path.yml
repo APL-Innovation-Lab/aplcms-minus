@@ -1,0 +1,20 @@
+uuid: 477aeff6-c210-4dc8-97ee-f523c1cba542
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+  module:
+    - path
+id: node.slr.path
+field_name: path
+entity_type: node
+bundle: slr
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

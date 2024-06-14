@@ -1,0 +1,18 @@
+uuid: bf595bff-75b8-4d1e-b570-1e4fd496ae00
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_portal_page
+id: node.job_portal_page.created
+field_name: created
+entity_type: node
+bundle: job_portal_page
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

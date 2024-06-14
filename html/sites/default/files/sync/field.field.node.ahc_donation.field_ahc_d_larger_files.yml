@@ -1,0 +1,23 @@
+uuid: eb553008-3da4-42a6-bb19-ed4b245a8341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_larger_files
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_larger_files
+field_name: field_ahc_d_larger_files
+entity_type: node
+bundle: ahc_donation
+label: 'Larger Materials'
+description: "Check this box if your materials are larger than 2 Mb, such as video or audio files. AHC will contact you with a link for file transfer.<br>\r\n<br>\r\nMis archivos son demasiado grandes, envíeme un enlace para la transferencia de archivos. <br>\r\nMarque esta caja si sus materiales tienen más de 2MB como archivos de video o audio. CHA se comunicará con usted con un enlace para la transferencia de archivos."
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'My files are too big, send me a link for file transfer'
+  off_label: 'Off'
+field_type: boolean

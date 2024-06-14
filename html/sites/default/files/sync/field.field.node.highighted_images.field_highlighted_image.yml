@@ -1,0 +1,45 @@
+uuid: e6e0c252-961e-4f69-ab1a-fd5fc3baa842
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_highlighted_image
+    - node.type.highighted_images
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
+id: node.highighted_images.field_highlighted_image
+field_name: field_highlighted_image
+entity_type: node
+bundle: highighted_images
+label: 'Highlighted Image'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

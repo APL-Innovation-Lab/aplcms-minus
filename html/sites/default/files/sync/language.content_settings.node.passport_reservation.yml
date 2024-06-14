@@ -1,0 +1,18 @@
+uuid: 85014bf8-d886-43c5-a58b-5b322057695f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.passport_reservation
+target_entity_type_id: node
+target_bundle: passport_reservation
+default_langcode: site_default
+language_alterable: false

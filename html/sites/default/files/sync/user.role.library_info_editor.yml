@@ -1,0 +1,39 @@
+uuid: 16564354-b2cb-467a-8c11-3f02e465fcca
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.unfiltered_html
+    - node.type.library_info
+  module:
+    - content_translation
+    - editoria11y
+    - filter
+    - node
+    - shortcut
+    - toolbar
+id: library_info_editor
+label: 'Library Info Editor'
+weight: 5
+is_admin: null
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create library_info content'
+  - 'delete any library_info content'
+  - 'delete library_info revisions'
+  - 'delete own library_info content'
+  - 'edit any library_info content'
+  - 'edit own library_info content'
+  - 'revert library_info revisions'
+  - 'switch shortcut sets'
+  - 'translate library_info node'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format unfiltered_html'
+  - 'view editoria11y checker'
+  - 'view library_info revisions'

@@ -1,0 +1,29 @@
+uuid: 20688a1d-1595-461d-a70c-33336e6ae710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_tag
+    - node.type.fullscreen_image
+    - taxonomy.vocabulary.taglets
+id: node.fullscreen_image.field_event_tag
+field_name: field_event_tag
+entity_type: node
+bundle: fullscreen_image
+label: 'Event Grouping or Series'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      taglets: taglets
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

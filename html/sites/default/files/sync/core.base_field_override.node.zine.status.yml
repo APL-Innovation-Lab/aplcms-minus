@@ -1,0 +1,22 @@
+uuid: 58985936-4dce-4f35-9eb3-7109f241cf16
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.status
+field_name: status
+entity_type: node
+bundle: zine
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

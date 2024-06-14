@@ -1,0 +1,18 @@
+uuid: d9d3cc0f-a461-4b25-bc46-6cc8afb7d3aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+id: node.apl_item_import.changed
+field_name: changed
+entity_type: node
+bundle: apl_item_import
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

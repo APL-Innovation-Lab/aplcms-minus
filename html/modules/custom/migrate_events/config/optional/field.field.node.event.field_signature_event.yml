@@ -1,0 +1,23 @@
+uuid: 11556165-3f25-4690-9e80-878a5b12b58d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_signature_event
+    - node.type.event
+id: node.event.field_signature_event
+field_name: field_signature_event
+entity_type: node
+bundle: event
+label: 'Signature Event'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

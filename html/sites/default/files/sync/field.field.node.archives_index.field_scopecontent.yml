@@ -1,0 +1,21 @@
+uuid: b20c5351-73ec-464f-986b-b49a02859d80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scopecontent
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_scopecontent
+field_name: field_scopecontent
+entity_type: node
+bundle: archives_index
+label: Scopecontent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

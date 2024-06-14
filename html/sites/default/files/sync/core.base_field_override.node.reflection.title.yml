@@ -1,0 +1,18 @@
+uuid: 5cbd4aec-dc15-4719-a3f5-c652ffaded11
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reflection
+id: node.reflection.title
+field_name: title
+entity_type: node
+bundle: reflection
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

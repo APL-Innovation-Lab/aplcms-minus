@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Importing menus, form and theme process functions.
+ */
+
+require_once dirname(__FILE__) . '/includes/base_themes.inc';
+require_once dirname(__FILE__) . '/includes/menus.inc';
+require_once dirname(__FILE__) . '/includes/forms.inc';
+require_once dirname(__FILE__) . '/includes/edge_to_edge.inc';
+require_once dirname(__FILE__) . '/includes/search.inc';
+
+// Load form alter hooks from the /form directory.
+$files = \Drupal::service('file_system')->scanDirectory(dirname(__FILE__) . '/form', "/.form.inc/");
+
+foreach ($files as $filepath => $file) {
+  require_once($filepath);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function uswds_theme($existing, $type, $theme, $path) {
+  return [
+    'government_banner' => [
+      'path' => $path . '/templates/uswds',
+      'variables' => [
+        'image_base' => NULL,
+        'military' => NULL,
+        'tld' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,28 @@
+uuid: a567408f-7c59-40cb-9e50-42964c6e20e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience___
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_intendedaudience_2
+theme: uswds
+region: content
+weight: -17
+provider: null
+plugin: 'facet_block:intended_audience___'
+settings:
+  id: 'facet_block:intended_audience___'
+  label: 'APL Events'
+  label_display: visible
+  provider: facets
+  block_id: intendedaudience_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events

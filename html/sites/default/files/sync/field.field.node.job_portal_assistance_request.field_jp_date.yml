@@ -1,0 +1,21 @@
+uuid: 8224302f-1755-497f-ae47-28fd8f33a902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_date
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_jp_date
+field_name: field_jp_date
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Coaching Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

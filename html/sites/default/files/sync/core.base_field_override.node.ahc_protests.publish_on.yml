@@ -1,0 +1,18 @@
+uuid: cc46d3e3-54a2-4703-97b5-f32abab38d4f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.publish_on
+field_name: publish_on
+entity_type: node
+bundle: ahc_protests
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

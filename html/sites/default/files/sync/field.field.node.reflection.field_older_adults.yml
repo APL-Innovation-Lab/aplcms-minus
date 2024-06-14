@@ -1,0 +1,23 @@
+uuid: bd45ec1e-13de-4cde-b923-4595a9316c75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_older_adults
+    - node.type.reflection
+id: node.reflection.field_older_adults
+field_name: field_older_adults
+entity_type: node
+bundle: reflection
+label: 'Older Adults'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Older Adults'
+  off_label: 'Off'
+field_type: boolean

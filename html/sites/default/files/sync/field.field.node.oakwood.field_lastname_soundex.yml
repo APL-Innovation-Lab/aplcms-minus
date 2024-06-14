@@ -1,0 +1,19 @@
+uuid: e0081d1f-82d3-4f83-a297-1e11874f2774
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lastname_soundex
+    - node.type.oakwood
+id: node.oakwood.field_lastname_soundex
+field_name: field_lastname_soundex
+entity_type: node
+bundle: oakwood
+label: lastname_soundex
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

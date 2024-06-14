@@ -1,0 +1,29 @@
+li span,
+.dropbutton-toggle,
+.js-form-item.form-item,
+.vertical-tabs.clearfix.js-vertical-tabs {
+	display: none;
+}
+
+.js .dropbutton--multiple .dropbutton__item:first-of-type {
+	margin-right: 0 !important;
+}
+html {
+  opacity:0;
+}
+#edit-actions {
+	background: #efefef;
+	max-width: 920px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#edit-actions h1 {
+	padding: 0 0 10px 0;
+	margin: 0 !important;
+	font-size: 24px;
+}
+#edit-actions .start-time {
+	font-size: 22px;
+	padding: 0 0 20px;
+}

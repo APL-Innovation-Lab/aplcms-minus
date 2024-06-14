@@ -1,0 +1,23 @@
+uuid: 97ace487-3fea-4abe-b6e1-82a77a4ee463
+langcode: eng
+status: true
+dependencies:
+  module:
+    - endroid_qr_code
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_url_for_qr_code
+field_name: field_url_for_qr_code
+entity_type: node
+type: endroid_qr_code
+settings: {  }
+module: endroid_qr_code
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

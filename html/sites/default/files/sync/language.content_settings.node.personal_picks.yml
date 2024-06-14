@@ -1,0 +1,18 @@
+uuid: 2b3e8f9c-74a8-4549-ade4-14741aa9377b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_picks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.personal_picks
+target_entity_type_id: node
+target_bundle: personal_picks
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 25f192b3-f520-4ae9-95c4-c61b8a7a96b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.job_portal_page
+  module:
+    - text
+id: node.job_portal_page.body
+field_name: body
+entity_type: node
+bundle: job_portal_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

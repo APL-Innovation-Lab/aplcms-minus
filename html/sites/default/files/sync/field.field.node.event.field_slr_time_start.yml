@@ -1,0 +1,21 @@
+uuid: 0b3367e5-41ac-4a3e-954b-ae8f484de1e5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: event
+label: 'Date & Time Start:'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

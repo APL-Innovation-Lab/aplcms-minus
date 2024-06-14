@@ -1,0 +1,22 @@
+uuid: e2d9a1f3-792f-4769-b090-7c5738cebc7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_priorities
+id: taxonomy_term.library_priorities.status
+field_name: status
+entity_type: taxonomy_term
+bundle: library_priorities
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

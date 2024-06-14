@@ -1,0 +1,28 @@
+uuid: f4ff5d72-bee6-4e78-a003-ffe29bcfa697
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet._cat_
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: eventcategory
+theme: claro2
+region: content
+weight: -23
+provider: null
+plugin: 'facet_block:_cat_'
+settings:
+  id: 'facet_block:_cat_'
+  label: 'Event Type'
+  label_display: visible
+  provider: facets
+  block_id: eventcategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search-website

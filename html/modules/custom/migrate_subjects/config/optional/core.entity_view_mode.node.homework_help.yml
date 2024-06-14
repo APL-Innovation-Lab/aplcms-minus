@@ -1,0 +1,10 @@
+uuid: 8d754873-ec2a-4099-86fa-5c07b8e93430
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: node.homework_help
+label: 'homework help'
+targetEntityType: node
+cache: true

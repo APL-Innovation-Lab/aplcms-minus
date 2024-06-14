@@ -1,0 +1,19 @@
+uuid: c9e123c8-1b5a-4366-b8d1-db2f54579c18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rec_subtitle
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.field_rec_subtitle
+field_name: field_rec_subtitle
+entity_type: node
+bundle: apltv_recommendation_slide
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

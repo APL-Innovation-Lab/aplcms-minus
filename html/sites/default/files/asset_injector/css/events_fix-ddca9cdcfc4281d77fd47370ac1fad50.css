@@ -1,0 +1,12 @@
+#block-intendedaudience-2 {
+	background: white;
+}
+#apl-events-nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#block-intendedaudience-2 h2, 
+#block-intendedaudience-2 > div {
+	padding: 1px 15px;
+}

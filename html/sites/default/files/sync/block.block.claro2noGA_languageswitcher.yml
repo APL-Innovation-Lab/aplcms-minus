@@ -1,0 +1,25 @@
+uuid: 8052ad55-0ec4-4947-b6d7-a71299083cbf
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_languageswitcher
+theme: claro2noGA
+region: header
+weight: -14
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/add/*\r\n/feed/*\r\n/apltv/*\r\n/admin/*\r\n/passport/calendar\r\n/special/*\r\n/sequence/*"

@@ -1,0 +1,22 @@
+.apl-carousel-2022 .view-content {
+	display: flex;
+}
+
+.apl-carousel-2022 .view-content > div {
+	margin-right: 10px;
+}
+.apl-carousel-2022 .view-content > div:last-child {
+	margin-right: 0;
+}
+.apl-carousel-2022 h3 {
+	padding: 1px 15px;
+}
+.apl-carousel-2022 .view-footer {
+	text-align: center;
+}
+
+.apl-carousel-2022 img {
+	height: auto;
+	max-height: 170px;
+	width: 110px;
+}

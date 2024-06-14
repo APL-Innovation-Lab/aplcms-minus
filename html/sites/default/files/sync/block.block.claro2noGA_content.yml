@@ -1,0 +1,22 @@
+uuid: 6ba6866b-a022-4d66-95c0-5ac26b8d02ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2noGA
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: claro2noGA_content
+theme: claro2noGA
+region: content
+weight: -21
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

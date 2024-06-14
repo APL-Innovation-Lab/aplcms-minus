@@ -1,0 +1,29 @@
+uuid: 0ccb6ecb-7f6a-4df4-bf39-a47c0c11cebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_priority
+    - node.type.reflection
+    - taxonomy.vocabulary.library_priorities
+id: node.reflection.field_library_priority
+field_name: field_library_priority
+entity_type: node
+bundle: reflection
+label: 'Library Priority'
+description: 'Default priority is set from Event Category and can''t be changed. You may add one more priority.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_priorities: library_priorities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

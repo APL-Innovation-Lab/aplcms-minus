@@ -1,0 +1,19 @@
+uuid: 77c17b8b-83c5-4e6d-b604-07df52aa9f53
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biblio_list_urls
+    - node.type.staff_recommend
+id: node.staff_recommend.field_biblio_list_urls
+field_name: field_biblio_list_urls
+entity_type: node
+bundle: staff_recommend
+label: 'Biblio List URLs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

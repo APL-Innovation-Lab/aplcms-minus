@@ -1,0 +1,18 @@
+uuid: 17d5e6cd-9d4f-4860-875f-1549c157b7ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.changed
+field_name: changed
+entity_type: node
+bundle: gift_shop_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

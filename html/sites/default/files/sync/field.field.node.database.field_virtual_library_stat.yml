@@ -1,0 +1,23 @@
+uuid: 53f2b370-0087-47d6-90ad-2c6f988ad160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtual_library_stat
+    - node.type.database
+id: node.database.field_virtual_library_stat
+field_name: field_virtual_library_stat
+entity_type: node
+bundle: database
+label: 'Virtual Library Stat'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

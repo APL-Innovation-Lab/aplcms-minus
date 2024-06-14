@@ -1,0 +1,18 @@
+uuid: 6bb2ea5c-8fcb-441c-818c-10891603346b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_page
+id: node.ahc_page.created
+field_name: created
+entity_type: node
+bundle: ahc_page
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

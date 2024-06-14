@@ -1,0 +1,39 @@
+uuid: 3ab353bf-ed41-4e54-a1c4-99e28b2056e3
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f598a734-b214-4783-b5b4-f7f2df4f0e5c'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - aplpa
+id: footeraplpa
+theme: aplpa
+region: footer_secondary
+weight: -12
+provider: null
+plugin: 'block_content:f598a734-b214-4783-b5b4-f7f2df4f0e5c'
+settings:
+  id: 'block_content:f598a734-b214-4783-b5b4-f7f2df4f0e5c'
+  label: 'Footer - aplpa'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      eng: eng
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/term/staging/183\r\n/ahc/*\r\n/ahc\r\n/austin-history-center"

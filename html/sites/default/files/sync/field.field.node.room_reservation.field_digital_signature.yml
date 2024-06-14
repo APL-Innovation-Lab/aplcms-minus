@@ -1,0 +1,19 @@
+uuid: 1cb66f4e-5c9f-4405-bad4-b5aed2d717f1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_signature
+    - node.type.room_reservation
+id: node.room_reservation.field_digital_signature
+field_name: field_digital_signature
+entity_type: node
+bundle: room_reservation
+label: 'Digital Signature'
+description: 'By typing my name, I am submitting my signature with my agreement to honor the Meeting Room guidelines and policies.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

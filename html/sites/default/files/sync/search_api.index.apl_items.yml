@@ -1,0 +1,96 @@
+uuid: 5a460d19-dacf-4f16-a6e1-4c75f37247fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exclude_from_we_recommend
+    - field.storage.node.field_item_list_category
+    - field.storage.node.field_intended_audience_2016i
+    - search_api.server.drupal
+  module:
+    - node
+    - taxonomy
+    - search_api
+id: apl_items
+name: Items
+description: ''
+read_only: false
+field_settings:
+  audience:
+    label: 'Intended Audience » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_intended_audience_2016i:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_intended_audience_2016i
+      module:
+        - taxonomy
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_exclude_from_we_recommend:
+    label: 'Exclude from We Recommend'
+    datasource_id: 'entity:node'
+    property_path: field_exclude_from_we_recommend
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_exclude_from_we_recommend
+  name:
+    label: 'Facets » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_item_list_category:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_item_list_category
+      module:
+        - taxonomy
+  tid:
+    label: 'Facets » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_item_list_category:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_item_list_category
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - apl_item
+    languages:
+      default: false
+      selected:
+        - eng
+        - es
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: drupal

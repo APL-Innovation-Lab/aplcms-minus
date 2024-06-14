@@ -1,0 +1,22 @@
+uuid: 4639cf8d-5167-4bb7-a8fd-54adf50cd185
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.sticky
+field_name: sticky
+entity_type: node
+bundle: passports_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

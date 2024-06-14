@@ -1,0 +1,51 @@
+uuid: 5c4c7e46-7ff7-42da-9fa0-10c1b67be194
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: event_categories_select_trim
+label: 'Event Categories select trim'
+code: |
+  console.log('Event Categories select trim');
+  document.addEventListener('DOMContentLoaded', function() {
+      var selectElement = document.getElementById('edit-field-event-category-tags-');
+
+      // Check if the select element exists
+      if (selectElement) {
+          var options = selectElement.options;
+          var removeAfterIndex = -1;
+
+          // Loop through the options to find the index of "Writing"
+          for (var i = 0; i < options.length; i++) {
+              if (options[i].text.trim() === 'Writing') {
+                  removeAfterIndex = i;
+                  break;
+              }
+          }
+
+          // Remove options after the "Writing" option
+          if (removeAfterIndex !== -1) {
+              for (var j = options.length - 1; j > removeAfterIndex; j--) {
+                  selectElement.remove(j);
+              }
+          }
+      } else {
+     //     console.warn('Select element not found on the page.');
+      }
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,14 @@
+uuid: 50d7c25f-5a78-4954-8020-de8bc618cd4c
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.remote_locations_editor
+  module:
+    - user
+id: user_add_role_action.remote_locations_editor
+label: 'Add the Remote Locations editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: remote_locations_editor

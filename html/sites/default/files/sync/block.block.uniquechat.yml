@@ -1,0 +1,30 @@
+uuid: 58ea7691-bc91-480a-97cd-3f8a0af8b03d
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2
+id: uniquechat
+theme: claro2
+region: content_footer
+weight: -27
+provider: null
+plugin: 'block_content:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+settings:
+  id: 'block_content:cd164567-7c85-4b81-bb20-b22d404a8b2d'
+  label: UniqueChat
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/*\r\n/app/*\r\n/community-resource-hub\r\n/user/*\r\n/ahc/*\r\n/sequence/*\r\n/apltv/*\r\n/images-inventory"

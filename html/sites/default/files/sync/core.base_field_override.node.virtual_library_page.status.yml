@@ -1,0 +1,22 @@
+uuid: 70416114-05b2-4f72-8dfb-6c65592826f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_page
+id: node.virtual_library_page.status
+field_name: status
+entity_type: node
+bundle: virtual_library_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

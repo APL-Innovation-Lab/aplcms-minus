@@ -1,0 +1,18 @@
+uuid: 6ef43d85-7ede-4b47-88c8-035f0b582ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.playlist
+id: node.playlist.metatag
+field_name: metatag
+entity_type: node
+bundle: playlist
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

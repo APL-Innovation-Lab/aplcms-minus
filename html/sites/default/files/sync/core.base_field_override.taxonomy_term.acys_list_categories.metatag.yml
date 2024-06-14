@@ -1,0 +1,18 @@
+uuid: 97d12b6d-de1a-4d92-8417-f48f8fd642a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acys_list_categories
+id: taxonomy_term.acys_list_categories.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: acys_list_categories
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

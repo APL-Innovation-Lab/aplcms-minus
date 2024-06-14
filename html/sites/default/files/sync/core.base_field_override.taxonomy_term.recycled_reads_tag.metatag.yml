@@ -1,0 +1,18 @@
+uuid: b8957bd9-a57b-46e3-a36a-2145d97ff073
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_tag
+id: taxonomy_term.recycled_reads_tag.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: recycled_reads_tag
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

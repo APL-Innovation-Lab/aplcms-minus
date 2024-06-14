@@ -1,0 +1,23 @@
+uuid: 669b468a-c0be-4e5e-8262-0cece8670c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.ahc_donation
+  module:
+    - feeds
+id: node.ahc_donation.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: ahc_donation
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,18 @@
+uuid: 081e8f05-2ffa-408a-aef2-629d6a85d221
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: accordion
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

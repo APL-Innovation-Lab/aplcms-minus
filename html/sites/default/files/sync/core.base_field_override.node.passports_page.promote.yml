@@ -1,0 +1,22 @@
+uuid: 5db92c8e-8572-4263-89cc-830abd78b01b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.promote
+field_name: promote
+entity_type: node
+bundle: passports_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

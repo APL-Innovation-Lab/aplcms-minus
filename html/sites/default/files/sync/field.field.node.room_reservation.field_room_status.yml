@@ -1,0 +1,23 @@
+uuid: d1d2f458-cf4c-454b-b49b-c9e651bf2166
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_status
+    - node.type.room_reservation
+  module:
+    - options
+id: node.room_reservation.field_room_status
+field_name: field_room_status
+entity_type: node
+bundle: room_reservation
+label: 'Meeting Room Resevation Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

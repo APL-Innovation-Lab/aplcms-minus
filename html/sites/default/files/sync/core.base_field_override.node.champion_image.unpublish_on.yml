@@ -1,0 +1,18 @@
+uuid: aee76a39-5f87-480b-b9f8-41a6ac21de96
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.champion_image
+id: node.champion_image.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: champion_image
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

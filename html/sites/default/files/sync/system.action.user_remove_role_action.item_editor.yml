@@ -1,0 +1,14 @@
+uuid: 9cbd0bc7-0ebd-4a49-98d7-7d67796f93e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.item_editor
+  module:
+    - user
+id: user_remove_role_action.item_editor
+label: 'Remove the Item Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: item_editor

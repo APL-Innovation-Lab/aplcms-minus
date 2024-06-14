@@ -1,0 +1,18 @@
+uuid: 4d013530-86f5-413a-8058-060ef2da73bc
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.created
+field_name: created
+entity_type: node
+bundle: staff_recommend
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,28 @@
+uuid: 3484f1f7-0fc9-4c86-9461-1c0b02b8318e
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.what_s_hot
+  module:
+    - facets
+    - system
+  theme:
+    - uswds
+id: uswds_whatshot
+theme: uswds
+region: content
+weight: -5
+provider: null
+plugin: 'facet_block:what_s_hot'
+settings:
+  id: 'facet_block:what_s_hot'
+  label: 'What''s Hot'
+  label_display: visible
+  provider: facets
+  block_id: whatshot
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /recommended/whats-hot

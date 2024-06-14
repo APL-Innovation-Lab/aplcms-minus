@@ -1,0 +1,10 @@
+uuid: 55509985-fb90-4bca-9a60-9cb1c249c60c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.apltv
+label: apltv
+targetEntityType: node
+cache: true

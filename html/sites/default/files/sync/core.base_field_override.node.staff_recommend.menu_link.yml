@@ -1,0 +1,20 @@
+uuid: 0ed88f5c-80c6-4c62-81f1-a88d93ccaa4d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.menu_link
+field_name: menu_link
+entity_type: node
+bundle: staff_recommend
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

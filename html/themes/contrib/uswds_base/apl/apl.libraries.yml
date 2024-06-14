@@ -1,0 +1,8 @@
+assets:
+  version: 3.2
+  css:
+    theme:
+      assets/css/uswds.min.css: {}
+  js:
+    assets/js/uswds-init.min.js: {}
+    assets/js/uswds.min.js: {}

@@ -1,0 +1,23 @@
+uuid: 8a8ce614-0bb4-44f9-b6fa-10e4efe33a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_template
+    - node.type.hero_image
+  module:
+    - options
+id: node.hero_image.field_hero_template
+field_name: field_hero_template
+entity_type: node
+bundle: hero_image
+label: 'Which side should the text appear?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

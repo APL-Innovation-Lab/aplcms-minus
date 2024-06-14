@@ -1,0 +1,36 @@
+uuid: 911bada8-d09d-449e-ac45-559c259576a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.alert
+  module:
+    - editoria11y
+    - filter
+    - node
+    - quickedit
+    - shortcut
+    - system
+    - toolbar
+id: news_alerts_editor
+label: 'Alerts Editor'
+weight: -8
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create alert content'
+  - 'delete alert revisions'
+  - 'delete any alert content'
+  - 'delete own alert content'
+  - 'edit any alert content'
+  - 'edit own alert content'
+  - 'revert alert revisions'
+  - 'use text format full_html'
+  - 'view alert revisions'
+  - 'view editoria11y checker'
+  - 'view own unpublished content'

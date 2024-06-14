@@ -1,0 +1,20 @@
+uuid: 1065b330-d9b5-4e9c-b6fe-ca971369e5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passport_reservation
+id: node.passport_reservation.uid
+field_name: uid
+entity_type: node
+bundle: passport_reservation
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

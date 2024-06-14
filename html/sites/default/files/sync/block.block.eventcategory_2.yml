@@ -1,0 +1,28 @@
+uuid: 69e5c5d5-877c-4344-ba39-da9791059781
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet._event_category_
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: eventcategory_2
+theme: claro2
+region: content
+weight: -6
+provider: null
+plugin: 'facet_block:_event_category_'
+settings:
+  id: 'facet_block:_event_category_'
+  label: 'Event Type'
+  label_display: visible
+  provider: facets
+  block_id: eventcategory_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events

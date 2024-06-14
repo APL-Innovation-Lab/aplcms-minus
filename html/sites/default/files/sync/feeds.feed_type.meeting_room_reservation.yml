@@ -1,0 +1,280 @@
+uuid: 9be69c67-979d-4d7e-8b34-023151f7e37d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.room_reservation.title
+    - core.base_field_override.node.room_reservation.uid
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - node.type.room_reservation
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      caf19973-45ea-497a-a15a-8d1a3fa3653a:
+        text: en
+        uuid: caf19973-45ea-497a-a15a-8d1a3fa3653a
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      6493ec1b-7c40-4efc-a024-c73579d530dc:
+        text: '[date_] [time_start__]'
+        uuid: 6493ec1b-7c40-4efc-a024-c73579d530dc
+        plugin: rewrite
+        source: time_start__
+        weight: 0
+        label: Rewrite
+      fc9b4006-fa48-43d8-b6ad-df7156a5bbbc:
+        text: '[date_] [time_end__]'
+        uuid: fc9b4006-fa48-43d8-b6ad-df7156a5bbbc
+        plugin: rewrite
+        source: time_end__
+        weight: 0
+        label: Rewrite
+      cd765b1d-5c3c-4237-adb0-392a8884e257:
+        uuid: cd765b1d-5c3c-4237-adb0-392a8884e257
+        plugin: strtotime
+        source: time_start__
+        weight: 1
+        label: 'String to Unix Timestamp'
+      3b949777-8cdf-4bf6-bce9-adff34d01f0e:
+        uuid: 3b949777-8cdf-4bf6-bce9-adff34d01f0e
+        plugin: strtotime
+        source: time_end__
+        weight: 1
+        label: 'String to Unix Timestamp'
+label: 'Meeting Room Reservation - Internal'
+id: meeting_room_reservation
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: room_reservation
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 97
+custom_sources:
+  topic:
+    value: topic
+    label: topic
+    machine_name: topic
+    type: csv
+  room:
+    value: room
+    label: room
+    machine_name: room
+    type: csv
+  internal:
+    value: internal
+    label: internal
+    machine_name: internal
+    type: csv
+  expected_attendance:
+    value: expected_attendance
+    label: expected_attendance
+    machine_name: expected_attendance
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  group:
+    value: group
+    label: group
+    machine_name: group
+    type: csv
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: csv
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  start_:
+    value: start
+    label: start
+    machine_name: start_
+    type: csv
+  end_:
+    value: end
+    label: end
+    machine_name: end_
+    type: csv
+  start__:
+    value: start
+    label: start
+    machine_name: start__
+    type: csv
+  end__:
+    value: end
+    label: end
+    machine_name: end__
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  username:
+    value: username
+    label: username
+    machine_name: username
+    type: csv
+  attendance:
+    value: attendance
+    label: attendance
+    machine_name: attendance
+    type: csv
+  user_name:
+    value: 'User Name'
+    label: 'User Name'
+    machine_name: user_name
+    type: csv
+  topic_:
+    value: Topic
+    label: Topic
+    machine_name: topic_
+    type: csv
+  room_:
+    value: Room
+    label: Room
+    machine_name: room_
+    type: csv
+  expected_attendance_:
+    value: 'Expected Attendance'
+    label: 'Expected Attendance'
+    machine_name: expected_attendance_
+    type: csv
+  date_:
+    value: Date
+    label: Date
+    machine_name: date_
+    type: csv
+  timestart:
+    value: TimeStart
+    label: TimeStart
+    machine_name: timestart
+    type: csv
+  timeend:
+    value: TimeEnd
+    label: TimeEnd
+    machine_name: timeend
+    type: csv
+  time_start__:
+    value: 'Time Start'
+    label: 'Time Start'
+    machine_name: time_start__
+    type: csv
+  time_end__:
+    value: 'Time End'
+    label: 'Time End'
+    machine_name: time_end__
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: topic_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_meeting_room
+    map:
+      target_id: room_
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: uid
+    map:
+      target_id: user_name
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+      feeds_item: false
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field____date
+    map:
+      value: date_
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_room_expected_attendance
+    map:
+      value: expected_attendance_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: temporary_target
+    map:
+      temporary: date_
+  -
+    target: field_slr_time_start
+    map:
+      value: time_start__
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: time_end__
+    settings:
+      language: null
+      timezone: UTC

@@ -1,0 +1,20 @@
+uuid: 720ca534-3c75-4301-966f-fbe02c4b403c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_picks
+  module:
+    - path
+id: node.personal_picks.path
+field_name: path
+entity_type: node
+bundle: personal_picks
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

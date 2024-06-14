@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBKaJ6bVeOtAXDbxWVgIfmSKLE2ewq96XBW6iGMHAPQ
+id: apl_dev_scheduled_sequences
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: apl_dev
+label: 'APLTV Scheduled Sequence'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_scheduled_sequences/scheduled_sequences.json'
+  item_selector: sequence
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: channel
+      selector: channel
+    -
+      name: content
+      selector: content
+    -
+      name: start
+      selector: start
+    -
+      name: end
+      selector: end
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: apltv_scheduled_sequence
+  title: title
+  field_sch_seq_channel: channel
+  field_sch_sequence: content
+  field_slr_time_start: start
+  field_slr_time_end: end
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

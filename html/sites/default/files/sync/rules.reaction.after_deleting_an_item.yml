@@ -1,0 +1,38 @@
+uuid: f541f90e-58ad-45d4-9c08-0b53529c9924
+langcode: eng
+status: true
+dependencies: {  }
+id: after_deleting_an_item
+label: 'after deleting an Item'
+events:
+  -
+    event_name: 'rules_entity_delete:node--apl_item'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 44f35302-4793-4c7b-9318-8bc66b94c986
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 5a35c2da-dbf5-45a9-bd37-879495819c33
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: a199cca8-188a-4b0c-b427-b7306b81c7af
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: be02106b-f015-4752-ba18-bf27efa37d6f
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /admin/item-organizer
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

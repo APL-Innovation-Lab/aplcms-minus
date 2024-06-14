@@ -1,0 +1,20 @@
+uuid: 0b7cafb0-8faf-4274-a176-d6d68510f43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_priorities
+  module:
+    - text
+id: taxonomy_term.library_priorities.description
+field_name: description
+entity_type: taxonomy_term
+bundle: library_priorities
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

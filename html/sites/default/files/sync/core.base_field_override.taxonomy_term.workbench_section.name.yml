@@ -1,0 +1,18 @@
+uuid: ee6b6ddb-e0b7-4d0d-b616-a187305f7827
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_section
+id: taxonomy_term.workbench_section.name
+field_name: name
+entity_type: taxonomy_term
+bundle: workbench_section
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

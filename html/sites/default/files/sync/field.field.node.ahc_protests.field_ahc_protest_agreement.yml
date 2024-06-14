@@ -1,0 +1,23 @@
+uuid: 980e212c-4131-4d9c-87e5-3ebaa2d511d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_protest_agreement
+    - node.type.ahc_protests
+id: node.ahc_protests.field_ahc_protest_agreement
+field_name: field_ahc_protest_agreement
+entity_type: node
+bundle: ahc_protests
+label: Agreement
+description: 'By adding my image(s), I agree to the <a target="_blank" href="/ahc/rights-permissions-484796">Terms for Rights & Permissions</a> for the AHC Protest Exhibit, <i>Taking it to the Streets</i>.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms for Rights & Permissions'
+  off_label: 'Off'
+field_type: boolean

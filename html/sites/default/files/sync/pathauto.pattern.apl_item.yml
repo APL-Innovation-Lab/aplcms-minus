@@ -1,0 +1,22 @@
+uuid: 29c25f13-0610-4fbf-9e5c-dab1c487c9ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: apl_item
+label: 'APL Item'
+type: 'canonical_entities:node'
+pattern: '/apltv/item/[node:nid]'
+selection_criteria:
+  45a06bfb-44b6-4b8a-8c17-f8b30571f452:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 45a06bfb-44b6-4b8a-8c17-f8b30571f452
+    context_mapping:
+      node: node
+    bundles:
+      apl_item: apl_item
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: d54a0895-b55d-4a2e-8e54-b6ce205aa3ee
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sex
+    - node.type.oakwood
+id: node.oakwood.field_sex
+field_name: field_sex
+entity_type: node
+bundle: oakwood
+label: sex
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+type: module
+name: Migrate Meeting Rooms
+description: 'Meeting Rooms'
+package: apl_dev
+core_version_requirement: '>=9.1'
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_rooms:migrate_rooms
+  - webform_views:webform_views
+
+# Information added by Drupal.org packaging script on 2022-04-22
+version: '6.0.0'
+project: 'migrate_plus'
+datestamp: 1650658064

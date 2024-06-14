@@ -1,0 +1,40 @@
+uuid: 212f86e7-15ef-4907-9b24-c81107e4392b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_reference_type
+field_name: field_reference_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Ask a Librarian, email, chat, phone'
+    -
+      value: '2'
+      label: In-person
+    -
+      value: '5'
+      label: 'Consultation (i.e. Book a Librarian, Job Coach) via phone, video, or in person for approximately 30 minutes'
+    -
+      value: '3'
+      label: 'ILL Provided'
+    -
+      value: '4'
+      label: 'ILL Received'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

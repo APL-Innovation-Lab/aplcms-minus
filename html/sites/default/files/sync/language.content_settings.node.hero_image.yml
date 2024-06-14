@@ -1,0 +1,18 @@
+uuid: b8ab27ee-fcd3-48be-9038-16543a1d3a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hero_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.hero_image
+target_entity_type_id: node
+target_bundle: hero_image
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,38 @@
+uuid: 207fb212-d28e-43d9-8dd0-5101b6a53d9c
+langcode: en
+status: true
+dependencies: {  }
+id: reflection
+label: Reflection
+events:
+  -
+    event_name: 'rules_entity_insert:node--reflection'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 994257bd-7acc-4c68-8eae-03078fe5cf0a
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: cba4853a-4a5f-49ca-bc25-a85977d43bdd
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 2940f210-5589-4a7a-abdc-6b84bbec1aa3
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: bbf502fd-b19f-4bd8-afc1-90c3ead2429f
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /admin/attendance-stats
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

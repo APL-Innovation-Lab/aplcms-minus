@@ -1,0 +1,21 @@
+uuid: 96b08b88-66b0-4df3-adc6-716ff8f246f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor
+    - node.type.event
+  module:
+    - text
+id: node.event.field_sponsor
+field_name: field_sponsor
+entity_type: node
+bundle: event
+label: Sponsors
+description: 'Enter sponsor names and/or upload logos. Logos should be set to 100 px tall.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

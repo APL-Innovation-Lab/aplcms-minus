@@ -1,0 +1,148 @@
+uuid: 636e1c43-494c-4fd1-abf5-07b3d768db97
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.room_reservation.feeds_item
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_agreements
+    - field.field.node.room_reservation.field_checked_for_conflicts
+    - field.field.node.room_reservation.field_conflicting_reservations
+    - field.field.node.room_reservation.field_digital_signature
+    - field.field.node.room_reservation.field_email
+    - field.field.node.room_reservation.field_group_name
+    - field.field.node.room_reservation.field_group_rep_full_name
+    - field.field.node.room_reservation.field_group_rep_phone
+    - field.field.node.room_reservation.field_group_website
+    - field.field.node.room_reservation.field_internal_
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_purpose_of_group_
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_room_group
+    - field.field.node.room_reservation.field_room_status
+    - field.field.node.room_reservation.field_slr_duration
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - field.field.node.room_reservation.field_submission_id
+    - node.type.room_reservation
+  module:
+    - datetime
+    - options
+    - user
+id: node.room_reservation.default
+targetEntityType: node
+bundle: room_reservation
+mode: default
+content:
+  field____date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_checked_for_conflicts:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_conflicting_reservations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_group_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_group_rep_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_internal_:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_meeting_room:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_room_expected_attendance:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_room_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_agreements: true
+  field_digital_signature: true
+  field_email: true
+  field_group_rep_phone: true
+  field_group_website: true
+  field_purpose_of_group_: true
+  field_room_group: true
+  field_slr_duration: true
+  field_submission_id: true
+  langcode: true
+  search_api_excerpt: true

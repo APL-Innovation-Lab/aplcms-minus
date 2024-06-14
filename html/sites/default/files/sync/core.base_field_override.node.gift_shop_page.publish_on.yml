@@ -1,0 +1,18 @@
+uuid: 52364377-9c07-4800-90b8-ac114d4c1216
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.gift_shop_page
+id: node.gift_shop_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: gift_shop_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

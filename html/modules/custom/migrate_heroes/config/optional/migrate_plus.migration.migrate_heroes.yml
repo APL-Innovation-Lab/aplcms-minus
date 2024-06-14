@@ -1,0 +1,95 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_heroes
+id: migrate_heroes
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - heroes
+migration_group: apl_dev
+label: 'APL Heroes'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_heroes/apl_heroes.json'
+  item_selector: hero_image
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: field_button_link
+      selector: field_button_link
+    -
+      name: field_button_link_text
+      selector: field_button_link_text
+    -
+      name: field_slr_time_end
+      selector: field_slr_time_end
+    -
+      name: field_hero_image
+      selector: field_hero_image
+    -
+      name: field_hero_image_small
+      selector: field_hero_image_small
+    -
+      name: field_hero_summary
+      selector: field_hero_summary
+    -
+      name: field_locations
+      selector: field_locations
+    -
+      name: field_slr_time_start
+      selector: field_slr_time_start
+    -
+      name: field_hero_template
+      selector: field_hero_template
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: hero_image
+  title: title
+  field_hero_image:
+    plugin: image_import
+    source: field_hero_image
+    title: title
+    alt: title
+  field_hero_image_small:
+    plugin: image_import
+    source: field_hero_image_small
+    title: title
+    alt: title
+  field_locations:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_locations
+    -
+      plugin: explode
+      source: field_locations
+      delimiter: ','
+  field_hero_summary: field_hero_summary
+  field_button_link/uri: field_button_link
+  field_button_link/title: field_button_link_text
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

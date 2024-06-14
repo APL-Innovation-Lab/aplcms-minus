@@ -1,0 +1,59 @@
+uuid: 94074f5c-966c-4eb4-8568-cf026384c3b7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.slr_alert.field_slr_alert
+    - field.field.node.slr_alert.field_slr_room
+    - field.field.node.slr_alert.field_slr_time_end
+    - field.field.node.slr_alert.field_slr_time_start
+    - node.type.slr_alert
+  module:
+    - datetime
+    - user
+id: node.slr_alert.default
+targetEntityType: node
+bundle: slr_alert
+mode: default
+content:
+  field_slr_alert:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_slr_room:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

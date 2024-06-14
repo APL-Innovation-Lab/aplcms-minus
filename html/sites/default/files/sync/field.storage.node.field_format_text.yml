@@ -1,0 +1,108 @@
+uuid: 6edb27dd-1464-4738-906f-70f0bc13cdd3
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format_text
+field_name: field_format_text
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'administrative records'
+    -
+      value: '21'
+      label: 'biography/genealogical records'
+    -
+      value: '18'
+      label: certificates
+    -
+      value: '3'
+      label: clippings
+    -
+      value: '4'
+      label: correspondence
+    -
+      value: '23'
+      label: diaries/journals
+    -
+      value: '27'
+      label: drawings/sketches
+    -
+      value: '5'
+      label: 'financial records'
+    -
+      value: '2'
+      label: 'greeting cards'
+    -
+      value: '6'
+      label: ledgers
+    -
+      value: '7'
+      label: 'legal documents'
+    -
+      value: '8'
+      label: maps
+    -
+      value: '25'
+      label: 'marketing/publicity materials'
+    -
+      value: '19'
+      label: 'membership lists'
+    -
+      value: '22'
+      label: memorabilia/ephemera
+    -
+      value: '31'
+      label: menus
+    -
+      value: '9'
+      label: minutes/agendas
+    -
+      value: '10'
+      label: notes
+    -
+      value: '16'
+      label: other
+    -
+      value: '11'
+      label: posters/broadsides
+    -
+      value: '12'
+      label: programs/fliers
+    -
+      value: '28'
+      label: 'project files'
+    -
+      value: '20'
+      label: 'real property records'
+    -
+      value: '13'
+      label: reports
+    -
+      value: '14'
+      label: scrapbooks
+    -
+      value: '32'
+      label: 'subject files'
+    -
+      value: '26'
+      label: transcripts
+    -
+      value: '17'
+      label: 'writings/creative works'
+    -
+      value: '15'
+      label: yearbooks
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

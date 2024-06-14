@@ -1,0 +1,15 @@
+uuid: 403b0824-aaf8-4dd4-a1ba-5e370d25a81e
+langcode: en
+status: true
+dependencies: {  }
+name: slideshow
+label: slideshow
+effects:
+  6ccbf6c8-3580-4ad4-a09e-d97a685d57bb:
+    uuid: 6ccbf6c8-3580-4ad4-a09e-d97a685d57bb
+    id: image_scale
+    weight: 1
+    data:
+      width: 580
+      height: 355
+      upscale: true

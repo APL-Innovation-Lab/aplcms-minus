@@ -1,0 +1,14 @@
+uuid: 0f9f2693-90ff-4518-86bf-f0aee5f09dae
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_coach
+  module:
+    - user
+id: user_remove_role_action.job_coach
+label: 'Remove the Job Coach role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_coach

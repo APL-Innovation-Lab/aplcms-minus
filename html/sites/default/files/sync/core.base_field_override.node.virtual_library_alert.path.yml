@@ -1,0 +1,20 @@
+uuid: 5ac83942-95b5-4f4b-93f7-b1556c071ae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+  module:
+    - path
+id: node.virtual_library_alert.path
+field_name: path
+entity_type: node
+bundle: virtual_library_alert
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

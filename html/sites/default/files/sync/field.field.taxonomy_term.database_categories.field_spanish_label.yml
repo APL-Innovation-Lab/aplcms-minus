@@ -1,0 +1,19 @@
+uuid: c0026adf-c565-4e6b-87b5-29f6422b54da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_spanish_label
+    - taxonomy.vocabulary.database_categories
+id: taxonomy_term.database_categories.field_spanish_label
+field_name: field_spanish_label
+entity_type: taxonomy_term
+bundle: database_categories
+label: 'Spanish Label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

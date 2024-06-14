@@ -1,0 +1,18 @@
+uuid: 352116e9-cda4-4f12-9366-6bca403aab17
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.created
+field_name: created
+entity_type: node
+bundle: hero_banner_image
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

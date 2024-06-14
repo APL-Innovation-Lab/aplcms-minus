@@ -1,0 +1,19 @@
+type: module
+name: Migrate Events
+description: 'Events'
+package: apl_dev
+core_version_requirement: '>=9.1'
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_event_tags:migrate_event_tags
+  - migrate_audience:migrate_audience
+  - migrate_locations:migrate_locations
+  - migrate_remote_locations:migrate_remote_locations
+  - migrate_rooms:migrate_rooms
+  - migrate_sponsors:migrate_sponsors
+
+# Information added by Drupal.org packaging script on 2022-04-22
+version: '6.0.0'
+project: 'migrate_plus'
+datestamp: 1650658064

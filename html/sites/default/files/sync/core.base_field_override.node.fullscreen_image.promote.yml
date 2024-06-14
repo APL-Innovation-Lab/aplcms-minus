@@ -1,0 +1,22 @@
+uuid: cda43b34-0700-4a75-9a2f-8d4efa7aea9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.promote
+field_name: promote
+entity_type: node
+bundle: fullscreen_image
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

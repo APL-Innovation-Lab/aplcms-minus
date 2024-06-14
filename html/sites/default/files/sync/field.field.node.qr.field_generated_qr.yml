@@ -1,0 +1,38 @@
+uuid: 174cbddd-69b4-4f2d-a6d4-483461dc1b1b
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_generated_qr
+    - node.type.qr
+  module:
+    - image
+id: node.qr.field_generated_qr
+field_name: field_generated_qr
+entity_type: node
+bundle: qr
+label: 'Generated QR'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: qr
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

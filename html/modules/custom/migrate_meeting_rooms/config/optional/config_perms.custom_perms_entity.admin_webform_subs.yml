@@ -1,0 +1,7 @@
+uuid: 31e0a495-ba75-4b69-8bfd-2c45bbfe365e
+langcode: eng
+status: true
+dependencies: {  }
+id: admin_webform_subs
+label: 'admin webform subs'
+route: entity.webform_submission.canonical

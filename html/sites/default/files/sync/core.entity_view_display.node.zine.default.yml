@@ -1,0 +1,53 @@
+uuid: dd4871c7-af6c-4e6a-b16a-b8896fc17bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.zine.feeds_item
+    - field.field.node.zine.field_zine_agreement
+    - field.field.node.zine.field_zine_email_address
+    - field.field.node.zine.field_zines_files
+    - node.type.zine
+  module:
+    - file
+    - user
+id: node.zine.default
+targetEntityType: node
+bundle: zine
+mode: default
+content:
+  field_zine_agreement:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_zine_email_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_zines_files:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

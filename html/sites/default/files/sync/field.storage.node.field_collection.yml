@@ -1,0 +1,33 @@
+uuid: 2ccec190-c104-4d2e-b77d-b256690df76e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_collection
+field_name: field_collection
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Archives & Manuscripts'
+    -
+      value: '2'
+      label: 'Photographs Collection'
+    -
+      value: '3'
+      label: 'Recordings Collection'
+    -
+      value: '4'
+      label: 'Architectural Archives'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: aea3938f-72df-4020-a71c-9230a5ee10db
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_top_
+    - node.type.page_
+  module:
+    - text
+id: node.page_.field_body_top_
+field_name: field_body_top_
+entity_type: node
+bundle: page_
+label: 'Body (Top)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

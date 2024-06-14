@@ -1,0 +1,18 @@
+uuid: 05d96965-5d5c-4f12-aeea-d1807b7a3d3f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.webform
+target_entity_type_id: block_content
+target_bundle: webform
+default_langcode: site_default
+language_alterable: false

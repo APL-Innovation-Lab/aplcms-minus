@@ -1,0 +1,34 @@
+.usa-button.usa-button-outline,
+.usa-button.usa-button-outlined,
+.usa-button.usa-button-outline:hover,
+.usa-button.usa-button-outlined:hover {
+  background-color: white;
+  color: #0071bc;
+}
+.usa-button {
+	background-color: #0071bc;
+	appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+/*	font-family: "Source Sans Pro","Helvetica","Arial",sans-serif;*/
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	outline: none;
+	padding: .6em .8em;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.usa-button:hover {
+  color: white;
+  text-decoration: underline;
+}
+

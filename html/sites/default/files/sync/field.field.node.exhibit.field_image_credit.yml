@@ -1,0 +1,19 @@
+uuid: 26a1f83d-bcbf-41e2-8e50-48cfd0c1ebf7
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_credit
+    - node.type.exhibit
+id: node.exhibit.field_image_credit
+field_name: field_image_credit
+entity_type: node
+bundle: exhibit
+label: 'Image Credit'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

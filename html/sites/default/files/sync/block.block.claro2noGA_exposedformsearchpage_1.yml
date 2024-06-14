@@ -1,0 +1,28 @@
+uuid: 3c704d85-167f-4c37-a290-0eb4b6e02114
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_exposedformsearchpage_1
+theme: claro2noGA
+region: header
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/search-website*"

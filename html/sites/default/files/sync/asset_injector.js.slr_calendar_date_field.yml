@@ -1,0 +1,38 @@
+uuid: 71d6406a-9d62-42fe-9a19-00dd1b62048c
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: slr_calendar_date_field
+label: 'slr calendar date field'
+code: |
+  window.onload = function() {
+      var dateField = document.querySelector('#edit-date');
+
+      dateField.addEventListener('change', function() {
+          var selectedDate = new Date(this.value);
+
+          // Format the date into 'YYYY-MM-DD' format
+          var year = selectedDate.getFullYear();
+          var month = ('0' + (selectedDate.getMonth() + 1)).slice(-2);  // Months are 0-based in JavaScript
+          var day = ('0' + (selectedDate.getDate() + 1)).slice(-2);
+
+          var formattedDate = year + '-' + month + '-' + day;
+  				console.log(formattedDate);
+
+          window.location = '/slr/calendar?date=' + formattedDate;
+      });
+  };
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /slr/calendar
+contexts: {  }
+conditions_require_all: true

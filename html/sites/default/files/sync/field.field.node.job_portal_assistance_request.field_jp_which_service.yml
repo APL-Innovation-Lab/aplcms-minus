@@ -1,0 +1,21 @@
+uuid: 0454cd91-18dd-46f7-a3cd-6fd8a00278e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_which_service
+    - node.type.job_portal_assistance_request
+  module:
+    - options
+id: node.job_portal_assistance_request.field_jp_which_service
+field_name: field_jp_which_service
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Which service(s) did you receive assistance with?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

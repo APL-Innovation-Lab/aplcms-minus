@@ -1,0 +1,33 @@
+uuid: 4b97b468-ec97-4e0b-8827-3e1495994e37
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: 2024_navigation_remove_toolbar
+label: '2024 Navigation remove toolbar'
+code: |
+  window.onload = function() {
+  	  console.log('removing toolbar');
+      var body = document.body;
+      
+      if (body.classList.contains('toolbar-fixed')) {
+          body.classList.remove('toolbar-fixed');
+      }
+      
+      if (body.classList.contains('toolbar-vertical')) {
+          body.classList.remove('toolbar-vertical');
+      }
+  }
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /theme/navigation2024
+contexts: {  }
+conditions_require_all: true

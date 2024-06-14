@@ -1,0 +1,18 @@
+uuid: 972802d8-8abb-4124-94fe-b1c23dbed548
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.library_info
+id: node.library_info.changed
+field_name: changed
+entity_type: node
+bundle: library_info
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,140 @@
+uuid: 5f6aac8c-7c9a-46a2-af56-70bedf2e321b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.gift_shop_page.title
+    - core.base_field_override.node.gift_shop_page.uid
+    - field.field.node.gift_shop_page.body
+    - field.field.node.gift_shop_page.field_main_image
+    - node.type.gift_shop_page
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      1e55ee15-0623-4066-8ca8-a595982c7be0:
+        find: '/<img src=\"/'
+        replace: ''
+        limit: null
+        uuid: 1e55ee15-0623-4066-8ca8-a595982c7be0
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: 0
+        label: 'Find replace REGEX'
+      7613a9e9-088f-4fdf-aa1f-30b0680e6add:
+        find: '/\"\ width.*/'
+        replace: ''
+        limit: null
+        uuid: 7613a9e9-088f-4fdf-aa1f-30b0680e6add
+        plugin: find_replace_regex
+        source: field_main_image
+        weight: 1
+        label: 'Find replace REGEX'
+id: gift_shop_page
+label: 'Gift Shop Page'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: gift_shop_page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_main_image:
+    value: field_main_image
+    label: field_main_image
+    machine_name: field_main_image
+    type: csv
+  field_main_image_alt:
+    value: field_main_image_alt
+    label: field_main_image_alt
+    machine_name: field_main_image_alt
+    type: csv
+mappings:
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      language: ''
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_image
+    map:
+      target_id: field_main_image
+      alt: field_main_image_alt
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'

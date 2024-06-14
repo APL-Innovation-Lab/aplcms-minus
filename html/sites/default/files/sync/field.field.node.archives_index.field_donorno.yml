@@ -1,0 +1,21 @@
+uuid: c126d60b-73a7-4d87-948b-438d73e214f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_donorno
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_donorno
+field_name: field_donorno
+entity_type: node
+bundle: archives_index
+label: DonorNo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

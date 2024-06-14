@@ -1,0 +1,33 @@
+uuid: f283d036-d393-49b0-9af5-f1f5e8273606
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_submission_id
+    - node.type.room_reservation
+    - webform.webform.meeting_room_reservation_request
+  module:
+    - webform
+id: node.room_reservation.field_submission_id
+field_name: field_submission_id
+entity_type: node
+bundle: room_reservation
+label: 'Submission ID'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: ee7cfc71-63fc-4ea5-aa7d-7b6ffc9afe89
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    webform_access_group: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

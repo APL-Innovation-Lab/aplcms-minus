@@ -1,0 +1,22 @@
+uuid: 88cd20e3-45e8-4e20-b31c-b2283221e93a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ahc_protests
+id: node.ahc_protests.sticky
+field_name: sticky
+entity_type: node
+bundle: ahc_protests
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 9896c006-b18c-44dc-a0e0-3eacb505c04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.special_dates
+id: node.special_dates.title
+field_name: title
+entity_type: node
+bundle: special_dates
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

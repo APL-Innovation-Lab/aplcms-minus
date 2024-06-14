@@ -1,0 +1,21 @@
+uuid: 5900fe35-4eae-4ec3-a942-85aef05c9394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_description_2
+    - taxonomy.vocabulary.quests
+  module:
+    - text
+id: taxonomy_term.quests.field_description_2
+field_name: field_description_2
+entity_type: taxonomy_term
+bundle: quests
+label: 'Description 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

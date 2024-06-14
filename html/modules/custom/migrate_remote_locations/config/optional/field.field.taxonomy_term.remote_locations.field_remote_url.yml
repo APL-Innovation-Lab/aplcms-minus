@@ -1,0 +1,19 @@
+uuid: 574106c5-99dc-4b3a-8af0-4821e85b45d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_remote_url
+    - taxonomy.vocabulary.remote_locations
+id: taxonomy_term.remote_locations.field_remote_url
+field_name: field_remote_url
+entity_type: taxonomy_term
+bundle: remote_locations
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

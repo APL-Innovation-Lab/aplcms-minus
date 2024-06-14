@@ -1,0 +1,30 @@
+uuid: 77ce936d-97b3-46ac-b61b-0127b6471ef3
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  apple_mobile_web_app_capable: 'yes'
+  apple_mobile_web_app_status_bar_style: black-translucent
+  apple_touch_icon_114x114: /apple-touch-icon-114x114.png
+  apple_touch_icon_120x120: /apple-touch-icon-120x120.png
+  apple_touch_icon_144x144: /apple-touch-icon-144x144.png
+  apple_touch_icon_152x152: /apple-touch-icon-152x152.png
+  apple_touch_icon_180x180: /apple-touch-icon-180x180.png
+  apple_touch_icon_72x72: /apple-touch-icon-72x72.png
+  apple_touch_icon_76x76: /apple-touch-icon-76x76.png
+  apple_touch_icon_precomposed: /apple-touch-icon-57x57.png
+  apple_touch_icon_precomposed_114x114: /apple-touch-icon-114x114.png
+  apple_touch_icon_precomposed_120x120: /apple-touch-icon-120x120.png
+  apple_touch_icon_precomposed_144x144: /apple-touch-icon-144x144.png
+  apple_touch_icon_precomposed_152x152: /apple-touch-icon-152x152.png
+  apple_touch_icon_precomposed_180x180: /apple-touch-icon-180x180.png
+  apple_touch_icon_precomposed_72x72: /apple-touch-icon-72x72.png
+  apple_touch_icon_precomposed_76x76: /apple-touch-icon-76x76.png
+  canonical_url: '[current-page:url]'
+  shortcut_icon: /library/aplfavicon.png
+  title: '[current-page:title] | [site:name]'
+  viewport: 'width=device-width, initial-scale=1.0'

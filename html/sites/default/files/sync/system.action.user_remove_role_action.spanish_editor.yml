@@ -1,0 +1,14 @@
+uuid: fde1d570-c69f-46fd-b708-aded8bbcd6c2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.spanish_editor
+  module:
+    - user
+id: user_remove_role_action.spanish_editor
+label: 'Remove the Spanish Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: spanish_editor

@@ -1,0 +1,18 @@
+uuid: 53f291b2-ce6d-4737-b025-b6a7cdee8615
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alert_zone
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.alert_zone
+target_entity_type_id: taxonomy_term
+target_bundle: alert_zone
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 0ad4bd6c-a1cb-4116-a5d8-6d835caf8f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.public_computer_page
+  module:
+    - path
+id: node.public_computer_page.path
+field_name: path
+entity_type: node
+bundle: public_computer_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,21 @@
+uuid: ab587cbd-2d6d-4e59-839f-8d986a53a826
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agreements
+    - node.type.room_reservation
+  module:
+    - options
+id: node.room_reservation.field_agreements
+field_name: field_agreements
+entity_type: node
+bundle: room_reservation
+label: Agreements
+description: 'If your group is eligible, please agree to all stated Agreements.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

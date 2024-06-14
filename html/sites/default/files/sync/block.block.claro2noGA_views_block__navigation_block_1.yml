@@ -1,0 +1,29 @@
+uuid: 2704ccc6-7b1d-4e8a-a91d-333b6d0512b1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.navigation
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__navigation_block_1
+theme: claro2noGA
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:navigation-block_1'
+settings:
+  id: 'views_block:navigation-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/book-a-librarian\r\n"

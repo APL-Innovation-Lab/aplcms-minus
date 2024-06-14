@@ -1,0 +1,32 @@
+uuid: 65f5ebd5-ed54-4ba7-805f-4741dc0b41bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.virtual_library_alert.field_alert_icon
+    - field.field.node.virtual_library_alert.field_button_url
+    - field.field.node.virtual_library_alert.field_display_timespan_04_07p
+    - field.field.node.virtual_library_alert.field_icon
+    - field.field.node.virtual_library_alert.field_rec_theme
+    - node.type.virtual_library_alert
+  module:
+    - user
+id: node.virtual_library_alert.teaser
+targetEntityType: node
+bundle: virtual_library_alert
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_alert_icon: true
+  field_button_url: true
+  field_display_timespan_04_07p: true
+  field_icon: true
+  field_rec_theme: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,292 @@
+uuid: 805ce0e4-646c-4c87-9926-98875e98e17e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+  module:
+    - jsonapi_defaults
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: node--room_reservation
+disabled: false
+path: room_reservation
+resourceType: room_reservation
+resourceFields:
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: false
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: false
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: false
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: false
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: false
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: false
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: false
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: false
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  metatag:
+    disabled: false
+    fieldName: metatag
+    publicName: metatag
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  publish_on:
+    disabled: false
+    fieldName: publish_on
+    publicName: publish_on
+    enhancer:
+      id: ''
+  unpublish_on:
+    disabled: false
+    fieldName: unpublish_on
+    publicName: unpublish_on
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: false
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: false
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: false
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  feeds_item:
+    disabled: false
+    fieldName: feeds_item
+    publicName: feeds_item
+    enhancer:
+      id: ''
+  field_agreements:
+    disabled: false
+    fieldName: field_agreements
+    publicName: field_agreements
+    enhancer:
+      id: ''
+  field_checked_for_conflicts:
+    disabled: false
+    fieldName: field_checked_for_conflicts
+    publicName: field_checked_for_conflicts
+    enhancer:
+      id: ''
+  field_conflicting_reservations:
+    disabled: false
+    fieldName: field_conflicting_reservations
+    publicName: field_conflicting_reservations
+    enhancer:
+      id: ''
+  field_digital_signature:
+    disabled: false
+    fieldName: field_digital_signature
+    publicName: field_digital_signature
+    enhancer:
+      id: ''
+  field_email:
+    disabled: false
+    fieldName: field_email
+    publicName: field_email
+    enhancer:
+      id: ''
+  field_group_name:
+    disabled: false
+    fieldName: field_group_name
+    publicName: field_group_name
+    enhancer:
+      id: ''
+  field_group_rep_full_name:
+    disabled: false
+    fieldName: field_group_rep_full_name
+    publicName: field_group_rep_full_name
+    enhancer:
+      id: ''
+  field_group_rep_phone:
+    disabled: false
+    fieldName: field_group_rep_phone
+    publicName: field_group_rep_phone
+    enhancer:
+      id: ''
+  field_group_website:
+    disabled: false
+    fieldName: field_group_website
+    publicName: field_group_website
+    enhancer:
+      id: ''
+  field_internal_:
+    disabled: false
+    fieldName: field_internal_
+    publicName: field_internal_
+    enhancer:
+      id: ''
+  field_meeting_room:
+    disabled: false
+    fieldName: field_meeting_room
+    publicName: field_meeting_room
+    enhancer:
+      id: ''
+  field_purpose_of_group_:
+    disabled: false
+    fieldName: field_purpose_of_group_
+    publicName: field_purpose_of_group_
+    enhancer:
+      id: ''
+  field_room_expected_attendance:
+    disabled: false
+    fieldName: field_room_expected_attendance
+    publicName: field_room_expected_attendance
+    enhancer:
+      id: ''
+  field_room_group:
+    disabled: false
+    fieldName: field_room_group
+    publicName: field_room_group
+    enhancer:
+      id: ''
+  field_room_status:
+    disabled: false
+    fieldName: field_room_status
+    publicName: field_room_status
+    enhancer:
+      id: ''
+  field_slr_duration:
+    disabled: false
+    fieldName: field_slr_duration
+    publicName: field_slr_duration
+    enhancer:
+      id: ''
+  field_slr_time_end:
+    disabled: false
+    fieldName: field_slr_time_end
+    publicName: field_slr_time_end
+    enhancer:
+      id: ''
+  field_slr_time_start:
+    disabled: false
+    fieldName: field_slr_time_start
+    publicName: field_slr_time_start
+    enhancer:
+      id: ''
+  field_submission_id:
+    disabled: false
+    fieldName: field_submission_id
+    publicName: field_submission_id
+    enhancer:
+      id: ''
+  field____date:
+    disabled: false
+    fieldName: field____date
+    publicName: field____date
+    enhancer:
+      id: ''

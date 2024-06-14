@@ -1,0 +1,24 @@
+.calendar-event,
+.event-cal {
+	margin: 12px 0;
+	font-weight: bold;
+	color: black;
+	position: relative;
+}
+.calendar-event__audience-row,
+.aud_row {
+	display: flex;
+	height: 4px;
+	background: #f9f9f9;
+	position: absolute;
+	top: -5px;
+	right: 0;
+	width: 100%;
+}
+.aud32 {
+	height: 4px;
+	background: #a1d096;
+}
+.aud29, .aud30, .aud31, .aud32 {
+	width: 100%;
+}

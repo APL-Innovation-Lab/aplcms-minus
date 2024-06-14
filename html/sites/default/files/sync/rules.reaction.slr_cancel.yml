@@ -1,0 +1,86 @@
+uuid: 720b03fb-458b-4a6e-9a9d-078507068e55
+langcode: eng
+status: false
+dependencies: {  }
+id: slr_cancel
+label: 'SLR Cancel'
+events:
+  -
+    event_name: 'rules_entity_update:node--slr'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: cdfa48ae-b56a-4398-8378-1d8f00f06fee
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: e4121ac3-303b-4788-a615-956976ff48ca
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: eadae7cb-b13c-4079-a490-080a5dbc28d2
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: false
+        context_values:
+          operation: '=='
+          value: '4'
+        context_mapping:
+          data: node.field_request_status.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: fb195daf-b6e7-411c-9e73-d41b750ffccd
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 551b770b-bcdd-4776-8ef6-5a46a1a1b5af
+        weight: 0
+        action_id: rules_system_message
+        context_values:
+          message: 'Your Shared Learning Room Reservation was canceled.'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 1ee0dce7-bbd6-4ffa-a9f4-750da2dd2f38
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.field_slr_email}}'
+          subject: ' Shared Learning Room Cancellation Notice - Please read!'
+          message: "<p style=\"color:black;\"><span style=\"color:black;\" class=\"deets\">Room: {{node.field_slr_room.entity.name}}</span><br/><span style=\"color:black;\" class=\"deets\">Start Time: {{node.field_slr_time_start.value|format_date('long')}}</span><br/>\r\nEnd Time: {{node.field_slr_time_end.value|format_date('long')}}</span><br/><span style=\"color:black;\" class=\"deets\">Name: {{node.field_slr_full_name.value}}</span><br/><span style=\"color:black;\" class=\"deets\">Topic: {{node.title}}</span><br/><span style=\"color:black;\" class=\"deets\">Status: Canceled</span></p><p style=\"color:black;\">Hello,</p><p style=\"color:black;\">Austin Public Health raised the Austin area’s <a href=\"https://www.austintexas.gov/page/covid-19-risk-based-guidelines\">COVID-19 Risk-Based Guidance to Stage 5</a>, its highest level. In response, Austin Public Library (APL) will be closing the Shared Learning Rooms at the Central Library effective January 10, 2022. As a result, your reservation has been cancelled. Please see the <a href=\"https://library.austintexas.gov/press-release/apl-covid-19-stage-5-capacity-and-service-restrictions-effective-jan-10-7697995\">APL COVID-19 Stage 5 Capacity and Service Restrictions, Effective Jan 10</a> news alert on our website for additional information.</p><p style=\"color:black;\">We apologize for any inconvenience. Please let us know if you have any questions.</p><p style=\"color:black;\">Questions? Call 512-974-7400 (option 1) or <a href=\"http://library.austintexas.libanswers.com/\">Ask a Librarian</a>.</p><style>* {font-family: \"Source Sans Pro\", \"Helvetica\", \"Arial\", sans-serif;line-height: 1.3em;color: black !important;}.im, .deets {color: black !important;}</style>"
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

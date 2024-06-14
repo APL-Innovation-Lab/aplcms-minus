@@ -1,0 +1,28 @@
+title: Subscribe
+description: 'A subscribe to mailing list webform template.'
+elements: |
+  first_name:
+    '#title': 'First Name'
+    '#type': textfield
+    '#required': true
+  last_name:
+    '#title': 'Last Name'
+    '#type': textfield
+    '#required': true
+  email:
+    '#title': Email
+    '#type': email
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Subscribe
+settings:
+  confirmation_message: 'Thank you for subscribing.'
+handlers:
+  email_notification:
+    label: 'Email Notification'
+    settings:
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default

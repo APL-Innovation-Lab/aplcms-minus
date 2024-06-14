@@ -1,0 +1,21 @@
+uuid: ea7b9952-5b6c-49aa-8454-b4e53762e46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_you_have_a_library_card
+    - node.type.job_portal_assistance_request
+id: node.job_portal_assistance_request.field_do_you_have_a_library_card
+field_name: field_do_you_have_a_library_card
+entity_type: node
+bundle: job_portal_assistance_request
+label: '  Do you have a library card?'
+description: 'You do not need a library card to book a job coach, but this information helps us select the most useful resources for you.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

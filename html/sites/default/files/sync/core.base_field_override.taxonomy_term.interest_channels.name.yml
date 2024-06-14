@@ -1,0 +1,18 @@
+uuid: 625597dc-c769-437d-9813-cb852980c914
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interest_channels
+id: taxonomy_term.interest_channels.name
+field_name: name
+entity_type: taxonomy_term
+bundle: interest_channels
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

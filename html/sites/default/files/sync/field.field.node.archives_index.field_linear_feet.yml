@@ -1,0 +1,23 @@
+uuid: 0893fa89-f4fc-4775-a2dc-c92e0bfe09e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linear_feet
+    - node.type.archives_index
+id: node.archives_index.field_linear_feet
+field_name: field_linear_feet
+entity_type: node
+bundle: archives_index
+label: 'Linear Feet'
+description: 'example: 0.75'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

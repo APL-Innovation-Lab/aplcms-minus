@@ -1,0 +1,23 @@
+uuid: ee0be3db-e2d5-4c95-9607-099459c8b2c7
+langcode: eng
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - key_auth
+    - serialization
+    - user
+    - webform_rest
+id: webform_rest_submission
+plugin_id: webform_rest_submission
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - key_auth
+    - basic_auth
+    - cookie

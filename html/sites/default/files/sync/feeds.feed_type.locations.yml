@@ -1,0 +1,281 @@
+uuid: f23b8210-2d31-44bb-a53c-6195ea2944ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.library_location.description
+    - core.base_field_override.taxonomy_term.library_location.name
+    - core.base_field_override.taxonomy_term.library_location.path
+    - field.field.taxonomy_term.library_location.field_capacities
+    - field.field.taxonomy_term.library_location.field_district
+    - field.field.taxonomy_term.library_location.field_latitude_longitude
+    - field.field.taxonomy_term.library_location.field_location_code
+    - field.field.taxonomy_term.library_location.field_location_main_image
+    - field.field.taxonomy_term.library_location.field_phone_num
+    - field.field.taxonomy_term.library_location.field_special_weight
+    - field.field.taxonomy_term.library_location.field_staff_recommendations
+    - field.field.taxonomy_term.library_location.field_street_address
+    - field.field.taxonomy_term.library_location.field_zipcode
+    - taxonomy.vocabulary.library_location
+  module:
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      6d89a68d-3fd9-4a07-8aec-73ec6720de7d:
+        text: eng
+        uuid: 6d89a68d-3fd9-4a07-8aec-73ec6720de7d
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+id: locations
+label: Locations
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: library_location
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  field_location_main_image_fid:
+    value: field_location_main_image_fid
+    label: field_location_main_image_fid
+    machine_name: field_location_main_image_fid
+    type: csv
+  path:
+    value: path
+    label: path
+    machine_name: path
+    type: csv
+  field_location_code:
+    value: field_location_code
+    label: field_location_code
+    machine_name: field_location_code
+    type: csv
+  parent:
+    value: parent
+    label: parent
+    machine_name: parent
+    type: csv
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  field_capacities:
+    value: field_capacities
+    label: field_capacities
+    machine_name: field_capacities
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  field_district:
+    value: field_district
+    label: field_district
+    machine_name: field_district
+    type: csv
+  '':
+    value: field_location_code
+    label: field_location_code
+    machine_name: ''
+    type: csv
+  field_open_hours_html:
+    value: field_open_hours_html
+    label: field_open_hours_html
+    machine_name: field_open_hours_html
+    type: csv
+  field_phone_num:
+    value: field_phone_num
+    label: field_phone_num
+    machine_name: field_phone_num
+    type: csv
+  field_special_hours_note:
+    value: field_special_hours_note
+    label: field_special_hours_note
+    machine_name: field_special_hours_note
+    type: csv
+  field_special_weight:
+    value: field_special_weight
+    label: field_special_weight
+    machine_name: field_special_weight
+    type: csv
+  field_staff_recommendations:
+    value: field_staff_recommendations
+    label: field_staff_recommendations
+    machine_name: field_staff_recommendations
+    type: csv
+  field_street_address:
+    value: field_street_address
+    label: field_street_address
+    machine_name: field_street_address
+    type: csv
+  field_zipcode:
+    value: field_zipcode
+    label: field_zipcode
+    machine_name: field_zipcode
+    type: csv
+  field_latitude_longitude:
+    value: field_latitude_longitude
+    label: field_latitude_longitude
+    machine_name: field_latitude_longitude
+    type: csv
+  location_code:
+    value: location_code
+    label: location_code
+    machine_name: location_code
+    type: csv
+  location_main_image:
+    value: location_main_image
+    label: location_main_image
+    machine_name: location_main_image
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+mappings:
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: parent
+    map:
+      target_id: parent
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_capacities
+    map:
+      value: field_capacities
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: description
+    map:
+      value: description
+    settings:
+      language: eng
+      format: plain_text
+  -
+    target: field_district
+    map:
+      value: field_district
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_phone_num
+    map:
+      value: field_phone_num
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_special_weight
+    map:
+      value: field_special_weight
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_staff_recommendations
+    map:
+      value: field_staff_recommendations
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_street_address
+    map:
+      value: field_street_address
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_zipcode
+    map:
+      value: field_zipcode
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: path
+    settings:
+      language: eng
+  -
+    target: field_latitude_longitude
+    map:
+      value: field_latitude_longitude
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_location_code
+    map:
+      value: location_code
+    settings:
+      language: eng
+    unique: {  }
+  -
+    target: field_location_main_image
+    map:
+      target_id: location_main_image
+      alt: name
+      title: ''
+    settings:
+      language: eng
+      reference_by: fid
+      autocreate: '1'
+      existing: '1'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: eng

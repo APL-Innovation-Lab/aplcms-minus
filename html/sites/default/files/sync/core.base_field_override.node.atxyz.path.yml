@@ -1,0 +1,20 @@
+uuid: 07cc0ddc-ac21-456b-bd80-c94d1137b484
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+  module:
+    - path
+id: node.atxyz.path
+field_name: path
+entity_type: node
+bundle: atxyz
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

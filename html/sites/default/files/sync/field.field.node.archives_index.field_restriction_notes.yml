@@ -1,0 +1,21 @@
+uuid: b7dc85e7-dd88-4bc1-a36e-418ac73cd59b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_restriction_notes
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_restriction_notes
+field_name: field_restriction_notes
+entity_type: node
+bundle: archives_index
+label: 'Restriction Notes'
+description: 'example: Contact David Hoffman to reproduce any drawings'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

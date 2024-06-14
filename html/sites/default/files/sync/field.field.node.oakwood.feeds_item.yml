@@ -1,0 +1,23 @@
+uuid: f3a854d7-cc81-4e33-ac16-09115602979a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.oakwood
+  module:
+    - feeds
+id: node.oakwood.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: oakwood
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

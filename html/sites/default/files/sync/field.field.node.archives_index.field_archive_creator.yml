@@ -1,0 +1,21 @@
+uuid: 25b8adf5-7067-48cd-8761-b6021405e7a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive_creator
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_archive_creator
+field_name: field_archive_creator
+entity_type: node
+bundle: archives_index
+label: Creator
+description: 'examples: McNeill and Hume families; Graham, Niles; Allan Junior High School; Austin (Tex.) Mayor''s Office'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

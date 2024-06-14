@@ -1,0 +1,21 @@
+uuid: e1f5a909-c464-41de-8467-686e03549803
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posted_taro
+    - node.type.archives_index
+  module:
+    - datetime
+id: node.archives_index.field_posted_taro
+field_name: field_posted_taro
+entity_type: node
+bundle: archives_index
+label: 'Posted TARO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

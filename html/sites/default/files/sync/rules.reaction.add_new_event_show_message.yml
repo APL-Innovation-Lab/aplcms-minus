@@ -1,0 +1,44 @@
+uuid: 96889caf-2026-431c-8662-0d871222ccad
+langcode: eng
+status: true
+dependencies: {  }
+id: add_new_event_show_message
+label: 'Add new event, show message'
+events:
+  -
+    event_name: 'rules_entity_insert:node--event'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 6f856db1-c010-471a-8c4d-f9b5af1165e9
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: f1f81857-e3f5-400c-87e0-7e95d235e416
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 2323846a-e74f-47ff-9b6a-dc612c06ae1d
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: f2faef54-0dbb-446f-a64a-f404edf388a2
+        weight: 0
+        action_id: rules_system_message
+        context_values:
+          message: 'Event added.<br><a class="usa-button usa-button-outline" href="/node/add/event">Add another event</a>'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: fb70300b-f689-4c96-b039-1fc04d00be64
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.group
+id: node.group.publish_on
+field_name: publish_on
+entity_type: node
+bundle: group
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

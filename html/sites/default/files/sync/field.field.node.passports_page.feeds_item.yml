@@ -1,0 +1,23 @@
+uuid: 70c978c2-7f1c-435d-b2a2-d7fb10e79a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.passports_page
+  module:
+    - feeds
+id: node.passports_page.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: passports_page
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

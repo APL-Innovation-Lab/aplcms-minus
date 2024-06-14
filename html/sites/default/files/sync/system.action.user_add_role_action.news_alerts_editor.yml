@@ -1,0 +1,14 @@
+uuid: 6f62f23b-5042-4323-aaab-ee18db3880bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_alerts_editor
+  module:
+    - user
+id: user_add_role_action.news_alerts_editor
+label: 'Add the News &amp; Alerts Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: news_alerts_editor

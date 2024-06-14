@@ -1,0 +1,18 @@
+uuid: 61bfe14f-c389-4aa1-be4d-3ddce7e7f86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+id: node.panel.title
+field_name: title
+entity_type: node
+bundle: panel
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

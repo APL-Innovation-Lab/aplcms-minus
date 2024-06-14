@@ -1,0 +1,23 @@
+uuid: fd3e65b1-d2e5-4232-b194-02c5c0c73922
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event
+  module:
+    - text
+id: node.event.body
+field_name: body
+entity_type: node
+bundle: event
+label: 'Event Description'
+description: 'Text in the Event Category will be used. Any text entered here will appear after the category description.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

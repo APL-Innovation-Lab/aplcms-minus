@@ -1,0 +1,66 @@
+uuid: f084edda-65a4-475c-9ad4-cda0f80fcd88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gift_shop_page.body
+    - field.field.node.gift_shop_page.feeds_item
+    - field.field.node.gift_shop_page.field_main_image
+    - node.type.gift_shop_page
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          d01eae47-aa33-4e5e-9ae8-14203cb1fd5e:
+            uuid: d01eae47-aa33-4e5e-9ae8-14203cb1fd5e
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_17'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.gift_shop_page.teaser
+targetEntityType: node
+bundle: gift_shop_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_main_image: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 6fa618af-2ec3-46e0-b1ae-5a74753e4e29
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.publish_on
+field_name: publish_on
+entity_type: node
+bundle: staff_recommend
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

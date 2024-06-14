@@ -1,0 +1,272 @@
+uuid: 686b31ed-03c6-4c68-b8f9-638b9a1eb24d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.room_reservation.title
+    - core.base_field_override.node.room_reservation.uid
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_internal_
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_room_status
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - node.type.room_reservation
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      af6a235a-7e4e-4bb9-8b6a-48443a97056a:
+        text: eng
+        uuid: af6a235a-7e4e-4bb9-8b6a-48443a97056a
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      1b6d9523-f01d-4ce2-bb3e-d66b0f804430:
+        default_value: Internal
+        only_if_empty: true
+        uuid: 1b6d9523-f01d-4ce2-bb3e-d66b0f804430
+        plugin: default_value
+        source: internal
+        weight: 0
+        label: 'Set value or default value'
+      9710f43c-7bc3-47d7-ba89-f1fcff9e1709:
+        text: '[date_] [time_start]'
+        uuid: 9710f43c-7bc3-47d7-ba89-f1fcff9e1709
+        plugin: rewrite
+        source: time_start
+        weight: 0
+        label: Rewrite
+      36412765-ba7b-426a-aeb4-ab598f2b9c1e:
+        uuid: 36412765-ba7b-426a-aeb4-ab598f2b9c1e
+        plugin: strtotime
+        source: time_start
+        weight: 1
+        label: 'String to Unix Timestamp'
+      2aa15bde-e6aa-4683-8bd0-e13edd2409f2:
+        text: '[date_] [time_end]'
+        uuid: 2aa15bde-e6aa-4683-8bd0-e13edd2409f2
+        plugin: rewrite
+        source: time_end
+        weight: 0
+        label: Rewrite
+      2aa2d7e1-52a0-4801-8a09-8be6430b5c26:
+        uuid: 2aa2d7e1-52a0-4801-8a09-8be6430b5c26
+        plugin: strtotime
+        source: time_end
+        weight: 1
+        label: 'String to Unix Timestamp'
+      133fc913-08a3-4919-9e5c-0cf9580e6f3d:
+        default_value: '3'
+        only_if_empty: true
+        uuid: 133fc913-08a3-4919-9e5c-0cf9580e6f3d
+        plugin: default_value
+        source: status_
+        weight: 0
+        label: 'Set value or default value'
+      4c70ef69-7006-4dcd-88f4-ac7ff95c71ad:
+        find: Confirmed
+        replace: '3'
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 4c70ef69-7006-4dcd-88f4-ac7ff95c71ad
+        plugin: find_replace
+        source: status_
+        weight: 1
+        label: 'Find replace'
+label: _ZZZ_old
+id: mr_internal
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: room_reservation
+  langcode: eng
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  topic:
+    value: topic
+    label: topic
+    machine_name: topic
+    type: csv
+  room:
+    value: room
+    label: room
+    machine_name: room
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: csv
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: csv
+  internal:
+    value: internal
+    label: internal
+    machine_name: internal
+    type: csv
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  attendance:
+    value: attendance
+    label: attendance
+    machine_name: attendance
+    type: csv
+  author:
+    value: author
+    label: author
+    machine_name: author
+    type: csv
+  user_name:
+    value: 'User Name'
+    label: 'User Name'
+    machine_name: user_name
+    type: csv
+  topic_:
+    value: Topic
+    label: Topic
+    machine_name: topic_
+    type: csv
+  room_:
+    value: Room
+    label: Room
+    machine_name: room_
+    type: csv
+  expected_attendance:
+    value: 'Expected Attendance'
+    label: 'Expected Attendance'
+    machine_name: expected_attendance
+    type: csv
+  date_:
+    value: Date
+    label: Date
+    machine_name: date_
+    type: csv
+  time_start:
+    value: 'Time Start'
+    label: 'Time Start'
+    machine_name: time_start
+    type: csv
+  time_end:
+    value: 'Time End'
+    label: 'Time End'
+    machine_name: time_end
+    type: csv
+  status_:
+    value: Status
+    label: Status
+    machine_name: status_
+    type: csv
+mappings:
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: topic_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_meeting_room
+    map:
+      target_id: room_
+    settings:
+      language: ''
+      reference_by: field_short_name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field____date
+    map:
+      value: date_
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_start
+    map:
+      value: time_start
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: time_end
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_internal_
+    map:
+      value: internal
+    settings:
+      language: null
+  -
+    target: field_room_status
+    map:
+      value: status_
+    settings:
+      language: null
+  -
+    target: field_room_expected_attendance
+    map:
+      value: expected_attendance
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: uid
+    map:
+      target_id: user_name
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0

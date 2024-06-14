@@ -1,0 +1,22 @@
+uuid: c09fe12d-43a4-41d8-a96d-be903599d7cb
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.sticky
+field_name: sticky
+entity_type: node
+bundle: accordion
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

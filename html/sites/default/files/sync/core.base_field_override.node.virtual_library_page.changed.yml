@@ -1,0 +1,18 @@
+uuid: ed8611c3-76d5-4550-8d12-15387b4c73c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_page
+id: node.virtual_library_page.changed
+field_name: changed
+entity_type: node
+bundle: virtual_library_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

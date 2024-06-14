@@ -1,0 +1,29 @@
+uuid: 1546c892-ab02-4461-a481-98a55715a218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_room
+    - node.type.slr
+  content:
+    - 'taxonomy_term:rooms:1a9f22c6-cb17-4949-8b21-ddfc7895f05e'
+id: node.slr.field_slr_room
+field_name: field_slr_room
+entity_type: node
+bundle: slr
+label: Room
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 1a9f22c6-cb17-4949-8b21-ddfc7895f05e
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: slrs
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

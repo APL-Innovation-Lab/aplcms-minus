@@ -1,0 +1,19 @@
+uuid: f4200a93-a79b-49c2-bf69-6741691abb24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rec_introduction
+    - node.type.apltv_recommendation_slide
+id: node.apltv_recommendation_slide.field_rec_introduction
+field_name: field_rec_introduction
+entity_type: node
+bundle: apltv_recommendation_slide
+label: Introduction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

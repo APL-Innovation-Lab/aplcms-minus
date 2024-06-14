@@ -1,0 +1,25 @@
+uuid: 9b14f38d-833d-426a-a7dc-03b15ca3f287
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+id: exposedformarchives_and_manuscriptspage_1
+theme: claro2
+region: content
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:archives_and_manuscripts-page_1'
+settings:
+  id: 'views_exposed_filter_block:archives_and_manuscripts-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ahc/archives\r\n/ahc/archives/home\r\n/ahc/archives-and-manuscripts-index"

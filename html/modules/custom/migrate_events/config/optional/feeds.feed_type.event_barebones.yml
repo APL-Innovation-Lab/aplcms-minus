@@ -1,0 +1,360 @@
+uuid: 2e1cd08d-e5a7-493c-b377-5627170bbeb1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.event.title
+    - core.base_field_override.node.event.uid
+    - field.field.node.event.field_cat_ia
+    - field.field.node.event.field_central_event_location
+    - field.field.node.event.field_event_category_tags_
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_loc
+    - field.field.node.event.field_event_recommended_ages
+    - field.field.node.event.field_event_summary
+    - field.field.node.event.field_slr_time_end
+    - field.field.node.event.field_slr_time_start
+    - field.field.node.event.field_subtitle
+    - node.type.event
+  module:
+    - feeds_tamper
+    - node
+    - smart_date
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      3abd5e96-a494-420e-88ae-761697ac8cd4:
+        text: eng
+        uuid: 3abd5e96-a494-420e-88ae-761697ac8cd4
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      f01b037a-1ea2-4c90-9bbd-09907235d422:
+        text: '[date_] [time_start_]'
+        uuid: f01b037a-1ea2-4c90-9bbd-09907235d422
+        plugin: rewrite
+        source: dummy
+        weight: 0
+        label: Rewrite
+      6f678d76-1d49-420e-9294-342e256fafb2:
+        uuid: 6f678d76-1d49-420e-9294-342e256fafb2
+        plugin: strtotime
+        source: dummy
+        weight: 1
+        label: 'String to Unix Timestamp'
+      1a4573bc-e359-475b-9c6b-8e709e9c3d89:
+        text: '[date_] [time_end__]'
+        uuid: 1a4573bc-e359-475b-9c6b-8e709e9c3d89
+        plugin: rewrite
+        source: dummy2
+        weight: 0
+        label: Rewrite
+      8bf74dcf-ece7-4a74-8b3b-7e5bd1ed827a:
+        uuid: 8bf74dcf-ece7-4a74-8b3b-7e5bd1ed827a
+        plugin: strtotime
+        source: dummy2
+        weight: 1
+        label: 'String to Unix Timestamp'
+label: 'Event 2022'
+id: event_barebones
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: event
+  langcode: eng
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_cat_ia:
+    value: audience
+    label: audience
+    machine_name: field_cat_ia
+    type: csv
+  event_category:
+    value: event_category
+    label: event_category
+    machine_name: event_category
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  date2:
+    value: date2
+    label: date2
+    machine_name: date2
+    type: csv
+  date3:
+    value: date_start
+    label: date_start
+    machine_name: date3
+    type: csv
+  date4:
+    value: date_end
+    label: date_end
+    machine_name: date4
+    type: csv
+  time_start:
+    value: time_start
+    label: time_start
+    machine_name: time_start
+    type: csv
+  time_end:
+    value: time_end
+    label: time_end
+    machine_name: time_end
+    type: csv
+  date5:
+    value: date
+    label: date
+    machine_name: date5
+    type: csv
+  date_end:
+    value: date_end
+    label: date_end
+    machine_name: date_end
+    type: csv
+  location:
+    value: location
+    label: location
+    machine_name: location
+    type: csv
+  dummy:
+    value: dummy
+    label: dummy
+    machine_name: dummy
+    type: csv
+  date6:
+    value: date
+    label: date
+    machine_name: date6
+    type: csv
+  temp_date:
+    value: date
+    label: date
+    machine_name: temp_date
+    type: csv
+  dummy2:
+    value: dummy2
+    label: dummy2
+    machine_name: dummy2
+    type: csv
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: csv
+  subtitle:
+    value: Subtitle
+    label: Subtitle
+    machine_name: subtitle
+    type: csv
+  category_:
+    value: 'Category*'
+    label: 'Category*'
+    machine_name: category_
+    type: csv
+  title_:
+    value: 'Title*'
+    label: 'Title*'
+    machine_name: title_
+    type: csv
+  date_:
+    value: 'Date*'
+    label: 'Date*'
+    machine_name: date_
+    type: csv
+  time_start_:
+    value: 'Time: Start*'
+    label: 'Time: Start*'
+    machine_name: time_start_
+    type: csv
+  time_end__:
+    value: 'Time: End'
+    label: 'Time: End'
+    machine_name: time_end__
+    type: csv
+  location_:
+    value: 'Location*'
+    label: 'Location*'
+    machine_name: location_
+    type: csv
+  audience_:
+    value: 'Audience*'
+    label: 'Audience*'
+    machine_name: audience_
+    type: csv
+  central_event_location:
+    value: 'Central Event Location'
+    label: 'Central Event Location'
+    machine_name: central_event_location
+    type: csv
+  recommended_ages:
+    value: 'Recommended Ages'
+    label: 'Recommended Ages'
+    machine_name: recommended_ages
+    type: csv
+  username:
+    value: Username
+    label: Username
+    machine_name: username
+    type: csv
+  summary_:
+    value: 'Summary**'
+    label: 'Summary**'
+    machine_name: summary_
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: title_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_cat_ia
+    map:
+      target_id: audience_
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_event_category_tags_
+    map:
+      target_id: category_
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: temporary_target
+    map:
+      temporary: time_start_
+  -
+    target: temporary_target
+    map:
+      temporary: time_end__
+  -
+    target: field_event_loc
+    map:
+      target_id: location_
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: temporary_target
+    map:
+      temporary: date_
+  -
+    target: field_event_date_and_time
+    map:
+      value: dummy
+      end_value: dummy2
+    settings:
+      language: null
+  -
+    target: field_event_summary
+    map:
+      value: summary_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_subtitle
+    map:
+      value: subtitle
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_central_event_location
+    map:
+      target_id: central_event_location
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_event_recommended_ages
+    map:
+      value: recommended_ages
+    settings:
+      language: null
+  -
+    target: field_slr_time_start
+    map:
+      value: dummy
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: dummy2
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: uid
+    map:
+      target_id: username
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0

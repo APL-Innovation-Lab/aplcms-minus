@@ -1,0 +1,32 @@
+uuid: 5fec5594-9992-4dc2-abe0-0107f3352301
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.page
+  module:
+    - content_translation
+    - editoria11y
+    - filter
+    - node
+    - shortcut
+    - toolbar
+id: basic_page_editor
+label: 'Basic Page Editor'
+weight: -6
+is_admin: null
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'translate page node'
+  - 'use text format full_html'
+  - 'view editoria11y checker'
+  - 'view page revisions'

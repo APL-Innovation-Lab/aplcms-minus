@@ -1,0 +1,431 @@
+uuid: 66165122-1459-4dbf-a939-d6c6754834b8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.oakwood.title
+    - field.field.node.oakwood.field_attendingphysician
+    - field.field.node.oakwood.field_bywhomburied
+    - field.field.node.oakwood.field_cause_of_death_archival_an
+    - field.field.node.oakwood.field_color
+    - field.field.node.oakwood.field_disease
+    - field.field.node.oakwood.field_firstname
+    - field.field.node.oakwood.field_lastname
+    - field.field.node.oakwood.field_lastname_soundex
+    - field.field.node.oakwood.field_name_archival_and_communit
+    - field.field.node.oakwood.field_nativity
+    - field.field.node.oakwood.field_notes_about_research_condu
+    - field.field.node.oakwood.field_oakwood_date
+    - field.field.node.oakwood.field_pkoakwood
+    - field.field.node.oakwood.field_profession
+    - field.field.node.oakwood.field_remarks
+    - field.field.node.oakwood.field_seclotspace
+    - field.field.node.oakwood.field_sex
+    - field.field.node.oakwood.field_showrow
+    - field.field.node.oakwood.field_whereburied
+    - field.field.node.oakwood.field_yearsmonthsdays
+    - node.type.oakwood
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      7638b29f-6999-4ef0-9918-b786e1c5e566:
+        text: '[firstname] [lastname] [date]'
+        uuid: 7638b29f-6999-4ef0-9918-b786e1c5e566
+        plugin: rewrite
+        source: title
+        weight: 0
+        label: Rewrite
+      752d3562-7b4f-4ae7-b0ae-c98dbfd3625c:
+        find: /(\d\d\d)(\d\d)(\d+)/
+        replace: $1-$2-$3
+        limit: null
+        uuid: 752d3562-7b4f-4ae7-b0ae-c98dbfd3625c
+        plugin: find_replace_regex
+        source: yearsmonthsdays
+        weight: 0
+        label: 'Find replace REGEX'
+      c865b4b0-091a-4d34-aab2-86b1fc804527:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: c865b4b0-091a-4d34-aab2-86b1fc804527
+        plugin: find_replace_regex
+        source: sex
+        weight: 0
+        label: 'Find replace REGEX'
+      807c39f0-a4b1-4c77-a9b0-ebeac72b3bad:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 807c39f0-a4b1-4c77-a9b0-ebeac72b3bad
+        plugin: find_replace_regex
+        source: nativity
+        weight: 0
+        label: 'Find replace REGEX'
+      0f46258c-b555-4b30-87d3-b0a00710e942:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 0f46258c-b555-4b30-87d3-b0a00710e942
+        plugin: find_replace_regex
+        source: disease
+        weight: 0
+        label: 'Find replace REGEX'
+      4121ea04-35da-4cf6-8d75-6d07c403dae2:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 4121ea04-35da-4cf6-8d75-6d07c403dae2
+        plugin: find_replace_regex
+        source: attendingphysician
+        weight: 0
+        label: 'Find replace REGEX'
+      4d82ef52-1679-46df-82ab-34e0a2f73ea7:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 4d82ef52-1679-46df-82ab-34e0a2f73ea7
+        plugin: find_replace_regex
+        source: whereburied
+        weight: 0
+        label: 'Find replace REGEX'
+      616bd7b5-0d64-4699-963e-b78c4a192a25:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 616bd7b5-0d64-4699-963e-b78c4a192a25
+        plugin: find_replace_regex
+        source: bywhomburied
+        weight: 0
+        label: 'Find replace REGEX'
+      b864ba46-eeee-4bb8-92f3-da8d25782f6f:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: b864ba46-eeee-4bb8-92f3-da8d25782f6f
+        plugin: find_replace_regex
+        source: seclotspace
+        weight: 0
+        label: 'Find replace REGEX'
+      21c88dbb-856a-4f3b-8663-ccac351a8e9b:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 21c88dbb-856a-4f3b-8663-ccac351a8e9b
+        plugin: find_replace_regex
+        source: profession
+        weight: 0
+        label: 'Find replace REGEX'
+      3fbb4e9b-06fa-4baa-87e2-c8b32c3682d0:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 3fbb4e9b-06fa-4baa-87e2-c8b32c3682d0
+        plugin: find_replace_regex
+        source: remarks
+        weight: 0
+        label: 'Find replace REGEX'
+      7c0c2a59-3f0e-41dd-be89-e370c3d852e6:
+        find: /^N$/
+        replace: ''
+        limit: null
+        uuid: 7c0c2a59-3f0e-41dd-be89-e370c3d852e6
+        plugin: find_replace_regex
+        source: date
+        weight: 0
+        label: 'Find replace REGEX'
+label: oakwood
+id: oakwood
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: oakwood
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 69420
+custom_sources:
+  pkoakwood:
+    value: pkoakwood
+    label: pkoakwood
+    machine_name: pkoakwood
+    type: csv
+  firstname:
+    value: firstname
+    label: firstname
+    machine_name: firstname
+    type: csv
+  lastname:
+    value: lastname
+    label: lastname
+    machine_name: lastname
+    type: csv
+  yearsmonthsdays:
+    value: yearsmonthsdays
+    label: yearsmonthsdays
+    machine_name: yearsmonthsdays
+    type: csv
+  sex:
+    value: sex
+    label: sex
+    machine_name: sex
+    type: csv
+  color:
+    value: color
+    label: color
+    machine_name: color
+    type: csv
+  nativity:
+    value: nativity
+    label: nativity
+    machine_name: nativity
+    type: csv
+  disease:
+    value: disease
+    label: disease
+    machine_name: disease
+    type: csv
+  attendingphysician:
+    value: attendingphysician
+    label: attendingphysician
+    machine_name: attendingphysician
+    type: csv
+  whereburied:
+    value: whereburied
+    label: whereburied
+    machine_name: whereburied
+    type: csv
+  bywhomburied:
+    value: bywhomburied
+    label: bywhomburied
+    machine_name: bywhomburied
+    type: csv
+  seclotspace:
+    value: SecLotSpace
+    label: SecLotSpace
+    machine_name: seclotspace
+    type: csv
+  profession:
+    value: profession
+    label: profession
+    machine_name: profession
+    type: csv
+  remarks:
+    value: remarks
+    label: remarks
+    machine_name: remarks
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  lastname_soundex:
+    value: lastname_soundex
+    label: lastname_soundex
+    machine_name: lastname_soundex
+    type: csv
+  showrow:
+    value: showrow
+    label: showrow
+    machine_name: showrow
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: blank
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_name_archival_and_communit:
+    value: field_name_archival_and_communit
+    label: field_name_archival_and_communit
+    machine_name: field_name_archival_and_communit
+    type: csv
+  name_contribution:
+    value: name_contribution
+    label: name_contribution
+    machine_name: name_contribution
+    type: csv
+  disease_contribution:
+    value: disease_contribution
+    label: disease_contribution
+    machine_name: disease_contribution
+    type: csv
+  notes:
+    value: notes
+    label: notes
+    machine_name: notes
+    type: csv
+mappings:
+  -
+    target: field_pkoakwood
+    map:
+      value: pkoakwood
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_firstname
+    map:
+      value: firstname
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_lastname
+    map:
+      value: lastname
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_yearsmonthsdays
+    map:
+      value: yearsmonthsdays
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_sex
+    map:
+      value: sex
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_color
+    map:
+      value: color
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_nativity
+    map:
+      value: nativity
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_disease
+    map:
+      value: disease
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_attendingphysician
+    map:
+      value: attendingphysician
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_whereburied
+    map:
+      value: whereburied
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_bywhomburied
+    map:
+      value: bywhomburied
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_seclotspace
+    map:
+      value: seclotspace
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_profession
+    map:
+      value: profession
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_remarks
+    map:
+      value: remarks
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_oakwood_date
+    map:
+      value: date
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_lastname_soundex
+    map:
+      value: lastname_soundex
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_showrow
+    map:
+      value: showrow
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_name_archival_and_communit
+    map:
+      value: name_contribution
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_cause_of_death_archival_an
+    map:
+      value: disease_contribution
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_notes_about_research_condu
+    map:
+      value: notes
+    settings:
+      language: null

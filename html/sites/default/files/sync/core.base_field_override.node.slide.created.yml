@@ -1,0 +1,18 @@
+uuid: 8ee64636-6a85-45df-a8ae-b4acb62ae5c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.created
+field_name: created
+entity_type: node
+bundle: slide
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

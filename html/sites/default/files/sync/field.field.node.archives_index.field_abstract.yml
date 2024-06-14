@@ -1,0 +1,21 @@
+uuid: e8ff58f7-52c4-49a7-99d0-d03302f323c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - node.type.archives_index
+  module:
+    - text
+id: node.archives_index.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: archives_index
+label: Abstract
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

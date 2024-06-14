@@ -1,0 +1,33 @@
+uuid: b8dccf7f-e02a-4a24-b7d2-8eb5c870a073
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: accordion
+label: accordion
+type: 'canonical_entities:node'
+pattern: '/stage/accordion/[node:title]/[node:nid]'
+selection_criteria:
+  5a9e7583-57c0-4184-ad1a-544963871cd9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5a9e7583-57c0-4184-ad1a-544963871cd9
+    context_mapping:
+      node: node
+    bundles:
+      accordion: accordion
+  4593ed7f-8f29-4efe-aad8-5559c060c987:
+    id: language
+    negate: false
+    uuid: 4593ed7f-8f29-4efe-aad8-5559c060c987
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      eng: eng
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

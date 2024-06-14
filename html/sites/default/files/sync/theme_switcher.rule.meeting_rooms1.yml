@@ -1,0 +1,16 @@
+uuid: 7cfad66a-cc73-4270-a320-810f7b87d8d9
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: meeting_rooms1
+label: 'Meeting Rooms'
+weight: -4
+theme: claro2
+admin_theme: claro2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms\r\n/passports\r\n/passports/*"

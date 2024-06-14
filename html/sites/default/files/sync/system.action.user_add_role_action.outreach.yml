@@ -1,0 +1,14 @@
+uuid: 59091f92-d225-4b95-b608-f63b80471629
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.outreach
+  module:
+    - user
+id: user_add_role_action.outreach
+label: 'Add the Outreach role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: outreach

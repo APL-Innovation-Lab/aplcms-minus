@@ -1,0 +1,34 @@
+uuid: f23fe102-1f00-44aa-b245-1cb3ae07ab38
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - config_perms
+    - field_permissions
+    - filter
+    - jsonapi_permission
+    - node
+id: meeting_rooms_administrator
+label: 'Meeting Room Administrator'
+weight: 17
+is_admin: null
+permissions:
+  - 'access jsonapi'
+  - 'admin webform results'
+  - 'admin webform subs'
+  - 'admin webform subs2'
+  - 'admin webform subs3'
+  - 'admin webform subs4'
+  - 'create field_internal_'
+  - 'create field_room_group'
+  - 'edit field_internal_'
+  - 'edit field_room_group'
+  - 'edit own field_internal_'
+  - 'edit own field_room_group'
+  - 'use text format full_html'
+  - 'view field_internal_'
+  - 'view field_room_group'
+  - 'view own field_internal_'
+  - 'view own field_room_group'

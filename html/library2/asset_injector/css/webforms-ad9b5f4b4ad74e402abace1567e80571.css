@@ -1,0 +1,24 @@
+.region.region-content {
+	background: white;
+	max-width: 930px;
+	margin: 0 auto;
+	padding: 1px 15px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 660px) {
+  input {
+    
+    max-width: 500px !important;
+  }
+#block-claro-content {
+	padding: 0;
+	max-width: 500px;
+	margin: 0 auto;
+	width: 100%;
+}
+#block-claro-content form {
+	margin: 0 auto;
+	width: 90%;
+}
+
+}

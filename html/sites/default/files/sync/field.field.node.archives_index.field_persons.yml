@@ -1,0 +1,19 @@
+uuid: 27568aec-4501-4214-b993-aa3b51e3f03e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_persons
+    - node.type.archives_index
+id: node.archives_index.field_persons
+field_name: field_persons
+entity_type: node
+bundle: archives_index
+label: Persons
+description: 'examples: Wooldridge, Alexander Penn; Christian, Matilda (Horst); Stiles, M.J.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 0441ee3c-bd35-47d9-a1a2-4adbed7f467c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.highighted_images
+id: node.highighted_images.sticky
+field_name: sticky
+entity_type: node
+bundle: highighted_images
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: c1e0825b-f3d0-4ca2-afc9-7535c8758712
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_division
+  module:
+    - user
+id: user.user.field_division
+field_name: field_division
+entity_type: user
+bundle: user
+label: Division
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

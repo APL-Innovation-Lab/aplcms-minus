@@ -1,0 +1,29 @@
+uuid: 17955111-d78e-4e2c-b979-76b52cba0e64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_location
+    - node.type.reference_stats
+    - taxonomy.vocabulary.library_location
+id: node.reference_stats.field_ref_location
+field_name: field_ref_location
+entity_type: node
+bundle: reference_stats
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_location: library_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

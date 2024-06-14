@@ -1,0 +1,22 @@
+uuid: a7d0f071-39c2-4e60-a6b8-697d9e8b2016
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.sticky
+field_name: sticky
+entity_type: node
+bundle: hero_banner_image
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

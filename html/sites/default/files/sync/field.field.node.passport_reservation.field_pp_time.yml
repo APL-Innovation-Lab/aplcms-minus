@@ -1,0 +1,21 @@
+uuid: 64e0184d-b1aa-43d6-8c38-65a0caf438a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_time
+    - node.type.passport_reservation
+  module:
+    - options
+id: node.passport_reservation.field_pp_time
+field_name: field_pp_time
+entity_type: node
+bundle: passport_reservation
+label: Time
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

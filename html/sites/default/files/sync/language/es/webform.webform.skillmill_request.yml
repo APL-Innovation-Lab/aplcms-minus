@@ -1,0 +1,35 @@
+title: 'SkillMill de Interplay Learning'
+elements: |
+  intromarkup:
+    '#markup': "<h1>SkillMill de Interplay Learning</h1>\r\n\r\n<p>Complete el siguiente formulario para solicitar acceso a este recurso y nos pondremos en contacto.</p>"
+  first_name:
+    '#title': 'Primer Nombre'
+  last_name:
+    '#title': Apellido
+  email_address:
+    '#title': 'Su correo electrónico'
+    '#description': 'Nota: se requiere un correo electr&oacute;nico para acceder a este recurso. Si no tiene un correo electr&oacute;nico, <a href="/es/portaldeempleo">aprenda c&oacute;mo registrarse para obtener una cuenta gratuita</a>.'
+  zip_code:
+    '#title': 'Código postal'
+  age_range:
+    '#title': 'Rango de edad'
+    '#options':
+      'Under 18': 'Menor de 18'
+      '55 and up': '55 y mayor'
+  library_card:
+    '#title': '¿Tienes una tarjeta de la biblioteca? No se requiere una tarjeta de la biblioteca para usar este recurso.'
+    '#options':
+      'Yes': Sí
+  resource_reason:
+    '#title': '¿Cuál es su razón principal para usar este recurso?'
+    '#options':
+      explore: 'Para explorar los comercios especializados'
+      exam: 'Para preparar para un examen de certificación'
+      job: 'Para obtener un trabajo en los comercios especializados'
+      improve: 'Para mejorar mis habilidades'
+      diy: 'Para proyectos de bricolaje/reparaciones en el hogar'
+  accountmarkup:
+    '#markup': 'Despu&eacute;s de crear su cuenta, tendr&aacute; 60 d&iacute;as de acceso ilimitado a este recurso. Al finalizar el per&iacute;odo de pr&eacute;stamo, los datos del curso se conservar&aacute;n para fines estad&iacute;sticos.'
+settings:
+  form_close_message: 'Gracias por su inter&eacute;s en SkillMill. Todas las licencias est&aacute;n ahora en uso. Por favor, siga revisando.'
+  confirmation_message: 'Gracias por su inter&eacute;s en SkillMill. Recibir&aacute; un email en la direcci&oacute;n que dio dentro de 3 a 5 d&iacute;as h&aacute;biles desde marketing@interplaylearning.com. Luego puede activar su cuenta y comenzar a usar SkillMill durante 60 d&iacute;as.'

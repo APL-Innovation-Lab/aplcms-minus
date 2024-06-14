@@ -1,0 +1,21 @@
+uuid: fff6a9c2-951b-402c-8f99-3924404c0ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_index
+    - node.type.job_portal_page
+id: node.job_portal_page.field_do_not_index
+field_name: field_do_not_index
+entity_type: node
+bundle: job_portal_page
+label: 'Do not index'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

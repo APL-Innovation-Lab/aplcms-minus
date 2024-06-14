@@ -1,0 +1,112 @@
+uuid: 3e6fe91d-fa93-4fc8-ae9a-6f07033adbcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_pp_time
+field_name: field_pp_time
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1:00'
+      label: '1:00'
+    -
+      value: '1:15'
+      label: '1:15'
+    -
+      value: '1:30'
+      label: '1:30'
+    -
+      value: '1:45'
+      label: '1:45'
+    -
+      value: '2:00'
+      label: '2:00'
+    -
+      value: '2:15'
+      label: '2:15'
+    -
+      value: '2:30'
+      label: '2:30'
+    -
+      value: '2:45'
+      label: '2:45'
+    -
+      value: '3:00'
+      label: '3:00'
+    -
+      value: '3:15'
+      label: '3:15'
+    -
+      value: '3:30'
+      label: '3:30'
+    -
+      value: '3:45'
+      label: '3:45'
+    -
+      value: '4:00'
+      label: '4:00'
+    -
+      value: '4:15'
+      label: '4:15'
+    -
+      value: '4:30'
+      label: '4:30'
+    -
+      value: '4:45'
+      label: '4:45'
+    -
+      value: '5:00'
+      label: '5:00'
+    -
+      value: '5:15'
+      label: '5:15'
+    -
+      value: '5:30'
+      label: '5:30'
+    -
+      value: '5:45'
+      label: '5:45'
+    -
+      value: '6:00'
+      label: '6:00'
+    -
+      value: '6:15'
+      label: '6:15'
+    -
+      value: '6:30'
+      label: '6:30'
+    -
+      value: '6:45'
+      label: '6:45'
+    -
+      value: '7:00'
+      label: '7:00'
+    -
+      value: '7:15'
+      label: '7:15'
+    -
+      value: '7:30'
+      label: '7:30'
+    -
+      value: '7:45'
+      label: '7:45'
+    -
+      value: '8:00'
+      label: '8:00'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

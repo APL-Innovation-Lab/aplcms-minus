@@ -1,0 +1,24 @@
+uuid: 868d6527-a2e1-4301-b7c6-ce7f0770eae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_time_start
+    - node.type.fullscreen_image
+  module:
+    - datetime
+id: node.fullscreen_image.field_slr_time_start
+field_name: field_slr_time_start
+entity_type: node
+bundle: fullscreen_image
+label: 'Time Start'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

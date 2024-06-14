@@ -1,0 +1,18 @@
+uuid: 5077d27c-2468-4c7b-b552-8a15c4981e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.created
+field_name: created
+entity_type: node
+bundle: fullscreen_image
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

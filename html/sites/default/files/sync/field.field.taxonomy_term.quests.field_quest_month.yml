@@ -1,0 +1,21 @@
+uuid: b98add40-a946-4373-8a7b-95b76f6edb87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_month
+    - taxonomy.vocabulary.quests
+  module:
+    - options
+id: taxonomy_term.quests.field_quest_month
+field_name: field_quest_month
+entity_type: taxonomy_term
+bundle: quests
+label: Month
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,29 @@
+uuid: 5929cf3f-60b5-438d-a5f1-0260ad45fd78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remote_location
+    - node.type.event
+    - taxonomy.vocabulary.remote_locations
+id: node.event.field_remote_location
+field_name: field_remote_location
+entity_type: node
+bundle: event
+label: 'Remote Location'
+description: 'Note: If the Remote Location is new, it needs to be <a href="/admin/structure/taxonomy/manage/remote_locations/add">created</a> first, and then it will be available as a Remote Location option in the field above.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      remote_locations: remote_locations
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

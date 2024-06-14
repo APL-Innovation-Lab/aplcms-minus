@@ -1,0 +1,19 @@
+uuid: f8440133-d084-4ac7-8147-590593ac4ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_title
+    - node.type.event
+id: node.event.field_movie_title
+field_name: field_movie_title
+entity_type: node
+bundle: event
+label: 'Movie Title'
+description: 'Enter movie title if it''s not in the catalog'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

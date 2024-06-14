@@ -1,0 +1,31 @@
+uuid: 8006aa11-4f9f-4539-b36b-5df8caa8cdb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_search_result_page
+    - node.type.accordion
+    - node.type.page
+    - node.type.page_
+id: node.accordion.field_search_result_page
+field_name: field_search_result_page
+entity_type: node
+bundle: accordion
+label: 'Search Result Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+      page_: page_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

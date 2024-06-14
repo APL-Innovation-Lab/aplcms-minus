@@ -1,0 +1,88 @@
+uuid: 1215d46d-502d-4b15-9f3d-d9166f6a604b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: nav_bar
+label: 'Nav bar'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+    
+    
+  $( '#apl-we-recommend' ).click(function(e) {
+    
+  	  e.preventDefault();
+  	  $( '#apl-virtual + .apl_submenus, #apl-about + .apl_submenus, #apl-events + .apl_submenus, #apl-locations + .apl_submenus, #apl-youth + .apl_submenus, #apl-ask-us + .apl_submenus, #apl-virtual, #apl-about, #apl-events, #apl-locations, #apl-youth, #apl-ask-us' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+  	  $(this).toggleClass('active');
+  	  
+  });
+    
+  $( '#apl-virtual' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-about + .apl_submenus, #apl-events + .apl_submenus, #apl-locations + .apl_submenus, #apl-youth + .apl_submenus, #apl-ask-us + .apl_submenus,#apl-we-recommend, #apl-about, #apl-events,#apl-locations, #apl-youth, #apl-ask-us' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+    	  $(this).toggleClass('active');
+
+  	  
+  });
+    
+  $( '#apl-about' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-virtual + .apl_submenus, #apl-events + .apl_submenus, #apl-locations + .apl_submenus, #apl-youth + .apl_submenus, #apl-ask-us + .apl_submenus,#apl-we-recommend, #apl-virtual, #apl-events,#apl-locations, #apl-youth, #apl-ask-us ' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+  	  
+  });
+    
+  $( '#apl-events' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-virtual + .apl_submenus, #apl-about + .apl_submenus, #apl-locations + .apl_submenus, #apl-youth + .apl_submenus, #apl-ask-us + .apl_submenus,#apl-we-recommend, #apl-virtual, #apl-about,#apl-locations, #apl-youth, #apl-ask-us' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+    	  $(this).toggleClass('active');
+
+  	  
+  });
+    
+  $( '#apl-locations' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-virtual + .apl_submenus, #apl-about + .apl_submenus, #apl-events + .apl_submenus, #apl-youth + .apl_submenus, #apl-ask-us + .apl_submenus,#apl-we-recommend, #apl-virtual, #apl-about,#apl-events, #apl-youth, #apl-ask-us' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+  	  $(this).toggleClass('active');
+
+  	  
+  });
+    
+  $( '#apl-youth' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-virtual + .apl_submenus, #apl-about + .apl_submenus, #apl-events + .apl_submenus, #apl-locations + .apl_submenus, #apl-ask-us + .apl_submenus,#apl-we-recommend, #apl-virtual , #apl-about,#apl-events, #apl-locations , #apl-ask-us ').removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+  	    	  $(this).toggleClass('active');
+    
+  });
+    
+  $( '#apl-ask-us' ).click(function(e) {
+  	  e.preventDefault();
+  	  $( '#apl-we-recommend + .apl_submenus, #apl-virtual + .apl_submenus, #apl-about + .apl_submenus, #apl-events + .apl_submenus, #apl-locations + .apl_submenus, #apl-youth + .apl_submenus,#apl-we-recommend, #apl-virtual, #apl-about,#apl-events , #apl-locations, #apl-youth' ).removeClass('active');
+  	  $(this).siblings( '.apl_submenus' ).toggleClass('active');
+  	    	  $(this).toggleClass('active');
+
+  	  
+  });
+
+     
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/*\r\n/editor/*"
+contexts: {  }
+conditions_require_all: true

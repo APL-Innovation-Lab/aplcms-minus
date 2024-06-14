@@ -1,0 +1,19 @@
+uuid: b1238c97-e4a2-43c5-a1a4-2aefa7e098fd
+langcode: en
+status: false
+dependencies:
+  theme:
+    - uswds
+id: uswds_dropdownlanguage
+theme: uswds
+region: header
+weight: -17
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility: {  }

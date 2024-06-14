@@ -1,0 +1,21 @@
+uuid: 265c88d6-f4c5-446c-9daa-3a7b3706e0c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_agreements
+    - node.type.group
+  module:
+    - options
+id: node.group.field_group_agreements
+field_name: field_group_agreements
+entity_type: node
+bundle: group
+label: Agreements
+description: 'If your group is eligible, please agree to all stated Agreements.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

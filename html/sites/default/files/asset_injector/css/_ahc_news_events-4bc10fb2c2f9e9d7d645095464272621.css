@@ -1,0 +1,12 @@
+.views-element-container.block {
+	padding: 1px 15px;
+}
+.field-title {
+	margin-top: 15px;
+}
+.views-element-container.block a {
+  text-decoration: none;
+}
+.views-element-container.block a:hover {
+  text-decoration: underline;
+}

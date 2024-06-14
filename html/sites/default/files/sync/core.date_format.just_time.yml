@@ -1,0 +1,8 @@
+uuid: 10e7cfd4-8f55-4d7b-aca2-a9914413a46f
+langcode: eng
+status: true
+dependencies: {  }
+id: just_time
+label: 'Just Time'
+locked: false
+pattern: 'g:i A'

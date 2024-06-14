@@ -1,0 +1,18 @@
+uuid: da220b42-b726-4cc3-91da-ad39828d7a9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fullscreen_image
+id: node.fullscreen_image.title
+field_name: title
+entity_type: node
+bundle: fullscreen_image
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

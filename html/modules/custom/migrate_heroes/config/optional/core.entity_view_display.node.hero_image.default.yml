@@ -1,0 +1,71 @@
+uuid: f6d293bc-2550-446c-9b2b-3bf87db2d27c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_image.field_button_link
+    - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_image_small
+    - field.field.node.hero_image.field_hero_summary
+    - field.field.node.hero_image.field_hero_template
+    - field.field.node.hero_image.field_locations
+    - field.field.node.hero_image.field_slr_time_end
+    - field.field.node.hero_image.field_slr_time_start
+    - node.type.hero_image
+  module:
+    - datetime
+    - image
+    - user
+id: node.hero_image.default
+targetEntityType: node
+bundle: hero_image
+mode: default
+content:
+  field_hero_image_small:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_locations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_link: true
+  field_hero_image: true
+  field_hero_summary: true
+  field_hero_template: true
+  langcode: true

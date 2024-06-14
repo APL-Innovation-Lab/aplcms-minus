@@ -1,0 +1,25 @@
+uuid: 8399ccb3-0e07-407d-868e-1e5022b7a819
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_expected_attendance
+    - node.type.room_reservation
+id: node.room_reservation.field_room_expected_attendance
+field_name: field_room_expected_attendance
+entity_type: node
+bundle: room_reservation
+label: 'Expected Attendance'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 3
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

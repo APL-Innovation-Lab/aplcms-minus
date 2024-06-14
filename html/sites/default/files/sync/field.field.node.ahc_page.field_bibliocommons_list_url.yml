@@ -1,0 +1,19 @@
+uuid: 670db4b7-e662-4b35-9479-61402b165b78
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibliocommons_list_url
+    - node.type.ahc_page
+id: node.ahc_page.field_bibliocommons_list_url
+field_name: field_bibliocommons_list_url
+entity_type: node
+bundle: ahc_page
+label: 'Bibliocommons List URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

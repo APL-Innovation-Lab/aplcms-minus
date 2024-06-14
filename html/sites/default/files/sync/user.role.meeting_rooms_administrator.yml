@@ -1,0 +1,42 @@
+uuid: f23fe102-1f00-44aa-b245-1cb3ae07ab38
+langcode: eng
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.reflection
+  module:
+    - config_perms
+    - editoria11y
+    - field_permissions
+    - filter
+    - jsonapi_permission
+    - key_auth
+    - node
+id: meeting_rooms_administrator
+label: 'Meeting Room Administrator'
+weight: 17
+is_admin: null
+permissions:
+  - 'access jsonapi'
+  - 'admin webform results'
+  - 'admin webform subs'
+  - 'admin webform subs2'
+  - 'admin webform subs3'
+  - 'admin webform subs4'
+  - 'create field_internal_'
+  - 'create field_room_group'
+  - 'create reflection content'
+  - 'delete own reflection content'
+  - 'edit field_internal_'
+  - 'edit field_room_group'
+  - 'edit own field_internal_'
+  - 'edit own field_room_group'
+  - 'edit own reflection content'
+  - 'use key authentication'
+  - 'use text format full_html'
+  - 'view editoria11y checker'
+  - 'view field_internal_'
+  - 'view field_room_group'
+  - 'view own field_internal_'
+  - 'view own field_room_group'

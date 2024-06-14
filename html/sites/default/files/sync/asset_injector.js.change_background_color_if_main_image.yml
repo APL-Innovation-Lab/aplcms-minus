@@ -1,0 +1,34 @@
+uuid: e1967dff-1c4a-4dd6-8cda-d6c25b796e22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: change_background_color_if_main_image
+label: 'change background color if main image'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+
+  if($('.field--name-field-main-image').length) {
+    $('.layout--onecol').addClass('make-transparent');
+  } 
+
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: false
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      teen_page: teen_page
+contexts: {  }
+conditions_require_all: true

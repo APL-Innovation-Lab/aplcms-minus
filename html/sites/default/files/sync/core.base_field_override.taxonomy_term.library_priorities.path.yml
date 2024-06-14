@@ -1,0 +1,20 @@
+uuid: de983cbf-779c-412b-bb06-dc3bdd8d236d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_priorities
+  module:
+    - path
+id: taxonomy_term.library_priorities.path
+field_name: path
+entity_type: taxonomy_term
+bundle: library_priorities
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

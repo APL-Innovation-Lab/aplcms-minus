@@ -1,0 +1,23 @@
+uuid: c322804c-eda8-4ca2-8277-c74fb53092fe
+langcode: eng
+status: true
+dependencies:
+  module:
+    - ctools
+    - webform
+id: passports_appointment
+label: passports/appointment
+type: 'canonical_entities:webform_submission'
+pattern: '/passports/appointment/[webform_submission:sid]/[webform_submission:uuid]'
+selection_criteria:
+  89c10264-e92e-4a39-b531-bef8fec7bc56:
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    uuid: 89c10264-e92e-4a39-b531-bef8fec7bc56
+    context_mapping:
+      webform_submission: webform_submission
+    bundles:
+      passport_appointment_request: passport_appointment_request
+selection_logic: and
+weight: -5
+relationships: {  }

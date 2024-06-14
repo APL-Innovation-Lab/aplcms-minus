@@ -1,0 +1,21 @@
+uuid: fc3a12ea-c086-4746-8d0f-1456ea35f634
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reflection_type
+    - node.type.reflection
+  module:
+    - options
+id: node.reflection.field_reflection_type
+field_name: field_reflection_type
+entity_type: node
+bundle: reflection
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

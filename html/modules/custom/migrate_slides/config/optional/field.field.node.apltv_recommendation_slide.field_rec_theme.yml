@@ -1,0 +1,23 @@
+uuid: 79f3802a-b7d5-4032-818c-c600f711725c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rec_theme
+    - node.type.apltv_recommendation_slide
+  module:
+    - options
+id: node.apltv_recommendation_slide.field_rec_theme
+field_name: field_rec_theme
+entity_type: node
+bundle: apltv_recommendation_slide
+label: Theme
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Black
+default_value_callback: ''
+settings: {  }
+field_type: list_string

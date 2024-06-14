@@ -1,0 +1,30 @@
+uuid: 936b7973-02b6-4ab9-a6da-8a306d150525
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f45654ed-7b00-4d94-94b7-877732cdcd38'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: moreupcomingevents
+theme: uswds_base
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+settings:
+  id: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+  label: 'More upcoming events'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

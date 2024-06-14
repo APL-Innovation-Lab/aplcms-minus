@@ -1,0 +1,18 @@
+uuid: dd5cb7ec-0af9-4023-ac07-5536d12e22c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+id: block_content.node_form.metatag
+field_name: metatag
+entity_type: block_content
+bundle: node_form
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

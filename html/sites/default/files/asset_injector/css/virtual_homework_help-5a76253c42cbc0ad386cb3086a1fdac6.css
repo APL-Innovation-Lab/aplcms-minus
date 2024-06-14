@@ -1,0 +1,34 @@
+.hh_icon a span {
+	display: block;
+	padding: 5px;
+}
+.views-exposed-form.views-exposed-form {
+	align-items: last baseline !important;
+}
+.hh_cat {
+	text-align: center;
+	font-weight: bold;
+}
+.hh_icon img {
+	height: 175px;
+	width: 175px;
+	background: #9595c9;
+}
+.hh_icon a {
+	display: block;
+	width: 175px;
+	float: left;
+	margin-right: 20px;
+	background: #9595c9;
+	color: white;
+	text-decoration: none;
+}
+.hh_database {
+	padding-left: 195px;
+	min-height: 236px;
+	padding-right: 15px;
+}
+
+.hh_icon a:hover {
+	text-decoration: underline;
+}

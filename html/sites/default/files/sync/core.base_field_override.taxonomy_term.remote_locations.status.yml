@@ -1,0 +1,22 @@
+uuid: beed5bd4-1b34-4389-af4e-d18f39101362
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.remote_locations
+id: taxonomy_term.remote_locations.status
+field_name: status
+entity_type: taxonomy_term
+bundle: remote_locations
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

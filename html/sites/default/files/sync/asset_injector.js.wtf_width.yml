@@ -1,0 +1,39 @@
+uuid: 83f3bfab-8a49-4f93-99cb-b721c0a01175
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: wtf_width
+label: 'wtf width'
+code: |-
+  var docWidth = document.documentElement.offsetWidth;
+  console.log('wt');
+  [].forEach.call(
+    document.querySelectorAll('*'),
+    function(el) {
+      if (el.offsetWidth > docWidth) {
+        console.log(el);
+      }
+    }
+  );
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /central-library
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+contexts: {  }
+conditions_require_all: true

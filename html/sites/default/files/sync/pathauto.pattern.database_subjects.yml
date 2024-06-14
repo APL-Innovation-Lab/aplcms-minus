@@ -1,0 +1,24 @@
+uuid: e82a31b1-adec-4837-928a-11f496596eef
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: database_subjects
+label: 'Database Subjects'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/digital/[term:name]'
+selection_criteria:
+  ec68d47d-9a84-4fa3-be62-915f59c3140c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: ec68d47d-9a84-4fa3-be62-915f59c3140c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      database_subjects: database_subjects
+selection_logic: and
+weight: -5
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

@@ -1,0 +1,25 @@
+uuid: bc7cfa1b-e826-4fbe-a867-797ca8399fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_video
+    - taxonomy.vocabulary.quests
+  module:
+    - video_embed_field
+id: taxonomy_term.quests.field_quest_video
+field_name: field_quest_video
+entity_type: taxonomy_term
+bundle: quests
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube_playlist: youtube_playlist
+    youtube: youtube
+field_type: video_embed_field

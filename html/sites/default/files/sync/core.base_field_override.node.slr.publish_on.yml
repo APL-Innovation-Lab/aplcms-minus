@@ -1,0 +1,18 @@
+uuid: fb6b7408-2d7c-473f-86c6-c31690d8c12e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.publish_on
+field_name: publish_on
+entity_type: node
+bundle: slr
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,18 @@
+uuid: 5b4d2da8-9028-45db-bdf6-3a235fc46277
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+id: node.passports_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: passports_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

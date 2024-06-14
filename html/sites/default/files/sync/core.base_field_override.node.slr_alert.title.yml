@@ -1,0 +1,18 @@
+uuid: 2a3fc7ca-ef97-44d8-b454-14c5e56aa0a8
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.slr_alert
+id: node.slr_alert.title
+field_name: title
+entity_type: node
+bundle: slr_alert
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

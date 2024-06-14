@@ -1,0 +1,23 @@
+uuid: 152ff846-1fb8-46e7-affa-0733275ba8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.apl_site_content
+  module:
+    - feeds
+id: node.apl_site_content.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: apl_site_content
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

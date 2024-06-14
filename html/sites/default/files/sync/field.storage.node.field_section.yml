@@ -1,0 +1,34 @@
+uuid: 97213380-50c7-4a51-9ba9-4f187f598e51
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_section
+field_name: field_section
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Home
+    -
+      value: '2'
+      label: 'Virtual Library'
+    -
+      value: '3'
+      label: 'Austin History Center'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

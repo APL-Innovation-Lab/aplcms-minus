@@ -1,0 +1,25 @@
+uuid: 4e90853d-ac5f-41b3-b205-3cc0109e5bf0
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sch_sequence
+    - node.type.apltv_scheduled_sequence
+id: node.apltv_scheduled_sequence.field_sch_sequence
+field_name: field_sch_sequence
+entity_type: node
+bundle: apltv_scheduled_sequence
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: scheduled_sequence_picker
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

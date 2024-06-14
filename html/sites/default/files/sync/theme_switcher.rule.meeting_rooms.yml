@@ -1,0 +1,16 @@
+uuid: 32fda216-4093-4bad-b7fb-a45a897bdb3f
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: meeting_rooms
+label: 'Meeting Rooms'
+weight: 7
+theme: uswds
+admin_theme: uswds
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /meeting-rooms

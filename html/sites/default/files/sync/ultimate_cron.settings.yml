@@ -1,0 +1,18 @@
+langcode: eng
+queue:
+  enabled: true
+  timeouts:
+    lease_time: !!float 60
+    time: !!float 3600
+  delays:
+    empty_delay: !!float 20
+    item_delay: !!float 1
+  throttle:
+    enabled: false
+    threads: null
+    threshold: null
+launcher:
+  thread: '0'
+  max_threads: 10
+  lock_timeout: 60
+  max_execution_time: 300

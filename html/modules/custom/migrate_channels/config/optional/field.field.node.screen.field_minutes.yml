@@ -1,0 +1,23 @@
+uuid: 52d9e4a5-1a56-42da-b50b-d4299b8d3a9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minutes
+    - node.type.screen
+id: node.screen.field_minutes
+field_name: field_minutes
+entity_type: node
+bundle: screen
+label: Minutes
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

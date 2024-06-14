@@ -1,0 +1,167 @@
+uuid: 16f924e9-4a1b-44ec-a481-f742e9bc8c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reflection.feeds_item
+    - field.field.node.reflection.field_accessible
+    - field.field.node.reflection.field_anecdote
+    - field.field.node.reflection.field_branch_location
+    - field.field.node.reflection.field_community_services_outreac
+    - field.field.node.reflection.field_event_category_tags_
+    - field.field.node.reflection.field_how_many_attended_
+    - field.field.node.reflection.field_library_priority
+    - field.field.node.reflection.field_multilanguage
+    - field.field.node.reflection.field_node_id
+    - field.field.node.reflection.field_older_adults
+    - field.field.node.reflection.field_reflect_intended_audience
+    - field.field.node.reflection.field_reflection_date_and_time
+    - field.field.node.reflection.field_reflection_description
+    - field.field.node.reflection.field_reflection_type
+    - field.field.node.reflection.field_target_audience
+    - node.type.reflection
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.reflection.default
+targetEntityType: node
+bundle: reflection
+mode: default
+content:
+  field_accessible:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_anecdote:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_branch_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_community_services_outreac:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_event_category_tags_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_how_many_attended_:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_library_priority:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_multilanguage:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_node_id:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_older_adults:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_reflect_intended_audience:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_reflection_date_and_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_reflection_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_reflection_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_target_audience:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

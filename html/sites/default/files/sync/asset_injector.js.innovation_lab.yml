@@ -1,0 +1,32 @@
+uuid: 18845460-19c5-4f82-a282-4ff3f540937b
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: innovation_lab
+label: 'Innovation Lab & Passports'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+  $('.collapsible').click(function() {
+      $( this ).toggleClass('active');
+  });
+
+
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/makerspace\r\n/passports\r\n/pasaportes\r\n/es/pasaportes"
+contexts: {  }
+conditions_require_all: true

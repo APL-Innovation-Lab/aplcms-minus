@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies: {  }
+id: apl_dev_home_page
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_group: apl_dev
+label: Home Page
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_home_page/pages_home_page_nodes.json'
+ #   - 'public://migrate_home_page/page-mr-calendar-staff.json'
+  item_selector: page
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: path
+      selector: path
+    -
+      name: body
+      selector: body
+    -
+      name: body_format
+      selector: body_format
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: page
+  title: title
+  body/value: body
+  body/format: 
+    plugin: default_value
+    default_value: basic_html
+  path: path
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

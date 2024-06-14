@@ -1,0 +1,50 @@
+uuid: b0feffb7-af56-40ea-9ad8-da109c3b95eb
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsors.field_link
+    - field.field.taxonomy_term.sponsors.field_logo
+    - taxonomy.vocabulary.sponsors
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.sponsors.default
+targetEntityType: taxonomy_term
+bundle: sponsors
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

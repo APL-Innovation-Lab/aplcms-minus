@@ -1,0 +1,20 @@
+uuid: 8a84fff8-d712-4d84-b0b2-528b63c2ef7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.menu_link
+field_name: menu_link
+entity_type: node
+bundle: slide
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

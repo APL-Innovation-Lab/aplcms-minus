@@ -1,0 +1,18 @@
+uuid: 5ba86f12-ce26-40e4-950b-871039d5a277
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.changed
+field_name: changed
+entity_type: node
+bundle: accordion
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

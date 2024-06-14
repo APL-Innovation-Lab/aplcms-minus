@@ -1,0 +1,19 @@
+uuid: b735e5bd-1770-4d6a-abd3-bf377c5b5cdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.event
+id: node.event.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: event
+label: Subtitle
+description: 'Maximum 40 characters'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

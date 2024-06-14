@@ -1,0 +1,14 @@
+uuid: d23ae7ac-7fbc-4187-9ca1-a3f7c592d930
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.slr_internal
+  module:
+    - user
+id: user_add_role_action.slr_internal
+label: 'Add the SLR Internal role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: slr_internal

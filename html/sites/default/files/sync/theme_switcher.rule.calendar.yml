@@ -1,0 +1,16 @@
+uuid: 58d70a02-55e7-43f0-aa38-94510b53be11
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: calendar
+label: Calendar
+weight: -1
+theme: uswds_base
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/meeting-rooms/calendar/monthly\r\n/meeting-rooms/calendar/monthly/*"

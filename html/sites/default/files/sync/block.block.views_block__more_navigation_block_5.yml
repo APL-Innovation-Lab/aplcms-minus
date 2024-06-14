@@ -1,0 +1,29 @@
+uuid: 8cea2ead-57ce-41c0-ac3f-486489aab642
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.more_navigation
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: views_block__more_navigation_block_5
+theme: claro2
+region: content
+weight: -37
+provider: null
+plugin: 'views_block:more_navigation-block_5'
+settings:
+  id: 'views_block:more_navigation-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/app/*'

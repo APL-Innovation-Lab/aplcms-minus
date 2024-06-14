@@ -1,0 +1,29 @@
+uuid: a354d819-0007-4c26-866e-b21750641778
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__events_block_4
+theme: aplpa
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:events-block_4'
+settings:
+  id: 'views_block:events-block_4'
+  label: Events
+  label_display: visible
+  provider: views
+  views_label: Events
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

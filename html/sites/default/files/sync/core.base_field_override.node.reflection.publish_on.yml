@@ -1,0 +1,18 @@
+uuid: af9eece7-9456-4d02-9183-bc7a8f5783a3
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.reflection
+id: node.reflection.publish_on
+field_name: publish_on
+entity_type: node
+bundle: reflection
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

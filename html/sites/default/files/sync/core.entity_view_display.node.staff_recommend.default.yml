@@ -1,0 +1,80 @@
+uuid: df3c31df-0dd5-48a6-b144-6d72c7dcfa8a
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_recommend.field_biblio_list_urls
+    - field.field.node.staff_recommend.field_recommend_tags
+    - field.field.node.staff_recommend.field_sr_audience
+    - field.field.node.staff_recommend.layout_builder__layout
+    - node.type.staff_recommend
+    - views.view.page
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          af1c2ea7-4b42-4297-b3f1-f4104a854bc3:
+            uuid: af1c2ea7-4b42-4297-b3f1-f4104a854bc3
+            region: content
+            configuration:
+              id: 'views_block:page-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.staff_recommend.default
+targetEntityType: node
+bundle: staff_recommend
+mode: default
+content:
+  field_biblio_list_urls:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_recommend_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_sr_audience:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

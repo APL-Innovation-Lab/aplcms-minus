@@ -1,0 +1,22 @@
+uuid: 06bc8031-a832-4317-a4e3-9e908ad00bfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zine
+id: node.zine.promote
+field_name: promote
+entity_type: node
+bundle: zine
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 6a361dc5-32c7-47ff-9330-03ae55e054e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.open_hours
+  module:
+    - feeds
+id: node.open_hours.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: open_hours
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

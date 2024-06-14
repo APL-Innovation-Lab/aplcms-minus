@@ -1,0 +1,19 @@
+uuid: 167c06b7-f120-49af-bdeb-100235dbc5d0
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anchor
+    - node.type.accordion
+id: node.accordion.field_anchor
+field_name: field_anchor
+entity_type: node
+bundle: accordion
+label: Anchor
+description: "An anchor, in the context of a URL, is a fragment identifier that points to a specific section or part of a webpage. It's preceded by a hash symbol (#) and helps users navigate directly to that section without having to scroll or search through the entire page.\r\n\r\nExample: \"email\"\r\nhttps://library.austintexas.gov/jobportal#email \r\nThis URL would take the user directly to the section labeled \"email\" on the \"jobportal\" page of the Austin Public Library website."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

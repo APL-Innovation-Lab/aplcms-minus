@@ -1,0 +1,18 @@
+uuid: 53a85cb8-c18a-4339-95e9-413ea8dee3f2
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.title
+field_name: title
+entity_type: node
+bundle: hero_banner_image
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

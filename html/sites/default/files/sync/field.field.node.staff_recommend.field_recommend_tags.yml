@@ -1,0 +1,29 @@
+uuid: 31462832-5c80-4dea-892f-6177fa4308b5
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recommend_tags
+    - node.type.staff_recommend
+    - taxonomy.vocabulary.book_list_categories
+id: node.staff_recommend.field_recommend_tags
+field_name: field_recommend_tags
+entity_type: node
+bundle: staff_recommend
+label: 'Recommend Tags'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_list_categories: book_list_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

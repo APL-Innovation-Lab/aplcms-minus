@@ -1,0 +1,22 @@
+uuid: 78123103-3d41-4659-ab2e-7282be60ce34
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_form
+id: block_content.node_form.status
+field_name: status
+entity_type: block_content
+bundle: node_form
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

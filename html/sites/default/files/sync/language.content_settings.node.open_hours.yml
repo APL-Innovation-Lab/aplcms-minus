@@ -1,0 +1,18 @@
+uuid: c79728cf-3355-452f-87f1-153f8102effc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.open_hours
+target_entity_type_id: node
+target_bundle: open_hours
+default_langcode: site_default
+language_alterable: false

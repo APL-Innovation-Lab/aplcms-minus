@@ -1,0 +1,33 @@
+uuid: 095870c3-bc37-48b8-b583-e52c590ea22d
+langcode: eng
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: slr
+label: SLR
+type: 'canonical_entities:node'
+pattern: '/slr/[node:title]-[node:nid]'
+selection_criteria:
+  59bc955a-aa7f-4eb1-95fa-b3b7f16384a1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 59bc955a-aa7f-4eb1-95fa-b3b7f16384a1
+    context_mapping:
+      node: node
+    bundles:
+      slr: slr
+  c79d487e-ac21-47e8-89dc-d7a1c8cbe604:
+    id: language
+    negate: false
+    uuid: c79d487e-ac21-47e8-89dc-d7a1c8cbe604
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      eng: eng
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

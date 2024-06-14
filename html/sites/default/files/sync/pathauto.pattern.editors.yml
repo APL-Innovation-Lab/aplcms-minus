@@ -1,0 +1,26 @@
+uuid: 0244dd4e-240a-4dd9-92ad-d286c3726d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - user
+id: editors
+label: Editors
+type: 'canonical_entities:user'
+pattern: '/editor/[user:account-name]-[user:uid]'
+selection_criteria:
+  c12c14b7-effa-41ab-94ac-a1a6a78c134b:
+    id: language
+    negate: false
+    uuid: c12c14b7-effa-41ab-94ac-a1a6a78c134b
+    context_mapping:
+      language: 'user:langcode:language'
+    langcodes:
+      es: es
+      eng: eng
+selection_logic: and
+weight: 0
+relationships:
+  'user:langcode:language':
+    label: Language

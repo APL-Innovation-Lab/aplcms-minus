@@ -1,0 +1,23 @@
+uuid: 86ddaf0e-f9cf-4a18-846b-a40990c33b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.hero_image
+  module:
+    - feeds
+id: node.hero_image.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: hero_image
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

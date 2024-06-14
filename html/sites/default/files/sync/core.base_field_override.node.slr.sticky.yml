@@ -1,0 +1,22 @@
+uuid: d9de01e5-2627-475b-b1e1-863a2c817ce3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slr
+id: node.slr.sticky
+field_name: sticky
+entity_type: node
+bundle: slr
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

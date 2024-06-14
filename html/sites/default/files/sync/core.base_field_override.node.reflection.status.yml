@@ -1,0 +1,22 @@
+uuid: af726d7e-5b53-46c3-b70f-82f311b727cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reflection
+id: node.reflection.status
+field_name: status
+entity_type: node
+bundle: reflection
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

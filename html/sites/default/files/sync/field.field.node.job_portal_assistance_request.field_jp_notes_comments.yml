@@ -1,0 +1,21 @@
+uuid: a56ffe2c-4f61-4e06-b750-ab701d1c169f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jp_notes_comments
+    - node.type.job_portal_assistance_request
+  module:
+    - text
+id: node.job_portal_assistance_request.field_jp_notes_comments
+field_name: field_jp_notes_comments
+entity_type: node
+bundle: job_portal_assistance_request
+label: 'Closing notes & comments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

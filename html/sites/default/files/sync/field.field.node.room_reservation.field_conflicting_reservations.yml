@@ -1,0 +1,28 @@
+uuid: 5563fd1d-da42-49ca-9919-1af3af134c67
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conflicting_reservations
+    - node.type.room_reservation
+id: node.room_reservation.field_conflicting_reservations
+field_name: field_conflicting_reservations
+entity_type: node
+bundle: room_reservation
+label: 'Conflicting Reservations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      room_reservation: room_reservation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

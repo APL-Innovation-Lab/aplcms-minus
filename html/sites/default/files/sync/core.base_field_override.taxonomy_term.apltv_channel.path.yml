@@ -1,0 +1,20 @@
+uuid: 9ac12b94-4cd5-4cfb-b407-1528c98a11c1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apltv_channel
+  module:
+    - path
+id: taxonomy_term.apltv_channel.path
+field_name: path
+entity_type: taxonomy_term
+bundle: apltv_channel
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

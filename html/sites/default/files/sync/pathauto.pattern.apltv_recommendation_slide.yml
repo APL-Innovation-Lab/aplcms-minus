@@ -1,0 +1,22 @@
+uuid: a6d35788-3275-47d9-81bd-f9c6bc702120
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: apltv_recommendation_slide
+label: 'apltv recommendation slide'
+type: 'canonical_entities:node'
+pattern: '/apltv/recommended/[node:nid]'
+selection_criteria:
+  0617a1f6-769c-44c5-a6d9-bf14c1af14c2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0617a1f6-769c-44c5-a6d9-bf14c1af14c2
+    context_mapping:
+      node: node
+    bundles:
+      apltv_recommendation_slide: apltv_recommendation_slide
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,18 @@
+uuid: 0cf450be-3de1-4da3-a589-310fe7840f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.public_computer_page
+id: node.public_computer_page.title
+field_name: title
+entity_type: node
+bundle: public_computer_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

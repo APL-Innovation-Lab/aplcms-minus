@@ -1,0 +1,19 @@
+uuid: 32a190f2-7d82-4bb0-9a7f-59b97a4e689e
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibliocommons_list_url
+    - node.type.page_
+id: node.page_.field_bibliocommons_list_url
+field_name: field_bibliocommons_list_url
+entity_type: node
+bundle: page_
+label: 'Bibliocommons List URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

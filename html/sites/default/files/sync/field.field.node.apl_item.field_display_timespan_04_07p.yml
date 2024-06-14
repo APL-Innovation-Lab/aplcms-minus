@@ -1,0 +1,26 @@
+uuid: 1680162b-133f-49e6-b8ee-fced2a74ca80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_timespan_04_07p
+    - node.type.apl_item
+  module:
+    - datetime_range
+id: node.apl_item.field_display_timespan_04_07p
+field_name: field_display_timespan_04_07p
+entity_type: node
+bundle: apl_item
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+2 months'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

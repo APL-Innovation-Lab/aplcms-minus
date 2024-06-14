@@ -1,0 +1,20 @@
+uuid: fb5e43bc-82a5-4333-8c7a-2f6728867f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apl_item_import
+  module:
+    - path
+id: node.apl_item_import.path
+field_name: path
+entity_type: node
+bundle: apl_item_import
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

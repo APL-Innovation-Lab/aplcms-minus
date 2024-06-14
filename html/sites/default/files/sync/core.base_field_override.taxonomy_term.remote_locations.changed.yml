@@ -1,0 +1,18 @@
+uuid: 414d0b44-b752-41cc-9499-5847c7bdd583
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.remote_locations
+id: taxonomy_term.remote_locations.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: remote_locations
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

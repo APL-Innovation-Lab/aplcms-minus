@@ -1,0 +1,48 @@
+uuid: 36a65781-411c-44bc-8f3a-8e3da050a73f
+langcode: eng
+status: true
+dependencies:
+  module:
+    - ctools
+id: apltv_scheduled_sequence
+label: 'APLTV Scheduled Sequence'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+      function getSearchParams(k) {
+        var p = {};
+        location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(s, k, v) {
+          p[k] = v
+        })
+        return k ? p[k] : p;
+      }
+      var channel = getSearchParams('channel');
+  	if(channel) {
+  //		$('#edit-field-sch-seq-channel-' + channel).attr('checked','checked');
+  		
+    	$('#edit-field-sch-seq-channel option[value="' + channel + '"]').prop("selected", true);
+  		$('#edit-field-sch-seq-channel option[value="_none"]').prop("selected", false);
+  		
+  	}
+  	
+  	
+  		  $('#edit-title-0-value').val('Scheduled Sequence ' + Date.now());
+  	  $('#edit-title-wrapper').css('display','none');
+  	  
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      apltv_scheduled_sequence: apltv_scheduled_sequence
+contexts: {  }
+conditions_require_all: true

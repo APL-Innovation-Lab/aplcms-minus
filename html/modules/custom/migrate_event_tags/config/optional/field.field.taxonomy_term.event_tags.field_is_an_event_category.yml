@@ -1,0 +1,23 @@
+uuid: 9cea5eda-5b74-4f85-a911-80b79c7e940b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_is_an_event_category
+    - taxonomy.vocabulary.event_tags
+id: taxonomy_term.event_tags.field_is_an_event_category
+field_name: field_is_an_event_category
+entity_type: taxonomy_term
+bundle: event_tags
+label: 'Is an Event Category'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

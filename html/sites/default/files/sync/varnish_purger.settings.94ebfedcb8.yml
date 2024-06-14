@@ -1,0 +1,25 @@
+uuid: 3070b22d-1175-4b02-aee7-58d3baca076b
+langcode: eng
+status: true
+dependencies: {  }
+id: 94ebfedcb8
+name: v6
+invalidationtype: tag
+hostname: 10.66.56.42
+port: 80
+path: /
+request_method: BAN
+scheme: http
+verify: '1'
+headers:
+  -
+    field: Cache-Tags
+    value: '[invalidation:expression]'
+body: null
+body_content_type: null
+runtime_measurement: true
+timeout: !!float 1
+connect_timeout: !!float 1
+cooldown_time: !!float 0
+max_requests: 100
+http_errors: true

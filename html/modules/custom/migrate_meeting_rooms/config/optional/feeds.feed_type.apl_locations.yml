@@ -1,0 +1,276 @@
+uuid: 81e11bca-786e-48e3-b953-c99a33807495
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.library_location.description
+    - core.base_field_override.taxonomy_term.library_location.name
+    - core.base_field_override.taxonomy_term.library_location.path
+    - field.field.taxonomy_term.library_location.field_capacities
+    - field.field.taxonomy_term.library_location.field_district
+    - field.field.taxonomy_term.library_location.field_latitude_longitude
+    - field.field.taxonomy_term.library_location.field_location_code
+    - field.field.taxonomy_term.library_location.field_location_main_image
+    - field.field.taxonomy_term.library_location.field_notes
+    - field.field.taxonomy_term.library_location.field_phone_num
+    - field.field.taxonomy_term.library_location.field_special_weight
+    - field.field.taxonomy_term.library_location.field_staff_recommendations
+    - field.field.taxonomy_term.library_location.field_street_address
+    - field.field.taxonomy_term.library_location.field_zipcode
+    - taxonomy.vocabulary.library_location
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      d308c9ef-3496-4f2d-87f3-39f28cc22032:
+        text: en
+        uuid: d308c9ef-3496-4f2d-87f3-39f28cc22032
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+label: 'APL Locations'
+id: apl_locations
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'public://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: library_location
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: json
+  location_code:
+    value: location_code
+    label: location_code
+    machine_name: location_code
+    type: json
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: json
+  capacities:
+    value: capacities
+    label: capacities
+    machine_name: capacities
+    type: json
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: json
+  district:
+    value: district
+    label: district
+    machine_name: district
+    type: json
+  main_image_file:
+    value: main_image_file
+    label: main_image_file
+    machine_name: main_image_file
+    type: json
+  main_image_alt:
+    value: main_image_alt
+    label: main_image_alt
+    machine_name: main_image_alt
+    type: json
+  main_image_title:
+    value: main_image_title
+    label: main_image_title
+    machine_name: main_image_title
+    type: json
+  street_address:
+    value: street_address
+    label: street_address
+    machine_name: street_address
+    type: json
+  phone_number:
+    value: phone_number
+    label: phone_number
+    machine_name: phone_number
+    type: json
+  zip:
+    value: zip
+    label: zip
+    machine_name: zip
+    type: json
+  latitude_longitude:
+    value: latitude_longitude
+    label: latitude_longitude
+    machine_name: latitude_longitude
+    type: json
+  special_weight:
+    value: special_weight
+    label: special_weight
+    machine_name: special_weight
+    type: json
+  staff_recommendations:
+    value: staff_recommendations
+    label: staff_recommendations
+    machine_name: staff_recommendations
+    type: json
+  notes:
+    value: notes
+    label: notes
+    machine_name: notes
+    type: json
+  path:
+    value: path
+    label: path
+    machine_name: path
+    type: json
+  zipcode:
+    value: zipcode
+    label: zipcode
+    machine_name: zipcode
+    type: json
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: json
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: field_location_code
+    map:
+      value: location_code
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_location_main_image
+    map:
+      target_id: main_image_file
+      alt: main_image_alt
+      title: main_image_title
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_district
+    map:
+      value: district
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_capacities
+    map:
+      value: capacities
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_street_address
+    map:
+      value: street_address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_zipcode
+    map:
+      value: zipcode
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_phone_num
+    map:
+      value: phone_number
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_latitude_longitude
+    map:
+      value: latitude_longitude
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_special_weight
+    map:
+      value: special_weight
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_staff_recommendations
+    map:
+      value: staff_recommendations
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_notes
+    map:
+      value: notes
+    settings:
+      language: null
+  -
+    target: path
+    map:
+      alias: path
+    settings:
+      language: null
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null

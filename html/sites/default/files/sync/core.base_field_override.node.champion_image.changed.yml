@@ -1,0 +1,18 @@
+uuid: 421c307e-47b6-4b89-87f2-a8987915a8dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.champion_image
+id: node.champion_image.changed
+field_name: changed
+entity_type: node
+bundle: champion_image
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

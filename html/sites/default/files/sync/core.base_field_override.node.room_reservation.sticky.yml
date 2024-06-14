@@ -1,0 +1,22 @@
+uuid: 645b57f6-4edd-4a54-8928-e57ad9e6ca3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node.room_reservation.sticky
+field_name: sticky
+entity_type: node
+bundle: room_reservation
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

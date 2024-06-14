@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 7TOBIjg0aUb-QTF-rzY438_QpTprS-F8OIYTROB2iGc
+langcode: eng
+auto_generate_keys: false
+key_length: 32
+param_name: aplapi-key
+detection_methods:
+  - header
+  - query

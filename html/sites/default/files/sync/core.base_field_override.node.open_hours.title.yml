@@ -1,0 +1,18 @@
+uuid: 73ef0ea6-58e6-4704-9f56-f161f2bb92f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.title
+field_name: title
+entity_type: node
+bundle: open_hours
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

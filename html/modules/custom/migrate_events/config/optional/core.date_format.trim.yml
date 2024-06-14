@@ -1,0 +1,8 @@
+uuid: 8b378c10-db84-4c6d-9bd3-14108e1ddfbd
+langcode: en
+status: true
+dependencies: {  }
+id: trim
+label: Trim
+locked: false
+pattern: 'D, M j'

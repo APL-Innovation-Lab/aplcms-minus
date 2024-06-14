@@ -1,0 +1,8 @@
+uuid: be61e263-5046-42f4-a051-29e3795954f2
+langcode: en
+status: true
+dependencies: {  }
+id: node
+label: Node
+revision: 0
+description: ''

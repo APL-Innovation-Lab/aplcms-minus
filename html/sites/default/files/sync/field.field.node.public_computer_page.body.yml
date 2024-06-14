@@ -1,0 +1,23 @@
+uuid: 64949c18-6317-491f-a70b-acadf8a29a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.public_computer_page
+  module:
+    - text
+id: node.public_computer_page.body
+field_name: body
+entity_type: node
+bundle: public_computer_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

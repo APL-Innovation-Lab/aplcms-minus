@@ -1,0 +1,18 @@
+uuid: 47dcad55-cf2f-44e6-b9ab-35bf9a1abf4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reference_stats
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.reference_stats
+target_entity_type_id: node
+target_bundle: reference_stats
+default_langcode: site_default
+language_alterable: false

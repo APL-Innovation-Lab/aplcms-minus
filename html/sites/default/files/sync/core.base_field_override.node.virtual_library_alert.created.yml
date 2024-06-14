@@ -1,0 +1,18 @@
+uuid: 72e421c9-c1ce-4900-96ee-d7d2a7d06514
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.created
+field_name: created
+entity_type: node
+bundle: virtual_library_alert
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

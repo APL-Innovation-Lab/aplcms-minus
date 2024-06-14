@@ -1,0 +1,34 @@
+#block-claro2-content {
+	background: white;
+	width: 580px;
+	float: right;
+}
+.region.region-content a {
+	text-decoration: none;
+}
+.region.region-content a:hover {
+	text-decoration: underline;
+}
+
+#block-views-block-apltv-channel-block-5 {
+	width: 360px;
+	background: white;
+	float: left;
+}
+
+.region.region-content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+#block-claro2-content .view-content {
+	padding: 1px 15px;
+}
+.view-header {
+	padding: 1px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#block-views-block-apltv-channel-block-5 > h2, #block-views-block-apltv-channel-block-5 > div {
+	padding: 1px 15px;
+}

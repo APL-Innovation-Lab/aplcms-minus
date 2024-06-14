@@ -1,0 +1,19 @@
+uuid: c0e27688-28cb-45b4-bc9d-cb9956683227
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ahc_d_state
+    - node.type.ahc_donation
+id: node.ahc_donation.field_ahc_d_state
+field_name: field_ahc_d_state
+entity_type: node
+bundle: ahc_donation
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

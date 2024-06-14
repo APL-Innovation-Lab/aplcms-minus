@@ -1,0 +1,34 @@
+uuid: 190a307f-cf4a-4fa8-b25f-705417f6c8c1
+langcode: eng
+status: true
+dependencies:
+  module:
+    - ctools
+    - language
+    - taxonomy
+id: apltv_channel
+label: 'APLTV Channel'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/apl-tv/[term:name]'
+selection_criteria:
+  a2908d04-f128-493f-bc88-7d4222c5423d:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a2908d04-f128-493f-bc88-7d4222c5423d
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      apltv_channel: apltv_channel
+  94bf4f9b-2c73-4c8a-b491-5f7f8784e748:
+    id: language
+    negate: false
+    uuid: 94bf4f9b-2c73-4c8a-b491-5f7f8784e748
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      eng: eng
+selection_logic: and
+weight: -5
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

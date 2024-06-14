@@ -1,0 +1,24 @@
+uuid: 0f7c93dc-78bb-4ea2-a8d1-239543c8e171
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_recommend_tags
+field_name: field_recommend_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

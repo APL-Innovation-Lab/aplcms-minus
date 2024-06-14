@@ -1,0 +1,18 @@
+uuid: c1ee22e8-ffb0-4e5f-b0fd-287777e8ce4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Suggest a Title for Purchase'
+type: suggest_a_title
+description: ''
+help: "<div id=\"suggest-thanks\" class=\"messages status\"><p>Thank you for taking the time to suggest an item for the Library. Your input as a citizen of Austin is valuable to the Library's selection team and will be given careful consideration.</p>\r\n<p>Have you searched the <a href=\"http://austin.bibliocommons.com\">Library catalog</a> for the item you are suggesting? If not, please check the catalog before completing this form. Please limit your suggestions to two items per week and items that have already been published / released.</p>\r\n<p>The decision to purchase an item is based on the <a href=\"/about-library/materials-selection-policy\">Library's selection criteria</a>, current budget constraints, and the item's availability from our vendors.</p>\r\n<p>Due to the many requests received each month, we regret that we are unable to make individual replies. However, if you have requested that an item be purchased, and we order that title, we will attempt to send you a courtesy email if you entered your email address. You may also use our <a href=\"https://library.austintexas.gov/interlibrary-loan\">ILL service</a>.</p></div>"
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,20 @@
+uuid: aa234879-f867-4cd4-bcb0-e40d68994ab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_library_alert
+id: node.virtual_library_alert.uid
+field_name: uid
+entity_type: node
+bundle: virtual_library_alert
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

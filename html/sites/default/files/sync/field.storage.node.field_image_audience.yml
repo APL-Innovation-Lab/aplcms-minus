@@ -1,0 +1,63 @@
+uuid: 3cc6a333-df72-428f-9121-cf3af65cdd5a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_image_audience
+field_name: field_image_audience
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'All Ages (home page)'
+    -
+      value: 1
+      label: Adult
+    -
+      value: 2
+      label: Youth
+    -
+      value: 6
+      label: Teens
+    -
+      value: 9
+      label: 'Virtual Library'
+    -
+      value: 10
+      label: 'Virtual Library (Spanish)'
+    -
+      value: 5
+      label: 'Literature Live!'
+    -
+      value: 7
+      label: 'Storytime Connection'
+    -
+      value: 3
+      label: Spanish
+    -
+      value: 4
+      label: 'Recycled Reads'
+    -
+      value: 44
+      label: 'Recycled Reads Giftshop'
+    -
+      value: 8
+      label: 'Austin History Center'
+    -
+      value: 11
+      label: 'Event Category Images'
+    -
+      value: 12
+      label: 'Job Portal'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

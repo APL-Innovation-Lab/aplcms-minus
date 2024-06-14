@@ -1,0 +1,28 @@
+uuid: 0c4a0ad8-474d-4839-972d-5b5a65851f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.__event_location
+  module:
+    - facets
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_eventlocation_2
+theme: claro2noGA
+region: content
+weight: -18
+provider: null
+plugin: 'facet_block:__event_location'
+settings:
+  id: 'facet_block:__event_location'
+  label: 'Event Location'
+  label_display: visible
+  provider: facets
+  block_id: eventlocation_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/events2"

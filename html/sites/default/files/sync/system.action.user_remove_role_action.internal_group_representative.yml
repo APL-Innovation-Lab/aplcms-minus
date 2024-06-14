@@ -1,0 +1,14 @@
+uuid: 571f0454-38db-4b08-912e-42b62800f354
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.internal_group_representative
+  module:
+    - user
+id: user_remove_role_action.internal_group_representative
+label: 'Remove the Internal Group Representative role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: internal_group_representative

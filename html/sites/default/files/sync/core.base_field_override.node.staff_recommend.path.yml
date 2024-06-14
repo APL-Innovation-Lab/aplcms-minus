@@ -1,0 +1,20 @@
+uuid: 57bf90f5-8937-4c90-bfdd-b8259d9e8979
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+  module:
+    - path
+id: node.staff_recommend.path
+field_name: path
+entity_type: node
+bundle: staff_recommend
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

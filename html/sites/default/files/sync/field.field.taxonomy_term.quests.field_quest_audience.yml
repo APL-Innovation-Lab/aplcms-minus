@@ -1,0 +1,21 @@
+uuid: 69ec3e09-53a5-44d7-857e-18a84c354bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_quest_audience
+    - taxonomy.vocabulary.quests
+  module:
+    - options
+id: taxonomy_term.quests.field_quest_audience
+field_name: field_quest_audience
+entity_type: taxonomy_term
+bundle: quests
+label: Audience
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

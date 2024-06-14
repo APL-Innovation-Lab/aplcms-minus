@@ -1,0 +1,19 @@
+uuid: b4532738-5961-43f8-b4d6-92f3eb7d264e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibliocommons_item_url
+    - node.type.event
+id: node.event.field_bibliocommons_item_url
+field_name: field_bibliocommons_item_url
+entity_type: node
+bundle: event
+label: 'Bibliocommons Item URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

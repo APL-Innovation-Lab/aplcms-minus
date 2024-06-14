@@ -1,0 +1,18 @@
+uuid: fe438b23-f815-4cbe-b7da-cb425695b670
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.oakwood
+target_entity_type_id: node
+target_bundle: oakwood
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,141 @@
+uuid: 9c44fa3f-b159-4f0c-9001-d7d474d5c0d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.hero_image.title
+    - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_summary
+    - node.type.hero_image
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      088d9a2f-6de2-4800-8612-ccdb0744053d:
+        character: ''
+        side: trim
+        uuid: 088d9a2f-6de2-4800-8612-ccdb0744053d
+        plugin: trim
+        source: field_hero_template
+        weight: 0
+        label: 'Characters to trim'
+label: 'Hero Image'
+id: hero_image
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: hero_image
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_hero_image:
+    value: field_hero_image
+    label: field_hero_image
+    machine_name: field_hero_image
+    type: csv
+  field_button_link:
+    value: field_button_link
+    label: field_button_link
+    machine_name: field_button_link
+    type: csv
+  field_button_link_text:
+    value: field_button_link_text
+    label: field_button_link_text
+    machine_name: field_button_link_text
+    type: csv
+  field_hero_link:
+    value: field_hero_link
+    label: field_hero_link
+    machine_name: field_hero_link
+    type: csv
+  field_hero_summary:
+    value: field_hero_summary
+    label: field_hero_summary
+    machine_name: field_hero_summary
+    type: csv
+  field_display_timespan:
+    value: field_display_timespan
+    label: field_display_timespan
+    machine_name: field_display_timespan
+    type: csv
+  field_display_timespan_end:
+    value: field_display_timespan_end
+    label: field_display_timespan_end
+    machine_name: field_display_timespan_end
+    type: csv
+  field_hero_template:
+    value: field_hero_template
+    label: field_hero_template
+    machine_name: field_hero_template
+    type: csv
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_hero_image
+    map:
+      target_id: field_hero_image
+      alt: ''
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: '1'
+      existing: '2'
+  -
+    target: field_hero_summary
+    map:
+      value: field_hero_summary
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_hero_template
+    map:
+      value: field_hero_template
+    settings:
+      language: null

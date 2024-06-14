@@ -1,0 +1,10 @@
+uuid: ce79cd5e-74cb-4d8b-98c2-234940b6daca
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YO7qcAZBy-8Bu3I6SqN1bsxV0fni-4QgR_q_mYabRfw
+name: 'Database Subjects'
+vid: database_subjects
+description: 'Database Subjects'
+weight: -12

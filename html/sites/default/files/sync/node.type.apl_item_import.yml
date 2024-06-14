@@ -1,0 +1,18 @@
+uuid: 6ccc2918-10cd-4fac-a923-eb579bfc0b89
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'APL Item import'
+type: apl_item_import
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

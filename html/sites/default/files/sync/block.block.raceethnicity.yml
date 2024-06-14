@@ -1,0 +1,28 @@
+uuid: b40387ee-0dbb-439a-a721-e3ab24a81acc
+langcode: eng
+status: true
+dependencies:
+  config:
+    - facets.facet.race_ethnicity
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: raceethnicity
+theme: claro2
+region: header
+weight: -33
+provider: null
+plugin: 'facet_block:race_ethnicity'
+settings:
+  id: 'facet_block:race_ethnicity'
+  label: Race/Ethnicity
+  label_display: visible
+  provider: facets
+  block_id: raceethnicity
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood/facets

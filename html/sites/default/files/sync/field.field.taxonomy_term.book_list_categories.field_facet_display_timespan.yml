@@ -1,0 +1,26 @@
+uuid: 1d18577a-fe5f-4c41-a578-a4c6ed5cf658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_facet_display_timespan
+    - taxonomy.vocabulary.book_list_categories
+  module:
+    - datetime_range
+id: taxonomy_term.book_list_categories.field_facet_display_timespan
+field_name: field_facet_display_timespan
+entity_type: taxonomy_term
+bundle: book_list_categories
+label: 'Display Timespan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+5 years'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

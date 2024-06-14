@@ -1,0 +1,14 @@
+uuid: 6ac5b9a4-f2bc-467b-80d0-2d343d9ae4d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_coach_administrator
+  module:
+    - user
+id: user_remove_role_action.job_coach_administrator
+label: 'Remove the Job Coach Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_coach_administrator

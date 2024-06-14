@@ -1,0 +1,31 @@
+uuid: c0334fad-8a9b-47dc-9e6b-9512f29a29cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: link_fixer
+label: 'link fixer'
+code: |+
+  console.log('link fixer');
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+      if (window.location.hash && window.location.hash.includes(':~:text=')) {
+          // Use history.replaceState to manipulate the URL without reloading the page
+          const newUrl = window.location.href.split('#')[0];
+          window.history.replaceState({}, '', newUrl);
+      }
+  });
+
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /mylibrarycard
+contexts: {  }
+conditions_require_all: true

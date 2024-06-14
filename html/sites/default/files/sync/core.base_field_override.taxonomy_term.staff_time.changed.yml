@@ -1,0 +1,18 @@
+uuid: 2dcd1728-3d9c-4d8f-a9e8-3eec830fa6ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_time
+id: taxonomy_term.staff_time.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: staff_time
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

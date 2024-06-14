@@ -1,0 +1,34 @@
+name: USWDS-gulp Subtheme
+type: theme
+description: 'A subtheme of USWDS using USWDS-gulp.'
+core: 8.x
+base theme: uswds
+
+# The following overrides will work if css is compiled to the root, update if different.
+libraries-override:
+  uswds/uswds:
+    css:
+      theme:
+        assets/css/uswds.css: css/styles.css
+    js:
+      assets/js/uswds.min.js: assets/js/uswds.min.js
+
+# Add the CSS to CKEditor, so that custom entries in "Style" will work.
+ckeditor_stylesheets:
+  - css/styles.css
+
+regions:
+  header_top: 'Above Header'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  hero: 'Hero'
+  content: 'Content'
+  footer_menu: 'Footer Menu'
+  footer: 'Primary Footer'
+  footer_secondary: 'Secondary Footer'

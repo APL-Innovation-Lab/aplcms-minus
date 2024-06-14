@@ -1,0 +1,30 @@
+uuid: 58451669-c3c2-436e-a139-017999e476ed
+langcode: eng
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro2noGA
+id: claro2noGA_makefullwidth
+theme: claro2noGA
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+settings:
+  id: 'block_content:7c8e500c-2153-4323-a7ad-bfafbe5b3c01'
+  label: 'make fullwidth'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/how-to/*'

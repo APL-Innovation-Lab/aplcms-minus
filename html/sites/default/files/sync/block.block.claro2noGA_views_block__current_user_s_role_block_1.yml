@@ -1,0 +1,30 @@
+uuid: e3c07cc8-693f-4c24-8ca4-fed6bd863add
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.current_user_s_role
+  module:
+    - system
+    - views
+  theme:
+    - claro2noGA
+id: claro2noGA_views_block__current_user_s_role_block_1
+theme: claro2noGA
+region: header
+weight: -28
+provider: null
+plugin: 'views_block:current_user_s_role-block_1'
+settings:
+  id: 'views_block:current_user_s_role-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/slr-request\r\n/recommended/titles/covers\r\nrecommended/titles/*"

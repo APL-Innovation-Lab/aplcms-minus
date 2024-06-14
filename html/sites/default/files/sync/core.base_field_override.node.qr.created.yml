@@ -1,0 +1,18 @@
+uuid: 65cf8912-2cd4-4321-b562-5787a4eec8b1
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.qr
+id: node.qr.created
+field_name: created
+entity_type: node
+bundle: qr
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

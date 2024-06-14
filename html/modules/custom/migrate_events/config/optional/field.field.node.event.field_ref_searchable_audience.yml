@@ -1,0 +1,19 @@
+uuid: 59e1ea4c-24b4-4292-ae9d-0fd02409e56e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_searchable_audience
+    - node.type.event
+id: node.event.field_ref_searchable_audience
+field_name: field_ref_searchable_audience
+entity_type: node
+bundle: event
+label: 'Searchable Audience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

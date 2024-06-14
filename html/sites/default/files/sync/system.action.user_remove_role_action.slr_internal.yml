@@ -1,0 +1,14 @@
+uuid: a972420a-de79-4ea0-8595-f2eb8429149f
+langcode: eng
+status: true
+dependencies:
+  config:
+    - user.role.slr_internal
+  module:
+    - user
+id: user_remove_role_action.slr_internal
+label: 'Remove the SLR Internal role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: slr_internal

@@ -1,0 +1,44 @@
+uuid: 9be5de21-dd28-48bb-a4c1-aa8f004eb804
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.remote_locations.feeds_item
+    - field.field.taxonomy_term.remote_locations.field_remote_url
+    - field.field.taxonomy_term.remote_locations.field_rl_street_address
+    - taxonomy.vocabulary.remote_locations
+id: taxonomy_term.remote_locations.default
+targetEntityType: taxonomy_term
+bundle: remote_locations
+mode: default
+content:
+  field_remote_url:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rl_street_address:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  feeds_item: true
+  langcode: true
+  path: true
+  status: true

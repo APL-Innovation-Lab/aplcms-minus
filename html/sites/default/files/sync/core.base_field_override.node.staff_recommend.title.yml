@@ -1,0 +1,18 @@
+uuid: 820189f8-302a-417c-9cf9-1a1883513c8d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.staff_recommend
+id: node.staff_recommend.title
+field_name: title
+entity_type: node
+bundle: staff_recommend
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

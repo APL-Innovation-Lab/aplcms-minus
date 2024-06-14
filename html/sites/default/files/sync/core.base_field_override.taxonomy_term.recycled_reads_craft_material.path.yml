@@ -1,0 +1,20 @@
+uuid: 80450c89-16ad-4dde-abc1-3b684ab89e7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recycled_reads_craft_material
+  module:
+    - path
+id: taxonomy_term.recycled_reads_craft_material.path
+field_name: path
+entity_type: taxonomy_term
+bundle: recycled_reads_craft_material
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

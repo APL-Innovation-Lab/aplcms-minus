@@ -1,0 +1,29 @@
+uuid: 331afe6b-8084-4819-b726-d1159aaa6bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cat_ia
+    - node.type.event
+    - taxonomy.vocabulary.intended_audience
+id: node.event.field_cat_ia
+field_name: field_cat_ia
+entity_type: node
+bundle: event
+label: 'Intended Audience'
+description: 'Choose at least one audience.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      intended_audience: intended_audience
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: af493a42-9bbb-4ebc-9293-16add467caba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_recommended_ages
+    - node.type.event
+  module:
+    - options
+id: node.event.field_event_recommended_ages
+field_name: field_event_recommended_ages
+entity_type: node
+bundle: event
+label: 'Recommended Ages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

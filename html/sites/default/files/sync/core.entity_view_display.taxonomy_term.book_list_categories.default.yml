@@ -1,0 +1,114 @@
+uuid: 8c049da2-48f5-4d9e-ae6d-cf7eb32d2a4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.book_list_categories.feeds_item
+    - field.field.taxonomy_term.book_list_categories.field_facet_display_timespan
+    - field.field.taxonomy_term.book_list_categories.layout_builder__layout
+    - taxonomy.vocabulary.book_list_categories
+    - views.view.recommend_tag_default
+    - views.view.staff_recommend_intro
+    - views.view.staff_recommend_tag
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          63701c42-f0a0-45f6-9dc2-b0e0568e8da9:
+            uuid: 63701c42-f0a0-45f6-9dc2-b0e0568e8da9
+            region: content
+            configuration:
+              id: 'views_block:staff_recommend_tag-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                field_recommend_tags_target_id: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 4
+            additional: {  }
+          3b3b2359-cbd3-4f19-ae30-a383b15cc324:
+            uuid: 3b3b2359-cbd3-4f19-ae30-a383b15cc324
+            region: content
+            configuration:
+              id: 'views_block:recommend_tag_default-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          6a93bef7-d937-469b-8624-54ca1126314c:
+            uuid: 6a93bef7-d937-469b-8624-54ca1126314c
+            region: content
+            configuration:
+              id: 'views_block:staff_recommend_intro-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          59e61d26-a856-4b56-8dce-c4d11086a0f0:
+            uuid: 59e61d26-a856-4b56-8dce-c4d11086a0f0
+            region: content
+            configuration:
+              id: 'views_block:recommend_tag_default-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          4c5627b7-0f5e-4409-8532-f5b73c8277a8:
+            uuid: 4c5627b7-0f5e-4409-8532-f5b73c8277a8
+            region: content
+            configuration:
+              id: 'views_block:staff_recommend_intro-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.book_list_categories.default
+targetEntityType: taxonomy_term
+bundle: book_list_categories
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_facet_display_timespan: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

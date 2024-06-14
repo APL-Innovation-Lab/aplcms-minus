@@ -1,0 +1,24 @@
+uuid: e1774bba-a17d-4e6a-baae-0eedb6b8e9b4
+langcode: eng
+status: true
+dependencies: {  }
+id: update_slr_node
+label: 'update SLR node'
+description: ''
+tags: {  }
+config_version: '3'
+component:
+  expression:
+    id: rules_rule
+    uuid: 9ca4c931-0e0c-4b7e-be63-69b2d50b5347
+    weight: 0
+    conditions:
+      id: rules_and
+      uuid: 711dfb99-8525-489b-ac36-a96abc12b0f5
+      weight: 0
+      conditions: {  }
+    actions:
+      id: rules_action_set
+      uuid: ad50f86a-0664-4a75-9a09-f71573fbaac0
+      weight: 0
+      actions: {  }

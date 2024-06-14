@@ -1,0 +1,182 @@
+uuid: 794a70b3-02b6-4dc0-ab0b-bb43ef5585d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_hours.feeds_item
+    - field.field.node.open_hours.field_effective_date
+    - field.field.node.open_hours.field_hours_more_info
+    - field.field.node.open_hours.field_location
+    - field.field.node.open_hours.field_open_hours__
+    - field.field.node.open_hours.field_slr_time_end
+    - field.field.node.open_hours.field_slr_time_start
+    - node.type.open_hours
+    - views.view.teasers_2
+  module:
+    - datetime
+    - datetime_range
+    - layout_builder
+    - layout_discovery
+    - office_hours
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          55d77a21-bbb8-45d8-823b-4887a715add5:
+            uuid: 55d77a21-bbb8-45d8-823b-4887a715add5
+            region: content
+            configuration:
+              id: 'views_block:teasers_2-block_17'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          fb038eb1-b11a-4a4f-a878-98308eee212b:
+            uuid: fb038eb1-b11a-4a4f-a878-98308eee212b
+            region: content
+            configuration:
+              id: 'field_block:node:open_hours:field_hours_more_info'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          e6f41cfb-ffb0-453a-b841-d33917215a4e:
+            uuid: e6f41cfb-ffb0-453a-b841-d33917215a4e
+            region: content
+            configuration:
+              id: 'field_block:node:open_hours:field_slr_time_start'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          89bc3806-0900-4d3c-920c-1a9dac26556e:
+            uuid: 89bc3806-0900-4d3c-920c-1a9dac26556e
+            region: content
+            configuration:
+              id: 'field_block:node:open_hours:field_slr_time_end'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.open_hours.default
+targetEntityType: node
+bundle: open_hours
+mode: default
+content:
+  field_effective_date:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_hours_more_info:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_open_hours__:
+    type: office_hours
+    label: above
+    settings:
+      day_format: long
+      time_format: g
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: before
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      timezone_field: ''
+      office_hours_first_day: ''
+      schema:
+        enabled: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_slr_time_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_slr_time_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

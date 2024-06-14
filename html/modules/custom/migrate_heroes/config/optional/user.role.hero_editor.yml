@@ -1,0 +1,24 @@
+uuid: 5a9fcdf3-b96a-4ba2-ba66-0eaea123536b
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.hero_image
+  module:
+    - filter
+    - node
+id: hero_editor
+label: 'Hero Editor'
+weight: -2
+is_admin: null
+permissions:
+  - 'create hero_image content'
+  - 'delete any hero_image content'
+  - 'delete hero_image revisions'
+  - 'delete own hero_image content'
+  - 'edit any hero_image content'
+  - 'edit own hero_image content'
+  - 'revert hero_image revisions'
+  - 'use text format full_html'
+  - 'view hero_image revisions'

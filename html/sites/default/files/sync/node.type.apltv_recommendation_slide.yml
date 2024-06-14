@@ -1,0 +1,17 @@
+uuid: cb0b5ca8-2057-4816-9113-25b2a6fb8760
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'APLTV Recommendation Slide'
+type: apltv_recommendation_slide
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

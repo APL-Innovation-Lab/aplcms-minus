@@ -1,0 +1,16 @@
+uuid: 22fb7269-7cee-4b88-b41b-c0255cd4e876
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: stage
+label: Stage
+weight: 5
+theme: uswds_base
+admin_theme: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stage/*'

@@ -1,0 +1,16 @@
+uuid: 751bcafa-b72c-4ed7-8c96-543b12556590
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: blog
+label: blog
+weight: 3
+theme: uswds
+admin_theme: claro2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/blog/*'

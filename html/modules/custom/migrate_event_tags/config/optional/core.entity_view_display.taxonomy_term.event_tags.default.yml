@@ -1,0 +1,176 @@
+uuid: efacd3d7-fd1c-4f5b-aad9-8074cd3aa432
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.event_tags.description
+    - core.base_field_override.taxonomy_term.event_tags.name
+    - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_cat_hierarchy
+    - field.field.taxonomy_term.event_tags.field_is_an_event_category
+    - field.field.taxonomy_term.event_tags.field_library_priority
+    - field.field.taxonomy_term.event_tags.field_main_image_event
+    - field.field.taxonomy_term.event_tags.field_recommended_ages
+    - field.field.taxonomy_term.event_tags.field_ref_event_category
+    - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_summary
+    - field.field.taxonomy_term.event_tags.field_term_subtitle
+    - field.field.taxonomy_term.event_tags.layout_builder__layout
+    - taxonomy.vocabulary.event_tags
+    - views.view.events_by_category
+    - views.view.navigation
+  module:
+    - entity_hierarchy
+    - layout_builder
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          455dfca3-316f-41d6-ac56-301768f90419:
+            uuid: 455dfca3-316f-41d6-ac56-301768f90419
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:event_tags:field_main_image_event'
+              label: 'Main Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          30d52a65-4cfe-4b47-95d6-5cfe77385361:
+            uuid: 30d52a65-4cfe-4b47-95d6-5cfe77385361
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:event_tags:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4c7a948f-0b56-4bb4-873e-7c9eec35a739:
+            uuid: 4c7a948f-0b56-4bb4-873e-7c9eec35a739
+            region: first
+            configuration:
+              id: 'views_block:navigation-block_23'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          8cd75357-c516-4764-99ef-d8f2c8ac3006:
+            uuid: 8cd75357-c516-4764-99ef-d8f2c8ac3006
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:event_tags:field_term_subtitle'
+              label: Subtitle
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          58015411-fa81-45ef-89d8-3f0e9406e7d1:
+            uuid: 58015411-fa81-45ef-89d8-3f0e9406e7d1
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:event_tags:description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          6467bc9e-e786-49b7-bdb7-650c00060b27:
+            uuid: 6467bc9e-e786-49b7-bdb7-650c00060b27
+            region: second
+            configuration:
+              id: 'views_block:events_by_category-block_7'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                term_node_tid_depth: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.event_tags.default
+targetEntityType: taxonomy_term
+bundle: event_tags
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cat_hierarchy:
+    type: entity_reference_hierarchy_label
+    label: above
+    settings:
+      link: true
+      weight_output: attribute
+    third_party_settings: {  }
+    weight: 2
+    region: first
+hidden:
+  feeds_item: true
+  field_is_an_event_category: true
+  field_library_priority: true
+  field_main_image_event: true
+  field_recommended_ages: true
+  field_ref_event_category: true
+  field_reflection_category: true
+  field_summary: true
+  field_term_subtitle: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

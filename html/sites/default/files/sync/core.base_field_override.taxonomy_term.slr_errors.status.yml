@@ -1,0 +1,22 @@
+uuid: fb6f8ca7-ca3d-443a-b9c0-39db2d007dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.slr_errors
+id: taxonomy_term.slr_errors.status
+field_name: status
+entity_type: taxonomy_term
+bundle: slr_errors
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

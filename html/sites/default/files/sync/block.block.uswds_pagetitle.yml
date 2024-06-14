@@ -1,0 +1,24 @@
+uuid: 8ec47d95-1a61-403b-8b0c-0edb0d6eba7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_pagetitle
+theme: uswds
+region: content
+weight: -22
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/collaboration-request\r\n/form/*"

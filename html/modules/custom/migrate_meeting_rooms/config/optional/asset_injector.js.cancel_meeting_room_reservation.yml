@@ -1,0 +1,32 @@
+uuid: d856e930-04cd-4a39-944d-24e934548888
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: cancel_meeting_room_reservation
+label: 'Cancel Meeting Room Reservation'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+  $('.usa-alert__text').html('Are you sure you want to cancel your Meeting Room Reservation?');
+  $('#edit-submit').val('Cancel reservation');
+
+  $('#edit-cancel, .item-list').css('display','none');
+
+  //$('#webform-submission-passport-appointment-request-delete-form').css('color','transparent');
+   }); // end of ready
+  })(jQuery); // end of jQuery
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/webform/meeting_room_reservation_request/submissions/*/delete'
+contexts: {  }
+conditions_require_all: true

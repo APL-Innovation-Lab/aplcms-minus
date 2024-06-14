@@ -1,0 +1,42 @@
+#block-intendedaudience-2 h2, 
+#block-intendedaudience-2 > div {
+	padding: 1px 15px;
+}
+
+h3 strong, h3 {
+	font-size: 22px;
+	font-weight: bold;
+}
+.block.block-layout-builder.block-field-blocktaxonomy-termevent-tagsfield-term-subtitle {
+	margin-left: 15px;
+	font-size: 24px;
+	line-height: 2em;
+}
+#block-intendedaudience-2 {
+	background: white;
+}
+#apl-events-nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+.children {
+	background: #9696c9 !important;
+}
+
+.teen {
+	background: #009ABE !important;
+}
+
+.adult {
+	background: #7DC142 !important;
+}
+.apl-rec-age,
+.apl-event-summary {
+	margin-bottom: 20px;
+}
+.apl-free {
+	margin: 20px 0 10px;
+}
+.apl-item-list {
+	margin: 0 0 0 29px;
+}

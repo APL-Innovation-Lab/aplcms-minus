@@ -1,0 +1,112 @@
+uuid: c396cf4b-617a-452e-9e1c-3b81955ab3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.screen.feeds_item
+    - field.field.node.screen.field_minutes
+    - field.field.node.screen.field_seconds
+    - field.field.node.screen.field_video
+    - field.field.node.screen.field_video_subtitle
+    - field.field.node.screen.field_video_type
+    - field.field.node.screen.field_video_url
+    - node.type.screen
+    - views.view.apltv_video
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+    - user
+    - video_embed_field
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3ad8e380-1d63-44c3-8e94-ebbfd51f3a8a:
+            uuid: 3ad8e380-1d63-44c3-8e94-ebbfd51f3a8a
+            region: content
+            configuration:
+              id: 'views_block:apltv_video-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.screen.default
+targetEntityType: node
+bundle: screen
+mode: default
+content:
+  field_minutes:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_seconds:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_video:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_video_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_video_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_video_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

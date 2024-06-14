@@ -1,0 +1,46 @@
+title: 'Portal de Empleo – Pedido de Ayuda'
+description: "Nos complace ayudarle con su b&uacute;squeda de empleo. Favor de contarnos un poco sobre usted y su b&uacute;squeda para que podamos organizar su cita con un Entrenador Laboral.<br />\r\n<br />\r\nOjo: Si no tiene computadora, puede llamarnos al 512-974-7400, escoger la opci&oacute;n 1, y pedir ayuda de un bibliotecario hispanohablante, quien podr&aacute; llenar el formulario en su nombre."
+elements: |
+  intro:
+    '#markup': "<div id=\"apl_intro_w\">\r\n<p>Esperamos asistir con su b&uacute;squeda de empleo. D&iacute;ganos m&aacute;s de al redor de su b&uacute;squeda de empleo y de usted mismo/a para emparejarte con un entrenador laboral.</p>\r\n\r\n<p>Nota: Citas tambi&eacute;n se pueden hacer por tel&eacute;fono con llamar la l&iacute;nea de referencia al 512-974-7400, opci&oacute;n 1. Avisa el bibliotecario que necesita solicitar una cita con un entrenador laboral y ellos le llenaran el formulario.</p>\r\n</div>"
+  name:
+    '#title': Nombre
+    '#first__title': 'Primer Nombre'
+    '#last__title': Apellido
+  i_prefer_to_be_contacted_by_:
+    '#title': 'Prefiero ser contactado por …'
+    '#options':
+      - Teléfono
+      - 'Email / El correo electrónico'
+  phone:
+    '#title': Teléfono
+  email:
+    '#title': 'Email / El correo electrónico'
+  i_need_help_:
+    '#title': 'Necesito ayuda con…'
+    '#options':
+      - 'Configurando mi correo electrónico'
+      - 'Creando un resumen o carta de presentación'
+      - 'Revisando un resumen o carta de presentación'
+      - 'Busqueda de empleo'
+      - 'Usando los recursos de la biblioteca en su búsqueda de empleo (bases informativas, libros electrónicos, etc.)'
+      - 'Solucionando problemas con una aplicación de trabajo en línea o sitios web'
+      - 'Habilidades de entrevista'
+      - 'Otras necesidades relacionadas con empleo (Explícalo abajo)'
+      - 'Solo tengo una pregunta sobre mi búsqueda de empleo y no necesito una cita. (Selecciona esta opción para recibir una respuesta por email o por teléfono.)'
+  how_can_we_help_:
+    '#title': 'Como le podemos ayudar'
+  i_am_a_n_:
+    '#title': 'Yo soy…'
+    '#options':
+      1: 'Una persona adulta buscando empleo'
+      2: 'Un adolescente busando empleo'
+      3: 'Una persona mayor buscando empleo'
+      4: 'Una persona con discapacidad buscando empleo'
+      6: 'Un/a veterano/a militar buscando empleo'
+      7: 'Una persona anteriormente encarcelada buscando empleo'
+  anything_else_you_d_like_us_to_know_about_your_job_search_or_you:
+    '#title': '¿Algo más que gustaría contarnos sobre su búsqueda de empleo o de su historia profesional?'
+settings:
+  confirmation_url: /es/portaldeempleo
+  confirmation_message: 'Un entrenador laboral se pondr&aacute; en contacto contigo durante los pr&oacute;ximos dos d&iacute;as h&aacute;biles para concertar una cita.'

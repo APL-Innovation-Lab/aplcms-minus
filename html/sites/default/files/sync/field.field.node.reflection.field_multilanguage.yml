@@ -1,0 +1,23 @@
+uuid: 50a1ddea-f4fc-4ddd-96fc-f8f013bfa686
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multilanguage
+    - node.type.reflection
+id: node.reflection.field_multilanguage
+field_name: field_multilanguage
+entity_type: node
+bundle: reflection
+label: Multilanguage
+description: '(Includes bilingual, Spanish only, or other languages)'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Multilanguage
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,37 @@
+uuid: 9375340a-18b4-4ef9-844b-2038df085831
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: biblio_importer_2023
+label: 'biblio importer 2023'
+code: |+
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+
+  var idUrl = 'https://api.bibliocommons.com/v1/titles/1017529067?api_key=ehqxke4ubaq3x2e2nm96vhv7';
+
+  console.log(idUrl);
+
+  $.get(idUrl, function(html) { 
+  	console.log(html); 
+  });
+
+  });
+  })(jQuery);
+
+
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /theme/biblio
+contexts: {  }
+conditions_require_all: true

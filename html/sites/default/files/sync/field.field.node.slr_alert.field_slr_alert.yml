@@ -1,0 +1,19 @@
+uuid: 6f9f1360-e343-4bdc-a59d-455b27ba6351
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slr_alert
+    - node.type.slr_alert
+id: node.slr_alert.field_slr_alert
+field_name: field_slr_alert
+entity_type: node
+bundle: slr_alert
+label: Alert
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

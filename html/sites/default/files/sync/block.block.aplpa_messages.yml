@@ -1,0 +1,26 @@
+uuid: 7e52d200-955f-4d82-8724-0e4c740613e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aplpa
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: aplpa_messages
+theme: aplpa
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/apltv/*'

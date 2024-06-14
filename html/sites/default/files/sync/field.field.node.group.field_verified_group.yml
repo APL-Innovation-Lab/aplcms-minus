@@ -1,0 +1,21 @@
+uuid: bae19bc9-fd44-4d18-805b-4a54257b5453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_verified_group
+    - node.type.group
+  module:
+    - options
+id: node.group.field_verified_group
+field_name: field_verified_group
+entity_type: node
+bundle: group
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

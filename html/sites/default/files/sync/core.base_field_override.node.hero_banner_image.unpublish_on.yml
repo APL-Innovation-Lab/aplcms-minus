@@ -1,0 +1,18 @@
+uuid: 53abf33e-1d2f-4fa8-9fb6-99e470ad53ae
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: hero_banner_image
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

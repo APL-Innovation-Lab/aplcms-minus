@@ -1,0 +1,19 @@
+uuid: 7a21fd17-992b-4aed-a379-ea2c0fbeaec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_for_registration
+    - node.type.event
+id: node.event.field_link_for_registration
+field_name: field_link_for_registration
+entity_type: node
+bundle: event
+label: 'Link for Registration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

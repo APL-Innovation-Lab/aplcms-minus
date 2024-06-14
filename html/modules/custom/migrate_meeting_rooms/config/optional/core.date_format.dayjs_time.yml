@@ -1,0 +1,8 @@
+uuid: 7e5b0e94-02c9-47ba-8d5b-c25a65a96f45
+langcode: eng
+status: true
+dependencies: {  }
+id: dayjs_time
+label: 'dayjs time'
+locked: false
+pattern: 'G:i'

@@ -1,0 +1,18 @@
+uuid: 2dde5d5d-c2e8-42d4-a66a-85b06626c699
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atxyz
+id: node.atxyz.created
+field_name: created
+entity_type: node
+bundle: atxyz
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

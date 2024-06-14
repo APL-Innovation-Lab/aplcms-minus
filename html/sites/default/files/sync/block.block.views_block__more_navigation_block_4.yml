@@ -1,0 +1,29 @@
+uuid: eef4e4a4-d0e8-4b72-bf0b-dea369a7990d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.more_navigation
+  module:
+    - system
+    - views
+  theme:
+    - uswds_base
+id: views_block__more_navigation_block_4
+theme: uswds_base
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:more_navigation-block_4'
+settings:
+  id: 'views_block:more_navigation-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /theme/navigation2024

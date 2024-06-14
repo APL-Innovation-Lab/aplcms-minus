@@ -1,0 +1,37 @@
+uuid: e5034ae3-dd4a-4290-a6c5-84abf9a8e602
+langcode: eng
+status: false
+dependencies:
+  config:
+    - facets.facet.time_start
+  module:
+    - facets
+    - system
+    - user
+  theme:
+    - claro2
+id: timestart
+theme: claro2
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:time_start'
+settings:
+  id: 'facet_block:time_start'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: timestart
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

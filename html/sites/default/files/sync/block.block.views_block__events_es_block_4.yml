@@ -1,0 +1,37 @@
+uuid: 38999790-f90e-48a7-9b29-4fac076804a6
+langcode: eng
+status: true
+dependencies:
+  config:
+    - views.view.events_es
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - aplpa
+id: views_block__events_es_block_4
+theme: aplpa
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:events_es-block_4'
+settings:
+  id: 'views_block:events_es-block_4'
+  label: Eventos
+  label_display: visible
+  provider: views
+  views_label: Eventos
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

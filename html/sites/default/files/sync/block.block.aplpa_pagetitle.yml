@@ -1,0 +1,24 @@
+uuid: ee1381b0-2580-4589-8185-527800f65ee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aplpa
+id: aplpa_pagetitle
+theme: aplpa
+region: content
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/collaboration-request\r\n/form/*"

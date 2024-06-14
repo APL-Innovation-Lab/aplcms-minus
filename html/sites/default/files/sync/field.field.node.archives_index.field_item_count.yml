@@ -1,0 +1,23 @@
+uuid: a5ede35c-e979-4269-aa61-f25b7373e4ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_count
+    - node.type.archives_index
+id: node.archives_index.field_item_count
+field_name: field_item_count
+entity_type: node
+bundle: archives_index
+label: 'Item Count'
+description: 'example: 22'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

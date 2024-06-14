@@ -1,0 +1,22 @@
+uuid: 02ce7c06-ecb5-4732-9350-f642251e6967
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_hours
+id: node.open_hours.sticky
+field_name: sticky
+entity_type: node
+bundle: open_hours
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

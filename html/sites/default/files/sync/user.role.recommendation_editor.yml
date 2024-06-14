@@ -1,0 +1,29 @@
+uuid: 5bd5254a-54c0-4c05-a480-efb8748632a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.apltv_recommendation_slide
+    - taxonomy.vocabulary.recommendation_slide_categories
+  module:
+    - filter
+    - node
+    - taxonomy
+id: recommendation_editor
+label: 'Recommendation Editor'
+weight: 7
+is_admin: null
+permissions:
+  - 'create apltv_recommendation_slide content'
+  - 'create terms in recommendation_slide_categories'
+  - 'delete any apltv_recommendation_slide content'
+  - 'delete apltv_recommendation_slide revisions'
+  - 'delete own apltv_recommendation_slide content'
+  - 'delete terms in recommendation_slide_categories'
+  - 'edit any apltv_recommendation_slide content'
+  - 'edit own apltv_recommendation_slide content'
+  - 'edit terms in recommendation_slide_categories'
+  - 'revert apltv_recommendation_slide revisions'
+  - 'use text format full_html'
+  - 'view apltv_recommendation_slide revisions'

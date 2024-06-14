@@ -1,0 +1,39 @@
+uuid: 370263ff-029f-441e-8ebf-eba652214233
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_quest_category
+field_name: field_quest_category
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Read
+    -
+      value: '2'
+      label: Write
+    -
+      value: '3'
+      label: View
+    -
+      value: '4'
+      label: Create
+    -
+      value: '5'
+      label: Explore
+    -
+      value: '6'
+      label: Connect
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

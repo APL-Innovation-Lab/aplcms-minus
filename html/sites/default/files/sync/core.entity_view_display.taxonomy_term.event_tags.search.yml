@@ -1,0 +1,87 @@
+uuid: f918b8e0-98b6-4090-b5a7-f2af5a8ea762
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.search
+    - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_cat_hierarchy
+    - field.field.taxonomy_term.event_tags.field_is_an_event_category
+    - field.field.taxonomy_term.event_tags.field_library_priority
+    - field.field.taxonomy_term.event_tags.field_main_image_event
+    - field.field.taxonomy_term.event_tags.field_recommended_ages
+    - field.field.taxonomy_term.event_tags.field_ref_event_category
+    - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_retire
+    - field.field.taxonomy_term.event_tags.field_summary
+    - field.field.taxonomy_term.event_tags.field_term_subtitle
+    - field.field.taxonomy_term.event_tags.layout_builder__layout
+    - taxonomy.vocabulary.event_tags
+    - views.view.event_tag_header
+  module:
+    - entity_hierarchy
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          04a043b2-a076-46f8-8698-2c2bef37130d:
+            uuid: 04a043b2-a076-46f8-8698-2c2bef37130d
+            region: content
+            configuration:
+              id: 'views_block:event_tag_header-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                tid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.event_tags.search
+targetEntityType: taxonomy_term
+bundle: event_tags
+mode: search
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cat_hierarchy:
+    type: entity_reference_hierarchy_label
+    label: above
+    settings:
+      link: true
+      weight_output: attribute
+    third_party_settings: {  }
+    weight: 2
+    region: first
+hidden:
+  feeds_item: true
+  field_is_an_event_category: true
+  field_library_priority: true
+  field_main_image_event: true
+  field_recommended_ages: true
+  field_ref_event_category: true
+  field_reflection_category: true
+  field_retire: true
+  field_summary: true
+  field_term_subtitle: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

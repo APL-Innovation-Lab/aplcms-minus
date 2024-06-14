@@ -1,0 +1,38 @@
+uuid: 0fdf10fe-12ce-449b-b645-7a53216240b1
+langcode: eng
+status: false
+dependencies: {  }
+id: slr_confirm_redirect
+label: 'SLR Confirm redirect'
+events:
+  -
+    event_name: 'rules_entity_insert:feeds_feed--slr_confirm'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 2d55d53c-0b8c-4e06-a04e-23589359a00b
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 2eae3683-2f2f-46df-8d5b-3161d2d29c37
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: db898326-c41c-45dd-b54b-a76623013c02
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: f0324bb1-0758-4523-847f-861394ff72af
+        weight: -49
+        action_id: rules_page_redirect
+        context_values:
+          url: /central-library
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

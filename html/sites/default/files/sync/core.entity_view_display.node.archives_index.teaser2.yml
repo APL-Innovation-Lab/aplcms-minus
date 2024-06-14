@@ -1,0 +1,272 @@
+uuid: 5c510650-0f1a-4c13-b6c0-6a259b71c5cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser2
+    - field.field.node.archives_index.feeds_item
+    - field.field.node.archives_index.field_abstract
+    - field.field.node.archives_index.field_accessno
+    - field.field.node.archives_index.field_archive_creator
+    - field.field.node.archives_index.field_archive_id
+    - field.field.node.archives_index.field_archive_language
+    - field.field.node.archives_index.field_archive_location
+    - field.field.node.archives_index.field_archive_status
+    - field.field.node.archives_index.field_archives_access
+    - field.field.node.archives_index.field_bioghist
+    - field.field.node.archives_index.field_box_count
+    - field.field.node.archives_index.field_bulk_dates
+    - field.field.node.archives_index.field_collection
+    - field.field.node.archives_index.field_condition
+    - field.field.node.archives_index.field_digital_size_in_gb
+    - field.field.node.archives_index.field_display_title
+    - field.field.node.archives_index.field_donorno
+    - field.field.node.archives_index.field_dsc
+    - field.field.node.archives_index.field_final_process_date
+    - field.field.node.archives_index.field_finding_aid
+    - field.field.node.archives_index.field_flat_file_drawer
+    - field.field.node.archives_index.field_format_a_v_
+    - field.field.node.archives_index.field_format_electronic
+    - field.field.node.archives_index.field_format_general
+    - field.field.node.archives_index.field_format_general_ahc
+    - field.field.node.archives_index.field_format_note
+    - field.field.node.archives_index.field_format_photo
+    - field.field.node.archives_index.field_format_text
+    - field.field.node.archives_index.field_general_notes
+    - field.field.node.archives_index.field_item_count
+    - field.field.node.archives_index.field_item_count_notes
+    - field.field.node.archives_index.field_linear_feet
+    - field.field.node.archives_index.field_odd
+    - field.field.node.archives_index.field_organizations
+    - field.field.node.archives_index.field_persons
+    - field.field.node.archives_index.field_places
+    - field.field.node.archives_index.field_posted_taro
+    - field.field.node.archives_index.field_process_note
+    - field.field.node.archives_index.field_record_creation_date
+    - field.field.node.archives_index.field_related
+    - field.field.node.archives_index.field_restriction_notes
+    - field.field.node.archives_index.field_restrictions
+    - field.field.node.archives_index.field_scopecontent
+    - field.field.node.archives_index.field_searchable
+    - field.field.node.archives_index.field_start_date
+    - field.field.node.archives_index.field_subjects
+    - field.field.node.archives_index.field_taro_filename
+    - node.type.archives_index
+  module:
+    - datetime_range
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0db337ea-04e4-415a-b676-c0c32249f131:
+            uuid: 0db337ea-04e4-415a-b676-c0c32249f131
+            region: content
+            configuration:
+              id: 'extra_field_block:node:archives_index:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          1ac76341-58d9-4b51-93f7-739bffbc4bb9:
+            uuid: 1ac76341-58d9-4b51-93f7-739bffbc4bb9
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_start_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: daterange_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                  separator: '-'
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c9370e61-5a03-4088-a3ee-114e6d7b74fb:
+            uuid: c9370e61-5a03-4088-a3ee-114e6d7b74fb
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_abstract'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1dbae3b8-21da-4333-bf44-0f8cafd9e9cc:
+            uuid: 1dbae3b8-21da-4333-bf44-0f8cafd9e9cc
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_bioghist'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6438013b-97ca-424d-ad53-65537692d572:
+            uuid: 6438013b-97ca-424d-ad53-65537692d572
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_scopecontent'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          ac090404-2ab4-4160-a45c-e1d7306a0cd5:
+            uuid: ac090404-2ab4-4160-a45c-e1d7306a0cd5
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_dsc'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          236679a5-e06f-4cc1-ab4f-9eb2c0c56fc0:
+            uuid: 236679a5-e06f-4cc1-ab4f-9eb2c0c56fc0
+            region: content
+            configuration:
+              id: 'field_block:node:archives_index:field_odd'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.archives_index.teaser2
+targetEntityType: node
+bundle: archives_index
+mode: teaser2
+content:
+  field_abstract:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_bioghist:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_dsc:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_odd:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_scopecontent:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_start_date:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_accessno: true
+  field_archive_creator: true
+  field_archive_id: true
+  field_archive_language: true
+  field_archive_location: true
+  field_archive_status: true
+  field_archives_access: true
+  field_box_count: true
+  field_bulk_dates: true
+  field_collection: true
+  field_condition: true
+  field_digital_size_in_gb: true
+  field_display_title: true
+  field_donorno: true
+  field_final_process_date: true
+  field_finding_aid: true
+  field_flat_file_drawer: true
+  field_format_a_v_: true
+  field_format_electronic: true
+  field_format_general: true
+  field_format_general_ahc: true
+  field_format_note: true
+  field_format_photo: true
+  field_format_text: true
+  field_general_notes: true
+  field_item_count: true
+  field_item_count_notes: true
+  field_linear_feet: true
+  field_organizations: true
+  field_persons: true
+  field_places: true
+  field_posted_taro: true
+  field_process_note: true
+  field_record_creation_date: true
+  field_related: true
+  field_restriction_notes: true
+  field_restrictions: true
+  field_searchable: true
+  field_subjects: true
+  field_taro_filename: true
+  langcode: true
+  search_api_excerpt: true

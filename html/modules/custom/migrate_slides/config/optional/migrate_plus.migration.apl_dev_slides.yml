@@ -1,0 +1,73 @@
+uuid: 1f81b05c-0ef5-4ba8-bd28-cfed8dc53064
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBKaJ6bVeOtAXDbxWVgIfmSKLE2ewq96XBW6iGMHAPQ
+id: apl_dev_slides
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: apl_dev
+label: 'APL Slides'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_slides/slides.json'
+  item_selector: slide
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: items
+      selector: items
+    -
+      name: theme
+      selector: theme
+    -
+      name: subtitle
+      selector: subtitle
+    -
+      name: introduction
+      selector: introduction
+    -
+      name: audience2016
+      selector: audience2016
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: apltv_recommendation_slide
+  title: title
+  theme: theme
+  subtitle: subtitle
+  introduction: introduction
+  audience2016: audience2016
+  items:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: items
+    -
+      plugin: explode
+      source: items
+      delimiter: ','
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,69 @@
+uuid: 1095e257-29d4-48ef-a759-007ed065e586
+langcode: eng
+status: false
+dependencies: {  }
+id: slr_add
+label: 'SLR add'
+events:
+  -
+    event_name: 'rules_entity_insert:node--slr'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 5574ddfb-c53e-4170-b6c6-8fec69acb842
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: b895c00a-6a2b-408f-8154-d7a1f4db9957
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: fa2ef431-5c71-4a62-b1bb-59f414f93230
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: c570585e-55e4-40bc-b18c-8b0dcded2ae2
+        weight: -50
+        action_id: rules_system_message
+        context_values:
+          message: ' Your Shared Learning Room Reservation is confirmed.'
+          type: status
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 01cf2585-addd-4a20-8a57-722ca821e808
+        weight: -48
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.field_slr_email}}'
+          subject: 'Your shared learning room reservation at Central Library'
+          message: "<p style=\"color:black;\">Thank you for confirming your shared learning room reservation at Central Library, which is located at 710 W Cesar Chavez St, Austin, TX 78701.<p>\r\n<p style=\"color:black;\"><span style=\"color:black;\" class=\"deets\">Room: {{node.field_slr_room.entity.name}}</span><br/><span style=\"color:black;\" class=\"deets\">Start Time: {{node.field_slr_time_start.value|format_date('long')}}</span><br/>\r\nEnd Time: {{node.field_slr_time_end.value|format_date('long')}}</span><br/><span style=\"color:black;\" class=\"deets\">Name: {{node.field_slr_full_name.value}}</span><br/><span style=\"color:black;\" class=\"deets\">Topic: {{node.title}}</span><br/><span style=\"color:black;\" class=\"deets\">Status: Confirmed</span></p><p style=\"color:black;\">By booking a room, you agree to abide by the <a href=\"http://austinlibrary.com/downloads/shared_learning_rooms_policy.pdf\">shared learning room policy</a>.</p><p style=\"color:black;\">If necessary, you can <a href=\"https://library.austintexas.gov/cancel/slr?id={{node.nid.value}}&ac={{node.field_ac.value}}\">cancel</a> before your reservation time.</p><p style=\"color:black;\">Questions? Call 512-974-7400 (option 1) or <a href=\"http://library.austintexas.libanswers.com/\">Ask a Librarian</a>.</p><style>* {font-family: \"Source Sans Pro\", \"Helvetica\", \"Arial\", sans-serif;line-height: 1.3em;color: black !important;}.im, .deets {color: black !important;}</style>"
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

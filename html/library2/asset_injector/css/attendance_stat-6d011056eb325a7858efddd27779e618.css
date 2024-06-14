@@ -1,0 +1,7 @@
+.fieldset__label {
+	padding-bottom: 0;
+}
+#edit-field-node-id-wrapper,
+#edit-field-library-priority--wrapper .fieldset__label--group {
+  display: none;
+}

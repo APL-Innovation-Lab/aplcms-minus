@@ -1,0 +1,76 @@
+uuid: eacd3f1d-bdde-46f8-b88b-ea183063ce12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity.body
+    - field.field.node.activity.feeds_item
+    - field.field.node.activity.field_act_video
+    - field.field.node.activity.field_activity_files
+    - field.field.node.activity.field_booklist
+    - field.field.node.activity.field_kids_block_party_tags
+    - field.field.node.activity.field_summer_tags
+    - field.field.node.activity.field_video_2
+    - node.type.activity
+    - views.view.teasers
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          18fb1526-fab4-477f-bb25-5312abc5b8f5:
+            uuid: 18fb1526-fab4-477f-bb25-5312abc5b8f5
+            region: content
+            configuration:
+              id: 'views_block:teasers-block_4'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.activity.teaser
+targetEntityType: node
+bundle: activity
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_act_video: true
+  field_activity_files: true
+  field_booklist: true
+  field_kids_block_party_tags: true
+  field_summer_tags: true
+  field_video_2: true
+  langcode: true
+  search_api_excerpt: true

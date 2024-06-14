@@ -1,0 +1,25 @@
+uuid: aa7a72d1-5373-4c7a-9fc8-5ab7e475dc10
+langcode: eng
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+id: exposedformdatabases_searchpage_1
+theme: claro2
+region: content
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:databases_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:databases_search-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /virtual/search

@@ -1,0 +1,20 @@
+uuid: 92cd8d56-3757-4cbd-9339-438d89fc2063
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.passports_page
+  module:
+    - path
+id: node.passports_page.path
+field_name: path
+entity_type: node
+bundle: passports_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

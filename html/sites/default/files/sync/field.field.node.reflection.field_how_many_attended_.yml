@@ -1,0 +1,23 @@
+uuid: d5ccc222-0105-4c38-8c51-afcfd1e7d7ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_many_attended_
+    - node.type.reflection
+id: node.reflection.field_how_many_attended_
+field_name: field_how_many_attended_
+entity_type: node
+bundle: reflection
+label: 'How many attended?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

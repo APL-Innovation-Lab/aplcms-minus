@@ -1,0 +1,21 @@
+uuid: c297d6e5-86ab-4bab-8b1a-805320d51eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsors
+    - taxonomy.vocabulary.event_tags
+  module:
+    - text
+id: taxonomy_term.event_tags.field_sponsors
+field_name: field_sponsors
+entity_type: taxonomy_term
+bundle: event_tags
+label: Sponsors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

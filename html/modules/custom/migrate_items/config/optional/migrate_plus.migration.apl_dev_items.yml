@@ -1,0 +1,145 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_items
+id: apl_dev_items
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - taxonomy
+migration_group: apl_dev
+label: 'APL Items'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://migrate_items/apl_items.json'
+  item_selector: apl_item
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: path
+      selector: path
+    -
+      name: field_apl_authors
+      selector: field_apl_authors
+    -
+      name: field_bib_isbn
+      selector: field_bib_isbn
+    -
+      name: field_bibliocommons_id
+      selector: field_bibliocommons_id
+    -
+      name: field_call_number
+      selector: field_call_number
+    -
+      name: field_custom_link
+      selector: field_custom_link
+    -
+      name: field_description
+      selector: field_description
+    -
+      name: facets
+      selector: facets
+    -
+      name: format
+      selector: format
+    -
+      name: field_isbn
+      selector: field_isbn
+    -
+      name: audience
+      selector: audience
+    -
+      name: field_other_formats
+      selector: field_other_formats
+    -
+      name: field_publication_date
+      selector: field_publication_date
+    -
+      name: field_api_subtitle
+      selector: field_api_subtitle
+    -
+      name: field_upc
+      selector: field_upc
+    -
+      name: field_jacket_cover
+      selector: field_jacket_cover
+    -
+      name: field_apl_item_image
+      selector: field_apl_item_image
+  ids:
+    nid:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: apl_item
+  title: title
+  field_apl_item_image:
+    plugin: image_import
+    source: field_apl_item_image
+    title: title
+    alt: title
+  field_jacket_cover: field_jacket_cover
+  field_upc: field_upc
+  field_api_subtitle: field_api_subtitle
+  field_publication_date: field_publication_date
+  field_other_formats:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_other_formats
+    -
+      plugin: explode
+      source: field_other_formats
+      delimiter: ','
+    -
+      plugin: callback
+      callable: trim
+  field_intended_audience_2016i:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: audience
+    -
+      plugin: explode
+      source: audience
+      delimiter: ','
+  field_isbn: field_isbn
+  field_api_format: format
+  field_item_list_category:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: facets
+    -
+      plugin: explode
+      source: facets
+      delimiter: ','
+  field_description: field_description
+  field_custom_link: field_custom_link
+  field_call_number: field_call_number
+  field_bibliocommons_id: field_bibliocommons_id
+  field_bib_isbn: field_bib_isbn
+  field_apl_authors: field_apl_authors
+  path: path
+  nid: nid
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

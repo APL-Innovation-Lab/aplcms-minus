@@ -1,0 +1,20 @@
+uuid: f97b0562-ec77-418f-b38b-8b97d8d23fd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recommendation_slide_categories
+  module:
+    - path
+id: taxonomy_term.recommendation_slide_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: recommendation_slide_categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

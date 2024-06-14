@@ -1,0 +1,21 @@
+uuid: 1d603917-d27a-4fac-8f02-d32b73cb9fd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summer_tags
+    - node.type.activity
+  module:
+    - options
+id: node.activity.field_summer_tags
+field_name: field_summer_tags
+entity_type: node
+bundle: activity
+label: 'Summer Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

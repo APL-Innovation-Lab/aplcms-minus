@@ -1,0 +1,21 @@
+uuid: 8bbff63c-fafb-4eeb-98fc-04d1f23b2ac9
+langcode: eng
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_body_top_
+    - taxonomy.vocabulary.library_location
+  module:
+    - text
+id: taxonomy_term.library_location.field_body_top_
+field_name: field_body_top_
+entity_type: taxonomy_term
+bundle: library_location
+label: 'Body (Top)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

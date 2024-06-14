@@ -1,0 +1,23 @@
+uuid: f91dd926-a61b-4aef-a0fb-b156ade37036
+langcode: eng
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_about_artist
+field_name: field_about_artist
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

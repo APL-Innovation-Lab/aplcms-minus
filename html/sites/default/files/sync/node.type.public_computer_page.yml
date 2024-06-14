@@ -1,0 +1,17 @@
+uuid: 8d0c00cf-4eba-4fdd-bf55-c9c57ffc10ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Public Computer Page'
+type: public_computer_page
+description: 'Pages for the public computers'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

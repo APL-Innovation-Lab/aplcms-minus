@@ -1,0 +1,41 @@
+uuid: 5539fef1-8e74-4e39-8e32-6bae1b9b6c93
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: exhibits_b
+label: 'Exhibits B'
+code: |-
+  (function($, jQuery) {
+    $(document).ready(function() {
+
+        var path = location.pathname;
+        if(path.includes('future')) {
+          $('#apl-current').removeClass('active');
+        $('#apl-future').addClass('active');
+        } else if(path.includes('past')) {
+
+          $('#apl-current').removeClass('active');
+        $('#apl-past').addClass('active');
+        }
+        
+      $('a.more').click(function(e) {
+          e.preventDefault();
+          $(this).toggleClass('active');
+          $(this).siblings().toggleClass('active');
+      });
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events/*\r\n"
+contexts: {  }
+conditions_require_all: true

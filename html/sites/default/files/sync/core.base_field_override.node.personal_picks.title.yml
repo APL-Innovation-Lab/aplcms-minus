@@ -1,0 +1,18 @@
+uuid: 3795ac6f-01b5-4383-9337-b6a74dc5dc5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_picks
+id: node.personal_picks.title
+field_name: title
+entity_type: node
+bundle: personal_picks
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

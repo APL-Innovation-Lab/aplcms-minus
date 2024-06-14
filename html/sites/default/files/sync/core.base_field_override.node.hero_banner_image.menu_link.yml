@@ -1,0 +1,20 @@
+uuid: e7c7a3ba-fc4e-4959-9738-882b4293d295
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.hero_banner_image
+id: node.hero_banner_image.menu_link
+field_name: menu_link
+entity_type: node
+bundle: hero_banner_image
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 9c90a26f-92cf-457b-8329-b3b1f0a17353
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.accordion
+id: node.accordion.status
+field_name: status
+entity_type: node
+bundle: accordion
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

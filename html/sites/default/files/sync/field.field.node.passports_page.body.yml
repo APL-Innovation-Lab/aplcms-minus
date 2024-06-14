@@ -1,0 +1,23 @@
+uuid: 8b21bb85-9dd4-4123-b5f4-f61078c3a428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.passports_page
+  module:
+    - text
+id: node.passports_page.body
+field_name: body
+entity_type: node
+bundle: passports_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,19 @@
+uuid: b8ef252e-aaca-45a8-8c7a-20c4fef107c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessno
+    - node.type.archives_index
+id: node.archives_index.field_accessno
+field_name: field_accessno
+entity_type: node
+bundle: archives_index
+label: AccessNo
+description: 'example: AR.A.001'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
