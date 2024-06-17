@@ -6,3 +6,4 @@ vendor/
 html/themes/contrib
 myenv/
 html/sites/default/settings.php
+/html/sites/default/files/asset_injector
