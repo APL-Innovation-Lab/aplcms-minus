@@ -22,6 +22,7 @@ case $choice in
         # Download the aplcms-minus.sql.gz file
         curl -O https://library.austintexas.gov/library/aplcms-minus.sql.gz
         
+        ddev stop --unlist aplcms-minus
         ddev composer update
         ddev import-db --file=aplcms-minus.sql.gz
         ddev drush cr
