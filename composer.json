@@ -117,7 +117,7 @@
         "drupal/webform_content_creator": "^2",
         "drupal/webform_rest": "^4.0",
         "drupal/webform_views": "^5.0@alpha",
-        "drush/drush": "^10",
+        "drush/drush": "^10.6",
         "endroid/qr-code-bundle": "^3.4"
     },
     "conflict": {

@@ -1,0 +1,51 @@
+_core:
+  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
+langcode: eng
+drupalAcctProvisionServer: coa
+ldapEntryProvisionServer: coa
+drupalAcctProvisionTriggers:
+  - drupal_on_login
+  - drupal_on_update_create
+ldapEntryProvisionTriggers: {  }
+orphanedDrupalAcctBehavior: ldap_user_orphan_email
+orphanedDrupalAcctReportingInbox: bryce.benton@austintexas.gov
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: daily
+userConflictResolve: resolve
+manualAccountConflict: conflict_associate
+acctCreation: user_settings_for_ldap
+disableAdminPasswordField: true
+userUpdateCronQuery: none
+userUpdateCronInterval: daily
+ldapUserSyncMappings:
+  drupal:
+    field-field_phone_number:
+      ldap_attr: '[OfficePhone]'
+      user_attr: '[field.field_phone_number]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_drupal_user
+        - sync_to_drupal_user
+    field-field_first_name:
+      ldap_attr: '[GivenName]'
+      user_attr: '[field.field_first_name]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_drupal_user
+        - sync_to_drupal_user
+    field-field_last_name:
+      ldap_attr: '[Surname]'
+      user_attr: '[field.field_last_name]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_drupal_user
+        - sync_to_drupal_user

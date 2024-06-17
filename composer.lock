@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e9cdbb5f0fd6c503ec57c9e0cf8ada4",
+    "content-hash": "389a88287c01bae0d0b40a3eafbef068",
     "packages": [
         {
             "name": "andileco/eval-math",

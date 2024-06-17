@@ -4,7 +4,6 @@ langcode: eng
 module:
   advagg: 0
   advagg_cdn: 0
-  apl_webform: 0
   asset_injector: 0
   automated_cron: 0
   basic_auth: 0
@@ -129,7 +128,6 @@ module:
   redirect: 0
   redirect_404: 0
   rest: 0
-  restui: 0
   rules: 0
   rules_send_big_email: 0
   rules_token: 0

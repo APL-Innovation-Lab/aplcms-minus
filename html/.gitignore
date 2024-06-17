@@ -1,0 +1,11 @@
+.editorconfig
+INSTALL.txt
+autoload.php
+core/
+example.gitignore
+index.php
+modules/contrib/
+profiles/
+robots.txt
+update.php
+web.config

@@ -1,9 +1,6 @@
 uuid: df43e9b7-af78-4019-b7a8-d259f42bf051
 langcode: eng
 status: open
-dependencies:
-  module:
-    - apl_webform
 weight: 0
 open: null
 close: null

@@ -1,0 +1,5 @@
+.editorconfig
+.gitattributes
+aplcms-minus.sql.gz
+vendor/
+html/themes/contrib

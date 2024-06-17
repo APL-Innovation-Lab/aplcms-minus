@@ -15,6 +15,9 @@ settings:
       value: all
       label: 'All ages welcome'
     -
+      value: youth0
+      label: 'Recommended for ages 0-12 months'
+    -
       value: youth1
       label: 'Recommended for ages 1 to 3 years'
     -

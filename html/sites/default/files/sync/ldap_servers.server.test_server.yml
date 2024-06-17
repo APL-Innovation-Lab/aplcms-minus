@@ -1,0 +1,38 @@
+uuid: 1e4c35e6-01c8-4528-9675-13bfd6e62b83
+langcode: en
+status: false
+dependencies: {  }
+id: test_server
+label: 'test server'
+type: default
+address: ldap.forumsys.com
+port: 389
+timeout: 10
+encryption: none
+weight: null
+bind_method: service_account
+binddn: 'cn=read-only-admin,dc=example,dc=com'
+bindpw: password
+basedn:
+  - ''
+user_attr: ''
+account_name_attr: ''
+mail_attr: ''
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: ''
+unique_persistent_attr_binary: false
+user_dn_expression: ''
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: true
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: false
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''

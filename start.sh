@@ -29,8 +29,8 @@ case $choice in
         ddev launch user
         ;;
     2)
-        # Starting ddev
-        ddev start
+        # Starting and launching ddev
+        ddev launch
         ;;
     *)
         echo "Invalid option selected."
