@@ -19,22 +19,10 @@ read -p "Enter your choice: " choice
 
 case $choice in
     1)
-        read -p "Is the aplcms-minus.sql.gz file already present in the directory? (y/n) " file_present
-        case $file_present in
-            [Yy]* )
-                # If the file is present, proceed with the import
-                ;;
-            [Nn]* )
-                # If the file is not present, download it
-                read -p "Please provide the URL to download aplcms-minus.sql.gz: " file_url
-                curl -o aplcms-minus.sql.gz $file_url
-                ;;
-            * ) echo "Please answer yes or no."; exit;;
-        esac
+        # Download the aplcms-minus.sql.gz file
+        curl -O https://library.austintexas.gov/library/aplcms-minus.sql.gz
         
-        # Running import.sh contents
         ddev stop --unlist aplcms-minus
-        
         ddev composer update
         ddev import-db --file=aplcms-minus.sql.gz
         ddev drush cr
@@ -42,8 +30,8 @@ case $choice in
         ddev launch user
         ;;
     2)
-        # Starting ddev
-        ddev start
+        # Starting and launching ddev
+        ddev launch
         ;;
     *)
         echo "Invalid option selected."
