@@ -672,11 +672,12 @@ code: |
   		  var arr = ['780', '787', '786', '793', '795', '794', '799'];
   		  var notIncludes = !arr.includes(room_id);
 
-            var startDate = Date.parse('March 4, 2024');
-            var endDate = Date.parse('May 19, 2024');
+            var startDate = Date.parse('July 13, 2024');
+          //  var endDate = Date.parse('May 19, 2024');
 
-            if ((room_id == '839' ||room_id == '840' ||room_id == '800')  && ch_date >= startDate && ch_date <= endDate) {
-                messages = ['The Terrazas Branch meeting rooms are unavailable through May 19, 2024.'];
+       //   if ((room_id == '807')  && ch_date >= startDate && ch_date <= endDate) {
+          if ((room_id == '807')  && ch_date >= startDate) {
+                  messages = ['The Willie Mae Kirk Branch meeting room is unavailable after July 13, 2024.'];
             } else 
 
 
